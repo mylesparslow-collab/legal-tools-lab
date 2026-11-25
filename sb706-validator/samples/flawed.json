@@ -1,0 +1,53 @@
+{
+  "_note": "Fictional record with deliberate defects. The agency, project, firms, and figures are invented for this demo.",
+  "as_of": "2026-11-25",
+  "agency": { "name": "Ostrander Valley Recreation and Park District (fictional)", "type": "special_district", "type_detail": "recreation and park district", "prior_ch47_projects": 10, "ch41_water_projects": 1, "coi_guidelines_adopted": false },
+  "project": { "name": "Aquatic Center and Fieldhouse", "estimated_cost": 5000000, "state_owned_or_operated_facility": false },
+  "dates": { "rfq_issue": "2028-10-02", "contract_award": "2029-02-12", "phase2_amendment": "2030-03-01", "expected_completion": "2031-08-30" },
+  "rfq": {
+    "elements": { "project_description": true, "expected_cost_range": false, "evaluation_methodology": true, "final_selection_procedure": true, "significant_factors": true, "factor_weights": false, "standard_template": true, "perjury_certification": false },
+    "template_items": { "owners_listing": true, "experience_and_financial": true, "licenses": true, "bonding_insurance_capacity": true, "workers_comp_safety_program": false, "org_documents": true, "safety_record": false },
+    "factors": [
+      { "name": "Team experience", "weight": 40, "price_related": false },
+      { "name": "Technical approach", "price_related": false },
+      { "name": "Preliminary cost estimate", "weight": 30, "price_related": true }
+    ],
+    "stw_notice_in_bid_documents": false
+  },
+  "proposers": [
+    {
+      "name": "Pallister Crane Constructors LLC",
+      "has_general_partners_or_jv_members": true,
+      "safety": { "emr_last_3_years": [1.12, 1.05, 1.04], "trir_avg": 3.4, "trir_standard": 2.8, "lost_work_rate_avg": 1.2, "lost_work_rate_standard": 1.4 },
+      "certification": { "by_entity": true, "by_all_general_partners_or_jv_members": false },
+      "workforce": {},
+      "team_members": [ { "name": "Quillfeather Program Advisors", "performed_solicitation_services_for_agency": true } ]
+    },
+    {
+      "name": "Dunmore & Asher Design-Build",
+      "has_general_partners_or_jv_members": false,
+      "safety": { "emr_last_3_years": [0.95, 0.9, 0.93], "trir_avg": 2.0, "trir_standard": 2.8, "lost_work_rate_avg": 1.0, "lost_work_rate_standard": 1.4 },
+      "certification": { "by_entity": true },
+      "workforce": { "pla_exception": "agency_pla_renewal", "original_pla_date": "2023-06-15" }
+    }
+  ],
+  "award": { "issued": true, "publicly_announced": true, "basis_statement": false },
+  "contract": { "total_value": 12400000, "construction_allocable_price": 10800000 },
+  "bonds": { "payment_bond_amount": 5400000, "performance_bond_amount": 10800000, "surety_california_admitted": true, "eo_insurance_required_in_contract": false, "agency_standard_bond_form": false },
+  "gmp": { "agreed": true, "amount": 12400000, "projected_cost_to_complete": 13150000, "savings_share_to_entity": 0.5, "written_savings_agreement": false, "contract_shifts_overrun_to_agency": true },
+  "retention": {
+    "bonds_required_in_solicitation": true, "phase1_rate": 0.05, "prime_rate": 0.1,
+    "subcontract_rates": [ { "name": "Varga Mechanical", "rate": 0.15 } ]
+  },
+  "subcontracts": [
+    { "name": "Varga Mechanical", "value": 1900000, "listed_in_soq": false, "public_notice": false, "fixed_due_date_time": false, "qualification_criteria": true, "award_basis": "low_bid" },
+    { "name": "Lindqvist Pool Systems", "value": 54000, "listed_in_soq": false },
+    { "name": "Corbel Glass", "value": 54001, "listed_in_soq": false, "public_notice": true, "fixed_due_date_time": true, "qualification_criteria": true, "award_basis": "best_value" }
+  ],
+  "workforce_months": [
+    { "contractor": "Pallister Crane Constructors LLC", "occupation": "plumber", "month": "2029-09", "report_submitted": true, "journeypersons": 10, "graduate_journeypersons": 5, "journeyperson_hours": 1500, "graduate_hours": 800, "monthly_billing": 220000 },
+    { "contractor": "Varga Mechanical", "occupation": "sheet metal worker", "month": "2029-09", "report_submitted": false, "is_subcontractor": true, "listed_subcontractor": false, "subcontract_value": 1900000, "monthly_billing": 96000 },
+    { "contractor": "Pallister Crane Constructors LLC", "occupation": "teamster", "month": "2029-09", "report_submitted": true, "journeypersons": 4, "graduate_journeypersons": 0, "journeyperson_hours": 600, "graduate_hours": 0 }
+  ],
+  "legislature_report": { "submitted": false, "contents": { "project_descriptions": true, "award_amounts": true, "awardees": true, "protests": false, "prequalification_process": true, "design_only_specialty_subs": false, "unused_sub_design_use": false, "small_business_subs": true, "microbusiness_subs": true, "performance_assessment": true } }
+}

@@ -1,0 +1,53 @@
+{
+  "_note": "Fictional record. The agency, project, firms, and figures are invented for this demo.",
+  "as_of": "2026-11-25",
+  "agency": { "name": "City of Marlowe Ridge (fictional)", "type": "city", "prior_ch47_projects": 2, "coi_guidelines_adopted": true },
+  "project": { "name": "Corporation Yard Replacement", "estimated_cost": 48500000, "state_owned_or_operated_facility": false },
+  "dates": { "rfq_issue": "2026-08-03", "contract_award": "2026-11-10", "phase2_amendment": "2027-09-15", "expected_completion": "2029-06-30" },
+  "rfq": {
+    "elements": { "project_description": true, "expected_cost_range": true, "evaluation_methodology": true, "final_selection_procedure": true, "significant_factors": true, "factor_weights": true, "standard_template": true, "perjury_certification": true },
+    "template_items": { "owners_listing": true, "experience_and_financial": true, "licenses": true, "bonding_insurance_capacity": true, "workers_comp_safety_program": true, "org_documents": true, "safety_record": true },
+    "factors": [
+      { "name": "Team experience on similar projects", "weight": 35, "price_related": false },
+      { "name": "Key personnel", "weight": 25, "price_related": false },
+      { "name": "Technical approach", "weight": 25, "price_related": false },
+      { "name": "Preliminary cost estimate", "weight": 15, "price_related": true }
+    ],
+    "stw_notice_in_bid_documents": true
+  },
+  "proposers": [
+    {
+      "name": "Kestrel Row Design-Build, Inc.",
+      "has_general_partners_or_jv_members": false,
+      "safety": { "emr_last_3_years": [0.82, 0.88, 0.91], "trir_avg": 2.1, "trir_standard": 2.8, "lost_work_rate_avg": 0.9, "lost_work_rate_standard": 1.4 },
+      "certification": { "by_entity": true },
+      "workforce": { "enforceable_stw_commitment": true }
+    },
+    {
+      "name": "Tidewater & Finch Builders JV",
+      "has_general_partners_or_jv_members": true,
+      "safety": { "emr_last_3_years": [0.97, 1.02, 0.99], "trir_avg": 2.6, "trir_standard": 2.8, "lost_work_rate_avg": 1.3, "lost_work_rate_standard": 1.4 },
+      "certification": { "by_entity": true, "by_all_general_partners_or_jv_members": true },
+      "workforce": { "pla_exception": "entity_pla" }
+    }
+  ],
+  "award": { "issued": true, "publicly_announced": true, "basis_statement": true },
+  "contract": { "total_value": 46200000, "construction_allocable_price": 40000000 },
+  "bonds": { "payment_bond_amount": 40000000, "performance_bond_amount": 40000000, "surety_california_admitted": true, "eo_insurance_required_in_contract": true, "agency_standard_bond_form": true },
+  "gmp": { "agreed": true, "amount": 46200000, "projected_cost_to_complete": 45400000, "savings_share_to_entity": 0.25, "written_savings_agreement": true, "contract_shifts_overrun_to_agency": false },
+  "retention": {
+    "bonds_required_in_solicitation": true, "phase1_rate": 0, "prime_rate": 0.05,
+    "subcontract_rates": [ { "name": "Halvorsen Electric", "rate": 0.05 } ]
+  },
+  "subcontracts": [
+    { "name": "Halvorsen Electric", "value": 3900000, "listed_in_soq": true },
+    { "name": "Brightwater Paving", "value": 1250000, "listed_in_soq": false, "public_notice": true, "fixed_due_date_time": true, "qualification_criteria": true, "award_basis": "best_value" },
+    { "name": "Sorrel Fence Co.", "value": 140000, "listed_in_soq": false }
+  ],
+  "workforce_months": [
+    { "contractor": "Kestrel Row Design-Build, Inc.", "occupation": "electrician", "month": "2028-03", "report_submitted": true, "journeypersons": 10, "graduate_journeypersons": 7, "journeyperson_hours": 1600, "graduate_hours": 1120, "monthly_billing": 410000 },
+    { "contractor": "Kestrel Row Design-Build, Inc.", "occupation": "carpenter", "month": "2028-03", "report_submitted": true, "journeypersons": 12, "graduate_journeypersons": 4, "journeyperson_hours": 1900, "graduate_hours": 640, "monthly_billing": 380000 },
+    { "contractor": "Sorrel Fence Co.", "occupation": "ironworker", "month": "2028-03", "report_submitted": true, "is_subcontractor": true, "listed_subcontractor": false, "subcontract_value": 140000, "journeypersons": 3, "graduate_journeypersons": 0, "journeyperson_hours": 240, "graduate_hours": 0 }
+  ],
+  "legislature_report": { "submitted": false }
+}

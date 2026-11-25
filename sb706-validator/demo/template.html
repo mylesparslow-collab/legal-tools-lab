@@ -1,0 +1,219 @@
+<title>SB 706 Design-Build Validator</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: a working audit sheet. Controls and three gauges on top, then the
+   findings as dense tables grouped by statute area, then sources. */
+:root {
+  --bg: #f3f5f8; --surface: #ffffff; --ink: #18222e; --muted: #5a6878; --line: #d5dbe3;
+  --accent: #1f5f8b; --accent-ink: #ffffff; --track: #e3e8ee;
+  --pass: #1d6b45; --pass-bg: #dff1e6; --fail: #a3261d; --fail-bg: #f9dfdc;
+  --review: #855a00; --review-bg: #f8ebc8; --info: #2c5c86; --info-bg: #dde9f4; --na: #5a6878; --na-bg: #e6eaef;
+  --display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #10161d; --surface: #18212b; --ink: #e6ebf1; --muted: #9aa8b8; --line: #2d3a48;
+  --accent: #6db3e0; --accent-ink: #0c1620; --track: #263240;
+  --pass: #7fd3a4; --pass-bg: #163626; --fail: #f29a91; --fail-bg: #45201c;
+  --review: #ecc569; --review-bg: #3d3011; --info: #9cc6ea; --info-bg: #1b3144; --na: #9aa8b8; --na-bg: #263240;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #10161d; --surface: #18212b; --ink: #e6ebf1; --muted: #9aa8b8; --line: #2d3a48;
+  --accent: #6db3e0; --accent-ink: #0c1620; --track: #263240;
+  --pass: #7fd3a4; --pass-bg: #163626; --fail: #f29a91; --fail-bg: #45201c;
+  --review: #ecc569; --review-bg: #3d3011; --info: #9cc6ea; --info-bg: #1b3144; --na: #9aa8b8; --na-bg: #263240;
+  color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--body); padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+.wrap { max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px }
+h1 { font: 600 28px/1.15 var(--display); margin: 0; text-wrap: balance }
+h2 { font: 600 18px/1.25 var(--display); margin: 0; text-wrap: balance }
+p { margin: 0; max-width: 68ch }
+.lede { color: var(--muted) }
+.notice { border-left: 3px solid var(--review); background: var(--review-bg); padding: 10px 14px; font-size: 14px; max-width: none }
+header { display: flex; flex-direction: column; gap: 10px }
+.controls { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: end }
+.field { display: flex; flex-direction: column; gap: 4px; min-width: 0 }
+label, .cap { font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted) }
+select, input[type=date], textarea, button { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 7px 10px }
+button { cursor: pointer; background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 500 }
+button.quiet { background: var(--surface); color: var(--ink); border-color: var(--line); font-weight: 400 }
+button[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent) }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+details summary { cursor: pointer; color: var(--accent); font-size: 14px }
+textarea { width: 100%; min-height: 260px; font: 12.5px/1.5 var(--mono); margin-top: 8px; resize: vertical }
+.err { color: var(--fail); font-size: 14px }
+.gauges { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px 32px; padding: 18px 0; border-block: 1px solid var(--line) }
+.gauge { display: flex; flex-direction: column; gap: 6px; min-width: 0 }
+.gauge .big { font: 600 22px/1.2 var(--display); font-variant-numeric: tabular-nums }
+.gauge .sub { font-size: 13px; color: var(--muted) }
+.slots { display: flex; gap: 3px }
+.slots i { flex: 1; height: 10px; background: var(--track); border-radius: 1px }
+.slots i.used { background: var(--muted) } .slots i.this { background: var(--accent) } .slots i.over { background: var(--fail) }
+.bar { height: 10px; background: var(--track); border-radius: 1px; position: relative; overflow: hidden }
+.bar b { position: absolute; inset: 0 auto 0 0; background: var(--accent) }
+.summary { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.pill { font: 500 12px/1 var(--mono); padding: 5px 7px; border-radius: 3px; white-space: nowrap; display: inline-block }
+.PASS { color: var(--pass); background: var(--pass-bg) } .FAIL { color: var(--fail); background: var(--fail-bg) }
+.REVIEW { color: var(--review); background: var(--review-bg) } .INFO { color: var(--info); background: var(--info-bg) } .NA { color: var(--na); background: var(--na-bg) }
+.outcome { font-weight: 600 }
+section { display: flex; flex-direction: column; gap: 10px; min-width: 0 }
+.scroll { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 4px }
+table { border-collapse: collapse; width: 100%; font-size: 14px }
+th { text-align: left; font: 500 12px/1.3 var(--body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding: 9px 12px; border-bottom: 1px solid var(--line); white-space: nowrap }
+td { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top }
+tr:last-child td { border-bottom: 0 }
+td.id, td.cite { font: 12.5px/1.5 var(--mono); white-space: nowrap; color: var(--muted) }
+td.cite { white-space: normal; min-width: 150px }
+td.check { min-width: 200px; font-weight: 500 } td.detail { min-width: 280px }
+td.q { min-width: 300px; color: var(--muted); font-size: 13px }
+.empty { padding: 14px; color: var(--muted) }
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px }
+a { color: var(--accent) }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>SB 706 Design-Build Validator</h1>
+    <p class="lede">Checks a progressive design-build procurement record against California Public Contract Code chapter 4.7 (§§ 22185–22185.11) and the skilled and trained workforce rules in chapter 2.9. Each row names the section it rests on.</p>
+    <p class="notice">Portfolio demo. The agencies, firms, and figures are fictional. Built by a non-attorney; not legal advice and not reviewed by a lawyer. Statute text was read on leginfo on <span id="verified"></span>.</p>
+  </header>
+
+  <div>
+    <div class="controls">
+      <div class="field"><label for="sample">Sample record</label>
+        <select id="sample"><option value="bad">Ostrander Valley: record with defects</option><option value="good">Marlowe Ridge: clean record</option></select></div>
+      <div class="field"><label for="asof">As-of date</label><input type="date" id="asof"></div>
+      <button id="run" type="button">Run checks</button>
+    </div>
+    <details style="margin-top:12px"><summary>View or edit the record (JSON)</summary>
+      <textarea id="json" spellcheck="false" aria-label="Procurement record as JSON"></textarea></details>
+    <p class="err" id="err" hidden></p>
+  </div>
+
+  <div class="gauges" id="gauges"></div>
+
+  <section>
+    <h2>Findings</h2>
+    <div class="summary" id="summary"></div>
+    <div class="summary" id="filters" role="group" aria-label="Filter by status"></div>
+    <div id="findings" style="display:flex;flex-direction:column;gap:22px"></div>
+  </section>
+
+  <section>
+    <h2>Corrections to the research report</h2>
+    <p class="lede">The report this tool came from cites §§ 22170–22174 for SB 706. Those sections belong to a different bill. Each row compares the report with the statute text.</p>
+    <div class="scroll"><table><thead><tr><th>Topic</th><th>Report says</th><th>Primary text</th><th>Effect</th></tr></thead><tbody id="corr"></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Rules and sources</h2>
+    <p class="lede">Every number the checks use is held as data with its citation, the statutory wording, and whether it was read in primary text.</p>
+    <div class="scroll"><table><thead><tr><th>Rule</th><th>Value</th><th>Citation</th><th>Status</th><th>Statute wording or note</th></tr></thead><tbody id="rules"></tbody></table></div>
+  </section>
+
+  <footer>What this does not do: it does not read contracts or RFQs for you (the command-line version has a keyword screen only), does not model the pre-1995 apprenticeship credit in § 2601(d)(3) or the § 7201(b)(4) complex-project exception, and does not apply Gov. Code § 1090 or CCP § 860.</footer>
+</div>
+
+<script>
+/*__ENGINE__*/
+const RULES = "__RULES__";
+const CORRECTIONS = "__CORRECTIONS__";
+const SAMPLES = { good: "__SAMPLE_GOOD__", bad: "__SAMPLE_BAD__" };
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
+const cls = (s) => (s === 'N/A' ? 'NA' : s);
+let filter = 'ALL';
+let last = null;
+
+function loadSample() {
+  const rec = SAMPLES[$('sample').value];
+  $('json').value = JSON.stringify(rec, null, 2);
+  $('asof').value = rec.as_of;
+  run();
+}
+
+function run() {
+  $('err').hidden = true;
+  let rec;
+  try { rec = JSON.parse($('json').value); } catch (e) { $('err').textContent = 'The record is not valid JSON: ' + e.message; $('err').hidden = false; return; }
+  try { last = { rec, result: validate(rec, RULES, { asOf: $('asof').value || rec.as_of }) }; }
+  catch (e) { $('err').textContent = e.message; $('err').hidden = false; return; }
+  render();
+}
+
+function gauge(cap, big, sub, visual) {
+  const g = el('div', 'gauge'); g.append(el('span', 'cap', cap), el('span', 'big', big));
+  if (visual) g.append(visual); g.append(el('span', 'sub', sub)); return g;
+}
+
+function render() {
+  const { rec, result } = last;
+  const R = RULES.rules;
+  const G = $('gauges'); G.replaceChildren();
+  const capN = R.max_projects_per_agency.value;
+  const prior = rec.agency && Number.isInteger(rec.agency.prior_ch47_projects) ? rec.agency.prior_ch47_projects : null;
+  const slots = el('div', 'slots');
+  for (let i = 1; i <= capN; i++) { const s = el('i'); if (prior !== null) { if (i <= Math.min(prior, capN)) s.className = 'used'; else if (i === prior + 1) s.className = 'this'; } slots.append(s); }
+  if (prior !== null && prior + 1 > capN) slots.lastChild.className = 'over';
+  G.append(gauge('Project slots, § 22185.1', prior === null ? 'Not recorded' : `Project ${prior + 1} of ${capN}`, prior === null ? '' : (prior + 1 > capN ? 'Over the cap.' : `${capN - prior - 1} left after this one.`), slots));
+
+  const from = Date.parse(R.chapter_operative_from.value), to = Date.parse(R.chapter_repeal_date.value), now = Date.parse(result.as_of);
+  const bar = el('div', 'bar'); const b = el('b'); b.style.width = Math.max(0, Math.min(100, (now - from) / (to - from) * 100)) + '%'; bar.append(b);
+  const dLeft = Math.round((to - now) / 86400000);
+  G.append(gauge('Chapter repeal, § 22185.11', dLeft > 0 ? `${dLeft.toLocaleString()} days left` : 'Repealed', `Runs ${R.chapter_operative_from.value} to ${R.chapter_repeal_date.value}. Report to the Legislature due ${R.legislature_report_due.value}.`, bar));
+
+  const t = subcontractThreshold(rec.contract, RULES);
+  G.append(gauge('Subcontract threshold, § 22185.6(b)', t.threshold !== null ? '$' + t.threshold.toLocaleString() : (t.applies === false ? 'Does not apply' : 'Not computable'), t.reason));
+
+  const S = $('summary'); S.replaceChildren();
+  const text = { 'gaps-found': 'One or more checks failed.', 'needs-review': 'No check failed; some items need attorney review.', 'no-gaps-found': 'These checks found no gaps. That is not a finding of legal compliance.' }[result.outcome];
+  S.append(el('span', 'outcome', `${result.agency || 'Agency'} · ${result.project || 'Project'}: ${text}`));
+
+  const F = $('filters'); F.replaceChildren();
+  [['ALL', result.findings.length], ['FAIL', result.counts.FAIL], ['REVIEW', result.counts.REVIEW], ['PASS', result.counts.PASS], ['INFO', result.counts.INFO], ['N/A', result.counts['N/A']]].forEach(([k, n]) => {
+    const btn = el('button', 'quiet', `${k === 'ALL' ? 'All' : k} ${n}`); btn.type = 'button'; btn.setAttribute('aria-pressed', String(filter === k));
+    btn.addEventListener('click', () => { filter = k; render(); }); F.append(btn);
+  });
+
+  const out = $('findings'); out.replaceChildren();
+  const shown = result.findings.filter((f) => filter === 'ALL' || f.status === filter);
+  if (!shown.length) out.append(el('p', 'empty', 'No findings with this status.'));
+  [...new Set(shown.map((f) => f.section))].forEach((sec) => {
+    const box = el('div'); box.style.cssText = 'display:flex;flex-direction:column;gap:8px;min-width:0';
+    box.append(el('span', 'cap', sec));
+    const sc = el('div', 'scroll'); const tb = el('table'); const body = el('tbody');
+    shown.filter((f) => f.section === sec).forEach((f) => {
+      const tr = el('tr');
+      const st = el('td'); st.append(el('span', 'pill ' + cls(f.status), f.status));
+      tr.append(el('td', 'id', f.id), st, el('td', 'check', f.title), el('td', 'detail', f.detail), el('td', 'cite', f.citation + (f.verification === 'primary-text' ? '' : ' (not verified)')));
+      body.append(tr);
+    });
+    tb.append(body); sc.append(tb); box.append(sc); out.append(box);
+  });
+}
+
+function renderStatic() {
+  $('verified').textContent = RULES.meta.verified_on;
+  const C = $('corr');
+  CORRECTIONS.forEach((c) => { const tr = el('tr'); tr.append(el('td', 'check', c.topic), el('td', 'detail', c.report), el('td', 'detail', c.primary), el('td', 'detail', c.effect)); C.append(tr); });
+  const T = $('rules');
+  Object.entries(RULES.rules).forEach(([k, r]) => {
+    const tr = el('tr');
+    const v = Array.isArray(r.value) ? `${r.value.length} items` : r.value === null ? 'none' : typeof r.value === 'number' && r.value >= 1000 ? '$' + r.value.toLocaleString() : String(r.value);
+    const st = el('td'); st.append(el('span', 'pill ' + (r.status === 'primary-text' ? 'PASS' : 'REVIEW'), r.status === 'primary-text' ? 'read in primary text' : 'not verified'));
+    tr.append(el('td', 'id', k), el('td', 'id', v), el('td', 'cite', r.citation), st, el('td', 'q', [r.quote ? (r.quote.startsWith('“') ? r.quote : '“' + r.quote + '”') : '', r.note || ''].filter(Boolean).join(' ')));
+    T.append(tr);
+  });
+}
+
+$('sample').addEventListener('change', loadSample);
+$('run').addEventListener('click', run);
+$('asof').addEventListener('change', run);
+renderStatic();
+loadSample();
+</script>

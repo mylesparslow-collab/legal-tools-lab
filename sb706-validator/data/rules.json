@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "title": "SB 706 progressive design-build rules (Pub. Cont. Code, Div. 2, Pt. 3, Ch. 4.7)",
+    "verified_on": "2026-11-25",
+    "verified_how": "Read on leginfo.legislature.ca.gov: the chaptered bill text of SB 706 (Stats. 2023, ch. 500) and the current code display for PCC ch. 4.7, ch. 2.9, and section 7201.",
+    "status_values": {
+      "primary-text": "Value and citation read in the primary statutory text on the verified_on date.",
+      "not-verified": "Cited by the research report or by general knowledge. Not read in primary text for this build. Do not rely on it."
+    },
+    "sources": {
+      "sb706_bill": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB706",
+      "pcc_ch_4_7": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PCC&division=2.&title=&part=3.&chapter=4.7.&article=",
+      "pcc_ch_4_1": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PCC&division=2.&title=&part=3.&chapter=4.1.&article=",
+      "pcc_ch_2_9": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PCC&division=2.&title=&part=1.&chapter=2.9.&article=",
+      "pcc_7201": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PCC&sectionNum=7201."
+    }
+  },
+  "rules": {
+    "eligible_agency_types": {
+      "value": [
+        "city",
+        "county",
+        "city_and_county",
+        "special_district"
+      ],
+      "citation": "Pub. Cont. Code § 22185(g)",
+      "quote": "“Local agency” means a city, county, city and county, or special district.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text",
+      "note": "The chapter does not define “special district”. Whether a particular district (transit, healthcare, school, joint powers authority) qualifies is a legal question the engine sends to review."
+    },
+    "state_facility_exclusion": {
+      "value": true,
+      "citation": "Pub. Cont. Code §§ 22185(d), 22185.9",
+      "quote": "Nothing in this chapter authorizes a local agency to perform work on a state-owned or state-operated facility.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "min_project_value_exclusive": {
+      "value": 5000000,
+      "unit": "USD",
+      "citation": "Pub. Cont. Code § 22185.1",
+      "quote": "for up to 10 public works projects in excess of five million dollars ($5,000,000) for each project",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text",
+      "note": "“In excess of” is read as strictly greater than. The statute does not say which figure (estimate, guaranteed maximum price, final cost) is measured."
+    },
+    "max_projects_per_agency": {
+      "value": 10,
+      "unit": "projects",
+      "citation": "Pub. Cont. Code § 22185.1",
+      "quote": "for up to 10 public works projects",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text",
+      "note": "The statute does not say which event uses up a slot (RFQ issued, contract awarded, or phase 2 amendment)."
+    },
+    "chapter_operative_from": {
+      "value": "2024-01-01",
+      "citation": "Stats. 2023, ch. 500, § 1 (SB 706)",
+      "quote": "Added by Stats. 2023, Ch. 500, Sec. 1. (SB 706) Effective January 1, 2024.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "chapter_repeal_date": {
+      "value": "2030-01-01",
+      "citation": "Pub. Cont. Code § 22185.11",
+      "quote": "This chapter shall remain in effect only until January 1, 2030, and as of that date is repealed.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text",
+      "note": "The chapter text does not address contracts still in progress on the repeal date."
+    },
+    "coi_guidelines_required": {
+      "value": true,
+      "citation": "Pub. Cont. Code § 22185.2",
+      "quote": "shall develop guidelines for a standard organizational conflict-of-interest policy, consistent with applicable law",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "rfq_elements": {
+      "value": [
+        {
+          "key": "project_description",
+          "label": "Size, type, and desired design character of the project",
+          "citation": "§ 22185.3(a)(1)"
+        },
+        {
+          "key": "expected_cost_range",
+          "label": "Expected cost range",
+          "citation": "§ 22185.3(a)(1)"
+        },
+        {
+          "key": "evaluation_methodology",
+          "label": "Methodology for evaluating qualifications",
+          "citation": "§ 22185.3(a)(1)"
+        },
+        {
+          "key": "final_selection_procedure",
+          "label": "Procedure for final selection",
+          "citation": "§ 22185.3(a)(1)"
+        },
+        {
+          "key": "significant_factors",
+          "label": "Significant factors the agency expects to consider, including technical design and construction expertise",
+          "citation": "§ 22185.3(a)(2)"
+        },
+        {
+          "key": "factor_weights",
+          "label": "Relative importance or weight of each factor",
+          "citation": "§ 22185.3(a)(3)"
+        },
+        {
+          "key": "standard_template",
+          "label": "Standard template request for statements of qualifications",
+          "citation": "§ 22185.3(a)(4)"
+        },
+        {
+          "key": "perjury_certification",
+          "label": "Certification under penalty of perjury by the design-build entity and its general partners or joint venture members",
+          "citation": "§ 22185.3(a)(5)"
+        }
+      ],
+      "citation": "Pub. Cont. Code § 22185.3(a)(1)-(5)",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "template_items": {
+      "value": [
+        {
+          "key": "owners_listing",
+          "label": "Listing of shareholders, partners, or members who will perform work (privately held entities)",
+          "citation": "§ 22185.3(a)(4)(A)"
+        },
+        {
+          "key": "experience_and_financial",
+          "label": "Evidence of experience and capacity, key personnel, and a financial statement",
+          "citation": "§ 22185.3(a)(4)(B)"
+        },
+        {
+          "key": "licenses",
+          "label": "Licenses, registration, and credentials, including any revocation or suspension",
+          "citation": "§ 22185.3(a)(4)(C)"
+        },
+        {
+          "key": "bonding_insurance_capacity",
+          "label": "Capacity to obtain payment and performance bonds, liability insurance, and errors and omissions insurance",
+          "citation": "§ 22185.3(a)(4)(D)"
+        },
+        {
+          "key": "workers_comp_safety_program",
+          "label": "Workers’ compensation experience history and worker safety program",
+          "citation": "§ 22185.3(a)(4)(E)"
+        },
+        {
+          "key": "org_documents",
+          "label": "Organizational documents or agreement committing to form the organization",
+          "citation": "§ 22185.3(a)(4)(F)"
+        },
+        {
+          "key": "safety_record",
+          "label": "An acceptable safety record",
+          "citation": "§ 22185.3(a)(4)(G)"
+        }
+      ],
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(A)-(G)",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "safety_emr_max_avg": {
+      "value": 1,
+      "unit": "experience modification rate, average of most recent three-year period",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(G)",
+      "quote": "its experience modification rate for the most recent three-year period is an average of 1.00 or less, and its average total recordable injury or illness rate and average lost work rate for the most recent three-year period does not exceed the applicable statistical standards for its business category or if the proposer is a party to an alternative dispute resolution system as provided for in Section 3201.5 of the Labor Code",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text",
+      "note": "The engine reads the Labor Code § 3201.5 alternative as a complete substitute for the rate tests. Another reading is possible; flagged for review whenever the alternative is the only basis."
+    },
+    "pla_renewal_cutoff": {
+      "value": "2023-01-01",
+      "citation": "Pub. Cont. Code § 22185.3(b)(2)(B)",
+      "quote": "the extension or renewal of a project labor agreement that was entered into by the local agency before January 1, 2023",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "payment_bond_min_ratio_to_performance": {
+      "value": 1,
+      "citation": "Pub. Cont. Code § 22185.4(a)",
+      "quote": "The amount of the payment bond shall not be less than the amount of the performance bond.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "subcontract_threshold_fraction": {
+      "value": 0.005,
+      "unit": "fraction of the contract price allocable to construction work",
+      "citation": "Pub. Cont. Code § 22185.6(b)",
+      "quote": "construction subcontracts with a value exceeding one-half of 1 percent of the contract price allocable to construction work for projects with a contract value of greater than or equal to ten million dollars ($10,000,000)",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "subcontract_rule_min_contract_value": {
+      "value": 10000000,
+      "unit": "USD",
+      "citation": "Pub. Cont. Code § 22185.6(b)",
+      "quote": "for projects with a contract value of greater than or equal to ten million dollars ($10,000,000)",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "retention_cap": {
+      "value": 0.05,
+      "unit": "fraction of payment",
+      "citation": "Pub. Cont. Code § 22185.7(a)",
+      "quote": "retention proceeds withheld by the local agency from the design-build entity shall not exceed 5 percent if a performance and payment bond, issued by an admitted surety insurer, is required in the solicitation. Work performed to establish the guaranteed maximum price shall not be subject to retention.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "general_retention_cap": {
+      "value": 0.05,
+      "unit": "fraction of payment and of contract price",
+      "citation": "Pub. Cont. Code § 7201(b)(1)",
+      "quote": "shall not exceed 5 percent of the payment. In no event shall the total retention proceeds withheld exceed 5 percent of the contract price.",
+      "source": "pcc_7201",
+      "status": "primary-text",
+      "note": "Section 7201(b)(4) lets a local governing body exceed 5 percent on a project found substantially complex at a noticed public hearing before bid. The engine does not model that exception."
+    },
+    "legislature_report_due": {
+      "value": "2028-12-31",
+      "citation": "Pub. Cont. Code § 22185.8(a)",
+      "quote": "no later than December 31, 2028, a local agency that uses the progressive design-build process pursuant to this chapter shall submit, to the appropriate policy and fiscal committees of the Legislature, a report",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "legislature_report_contents": {
+      "value": [
+        {
+          "key": "project_descriptions",
+          "label": "Description of the project or projects awarded",
+          "citation": "§ 22185.8(b)(1)"
+        },
+        {
+          "key": "award_amounts",
+          "label": "Contract award amounts",
+          "citation": "§ 22185.8(b)(2)"
+        },
+        {
+          "key": "awardees",
+          "label": "Design-build entities awarded the projects",
+          "citation": "§ 22185.8(b)(3)"
+        },
+        {
+          "key": "protests",
+          "label": "Written protests and their resolution",
+          "citation": "§ 22185.8(b)(4)"
+        },
+        {
+          "key": "prequalification_process",
+          "label": "Description of the prequalification process",
+          "citation": "§ 22185.8(b)(5)"
+        },
+        {
+          "key": "design_only_specialty_subs",
+          "label": "Specialty subcontractors, by trade, that provided design services but did not meet the target price and did not build",
+          "citation": "§ 22185.8(b)(6)"
+        },
+        {
+          "key": "unused_sub_design_use",
+          "label": "Whether any design by such a subcontractor was used by the agency",
+          "citation": "§ 22185.8(b)(7)"
+        },
+        {
+          "key": "small_business_subs",
+          "label": "Specialty subcontractors, by trade, that are small businesses (Gov. Code § 14837(d)(1))",
+          "citation": "§ 22185.8(b)(8)"
+        },
+        {
+          "key": "microbusiness_subs",
+          "label": "Specialty subcontractors, by trade, that are microbusinesses (Gov. Code § 14837(d)(2))",
+          "citation": "§ 22185.8(b)(9)"
+        },
+        {
+          "key": "performance_assessment",
+          "label": "For completed projects, a performance assessment including delays and cost increases",
+          "citation": "§ 22185.8(b)(10)"
+        }
+      ],
+      "citation": "Pub. Cont. Code § 22185.8(b)(1)-(10)",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "stw_graduate_pct_default": {
+      "value": 60,
+      "unit": "percent of skilled journeypersons who are apprenticeship graduates",
+      "citation": "Pub. Cont. Code § 2601(d)(2)(D)",
+      "quote": "For work performed on or after January 1, 2020, at least 60 percent of the skilled journeypersons employed to perform work on the contract or project by every contractor and each of its subcontractors at every tier are graduates of an apprenticeship program for the applicable occupation",
+      "source": "pcc_ch_2_9",
+      "status": "primary-text"
+    },
+    "stw_graduate_pct_listed_occupations": {
+      "value": 30,
+      "unit": "percent",
+      "citation": "Pub. Cont. Code § 2601(d)(2)(A), (D)",
+      "quote": "except that the requirements of subparagraph (A) shall continue to apply to work performed in the following occupations",
+      "source": "pcc_ch_2_9",
+      "status": "primary-text"
+    },
+    "stw_listed_occupations": {
+      "value": [
+        "acoustical installer",
+        "bricklayer",
+        "carpenter",
+        "cement mason",
+        "drywall installer or lather",
+        "marble mason, finisher, or setter",
+        "modular furniture or systems installer",
+        "operating engineer",
+        "pile driver",
+        "plasterer",
+        "roofer or waterproofer",
+        "stone mason",
+        "surveyor",
+        "terrazzo worker or finisher",
+        "tile layer, setter, or finisher"
+      ],
+      "citation": "Pub. Cont. Code § 2601(d)(2)(D)",
+      "source": "pcc_ch_2_9",
+      "status": "primary-text",
+      "note": "Teamster also appears in the list, but subparagraph (A) itself says the percentage does not apply to teamster work, so the engine treats teamster as exempt."
+    },
+    "stw_exempt_occupations": {
+      "value": [
+        "teamster"
+      ],
+      "citation": "Pub. Cont. Code § 2601(d)(2)(A)",
+      "quote": "This requirement shall not apply to work performed in the occupation of teamster.",
+      "source": "pcc_ch_2_9",
+      "status": "primary-text"
+    },
+    "stw_min_monthly_hours": {
+      "value": 10,
+      "unit": "hours of skilled journeyperson work in the calendar month",
+      "citation": "Pub. Cont. Code § 2601(d)(5)",
+      "quote": "employs skilled journeypersons to perform fewer than 10 hours of work on the contract or project",
+      "source": "pcc_ch_2_9",
+      "status": "primary-text"
+    },
+    "stw_small_sub_fraction": {
+      "value": 0.005,
+      "unit": "fraction of the price of the prime contract",
+      "citation": "Pub. Cont. Code § 2601(d)(6)",
+      "quote": "The subcontractor was not a listed subcontractor under Section 4104 or a substitute for a listed subcontractor. … The subcontract does not exceed one-half of 1 percent of the price of the prime contract.",
+      "source": "pcc_ch_2_9",
+      "status": "primary-text"
+    },
+    "stw_withhold_multiplier": {
+      "value": 1.5,
+      "unit": "multiple of the relevant monthly billing",
+      "citation": "Pub. Cont. Code § 2602(b), (c)(1)(A)",
+      "quote": "shall withhold an amount equal to 150 percent of the value of the monthly billing",
+      "source": "pcc_ch_2_9",
+      "status": "primary-text"
+    },
+    "gov_code_1090": {
+      "value": null,
+      "citation": "Gov. Code § 1090; People v. Superior Court (Sahlolbei)",
+      "source": null,
+      "status": "not-verified",
+      "note": "Cited by the research report for consultant conflicts. Chapter 4.7 does not cite it. Not read for this build; the engine only flags the fact pattern for attorney review."
+    },
+    "ccp_860": {
+      "value": null,
+      "citation": "Code Civ. Proc. § 860",
+      "source": null,
+      "status": "not-verified",
+      "note": "Cited by the research report for validation challenges. Not read for this build and not used by any check."
+    },
+    "qbs_definition": {
+      "value": true,
+      "citation": "Pub. Cont. Code § 22185(i)",
+      "quote": "“Qualifications-based selection” means the process by which the local agency solicits for services from the design-build entities and that price is not the sole factor as the basis of award.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "stw_commitment": {
+      "value": true,
+      "citation": "Pub. Cont. Code § 22185.3(b)",
+      "quote": "A design-build entity shall not be evaluated for selection unless the entity provides an enforceable commitment to the local agency that the entity and its subcontractors at every tier will use a skilled and trained workforce to perform all work on the project or contract that falls within an apprenticeable occupation in the building and construction trades",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text",
+      "note": "Three project labor agreement exceptions are in § 22185.3(b)(2)(A)-(C)."
+    },
+    "stw_notice": {
+      "value": true,
+      "citation": "Pub. Cont. Code §§ 2600(c), 2600.5",
+      "quote": "the public entity shall include in all bid documents and construction contracts a notice that the project is subject to the skilled and trained workforce requirement",
+      "source": "pcc_ch_2_9",
+      "status": "primary-text"
+    },
+    "award_announcement": {
+      "value": true,
+      "citation": "Pub. Cont. Code § 22185.3(d)",
+      "quote": "upon issuance of a contract award, the local agency shall publicly announce its award, identifying the design-build entity to which the award is made, along with a statement regarding the basis of the award",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "bond_and_insurance_terms": {
+      "value": true,
+      "citation": "Pub. Cont. Code § 22185.4",
+      "quote": "issued by a California admitted surety … The design-build contract shall require errors and omissions insurance coverage for the design elements of the project. … The local agency shall develop a standard form of payment and performance bond for its design-build projects.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text"
+    },
+    "gmp_terms": {
+      "value": true,
+      "citation": "Pub. Cont. Code § 22185.5",
+      "quote": "the costs exceeding the guaranteed maximum price shall be the responsibility of the design-build entity. If the cost for these activities are less than the guaranteed maximum price, the design-build entity shall not be entitled to the difference between the cost and the guaranteed maximum price unless there is a prior written agreement concerning the sharing of these funds.",
+      "source": "pcc_ch_4_7",
+      "status": "primary-text",
+      "note": "Subdivision (c) covers the path when no price is agreed: solicit the original responders, or other entities on a written best-interest determination, with a best value award. Amended by Stats. 2024, ch. 80 (SB 1525), technical changes only."
+    }
+  }
+}

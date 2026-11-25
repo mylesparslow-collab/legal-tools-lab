@@ -1,0 +1,14 @@
+{
+  "name": "sb706-pdb-validator",
+  "version": "0.1.0",
+  "description": "Checks a progressive design-build procurement record against Pub. Cont. Code ch. 4.7 (SB 706). Portfolio demo with fictional data. Not legal advice.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "audit": "node src/cli.js",
+    "samples": "node src/cli.js samples/compliant.json --out output/compliant && node src/cli.js samples/flawed.json --rfq samples/flawed_rfq.txt --out output/flawed",
+    "build:demo": "node scripts/build_demo.js"
+  },
+  "engines": { "node": ">=20" }
+}

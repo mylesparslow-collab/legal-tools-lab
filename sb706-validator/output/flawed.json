@@ -1,0 +1,790 @@
+{
+  "as_of": "2026-11-25",
+  "agency": "Ostrander Valley Recreation and Park District (fictional)",
+  "project": "Aquatic Center and Fieldhouse",
+  "rules_verified_on": "2026-11-25",
+  "counts": {
+    "PASS": 17,
+    "FAIL": 27,
+    "REVIEW": 4,
+    "INFO": 3,
+    "N/A": 2
+  },
+  "outcome": "gaps-found",
+  "findings": [
+    {
+      "id": "AUTH-1",
+      "section": "Authority",
+      "title": "Agency is a local agency",
+      "status": "REVIEW",
+      "citation": "Pub. Cont. Code § 22185(g)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "eligible_agency_types"
+      ],
+      "detail": "Recorded as a special district (recreation and park district). The chapter does not define “special district”, so confirm this entity qualifies."
+    },
+    {
+      "id": "AUTH-2",
+      "section": "Authority",
+      "title": "Not a state-owned or state-operated facility",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code §§ 22185(d), 22185.9",
+      "verification": "primary-text",
+      "rule_keys": [
+        "state_facility_exclusion"
+      ],
+      "detail": "The project is not on a state-owned or state-operated facility."
+    },
+    {
+      "id": "AUTH-3",
+      "section": "Authority",
+      "title": "Project value exceeds $5,000,000",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.1",
+      "verification": "primary-text",
+      "rule_keys": [
+        "min_project_value_exclusive"
+      ],
+      "detail": "Estimated cost is $5,000,000; the statute requires more than $5,000,000 (exactly the threshold is not “in excess of” it)."
+    },
+    {
+      "id": "AUTH-4",
+      "section": "Authority",
+      "title": "Agency project count stays within 10",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.1",
+      "verification": "primary-text",
+      "rule_keys": [
+        "max_projects_per_agency"
+      ],
+      "detail": "This would be project 11 of 10 (10 earlier). The cap is exceeded. The agency also reports 1 project(s) under the separate water-agency chapter 4.1 (SB 991); the engine does not count those here."
+    },
+    {
+      "id": "AUTH-5",
+      "section": "Authority",
+      "title": "Procurement falls inside the chapter’s life",
+      "status": "REVIEW",
+      "citation": "Stats. 2023, ch. 500, § 1 (SB 706); Pub. Cont. Code § 22185.11",
+      "verification": "primary-text",
+      "rule_keys": [
+        "chapter_operative_from",
+        "chapter_repeal_date"
+      ],
+      "detail": "RFQ issue 2028-10-02, contract award 2029-02-12 fall before the 2030-01-01 repeal (1133 days from 2026-11-25). But phase 2 amendment (2030-03-01) and expected completion (2031-08-30) would come on or after repeal, and the chapter does not address contracts in progress at that date."
+    },
+    {
+      "id": "AUTH-6",
+      "section": "Authority",
+      "title": "Organizational conflict-of-interest guidelines developed",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.2",
+      "verification": "primary-text",
+      "rule_keys": [
+        "coi_guidelines_required"
+      ],
+      "detail": "Agency has not developed the required guidelines."
+    },
+    {
+      "id": "RFQ-1",
+      "section": "Request for qualifications",
+      "title": "Size, type, and desired design character of the project",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(1)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "RFQ-2",
+      "section": "Request for qualifications",
+      "title": "Expected cost range",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(a)(1)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Missing from the RFQ."
+    },
+    {
+      "id": "RFQ-3",
+      "section": "Request for qualifications",
+      "title": "Methodology for evaluating qualifications",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(1)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "RFQ-4",
+      "section": "Request for qualifications",
+      "title": "Procedure for final selection",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(1)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "RFQ-5",
+      "section": "Request for qualifications",
+      "title": "Significant factors the agency expects to consider, including technical design and construction expertise",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(2)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "RFQ-6",
+      "section": "Request for qualifications",
+      "title": "Relative importance or weight of each factor",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(a)(3)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Missing from the RFQ."
+    },
+    {
+      "id": "RFQ-7",
+      "section": "Request for qualifications",
+      "title": "Standard template request for statements of qualifications",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "RFQ-8",
+      "section": "Request for qualifications",
+      "title": "Certification under penalty of perjury by the design-build entity and its general partners or joint venture members",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(a)(5)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Missing from the RFQ."
+    },
+    {
+      "id": "TPL-A",
+      "section": "Request for qualifications",
+      "title": "Template asks for: Listing of shareholders, partners, or members who will perform work (privately held entities)",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(A)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "template_items"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "TPL-B",
+      "section": "Request for qualifications",
+      "title": "Template asks for: Evidence of experience and capacity, key personnel, and a financial statement",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(B)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "template_items"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "TPL-C",
+      "section": "Request for qualifications",
+      "title": "Template asks for: Licenses, registration, and credentials, including any revocation or suspension",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(C)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "template_items"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "TPL-D",
+      "section": "Request for qualifications",
+      "title": "Template asks for: Capacity to obtain payment and performance bonds, liability insurance, and errors and omissions insurance",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(D)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "template_items"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "TPL-E",
+      "section": "Request for qualifications",
+      "title": "Template asks for: Workers’ compensation experience history and worker safety program",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(E)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "template_items"
+      ],
+      "detail": "Missing from the template."
+    },
+    {
+      "id": "TPL-F",
+      "section": "Request for qualifications",
+      "title": "Template asks for: Organizational documents or agreement committing to form the organization",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(F)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "template_items"
+      ],
+      "detail": "Present."
+    },
+    {
+      "id": "TPL-G",
+      "section": "Request for qualifications",
+      "title": "Template asks for: An acceptable safety record",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(G)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "template_items"
+      ],
+      "detail": "Missing from the template."
+    },
+    {
+      "id": "RFQ-W1",
+      "section": "Request for qualifications",
+      "title": "Every listed factor has a weight",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(a)(3)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "No weight for: Technical approach."
+    },
+    {
+      "id": "RFQ-W3",
+      "section": "Request for qualifications",
+      "title": "Price is not the sole basis of award",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185(i)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "qbs_definition"
+      ],
+      "detail": "1 weighted non-price factor(s)."
+    },
+    {
+      "id": "RFQ-N",
+      "section": "Request for qualifications",
+      "title": "Bid documents give notice of the skilled and trained workforce requirement",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code §§ 2600(c), 2600.5",
+      "verification": "primary-text",
+      "rule_keys": [
+        "stw_notice"
+      ],
+      "detail": "Notice is missing. Under § 2600.5 the omission does not excuse the requirement."
+    },
+    {
+      "id": "SOQ1-SAFE",
+      "section": "Proposer: Pallister Crane Constructors LLC",
+      "title": "Acceptable safety record",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(G)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "safety_emr_max_avg"
+      ],
+      "detail": "Three-year average EMR 1.070 (limit 1.00); recordable rate 3.4 vs standard 2.8; lost work rate 1.2 vs standard 1.4."
+    },
+    {
+      "id": "SOQ1-CERT",
+      "section": "Proposer: Pallister Crane Constructors LLC",
+      "title": "Information certified under penalty of perjury",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(a)(5)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Entity certified, but not all general partners or joint venture members did."
+    },
+    {
+      "id": "SOQ1-STW",
+      "section": "Proposer: Pallister Crane Constructors LLC",
+      "title": "Skilled and trained workforce commitment or exception",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "stw_commitment",
+        "pla_renewal_cutoff"
+      ],
+      "detail": "No enforceable commitment and no project labor agreement exception. The entity “shall not be evaluated for selection”."
+    },
+    {
+      "id": "SOQ1-COI",
+      "section": "Proposer: Pallister Crane Constructors LLC",
+      "title": "Organizational conflict of interest",
+      "status": "REVIEW",
+      "citation": "Pub. Cont. Code § 22185.2; Gov. Code § 1090; People v. Superior Court (Sahlolbei)",
+      "verification": "not-verified",
+      "rule_keys": [
+        "coi_guidelines_required",
+        "gov_code_1090"
+      ],
+      "detail": "Quillfeather Program Advisors performed services for the agency relating to this solicitation. Apply the agency’s § 22185.2 guidelines. The research report also points to Gov. Code § 1090; that statute was not read for this build."
+    },
+    {
+      "id": "SOQ2-SAFE",
+      "section": "Proposer: Dunmore & Asher Design-Build",
+      "title": "Acceptable safety record",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(4)(G)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "safety_emr_max_avg"
+      ],
+      "detail": "Three-year average EMR 0.927 (limit 1.00); recordable rate 2 vs standard 2.8; lost work rate 1 vs standard 1.4."
+    },
+    {
+      "id": "SOQ2-CERT",
+      "section": "Proposer: Dunmore & Asher Design-Build",
+      "title": "Information certified under penalty of perjury",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(a)(5)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "rfq_elements"
+      ],
+      "detail": "Certified by the entity."
+    },
+    {
+      "id": "SOQ2-STW",
+      "section": "Proposer: Dunmore & Asher Design-Build",
+      "title": "Skilled and trained workforce commitment or exception",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "stw_commitment",
+        "pla_renewal_cutoff"
+      ],
+      "detail": "Renewal of an agency project labor agreement first entered 2023-06-15; the exception needs a date before 2023-01-01 (§ 22185.3(b)(2)(B))."
+    },
+    {
+      "id": "AWD-1",
+      "section": "Award, bonds, and insurance",
+      "title": "Award publicly announced with the awardee named",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.3(d)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "award_announcement"
+      ],
+      "detail": "Announced."
+    },
+    {
+      "id": "AWD-2",
+      "section": "Award, bonds, and insurance",
+      "title": "Statement of the basis of the award",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.3(d)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "award_announcement"
+      ],
+      "detail": "No basis-of-award statement recorded. The statement and contract file must be enough to satisfy an external audit."
+    },
+    {
+      "id": "BND-1",
+      "section": "Award, bonds, and insurance",
+      "title": "Payment bond is at least the performance bond",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.4(a)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "payment_bond_min_ratio_to_performance"
+      ],
+      "detail": "Payment bond $5,400,000; performance bond $10,800,000. Short by $5,400,000."
+    },
+    {
+      "id": "BND-2",
+      "section": "Award, bonds, and insurance",
+      "title": "Bonds issued by a California admitted surety",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.4(a)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "bond_and_insurance_terms"
+      ],
+      "detail": "Surety recorded as California admitted."
+    },
+    {
+      "id": "BND-3",
+      "section": "Award, bonds, and insurance",
+      "title": "Contract requires errors and omissions insurance for design",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.4(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "bond_and_insurance_terms"
+      ],
+      "detail": "Not required in the contract."
+    },
+    {
+      "id": "BND-4",
+      "section": "Award, bonds, and insurance",
+      "title": "Agency has a standard bond form for design-build projects",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.4(c)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "bond_and_insurance_terms"
+      ],
+      "detail": "No standard form recorded."
+    },
+    {
+      "id": "GMP-1",
+      "section": "Guaranteed maximum price and retention",
+      "title": "Cost against the guaranteed maximum price",
+      "status": "INFO",
+      "citation": "Pub. Cont. Code § 22185.5(b)(2)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "gmp_terms"
+      ],
+      "detail": "Projected cost $13,150,000 exceeds the guaranteed maximum price $12,400,000 by $750,000. That excess is the design-build entity’s responsibility."
+    },
+    {
+      "id": "GMP-2",
+      "section": "Guaranteed maximum price and retention",
+      "title": "Shared savings rest on a prior written agreement",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.5(b)(2)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "gmp_terms"
+      ],
+      "detail": "The contract gives the entity 50% of savings without a prior written agreement."
+    },
+    {
+      "id": "GMP-3",
+      "section": "Guaranteed maximum price and retention",
+      "title": "Overruns above the guaranteed maximum price stay with the entity",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.5(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "gmp_terms"
+      ],
+      "detail": "A contract clause moves overruns to the agency. The statute allows an amendment for unforeseen site conditions; anything broader conflicts with it."
+    },
+    {
+      "id": "RET-1",
+      "section": "Guaranteed maximum price and retention",
+      "title": "No retention on work to establish the guaranteed maximum price",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.7(a)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "retention_cap"
+      ],
+      "detail": "Phase 1 retention is 5%; it must be zero."
+    },
+    {
+      "id": "RET-2",
+      "section": "Guaranteed maximum price and retention",
+      "title": "Retention from the design-build entity is at most 5%",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.7(a)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "retention_cap"
+      ],
+      "detail": "Rate is 10%; cap is 5% because bonds are required in the solicitation."
+    },
+    {
+      "id": "RET-S1",
+      "section": "Guaranteed maximum price and retention",
+      "title": "Subcontract retention does not exceed the prime rate: Varga Mechanical",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.7(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "retention_cap"
+      ],
+      "detail": "Subcontract rate 15%; prime rate 10%. No bond-notice exception recorded."
+    },
+    {
+      "id": "SUB-0",
+      "section": "Construction subcontracts",
+      "title": "Subcontract award threshold",
+      "status": "INFO",
+      "citation": "Pub. Cont. Code § 22185.6(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "subcontract_threshold_fraction",
+        "subcontract_rule_min_contract_value"
+      ],
+      "detail": "Threshold is $54,000 (0.5% of $10,800,000 allocable to construction.) Subcontracts above it, other than those listed in the statement of qualifications, need the § 22185.6(b) process."
+    },
+    {
+      "id": "SUB-1",
+      "section": "Construction subcontracts",
+      "title": "Varga Mechanical ($1,900,000)",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.6(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "subcontract_threshold_fraction",
+        "subcontract_rule_min_contract_value"
+      ],
+      "detail": "Above the $54,000 threshold by $1,846,000. Missing: public notice of the work; a fixed date and time for submissions; award on a best value basis (recorded: low_bid)."
+    },
+    {
+      "id": "SUB-2",
+      "section": "Construction subcontracts",
+      "title": "Lindqvist Pool Systems ($54,000)",
+      "status": "N/A",
+      "citation": "Pub. Cont. Code § 22185.6(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "subcontract_threshold_fraction",
+        "subcontract_rule_min_contract_value"
+      ],
+      "detail": "At or below the $54,000 threshold."
+    },
+    {
+      "id": "SUB-3",
+      "section": "Construction subcontracts",
+      "title": "Corbel Glass ($54,001)",
+      "status": "PASS",
+      "citation": "Pub. Cont. Code § 22185.6(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "subcontract_threshold_fraction",
+        "subcontract_rule_min_contract_value"
+      ],
+      "detail": "Above the $54,000 threshold by $1. Public notice, criteria, and best value award are recorded."
+    },
+    {
+      "id": "STW-1",
+      "section": "Skilled and trained workforce, monthly",
+      "title": "Pallister Crane Constructors LLC · plumber · 2029-09",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 2601(d)(2)(D)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "stw_graduate_pct_default"
+      ],
+      "detail": "Required 60% graduates. By headcount 5/10 = 50.0%. By hours 800/1500 = 53.3%. Neither test is met. The agency must withhold $330,000 (150% of the $220,000 monthly billing) until a compliance plan is provided, and forward the report to the Labor Commissioner (§ 2602(c))."
+    },
+    {
+      "id": "STW-2",
+      "section": "Skilled and trained workforce, monthly",
+      "title": "Varga Mechanical · sheet metal worker · 2029-09",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 2602(b)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "stw_withhold_multiplier"
+      ],
+      "detail": "No complete monthly report. The agency must withhold further payments until one is provided; where a subcontractor caused the gap, the withholding is $144,000 (150% of its $96,000 billing)."
+    },
+    {
+      "id": "STW-3",
+      "section": "Skilled and trained workforce, monthly",
+      "title": "Pallister Crane Constructors LLC · teamster · 2029-09",
+      "status": "N/A",
+      "citation": "Pub. Cont. Code § 2601(d)(2)(A)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "stw_exempt_occupations"
+      ],
+      "detail": "The graduation percentage does not apply to teamster work."
+    },
+    {
+      "id": "LEG-1",
+      "section": "Report to the Legislature",
+      "title": "Report submitted by 2028-12-31",
+      "status": "INFO",
+      "citation": "Pub. Cont. Code § 22185.8(a)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "legislature_report_due"
+      ],
+      "detail": "Not yet submitted. 767 days remain from 2026-11-25. It must go to the appropriate policy and fiscal committees, in compliance with Gov. Code § 9795."
+    },
+    {
+      "id": "LEG-2",
+      "section": "Report to the Legislature",
+      "title": "Award after the report deadline",
+      "status": "REVIEW",
+      "citation": "Pub. Cont. Code § 22185.8(a)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "legislature_report_due"
+      ],
+      "detail": "The award (2029-02-12) comes after the 2028-12-31 deadline. The statute sets a single report date and does not say how later projects are reported."
+    },
+    {
+      "id": "LEG-3",
+      "section": "Report to the Legislature",
+      "title": "Report covers all ten required items",
+      "status": "FAIL",
+      "citation": "Pub. Cont. Code § 22185.8(b)(1)-(10)",
+      "verification": "primary-text",
+      "rule_keys": [
+        "legislature_report_contents"
+      ],
+      "detail": "Missing 3 of 10: Written protests and their resolution (§ 22185.8(b)(4)); Specialty subcontractors, by trade, that provided design services but did not meet the target price and did not build (§ 22185.8(b)(6)); Whether any design by such a subcontractor was used by the agency (§ 22185.8(b)(7))."
+    }
+  ],
+  "rfq_scan": [
+    {
+      "key": "project_description",
+      "label": "Size, type, and design character",
+      "citation": "§ 22185.3(a)(1)",
+      "found": true,
+      "line": 5,
+      "excerpt": "1. Project description. The District seeks a design-build entity for a new"
+    },
+    {
+      "key": "expected_cost_range",
+      "label": "Expected cost range",
+      "citation": "§ 22185.3(a)(1)",
+      "found": false,
+      "line": null,
+      "excerpt": null
+    },
+    {
+      "key": "evaluation_methodology",
+      "label": "Evaluation methodology",
+      "citation": "§ 22185.3(a)(1)",
+      "found": true,
+      "line": 8,
+      "excerpt": "panel. The methodology is described in Attachment B."
+    },
+    {
+      "key": "final_selection_procedure",
+      "label": "Final selection procedure",
+      "citation": "§ 22185.3(a)(1)",
+      "found": true,
+      "line": 11,
+      "excerpt": "4. Final selection. The panel may interview some or all respondents before"
+    },
+    {
+      "key": "significant_factors",
+      "label": "Significant evaluation factors",
+      "citation": "§ 22185.3(a)(2)",
+      "found": true,
+      "line": 9,
+      "excerpt": "3. Evaluation factors. The District expects to consider team experience,"
+    },
+    {
+      "key": "factor_weights",
+      "label": "Factor weights",
+      "citation": "§ 22185.3(a)(3)",
+      "found": false,
+      "line": null,
+      "excerpt": null
+    },
+    {
+      "key": "perjury_certification",
+      "label": "Penalty of perjury certification",
+      "citation": "§ 22185.3(a)(5)",
+      "found": false,
+      "line": null,
+      "excerpt": null
+    },
+    {
+      "key": "tpl_owners_listing",
+      "label": "Shareholders, partners, or members",
+      "citation": "§ 22185.3(a)(4)(A)",
+      "found": true,
+      "line": 14,
+      "excerpt": "of shareholders, a financial statement, licenses held, evidence of capacity"
+    },
+    {
+      "key": "tpl_experience_and_financial",
+      "label": "Experience and financial statement",
+      "citation": "§ 22185.3(a)(4)(B)",
+      "found": true,
+      "line": 14,
+      "excerpt": "of shareholders, a financial statement, licenses held, evidence of capacity"
+    },
+    {
+      "key": "tpl_licenses",
+      "label": "Licenses and any revocation or suspension",
+      "citation": "§ 22185.3(a)(4)(C)",
+      "found": true,
+      "line": 14,
+      "excerpt": "of shareholders, a financial statement, licenses held, evidence of capacity"
+    },
+    {
+      "key": "tpl_bonding_insurance_capacity",
+      "label": "Bonding and insurance capacity",
+      "citation": "§ 22185.3(a)(4)(D)",
+      "found": true,
+      "line": 15,
+      "excerpt": "to obtain payment and performance bonds, and organizational documents."
+    },
+    {
+      "key": "tpl_workers_comp_safety_program",
+      "label": "Workers’ compensation history and safety program",
+      "citation": "§ 22185.3(a)(4)(E)",
+      "found": false,
+      "line": null,
+      "excerpt": null
+    },
+    {
+      "key": "tpl_org_documents",
+      "label": "Organizational documents",
+      "citation": "§ 22185.3(a)(4)(F)",
+      "found": true,
+      "line": 15,
+      "excerpt": "to obtain payment and performance bonds, and organizational documents."
+    },
+    {
+      "key": "tpl_safety_record",
+      "label": "Safety record",
+      "citation": "§ 22185.3(a)(4)(G)",
+      "found": false,
+      "line": null,
+      "excerpt": null
+    },
+    {
+      "key": "stw_commitment",
+      "label": "Skilled and trained workforce commitment",
+      "citation": "§ 22185.3(b)",
+      "found": true,
+      "line": 16,
+      "excerpt": "6. Labor. The District is party to a project labor agreement renewed in 2024."
+    },
+    {
+      "key": "coi",
+      "label": "Organizational conflict of interest",
+      "citation": "§ 22185.2",
+      "found": false,
+      "line": null,
+      "excerpt": null
+    }
+  ]
+}

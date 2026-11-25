@@ -9,3 +9,4 @@ Personal portfolio demos of legal tools. Fictional data only. Not legal advice; 
 - [brown-act-cpra-desk/](brown-act-cpra-desk/): Brown Act agenda checks and a CPRA records desk with verified PDF redaction (report Tool 6). Python, fictional data.
 - [buy-america-auditor](buy-america-auditor/): checks a transit bill of materials against FTA Buy America (49 CFR Part 661) and BABA (2 CFR Part 184). Synthetic data.
 - [ipd-seismic/](ipd-seismic/): IFOA risk/reward pool ledger checker and waterfall, plus a hospital seismic deadline tracker (report Tool 4). Python, live-formula workbook, fictional data.
+- [sb706-validator/](sb706-validator/): checks a progressive design-build procurement record against SB 706, Pub. Cont. Code §§ 22185–22185.11 (report Tool 5). Node, no dependencies, fictional data.
