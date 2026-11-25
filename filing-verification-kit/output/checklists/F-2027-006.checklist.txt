@@ -1,0 +1,35 @@
+Filing F-2027-006  (motion)  checked 2027-01-12T17:00:00+00:00
+
+  PASS            Document type is in scope
+                  'motion' is treated as a paper filed in court. Every citation needs personal verification.
+  PASS            Responsible attorney named
+                  Responsible attorney: Perrin Ashgrove (fictional attorney).
+  PASS            Document found and hashed
+                  SHA-256 of file: b23febe5afff1d9ad785da570f54eeaefb3ab3af1f7e70b775f38d0bc3f60fe9.
+  PASS            Citation report present
+                  citecheck-report, citations listed: 1 (machine: 1 pass, 0 warn, 0 fail, 0 manual).
+  PASS            Report matches the document
+                  The report's document hash equals the hash of the document text as it is now.
+  PASS            Every citation attested by the attorney
+                  All 1 citations have an attestation by Perrin Ashgrove (fictional attorney) with date and method.
+  PASS            No unresolved or not-found citations
+                  No citation is unresolved or not found.
+  PASS            No quote mismatches
+                  No quotation was reported as a mismatch.
+  PASS            Machine warnings resolved
+                  No machine warnings.
+  PASS            AI-use answer recorded
+                  Recorded answer: generative AI was not used.
+  NOT APPLICABLE  AI output reviewed and corrected
+                  Generative AI was not used.
+  NOT APPLICABLE  Protected information question answered
+                  Generative AI was not used.
+  NOT APPLICABLE  AI-use disclosure decision recorded
+                  Generative AI was not used.
+  PASS            Judge and court AI orders checked
+                  1 entry found for judge 'fict-ostergaard' in court 'fict-alder-ridge', checked within 30 days (most recent 4 days before 2027-01-12).
+  PASS            Judge order requirement met
+                  Each order requirement on file has a recorded response.
+                  - JO-002 (certification): Standing order re certification of citations (fictional order). Response recorded: Certification text added above the signature block.
+
+Result: CLEAR TO FILE

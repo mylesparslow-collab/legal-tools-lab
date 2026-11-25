@@ -1,0 +1,362 @@
+{
+  "record_type": "Filing verification record",
+  "record_version": 1,
+  "kit": "filingkit 0.1.0",
+  "notice": "Personal portfolio demo with fictional data. Not legal advice. Not reviewed by an attorney.",
+  "filing_id": "F-2027-001",
+  "matter": {
+    "number": "M-00311",
+    "client": "Larkspur Canning Cooperative (fictional client)",
+    "caption": "Vantongeren v. Larkspur Canning Cooperative (fictional)",
+    "case_number": "AR-27-000311"
+  },
+  "court_id": "fict-alder-ridge",
+  "court": "Superior Court, County of Alder Ridge (fictional)",
+  "judge_id": "fict-quillon",
+  "planned_filing_date": "2027-01-15",
+  "responsible_attorney": {
+    "name": "Perrin Ashgrove (fictional attorney)",
+    "bar_number": "FICT-000101"
+  },
+  "document": {
+    "path": "document.txt",
+    "title": "Opposition to motion for summary adjudication",
+    "type": "opposition",
+    "sha256": "4711f7398b380683bb7466c5ba2e36b76c16a8a274e55451f5f8c3cad48d4901",
+    "verifier_text_sha256": "a8dc375dd1fbd643db65776e7569668ca565fb61394c347ce1e113bb69f6872c"
+  },
+  "citation_report": {
+    "source_format": "citecheck-report",
+    "doc_sha256": "a8dc375dd1fbd643db65776e7569668ca565fb61394c347ce1e113bb69f6872c",
+    "matches_document": true,
+    "summary": {
+      "PASS": 3,
+      "WARN": 0,
+      "FAIL": 0,
+      "MANUAL": 0,
+      "total": 3,
+      "quotes": 3,
+      "unverified_quotes": 0
+    }
+  },
+  "citations": [
+    {
+      "id": "f402f4de-1",
+      "citation": "Halvorsen v. Bright Harbor Staffing, Inc. 97 Cal.5th 210, 223",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "PASS",
+      "machine_flags": [],
+      "attested_by": "Perrin Ashgrove (fictional attorney)",
+      "attested_at": "2027-01-12T14:10:00+00:00",
+      "how_checked": "Read the opinion in the firm research database; confirmed the holding, the pinpoint page and the quotation.",
+      "resolution": null,
+      "attestation_counts": true
+    },
+    {
+      "id": "f402f4de-2",
+      "citation": "Id. at 230",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "PASS",
+      "machine_flags": [],
+      "attested_by": "Perrin Ashgrove (fictional attorney)",
+      "attested_at": "2027-01-12T14:17:00+00:00",
+      "how_checked": "Opened the cited page and compared the quotation word for word; ran a citator check for later history.",
+      "resolution": null,
+      "attestation_counts": true
+    },
+    {
+      "id": "b3ac3fd6-1",
+      "citation": "Quillfeather Mfg. Co. v. Dunmore 977 F.4th 1180, 1187",
+      "key": "case:977 F.4th 1180",
+      "machine_status": "PASS",
+      "machine_flags": [],
+      "attested_by": "Perrin Ashgrove (fictional attorney)",
+      "attested_at": "2027-01-12T14:24:00+00:00",
+      "how_checked": "Read the full opinion; confirmed it supports the sentence it is cited for and is still citable.",
+      "resolution": null,
+      "attestation_counts": true
+    }
+  ],
+  "ai_use": {
+    "used": true,
+    "tools": [
+      "Drafting assistant (fictional product)"
+    ],
+    "purposes": [
+      "first draft of the argument section",
+      "summary of deposition excerpts"
+    ],
+    "output_verified": {
+      "by": "Perrin Ashgrove (fictional attorney)",
+      "on": "2027-01-12T15:40:00+00:00",
+      "how": "Read every AI-drafted paragraph against the record and the cited authorities; rewrote two sentences that overstated a holding."
+    },
+    "protected_info_entered": false,
+    "protected_info_review_by": null
+  },
+  "disclosure": {
+    "decision": "disclose",
+    "option_id": "C",
+    "text": "Counsel used generative artificial intelligence to assist in preparing this document, specifically for a first draft of the argument section and a summary of deposition excerpts. The undersigned attorney personally verified every citation in this document and reviewed and corrected all AI-assisted content before filing.",
+    "decided_by": "Perrin Ashgrove (fictional attorney)",
+    "decided_on": "2027-01-12",
+    "reason": null,
+    "approved_by": null,
+    "wording_status": "DRAFT wording, not approved"
+  },
+  "judge_order_snapshot": {
+    "court_id": "fict-alder-ridge",
+    "judge_id": "fict-quillon",
+    "as_of": "2027-01-12",
+    "staleness_days": 30,
+    "status": "current",
+    "message": "1 entry found for judge 'fict-quillon' in court 'fict-alder-ridge', checked within 30 days (most recent 6 days before 2027-01-12). No requirement was known when last checked. That is a record of a search, not a statement that no order exists.",
+    "fictional_sample_data": true,
+    "entries": [
+      {
+        "entry_id": "JO-001",
+        "court_id": "fict-alder-ridge",
+        "court": "Superior Court, County of Alder Ridge (fictional)",
+        "judge_id": "fict-quillon",
+        "judge": "Hon. Thessaly Quillon (fictional judge)",
+        "order_title": "No standing order on generative AI found (fictional entry)",
+        "effective_date": null,
+        "requirement_type": "none_known",
+        "applies_when": "always",
+        "required_text": null,
+        "source_url": "https://courts.example/alder-ridge/dept-4/standing-orders",
+        "last_checked": "2027-01-06",
+        "checked_by": "Jun Tessaro (fictional paralegal)",
+        "age_days": 6,
+        "stale": false
+      }
+    ]
+  },
+  "judge_order_check": null,
+  "judge_order_response": null,
+  "checklist": {
+    "generated_at": "2027-01-12T17:30:00+00:00",
+    "policy_version": "draft-0.1",
+    "result": "CLEAR TO FILE",
+    "clear_to_file": true,
+    "counts": {
+      "PASS": 14,
+      "FAIL": 0,
+      "NEEDS ATTENTION": 0,
+      "NOT APPLICABLE": 1
+    },
+    "items": [
+      {
+        "id": "document_scope",
+        "title": "Document type is in scope",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "'opposition' is treated as a paper filed in court. Every citation needs personal verification.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "sb574_enactment"
+        ],
+        "details": []
+      },
+      {
+        "id": "responsible_attorney",
+        "title": "Responsible attorney named",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "Responsible attorney: Perrin Ashgrove (fictional attorney).",
+        "authority_keys": [
+          "ccp_128_7_b2A"
+        ],
+        "details": []
+      },
+      {
+        "id": "document_present",
+        "title": "Document found and hashed",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "SHA-256 of file: 4711f7398b380683bb7466c5ba2e36b76c16a8a274e55451f5f8c3cad48d4901.",
+        "authority_keys": [],
+        "details": []
+      },
+      {
+        "id": "citation_report_present",
+        "title": "Citation report present",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "citecheck-report, citations listed: 3 (machine: 3 pass, 0 warn, 0 fail, 0 manual).",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "report_matches_document",
+        "title": "Report matches the document",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "The report's document hash equals the hash of the document text as it is now.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "citations_attested",
+        "title": "Every citation attested by the attorney",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "All 3 citations have an attestation by Perrin Ashgrove (fictional attorney) with date and method.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "citations_resolved",
+        "title": "No unresolved or not-found citations",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "No citation is unresolved or not found.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "quotes_match",
+        "title": "No quote mismatches",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "No quotation was reported as a mismatch.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "machine_warnings",
+        "title": "Machine warnings resolved",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "No machine warnings.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "ai_use_recorded",
+        "title": "AI-use answer recorded",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "Generative AI used. Tools: Drafting assistant (fictional product). Purposes: first draft of the argument section; summary of deposition excerpts.",
+        "authority_keys": [
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "ai_output_verified",
+        "title": "AI output reviewed and corrected",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "Perrin Ashgrove (fictional attorney) on 2027-01-12T15:40:00+00:00: Read every AI-drafted paragraph against the record and the cited authorities; rewrote two sentences that overstated a holding.",
+        "authority_keys": [
+          "bpc_6068_1_a3Bi",
+          "bpc_6068_1_a3Bii"
+        ],
+        "details": []
+      },
+      {
+        "id": "protected_info_check",
+        "title": "Protected information question answered",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "Recorded answer: no information in the listed categories was entered into an AI tool.",
+        "authority_keys": [
+          "bpc_6068_1_b2"
+        ],
+        "details": []
+      },
+      {
+        "id": "ai_disclosure_decision",
+        "title": "AI-use disclosure decision recorded",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "Decision: disclose, using draft option C, decided by Perrin Ashgrove (fictional attorney). The wording is a draft until the General Counsel approves it.",
+        "authority_keys": [
+          "bpc_6068_1_a3C"
+        ],
+        "details": []
+      },
+      {
+        "id": "judge_order_checked",
+        "title": "Judge and court AI orders checked",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "1 entry found for judge 'fict-quillon' in court 'fict-alder-ridge', checked within 30 days (most recent 6 days before 2027-01-12). No requirement was known when last checked. That is a record of a search, not a statement that no order exists.",
+        "authority_keys": [],
+        "details": []
+      },
+      {
+        "id": "judge_order_complied",
+        "title": "Judge order requirement met",
+        "status": "NOT APPLICABLE",
+        "blocking": false,
+        "reason": "No requirement is on file for this judge or court.",
+        "authority_keys": [],
+        "details": []
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "key": "bpc_6068_1_a3Bi",
+      "section": "Bus. & Prof. Code § 6068.1(a)(3)(B)(i)",
+      "paraphrase": "An attorney using generative AI must take reasonable steps to verify its output, including all case and statutory citations.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "bpc_6068_1_a3Bii",
+      "section": "Bus. & Prof. Code § 6068.1(a)(3)(B)(ii)",
+      "paraphrase": "The attorney must also correct hallucinated output.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "bpc_6068_1_a3C",
+      "section": "Bus. & Prof. Code § 6068.1(a)(3)(C)",
+      "paraphrase": "Disclose generative AI use to the court for documents submitted to the court.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "bpc_6068_1_b2",
+      "section": "Bus. & Prof. Code § 6068.1(b)(2)(A)-(I)",
+      "paraphrase": "A list of personal identifying information categories relevant to what may be entered into AI tools. Item (I) covers sealed or confidential content.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "ccp_128_7_b2A",
+      "section": "Code Civ. Proc. § 128.7(b)(2)(A)",
+      "paraphrase": "A brief, pleading, motion or other paper filed in any court must not contain any citation that the responsible attorney has not personally verified. This covers any citation, not only cases and statutes.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "sb574_enactment",
+      "section": "Stats. 2026, ch. 858 (SB 574)",
+      "paraphrase": "Approved Sept. 30, 2026. No urgency clause. Operative Jan. 1, 2027. Adds Bus. & Prof. Code § 6068.1, amends Code Civ. Proc. § 128.7, adds Code Civ. Proc. §§ 180 and 1282.1, and amends Bus. & Prof. Code § 6173.",
+      "verified_on": "2026-11-25"
+    }
+  ],
+  "signer": {
+    "name": "Perrin Ashgrove (fictional attorney)",
+    "statement": "I am the attorney responsible for this filing. I personally verified each citation listed in this record, in the way stated next to it. I reviewed the generative AI output used in preparing this document, if any, and corrected what needed correcting. The answers in this record are mine."
+  },
+  "signed_at": "2027-01-12T17:30:00+00:00",
+  "record_sha256": "f57a4b693ddc8df8cf68827f5402efc2827f69cc7069b88497cf0468dd39c1fa"
+}

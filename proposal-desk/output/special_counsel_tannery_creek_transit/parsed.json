@@ -1,0 +1,888 @@
+{
+ "meta": {
+  "agency": "Tannery Creek Transit Authority",
+  "agency_short": "Authority",
+  "agency_type": "transit",
+  "agency_source": {
+   "line": 11,
+   "text": "Tannery Creek Transit Authority (the \"Authority\") seeks special counsel for the"
+  },
+  "agency_confidence": "ok",
+  "title": "Special Counsel - Eastline Extension Capital Project",
+  "rfp_number": "TCTA-26-031",
+  "practice": "capital_projects",
+  "subjects": [
+   "open meetings",
+   "public contracting",
+   "construction",
+   "claims",
+   "real property",
+   "transit"
+  ]
+ },
+ "deadlines": [
+  {
+   "kind": "issued",
+   "label": "Solicitation issued",
+   "date": "2026-11-02",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 36,
+    "text": "Solicitation issued November 2, 2026"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D1"
+  },
+  {
+   "kind": "conference",
+   "label": "Pre-proposal conference (optional)",
+   "date": "2026-11-12",
+   "end_date": null,
+   "time": "10:00",
+   "source": {
+    "line": 37,
+    "text": "Pre-proposal conference (optional) November 12, 2026, 10:00 a.m."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D2"
+  },
+  {
+   "kind": "questions_due",
+   "label": "Requests for clarification due",
+   "date": "2026-12-11",
+   "end_date": null,
+   "time": "17:00",
+   "source": {
+    "line": 38,
+    "text": "Requests for clarification due December 8, 2026, 5:00 p.m."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": "Addendum 1",
+   "original_date": "2026-12-08",
+   "original_time": "17:00",
+   "change_source": {
+    "line": 136,
+    "text": "The deadline for requests for clarification is extended to December 11, 2026, 5:00 p.m."
+   },
+   "id": "D3"
+  },
+  {
+   "kind": "submission_due",
+   "label": "Proposals due",
+   "date": "2027-01-08",
+   "end_date": null,
+   "time": "15:00",
+   "source": {
+    "line": 39,
+    "text": "Proposals due January 8, 2027, 3:00 p.m."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D4"
+  },
+  {
+   "kind": "interview",
+   "label": "Oral presentations",
+   "date": "2027-01-26",
+   "end_date": "2027-01-27",
+   "time": null,
+   "source": {
+    "line": 40,
+    "text": "Oral presentations January 26-27, 2027"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D5"
+  },
+  {
+   "kind": "award",
+   "label": "Anticipated Board action",
+   "date": "2027-02-18",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 41,
+    "text": "Anticipated Board action February 18, 2027"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D6"
+  }
+ ],
+ "mechanics": [
+  {
+   "kind": "page_limit",
+   "value": 25,
+   "source": {
+    "line": 91,
+    "text": "Proposals shall not exceed thirty (30) pages, excluding resumes, required forms and the Cost Proposal."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "original_value": 30,
+   "changed_by": "Addendum 1",
+   "change_source": {
+    "line": 138,
+    "text": "Section C.3 is revised: proposals shall not exceed twenty-five (25) pages. The exclusions are unchanged."
+   },
+   "id": "SUB1"
+  },
+  {
+   "kind": "page_exclusions",
+   "value": "resumes, required forms and the Cost Proposal",
+   "source": {
+    "line": 91,
+    "text": "Proposals shall not exceed thirty (30) pages, excluding resumes, required forms and the Cost Proposal."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB2"
+  },
+  {
+   "kind": "font",
+   "value": 11,
+   "source": {
+    "line": 91,
+    "text": "Text shall be no smaller than 11-point font with margins of at least 1 inch."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB3"
+  },
+  {
+   "kind": "margins",
+   "value": 1.0,
+   "source": {
+    "line": 91,
+    "text": "Text shall be no smaller than 11-point font with margins of at least 1 inch."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB4"
+  },
+  {
+   "kind": "delivery",
+   "value": "online portal",
+   "source": {
+    "line": 97,
+    "text": "Submit proposals through the Authority's online procurement portal."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB5"
+  },
+  {
+   "kind": "format",
+   "value": "separate PDF files",
+   "source": {
+    "line": 97,
+    "text": "Upload the technical proposal and the Cost Proposal as separate PDF files."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB6"
+  },
+  {
+   "kind": "not_accepted",
+   "value": "Hard copies will not be accepted.",
+   "source": {
+    "line": 97,
+    "text": "Hard copies will not be accepted."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB7"
+  }
+ ],
+ "requirements": [
+  {
+   "id": "R-C.2.1",
+   "label": "C.2.1",
+   "title": "Executive Summary and Firm Profile",
+   "text": "Executive Summary and Firm Profile. Summarize the proposal and describe the firm, its size, its offices and its public agency practice.",
+   "qtype": "firm_overview",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 69,
+    "text": "C.2.1 Executive Summary and Firm Profile. Summarize the proposal and describe"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C.2.2",
+   "label": "C.2.2",
+   "title": "Project Team",
+   "text": "Project Team. Identify the lead attorney and each team member, with roles and time commitment. Attach resumes.",
+   "qtype": "team",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 71,
+    "text": "C.2.2 Project Team. Identify the lead attorney and each team member, with"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C.2.3",
+   "label": "C.2.3",
+   "title": "Relevant Experience",
+   "text": "Relevant Experience. Describe up to five engagements as counsel on public capital projects in the last ten years.",
+   "qtype": "experience",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 73,
+    "text": "C.2.3 Relevant Experience. Describe up to five engagements as counsel on"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C.2.4",
+   "label": "C.2.4",
+   "title": "Project Approach",
+   "text": "Project Approach. Describe how the firm would advise on design-build contract administration, change orders, claims avoidance and right-of-way acquisition.",
+   "qtype": "approach",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 75,
+    "text": "C.2.4 Project Approach. Describe how the firm would advise on design-build"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C.2.5",
+   "label": "C.2.5",
+   "title": "References",
+   "text": "References. Provide three references for engagements described in C.2.3.",
+   "qtype": "references",
+   "mandatory": true,
+   "references_required": 3,
+   "source": {
+    "line": 78,
+    "text": "C.2.5 References. Provide three references for engagements described in C.2.3."
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C.2.6",
+   "label": "C.2.6",
+   "title": "Conflicts of Interest",
+   "text": "Conflicts of Interest. Disclose any current or past representation of the parties named in A.2 and any other actual or potential conflict.",
+   "qtype": "conflicts",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 79,
+    "text": "C.2.6 Conflicts of Interest. Disclose any current or past representation of"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C.2.7",
+   "label": "C.2.7",
+   "title": "Small and Local Business Participation",
+   "text": "Small and Local Business Participation. Describe the firm's local presence and any participation by small or local firms.",
+   "qtype": "diversity_local",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 81,
+    "text": "C.2.7 Small and Local Business Participation. Describe the firm's local"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C.2.8",
+   "label": "C.2.8",
+   "title": "Cost Proposal",
+   "text": "Cost Proposal. Submit hourly rates and a not-to-exceed budget for the first year as a separate file.",
+   "qtype": "rates",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 83,
+    "text": "C.2.8 Cost Proposal. Submit hourly rates and a not-to-exceed budget for the"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C.2.9",
+   "label": "C.2.9",
+   "title": "Staffing Continuity and Transition",
+   "text": "Staffing Continuity and Transition. Describe how the firm will keep the team stable for the life of the project and how it would take over files from current counsel.",
+   "qtype": "transition",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 85,
+    "text": "C.2.9 Staffing Continuity and Transition. Describe how the firm will keep the"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  }
+ ],
+ "forms": [
+  {
+   "ref": "Attachment 1",
+   "name": "Proposal Signature Page",
+   "text": "Attachment 1: Proposal Signature Page",
+   "signature": true,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 106,
+    "text": "D.1 Attachment 1: Proposal Signature Page"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F1"
+  },
+  {
+   "ref": "Attachment 2",
+   "name": "Non-Collusion Declaration",
+   "text": "Attachment 2: Non-Collusion Declaration",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 107,
+    "text": "D.2 Attachment 2: Non-Collusion Declaration"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F2"
+  },
+  {
+   "ref": "Attachment 3",
+   "name": "Conflict of Interest Disclosure",
+   "text": "Attachment 3: Conflict of Interest Disclosure",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 108,
+    "text": "D.3 Attachment 3: Conflict of Interest Disclosure"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F3"
+  },
+  {
+   "ref": "Attachment 4",
+   "name": "Campaign Contribution Disclosure",
+   "text": "Attachment 4: Campaign Contribution Disclosure",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 109,
+    "text": "D.4 Attachment 4: Campaign Contribution Disclosure"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F4"
+  },
+  {
+   "ref": "Attachment 5",
+   "name": "Small and Local Business Participation Form",
+   "text": "Attachment 5: Small and Local Business Participation Form",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 110,
+    "text": "D.5 Attachment 5: Small and Local Business Participation Form"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F5"
+  },
+  {
+   "ref": "Attachment 6",
+   "name": "Insurance Certification",
+   "text": "Attachment 6: Insurance Certification",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 111,
+    "text": "D.6 Attachment 6: Insurance Certification"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F6"
+  },
+  {
+   "ref": "Attachment 7",
+   "name": "Addendum Acknowledgment",
+   "text": "Attachment 7: Addendum Acknowledgment",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 140,
+    "text": "Attachment 7: Addendum Acknowledgment is added to the required forms in Part D."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "added_by": "Addendum 1",
+   "id": "F7"
+  }
+ ],
+ "min_quals": [
+  {
+   "label": "C.1.1",
+   "text": "The proposed lead attorney shall have not less than twelve (12) years of admission to the bar.",
+   "check_kind": "years_admitted",
+   "value": 12,
+   "source": {
+    "line": 57,
+    "text": "C.1.1 The proposed lead attorney shall have not less than twelve (12) years of"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-C.1.1"
+  },
+  {
+   "label": "C.1.2",
+   "text": "The proposed lead attorney shall have served as lead counsel on at least one public transit or rail capital project with a construction value over $100 million.",
+   "check_kind": "not_checkable",
+   "value": null,
+   "source": {
+    "line": 59,
+    "text": "C.1.2 The proposed lead attorney shall have served as lead counsel on at least"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-C.1.2"
+  },
+  {
+   "label": "C.1.3",
+   "text": "The firm shall have an office in the Authority's service area or commit to attending project meetings in person.",
+   "check_kind": "not_checkable",
+   "value": null,
+   "source": {
+    "line": 62,
+    "text": "C.1.3 The firm shall have an office in the Authority's service area or commit"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-C.1.3"
+  }
+ ],
+ "insurance": [
+  {
+   "text": "Professional liability: $5,000,000 per claim.",
+   "amounts": [
+    "$5,000,000"
+   ],
+   "source": {
+    "line": 129,
+    "text": "F.1 Professional liability: $5,000,000 per claim."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS1"
+  },
+  {
+   "text": "Commercial general liability: $2,000,000 per occurrence.",
+   "amounts": [
+    "$2,000,000"
+   ],
+   "source": {
+    "line": 130,
+    "text": "F.2 Commercial general liability: $2,000,000 per occurrence."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS2"
+  },
+  {
+   "text": "Cyber liability: $1,000,000 per claim.",
+   "amounts": [
+    "$1,000,000"
+   ],
+   "source": {
+    "line": 131,
+    "text": "F.3 Cyber liability: $1,000,000 per claim."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS3"
+  },
+  {
+   "text": "Automobile liability: $1,000,000 combined single limit.",
+   "amounts": [
+    "$1,000,000"
+   ],
+   "source": {
+    "line": 132,
+    "text": "F.4 Automobile liability: $1,000,000 combined single limit."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS4"
+  }
+ ],
+ "scope_items": [
+  {
+   "label": "B.1",
+   "text": "Construction contracting. Advise on design-build contract administration, change orders and claims avoidance.",
+   "source": {
+    "line": 45,
+    "text": "B.1 Construction contracting. Advise on design-build contract administration,"
+   }
+  },
+  {
+   "label": "B.2",
+   "text": "Claims and disputes. Represent the Authority in the dispute resolution process under the design-build contract.",
+   "source": {
+    "line": 47,
+    "text": "B.2 Claims and disputes. Represent the Authority in the dispute resolution"
+   }
+  },
+  {
+   "label": "B.3",
+   "text": "Real property. Advise on right-of-way acquisition, including appraisals, offers and easements.",
+   "source": {
+    "line": 49,
+    "text": "B.3 Real property. Advise on right-of-way acquisition, including appraisals,"
+   }
+  },
+  {
+   "label": "B.4",
+   "text": "Board support. Attend closed sessions of the Authority's Board on request.",
+   "source": {
+    "line": 51,
+    "text": "B.4 Board support. Attend closed sessions of the Authority's Board on request."
+   }
+  }
+ ],
+ "parties": [
+  {
+   "name": "Tannery Creek Transit Authority",
+   "category": "agency",
+   "role": "Issuing agency",
+   "source": {
+    "line": 11,
+    "text": "Tannery Creek Transit Authority (the \"Authority\") seeks special counsel for the"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Granite Spur Constructors, Inc.",
+   "category": "adverse",
+   "role": "Adverse or counter-party mentioned in the RFP",
+   "source": {
+    "line": 18,
+    "text": "The Authority's design-build contractor for the first project segment is Granite Spur Constructors, Inc. The Authority is in a dispute with Granite Spur Constructors, Inc. over differing site condition claims, and has received a claim from"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Bellweather Signal Systems LLC",
+   "category": "adverse",
+   "role": "Adverse or counter-party mentioned in the RFP",
+   "source": {
+    "line": 18,
+    "text": "The Authority's design-build contractor for the first project segment is Granite Spur Constructors, Inc. The Authority is in a dispute with Granite Spur Constructors, Inc. over differing site condition claims, and has received a claim from"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Hollis Yard Properties LP",
+   "category": "adverse",
+   "role": "Adverse or counter-party mentioned in the RFP",
+   "source": {
+    "line": 18,
+    "text": "Several parcels needed for the project are owned by Hollis Yard Properties LP, with which the Authority is negotiating."
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Cornelius Abernathy",
+   "category": "staff",
+   "role": "Executive Director",
+   "source": {
+    "line": 28,
+    "text": "Executive Director: Cornelius Abernathy General Counsel: Philippa Ostrander Chief Capital Programs Officer: Reginald Montefiore Contracting Officer: Saoirse Delacroix-Tan"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Philippa Ostrander",
+   "category": "staff",
+   "role": "General Counsel",
+   "source": {
+    "line": 28,
+    "text": "Executive Director: Cornelius Abernathy General Counsel: Philippa Ostrander Chief Capital Programs Officer: Reginald Montefiore Contracting Officer: Saoirse Delacroix-Tan"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Reginald Montefiore",
+   "category": "staff",
+   "role": "Chief Capital Programs Officer",
+   "source": {
+    "line": 28,
+    "text": "Executive Director: Cornelius Abernathy General Counsel: Philippa Ostrander Chief Capital Programs Officer: Reginald Montefiore Contracting Officer: Saoirse Delacroix-Tan"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Saoirse Delacroix-Tan",
+   "category": "staff",
+   "role": "Contracting Officer",
+   "source": {
+    "line": 28,
+    "text": "Executive Director: Cornelius Abernathy General Counsel: Philippa Ostrander Chief Capital Programs Officer: Reginald Montefiore Contracting Officer: Saoirse Delacroix-Tan"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  }
+ ],
+ "sections": [
+  {
+   "kind": "intro",
+   "title": "GENERAL INFORMATION",
+   "label": "PART A",
+   "line": 7
+  },
+  {
+   "kind": "intro",
+   "title": "Purpose",
+   "label": "A.1",
+   "line": 9
+  },
+  {
+   "kind": "intro",
+   "title": "Background",
+   "label": "A.2",
+   "line": 16
+  },
+  {
+   "kind": "parties",
+   "title": "Authority Officials",
+   "label": "A.3",
+   "line": 26
+  },
+  {
+   "kind": "schedule",
+   "title": "Key Dates",
+   "label": "A.4",
+   "line": 33
+  },
+  {
+   "kind": "scope",
+   "title": "SCOPE OF WORK",
+   "label": "PART B",
+   "line": 43
+  },
+  {
+   "kind": "submission",
+   "title": "PROPOSAL INSTRUCTIONS",
+   "label": "PART C",
+   "line": 53
+  },
+  {
+   "kind": "minquals",
+   "title": "Minimum Qualifications",
+   "label": "C.1",
+   "line": 55
+  },
+  {
+   "kind": "content",
+   "title": "Required Proposal Sections",
+   "label": "C.2",
+   "line": 65
+  },
+  {
+   "kind": "submission",
+   "title": "Format",
+   "label": "C.3",
+   "line": 89
+  },
+  {
+   "kind": "submission",
+   "title": "Delivery",
+   "label": "C.4",
+   "line": 95
+  },
+  {
+   "kind": "forms",
+   "title": "REQUIRED FORMS AND CERTIFICATIONS",
+   "label": "PART D",
+   "line": 101
+  },
+  {
+   "kind": "evaluation",
+   "title": "EVALUATION",
+   "label": "PART E",
+   "line": 113
+  },
+  {
+   "kind": "evaluation",
+   "title": "Scoring",
+   "label": "E.1",
+   "line": 115
+  },
+  {
+   "kind": "insurance",
+   "title": "INSURANCE REQUIREMENTS",
+   "label": "PART F",
+   "line": 127
+  }
+ ],
+ "evaluation": {
+  "criteria": [
+   {
+    "name": "Relevant experience on capital projects",
+    "weight": 30,
+    "source": {
+     "line": 118,
+     "text": "Relevant experience on capital projects 30"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV1"
+   },
+   {
+    "name": "Project team",
+    "weight": 25,
+    "source": {
+     "line": 119,
+     "text": "Project team 25"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV2"
+   },
+   {
+    "name": "Project approach",
+    "weight": 20,
+    "source": {
+     "line": 120,
+     "text": "Project approach 20"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV3"
+   },
+   {
+    "name": "Cost",
+    "weight": 15,
+    "source": {
+     "line": 121,
+     "text": "Cost 15"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV4"
+   },
+   {
+    "name": "Small and local business participation",
+    "weight": 10,
+    "source": {
+     "line": 122,
+     "text": "Small and local business participation 10"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV5"
+   }
+  ],
+  "total": 100,
+  "total_stated": 100,
+  "unit": "points",
+  "confidence": "ok",
+  "check_reason": ""
+ },
+ "addenda": [
+  {
+   "number": "1",
+   "issued": "2026-11-20",
+   "source": {
+    "line": 134,
+    "text": "ADDENDUM 1 - November 20, 2026"
+   },
+   "changes": [
+    {
+     "type": "deadline",
+     "kind": "questions_due",
+     "from": "2026-12-08",
+     "from_time": "17:00",
+     "to": "2026-12-11",
+     "to_time": "17:00",
+     "source": {
+      "line": 136,
+      "text": "The deadline for requests for clarification is extended to December 11, 2026, 5:00 p.m."
+     },
+     "confidence": "ok",
+     "check_reason": ""
+    },
+    {
+     "type": "page_limit",
+     "kind": "page_limit",
+     "from": 30,
+     "to": 25,
+     "source": {
+      "line": 138,
+      "text": "Section C.3 is revised: proposals shall not exceed twenty-five (25) pages. The exclusions are unchanged."
+     },
+     "confidence": "ok",
+     "check_reason": ""
+    },
+    {
+     "type": "form_added",
+     "kind": "form_added",
+     "from": null,
+     "to": "Addendum Acknowledgment",
+     "source": {
+      "line": 140,
+      "text": "Attachment 7: Addendum Acknowledgment is added to the required forms in Part D."
+     },
+     "confidence": "ok",
+     "check_reason": ""
+    }
+   ],
+   "notes": []
+  }
+ ],
+ "checks": []
+}

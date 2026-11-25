@@ -1,0 +1,772 @@
+{
+ "description": "Hand-labeled answer key for the sample terms documents. Written before the classifier was run. Label 'none' marks a hard negative: a span that must not be classified.",
+ "labeled_by": "Tool author (not an attorney)",
+ "labels": [
+  {
+   "id": "K001",
+   "document_id": "quenby-ocg-2026",
+   "start": 137,
+   "end": 257,
+   "label": "none",
+   "quote": "The Company's prior written consent is required before adding any timekeeper who is not listed in the engagement letter.",
+   "note": "Consent language outside any AI section."
+  },
+  {
+   "id": "K002",
+   "document_id": "quenby-ocg-2026",
+   "start": 336,
+   "end": 440,
+   "label": "none",
+   "quote": "The Company does not pay for summer associate time, internal conferences, or training of Firm personnel.",
+   "note": "Staff training, not model training."
+  },
+  {
+   "id": "K003",
+   "document_id": "quenby-ocg-2026",
+   "start": 481,
+   "end": 621,
+   "label": "disclosure_required",
+   "quote": "The Firm must notify the Company's Legal Department in writing before using any generative artificial intelligence tool on a Company matter."
+  },
+  {
+   "id": "K004",
+   "document_id": "quenby-ocg-2026",
+   "start": 627,
+   "end": 760,
+   "label": "no_training",
+   "quote": "The Firm shall ensure that no Company information is used to train, fine-tune or otherwise improve any artificial intelligence model."
+  },
+  {
+   "id": "K005",
+   "document_id": "quenby-ocg-2026",
+   "start": 766,
+   "end": 899,
+   "label": "approved_tools_only",
+   "quote": "Only tools on the Firm's approved list, as shared with the Company at the start of each matter, may be used with Company information."
+  },
+  {
+   "id": "K006",
+   "document_id": "quenby-ocg-2026",
+   "start": 905,
+   "end": 1075,
+   "label": "data_residency_retention",
+   "quote": "Company information entered into an AI tool must be stored and processed within the United States and deleted from the tool within thirty days after the task is complete."
+  },
+  {
+   "id": "K007",
+   "document_id": "quenby-ocg-2026",
+   "start": 1081,
+   "end": 1203,
+   "label": "human_review_required",
+   "quote": "A licensed attorney must review all AI output for accuracy before it is used in any work product delivered to the Company."
+  },
+  {
+   "id": "K008",
+   "document_id": "quenby-ocg-2026",
+   "start": 1209,
+   "end": 1377,
+   "label": "consent_required",
+   "quote": "Patient information must not be entered into any AI tool unless the Company has confirmed in writing that the tool is covered by an appropriate agreement with the Firm.",
+   "note": "Prohibition with a written-confirmation exception."
+  },
+  {
+   "id": "K009",
+   "document_id": "quenby-ocg-2026",
+   "start": 1383,
+   "end": 1482,
+   "label": "none",
+   "quote": "The Company will review these guidelines each year and may issue further requirements for AI tools.",
+   "note": "Forward-looking; no current requirement."
+  },
+  {
+   "id": "K010",
+   "document_id": "quenby-ocg-2026",
+   "start": 1494,
+   "end": 1555,
+   "label": "none",
+   "quote": "The Firm may not speak to the press about any Company matter.",
+   "note": "Prohibition outside any AI section."
+  },
+  {
+   "id": "K011",
+   "document_id": "quenby-el-2026",
+   "start": 414,
+   "end": 469,
+   "label": "billing_restriction",
+   "quote": "We do not bill for time spent learning to use AI tools."
+  },
+  {
+   "id": "K012",
+   "document_id": "quenby-el-2026",
+   "start": 483,
+   "end": 655,
+   "label": "disclosure_required",
+   "quote": "Consistent with the Outside Counsel Guidelines, we will tell you before we use generative AI tools on your matters, and an attorney will check anything those tools produce."
+  },
+  {
+   "id": "K013",
+   "document_id": "quenby-el-2026",
+   "start": 483,
+   "end": 655,
+   "label": "human_review_required",
+   "quote": "Consistent with the Outside Counsel Guidelines, we will tell you before we use generative AI tools on your matters, and an attorney will check anything those tools produce."
+  },
+  {
+   "id": "K014",
+   "document_id": "quenby-el-2026",
+   "start": 666,
+   "end": 763,
+   "label": "none",
+   "quote": "We will retain our file for the period stated in our records policy unless you ask for it sooner.",
+   "note": "File retention, not AI."
+  },
+  {
+   "id": "K015",
+   "document_id": "drennick-ocg-2025",
+   "start": 196,
+   "end": 289,
+   "label": "none",
+   "quote": "Counsel must obtain prior written approval before retaining any expert, consultant or vendor.",
+   "note": "Consent language, no AI."
+  },
+  {
+   "id": "K016",
+   "document_id": "drennick-ocg-2025",
+   "start": 311,
+   "end": 406,
+   "label": "none",
+   "quote": "Counsel must not disclose Company information to any third party without the Company's consent.",
+   "note": "Confidentiality, no AI."
+  },
+  {
+   "id": "K017",
+   "document_id": "drennick-ocg-2025",
+   "start": 407,
+   "end": 485,
+   "label": "none",
+   "quote": "Counsel shall retain all matter files for seven years after the matter closes.",
+   "note": "File retention, no AI."
+  },
+  {
+   "id": "K018",
+   "document_id": "drennick-ocg-2025",
+   "start": 545,
+   "end": 656,
+   "label": "none",
+   "quote": "The Company's e-billing system uses automated rules to reject entries that do not comply with these guidelines.",
+   "note": "Automated billing rules, not AI use by counsel."
+  },
+  {
+   "id": "K019",
+   "document_id": "drennick-ocg-2025",
+   "start": 672,
+   "end": 777,
+   "label": "none",
+   "quote": "Counsel must notify the Company promptly of any significant development, including any settlement demand.",
+   "note": "Notice duty, no AI."
+  },
+  {
+   "id": "K020",
+   "document_id": "drennick-el-2025",
+   "start": 260,
+   "end": 355,
+   "label": "none",
+   "quote": "We will send business intelligence reports on matter spend each quarter if you would like them.",
+   "note": "'Business intelligence' is not AI."
+  },
+  {
+   "id": "K021",
+   "document_id": "ostrava-el-2026",
+   "start": 371,
+   "end": 527,
+   "label": "ai_permitted",
+   "quote": "The Client understands that the Firm may use AI-assisted tools to improve efficiency, provided that the Firm protects the Client's confidential information."
+  },
+  {
+   "id": "K022",
+   "document_id": "ostrava-el-2026",
+   "start": 528,
+   "end": 602,
+   "label": "billing_restriction",
+   "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+  },
+  {
+   "id": "K023",
+   "document_id": "marlowetind-guidelines-2026",
+   "start": 195,
+   "end": 268,
+   "label": "none",
+   "quote": "Counsel must obtain prior approval before retaining any expert or vendor.",
+   "note": "Consent language, no AI."
+  },
+  {
+   "id": "K024",
+   "document_id": "marlowetind-guidelines-2026",
+   "start": 322,
+   "end": 527,
+   "label": "consent_required",
+   "quote": "Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+  },
+  {
+   "id": "K025",
+   "document_id": "marlowetind-guidelines-2026",
+   "start": 533,
+   "end": 696,
+   "label": "billing_restriction",
+   "quote": "Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+  },
+  {
+   "id": "K026",
+   "document_id": "marlowetind-guidelines-2026",
+   "start": 702,
+   "end": 775,
+   "label": "billing_restriction",
+   "quote": "AI tool subscription or usage fees are overhead and are not reimbursable."
+  },
+  {
+   "id": "K027",
+   "document_id": "marlowetind-guidelines-2026",
+   "start": 781,
+   "end": 902,
+   "label": "approved_tools_only",
+   "quote": "Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service.",
+   "note": "Prohibition scoped to public tools."
+  },
+  {
+   "id": "K028",
+   "document_id": "marlowetind-guidelines-2026",
+   "start": 908,
+   "end": 1037,
+   "label": "human_review_required",
+   "quote": "Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+  },
+  {
+   "id": "K029",
+   "document_id": "marlowetind-guidelines-2026",
+   "start": 1043,
+   "end": 1125,
+   "label": "none",
+   "quote": "Questions about this section should be directed to the Litigation Management Unit.",
+   "note": "Inside the AI section, no requirement."
+  },
+  {
+   "id": "K030",
+   "document_id": "marlowetind-guidelines-2026",
+   "start": 1152,
+   "end": 1246,
+   "label": "none",
+   "quote": "Counsel has no authority to settle without written authorization from the claims professional.",
+   "note": "Consent language, no AI."
+  },
+  {
+   "id": "K031",
+   "document_id": "tessaly-ocg-2025",
+   "start": 225,
+   "end": 451,
+   "label": "consent_required",
+   "quote": "Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+  },
+  {
+   "id": "K032",
+   "document_id": "tessaly-ocg-2025",
+   "start": 457,
+   "end": 580,
+   "label": "none",
+   "quote": "A request for consent must identify the tool, the vendor, the categories of Bank data involved and the safeguards in place.",
+   "note": "Process detail for the consent request."
+  },
+  {
+   "id": "K033",
+   "document_id": "tessaly-ocg-2025",
+   "start": 586,
+   "end": 651,
+   "label": "none",
+   "quote": "Consent given for one matter does not extend to any other matter.",
+   "note": "Scope of consent; no separate requirement."
+  },
+  {
+   "id": "K034",
+   "document_id": "tessaly-ocg-2025",
+   "start": 657,
+   "end": 773,
+   "label": "data_residency_retention",
+   "quote": "Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+  },
+  {
+   "id": "K035",
+   "document_id": "tessaly-ocg-2025",
+   "start": 779,
+   "end": 861,
+   "label": "no_training",
+   "quote": "The Bank's information may not be used for model training under any circumstances."
+  },
+  {
+   "id": "K036",
+   "document_id": "tessaly-ocg-2025",
+   "start": 867,
+   "end": 1054,
+   "label": "none",
+   "quote": "Nothing in this section prohibits the use of spell-check, document comparison or e-discovery review tools already in routine use, even where those tools include machine learning features.",
+   "note": "Negated prohibition."
+  },
+  {
+   "id": "K037",
+   "document_id": "tessaly-ocg-2025",
+   "start": 1060,
+   "end": 1165,
+   "label": "none",
+   "quote": "All attorneys working on Bank matters must complete the Firm's AI training before using an approved tool.",
+   "note": "Staff training, not model training."
+  },
+  {
+   "id": "K038",
+   "document_id": "tessaly-el-2025",
+   "start": 216,
+   "end": 381,
+   "label": "consent_required",
+   "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+  },
+  {
+   "id": "K039",
+   "document_id": "marrowfinch-ocg-2024",
+   "start": 107,
+   "end": 224,
+   "label": "none",
+   "quote": "Counsel must protect Company information with reasonable safeguards and report any security incident within 48 hours.",
+   "note": "Security incident notice, no AI."
+  },
+  {
+   "id": "K040",
+   "document_id": "marrowfinch-ocg-2024",
+   "start": 230,
+   "end": 322,
+   "label": "ai_prohibited",
+   "quote": "The use of generative AI tools, including public chatbots, on Company matters is prohibited."
+  },
+  {
+   "id": "K041",
+   "document_id": "marrowfinch-ocg-2024",
+   "start": 328,
+   "end": 407,
+   "label": "ai_prohibited",
+   "quote": "Counsel must not enter Company documents, facts or strategy into any AI system."
+  },
+  {
+   "id": "K042",
+   "document_id": "marrowfinch-ocg-2024",
+   "start": 413,
+   "end": 514,
+   "label": "none",
+   "quote": "This restriction does not apply to legal research databases that the Company has approved in writing.",
+   "note": "Carve-out, not a requirement."
+  },
+  {
+   "id": "K043",
+   "document_id": "marrowfinch-el-2025",
+   "start": 213,
+   "end": 333,
+   "label": "ai_permitted",
+   "quote": "You agree that we may use generative AI tools licensed by the Firm to assist with drafting and research on your matters."
+  },
+  {
+   "id": "K044",
+   "document_id": "marrowfinch-el-2025",
+   "start": 334,
+   "end": 385,
+   "label": "disclosure_required",
+   "quote": "We will let you know which tools we use if you ask.",
+   "note": "Disclosure on request."
+  },
+  {
+   "id": "K045",
+   "document_id": "marrowfinch-el-2025",
+   "start": 386,
+   "end": 460,
+   "label": "human_review_required",
+   "quote": "A lawyer will review everything these tools produce before it reaches you."
+  },
+  {
+   "id": "K046",
+   "document_id": "quillfether-ocg-v1-2025",
+   "start": 171,
+   "end": 274,
+   "label": "ai_permitted",
+   "quote": "Quillfether encourages outside counsel to use AI tools where they reduce cost without reducing quality."
+  },
+  {
+   "id": "K047",
+   "document_id": "quillfether-ocg-v1-2025",
+   "start": 276,
+   "end": 360,
+   "label": "billing_restriction",
+   "quote": "Counsel must disclose on each invoice which tasks were performed with AI assistance."
+  },
+  {
+   "id": "K048",
+   "document_id": "quillfether-ocg-v1-2025",
+   "start": 276,
+   "end": 360,
+   "label": "disclosure_required",
+   "quote": "Counsel must disclose on each invoice which tasks were performed with AI assistance."
+  },
+  {
+   "id": "K049",
+   "document_id": "quillfether-ocg-v1-2025",
+   "start": 362,
+   "end": 438,
+   "label": "billing_restriction",
+   "quote": "We expect efficiency gains from AI to be passed through to us in lower fees."
+  },
+  {
+   "id": "K050",
+   "document_id": "quillfether-ocg-v1-2025",
+   "start": 440,
+   "end": 545,
+   "label": "no_training",
+   "quote": "Counsel must not allow our source code or product roadmaps to be used for training any third-party model."
+  },
+  {
+   "id": "K051",
+   "document_id": "quillfether-ocg-v1-2025",
+   "start": 547,
+   "end": 599,
+   "label": "human_review_required",
+   "quote": "Human review of AI output is required in every case."
+  },
+  {
+   "id": "K052",
+   "document_id": "quillfether-ocg-v1-2025",
+   "start": 601,
+   "end": 720,
+   "label": "none",
+   "quote": "Our own engineers use AI coding assistants; counsel should assume that documents we send may contain AI-generated text.",
+   "note": "Describes the client's own use."
+  },
+  {
+   "id": "K053",
+   "document_id": "quillfether-ocg-v1-2025",
+   "start": 722,
+   "end": 863,
+   "label": "none",
+   "quote": "Company employees are prohibited from sharing privileged advice with AI chatbots, and counsel should remind them of this when sending advice.",
+   "note": "Prohibition aimed at the client's own employees."
+  },
+  {
+   "id": "K054",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 178,
+   "end": 343,
+   "label": "consent_required",
+   "quote": "Effective March 1, 2026, outside counsel must obtain written approval from the Quillfether Legal Operations team before using any generative AI tool on a new matter."
+  },
+  {
+   "id": "K055",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 345,
+   "end": 434,
+   "label": "approved_tools_only",
+   "quote": "Approval will list the specific tools cleared for that matter; no other tool may be used."
+  },
+  {
+   "id": "K056",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 436,
+   "end": 504,
+   "label": "billing_restriction",
+   "quote": "Counsel must continue to identify AI-assisted tasks on each invoice."
+  },
+  {
+   "id": "K057",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 436,
+   "end": 504,
+   "label": "disclosure_required",
+   "quote": "Counsel must continue to identify AI-assisted tasks on each invoice."
+  },
+  {
+   "id": "K058",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 506,
+   "end": 640,
+   "label": "no_training",
+   "quote": "Our confidential information must not be used to train or improve any model, and prompts containing it must be deleted within 14 days."
+  },
+  {
+   "id": "K059",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 506,
+   "end": 640,
+   "label": "data_residency_retention",
+   "quote": "Our confidential information must not be used to train or improve any model, and prompts containing it must be deleted within 14 days."
+  },
+  {
+   "id": "K060",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 642,
+   "end": 710,
+   "label": "data_residency_retention",
+   "quote": "Tools hosted outside the United States or Canada are not acceptable."
+  },
+  {
+   "id": "K061",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 712,
+   "end": 800,
+   "label": "none",
+   "quote": "A qualified lawyer remains accountable for all work product, whether or not AI was used.",
+   "note": "Accountability statement, not a review step."
+  },
+  {
+   "id": "K062",
+   "document_id": "quillfether-ocg-v2-2026",
+   "start": 802,
+   "end": 898,
+   "label": "ambiguous",
+   "quote": "Quillfether no longer encourages unsupervised use of AI tools for first drafts of court filings.",
+   "note": "Withdraws encouragement without stating a rule."
+  },
+  {
+   "id": "K063",
+   "document_id": "orrinthe-ocg-2026",
+   "start": 96,
+   "end": 208,
+   "label": "ai_prohibited",
+   "quote": "Orrinthe does not permit outside counsel to use generative artificial intelligence, in any form, on its matters."
+  },
+  {
+   "id": "K064",
+   "document_id": "orrinthe-ocg-2026",
+   "start": 214,
+   "end": 301,
+   "label": "none",
+   "quote": "This includes tools embedded in word processors, email and document management systems.",
+   "note": "Scope detail."
+  },
+  {
+   "id": "K065",
+   "document_id": "orrinthe-ocg-2026",
+   "start": 307,
+   "end": 467,
+   "label": "disclosure_required",
+   "quote": "If counsel learns that AI was used on an Orrinthe matter contrary to this policy, counsel must report it to the Deputy General Counsel within two business days.",
+   "note": "Notice of use contrary to policy."
+  },
+  {
+   "id": "K066",
+   "document_id": "orrinthe-ocg-2026",
+   "start": 473,
+   "end": 555,
+   "label": "none",
+   "quote": "Orrinthe will revisit this position as the technology and its own policies mature.",
+   "note": "Forward-looking."
+  },
+  {
+   "id": "K067",
+   "document_id": "orrinthe-ocg-2026",
+   "start": 561,
+   "end": 697,
+   "label": "none",
+   "quote": "Counsel's e-discovery vendors may continue to use technology-assisted review that Orrinthe approved before the date of these guidelines.",
+   "note": "Narrow carve-out, not a general permission."
+  },
+  {
+   "id": "K068",
+   "document_id": "orrinthe-el-2026",
+   "start": 164,
+   "end": 264,
+   "label": "ai_prohibited",
+   "quote": "We confirm that we will not use generative AI tools on Orrinthe matters, as your guidelines require."
+  },
+  {
+   "id": "K069",
+   "document_id": "sablemere-ocg-2025",
+   "start": 219,
+   "end": 320,
+   "label": "ambiguous",
+   "quote": "The District discourages the use of artificial intelligence tools for legal work on District matters."
+  },
+  {
+   "id": "K070",
+   "document_id": "sablemere-ocg-2025",
+   "start": 322,
+   "end": 423,
+   "label": "ambiguous",
+   "quote": "Counsel should exercise caution and professional judgment before relying on any AI-generated content."
+  },
+  {
+   "id": "K071",
+   "document_id": "sablemere-ocg-2025",
+   "start": 425,
+   "end": 552,
+   "label": "none",
+   "quote": "The District may adopt a formal AI policy during the term of this agreement, and counsel agrees to comply with it once adopted.",
+   "note": "Forward-looking."
+  },
+  {
+   "id": "K072",
+   "document_id": "sablemere-ocg-2025",
+   "start": 554,
+   "end": 684,
+   "label": "data_residency_retention",
+   "quote": "Records created with AI tools may be public records and must be kept in accordance with the District's records retention schedule."
+  },
+  {
+   "id": "K073",
+   "document_id": "sablemere-ocg-2025",
+   "start": 686,
+   "end": 803,
+   "label": "disclosure_required",
+   "quote": "Counsel must tell the District's General Manager if AI tools are used to prepare any document presented to the Board."
+  },
+  {
+   "id": "K074",
+   "document_id": "verdanthe-el-2026",
+   "start": 180,
+   "end": 273,
+   "label": "ai_permitted",
+   "quote": "We may use secure, Firm-licensed AI tools to help summarize records and prepare first drafts."
+  },
+  {
+   "id": "K075",
+   "document_id": "verdanthe-el-2026",
+   "start": 274,
+   "end": 378,
+   "label": "human_review_required",
+   "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+  },
+  {
+   "id": "K076",
+   "document_id": "verdanthe-el-2026",
+   "start": 379,
+   "end": 450,
+   "label": "billing_restriction",
+   "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+  },
+  {
+   "id": "K077",
+   "document_id": "verdanthe-el-2026",
+   "start": 451,
+   "end": 559,
+   "label": "approved_tools_only",
+   "quote": "Resident records will only be placed in tools that we have confirmed are appropriate for health information."
+  },
+  {
+   "id": "K078",
+   "document_id": "verdanthe-el-2026",
+   "start": 560,
+   "end": 644,
+   "label": "none",
+   "quote": "You may withdraw your agreement to our use of AI tools at any time by writing to us.",
+   "note": "Right to withdraw; no current restriction."
+  },
+  {
+   "id": "K079",
+   "document_id": "ironvale-ocg-2026",
+   "start": 97,
+   "end": 188,
+   "label": "approved_tools_only",
+   "quote": "Outside counsel may use only those AI platforms listed in Appendix C (Approved Technology)."
+  },
+  {
+   "id": "K080",
+   "document_id": "ironvale-ocg-2026",
+   "start": 194,
+   "end": 296,
+   "label": "consent_required",
+   "quote": "Use of any AI platform not on that list requires advance approval from Ironvale's Chief Legal Officer."
+  },
+  {
+   "id": "K081",
+   "document_id": "ironvale-ocg-2026",
+   "start": 302,
+   "end": 424,
+   "label": "data_residency_retention",
+   "quote": "Deal documents and investor information placed in an AI platform must remain in data centers located in the United States."
+  },
+  {
+   "id": "K082",
+   "document_id": "ironvale-ocg-2026",
+   "start": 430,
+   "end": 532,
+   "label": "data_residency_retention",
+   "quote": "AI vendors may keep prompts and outputs for no longer than seven days and solely for abuse monitoring."
+  },
+  {
+   "id": "K083",
+   "document_id": "ironvale-ocg-2026",
+   "start": 538,
+   "end": 614,
+   "label": "no_training",
+   "quote": "No Ironvale data may be used to develop or improve any AI vendor's products."
+  },
+  {
+   "id": "K084",
+   "document_id": "ironvale-ocg-2026",
+   "start": 620,
+   "end": 740,
+   "label": "billing_restriction",
+   "quote": "Counsel should bill AI-assisted work at the rate of the timekeeper who reviewed it, not as a separate technology charge."
+  },
+  {
+   "id": "K085",
+   "document_id": "ironvale-ocg-2026",
+   "start": 746,
+   "end": 828,
+   "label": "none",
+   "quote": "Ironvale's deal teams are not required to disclose their own use of AI to counsel.",
+   "note": "Negated and aimed at the client's own teams."
+  },
+  {
+   "id": "K086",
+   "document_id": "ironvale-ocg-2026",
+   "start": 834,
+   "end": 957,
+   "label": "none",
+   "quote": "Counsel is not required to seek approval for AI features built into the e-signature platform that Ironvale itself provides.",
+   "note": "Negated requirement."
+  },
+  {
+   "id": "K087",
+   "document_id": "ironvale-ocg-2026",
+   "start": 972,
+   "end": 1011,
+   "label": "none",
+   "quote": "Deal teams must be approved in advance.",
+   "note": "Staffing approval, no AI."
+  },
+  {
+   "id": "K088",
+   "document_id": "ironvale-el-2026",
+   "start": 190,
+   "end": 270,
+   "label": "none",
+   "quote": "Our use of technology on your matters will follow Appendix C of your guidelines.",
+   "note": "Cross-reference only."
+  },
+  {
+   "id": "K089",
+   "document_id": "hesperwick-protocol-2026",
+   "start": 205,
+   "end": 327,
+   "label": "approved_tools_only",
+   "quote": "Members of the joint defense group must not upload shared work product to any AI tool that is not approved by all members."
+  },
+  {
+   "id": "K090",
+   "document_id": "hesperwick-protocol-2026",
+   "start": 333,
+   "end": 416,
+   "label": "disclosure_required",
+   "quote": "Each member will tell the others which AI tools it uses on the shared document set."
+  },
+  {
+   "id": "K091",
+   "document_id": "hesperwick-protocol-2026",
+   "start": 422,
+   "end": 502,
+   "label": "ai_prohibited",
+   "quote": "Summaries of privileged joint defense communications may not be generated by AI.",
+   "note": "Prohibition scoped to one task."
+  }
+ ]
+}

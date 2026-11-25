@@ -1,0 +1,46 @@
+{
+ "samples": {
+  "city_attorney_marlow_ridge.txt": {
+   "tp": 53,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "general_counsel_redwood_flats.txt": {
+   "tp": 50,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.98,
+   "recall": 1.0
+  },
+  "labor_negotiator_quillfeather_usd.txt": {
+   "tp": 41,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "special_counsel_tannery_creek_transit.txt": {
+   "tp": 55,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  }
+ },
+ "holdout_first_run": {
+  "tp": 6,
+  "fp": 3,
+  "fn": 38,
+  "precision": 0.667,
+  "recall": 0.136
+ },
+ "holdout_after_fixes": {
+  "tp": 33,
+  "fp": 7,
+  "fn": 11,
+  "precision": 0.825,
+  "recall": 0.75
+ }
+}

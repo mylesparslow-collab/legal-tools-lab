@@ -1,0 +1,161 @@
+response_id,role,practice,office,used_7d,used_30d,days_per_week,tasks,output_destination,check_frequency,check_methods,blockers,confidence_rules,confidence_skill,comments
+R0001,paralegal,Employment,Harbour Quay,none,assistant_b,1,drafting|summarising|research,internal_only,never,do_not_check,no_time,4,2,Useful for first drafts.
+R0002,associate,Regulatory,Harbour Quay,assistant_a,assistant_a,1,drafting|summarising|email,internal_only,usually,compare_source|colleague_review,unsure_allowed,3,4,Unsure which matters allow it.
+R0003,associate,Disputes,Eastfield,assistant_a,assistant_a,1,summarising,internal_only,always,compare_source,trust|no_time,5,3,
+R0004,partner,Banking and finance,Northgate,assistant_b,assistant_b,1,email,internal_only,always,read_in_full|verify_citations|colleague_review,unsure_allowed,5,4,
+R0005,associate,Banking and finance,Harbour Quay,none,assistant_a,1,drafting|review|email,internal_only,rarely,read_in_full,nothing,3,3,
+R0006,staff,Disputes,Westbrook,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed,3,2,
+R0007,counsel,Corporate,Eastfield,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|training,2,3,No comment.
+R0008,staff,Intellectual property,Northgate,assistant_b,assistant_b,2_3,summarising|research|email,internal_only|client_work_product,sometimes,read_in_full|compare_source|verify_citations,nothing,4,3,
+R0009,paralegal,Disputes,Northgate,other_tool,other_tool,1,drafting|summarising|email|chronology,internal_only,usually,read_in_full|compare_source,no_time,4,3,Unsure which matters allow it.
+R0010,staff,Regulatory,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,training,4,2,
+R0011,associate,Competition,Northgate,none,assistant_a,1,drafting|research|review|email,internal_only,always,read_in_full|compare_source|verify_citations,training|trust,4,1,Unsure which matters allow it.
+R0012,partner,Disputes,Westbrook,assistant_b,assistant_b,1,drafting|research|email|chronology,internal_only,always,read_in_full|compare_source|colleague_review,unsure_allowed,1,3,No comment.
+R0013,associate,Real estate,Riverside,assistant_a,assistant_a,2_3,drafting|email,internal_only,always,read_in_full,trust,4,3,Useful for first drafts.
+R0014,associate,Private client,Harbour Quay,other_tool,other_tool,2_3,drafting|review,internal_only|court_filing,usually,read_in_full|compare_source|verify_citations|colleague_review,unsure_allowed,3,5,
+R0015,associate,Employment,Northgate,assistant_a,assistant_a,1,summarising|research,internal_only,usually,read_in_full,training|trust,4,3,
+R0016,counsel,Competition,Northgate,assistant_a,assistant_a,2_3,drafting,internal_only,always,read_in_full,trust,3,4,
+R0017,staff,Employment,Eastfield,assistant_a,assistant_a,2_3,drafting|review|email,internal_only|client_work_product,always,read_in_full|compare_source,training|client_restrictions,5,5,Would like a short worked example for my practice.
+R0018,partner,Disputes,Southmere,none,none,0,none,not_applicable,not_applicable,not_applicable,nothing,5,1,Unsure which matters allow it.
+R0019,associate,Private client,Riverside,assistant_a,assistant_a,2_3,summarising|review,internal_only,usually,compare_source|verify_citations,unsure_allowed,3,5,
+R0020,partner,Private client,Southmere,none,none,0,none,not_applicable,not_applicable,not_applicable,client_restrictions,4,4,
+R0021,associate,Corporate,Harbour Quay,assistant_a,assistant_a,2_3,drafting|summarising|review,internal_only|client_work_product,always,read_in_full,unsure_allowed,4,3,
+R0022,paralegal,Corporate,Northgate,assistant_a,assistant_a|assistant_b,2_3,email,internal_only|client_work_product,always,read_in_full,nothing,3,3,Unsure which matters allow it.
+R0023,paralegal,Tax,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|training|client_restrictions,1,4,
+R0024,staff,Regulatory,Westbrook,assistant_a,assistant_a,2_3,summarising|email,internal_only|client_work_product,always,read_in_full|compare_source|colleague_review,nothing,5,4,
+R0025,associate,Real estate,Harbour Quay,none,assistant_a|assistant_b,0,drafting|summarising|research,internal_only,always,read_in_full|compare_source|colleague_review,unsure_allowed|training,3,1,Would like a short worked example for my practice.
+R0026,associate,Corporate,Eastfield,assistant_b,assistant_b,2_3,research|review|email,internal_only,always,read_in_full,unsure_allowed|trust,4,3,Would like a short worked example for my practice.
+R0027,associate,Disputes,Harbour Quay,assistant_a,assistant_a|assistant_b,1,summarising,internal_only,usually,verify_citations,unsure_allowed,5,3,
+R0028,associate,Tax,Eastfield,assistant_a,assistant_a,1,drafting|email,internal_only,always,read_in_full|compare_source,no_time,4,4,Would like a short worked example for my practice.
+R0029,counsel,Corporate,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,training|trust|no_relevant_tasks,4,1,
+R0030,associate,Corporate,Northgate,assistant_b,assistant_b,2_3,drafting|summarising|research|review|chronology,internal_only,never,do_not_check,training,4,3,
+R0031,staff,Disputes,Harbour Quay,assistant_b,assistant_b,4_5,research|email|chronology,internal_only,usually,read_in_full|compare_source|verify_citations,unsure_allowed|training|no_time,2,4,Unsure which matters allow it.
+R0032,partner,Regulatory,Eastfield,assistant_a,assistant_a,1,drafting|summarising,internal_only,sometimes,read_in_full|verify_citations,nothing,4,3,Would like a short worked example for my practice.
+R0033,staff,Disputes,Southmere,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed,5,3,
+R0034,paralegal,Employment,Westbrook,assistant_b,assistant_b,1,summarising|review|email|chronology,internal_only,rarely,read_in_full|compare_source|verify_citations|colleague_review,client_restrictions,5,4,Would like a short worked example for my practice.
+R0035,associate,Banking and finance,Northgate,assistant_b,assistant_b,4_5,drafting|research,internal_only,usually,compare_source,nothing,5,3,
+R0036,associate,Banking and finance,Westbrook,assistant_b,assistant_a|assistant_b,2_3,research|email,internal_only|client_work_product,always,read_in_full|compare_source,training,3,3,
+R0037,associate,Tax,Eastfield,assistant_a,assistant_a,2_3,drafting|summarising|email,internal_only,always,verify_citations|colleague_review,nothing,4,4,
+R0038,associate,Corporate,Midvale,none,none,0,none,not_applicable,not_applicable,not_applicable,trust,3,4,
+R0039,associate,Banking and finance,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|training|no_time,2,2,
+R0040,staff,Corporate,Southmere,none,none,0,none,not_applicable,not_applicable,not_applicable,nothing,4,2,No comment.
+R0041,associate,Real estate,Eastfield,assistant_b,assistant_b,4_5,summarising|research|review|email,internal_only,always,read_in_full|verify_citations,trust|no_relevant_tasks,3,4,No comment.
+R0042,paralegal,Banking and finance,Eastfield,assistant_b|other_tool,assistant_b|other_tool,2_3,summarising|research|email,internal_only|court_filing,usually,read_in_full|compare_source,nothing,4,4,Would like a short worked example for my practice.
+R0043,staff,Real estate,Southmere,none,none,0,none,not_applicable,not_applicable,not_applicable,training|trust|no_time,4,2,Unsure which matters allow it.
+R0044,associate,Corporate,Southmere,assistant_a,assistant_a,1,drafting|email|chronology,internal_only,always,read_in_full|compare_source|verify_citations,nothing,3,3,Unsure which matters allow it.
+R0045,associate,Corporate,Harbour Quay,other_tool,assistant_a|other_tool,2_3,drafting|email,internal_only,always,read_in_full,unsure_allowed|trust,2,5,Useful for first drafts.
+R0046,associate,Employment,Southmere,assistant_b|other_tool,assistant_b|other_tool,1,summarising|research|review|email,internal_only,sometimes,read_in_full|compare_source,unsure_allowed,4,3,Useful for first drafts.
+R0047,associate,Disputes,Westbrook,assistant_a|assistant_b,assistant_a|assistant_b,2_3,email,internal_only|client_work_product,usually,read_in_full,nothing,5,4,
+R0048,counsel,Intellectual property,Midvale,assistant_b,assistant_b,4_5,summarising|research|email,internal_only,usually,read_in_full|compare_source,nothing,4,3,Unsure which matters allow it.
+R0049,paralegal,Banking and finance,Eastfield,none,none,0,none,not_applicable,not_applicable,not_applicable,no_time,3,3,
+R0050,associate,Real estate,Harbour Quay,assistant_a,assistant_a,2_3,drafting|summarising|review|email,internal_only,always,read_in_full|verify_citations,no_time|client_restrictions,4,5,No comment.
+R0051,partner,Employment,Westbrook,none,assistant_a,1,review|email,internal_only|court_filing,always,read_in_full|verify_citations,unsure_allowed|training|client_restrictions|no_relevant_tasks,4,2,
+R0052,staff,Real estate,Lakeshore,assistant_b,assistant_b,1,research|review,internal_only,always,read_in_full|compare_source,unsure_allowed,3,4,Useful for first drafts.
+R0053,associate,Employment,Harbour Quay,assistant_a,assistant_a,2_3,email,internal_only|client_work_product,always,read_in_full|compare_source|verify_citations,nothing,4,5,
+R0054,associate,Disputes,Southmere,assistant_a,assistant_a,1,summarising|review|chronology,internal_only|client_work_product,sometimes,read_in_full|verify_citations,nothing,4,5,Useful for first drafts.
+R0055,partner,Tax,Lakeshore,none,none,0,none,not_applicable,not_applicable,not_applicable,trust,4,2,
+R0056,associate,Private client,Harbour Quay,none,none,0,none,not_applicable,not_applicable,not_applicable,training,4,3,Unsure which matters allow it.
+R0057,paralegal,Private client,Harbour Quay,assistant_b,assistant_b,2_3,summarising,internal_only,always,read_in_full,training,4,3,
+R0058,counsel,Employment,Westbrook,assistant_a,assistant_a,1,drafting,internal_only,rarely,colleague_review,nothing,3,3,Would like a short worked example for my practice.
+R0059,associate,Intellectual property,Westbrook,none,assistant_a,1,drafting|summarising|email,internal_only|client_work_product,usually,read_in_full|compare_source|verify_citations,training|trust|no_time,4,1,
+R0060,associate,Regulatory,Eastfield,assistant_a,assistant_a,4_5,review,internal_only,usually,read_in_full,unsure_allowed,4,5,
+R0061,associate,Employment,Lakeshore,none,none,0,none,not_applicable,not_applicable,not_applicable,trust|client_restrictions,5,3,
+R0062,partner,Tax,Eastfield,assistant_a,assistant_a,2_3,drafting,internal_only|client_work_product,always,read_in_full|verify_citations|colleague_review,training,3,3,No comment.
+R0063,staff,Banking and finance,Harbour Quay,assistant_b,assistant_b,1,drafting|research|chronology,internal_only,usually,read_in_full|compare_source|verify_citations,unsure_allowed|training,4,4,
+R0064,counsel,Corporate,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,no_relevant_tasks,4,3,Useful for first drafts.
+R0065,associate,Private client,Westbrook,none,assistant_b,0,drafting|summarising|research,internal_only|client_work_product,sometimes,read_in_full|compare_source|verify_citations|colleague_review,training,4,2,Would like a short worked example for my practice.
+R0066,associate,Disputes,Northgate,assistant_a|assistant_b,assistant_a|assistant_b,2_3,research,internal_only,usually,read_in_full|compare_source,unsure_allowed,4,4,Useful for first drafts.
+R0067,associate,Disputes,Eastfield,assistant_a|assistant_b,assistant_a|assistant_b,4_5,drafting|research,internal_only,always,read_in_full,unsure_allowed,3,5,Useful for first drafts.
+R0068,associate,Disputes,Northgate,assistant_a|other_tool,assistant_a|other_tool,1,drafting|summarising|research|email|other,internal_only,always,compare_source|verify_citations,unsure_allowed,5,4,Unsure which matters allow it.
+R0069,partner,Intellectual property,Southmere,assistant_b,assistant_b,2_3,drafting,internal_only,always,read_in_full|compare_source,no_time,5,4,Would like a short worked example for my practice.
+R0070,counsel,Real estate,Southmere,assistant_b,assistant_b,4_5,drafting|research,internal_only,sometimes,read_in_full,trust,4,3,Useful for first drafts.
+R0071,staff,Disputes,Eastfield,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed,3,3,
+R0072,associate,Corporate,Lakeshore,none,none,0,none,not_applicable,not_applicable,not_applicable,client_restrictions,4,3,
+R0073,associate,Real estate,Lakeshore,assistant_a,assistant_a,2_3,summarising,internal_only|client_work_product,sometimes,read_in_full,unsure_allowed,3,4,Unsure which matters allow it.
+R0074,counsel,Banking and finance,Northgate,assistant_a,assistant_a,1,drafting|review,internal_only|client_work_product,always,read_in_full|compare_source,nothing,4,4,
+R0075,staff,Real estate,Harbour Quay,assistant_b,assistant_b,4_5,summarising|review|chronology,internal_only,usually,read_in_full|compare_source,nothing,4,4,
+R0076,associate,Tax,Eastfield,other_tool,assistant_b|other_tool,1,summarising|email|chronology,internal_only,always,compare_source,training,5,3,
+R0077,paralegal,Employment,Harbour Quay,assistant_b,assistant_b,2_3,summarising|review,internal_only|client_work_product,always,read_in_full|compare_source|verify_citations,no_relevant_tasks,3,4,
+R0078,associate,Banking and finance,Harbour Quay,none,assistant_a,0,drafting|summarising|email,internal_only|client_work_product,always,read_in_full|compare_source,nothing,4,3,
+R0079,staff,Disputes,Northgate,assistant_a,assistant_a,1,summarising|review|email|chronology,internal_only,always,read_in_full|compare_source,training,3,5,
+R0080,staff,Tax,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|trust,3,1,Unsure which matters allow it.
+R0081,partner,Real estate,Westbrook,assistant_b,assistant_b,1,summarising|email|chronology,internal_only,always,read_in_full|compare_source,nothing,3,4,
+R0082,counsel,Disputes,Eastfield,assistant_a|other_tool,assistant_a|other_tool,4_5,drafting|summarising|email,internal_only|client_work_product,sometimes,read_in_full,nothing,4,4,Would like a short worked example for my practice.
+R0083,associate,Real estate,Northgate,assistant_b,assistant_b,4_5,drafting|email,internal_only|client_work_product,usually,read_in_full|compare_source,trust,3,5,
+R0084,staff,Banking and finance,Lakeshore,assistant_a,assistant_a,2_3,research|review|chronology,internal_only|client_work_product|court_filing,usually,read_in_full,nothing,4,5,
+R0085,partner,Employment,Harbour Quay,other_tool,assistant_a|other_tool,1,summarising|review,internal_only,always,read_in_full|compare_source|verify_citations,nothing,4,4,No comment.
+R0086,counsel,Tax,Northgate,assistant_b,assistant_b,1,drafting,internal_only|client_work_product,sometimes,read_in_full|compare_source,trust,3,3,Unsure which matters allow it.
+R0087,counsel,Disputes,Eastfield,assistant_a|assistant_b,assistant_a|assistant_b,2_3,drafting|summarising|research|review,internal_only,always,read_in_full|compare_source|verify_citations,trust,4,4,
+R0088,associate,Employment,Eastfield,none,assistant_b,0,drafting|summarising|research|email,internal_only,always,read_in_full,unsure_allowed|training,3,4,Unsure which matters allow it.
+R0089,associate,Banking and finance,Lakeshore,none,none,0,none,not_applicable,not_applicable,not_applicable,nothing,4,2,
+R0090,associate,Tax,Northgate,other_tool,other_tool,4_5,drafting|summarising|chronology,internal_only|court_filing,usually,read_in_full|compare_source,nothing,3,4,
+R0091,associate,Banking and finance,Southmere,assistant_b,assistant_b,2_3,summarising|email,internal_only,usually,compare_source|verify_citations,no_time,4,4,Would like a short worked example for my practice.
+R0092,associate,Banking and finance,Northgate,assistant_a|assistant_b,assistant_a|assistant_b,2_3,summarising,internal_only|client_work_product,sometimes,read_in_full|compare_source,unsure_allowed,5,4,
+R0093,associate,Tax,Westbrook,assistant_b,assistant_a|assistant_b,2_3,drafting|review,internal_only,always,read_in_full|compare_source,nothing,4,4,Useful for first drafts.
+R0094,associate,Corporate,Northgate,assistant_a|other_tool,assistant_a|other_tool,2_3,summarising|research|email|chronology,internal_only,always,read_in_full,nothing,5,5,Unsure which matters allow it.
+R0095,associate,Regulatory,Harbour Quay,none,none,0,none,not_applicable,not_applicable,not_applicable,trust,4,2,
+R0096,associate,Disputes,Riverside,assistant_a|assistant_b,assistant_a|assistant_b,2_3,summarising,internal_only,sometimes,read_in_full|compare_source|colleague_review,training,4,4,
+R0097,partner,Competition,Northgate,none,assistant_a,1,summarising|email,internal_only,always,read_in_full|verify_citations,training,4,2,
+R0098,counsel,Intellectual property,Eastfield,assistant_a,assistant_a,4_5,drafting|summarising|chronology,internal_only|client_work_product,sometimes,compare_source,training,5,3,Would like a short worked example for my practice.
+R0099,associate,Disputes,Harbour Quay,assistant_a|assistant_b,assistant_a|assistant_b,1,drafting,internal_only|client_work_product,sometimes,verify_citations,client_restrictions,3,5,
+R0100,staff,Private client,Harbour Quay,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|training|trust,2,3,Unsure which matters allow it.
+R0101,associate,Intellectual property,Northgate,none,assistant_a,0,summarising|email,internal_only|client_work_product,usually,read_in_full,unsure_allowed|trust|client_restrictions,3,2,
+R0102,partner,Corporate,Harbour Quay,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|training|trust,5,2,Would like a short worked example for my practice.
+R0103,associate,Corporate,Harbour Quay,assistant_a|assistant_b,assistant_a|assistant_b,1,drafting,internal_only|client_work_product,usually,read_in_full,nothing,4,3,No comment.
+R0104,associate,Regulatory,Lakeshore,none,none,0,none,not_applicable,not_applicable,not_applicable,training|trust,3,3,
+R0105,associate,Corporate,Northgate,assistant_a|assistant_b,assistant_a|assistant_b,4_5,drafting|summarising|research|email,internal_only,always,read_in_full|compare_source,nothing,5,5,
+R0106,staff,Corporate,Northgate,assistant_b,assistant_b,2_3,summarising|review,internal_only|client_work_product|court_filing,usually,read_in_full,trust|no_time|client_restrictions,3,5,
+R0107,staff,Real estate,Harbour Quay,assistant_a,assistant_a,1,summarising|email,internal_only,usually,read_in_full,unsure_allowed|training|trust,5,4,Would like a short worked example for my practice.
+R0108,paralegal,Regulatory,Harbour Quay,other_tool,other_tool,2_3,summarising|review|email|chronology,internal_only,sometimes,read_in_full,trust,4,4,Would like a short worked example for my practice.
+R0109,staff,Corporate,Riverside,none,none,0,none,not_applicable,not_applicable,not_applicable,nothing,5,4,
+R0110,associate,Real estate,Eastfield,assistant_a,assistant_a,4_5,drafting|summarising|research,internal_only,usually,read_in_full|compare_source,training,4,3,Unsure which matters allow it.
+R0111,associate,Disputes,Harbour Quay,assistant_a,assistant_a,4_5,drafting|research|review|email,internal_only|client_work_product,rarely,read_in_full|compare_source|verify_citations,client_restrictions,4,5,
+R0112,counsel,Regulatory,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,training,4,3,Useful for first drafts.
+R0113,partner,Disputes,Northgate,assistant_a|assistant_b|other_tool,assistant_a|assistant_b|other_tool,2_3,drafting|summarising|email|other,internal_only|client_work_product,rarely,read_in_full,unsure_allowed,2,5,Unsure which matters allow it.
+R0114,staff,Disputes,Eastfield,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|trust,5,2,
+R0115,counsel,Real estate,Eastfield,assistant_a,assistant_a,4_5,drafting|summarising|research,internal_only|client_work_product,usually,compare_source|verify_citations,nothing,5,3,Unsure which matters allow it.
+R0116,associate,Intellectual property,Westbrook,none,assistant_b,0,drafting|summarising|email,internal_only,always,read_in_full,unsure_allowed|trust,5,1,
+R0117,staff,Intellectual property,Harbour Quay,assistant_a,assistant_a,2_3,summarising|research|review|email,internal_only,always,read_in_full|compare_source,no_time,4,4,
+R0118,associate,Tax,Harbour Quay,assistant_a,assistant_a,2_3,drafting|email,internal_only|client_work_product,usually,compare_source,unsure_allowed,4,4,
+R0119,counsel,Private client,Eastfield,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed,2,3,
+R0120,associate,Tax,Northgate,assistant_a,assistant_a,4_5,drafting|summarising|research|email,internal_only|client_work_product,usually,read_in_full,nothing,3,3,
+R0121,associate,Real estate,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,trust|client_restrictions,3,3,
+R0122,counsel,Banking and finance,Harbour Quay,assistant_a|assistant_b,assistant_a|assistant_b,2_3,drafting|summarising|research|email,internal_only|client_work_product,never,do_not_check,nothing,3,4,
+R0123,staff,Banking and finance,Eastfield,none,none,0,none,not_applicable,not_applicable,not_applicable,nothing,5,1,Useful for first drafts.
+R0124,staff,Real estate,Westbrook,none,none,0,none,not_applicable,not_applicable,not_applicable,nothing,4,1,
+R0125,staff,Competition,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,trust,3,3,
+R0126,associate,Corporate,Lakeshore,none,none,0,none,not_applicable,not_applicable,not_applicable,no_time|client_restrictions|no_relevant_tasks,4,3,
+R0127,associate,Corporate,Westbrook,assistant_a|assistant_b,assistant_a|assistant_b,2_3,drafting|summarising|research|email,internal_only,always,read_in_full|compare_source|verify_citations,unsure_allowed|training,5,4,Useful for first drafts.
+R0128,associate,Real estate,Harbour Quay,assistant_b,assistant_b,2_3,drafting|summarising|email|chronology,internal_only,always,read_in_full|compare_source|verify_citations,unsure_allowed,3,4,
+R0129,associate,Corporate,Southmere,assistant_a|other_tool,assistant_a|other_tool,1,summarising,internal_only|client_work_product,sometimes,read_in_full|compare_source|verify_citations|colleague_review,training|trust,4,4,Useful for first drafts.
+R0130,associate,Disputes,Harbour Quay,assistant_a,assistant_a,2_3,summarising|research,internal_only,always,read_in_full|compare_source,nothing,4,3,
+R0131,associate,Disputes,Westbrook,assistant_a,assistant_a,4_5,summarising,internal_only|client_work_product,rarely,read_in_full|verify_citations|colleague_review,unsure_allowed|client_restrictions,2,4,No comment.
+R0132,staff,Private client,Westbrook,none,none,0,none,not_applicable,not_applicable,not_applicable,trust|no_time,4,2,Would like a short worked example for my practice.
+R0133,associate,Competition,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,training|trust,5,4,Would like a short worked example for my practice.
+R0134,associate,Disputes,Harbour Quay,assistant_b|other_tool,assistant_a|assistant_b|other_tool,4_5,drafting|summarising|research|chronology,internal_only,always,read_in_full,training,4,4,
+R0135,staff,Private client,Northgate,other_tool,other_tool,1,summarising|review|email,internal_only,sometimes,read_in_full,nothing,3,5,No comment.
+R0136,paralegal,Regulatory,Harbour Quay,none,none,0,none,not_applicable,not_applicable,not_applicable,training|trust,3,1,
+R0137,associate,Real estate,Harbour Quay,none,none,0,none,not_applicable,not_applicable,not_applicable,training|trust,4,3,
+R0138,paralegal,Real estate,Southmere,assistant_b,assistant_b,2_3,review,internal_only,always,read_in_full|compare_source,no_time,4,4,
+R0139,staff,Corporate,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,nothing,3,3,
+R0140,paralegal,Disputes,Eastfield,none,assistant_a,1,summarising|research|review,internal_only,always,read_in_full|compare_source|verify_citations,unsure_allowed|client_restrictions|no_relevant_tasks,1,4,No comment.
+R0141,associate,Disputes,Eastfield,assistant_a|assistant_b,assistant_a|assistant_b,4_5,drafting|summarising|research|review|email,internal_only|client_work_product,always,compare_source,nothing,3,4,
+R0142,staff,Tax,Southmere,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|trust|no_time,3,1,Would like a short worked example for my practice.
+R0143,associate,Tax,Northgate,none,none,0,none,not_applicable,not_applicable,not_applicable,trust|no_relevant_tasks,4,2,
+R0144,associate,Corporate,Midvale,assistant_a,assistant_a,2_3,drafting|review,internal_only,usually,read_in_full,client_restrictions,5,4,
+R0145,associate,Employment,Northgate,assistant_b,assistant_b,2_3,summarising|review,internal_only,always,read_in_full|compare_source,unsure_allowed|trust,3,5,
+R0146,partner,Private client,Southmere,none,none,0,none,not_applicable,not_applicable,not_applicable,client_restrictions,5,4,
+R0147,counsel,Employment,Westbrook,assistant_a|assistant_b,assistant_a|assistant_b,2_3,drafting|email,internal_only,usually,read_in_full|compare_source|verify_citations,unsure_allowed|training,3,5,Unsure which matters allow it.
+R0148,paralegal,Disputes,Eastfield,none,assistant_b,1,drafting|research|review|email,internal_only,always,read_in_full|colleague_review,unsure_allowed|training,3,3,
+R0149,staff,Employment,Harbour Quay,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|no_relevant_tasks,4,1,Unsure which matters allow it.
+R0150,partner,Corporate,Northgate,assistant_a|assistant_b,assistant_a|assistant_b,4_5,drafting|summarising|review|email,internal_only,usually,read_in_full,training,3,4,Useful for first drafts.
+R0151,paralegal,Disputes,Lakeshore,assistant_b,assistant_b,2_3,drafting|summarising|review,internal_only|client_work_product,always,verify_citations,unsure_allowed|training,4,4,
+R0152,paralegal,Competition,Northgate,assistant_b,assistant_b,1,summarising,internal_only,always,verify_citations,nothing,5,4,No comment.
+R0153,counsel,Banking and finance,Harbour Quay,none,assistant_a,0,drafting|research|review|chronology,internal_only|client_work_product,usually,read_in_full,unsure_allowed,2,3,Useful for first drafts.
+R0154,associate,Private client,Eastfield,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|training,4,4,Unsure which matters allow it.
+R0155,associate,Banking and finance,Westbrook,assistant_b,assistant_b,2_3,summarising|research,internal_only|client_work_product,usually,read_in_full|verify_citations,unsure_allowed,3,5,
+R0156,counsel,Corporate,Westbrook,assistant_a,assistant_a,2_3,drafting,internal_only|client_work_product,usually,read_in_full|compare_source,no_time,4,4,
+R0157,paralegal,Disputes,Eastfield,none,none,0,none,not_applicable,not_applicable,not_applicable,unsure_allowed|training|no_time,2,1,Would like a short worked example for my practice.
+R0158,associate,Real estate,Eastfield,assistant_a,assistant_a,2_3,drafting|summarising|research|email,internal_only,always,read_in_full|verify_citations,nothing,4,4,Unsure which matters allow it.
+R0159,staff,Disputes,Northgate,other_tool,other_tool,4_5,summarising|email,internal_only,rarely,read_in_full|verify_citations,unsure_allowed,2,4,No comment.
+R0160,associate,Corporate,Eastfield,assistant_a|assistant_b|other_tool,assistant_a|assistant_b|other_tool,2_3,summarising|research|email,internal_only,sometimes,read_in_full|compare_source,trust,5,4,Unsure which matters allow it.

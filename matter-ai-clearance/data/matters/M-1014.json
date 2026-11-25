@@ -1,0 +1,22 @@
+{
+ "id": "M-1014",
+ "name": "Ironvale: acquisition of Hollisbrook Dental Supply (fictional)",
+ "client_id": "ironvale",
+ "matter_type": "mergers and acquisitions",
+ "responsible_attorney": "N. Bexley (fictional)",
+ "intake_date": "2026-11-18",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "ironvale-ocg-2026",
+  "ironvale-el-2026"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

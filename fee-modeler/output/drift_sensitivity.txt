@@ -1,0 +1,11 @@
+Drift-flag sensitivity on regenerated synthetic firms. Seeds 1 to 20, each planted step, everything else as shipped. Thresholds unchanged.
+Flag = later/earlier median ratio at least 1.3 either way, at most 0.02 of 1000 rank shuffles as lopsided, and P75 coverage more than 15 points off nominal with at least 10 tested matters.
+
+planted step  flagged (of seeds)   ratio and shuffle conditions met median observed ratio   unplanted types flagged
+1.0x (none)   0 of 20              1 of 20                          1.06x                   1 of 200 type-runs
+1.3x          1 of 20              2 of 20                          1.17x                   3 of 200 type-runs
+1.5x          6 of 20              8 of 20                          1.39x                   3 of 200 type-runs
+1.7x          11 of 20             11 of 20                         1.61x                   3 of 200 type-runs
+2.0x          14 of 20             15 of 20                         1.84x                   2 of 200 type-runs
+
+Unplanted types are the other matter types with at least 10 tested matters. The same seeds are used at every step and the other types' costs barely change with the step, so the last column is close to the same 200 type-runs repeated, not 1000 independent ones.

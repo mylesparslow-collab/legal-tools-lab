@@ -1,0 +1,1 @@
+Draft invoice INV-O-3002 for Ostervane Industrial Holdings (matter OIH-COR-031) totals $6,991.00 across 14 lines. The check ran 13 confirmed client rules plus the arithmetic checks. It found no open findings. 1 check could not be completed from the file; see the report. Every finding is a prompt for review; nothing on the bill has been changed.

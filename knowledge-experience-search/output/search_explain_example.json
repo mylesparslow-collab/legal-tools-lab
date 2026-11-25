@@ -1,0 +1,519 @@
+{
+ "user": "U102",
+ "query": "indemnification cap and basket agreement",
+ "filters": {},
+ "access": "ok",
+ "message": "",
+ "relaxed": false,
+ "reranked": false,
+ "total": 8,
+ "offset": 0,
+ "results": [
+  {
+   "rank": 1,
+   "doc_id": "D01072",
+   "title": "Agreement: indemnification cap and basket",
+   "doc_type": "agreement",
+   "date": "2022-12-23",
+   "matter_id": "M0221",
+   "matter_name": "Umberleigh Cross Industries: stock purchase",
+   "practice": "Corporate and M&A",
+   "matter_type": "stock purchase",
+   "jurisdiction": "City of Estermere",
+   "client_industry": "software",
+   "office": "Caldmoor",
+   "author": {
+    "person_id": "U009",
+    "name": "Amara Halvorsby",
+    "departed": false
+   },
+   "version_no": 1,
+   "is_final": true,
+   "was_filed": false,
+   "model_form": true,
+   "reuse_count": 15,
+   "score": 0.910925,
+   "snippet": {
+    "text": "This agreement addresses indemnification cap and basket in connection with the stock purchase matter.\n\nThe assumptions and the documents reviewed are listed in the appendix. Items relating to materiality scrape …",
+    "highlights": [
+     [
+      5,
+      14
+     ],
+     [
+      25,
+      40
+     ],
+     [
+      41,
+      44
+     ],
+     [
+      49,
+      55
+     ]
+    ]
+   },
+   "other_versions": [],
+   "near_duplicates": [],
+   "explain": {
+    "text": {
+     "bm25": 9.6946,
+     "best_bm25_in_your_results": 9.6946,
+     "value": 1.0,
+     "weight": 0.6,
+     "contribution": 0.6,
+     "terms": [
+      {
+       "term": "indemnification",
+       "matched_in": {
+        "title": 1,
+        "body": 3
+       },
+       "documents_you_can_see_with_term": 25,
+       "idf": 4.012,
+       "bm25": 3.2899
+      },
+      {
+       "term": "cap",
+       "matched_in": {
+        "title": 1,
+        "body": 3
+       },
+       "documents_you_can_see_with_term": 64,
+       "idf": 3.084,
+       "bm25": 2.5289
+      },
+      {
+       "term": "basket",
+       "matched_in": {
+        "title": 1,
+        "body": 2
+       },
+       "documents_you_can_see_with_term": 28,
+       "idf": 3.9007,
+       "bm25": 3.0906
+      },
+      {
+       "term": "agreement",
+       "matched_in": {
+        "title": 1,
+        "body": 2,
+        "metadata": 1
+       },
+       "documents_you_can_see_with_term": 549,
+       "idf": 0.9416,
+       "bm25": 0.7852
+      }
+     ]
+    },
+    "signals": [
+     {
+      "signal": "model_form",
+      "value": 1.0,
+      "weight": 0.14,
+      "contribution": 0.14
+     },
+     {
+      "signal": "is_final",
+      "value": 1.0,
+      "weight": 0.08,
+      "contribution": 0.08
+     },
+     {
+      "signal": "was_filed",
+      "value": 0.0,
+      "weight": 0.06,
+      "contribution": 0.0
+     },
+     {
+      "signal": "reuse",
+      "value": 0.9107,
+      "weight": 0.07,
+      "contribution": 0.0637
+     },
+     {
+      "signal": "recency",
+      "value": 0.5435,
+      "weight": 0.05,
+      "contribution": 0.0272
+     }
+    ],
+    "total": 0.910925,
+    "statistics_scope": "1408 documents you can open"
+   }
+  },
+  {
+   "rank": 2,
+   "doc_id": "D00919",
+   "title": "Agreement on indemnification cap and basket (minority investment)",
+   "doc_type": "agreement",
+   "date": "2017-08-17",
+   "matter_id": "M0191",
+   "matter_name": "Orrinwick Group: minority investment",
+   "practice": "Corporate and M&A",
+   "matter_type": "minority investment",
+   "jurisdiction": "City of Estermere",
+   "client_industry": "healthcare",
+   "office": "Caldmoor",
+   "author": {
+    "person_id": "U008",
+    "name": "Brigid Tindlewick",
+    "departed": false
+   },
+   "version_no": 1,
+   "is_final": true,
+   "was_filed": false,
+   "model_form": false,
+   "reuse_count": 2,
+   "score": 0.711333,
+   "snippet": {
+    "text": "This agreement addresses indemnification cap and basket in connection with the minority investment matter.\n\nA related point on material adverse effect is noted but not developed here. Notes from the …",
+    "highlights": [
+     [
+      5,
+      14
+     ],
+     [
+      25,
+      40
+     ],
+     [
+      41,
+      44
+     ],
+     [
+      49,
+      55
+     ]
+    ]
+   },
+   "other_versions": [],
+   "near_duplicates": [],
+   "explain": {
+    "text": {
+     "bm25": 9.6189,
+     "best_bm25_in_your_results": 9.6946,
+     "value": 0.9922,
+     "weight": 0.6,
+     "contribution": 0.5953,
+     "terms": [
+      {
+       "term": "indemnification",
+       "matched_in": {
+        "title": 1,
+        "body": 2
+       },
+       "documents_you_can_see_with_term": 25,
+       "idf": 4.012,
+       "bm25": 3.1164
+      },
+      {
+       "term": "cap",
+       "matched_in": {
+        "title": 1,
+        "body": 2
+       },
+       "documents_you_can_see_with_term": 64,
+       "idf": 3.084,
+       "bm25": 2.3956
+      },
+      {
+       "term": "basket",
+       "matched_in": {
+        "title": 1,
+        "body": 5
+       },
+       "documents_you_can_see_with_term": 28,
+       "idf": 3.9007,
+       "bm25": 3.3632
+      },
+      {
+       "term": "agreement",
+       "matched_in": {
+        "title": 1,
+        "body": 1,
+        "metadata": 1
+       },
+       "documents_you_can_see_with_term": 549,
+       "idf": 0.9416,
+       "bm25": 0.7437
+      }
+     ]
+    },
+    "signals": [
+     {
+      "signal": "model_form",
+      "value": 0.0,
+      "weight": 0.14,
+      "contribution": 0.0
+     },
+     {
+      "signal": "is_final",
+      "value": 1.0,
+      "weight": 0.08,
+      "contribution": 0.08
+     },
+     {
+      "signal": "was_filed",
+      "value": 0.0,
+      "weight": 0.06,
+      "contribution": 0.0
+     },
+     {
+      "signal": "reuse",
+      "value": 0.3608,
+      "weight": 0.07,
+      "contribution": 0.0253
+     },
+     {
+      "signal": "recency",
+      "value": 0.2151,
+      "weight": 0.05,
+      "contribution": 0.0108
+     }
+    ],
+    "total": 0.711333,
+    "statistics_scope": "1408 documents you can open"
+   }
+  },
+  {
+   "rank": 3,
+   "doc_id": "D00918",
+   "title": "Agreement: indemnification cap and basket",
+   "doc_type": "agreement",
+   "date": "2018-01-06",
+   "matter_id": "M0191",
+   "matter_name": "Orrinwick Group: minority investment",
+   "practice": "Corporate and M&A",
+   "matter_type": "minority investment",
+   "jurisdiction": "City of Estermere",
+   "client_industry": "healthcare",
+   "office": "Caldmoor",
+   "author": {
+    "person_id": "U010",
+    "name": "Calla Nakashiro",
+    "departed": false
+   },
+   "version_no": 1,
+   "is_final": true,
+   "was_filed": false,
+   "model_form": false,
+   "reuse_count": 1,
+   "score": 0.695943,
+   "snippet": {
+    "text": "The purpose of this agreement is to record the position on indemnification cap and basket.\n\nThis version supersedes drafts circulated earlier. Alternatives to the current approach on escrow holdback are …",
+    "highlights": [
+     [
+      20,
+      29
+     ],
+     [
+      59,
+      74
+     ],
+     [
+      75,
+      78
+     ],
+     [
+      83,
+      89
+     ]
+    ]
+   },
+   "other_versions": [],
+   "near_duplicates": [
+    {
+     "doc_id": "D01214",
+     "matter_id": "M0211",
+     "title": "Agreement: indemnification cap and basket (adapted)"
+    }
+   ],
+   "explain": {
+    "text": {
+     "bm25": 9.5088,
+     "best_bm25_in_your_results": 9.6946,
+     "value": 0.9808,
+     "weight": 0.6,
+     "contribution": 0.5885,
+     "terms": [
+      {
+       "term": "indemnification",
+       "matched_in": {
+        "title": 1,
+        "body": 1
+       },
+       "documents_you_can_see_with_term": 25,
+       "idf": 4.012,
+       "bm25": 3.0843
+      },
+      {
+       "term": "cap",
+       "matched_in": {
+        "title": 1,
+        "body": 1
+       },
+       "documents_you_can_see_with_term": 64,
+       "idf": 3.084,
+       "bm25": 2.3709
+      },
+      {
+       "term": "basket",
+       "matched_in": {
+        "title": 1,
+        "body": 3
+       },
+       "documents_you_can_see_with_term": 28,
+       "idf": 3.9007,
+       "bm25": 3.2823
+      },
+      {
+       "term": "agreement",
+       "matched_in": {
+        "title": 1,
+        "body": 1,
+        "metadata": 1
+       },
+       "documents_you_can_see_with_term": 549,
+       "idf": 0.9416,
+       "bm25": 0.7713
+      }
+     ]
+    },
+    "signals": [
+     {
+      "signal": "model_form",
+      "value": 0.0,
+      "weight": 0.14,
+      "contribution": 0.0
+     },
+     {
+      "signal": "is_final",
+      "value": 1.0,
+      "weight": 0.08,
+      "contribution": 0.08
+     },
+     {
+      "signal": "was_filed",
+      "value": 0.0,
+      "weight": 0.06,
+      "contribution": 0.0
+     },
+     {
+      "signal": "reuse",
+      "value": 0.2277,
+      "weight": 0.07,
+      "contribution": 0.0159
+     },
+     {
+      "signal": "recency",
+      "value": 0.2301,
+      "weight": 0.05,
+      "contribution": 0.0115
+     }
+    ],
+    "total": 0.695943,
+    "statistics_scope": "1408 documents you can open"
+   }
+  }
+ ],
+ "facets": {
+  "doc_type": [
+   {
+    "value": "agreement",
+    "count": 7
+   },
+   {
+    "value": "memo",
+    "count": 1
+   }
+  ],
+  "practice": [
+   {
+    "value": "Corporate and M&A",
+    "count": 8
+   }
+  ],
+  "matter_type": [
+   {
+    "value": "stock purchase",
+    "count": 5
+   },
+   {
+    "value": "minority investment",
+    "count": 2
+   },
+   {
+    "value": "asset purchase",
+    "count": 1
+   }
+  ],
+  "jurisdiction": [
+   {
+    "value": "City of Estermere",
+    "count": 3
+   },
+   {
+    "value": "Tavish County",
+    "count": 2
+   },
+   {
+    "value": "Aldhaven Tax Tribunal",
+    "count": 1
+   },
+   {
+    "value": "Brannock Court of Chancery",
+    "count": 1
+   },
+   {
+    "value": "City of Aldhaven",
+    "count": 1
+   }
+  ],
+  "client_industry": [
+   {
+    "value": "healthcare",
+    "count": 4
+   },
+   {
+    "value": "energy",
+    "count": 1
+   },
+   {
+    "value": "financial services",
+    "count": 1
+   },
+   {
+    "value": "food and beverage",
+    "count": 1
+   },
+   {
+    "value": "software",
+    "count": 1
+   }
+  ],
+  "year": [
+   {
+    "value": "2022",
+    "count": 3
+   },
+   {
+    "value": "2018",
+    "count": 2
+   },
+   {
+    "value": "2017",
+    "count": 1
+   },
+   {
+    "value": "2021",
+    "count": 1
+   },
+   {
+    "value": "2025",
+    "count": 1
+   }
+  ]
+ }
+}

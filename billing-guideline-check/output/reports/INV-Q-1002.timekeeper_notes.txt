@@ -1,0 +1,56 @@
+To: Odalys Brightwater (TK01)
+Re: draft invoice INV-Q-1002, Quillfeather Mutual Indemnity, matter QMI-0152
+
+Before this bill goes out, please look at the 1 item below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $217.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 10, 2026-10-14, $217.00 [Non-billable task categories, will likely be rejected]
+  Your entry: "Training on carrier's updated e-billing portal" (0.7 h x $310.00 = $217.00)
+  What the check saw: The narrative contains "Training", which is on this client's list of non-billable training work.
+  Suggested fix: Move the entry off the bill, or ask the timekeeper whether the description is accurate.
+  Client rule (QMI-NONBILL-01, 5. Work the Company does not pay for, page 3): "The Company does not pay for clerical work, training, conflicts checks or the preparation of invoices."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Thandeka Oyelaran-Finch (TK04)
+Re: draft invoice INV-Q-1002, Quillfeather Mutual Indemnity, matter QMI-0152
+
+Before this bill goes out, please look at the 1 item below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $0.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Across your entries [Rounding-up pattern, review]
+  What the check saw: 6 of 6 entries by this timekeeper are whole multiples of 0.5 hour. The pattern suggests time may be rounded up.
+  Suggested fix: Ask the timekeeper to confirm these entries against contemporaneous records. Amount at risk is not quantified.
+  Client rule (QMI-ROUND-01, 3.1 Time increments, page 2): "Entries that are routinely rounded up to the half hour or hour will be questioned."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Bexley Okonkwo-Hale (TK05)
+Re: draft invoice INV-Q-1002, Quillfeather Mutual Indemnity, matter QMI-0152
+
+Before this bill goes out, please look at the 3 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $42.50. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 2, 2026-10-06, $92.00 [Rate increase without notice, likely reduced]
+  Your entry: "Draft subpoena for payroll records of co-defendant" (0.8 h x $115.00 = $92.00)
+  What the check saw: Billed at $115.00 an hour; the last billed rate was $105.00. No notice of a rate increase is on record for this timekeeper.
+  Suggested fix: Bill this entry at the prior rate, or record the notice the client received.
+  Client rule (QMI-RATEUP-01, 4. Rates, page 3): "A rate increase takes effect only after 30 days written notice to the Company."
+
+- Line 8, 2026-10-12, $34.50 [Non-billable task categories, will likely be rejected]
+  Your entry: "Conflicts check for newly named co-defendant" (0.3 h x $115.00 = $34.50)
+  What the check saw: The narrative contains "Conflicts check", which is on this client's list of non-billable conflicts work.
+  Suggested fix: Move the entry off the bill, or ask the timekeeper whether the description is accurate.
+  Client rule (QMI-NONBILL-01, 5. Work the Company does not pay for, page 3): "The Company does not pay for clerical work, training, conflicts checks or the preparation of invoices."
+
+- Line 8, 2026-10-12, $34.50 [Rate increase without notice, likely reduced]
+  Your entry: "Conflicts check for newly named co-defendant" (0.3 h x $115.00 = $34.50)
+  What the check saw: Billed at $115.00 an hour; the last billed rate was $105.00. No notice of a rate increase is on record for this timekeeper.
+  Suggested fix: Bill this entry at the prior rate, or record the notice the client received.
+  Client rule (QMI-RATEUP-01, 4. Rates, page 3): "A rate increase takes effect only after 30 days written notice to the Company."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.

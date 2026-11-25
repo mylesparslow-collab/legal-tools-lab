@@ -1,0 +1,98 @@
+{
+  "survey_id": "adoption-baseline",
+  "version": "1.0",
+  "title": "AI tool use: short survey",
+  "intro": "This survey asks how you use the firm's approved AI assistants. It has 14 questions and takes under five minutes. It does not ask for your name. Results are reported for groups of five or more people only. There are no right answers, and not using the tools is a useful answer.",
+  "estimated_minutes": 4,
+  "questions": [
+    {"id": "role", "type": "single", "required": true, "text": "What is your role?",
+     "options": [
+       {"id": "partner", "label": "Partner"}, {"id": "counsel", "label": "Counsel"},
+       {"id": "associate", "label": "Associate"}, {"id": "paralegal", "label": "Paralegal"},
+       {"id": "staff", "label": "Business services or other staff"}]},
+    {"id": "practice", "type": "single", "required": true, "text": "Which practice do you mainly work in?",
+     "options": [
+       {"id": "Banking and finance", "label": "Banking and finance"}, {"id": "Competition", "label": "Competition"},
+       {"id": "Corporate", "label": "Corporate"}, {"id": "Disputes", "label": "Disputes"},
+       {"id": "Employment", "label": "Employment"}, {"id": "Intellectual property", "label": "Intellectual property"},
+       {"id": "Private client", "label": "Private client"}, {"id": "Real estate", "label": "Real estate"},
+       {"id": "Regulatory", "label": "Regulatory"}, {"id": "Tax", "label": "Tax"}]},
+    {"id": "office", "type": "single", "required": true, "text": "Which office are you based in?",
+     "options": [
+       {"id": "Eastfield", "label": "Eastfield"}, {"id": "Harbour Quay", "label": "Harbour Quay"},
+       {"id": "Lakeshore", "label": "Lakeshore"}, {"id": "Midvale", "label": "Midvale"},
+       {"id": "Northgate", "label": "Northgate"}, {"id": "Riverside", "label": "Riverside"},
+       {"id": "Southmere", "label": "Southmere"}, {"id": "Westbrook", "label": "Westbrook"}]},
+    {"id": "used_7d", "type": "multi", "required": true,
+     "text": "In the last 7 days, which of these did you use for work? Select all that apply.",
+     "options": [
+       {"id": "assistant_a", "label": "Assistant A"}, {"id": "assistant_b", "label": "Assistant B"},
+       {"id": "other_tool", "label": "Another AI tool"},
+       {"id": "none", "label": "None of these", "exclusive": true}]},
+    {"id": "used_30d", "type": "multi", "required": true,
+     "text": "In the last 30 days, which of these did you use for work? Select all that apply.",
+     "options": [
+       {"id": "assistant_a", "label": "Assistant A"}, {"id": "assistant_b", "label": "Assistant B"},
+       {"id": "other_tool", "label": "Another AI tool"},
+       {"id": "none", "label": "None of these", "exclusive": true}]},
+    {"id": "days_per_week", "type": "single", "required": true,
+     "text": "In a typical working week, on how many days do you use an AI assistant for work?",
+     "options": [
+       {"id": "0", "label": "No days"}, {"id": "1", "label": "1 day"},
+       {"id": "2_3", "label": "2 to 3 days"}, {"id": "4_5", "label": "4 to 5 days"}]},
+    {"id": "tasks", "type": "multi", "required": true,
+     "text": "In the last 30 days, which kinds of task did you use an AI assistant for? Select all that apply.",
+     "options": [
+       {"id": "drafting", "label": "Drafting"}, {"id": "summarising", "label": "Summarising"},
+       {"id": "research", "label": "Research"}, {"id": "review", "label": "Reviewing documents"},
+       {"id": "email", "label": "Email"}, {"id": "chronology", "label": "Chronologies or timelines"},
+       {"id": "other", "label": "Other"},
+       {"id": "none", "label": "I did not use one", "exclusive": true}]},
+    {"id": "output_destination", "type": "multi", "required": true,
+     "text": "In the last 30 days, where did AI-assisted output go? Select all that apply.",
+     "options": [
+       {"id": "internal_only", "label": "Internal use only"},
+       {"id": "client_work_product", "label": "Work product sent to a client"},
+       {"id": "court_filing", "label": "A document filed with a court or tribunal"},
+       {"id": "not_applicable", "label": "Not applicable", "exclusive": true}]},
+    {"id": "check_frequency", "type": "single", "required": true,
+     "text": "How often do you check AI-assisted output before relying on it?",
+     "options": [
+       {"id": "always", "label": "Always"}, {"id": "usually", "label": "Usually"},
+       {"id": "sometimes", "label": "Sometimes"}, {"id": "rarely", "label": "Rarely"},
+       {"id": "never", "label": "Never"}, {"id": "not_applicable", "label": "Not applicable"}]},
+    {"id": "check_methods", "type": "multi", "required": true,
+     "text": "When you check output, what do you do? Select all that apply.",
+     "options": [
+       {"id": "read_in_full", "label": "Read it in full"},
+       {"id": "compare_source", "label": "Compare it with the source documents"},
+       {"id": "verify_citations", "label": "Look up each citation or reference"},
+       {"id": "colleague_review", "label": "Ask a colleague to review it"},
+       {"id": "other", "label": "Something else"},
+       {"id": "do_not_check", "label": "I do not check it", "exclusive": true},
+       {"id": "not_applicable", "label": "Not applicable", "exclusive": true}]},
+    {"id": "blockers", "type": "multi", "required": true,
+     "text": "Does anything limit your use of the approved AI assistants? Select all that apply.",
+     "options": [
+       {"id": "trust", "label": "I am not confident the output is accurate"},
+       {"id": "training", "label": "I have not had training"},
+       {"id": "client_restrictions", "label": "Client instructions restrict it"},
+       {"id": "unsure_allowed", "label": "I am not sure what is allowed"},
+       {"id": "no_time", "label": "I have not had time to try them"},
+       {"id": "no_relevant_tasks", "label": "My work does not suit them"},
+       {"id": "other", "label": "Something else"},
+       {"id": "nothing", "label": "Nothing limits my use", "exclusive": true}]},
+    {"id": "confidence_rules", "type": "single", "required": true,
+     "text": "How confident are you that you know what the firm allows you to do with these tools?",
+     "options": [
+       {"id": "1", "label": "1 - Not at all confident"}, {"id": "2", "label": "2"}, {"id": "3", "label": "3"},
+       {"id": "4", "label": "4"}, {"id": "5", "label": "5 - Very confident"}]},
+    {"id": "confidence_skill", "type": "single", "required": true,
+     "text": "How confident are you in getting useful results from these tools?",
+     "options": [
+       {"id": "1", "label": "1 - Not at all confident"}, {"id": "2", "label": "2"}, {"id": "3", "label": "3"},
+       {"id": "4", "label": "4"}, {"id": "5", "label": "5 - Very confident"}]},
+    {"id": "comments", "type": "text", "required": false,
+     "text": "Is there anything else you would like to say about using AI tools in your work? Please do not name clients, matters or colleagues."}
+  ]
+}

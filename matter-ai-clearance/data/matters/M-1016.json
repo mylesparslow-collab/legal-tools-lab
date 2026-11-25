@@ -1,0 +1,20 @@
+{
+ "id": "M-1016",
+ "name": "Pallister Grove: supplier dispute",
+ "client_id": "pallister",
+ "matter_type": "commercial dispute",
+ "responsible_attorney": "L. Arkwell (fictional)",
+ "intake_date": "2026-11-20",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [],
+ "additional_terms": [],
+ "consents": [],
+ "notices": [],
+ "intake_note": "New client. Engagement letter not yet countersigned; guidelines requested."
+}

@@ -1,0 +1,17 @@
+LUMINQA DATA SYSTEMS
+
+Outside counsel terms, version 4
+
+Fictional document written for a software demo
+
+[Page 1]
+
+Schedule A: Billing
+
+Time is to be kept in tenths of an hour. Entries that lump several tasks together under one time total will be sent back. Narratives must say what was done and for what purpose; entries like "review documents" or "attention to file" are not enough. Rates are fixed by the engagement rate card for the calendar year and may not be exceeded. Internal conferences among your team are capped at 0.5 hour per entry. Submit time within 45 days of the work; older time is written off. General overhead, including research database subscriptions and word processing, is not chargeable.
+
+[Page 2]
+
+Schedule B: Use of artificial intelligence tools
+
+This schedule is a term of our engagement with you and applies to every matter. If any work billed to us was performed with the assistance of a generative artificial intelligence tool, the time entry must be marked "[AI-assisted]" on the invoice. We will not pay for AI-assisted summaries of transcripts or documents, or for AI-assisted first-pass document review.

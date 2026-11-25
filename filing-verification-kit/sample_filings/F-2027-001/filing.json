@@ -1,0 +1,49 @@
+{
+  "filing_id": "F-2027-001",
+  "scenario": "Clean pass",
+  "matter": {
+    "number": "M-00311",
+    "client": "Larkspur Canning Cooperative (fictional client)",
+    "caption": "Vantongeren v. Larkspur Canning Cooperative (fictional)",
+    "case_number": "AR-27-000311"
+  },
+  "court_id": "fict-alder-ridge",
+  "court": "Superior Court, County of Alder Ridge (fictional)",
+  "judge_id": "fict-quillon",
+  "document": {
+    "path": "document.txt",
+    "title": "Opposition to motion for summary adjudication",
+    "type": "opposition"
+  },
+  "planned_filing_date": "2027-01-15",
+  "responsible_attorney": {
+    "name": "Perrin Ashgrove (fictional attorney)",
+    "bar_number": "FICT-000101"
+  },
+  "genai": {
+    "used": true,
+    "tools": [
+      "Drafting assistant (fictional product)"
+    ],
+    "purposes": [
+      "first draft of the argument section",
+      "summary of deposition excerpts"
+    ],
+    "output_verified": {
+      "by": "Perrin Ashgrove (fictional attorney)",
+      "on": "2027-01-12T15:40:00+00:00",
+      "how": "Read every AI-drafted paragraph against the record and the cited authorities; rewrote two sentences that overstated a holding."
+    },
+    "protected_info_entered": false,
+    "protected_info_review_by": null
+  },
+  "citation_report": "citation_report.json",
+  "attestations": "attestations.json",
+  "disclosure": {
+    "decision": "disclose",
+    "option_id": "C",
+    "text": "Counsel used generative artificial intelligence to assist in preparing this document, specifically for a first draft of the argument section and a summary of deposition excerpts. The undersigned attorney personally verified every citation in this document and reviewed and corrected all AI-assisted content before filing.",
+    "decided_by": "Perrin Ashgrove (fictional attorney)",
+    "decided_on": "2027-01-12"
+  }
+}

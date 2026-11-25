@@ -1,0 +1,18 @@
+{
+  "proposal_id": "P-004",
+  "title": "Election law advisory (too little history)",
+  "matter_type": "election_law_advisory",
+  "attributes": {},
+  "selection_rules": {
+    "min_comps": 8
+  },
+  "ai_assumptions": {},
+  "scenarios": [
+    {
+      "type": "fixed",
+      "fee": "15000"
+    }
+  ],
+  "as_of": "2026-01-01",
+  "target_probability": "0.80"
+}

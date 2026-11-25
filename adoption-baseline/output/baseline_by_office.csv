@@ -1,0 +1,55 @@
+population,office,measure,numerator,denominator,people,rate,suppressed
+lawyers,Eastfield,weekly_active_latest,16,33,33,0.4848,
+lawyers,Eastfield,weekly_active_last_4_weeks,65,132,34,0.4924,
+lawyers,Eastfield,regular_use,14,34,34,0.4118,
+lawyers,Eastfield,activated,23,34,34,0.6765,
+lawyers,Eastfield,weekly_active_last_4_weeks:Assistant A,47,106,27,0.4434,
+lawyers,Eastfield,weekly_active_last_4_weeks:Assistant B,33,132,34,0.2500,
+lawyers,Harbour Quay,weekly_active_latest,19,37,37,0.5135,
+lawyers,Harbour Quay,weekly_active_last_4_weeks,78,150,41,0.5200,
+lawyers,Harbour Quay,regular_use,19,41,41,0.4634,
+lawyers,Harbour Quay,activated,28,42,42,0.6667,
+lawyers,Harbour Quay,weekly_active_last_4_weeks:Assistant A,50,120,33,0.4167,
+lawyers,Harbour Quay,weekly_active_last_4_weeks:Assistant B,40,150,41,0.2667,
+lawyers,Lakeshore,weekly_active_latest,2,15,15,0.1333,
+lawyers,Lakeshore,weekly_active_last_4_weeks,8,60,15,0.1333,
+lawyers,Lakeshore,regular_use,2,15,15,0.1333,
+lawyers,Lakeshore,activated,2,15,15,0.1333,
+lawyers,Lakeshore,weekly_active_last_4_weeks:Assistant A,7,44,11,0.1591,
+lawyers,Lakeshore,weekly_active_last_4_weeks:Assistant B,4,60,15,0.0667,
+lawyers,Midvale,weekly_active_latest,,,,,small_group
+lawyers,Midvale,weekly_active_last_4_weeks,,,,,small_group
+lawyers,Midvale,regular_use,,,,,small_group
+lawyers,Midvale,activated,,,,,small_group
+lawyers,Midvale,weekly_active_last_4_weeks:Assistant A,,,,,small_group
+lawyers,Midvale,weekly_active_last_4_weeks:Assistant B,,,,,small_group
+lawyers,Northgate,weekly_active_latest,24,50,50,0.4800,
+lawyers,Northgate,weekly_active_last_4_weeks,76,200,52,0.3800,
+lawyers,Northgate,regular_use,17,52,52,0.3269,
+lawyers,Northgate,activated,29,53,53,0.5472,
+lawyers,Northgate,weekly_active_last_4_weeks:Assistant A,50,143,37,0.3497,
+lawyers,Northgate,weekly_active_last_4_weeks:Assistant B,39,200,52,0.1950,
+lawyers,Riverside,weekly_active_latest,,,,,complementary
+lawyers,Riverside,weekly_active_last_4_weeks,,,,,complementary
+lawyers,Riverside,regular_use,,,,,complementary
+lawyers,Riverside,activated,,,,,complementary
+lawyers,Riverside,weekly_active_last_4_weeks:Assistant A,,,,,complementary
+lawyers,Riverside,weekly_active_last_4_weeks:Assistant B,,,,,complementary
+lawyers,Southmere,weekly_active_latest,7,20,20,0.3500,
+lawyers,Southmere,weekly_active_last_4_weeks,32,81,21,0.3951,
+lawyers,Southmere,regular_use,7,21,21,0.3333,
+lawyers,Southmere,activated,10,22,22,0.4545,
+lawyers,Southmere,weekly_active_last_4_weeks:Assistant A,22,46,12,0.4783,
+lawyers,Southmere,weekly_active_last_4_weeks:Assistant B,10,81,21,0.1235,
+lawyers,Westbrook,weekly_active_latest,12,24,24,0.5000,
+lawyers,Westbrook,weekly_active_last_4_weeks,51,100,26,0.5100,
+lawyers,Westbrook,regular_use,12,26,26,0.4615,
+lawyers,Westbrook,activated,17,27,27,0.6296,
+lawyers,Westbrook,weekly_active_last_4_weeks:Assistant A,31,73,19,0.4247,
+lawyers,Westbrook,weekly_active_last_4_weeks:Assistant B,29,100,26,0.2900,
+lawyers,All,weekly_active_latest,87,193,193,0.4508,
+lawyers,All,weekly_active_last_4_weeks,337,777,203,0.4337,
+lawyers,All,regular_use,77,203,203,0.3793,
+lawyers,All,activated,118,208,208,0.5673,
+lawyers,All,weekly_active_last_4_weeks:Assistant A,230,578,151,0.3979,
+lawyers,All,weekly_active_last_4_weeks:Assistant B,165,777,203,0.2124,

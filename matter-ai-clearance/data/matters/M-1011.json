@@ -1,0 +1,21 @@
+{
+ "id": "M-1011",
+ "name": "Quillfether: reseller agreement template",
+ "client_id": "quillfether",
+ "matter_type": "commercial contract",
+ "responsible_attorney": "P. Delacroix (fictional)",
+ "intake_date": "2026-01-20",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "quillfether-ocg-v1-2025"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

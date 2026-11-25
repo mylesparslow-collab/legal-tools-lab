@@ -1,0 +1,1357 @@
+{
+ "about": "Ground truth written by the generator. A document is relevant to a query when its main topic and document type are the ones the query was built from. Drafts and adapted copies count as their final or original (see equivalents). The search code never reads this file.",
+ "seed": 20260630,
+ "as_of": "2026-06-30",
+ "eval_user": "U102",
+ "queries": [
+  {
+   "id": "Q01",
+   "category": "topic and document type",
+   "query": "family limited partnership agreement",
+   "as_user": "U102",
+   "topic": "family limited partnership",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00183",
+    "D00189",
+    "D00560",
+    "D00609",
+    "D00610",
+    "D01120"
+   ]
+  },
+  {
+   "id": "Q02",
+   "category": "topic and document type",
+   "query": "transfer pricing documentation memo",
+   "as_user": "U102",
+   "topic": "transfer pricing documentation",
+   "doc_type": "memo",
+   "relevant": [
+    "D00174",
+    "D00176",
+    "D00177",
+    "D00698",
+    "D00903",
+    "D00904",
+    "D00951"
+   ]
+  },
+  {
+   "id": "Q03",
+   "category": "topic and document type",
+   "query": "purchase and sale due diligence agreement",
+   "as_user": "U102",
+   "topic": "purchase and sale due diligence",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00150",
+    "D00528",
+    "D00532",
+    "D00677",
+    "D01033",
+    "D01177"
+   ]
+  },
+  {
+   "id": "Q04",
+   "category": "topic and document type",
+   "query": "arbitration clause enforcement motion",
+   "as_user": "U102",
+   "topic": "arbitration clause enforcement",
+   "doc_type": "motion",
+   "relevant": [
+    "D00004",
+    "D00006",
+    "D00008",
+    "D00286",
+    "D00429",
+    "D01077",
+    "D01081",
+    "D01173",
+    "D01175",
+    "D01176"
+   ]
+  },
+  {
+   "id": "Q05",
+   "category": "topic and document type",
+   "query": "personal jurisdiction motion",
+   "as_user": "U102",
+   "topic": "personal jurisdiction",
+   "doc_type": "motion",
+   "relevant": [
+    "D00194",
+    "D00245",
+    "D00248",
+    "D00672",
+    "D00674",
+    "D00675",
+    "D00821",
+    "D01169",
+    "D01174"
+   ]
+  },
+  {
+   "id": "Q06",
+   "category": "topic and document type",
+   "query": "guaranty and credit support checklist",
+   "as_user": "U102",
+   "topic": "guaranty and credit support",
+   "doc_type": "checklist",
+   "relevant": [
+    "D00221",
+    "D00545",
+    "D00744",
+    "D00799",
+    "D00800",
+    "D00900",
+    "D01107"
+   ]
+  },
+  {
+   "id": "Q07",
+   "category": "topic and document type",
+   "query": "probate petition form",
+   "as_user": "U102",
+   "topic": "probate petition",
+   "doc_type": "form",
+   "relevant": [
+    "D00236",
+    "D00316",
+    "D00319",
+    "D00369",
+    "D01159",
+    "D01161",
+    "D01163"
+   ]
+  },
+  {
+   "id": "Q08",
+   "category": "topic and document type",
+   "query": "earn-out provisions memo",
+   "as_user": "U102",
+   "topic": "earn-out provisions",
+   "doc_type": "memo",
+   "relevant": [
+    "D00618",
+    "D00768",
+    "D00868",
+    "D00869",
+    "D01020",
+    "D01022",
+    "D01027"
+   ]
+  },
+  {
+   "id": "Q09",
+   "category": "topic and document type",
+   "query": "trust decanting form",
+   "as_user": "U102",
+   "topic": "trust decanting",
+   "doc_type": "form",
+   "relevant": [
+    "D00139",
+    "D00421",
+    "D00424",
+    "D00710",
+    "D00714"
+   ]
+  },
+  {
+   "id": "Q10",
+   "category": "topic and document type",
+   "query": "data breach notification agreement",
+   "as_user": "U102",
+   "topic": "data breach notification",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00136",
+    "D00137",
+    "D00275",
+    "D00416",
+    "D00417",
+    "D00556",
+    "D01117"
+   ]
+  },
+  {
+   "id": "Q11",
+   "category": "topic and document type",
+   "query": "ground lease financing agreement",
+   "as_user": "U102",
+   "topic": "ground lease financing",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00010",
+    "D00336",
+    "D00529",
+    "D00624",
+    "D00629"
+   ]
+  },
+  {
+   "id": "Q12",
+   "category": "topic and document type",
+   "query": "reasonable accommodation memo",
+   "as_user": "U102",
+   "topic": "reasonable accommodation",
+   "doc_type": "memo",
+   "relevant": [
+    "D00258",
+    "D00488",
+    "D00490",
+    "D00493",
+    "D00993",
+    "D01140"
+   ]
+  },
+  {
+   "id": "Q13",
+   "category": "topic and document type",
+   "query": "environmental review memo",
+   "as_user": "U102",
+   "topic": "environmental review",
+   "doc_type": "memo",
+   "relevant": [
+    "D00437",
+    "D00441",
+    "D00733",
+    "D00885",
+    "D00887"
+   ]
+  },
+  {
+   "id": "Q14",
+   "category": "topic and document type",
+   "query": "executive employment agreement form",
+   "as_user": "U102",
+   "topic": "executive employment agreement",
+   "doc_type": "form",
+   "relevant": [
+    "D00212",
+    "D00581",
+    "D00582",
+    "D00583",
+    "D01139",
+    "D01141"
+   ]
+  },
+  {
+   "id": "Q15",
+   "category": "topic with a type filter",
+   "query": "records retention schedule type:\"agreement\"",
+   "as_user": "U102",
+   "topic": "records retention schedule",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00041",
+    "D00314",
+    "D00315",
+    "D00657",
+    "D00658",
+    "D00659",
+    "D00856",
+    "D00908",
+    "D00910",
+    "D01207"
+   ]
+  },
+  {
+   "id": "Q16",
+   "category": "topic with a type filter",
+   "query": "trustee removal type:\"agreement\"",
+   "as_user": "U102",
+   "topic": "trustee removal",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00046",
+    "D00140",
+    "D00141",
+    "D00862",
+    "D00866",
+    "D01119"
+   ]
+  },
+  {
+   "id": "Q17",
+   "category": "topic with a type filter",
+   "query": "forum selection clause type:\"brief\"",
+   "as_user": "U102",
+   "topic": "forum selection clause",
+   "doc_type": "brief",
+   "relevant": [
+    "D00056",
+    "D00195",
+    "D00198",
+    "D00378",
+    "D00381",
+    "D00524",
+    "D00877",
+    "D01029",
+    "D01125"
+   ]
+  },
+  {
+   "id": "Q18",
+   "category": "topic with a type filter",
+   "query": "charitable remainder trust type:\"memo\"",
+   "as_user": "U102",
+   "topic": "charitable remainder trust",
+   "doc_type": "memo",
+   "relevant": [
+    "D00047",
+    "D00050",
+    "D00911",
+    "D00914",
+    "D00917"
+   ]
+  },
+  {
+   "id": "Q19",
+   "category": "topic with a type filter",
+   "query": "public bidding type:\"staff report\"",
+   "as_user": "U102",
+   "topic": "public bidding",
+   "doc_type": "staff report",
+   "relevant": [
+    "D00112",
+    "D00254",
+    "D00255",
+    "D01088",
+    "D01089",
+    "D01092",
+    "D01135",
+    "D01136",
+    "D01138"
+   ]
+  },
+  {
+   "id": "Q20",
+   "category": "topic with a type filter",
+   "query": "borrowing base type:\"opinion letter\"",
+   "as_user": "U102",
+   "topic": "borrowing base",
+   "doc_type": "opinion letter",
+   "relevant": [
+    "D00648",
+    "D00743",
+    "D00944",
+    "D00950",
+    "D01149"
+   ]
+  },
+  {
+   "id": "Q21",
+   "category": "exact phrase",
+   "query": "\"development agreement\" staff report",
+   "as_user": "U102",
+   "topic": "development agreement",
+   "doc_type": "staff report",
+   "relevant": [
+    "D00157",
+    "D00206",
+    "D00631",
+    "D00632",
+    "D00634",
+    "D00636",
+    "D00928",
+    "D00930"
+   ]
+  },
+  {
+   "id": "Q22",
+   "category": "exact phrase",
+   "query": "\"consideration period\" agreement",
+   "as_user": "U102",
+   "topic": "severance agreement",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00069",
+    "D00584",
+    "D00734",
+    "D00787",
+    "D00792",
+    "D01044"
+   ]
+  },
+  {
+   "id": "Q23",
+   "category": "exact phrase",
+   "query": "\"probate petition\" opinion letter",
+   "as_user": "U102",
+   "topic": "probate petition",
+   "doc_type": "opinion letter",
+   "relevant": [
+    "D00317",
+    "D00318",
+    "D00320",
+    "D00419",
+    "D00468",
+    "D00470"
+   ]
+  },
+  {
+   "id": "Q24",
+   "category": "exact phrase",
+   "query": "\"likelihood of confusion\" agreement",
+   "as_user": "U102",
+   "topic": "trademark opposition",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00496",
+    "D00497",
+    "D00498",
+    "D00540",
+    "D01053"
+   ]
+  },
+  {
+   "id": "Q25",
+   "category": "exact phrase",
+   "query": "\"legal hold\" memo",
+   "as_user": "U102",
+   "topic": "records retention schedule",
+   "doc_type": "memo",
+   "relevant": [
+    "D00037",
+    "D00313",
+    "D00602",
+    "D00605",
+    "D00607",
+    "D00909",
+    "D01158",
+    "D01208"
+   ]
+  },
+  {
+   "id": "Q26",
+   "category": "best example",
+   "query": "indemnification cap and basket agreement",
+   "as_user": "U102",
+   "topic": "indemnification cap and basket",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00192",
+    "D00282",
+    "D00918",
+    "D00919",
+    "D01024",
+    "D01026",
+    "D01072"
+   ],
+   "best": "D01072"
+  },
+  {
+   "id": "Q27",
+   "category": "best example",
+   "query": "reasonable accommodation form",
+   "as_user": "U102",
+   "topic": "reasonable accommodation",
+   "doc_type": "form",
+   "relevant": [
+    "D00297",
+    "D00347",
+    "D00349",
+    "D00442",
+    "D00445",
+    "D00892",
+    "D00994"
+   ],
+   "best": "D00297"
+  },
+  {
+   "id": "Q28",
+   "category": "best example",
+   "query": "earn-out provisions form",
+   "as_user": "U102",
+   "topic": "earn-out provisions",
+   "doc_type": "form",
+   "relevant": [
+    "D00100",
+    "D00615",
+    "D00766",
+    "D00871",
+    "D01023"
+   ],
+   "best": "D00766"
+  },
+  {
+   "id": "Q29",
+   "category": "best example",
+   "query": "sales tax nexus memo",
+   "as_user": "U102",
+   "topic": "sales tax nexus",
+   "doc_type": "memo",
+   "relevant": [
+    "D00598",
+    "D00807",
+    "D00808",
+    "D01008",
+    "D01009",
+    "D01109"
+   ],
+   "best": "D01008"
+  },
+  {
+   "id": "Q30",
+   "category": "best example",
+   "query": "borrowing base memo",
+   "as_user": "U102",
+   "topic": "borrowing base",
+   "doc_type": "memo",
+   "relevant": [
+    "D00268",
+    "D00305",
+    "D00306",
+    "D00547",
+    "D00848",
+    "D01148"
+   ],
+   "best": "D01148"
+  },
+  {
+   "id": "Q31",
+   "category": "best example",
+   "query": "revocable trust form",
+   "as_user": "U102",
+   "topic": "revocable trust",
+   "doc_type": "form",
+   "relevant": [
+    "D00184",
+    "D00186",
+    "D00187",
+    "D00188",
+    "D00278",
+    "D00912",
+    "D01015"
+   ],
+   "best": "D00184"
+  },
+  {
+   "id": "Q32",
+   "category": "different vocabulary",
+   "query": "restraint on joining a rival after resignation agreement",
+   "as_user": "U102",
+   "topic": "non-compete covenant",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00735"
+   ]
+  },
+  {
+   "id": "Q33",
+   "category": "different vocabulary",
+   "query": "handing premises over to a new occupier agreement",
+   "as_user": "U102",
+   "topic": "lease assignment and subletting",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00434",
+    "D00679",
+    "D00726",
+    "D00977"
+   ]
+  },
+  {
+   "id": "Q34",
+   "category": "different vocabulary",
+   "query": "deferred price contingent on future performance agreement",
+   "as_user": "U102",
+   "topic": "earn-out provisions",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00101",
+    "D00612",
+    "D00613",
+    "D00614",
+    "D00617",
+    "D00872",
+    "D00873",
+    "D01025"
+   ]
+  },
+  {
+   "id": "Q35",
+   "category": "different vocabulary",
+   "query": "keeping the opposing specialist witness out brief",
+   "as_user": "U102",
+   "topic": "expert exclusion",
+   "doc_type": "brief",
+   "relevant": [
+    "D00103",
+    "D00104",
+    "D00480"
+   ]
+  },
+  {
+   "id": "Q36",
+   "category": "different vocabulary",
+   "query": "bank agrees to hold off after missed payments agreement",
+   "as_user": "U102",
+   "topic": "forbearance agreement",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00359",
+    "D00360",
+    "D01106",
+    "D01108"
+   ]
+  },
+  {
+   "id": "Q37",
+   "category": "different vocabulary",
+   "query": "telling customers about a hacking incident agreement",
+   "as_user": "U102",
+   "topic": "data breach notification",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00136",
+    "D00137",
+    "D00275",
+    "D00416",
+    "D00417",
+    "D00556",
+    "D01117"
+   ]
+  }
+ ],
+ "wall_tests": [
+  {
+   "id": "W1-M0211",
+   "wall_id": "W1",
+   "matter_id": "M0211",
+   "canary_term": "halcyon",
+   "queries": [
+    "Halcyon",
+    "project Halcyon",
+    "earn-out provisions",
+    "earn-out provisions stock purchase"
+   ],
+   "denied_users": [
+    "U002",
+    "U004",
+    "U005",
+    "U011"
+   ],
+   "must_never_appear": [
+    "D01020",
+    "D01021",
+    "D01022",
+    "D01023",
+    "D01024",
+    "D01025",
+    "D01026",
+    "D01027",
+    "D01214",
+    "D01216",
+    "D01441",
+    "D01442",
+    "D01443"
+   ],
+   "control_user": "U003"
+  },
+  {
+   "id": "W2-M0242",
+   "wall_id": "W2",
+   "matter_id": "M0242",
+   "canary_term": "cinderford",
+   "queries": [
+    "Cinderford",
+    "project Cinderford",
+    "arbitration clause enforcement",
+    "arbitration clause enforcement business tort"
+   ],
+   "denied_users": [
+    "U016",
+    "U021",
+    "U023",
+    "U024"
+   ],
+   "must_never_appear": [
+    "D01169",
+    "D01170",
+    "D01171",
+    "D01172",
+    "D01173",
+    "D01174",
+    "D01175",
+    "D01176"
+   ],
+   "control_user": "U015"
+  },
+  {
+   "id": "W2-M0072",
+   "wall_id": "W2",
+   "matter_id": "M0072",
+   "canary_term": "tamarisk",
+   "queries": [
+    "Tamarisk",
+    "project Tamarisk",
+    "forum selection clause",
+    "forum selection clause business tort"
+   ],
+   "denied_users": [
+    "U016",
+    "U021",
+    "U023",
+    "U024"
+   ],
+   "must_never_appear": [
+    "D00327",
+    "D00328",
+    "D00329",
+    "D00330",
+    "D00331",
+    "D00332",
+    "D00333",
+    "D00334"
+   ],
+   "control_user": "U013"
+  },
+  {
+   "id": "W3-M0107",
+   "wall_id": "W3",
+   "matter_id": "M0107",
+   "canary_term": "orrery",
+   "queries": [
+    "Orrery",
+    "project Orrery",
+    "intercreditor arrangements",
+    "intercreditor arrangements syndicated loan"
+   ],
+   "denied_users": [
+    "U074",
+    "U081",
+    "U084"
+   ],
+   "must_never_appear": [
+    "D00499",
+    "D00500",
+    "D00501",
+    "D00502",
+    "D00503",
+    "D00504",
+    "D00505",
+    "D00506",
+    "D01215",
+    "D01217",
+    "D01357"
+   ],
+   "control_user": "U075"
+  }
+ ],
+ "restricted_tests": [
+  {
+   "id": "R-M0025",
+   "matter_id": "M0025",
+   "canary_term": "juniper",
+   "queries": [
+    "Juniper",
+    "reasonable accommodation"
+   ],
+   "denied_users": [
+    "U013",
+    "U016",
+    "U117"
+   ],
+   "must_never_appear": [
+    "D00116",
+    "D00117",
+    "D00118",
+    "D01328",
+    "D01329"
+   ],
+   "control_user": "U051"
+  },
+  {
+   "id": "R-M0063",
+   "matter_id": "M0063",
+   "canary_term": "lodestar",
+   "queries": [
+    "Lodestar",
+    "operating expense passthrough"
+   ],
+   "denied_users": [
+    "U049",
+    "U072",
+    "U083"
+   ],
+   "must_never_appear": [
+    "D00289",
+    "D00290",
+    "D00291",
+    "D00292",
+    "D01335",
+    "D01336",
+    "D01337",
+    "D01458",
+    "D01459"
+   ],
+   "control_user": "U026"
+  },
+  {
+   "id": "R-M0068",
+   "matter_id": "M0068",
+   "canary_term": "cobalt",
+   "queries": [
+    "Cobalt",
+    "tax-free reorganization"
+   ],
+   "denied_users": [
+    "U015",
+    "U018",
+    "U089"
+   ],
+   "must_never_appear": [
+    "D00308",
+    "D00309",
+    "D00310",
+    "D00311",
+    "D00312"
+   ],
+   "control_user": "U085"
+  },
+  {
+   "id": "R-M0121",
+   "matter_id": "M0121",
+   "canary_term": "quillon",
+   "queries": [
+    "Quillon",
+    "earn-out provisions"
+   ],
+   "denied_users": [
+    "U018",
+    "U034",
+    "U042"
+   ],
+   "must_never_appear": [
+    "D00562",
+    "D00563",
+    "D00564",
+    "D01379"
+   ],
+   "control_user": "U002"
+  },
+  {
+   "id": "R-M0122",
+   "matter_id": "M0122",
+   "canary_term": "marram",
+   "queries": [
+    "Marram",
+    "preliminary injunction"
+   ],
+   "denied_users": [
+    "U047",
+    "U057",
+    "U070"
+   ],
+   "must_never_appear": [
+    "D00565",
+    "D00566",
+    "D00567"
+   ],
+   "control_user": "U013"
+  },
+  {
+   "id": "R-M0123",
+   "matter_id": "M0123",
+   "canary_term": "galleon",
+   "queries": [
+    "Galleon",
+    "lease assignment and subletting"
+   ],
+   "denied_users": [
+    "U019",
+    "U052",
+    "U112"
+   ],
+   "must_never_appear": [
+    "D00568",
+    "D00569",
+    "D00570",
+    "D00571",
+    "D00572",
+    "D00573"
+   ],
+   "control_user": "U027"
+  },
+  {
+   "id": "R-M0136",
+   "matter_id": "M0136",
+   "canary_term": "saffron",
+   "queries": [
+    "Saffron",
+    "patent license"
+   ],
+   "denied_users": [
+    "U007",
+    "U045",
+    "U051"
+   ],
+   "must_never_appear": [
+    "D00642",
+    "D00643",
+    "D00644",
+    "D00645",
+    "D00646",
+    "D00647",
+    "D01303",
+    "D01304",
+    "D01305",
+    "D01445",
+    "D01446"
+   ],
+   "control_user": "U062"
+  },
+  {
+   "id": "R-M0144",
+   "matter_id": "M0144",
+   "canary_term": "wicklow",
+   "queries": [
+    "Wicklow",
+    "short-term rental ordinance"
+   ],
+   "denied_users": [
+    "U032",
+    "U078",
+    "U119"
+   ],
+   "must_never_appear": [
+    "D00680",
+    "D00681",
+    "D00682",
+    "D00683",
+    "D01396",
+    "D01397"
+   ],
+   "control_user": "U038"
+  },
+  {
+   "id": "R-M0149",
+   "matter_id": "M0149",
+   "canary_term": "larkspur",
+   "queries": [
+    "Larkspur",
+    "data processing agreement"
+   ],
+   "denied_users": [
+    "U028",
+    "U036",
+    "U047"
+   ],
+   "must_never_appear": [
+    "D00703",
+    "D00704",
+    "D00705",
+    "D00706",
+    "D00707",
+    "D00708",
+    "D00709"
+   ],
+   "control_user": "U098"
+  },
+  {
+   "id": "R-M0162",
+   "matter_id": "M0162",
+   "canary_term": "vesper",
+   "queries": [
+    "Vesper",
+    "class certification"
+   ],
+   "denied_users": [
+    "U051",
+    "U055",
+    "U063"
+   ],
+   "must_never_appear": [
+    "D00770",
+    "D00771",
+    "D00772",
+    "D00773",
+    "D00774",
+    "D00775",
+    "D01482"
+   ],
+   "control_user": "U014"
+  },
+  {
+   "id": "R-M0170",
+   "matter_id": "M0170",
+   "canary_term": "onyx",
+   "queries": [
+    "Onyx",
+    "family limited partnership"
+   ],
+   "denied_users": [
+    "U011",
+    "U085",
+    "U087"
+   ],
+   "must_never_appear": [
+    "D00812",
+    "D00813",
+    "D00814",
+    "D00815",
+    "D00816",
+    "D00817",
+    "D01488",
+    "D01489",
+    "D01490"
+   ],
+   "control_user": "U110"
+  },
+  {
+   "id": "R-M0207",
+   "matter_id": "M0207",
+   "canary_term": "tundra",
+   "queries": [
+    "Tundra",
+    "guaranty and credit support"
+   ],
+   "denied_users": [
+    "U067",
+    "U072",
+    "U119"
+   ],
+   "must_never_appear": [
+    "D00999",
+    "D01000",
+    "D01001",
+    "D01002"
+   ],
+   "control_user": "U075"
+  },
+  {
+   "id": "R-M0214",
+   "matter_id": "M0214",
+   "canary_term": "kestrel",
+   "queries": [
+    "Kestrel",
+    "subdivision map"
+   ],
+   "denied_users": [
+    "U038",
+    "U082",
+    "U091"
+   ],
+   "must_never_appear": [
+    "D01038",
+    "D01039",
+    "D01040",
+    "D01041"
+   ],
+   "control_user": "U044"
+  },
+  {
+   "id": "R-M0241",
+   "matter_id": "M0241",
+   "canary_term": "sextant",
+   "queries": [
+    "Sextant",
+    "transition services"
+   ],
+   "denied_users": [
+    "U051",
+    "U065",
+    "U113"
+   ],
+   "must_never_appear": [
+    "D01165",
+    "D01166",
+    "D01167",
+    "D01168"
+   ],
+   "control_user": "U001"
+  }
+ ],
+ "equivalents": {
+  "D01214": "D00918",
+  "D01215": "D00900",
+  "D01216": "D00521",
+  "D01217": "D00169",
+  "D01218": "D01021",
+  "D01219": "D00499",
+  "D01220": "D00056",
+  "D01221": "D00727",
+  "D01222": "D00104",
+  "D01223": "D00511",
+  "D01224": "D00733",
+  "D01225": "D00154",
+  "D01226": "D00336",
+  "D01227": "D00188",
+  "D01228": "D01124",
+  "D01229": "D00935",
+  "D01230": "D00797",
+  "D01231": "D00379",
+  "D01232": "D00034",
+  "D01233": "D00715",
+  "D01234": "D01184",
+  "D01235": "D00710",
+  "D01236": "D01112",
+  "D01237": "D00693",
+  "D01238": "D00347",
+  "D01239": "D00361",
+  "D01240": "D00730",
+  "D01241": "D00067",
+  "D01242": "D00076",
+  "D01243": "D00451",
+  "D01244": "D00074",
+  "D01245": "D00911",
+  "D01246": "D00911",
+  "D01247": "D00911",
+  "D01248": "D00923",
+  "D01249": "D00247",
+  "D01250": "D00247",
+  "D01251": "D00247",
+  "D01252": "D00614",
+  "D01253": "D00614",
+  "D01254": "D00614",
+  "D01255": "D00868",
+  "D01256": "D00868",
+  "D01257": "D00085",
+  "D01258": "D00085",
+  "D01259": "D00085",
+  "D01260": "D00970",
+  "D01261": "D00970",
+  "D01262": "D00153",
+  "D01263": "D00153",
+  "D01264": "D00620",
+  "D01265": "D00620",
+  "D01266": "D00230",
+  "D01267": "D01191",
+  "D01268": "D01191",
+  "D01269": "D00725",
+  "D01270": "D00419",
+  "D01271": "D00419",
+  "D01272": "D00856",
+  "D01273": "D00856",
+  "D01274": "D00939",
+  "D01275": "D00939",
+  "D01276": "D00535",
+  "D01277": "D00535",
+  "D01278": "D00535",
+  "D01279": "D00191",
+  "D01280": "D00191",
+  "D01281": "D00191",
+  "D01282": "D00155",
+  "D01283": "D00155",
+  "D01284": "D00489",
+  "D01285": "D01116",
+  "D01286": "D01116",
+  "D01287": "D01116",
+  "D01288": "D00842",
+  "D01289": "D00593",
+  "D01290": "D00766",
+  "D01291": "D01138",
+  "D01292": "D01138",
+  "D01293": "D00468",
+  "D01294": "D00156",
+  "D01295": "D00156",
+  "D01296": "D00156",
+  "D01297": "D00260",
+  "D01298": "D00260",
+  "D01299": "D00260",
+  "D01300": "D00900",
+  "D01301": "D00900",
+  "D01302": "D00900",
+  "D01303": "D00643",
+  "D01304": "D00643",
+  "D01305": "D00643",
+  "D01306": "D00901",
+  "D01307": "D00901",
+  "D01308": "D00901",
+  "D01309": "D00152",
+  "D01310": "D00460",
+  "D01311": "D00460",
+  "D01312": "D00460",
+  "D01313": "D00520",
+  "D01314": "D00520",
+  "D01315": "D01049",
+  "D01316": "D01049",
+  "D01317": "D01049",
+  "D01318": "D00545",
+  "D01319": "D00545",
+  "D01320": "D00760",
+  "D01321": "D00760",
+  "D01322": "D00760",
+  "D01323": "D00256",
+  "D01324": "D00256",
+  "D01325": "D00924",
+  "D01326": "D00730",
+  "D01327": "D00730",
+  "D01328": "D00117",
+  "D01329": "D00117",
+  "D01330": "D00820",
+  "D01331": "D00820",
+  "D01332": "D00395",
+  "D01333": "D00395",
+  "D01334": "D00395",
+  "D01335": "D00289",
+  "D01336": "D00289",
+  "D01337": "D00289",
+  "D01338": "D00389",
+  "D01339": "D00389",
+  "D01340": "D00389",
+  "D01341": "D00829",
+  "D01342": "D01042",
+  "D01343": "D01042",
+  "D01344": "D00404",
+  "D01345": "D00404",
+  "D01346": "D00878",
+  "D01347": "D00878",
+  "D01348": "D00746",
+  "D01349": "D00746",
+  "D01350": "D00746",
+  "D01351": "D00314",
+  "D01352": "D00314",
+  "D01353": "D00314",
+  "D01354": "D00693",
+  "D01355": "D00693",
+  "D01356": "D00693",
+  "D01357": "D00504",
+  "D01358": "D01209",
+  "D01359": "D00351",
+  "D01360": "D00351",
+  "D01361": "D00351",
+  "D01362": "D01196",
+  "D01363": "D01112",
+  "D01364": "D01112",
+  "D01365": "D00541",
+  "D01366": "D00828",
+  "D01367": "D00804",
+  "D01368": "D00263",
+  "D01369": "D00263",
+  "D01370": "D00263",
+  "D01371": "D00145",
+  "D01372": "D00172",
+  "D01373": "D01162",
+  "D01374": "D01162",
+  "D01375": "D00811",
+  "D01376": "D00811",
+  "D01377": "D00811",
+  "D01378": "D00296",
+  "D01379": "D00563",
+  "D01380": "D00367",
+  "D01381": "D00367",
+  "D01382": "D00367",
+  "D01383": "D00026",
+  "D01384": "D00718",
+  "D01385": "D00718",
+  "D01386": "D00907",
+  "D01387": "D00443",
+  "D01388": "D00301",
+  "D01389": "D00301",
+  "D01390": "D00301",
+  "D01391": "D00554",
+  "D01392": "D00554",
+  "D01393": "D00554",
+  "D01394": "D00921",
+  "D01395": "D00921",
+  "D01396": "D00683",
+  "D01397": "D00683",
+  "D01398": "D00012",
+  "D01399": "D00012",
+  "D01400": "D00012",
+  "D01401": "D00176",
+  "D01402": "D00596",
+  "D01403": "D00596",
+  "D01404": "D00596",
+  "D01405": "D00459",
+  "D01406": "D00459",
+  "D01407": "D00459",
+  "D01408": "D00742",
+  "D01409": "D00742",
+  "D01410": "D01147",
+  "D01411": "D00607",
+  "D01412": "D00607",
+  "D01413": "D00607",
+  "D01414": "D00560",
+  "D01415": "D00560",
+  "D01416": "D00383",
+  "D01417": "D00383",
+  "D01418": "D00383",
+  "D01419": "D00600",
+  "D01420": "D00600",
+  "D01421": "D00360",
+  "D01422": "D00360",
+  "D01423": "D00648",
+  "D01424": "D00648",
+  "D01425": "D00282",
+  "D01426": "D00282",
+  "D01427": "D00685",
+  "D01428": "D00685",
+  "D01429": "D00326",
+  "D01430": "D00326",
+  "D01431": "D00243",
+  "D01432": "D00109",
+  "D01433": "D00109",
+  "D01434": "D00056",
+  "D01435": "D00056",
+  "D01436": "D01067",
+  "D01437": "D01067",
+  "D01438": "D00650",
+  "D01439": "D00650",
+  "D01440": "D00862",
+  "D01441": "D01025",
+  "D01442": "D01025",
+  "D01443": "D01025",
+  "D01444": "D00456",
+  "D01445": "D00644",
+  "D01446": "D00644",
+  "D01447": "D00025",
+  "D01448": "D00159",
+  "D01449": "D00159",
+  "D01450": "D01111",
+  "D01451": "D00103",
+  "D01452": "D00103",
+  "D01453": "D00522",
+  "D01454": "D00430",
+  "D01455": "D00430",
+  "D01456": "D00430",
+  "D01457": "D01019",
+  "D01458": "D00291",
+  "D01459": "D00291",
+  "D01460": "D00275",
+  "D01461": "D00275",
+  "D01462": "D00077",
+  "D01463": "D00060",
+  "D01464": "D00060",
+  "D01465": "D00658",
+  "D01466": "D00658",
+  "D01467": "D00450",
+  "D01468": "D00450",
+  "D01469": "D00303",
+  "D01470": "D00303",
+  "D01471": "D00941",
+  "D01472": "D00585",
+  "D01473": "D00585",
+  "D01474": "D00062",
+  "D01475": "D00062",
+  "D01476": "D00062",
+  "D01477": "D00631",
+  "D01478": "D00631",
+  "D01479": "D00631",
+  "D01480": "D00604",
+  "D01481": "D00604",
+  "D01482": "D00773",
+  "D01483": "D00973",
+  "D01484": "D00973",
+  "D01485": "D00323",
+  "D01486": "D00323",
+  "D01487": "D00323",
+  "D01488": "D00816",
+  "D01489": "D00816",
+  "D01490": "D00816",
+  "D01491": "D01099",
+  "D01492": "D01099",
+  "D01493": "D00675",
+  "D01494": "D00675",
+  "D01495": "D00675",
+  "D01496": "D00996",
+  "D01497": "D00996",
+  "D01498": "D00871",
+  "D01499": "D00871",
+  "D01500": "D00895"
+ }
+}

@@ -1,0 +1,993 @@
+{
+  "what": "Drift-flag sensitivity on regenerated synthetic firms. Seeds 1 to 20, each planted step, everything else as shipped. Thresholds unchanged.",
+  "drift_type": "internal_investigation",
+  "shipped_step": "2.0",
+  "rule": "Flag = later/earlier median ratio at least 1.3 either way, at most 0.02 of 1000 rank shuffles as lopsided, and P75 coverage more than 15 points off nominal with at least 10 tested matters.",
+  "rows": [
+    {
+      "planted_step": "1.0",
+      "seeds": 20,
+      "drift_type_flagged": 0,
+      "drift_type_passed_shuffle_test": 1,
+      "median_observed_late_over_early": "1.06",
+      "other_types_flagged": 1,
+      "other_type_runs": 200,
+      "runs": [
+        {
+          "seed": 1,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.08",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 2,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.38",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 3,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.09",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 4,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.08",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 5,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.93",
+          "n_tested": 30,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 6,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.79",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 7,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.06",
+          "n_tested": 27,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 8,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.27",
+          "n_tested": 33,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 9,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.76",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 10,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.10",
+          "n_tested": 25,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 11,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.95",
+          "n_tested": 26,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 12,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.16",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 13,
+          "flagged": false,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "0.69",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 14,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.85",
+          "n_tested": 24,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 15,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.78",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 16,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.70",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 17,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.96",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 18,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.88",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 19,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.23",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 20,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.25",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        }
+      ]
+    },
+    {
+      "planted_step": "1.3",
+      "seeds": 20,
+      "drift_type_flagged": 1,
+      "drift_type_passed_shuffle_test": 2,
+      "median_observed_late_over_early": "1.17",
+      "other_types_flagged": 3,
+      "other_type_runs": 200,
+      "runs": [
+        {
+          "seed": 1,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.14",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 2,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.49",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 3,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.37",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 4,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.38",
+          "n_tested": 28,
+          "other_types_flagged": [
+            "public_works_bid_protest"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 5,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.16",
+          "n_tested": 30,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 6,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.88",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 7,
+          "flagged": false,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.48",
+          "n_tested": 27,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 8,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.69",
+          "n_tested": 33,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 9,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.03",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 10,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.40",
+          "n_tested": 25,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 11,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.08",
+          "n_tested": 26,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 12,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.50",
+          "n_tested": 28,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 13,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.87",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 14,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.10",
+          "n_tested": 24,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 15,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.03",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 16,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.87",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 17,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.17",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 18,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.07",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 19,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.58",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 20,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.40",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        }
+      ]
+    },
+    {
+      "planted_step": "1.5",
+      "seeds": 20,
+      "drift_type_flagged": 6,
+      "drift_type_passed_shuffle_test": 8,
+      "median_observed_late_over_early": "1.39",
+      "other_types_flagged": 3,
+      "other_type_runs": 200,
+      "runs": [
+        {
+          "seed": 1,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.39",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 2,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.62",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 3,
+          "flagged": false,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.51",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 4,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.38",
+          "n_tested": 28,
+          "other_types_flagged": [
+            "public_works_bid_protest"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 5,
+          "flagged": false,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.38",
+          "n_tested": 30,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 6,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.09",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 7,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.78",
+          "n_tested": 27,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 8,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.84",
+          "n_tested": 33,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 9,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.18",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 10,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.64",
+          "n_tested": 25,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 11,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.08",
+          "n_tested": 26,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 12,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.67",
+          "n_tested": 28,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 13,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "0.94",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 14,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.19",
+          "n_tested": 24,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 15,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.15",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 16,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.07",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 17,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.40",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 18,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.29",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 19,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.89",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 20,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.68",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        }
+      ]
+    },
+    {
+      "planted_step": "1.7",
+      "seeds": 20,
+      "drift_type_flagged": 11,
+      "drift_type_passed_shuffle_test": 11,
+      "median_observed_late_over_early": "1.61",
+      "other_types_flagged": 3,
+      "other_type_runs": 200,
+      "runs": [
+        {
+          "seed": 1,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.51",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 2,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.76",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 3,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.84",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 4,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.53",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 5,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.61",
+          "n_tested": 30,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 6,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.11",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 7,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.92",
+          "n_tested": 27,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 8,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "2.14",
+          "n_tested": 33,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 9,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.26",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 10,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.74",
+          "n_tested": 25,
+          "other_types_flagged": [
+            "ordinance_drafting"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 11,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.08",
+          "n_tested": 26,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 12,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.95",
+          "n_tested": 28,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 13,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.10",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 14,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.41",
+          "n_tested": 24,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 15,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.29",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 16,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.18",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 17,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.63",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 18,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.37",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 19,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.90",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 20,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.86",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        }
+      ]
+    },
+    {
+      "planted_step": "2.0",
+      "seeds": 20,
+      "drift_type_flagged": 14,
+      "drift_type_passed_shuffle_test": 15,
+      "median_observed_late_over_early": "1.84",
+      "other_types_flagged": 2,
+      "other_type_runs": 200,
+      "runs": [
+        {
+          "seed": 1,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.63",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 2,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.94",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 3,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "2.07",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 4,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.83",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 5,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.84",
+          "n_tested": 30,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 6,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.16",
+          "n_tested": 31,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 7,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "2.26",
+          "n_tested": 27,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 8,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "2.25",
+          "n_tested": 33,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 9,
+          "flagged": false,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.57",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 10,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.99",
+          "n_tested": 25,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 11,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.27",
+          "n_tested": 26,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 12,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "2.21",
+          "n_tested": 28,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 13,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "1.33",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 14,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.65",
+          "n_tested": 24,
+          "other_types_flagged": [
+            "administrative_licensing_appeal"
+          ],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 15,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.46",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 16,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.45",
+          "n_tested": 29,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 17,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.87",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 18,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "1.52",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 19,
+          "flagged": false,
+          "shifted_by_shuffle_test": false,
+          "late_over_early": "2.31",
+          "n_tested": 28,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        },
+        {
+          "seed": 20,
+          "flagged": true,
+          "shifted_by_shuffle_test": true,
+          "late_over_early": "2.32",
+          "n_tested": 32,
+          "other_types_flagged": [],
+          "other_types_judged": 10
+        }
+      ]
+    }
+  ],
+  "no_planted_shift": {
+    "other_types_flagged": 12,
+    "other_type_runs": 1000,
+    "drift_type_at_step_1_flagged": 0,
+    "drift_type_at_step_1_seeds": 20
+  }
+}

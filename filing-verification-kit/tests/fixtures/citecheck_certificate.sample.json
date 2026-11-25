@@ -1,0 +1,609 @@
+{
+  "certificate_type": "SB 574 citation verification record",
+  "statutory_basis": [
+    "Code Civ. Proc., § 128.7, subd. (b)(2)(A) (as amended by Stats. 2026, ch. 858 (SB 574), operative Jan. 1, 2027)",
+    "Bus. & Prof. Code, § 6068.1, subd. (a)(3)(B)-(C) (added by Stats. 2026, ch. 858)"
+  ],
+  "document": {
+    "name": "Synthetic_Opposition_Brief.txt",
+    "sha256": "46ffaf0b4c1622b4630ac26175c54dc4ee11ad5a4adadce26fb8906fc17acf37",
+    "filing_date": "2027-02-01"
+  },
+  "responsible_attorney": "Fictional Counsel",
+  "generated_at": "2026-11-25T23:23:35+00:00",
+  "engine": "sb574-citecheck 0.1.0",
+  "mirror": {
+    "meta": {
+      "snapshot": "2026-11-25",
+      "notes": "Demo mirror. Cases are synthetic. Statute and CFR text is real, copied from official sources on 2026-11-25.",
+      "demo": "yes"
+    },
+    "coverage": [
+      {
+        "source": "courtlistener",
+        "scope": "cal5th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "courtlistener",
+        "scope": "calapp5th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "courtlistener",
+        "scope": "f4th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "ecfr",
+        "scope": "29:541",
+        "complete": 0,
+        "as_of": "2026-11-01",
+        "note": "partial: 541.100 only"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "BPC",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "CCP",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "LAB",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial: demo sections only"
+      }
+    ]
+  },
+  "summary": {
+    "PASS": 7,
+    "WARN": 2,
+    "FAIL": 7,
+    "MANUAL": 1,
+    "total": 17,
+    "quotes": 9,
+    "unverified_quotes": 2
+  },
+  "citations": [
+    {
+      "citation_id": "f402f4de-1",
+      "citation_text": "97 Cal.5th 210",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "PASS",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Halvorsen v. Bright Harbor Staffing, Inc. (2024) cal (SYNTHETIC test record)"
+        },
+        {
+          "name": "case_name",
+          "status": "pass",
+          "detail": "Case name matches source."
+        },
+        {
+          "name": "year",
+          "status": "pass",
+          "detail": "Year matches source."
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 223 is within pages 210-241."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim on page 223."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900001",
+        "synthetic": true
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "",
+      "ledger_seq": 2,
+      "ledger_hash": "d19c6a4e87848408393569c5685c09a3f12a517d24a044446d3f879052649e88"
+    },
+    {
+      "citation_id": "f402f4de-2",
+      "citation_text": "Id. at 230",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "PASS",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Halvorsen v. Bright Harbor Staffing, Inc. (2024) cal (SYNTHETIC test record)"
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 230 is within pages 210-241."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim on page 230."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900001",
+        "synthetic": true
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "",
+      "ledger_seq": 3,
+      "ledger_hash": "abb2b8040bfa29619d870506debf0f27dfd39638d905e945beab1a7354c5c1e7"
+    },
+    {
+      "citation_id": "f402f4de-3",
+      "citation_text": "Id. at 251",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "FAIL",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Halvorsen v. Bright Harbor Staffing, Inc. (2024) cal (SYNTHETIC test record)"
+        },
+        {
+          "name": "pinpoint",
+          "status": "fail",
+          "detail": "Pinpoint 251 is outside the opinion (pages 210-241)."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900001",
+        "synthetic": true
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 4,
+      "ledger_hash": "c406d9204dda95fad49e32d2ebd8b364a09fb08426457062fc6b0e830a7df553"
+    },
+    {
+      "citation_id": "f402f4de-4",
+      "citation_text": "97 Cal.5th at p. 224",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "WARN",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Halvorsen v. Bright Harbor Staffing, Inc. (2024) cal (SYNTHETIC test record)"
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 224 is within pages 210-241."
+        },
+        {
+          "name": "quote",
+          "status": "warn",
+          "detail": "Quote found verbatim, but on page 226, not the pinpoint 224."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900001",
+        "synthetic": true
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 5,
+      "ledger_hash": "0ec69afa9bef56517f761f4716ac83266ab18405a815490419da6a19c86a1397"
+    },
+    {
+      "citation_id": "f3012267-1",
+      "citation_text": "912 Cal.App.5th 455",
+      "key": "case:912 Cal. App. 5th 455",
+      "machine_status": "FAIL",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Ostrander v. Cypress Fold Logistics (2023) calctapp (SYNTHETIC test record)"
+        },
+        {
+          "name": "case_name",
+          "status": "warn",
+          "detail": "Cited as “Ostrander v. Cypress Ford Logistics”; source name is “Ostrander v. Cypress Fold Logistics”."
+        },
+        {
+          "name": "year",
+          "status": "pass",
+          "detail": "Year matches source."
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 462 is within pages 455-470."
+        },
+        {
+          "name": "quote",
+          "status": "fail",
+          "detail": "[UNVERIFIED QUOTE] Not found verbatim in the source."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900002",
+        "synthetic": true
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 6,
+      "ledger_hash": "cbfe9d3f27053c98b113c742cc43ab3b79c513bf9b918cc74e7d149fb58b8d1a"
+    },
+    {
+      "citation_id": "faf8abcd-1",
+      "citation_text": "940 Cal.App.5th 1312",
+      "key": "case:940 Cal. App. 5th 1312",
+      "machine_status": "FAIL",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "fail",
+          "detail": "No case found at 940 Cal. App. 5th 1312 (mirror coverage for Cal. App. 5th complete as of 2026-11-25). Possible fabricated or mistyped citation."
+        }
+      ],
+      "source": null,
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 7,
+      "ledger_hash": "f6fac8c9253832b040af68016dcfc2aa6aa952bf4e4cc249d85701f8b10a201d"
+    },
+    {
+      "citation_id": "b3ac3fd6-1",
+      "citation_text": "977 F.4th 1180",
+      "key": "case:977 F.4th 1180",
+      "machine_status": "PASS",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Quillfeather Manufacturing Co. v. Dunmore (2025) ca9 (SYNTHETIC test record)"
+        },
+        {
+          "name": "case_name",
+          "status": "pass",
+          "detail": "Case name matches source."
+        },
+        {
+          "name": "year",
+          "status": "pass",
+          "detail": "Year matches source."
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 1187 is within pages 1180-1195."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim on page 1187."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900003",
+        "synthetic": true
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "",
+      "ledger_seq": 8,
+      "ledger_hash": "53bfbecb491cbaacb734ac52b20a852f25370d89c12defd1781b0defbf198924"
+    },
+    {
+      "citation_id": "97ee760e-1",
+      "citation_text": "Lab. Code, § 203, subd. (a)",
+      "key": "ca:LAB:203",
+      "machine_status": "PASS",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "LAB § 203 found (Amended by Stats. 2019, Ch. 700, Sec. 2.5. (SB 286) Effective January 1, 2020.)."
+        },
+        {
+          "name": "subdivision",
+          "status": "pass",
+          "detail": "Subdivision (a) found in section text."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim in section text."
+        }
+      ],
+      "source": {
+        "label": "California PUBINFO mirror",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=203"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "",
+      "ledger_seq": 9,
+      "ledger_hash": "3692a01106ba598d362c98143f2a9b78b6b559c4bbbb7c28f94e3c770caef89c"
+    },
+    {
+      "citation_id": "090a7eaf-1",
+      "citation_text": "Lab. Code, § 1194, subd. (a)",
+      "key": "ca:LAB:1194",
+      "machine_status": "FAIL",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "LAB § 1194 found (Amended by Stats. 1992, Ch. 427, Sec. 120. Effective January 1, 1993.)."
+        },
+        {
+          "name": "subdivision",
+          "status": "pass",
+          "detail": "Subdivision (a) found in section text."
+        },
+        {
+          "name": "quote",
+          "status": "fail",
+          "detail": "[UNVERIFIED QUOTE] Not found verbatim in the source."
+        }
+      ],
+      "source": {
+        "label": "California PUBINFO mirror",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=1194"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 10,
+      "ledger_hash": "230777ac856fb4c2084c547a9c9f780b5c5bf97833509287537dcf2a711e41a0"
+    },
+    {
+      "citation_id": "70023f21-1",
+      "citation_text": "Lab. Code, § 226.7",
+      "key": "ca:LAB:226.7",
+      "machine_status": "WARN",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "warn",
+          "detail": "LAB § 226.7 has 2 versions (e.g., one operative now and one operative later, or a sunset). Confirm which applies on 2027-02-01."
+        }
+      ],
+      "source": {
+        "label": "California PUBINFO mirror",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=226.7"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 11,
+      "ledger_hash": "2f8a18fd1edfbbc059fe0fcfbdb3327dce148505f6da9d712431670e682d16b0"
+    },
+    {
+      "citation_id": "e3d6a1db-1",
+      "citation_text": "Labor Code section 2699.9",
+      "key": "ca:LAB:2699.9",
+      "machine_status": "FAIL",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "fail",
+          "detail": "No section LAB § 2699.9 (leginfo shows Labor Code Division 2 spans sections [200 - 2699.8]; Division 3 begins at 2700)."
+        }
+      ],
+      "source": {
+        "label": "negative lookup",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=203"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 12,
+      "ledger_hash": "dfa72bc8c724c67e24dcbd4342c365b6b47c68e69d123790a6dc0ec09bcdcbbf"
+    },
+    {
+      "citation_id": "fdbe99ef-1",
+      "citation_text": "29 C.F.R. § 541.100(a)(2)",
+      "key": "cfr:29:541.100",
+      "machine_status": "PASS",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "29 C.F.R. § 541.100 found: § 541.100 General rule for executive employees. (eCFR as of 2026-11-01)."
+        },
+        {
+          "name": "subdivision",
+          "status": "pass",
+          "detail": "Paragraph (a)(2) found."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim in section text."
+        }
+      ],
+      "source": {
+        "label": "eCFR mirror",
+        "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-01/title-29.xml?part=541&section=541.100"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "",
+      "ledger_seq": 13,
+      "ledger_hash": "a33c00c736fd06dc291055616f905ae1fe458d1596a5c66faa1bd88d59d218ca"
+    },
+    {
+      "citation_id": "988ba923-1",
+      "citation_text": "29 C.F.R. § 541.199",
+      "key": "cfr:29:541.199",
+      "machine_status": "FAIL",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "fail",
+          "detail": "No 29 C.F.R. § 541.199 (eCFR Versioner API returned HTTP 404 {\"error\":\"No matching content found.\"} (checked 2026-11-25))."
+        }
+      ],
+      "source": {
+        "label": "eCFR negative lookup",
+        "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-01/title-29.xml?part=541&section=541.199"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 14,
+      "ledger_hash": "4466433b07b1c95e0f0ef9af15315eca285681e6b19307a55f8b1772ead8a3d0"
+    },
+    {
+      "citation_id": "80ea1ba0-1",
+      "citation_text": "29 U.S.C. § 213",
+      "key": "law:29 U.S.C. § 213",
+      "machine_status": "MANUAL",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "manual",
+          "detail": "No mirror for this source type yet (e.g., U.S.C., rules of court, secondary sources). Verify by hand."
+        }
+      ],
+      "source": {
+        "label": "uscode.house.gov",
+        "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section213"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "",
+      "ledger_seq": 15,
+      "ledger_hash": "66f2c29725a140981983d3311f4dfa980a6610186183cb54ae3a633e8b61330f"
+    },
+    {
+      "citation_id": "ba3a091d-1",
+      "citation_text": "Code Civ. Proc., § 128.7, subd. (b)(2)(A)",
+      "key": "ca:CCP:128.7",
+      "machine_status": "PASS",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "CCP § 128.7 found (Amended by Stats. 2026, Ch. 858, Sec. 3. (SB 574) Effective January 1, 2027.)."
+        },
+        {
+          "name": "subdivision",
+          "status": "pass",
+          "detail": "Subdivision (b)(2)(A) found in section text."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim in section text."
+        }
+      ],
+      "source": {
+        "label": "California PUBINFO mirror",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=128.7"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "",
+      "ledger_seq": 16,
+      "ledger_hash": "0e676edc8e3c9664bb3108856469d4146e004703080fc012bc576da10dccdbac"
+    },
+    {
+      "citation_id": "623491a7-1",
+      "citation_text": "Business and Professions Code section 6068.1, subdivision (a)(3)(B)",
+      "key": "ca:BPC:6068.1",
+      "machine_status": "PASS",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "BPC § 6068.1 found (Added by Stats. 2026, Ch. 858, Sec. 1. (SB 574) Effective January 1, 2027.)."
+        },
+        {
+          "name": "subdivision",
+          "status": "pass",
+          "detail": "Subdivision (a)(3)(B) found in section text."
+        }
+      ],
+      "source": {
+        "label": "California PUBINFO mirror",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6068.1"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "",
+      "ledger_seq": 17,
+      "ledger_hash": "5741e0a65d38d172b214f7081dd2b3e9838d3b45790fc5c650915a1e118f1f25"
+    },
+    {
+      "citation_id": "ba3a091d-2",
+      "citation_text": "Code Civ. Proc., § 128.7, subd. (b)(2)(C)",
+      "key": "ca:CCP:128.7",
+      "machine_status": "FAIL",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "CCP § 128.7 found (Amended by Stats. 2026, Ch. 858, Sec. 3. (SB 574) Effective January 1, 2027.)."
+        },
+        {
+          "name": "subdivision",
+          "status": "fail",
+          "detail": "Subdivision (C) of (b)(2)(C) not found in section text."
+        }
+      ],
+      "source": {
+        "label": "California PUBINFO mirror",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=128.7"
+      },
+      "verified_by": "Fictional Counsel",
+      "verified_at": "2026-11-25T23:23:35+00:00",
+      "note": "Checked against the source by hand; flag reviewed.",
+      "ledger_seq": 18,
+      "ledger_hash": "cc52eac939003c458b2b55c936385504d74b83957cde3586c063f84c919c365a"
+    }
+  ],
+  "ledger": {
+    "path": "citecheck_ledger.sample.jsonl",
+    "head_hash": "cc52eac939003c458b2b55c936385504d74b83957cde3586c063f84c919c365a",
+    "chain_intact": true,
+    "first_bad_seq": null
+  },
+  "good_law_notice": "Mechanical checks only. This tool does not determine whether an authority is still good law (overruled, depublished, review granted, superseded, amended). Run KeyCite or Shepard's and read the authority before you mark it verified.",
+  "genai_disclosure": {
+    "genai_used": true,
+    "draft_text": "Counsel used generative artificial intelligence to assist in preparing this document [describe use, e.g., first-draft research summary]. Counsel personally verified every citation in this document and reviewed all AI-assisted content.",
+    "note": "SB 574 requires disclosure of generative AI use to the court for documents submitted to the court (Bus. & Prof. Code, § 6068.1, subd. (a)(3)(C)) but does not prescribe wording or placement. Check local rules and standing orders. Attorney must edit this draft."
+  },
+  "certificate_sha256": "8ec152a3e8915836549fd5c203bd353aede782cc1116a4009996bfa76aa56282"
+}

@@ -1,0 +1,35 @@
+Filing F-2027-004  (discovery_response)  checked 2027-01-12T17:00:00+00:00
+
+  NOT APPLICABLE  Document type is in scope
+                  'discovery_response' is a discovery paper. Policy discovery_mode=advisory: Citation items are reported but do not block. The AI-use items still apply.
+  PASS            Responsible attorney named
+                  Responsible attorney: Odalys Verhoeven (fictional attorney).
+  PASS            Document found and hashed
+                  SHA-256 of file: b08b79e921dbf5d4178f536612fbb23045480e845b318bdc9aae7cbaeed6b606.
+  PASS            Citation report present
+                  citecheck-report, citations listed: 1 (machine: 1 pass, 0 warn, 0 fail, 0 manual).
+  PASS            Report matches the document
+                  The report's document hash equals the hash of the document text as it is now.
+  NEEDS ATTENTION Every citation attested by the attorney
+                  Advisory only for a discovery paper (ccp_128_7_g; policy discovery_mode=advisory). 1 of 1 citations lack a valid attorney attestation. A machine result, including PASS or 'found', is not attorney verification. The responsible attorney must attest each citation.
+                  - Halvorsen v. Bright Harbor Staffing, Inc. 97 Cal.5th 210, 223: no attorney attestation
+  PASS            No unresolved or not-found citations
+                  No citation is unresolved or not found.
+  PASS            No quote mismatches
+                  No quotation was reported as a mismatch.
+  PASS            Machine warnings resolved
+                  No machine warnings.
+  PASS            AI-use answer recorded
+                  Generative AI used. Tools: Drafting assistant (fictional product). Purposes: first draft of the argument section; summary of deposition excerpts.
+  PASS            AI output reviewed and corrected
+                  Odalys Verhoeven (fictional attorney) on 2027-01-12T15:40:00+00:00: Read every AI-drafted paragraph against the record and the cited authorities; rewrote two sentences that overstated a holding.
+  PASS            Protected information question answered
+                  Recorded answer: no information in the listed categories was entered into an AI tool.
+  NEEDS ATTENTION AI-use disclosure decision recorded
+                  Decision: do not disclose. Reason: Discovery response served on the opposing party; it is not being submitted to the court. Approved by Calla Wintermoor (fictional General Counsel). Kept on the record.
+  PASS            Judge and court AI orders checked
+                  1 entry found for judge 'fict-quillon' in court 'fict-alder-ridge', checked within 30 days (most recent 6 days before 2027-01-12). No requirement was known when last checked. That is a record of a search, not a statement that no order exists.
+  NOT APPLICABLE  Judge order requirement met
+                  No requirement is on file for this judge or court.
+
+Result: CLEAR TO FILE

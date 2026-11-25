@@ -1,0 +1,25 @@
+IRONVALE BRIDGE CAPITAL (fictional)
+Outside Counsel Guidelines
+February 2026
+
+4. Technology
+
+4.1 Outside counsel may use only those AI platforms listed in Appendix C (Approved Technology).
+
+4.2 Use of any AI platform not on that list requires advance approval from Ironvale's Chief Legal Officer.
+
+4.3 Deal documents and investor information placed in an AI platform must remain in data centers located in the United States.
+
+4.4 AI vendors may keep prompts and outputs for no longer than seven days and solely for abuse monitoring.
+
+4.5 No Ironvale data may be used to develop or improve any AI vendor's products.
+
+4.6 Counsel should bill AI-assisted work at the rate of the timekeeper who reviewed it, not as a separate technology charge.
+
+4.7 Ironvale's deal teams are not required to disclose their own use of AI to counsel.
+
+4.8 Counsel is not required to seek approval for AI features built into the e-signature platform that Ironvale itself provides.
+
+5. Staffing
+
+Deal teams must be approved in advance.

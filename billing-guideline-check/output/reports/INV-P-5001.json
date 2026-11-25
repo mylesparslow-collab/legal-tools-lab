@@ -1,0 +1,122 @@
+{
+  "notice": "Personal portfolio demo. Fictional data. Not legal or billing advice.",
+  "invoice": {
+    "invoice_id": "INV-P-5001",
+    "client_id": "pellwick",
+    "client_name": "Pellwick Bakery Supply",
+    "matter_id": "PBS-001",
+    "invoice_date": "2026-11-05",
+    "declared_total": "4527.50",
+    "line_total": "4527.50",
+    "line_count": 13,
+    "source_format": "ledes1998b"
+  },
+  "totals": {
+    "open_findings": 3,
+    "waived_findings": 0,
+    "by_severity": {
+      "reject": 2,
+      "reduce": 1,
+      "review": 0
+    },
+    "entry_risk_total": "462.50",
+    "invoice_level_risk": "0.00",
+    "total_at_risk": "462.50",
+    "at_risk_rule": "Per entry: largest single reduction among open findings, capped at the entry amount. Invoice: the larger of the per-entry sum and the largest invoice-level amount, capped at the sum of the lines."
+  },
+  "entry_at_risk": {
+    "4": "360.00",
+    "6": "67.50",
+    "10": "35.00"
+  },
+  "rules_run": [
+    "PBS-INCR-01",
+    "PBS-RATE-01",
+    "PBS-DUP-01",
+    "PBS-RECEIPT-01"
+  ],
+  "rules_not_enforced": [
+    "PBS-LATE-01"
+  ],
+  "not_checked": [
+    "PBS-RECEIPT-01 (Receipt threshold): 1 expense line(s) at or over the threshold could not be checked because the file does not say whether a receipt is attached"
+  ],
+  "findings": [
+    {
+      "invoice_id": "INV-P-5001",
+      "line_no": 4,
+      "timekeeper_id": "TK42",
+      "timekeeper_name": "Hollis Fairweather-Nkemelu",
+      "entry_date": "2026-10-07",
+      "entry_amount": "360.00",
+      "entry_kind": "fee",
+      "entry_units": "1.2",
+      "entry_rate": "300.00",
+      "entry_narrative": "Draft demand letter to equipment lessor",
+      "rule_id": "PBS-DUP-01",
+      "rule_type": "duplicate_entries",
+      "rule_label": "Duplicate entries",
+      "severity": "reject",
+      "severity_label": "will likely be rejected",
+      "source_quote": "We do not want to be charged twice for the same work.",
+      "source_ref": "page 1, paragraph 3",
+      "explanation": "Same timekeeper, date, quantity and description as line 3.",
+      "suggested_fix": "Confirm with the timekeeper whether the work was done twice. If not, remove one entry.",
+      "amount_at_risk": "360.00",
+      "status": "open",
+      "waiver": null,
+      "note": ""
+    },
+    {
+      "invoice_id": "INV-P-5001",
+      "line_no": 6,
+      "timekeeper_id": "TK41",
+      "timekeeper_name": "Wendeline Abernathy-Cruz",
+      "entry_date": "2026-10-14",
+      "entry_amount": "67.50",
+      "entry_kind": "fee",
+      "entry_units": "0.15",
+      "entry_rate": "450.00",
+      "entry_narrative": "Email to client regarding lessor's response",
+      "rule_id": "PBS-INCR-01",
+      "rule_type": "minimum_increment",
+      "rule_label": "Minimum time increment",
+      "severity": "reject",
+      "severity_label": "will likely be rejected",
+      "source_quote": "Please bill in 0.1 hour increments at the rates in your engagement letter and not above them.",
+      "source_ref": "page 1, paragraph 2",
+      "explanation": "0.15 hours is not a multiple of the 0.1 hour increment.",
+      "suggested_fix": "Ask the timekeeper to restate the time in 0.1 hour increments from their own records.",
+      "amount_at_risk": "67.50",
+      "status": "open",
+      "waiver": null,
+      "note": ""
+    },
+    {
+      "invoice_id": "INV-P-5001",
+      "line_no": 10,
+      "timekeeper_id": "TK42",
+      "timekeeper_name": "Hollis Fairweather-Nkemelu",
+      "entry_date": "2026-10-21",
+      "entry_amount": "455.00",
+      "entry_kind": "fee",
+      "entry_units": "1.4",
+      "entry_rate": "325",
+      "entry_narrative": "Draft complaint for breach of equipment lease",
+      "rule_id": "PBS-RATE-01",
+      "rule_type": "rate_above_card",
+      "rule_label": "Rate above approved rate card",
+      "severity": "reduce",
+      "severity_label": "likely reduced",
+      "source_quote": "Please bill in 0.1 hour increments at the rates in your engagement letter and not above them.",
+      "source_ref": "page 1, paragraph 2",
+      "explanation": "Billed at $325.00 an hour. The approved rate for this timekeeper is $300.00.",
+      "suggested_fix": "Correct the rate to the approved rate card, or attach the client's approval of the higher rate.",
+      "amount_at_risk": "35.00",
+      "status": "open",
+      "waiver": null,
+      "note": ""
+    }
+  ],
+  "summary": "Draft invoice INV-P-5001 for Pellwick Bakery Supply (matter PBS-001) totals $4,527.50 across 13 lines. The check ran 4 confirmed client rules plus the arithmetic checks. It found 3 open findings on 3 lines: 2 will likely be rejected, 1 likely reduced and 0 for review. The amount at risk is $462.50, or 10.2% of the invoice, counting each line once at its largest single reduction. 1 proposed rule was not enforced because it is not confirmed. 1 check could not be completed from the file; see the report. Every finding is a prompt for review; nothing on the bill has been changed."
+}

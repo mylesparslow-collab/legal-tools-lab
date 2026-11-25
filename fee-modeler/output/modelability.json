@@ -1,0 +1,535 @@
+{
+  "min_comps": 8,
+  "rows": [
+    {
+      "matter_type": "administrative_licensing_appeal",
+      "n_matters": 51,
+      "n_open": 6,
+      "n_closed": 45,
+      "n_abnormal": 5,
+      "n_clean_closed": 40,
+      "first_close": "2020-10-23",
+      "last_close": "2025-11-14",
+      "task_coded_hours_pct": "89",
+      "n_backtested": 27,
+      "coverage_p25_p75": {
+        "count": 13,
+        "n": 27,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 5,
+          "n": 27,
+          "implied_pct": 25,
+          "implied_count": 7,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 5 of 27 back-tested matters cost more; the band implies about 7."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 1,
+          "n": 27,
+          "implied_pct": 10,
+          "implied_count": 3,
+          "judgement": "consistent",
+          "text": "At the P90 figure, 1 of 27 back-tested matters cost more; the band implies about 3."
+        }
+      },
+      "upper_band_status": "consistent",
+      "backtest_verdict": "Overruns at P75 and P90 are within what chance would explain at n=27. At the P75 figure, 5 of 27 back-tested matters cost more; the band implies about 7. At the P90 figure, 1 of 27 back-tested matters cost more; the band implies about 3.",
+      "drift_flag": false,
+      "verdict": "Modelable",
+      "notes": [
+        "Back-test: At the P75 figure, 5 of 27 back-tested matters cost more; the band implies about 7. At the P90 figure, 1 of 27 back-tested matters cost more; the band implies about 3."
+      ]
+    },
+    {
+      "matter_type": "commercial_lease_review",
+      "n_matters": 51,
+      "n_open": 1,
+      "n_closed": 50,
+      "n_abnormal": 4,
+      "n_clean_closed": 46,
+      "first_close": "2020-02-25",
+      "last_close": "2025-11-17",
+      "task_coded_hours_pct": "89",
+      "n_backtested": 38,
+      "coverage_p25_p75": {
+        "count": 11,
+        "n": 38,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 11,
+          "n": 38,
+          "implied_pct": 25,
+          "implied_count": 10,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 11 of 38 back-tested matters cost more; the band implies about 10."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 8,
+          "n": 38,
+          "implied_pct": 10,
+          "implied_count": 4,
+          "judgement": "more",
+          "text": "At the P90 figure, 8 of 38 back-tested matters cost more; the band implies about 4."
+        }
+      },
+      "upper_band_status": "understated",
+      "backtest_verdict": "Bands understate overruns at P90 (n=38): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P90. At the P75 figure, 11 of 38 back-tested matters cost more; the band implies about 10. At the P90 figure, 8 of 38 back-tested matters cost more; the band implies about 4. Middle band: 11 of 38 inside P25 to P75 against a nominal 50%.",
+      "drift_flag": false,
+      "verdict": "Modelable, bands understate overruns",
+      "notes": [
+        "Back-test: At the P75 figure, 11 of 38 back-tested matters cost more; the band implies about 10. At the P90 figure, 8 of 38 back-tested matters cost more; the band implies about 4."
+      ]
+    },
+    {
+      "matter_type": "contract_dispute_arbitration",
+      "n_matters": 38,
+      "n_open": 3,
+      "n_closed": 35,
+      "n_abnormal": 2,
+      "n_clean_closed": 33,
+      "first_close": "2020-10-14",
+      "last_close": "2025-08-25",
+      "task_coded_hours_pct": "88",
+      "n_backtested": 19,
+      "coverage_p25_p75": {
+        "count": 7,
+        "n": 19,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 2,
+          "n": 19,
+          "implied_pct": 25,
+          "implied_count": 5,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 2 of 19 back-tested matters cost more; the band implies about 5."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 0,
+          "n": 19,
+          "implied_pct": 10,
+          "implied_count": 2,
+          "judgement": "consistent",
+          "text": "At the P90 figure, 0 of 19 back-tested matters cost more; the band implies about 2."
+        }
+      },
+      "upper_band_status": "consistent",
+      "backtest_verdict": "Overruns at P75 and P90 are within what chance would explain at n=19. At the P75 figure, 2 of 19 back-tested matters cost more; the band implies about 5. At the P90 figure, 0 of 19 back-tested matters cost more; the band implies about 2.",
+      "drift_flag": false,
+      "verdict": "Modelable",
+      "notes": [
+        "Back-test: At the P75 figure, 2 of 19 back-tested matters cost more; the band implies about 5. At the P90 figure, 0 of 19 back-tested matters cost more; the band implies about 2."
+      ]
+    },
+    {
+      "matter_type": "election_law_advisory",
+      "n_matters": 5,
+      "n_open": 0,
+      "n_closed": 5,
+      "n_abnormal": 0,
+      "n_clean_closed": 5,
+      "first_close": "2021-06-01",
+      "last_close": "2025-05-19",
+      "task_coded_hours_pct": "93",
+      "n_backtested": 0,
+      "coverage_p25_p75": {
+        "count": 0,
+        "n": 0,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 0,
+          "n": 0,
+          "implied_pct": 25,
+          "implied_count": 0,
+          "judgement": "consistent",
+          "text": ""
+        },
+        "p90": {
+          "band": "p90",
+          "count": 0,
+          "n": 0,
+          "implied_pct": 10,
+          "implied_count": 0,
+          "judgement": "consistent",
+          "text": ""
+        }
+      },
+      "upper_band_status": "not_tested",
+      "backtest_verdict": "Not back-tested: no matter of this type ever had 8 earlier closed matters to model from.",
+      "drift_flag": false,
+      "verdict": "Not modelable",
+      "notes": [
+        "5 clean closed matters; 8 required. 3 more needed."
+      ]
+    },
+    {
+      "matter_type": "employment_single_plaintiff_defense",
+      "n_matters": 79,
+      "n_open": 4,
+      "n_closed": 75,
+      "n_abnormal": 9,
+      "n_clean_closed": 66,
+      "first_close": "2020-08-02",
+      "last_close": "2025-12-24",
+      "task_coded_hours_pct": "89",
+      "n_backtested": 41,
+      "coverage_p25_p75": {
+        "count": 16,
+        "n": 41,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 15,
+          "n": 41,
+          "implied_pct": 25,
+          "implied_count": 10,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 15 of 41 back-tested matters cost more; the band implies about 10."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 10,
+          "n": 41,
+          "implied_pct": 10,
+          "implied_count": 4,
+          "judgement": "more",
+          "text": "At the P90 figure, 10 of 41 back-tested matters cost more; the band implies about 4."
+        }
+      },
+      "upper_band_status": "understated",
+      "backtest_verdict": "Bands understate overruns at P90 (n=41): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P90. At the P75 figure, 15 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 10 of 41 back-tested matters cost more; the band implies about 4.",
+      "drift_flag": false,
+      "verdict": "Modelable, bands understate overruns",
+      "notes": [
+        "Back-test: At the P75 figure, 15 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 10 of 41 back-tested matters cost more; the band implies about 4."
+      ]
+    },
+    {
+      "matter_type": "facility_change_of_ownership",
+      "n_matters": 62,
+      "n_open": 2,
+      "n_closed": 60,
+      "n_abnormal": 7,
+      "n_clean_closed": 53,
+      "first_close": "2020-06-03",
+      "last_close": "2025-07-18",
+      "task_coded_hours_pct": "89",
+      "n_backtested": 37,
+      "coverage_p25_p75": {
+        "count": 16,
+        "n": 37,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 10,
+          "n": 37,
+          "implied_pct": 25,
+          "implied_count": 9,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 10 of 37 back-tested matters cost more; the band implies about 9."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 8,
+          "n": 37,
+          "implied_pct": 10,
+          "implied_count": 4,
+          "judgement": "more",
+          "text": "At the P90 figure, 8 of 37 back-tested matters cost more; the band implies about 4."
+        }
+      },
+      "upper_band_status": "understated",
+      "backtest_verdict": "Bands understate overruns at P90 (n=37): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P90. At the P75 figure, 10 of 37 back-tested matters cost more; the band implies about 9. At the P90 figure, 8 of 37 back-tested matters cost more; the band implies about 4.",
+      "drift_flag": false,
+      "verdict": "Modelable, bands understate overruns",
+      "notes": [
+        "Back-test: At the P75 figure, 10 of 37 back-tested matters cost more; the band implies about 9. At the P90 figure, 8 of 37 back-tested matters cost more; the band implies about 4."
+      ]
+    },
+    {
+      "matter_type": "internal_investigation",
+      "n_matters": 50,
+      "n_open": 5,
+      "n_closed": 45,
+      "n_abnormal": 4,
+      "n_clean_closed": 41,
+      "first_close": "2020-10-14",
+      "last_close": "2025-12-09",
+      "task_coded_hours_pct": "89",
+      "n_backtested": 31,
+      "coverage_p25_p75": {
+        "count": 9,
+        "n": 31,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 18,
+          "n": 31,
+          "implied_pct": 25,
+          "implied_count": 8,
+          "judgement": "more",
+          "text": "At the P75 figure, 18 of 31 back-tested matters cost more; the band implies about 8."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 9,
+          "n": 31,
+          "implied_pct": 10,
+          "implied_count": 3,
+          "judgement": "more",
+          "text": "At the P90 figure, 9 of 31 back-tested matters cost more; the band implies about 3."
+        }
+      },
+      "upper_band_status": "understated",
+      "backtest_verdict": "Costs shifted over time (later closes 1.57x earlier ones) and bands built from older matters missed. Restrict comps to recent closes and re-test. At the P75 figure, 18 of 31 back-tested matters cost more; the band implies about 8. At the P90 figure, 9 of 31 back-tested matters cost more; the band implies about 3. Middle band: 9 of 31 inside P25 to P75 against a nominal 50%.",
+      "drift_flag": true,
+      "verdict": "Modelable with care",
+      "notes": [
+        "Costs shifted over time; use recent comps only and re-test.",
+        "Back-test: At the P75 figure, 18 of 31 back-tested matters cost more; the band implies about 8. At the P90 figure, 9 of 31 back-tested matters cost more; the band implies about 3."
+      ]
+    },
+    {
+      "matter_type": "ordinance_drafting",
+      "n_matters": 65,
+      "n_open": 5,
+      "n_closed": 60,
+      "n_abnormal": 8,
+      "n_clean_closed": 52,
+      "first_close": "2020-06-21",
+      "last_close": "2025-11-04",
+      "task_coded_hours_pct": "0",
+      "n_backtested": 41,
+      "coverage_p25_p75": {
+        "count": 16,
+        "n": 41,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 14,
+          "n": 41,
+          "implied_pct": 25,
+          "implied_count": 10,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 14 of 41 back-tested matters cost more; the band implies about 10."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 7,
+          "n": 41,
+          "implied_pct": 10,
+          "implied_count": 4,
+          "judgement": "consistent",
+          "text": "At the P90 figure, 7 of 41 back-tested matters cost more; the band implies about 4."
+        }
+      },
+      "upper_band_status": "consistent",
+      "backtest_verdict": "Overruns at P75 and P90 are within what chance would explain at n=41. At the P75 figure, 14 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 7 of 41 back-tested matters cost more; the band implies about 4.",
+      "drift_flag": false,
+      "verdict": "Modelable",
+      "notes": [
+        "Back-test: At the P75 figure, 14 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 7 of 41 back-tested matters cost more; the band implies about 4.",
+        "Only 0% of hours carry a usable task code; phase figures are low confidence."
+      ]
+    },
+    {
+      "matter_type": "paga_response",
+      "n_matters": 53,
+      "n_open": 3,
+      "n_closed": 50,
+      "n_abnormal": 4,
+      "n_clean_closed": 46,
+      "first_close": "2021-01-06",
+      "last_close": "2025-12-01",
+      "task_coded_hours_pct": "90",
+      "n_backtested": 35,
+      "coverage_p25_p75": {
+        "count": 18,
+        "n": 35,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 15,
+          "n": 35,
+          "implied_pct": 25,
+          "implied_count": 9,
+          "judgement": "more",
+          "text": "At the P75 figure, 15 of 35 back-tested matters cost more; the band implies about 9."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 7,
+          "n": 35,
+          "implied_pct": 10,
+          "implied_count": 4,
+          "judgement": "consistent",
+          "text": "At the P90 figure, 7 of 35 back-tested matters cost more; the band implies about 4."
+        }
+      },
+      "upper_band_status": "understated",
+      "backtest_verdict": "Bands understate overruns at P75 (n=35): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P75. At the P75 figure, 15 of 35 back-tested matters cost more; the band implies about 9. At the P90 figure, 7 of 35 back-tested matters cost more; the band implies about 4.",
+      "drift_flag": false,
+      "verdict": "Modelable, bands understate overruns",
+      "notes": [
+        "Back-test: At the P75 figure, 15 of 35 back-tested matters cost more; the band implies about 9. At the P90 figure, 7 of 35 back-tested matters cost more; the band implies about 4."
+      ]
+    },
+    {
+      "matter_type": "public_records_litigation",
+      "n_matters": 85,
+      "n_open": 5,
+      "n_closed": 80,
+      "n_abnormal": 11,
+      "n_clean_closed": 69,
+      "first_close": "2020-06-22",
+      "last_close": "2025-12-03",
+      "task_coded_hours_pct": "89",
+      "n_backtested": 53,
+      "coverage_p25_p75": {
+        "count": 28,
+        "n": 53,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 15,
+          "n": 53,
+          "implied_pct": 25,
+          "implied_count": 13,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 15 of 53 back-tested matters cost more; the band implies about 13."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 9,
+          "n": 53,
+          "implied_pct": 10,
+          "implied_count": 5,
+          "judgement": "consistent",
+          "text": "At the P90 figure, 9 of 53 back-tested matters cost more; the band implies about 5."
+        }
+      },
+      "upper_band_status": "consistent",
+      "backtest_verdict": "Overruns at P75 and P90 are within what chance would explain at n=53. At the P75 figure, 15 of 53 back-tested matters cost more; the band implies about 13. At the P90 figure, 9 of 53 back-tested matters cost more; the band implies about 5.",
+      "drift_flag": false,
+      "verdict": "Modelable",
+      "notes": [
+        "Back-test: At the P75 figure, 15 of 53 back-tested matters cost more; the band implies about 13. At the P90 figure, 9 of 53 back-tested matters cost more; the band implies about 5."
+      ]
+    },
+    {
+      "matter_type": "public_works_bid_protest",
+      "n_matters": 55,
+      "n_open": 0,
+      "n_closed": 55,
+      "n_abnormal": 3,
+      "n_clean_closed": 52,
+      "first_close": "2020-07-25",
+      "last_close": "2025-12-18",
+      "task_coded_hours_pct": "87",
+      "n_backtested": 41,
+      "coverage_p25_p75": {
+        "count": 16,
+        "n": 41,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 9,
+          "n": 41,
+          "implied_pct": 25,
+          "implied_count": 10,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 9 of 41 back-tested matters cost more; the band implies about 10."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 4,
+          "n": 41,
+          "implied_pct": 10,
+          "implied_count": 4,
+          "judgement": "consistent",
+          "text": "At the P90 figure, 4 of 41 back-tested matters cost more; the band implies about 4."
+        }
+      },
+      "upper_band_status": "consistent",
+      "backtest_verdict": "Overruns at P75 and P90 are within what chance would explain at n=41. At the P75 figure, 9 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 4 of 41 back-tested matters cost more; the band implies about 4.",
+      "drift_flag": false,
+      "verdict": "Modelable",
+      "notes": [
+        "Back-test: At the P75 figure, 9 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 4 of 41 back-tested matters cost more; the band implies about 4."
+      ]
+    },
+    {
+      "matter_type": "regulatory_compliance_audit",
+      "n_matters": 46,
+      "n_open": 6,
+      "n_closed": 40,
+      "n_abnormal": 8,
+      "n_clean_closed": 32,
+      "first_close": "2020-09-07",
+      "last_close": "2025-11-17",
+      "task_coded_hours_pct": "88",
+      "n_backtested": 22,
+      "coverage_p25_p75": {
+        "count": 12,
+        "n": 22,
+        "nominal_pct": 50
+      },
+      "overruns": {
+        "p75": {
+          "band": "p75",
+          "count": 3,
+          "n": 22,
+          "implied_pct": 25,
+          "implied_count": 6,
+          "judgement": "consistent",
+          "text": "At the P75 figure, 3 of 22 back-tested matters cost more; the band implies about 6."
+        },
+        "p90": {
+          "band": "p90",
+          "count": 1,
+          "n": 22,
+          "implied_pct": 10,
+          "implied_count": 2,
+          "judgement": "consistent",
+          "text": "At the P90 figure, 1 of 22 back-tested matters cost more; the band implies about 2."
+        }
+      },
+      "upper_band_status": "consistent",
+      "backtest_verdict": "Overruns at P75 and P90 are within what chance would explain at n=22. At the P75 figure, 3 of 22 back-tested matters cost more; the band implies about 6. At the P90 figure, 1 of 22 back-tested matters cost more; the band implies about 2.",
+      "drift_flag": false,
+      "verdict": "Modelable",
+      "notes": [
+        "Back-test: At the P75 figure, 3 of 22 back-tested matters cost more; the band implies about 6. At the P90 figure, 1 of 22 back-tested matters cost more; the band implies about 2."
+      ]
+    }
+  ]
+}

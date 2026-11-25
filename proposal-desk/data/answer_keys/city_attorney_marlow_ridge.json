@@ -1,0 +1,59 @@
+{
+  "rfp": "city_attorney_marlow_ridge.txt",
+  "note": "Hand-written from the RFP text. Dates are the dates in force after any addendum.",
+  "agency": "City of Marlow Ridge",
+  "deadlines": [
+    {"kind": "issued", "date": "2026-11-09", "time": null},
+    {"kind": "questions_due", "date": "2026-11-30", "time": "17:00"},
+    {"kind": "answers_issued", "date": "2026-12-04", "time": null},
+    {"kind": "submission_due", "date": "2026-12-18", "time": "16:00"},
+    {"kind": "interview", "date": "2027-01-12", "time": null},
+    {"kind": "award", "date": "2027-02-02", "time": null}
+  ],
+  "addendum_changes": [],
+  "requirements": [
+    {"label": "5.1", "qtype": "cover_letter"},
+    {"label": "5.2", "qtype": "firm_overview"},
+    {"label": "5.3", "qtype": "team"},
+    {"label": "5.4", "qtype": "experience"},
+    {"label": "5.5", "qtype": "approach"},
+    {"label": "5.6", "qtype": "references"},
+    {"label": "5.7", "qtype": "conflicts"},
+    {"label": "5.8", "qtype": "transition"},
+    {"label": "5.9", "qtype": "rates"},
+    {"label": "5.10", "qtype": "diversity_local"},
+    {"label": "5.11", "qtype": "disclosure"}
+  ],
+  "forms": ["Proposer Information Sheet", "Non-Collusion Declaration", "Acknowledgment of Addenda", "Insurance Acknowledgment"],
+  "evaluation": [
+    {"name": "Qualifications and experience of the firm and team", "weight": 35},
+    {"name": "Approach to providing services", "weight": 25},
+    {"name": "References", "weight": 15},
+    {"name": "Cost", "weight": 20},
+    {"name": "Local presence", "weight": 5}
+  ],
+  "min_quals": [
+    {"starts": "The attorney proposed as City Attorney must have been admitted", "check_kind": "years_admitted", "value": 10},
+    {"starts": "The firm must maintain an office", "check_kind": "office_location", "value": "Larkspur County"},
+    {"starts": "The attorney proposed as City Attorney must have at least five", "check_kind": "not_checkable", "value": null},
+    {"starts": "The firm must not have any pending claim", "check_kind": "not_checkable", "value": null}
+  ],
+  "insurance": [
+    {"contains": "Professional liability", "amount": "$2,000,000"},
+    {"contains": "Commercial general liability", "amount": "$1,000,000"},
+    {"contains": "Workers' compensation", "amount": null},
+    {"contains": "statement that the firm can meet", "amount": null}
+  ],
+  "mechanics": {"page_limit": 25, "font_pt": 12, "margin_in": 1.0,
+    "kinds": ["copies", "format", "delivery", "not_accepted", "page_limit", "page_exclusions", "font", "margins"]},
+  "parties": [
+    {"name": "City of Marlow Ridge", "category": "agency"},
+    {"name": "Renata Oyelaran", "category": "staff"},
+    {"name": "Tobias Whitlock", "category": "board"},
+    {"name": "Imani Castellanos", "category": "board"},
+    {"name": "Greta Lindqvist", "category": "board"},
+    {"name": "Samir Haddad", "category": "board"},
+    {"name": "Paulette Nakagawa", "category": "board"},
+    {"name": "Halvard Brennan", "category": "staff"}
+  ]
+}

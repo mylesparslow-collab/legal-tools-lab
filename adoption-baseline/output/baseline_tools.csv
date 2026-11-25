@@ -1,0 +1,11 @@
+tool,licensed,measure,numerator,denominator,people,rate,suppressed
+Assistant A,195,activated,99,195,195,0.5077,
+Assistant A,195,weekly_active_last_4_weeks,261,728,190,0.3585,
+Assistant A,195,regular_use,58,190,190,0.3053,
+Assistant A,195,unused_licences,97,195,195,0.4974,
+Assistant A,195,unused_licences_absent_throughout,5,97,97,0.0515,
+Assistant B,286,activated,76,286,286,0.2657,
+Assistant B,286,weekly_active_last_4_weeks,206,1073,280,0.1920,
+Assistant B,286,regular_use,47,280,280,0.1679,
+Assistant B,286,unused_licences,211,286,286,0.7378,
+Assistant B,286,unused_licences_absent_throughout,6,211,211,0.0284,

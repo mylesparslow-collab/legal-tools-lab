@@ -1,0 +1,46 @@
+{
+  "data_label": "Synthetic demo data",
+  "period_start": "2026-09-07",
+  "period_end": "2026-12-06",
+  "tools": [
+    {
+      "name": "Assistant A",
+      "licence_column": "licence_assistant_a"
+    },
+    {
+      "name": "Assistant B",
+      "licence_column": "licence_assistant_b"
+    }
+  ],
+  "lawyer_roles": [
+    "partner",
+    "counsel",
+    "associate"
+  ],
+  "suppression_threshold": 5,
+  "individual_output": false,
+  "unused_licence_days": 30,
+  "regular_use": {
+    "window_weeks": 4,
+    "min_active_weeks": 3
+  },
+  "survey_week": "2026-W48",
+  "compare": {
+    "min_people": 30,
+    "min_change_points": 5
+  },
+  "roster": "sample_data/roster.csv",
+  "sources": [
+    {
+      "file": "sample_data/assistant_a_events.csv",
+      "mapping": "mappings/assistant_a_events.json"
+    },
+    {
+      "file": "sample_data/assistant_b_daily.csv",
+      "mapping": "mappings/assistant_b_daily.json"
+    }
+  ],
+  "survey_responses": "sample_data/survey_responses.csv",
+  "survey_definition": "survey/survey.json",
+  "targets": "data/targets.json"
+}

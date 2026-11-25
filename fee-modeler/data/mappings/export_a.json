@@ -1,0 +1,60 @@
+{
+  "name": "Synthetic export, shape A (four tidy files)",
+  "notes": "Example mapping for the synthetic shape A export. Not based on any real product's export format.",
+  "tables": {
+    "matters": {
+      "file": "matters.csv",
+      "date_format": "%Y-%m-%d",
+      "columns": {
+        "matter_id": "matter_id",
+        "client_id": "client_id",
+        "matter_type": "matter_type",
+        "status": "status",
+        "open_date": "open_date",
+        "close_date": "close_date",
+        "close_reason": "close_reason",
+        "forum": "forum",
+        "num_parties": "num_parties",
+        "amount_band": "amount_band",
+        "num_units": "num_units",
+        "hearing_occurred": "hearing_occurred",
+        "hearing_date": "hearing_date"
+      }
+    },
+    "timekeepers": {
+      "file": "timekeepers.csv",
+      "date_format": "%Y-%m-%d",
+      "columns": {
+        "timekeeper_id": "timekeeper_id",
+        "level": "level",
+        "effective_from": "effective_from"
+      }
+    },
+    "time_entries": {
+      "file": "time_entries.csv",
+      "date_format": "%Y-%m-%d",
+      "columns": {
+        "entry_id": "entry_id",
+        "matter_id": "matter_id",
+        "timekeeper_id": "timekeeper_id",
+        "work_date": "work_date",
+        "hours_worked": "hours_worked",
+        "hours_billed": "hours_billed",
+        "rate": "billed_rate",
+        "task_code": "task_code"
+      }
+    },
+    "invoices": {
+      "file": "invoices.csv",
+      "date_format": "%Y-%m-%d",
+      "columns": {
+        "invoice_id": "invoice_id",
+        "matter_id": "matter_id",
+        "invoice_date": "invoice_date",
+        "amount_billed": "amount_billed",
+        "amount_collected": "amount_collected",
+        "amount_written_off": "amount_written_off"
+      }
+    }
+  }
+}

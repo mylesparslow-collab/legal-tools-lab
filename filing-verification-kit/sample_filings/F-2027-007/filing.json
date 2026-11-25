@@ -1,0 +1,54 @@
+{
+  "filing_id": "F-2027-007",
+  "scenario": "Judge entry is stale (blocked)",
+  "matter": {
+    "number": "M-04410",
+    "client": "Tamsin Aldecott (fictional client)",
+    "caption": "Aldecott v. Sunderby Marine Works (fictional)",
+    "case_number": "PS-26-004410"
+  },
+  "court_id": "fict-port-selwyn",
+  "court": "Superior Court, County of Port Selwyn (fictional)",
+  "judge_id": "fict-marrowby",
+  "document": {
+    "path": "document.txt",
+    "title": "Trial brief",
+    "type": "brief"
+  },
+  "planned_filing_date": "2027-01-15",
+  "responsible_attorney": {
+    "name": "Odalys Verhoeven (fictional attorney)",
+    "bar_number": "FICT-000202"
+  },
+  "genai": {
+    "used": true,
+    "tools": [
+      "Drafting assistant (fictional product)"
+    ],
+    "purposes": [
+      "first draft of the argument section",
+      "summary of deposition excerpts"
+    ],
+    "output_verified": {
+      "by": "Odalys Verhoeven (fictional attorney)",
+      "on": "2027-01-12T15:40:00+00:00",
+      "how": "Read every AI-drafted paragraph against the record and the cited authorities; rewrote two sentences that overstated a holding."
+    },
+    "protected_info_entered": false,
+    "protected_info_review_by": null
+  },
+  "citation_report": "citation_report.json",
+  "attestations": "attestations.json",
+  "disclosure": {
+    "decision": "disclose",
+    "option_id": "C",
+    "text": "Counsel used generative artificial intelligence to assist in preparing this document, specifically for a first draft of the argument section and a summary of deposition excerpts. The undersigned attorney personally verified every citation in this document and reviewed and corrected all AI-assisted content before filing.",
+    "decided_by": "Odalys Verhoeven (fictional attorney)",
+    "decided_on": "2027-01-12"
+  },
+  "judge_order_response": {
+    "order_id": "JO-003",
+    "action": "Disclosure placed on the first page",
+    "text_included": true
+  }
+}

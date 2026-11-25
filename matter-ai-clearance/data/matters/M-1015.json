@@ -1,0 +1,39 @@
+{
+ "id": "M-1015",
+ "name": "Drennick: joint defense in cargo antitrust inquiry",
+ "client_id": "drennick",
+ "matter_type": "government investigation",
+ "responsible_attorney": "M. Okonjo (fictional)",
+ "intake_date": "2026-11-01",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "drennick-ocg-2025",
+  "drennick-el-2025"
+ ],
+ "additional_terms": [
+  {
+   "party_id": "hesperwick",
+   "role": "co_counsel",
+   "document_ids": [
+    "hesperwick-protocol-2026"
+   ],
+   "approved_tools": [
+    "review-d"
+   ],
+   "notices": [
+    {
+     "date": "2026-11-04",
+     "reference": "Tool list circulated to the group, 2026-11-04 (fictional)"
+    }
+   ]
+  }
+ ],
+ "consents": [],
+ "notices": []
+}

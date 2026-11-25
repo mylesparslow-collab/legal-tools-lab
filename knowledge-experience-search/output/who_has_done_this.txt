@@ -1,0 +1,110 @@
+Who has done: 'loan workout' as U102
+4 matching matter(s) this user can open
+
+ 1. Valentina Novakovitch  [U073]  Partner, Banking and finance, Aldhaven
+    3 matter(s), 2 as lead, 96.3 hours, last activity 2024-02-02, score 0.6258
+      M0057 Mirrowby Cooperative: loan workout | loan workout | lead | 41.0h | 2024-02-02 | matched on matter type or practice
+      M0037 Mirrowby Industries: loan workout | loan workout | lead | 33.1h | 2020-01-09 | matched on matter type or practice
+      M0237 Pyrewick Trust: loan workout | loan workout | support | 22.2h | 2020-05-25 | matched on matter type or practice
+
+ 2. Yusuf Dellamoor  [U083]  Associate, Banking and finance, Tavish Falls
+    2 matter(s), 0 as lead, 62.1 hours, last activity 2024-02-05, score 0.2644
+      M0057 Mirrowby Cooperative: loan workout | loan workout | support | 34.2h | 2024-02-05 | matched on matter type or practice
+      M0037 Mirrowby Industries: loan workout | loan workout | support | 27.9h | 2020-01-19 | matched on matter type or practice
+
+ 3. Rosalind Nakashiro  [U078]  Associate, Banking and finance, Aldhaven
+    2 matter(s), 0 as lead, 36.2 hours, last activity 2024-02-09, score 0.2609
+      M0057 Mirrowby Cooperative: loan workout | loan workout | support | 19.8h | 2024-02-09 | matched on matter type or practice
+      M0007 Varnholt Industries: loan workout | loan workout | support | 16.4h | 2022-01-12 | matched on matter type or practice
+
+ -  Rosalind Ibekwell  [U075]  Partner, Banking and finance, Aldhaven
+    1 matter(s), 1 as lead, 43.1 hours, last activity 2022-04-25, score 0.2718
+    thin evidence: one matter only
+      M0007 Varnholt Industries: loan workout | loan workout | lead | 43.1h | 2022-04-25 | matched on matter type or practice
+
+------------------------------------------------------------
+Who has done: 'zoning entitlement' as U102
+7 matching matter(s) this user can open
+
+ 1. Eleni Szymborsk  [U037]  Partner, Public agency and land use, Senna Bay
+    5 matter(s), 4 as lead, 179.2 hours, last activity 2026-05-30, score 2.1097
+      M0224 Sorrelby Industries: zoning entitlement | zoning entitlement | lead | 28.1h | 2026-05-30 | matched on matter type or practice
+      M0204 Umberleigh Cross Cooperative: zoning entitlement | zoning entitlement | lead | 57.5h | 2025-08-03 | matched on matter type or practice
+      M0114 Orrinwick Ventures: zoning entitlement | zoning entitlement | lead | 41.7h | 2025-01-29 | matched on matter type or practice
+      M0034 Dovrane Cooperative: zoning entitlement | zoning entitlement | lead | 34.5h | 2022-11-19 | matched on matter type or practice
+      M0244 Orrinwick Group: zoning entitlement | zoning entitlement | support | 17.4h | 2020-01-07 | matched on matter type or practice
+
+ 2. Valentina Fairweatherby  [U041]  Counsel, Public agency and land use, Port Wenrick
+    6 matter(s), 0 as lead, 211.8 hours, last activity 2026-05-25, score 1.417
+      M0224 Sorrelby Industries: zoning entitlement | zoning entitlement | support | 41.1h | 2026-05-25 | matched on matter type or practice
+      M0204 Umberleigh Cross Cooperative: zoning entitlement | zoning entitlement | support | 33.6h | 2025-09-18 | matched on matter type or practice
+      M0164 Feldspar Row Cooperative: zoning entitlement | zoning entitlement | support | 26.7h | 2025-09-10 | matched on matter type or practice
+      M0094 Zemblay Industries: zoning entitlement | zoning entitlement | support | 47.8h | 2024-01-16 | matched on matter type or practice
+      M0114 Orrinwick Ventures: zoning entitlement | zoning entitlement | support | 16.0h | 2024-08-11 | matched on matter type or practice
+      and 1 more
+
+ 3. Greta Bexleyford  [U042]  Associate, Public agency and land use, Aldhaven
+    5 matter(s), 0 as lead, 109.3 hours, last activity 2026-05-15, score 1.0637
+      M0204 Umberleigh Cross Cooperative: zoning entitlement | zoning entitlement | support | 23.3h | 2025-09-18 | matched on matter type or practice
+      M0224 Sorrelby Industries: zoning entitlement | zoning entitlement | support | 13.8h | 2026-05-15 | matched on matter type or practice
+      M0114 Orrinwick Ventures: zoning entitlement | zoning entitlement | support | 20.0h | 2025-03-06 | matched on matter type or practice
+      M0164 Feldspar Row Cooperative: zoning entitlement | zoning entitlement | support | 11.9h | 2025-09-12 | matched on matter type or practice
+      M0034 Dovrane Cooperative: zoning entitlement | zoning entitlement | support | 40.3h | 2022-12-01 | matched on matter type or practice
+
+ 4. Ugo Abernathey  [U038]  Partner, Public agency and land use, Senna Bay
+    3 matter(s), 2 as lead, 112.9 hours, last activity 2025-10-08, score 0.9315
+      M0164 Feldspar Row Cooperative: zoning entitlement | zoning entitlement | lead | 55.5h | 2025-10-08 | matched on matter type or practice
+      M0034 Dovrane Cooperative: zoning entitlement | zoning entitlement | support | 37.3h | 2022-11-27 | matched on matter type or practice
+      M0244 Orrinwick Group: zoning entitlement | zoning entitlement | lead | 20.1h | 2020-04-29 | matched on matter type or practice
+
+------------------------------------------------------------
+Who has done: 'charitable planning' as U102
+Only 1 matching matter you can open. Too little to rank: the people below are listed by name as leads to ask, not as a ranking.
+1 matching matter(s) this user can open
+
+ -  Imani Tindlewick  [U109]  Partner, Trusts and estates, Estermere
+    1 matter(s), 1 as lead, 18.6 hours, last activity 2022-12-29, score 0.1499
+    thin evidence: one matter only
+      M0190 Skellane Cooperative: trust administration | trust administration | lead | 18.6h | 2022-12-29 | matched on document titles in the matter
+
+ -  Wendell Corriveaux  [U119]  Associate, Trusts and estates, Tavish Falls
+    1 matter(s), 0 as lead, 22.3 hours, last activity 2023-01-23, score 0.0806
+    thin evidence: one matter only
+      M0190 Skellane Cooperative: trust administration | trust administration | support | 22.3h | 2023-01-23 | matched on document titles in the matter
+
+ -  Zelda Brandvold  [U117]  Associate, Trusts and estates, Marlowe Heights
+    1 matter(s), 0 as lead, 7.8 hours, last activity 2023-01-12, score 0.0553
+    thin evidence: one matter only; under 15 recorded hours
+      M0190 Skellane Cooperative: trust administration | trust administration | support | 7.8h | 2023-01-12 | matched on document titles in the matter
+
+ -  Zelda Szymborsk  [U115]  Associate, Trusts and estates, Caldmoor
+    1 matter(s), 0 as lead, 12.5 hours, last activity 2023-02-03, score 0.0671
+    thin evidence: one matter only; under 15 recorded hours
+      M0190 Skellane Cooperative: trust administration | trust administration | support | 12.5h | 2023-02-03 | matched on document titles in the matter
+
+------------------------------------------------------------
+Who has done: 'project halcyon' as U003
+Only 1 matching matter you can open. Too little to rank: the people below are listed by name as leads to ask, not as a ranking.
+1 matching matter(s) this user can open
+
+ -  Amara Halvorsby  [U009]  Associate, Corporate and M&A, Senna Bay
+    1 matter(s), 0 as lead, 34.1 hours, last activity 2023-05-18, score 0.0979
+    thin evidence: one matter only
+      M0211 Project Halcyon | stock purchase | support | 34.1h | 2023-05-18 | matched on document titles in the matter
+
+ -  Brigid Tindlewick  [U008]  Associate, Corporate and M&A, Senna Bay
+    1 matter(s), 0 as lead, 25.5 hours, last activity 2023-03-19, score 0.0868
+    thin evidence: one matter only
+      M0211 Project Halcyon | stock purchase | support | 25.5h | 2023-03-19 | matched on document titles in the matter
+
+ -  Quinn Pennwarden  [U003]  Partner, Corporate and M&A, Caldmoor
+    1 matter(s), 1 as lead, 47.5 hours, last activity 2023-08-16, score 0.2262
+    thin evidence: one matter only
+      M0211 Project Halcyon | stock purchase | lead | 47.5h | 2023-08-16 | matched on document titles in the matter
+
+------------------------------------------------------------
+Who has done: 'project halcyon' as U002
+No matching matters among those you can open.
+0 matching matter(s) this user can open
+
+------------------------------------------------------------

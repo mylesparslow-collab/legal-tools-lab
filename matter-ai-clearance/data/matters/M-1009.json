@@ -1,0 +1,22 @@
+{
+ "id": "M-1009",
+ "name": "Tessaly Harbor: syndicated credit facility",
+ "client_id": "tessaly",
+ "matter_type": "finance",
+ "responsible_attorney": "D. Castellane (fictional)",
+ "intake_date": "2026-11-05",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "tessaly-ocg-2025",
+  "tessaly-el-2025"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

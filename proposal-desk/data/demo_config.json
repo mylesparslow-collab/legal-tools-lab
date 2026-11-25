@@ -1,0 +1,6 @@
+{
+  "note": "Fixed inputs for run_demo.py so the committed sample outputs do not change from day to day.",
+  "as_of": "2026-11-25",
+  "index_rfp": "general_counsel_redwood_flats.txt",
+  "status_files": {"general_counsel_redwood_flats.txt": "demo_status_redwood_flats.json"}
+}

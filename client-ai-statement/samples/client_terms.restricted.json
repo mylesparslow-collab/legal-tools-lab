@@ -1,0 +1,17 @@
+{
+  "client_ref": "Client B (fictional)",
+  "terms_source": "Engagement letter addendum on AI",
+  "terms_date": "2026-10-05",
+  "ai_use": "permitted",
+  "consent_on_file": null,
+  "disclosure_required": true,
+  "disclosure_method": "matter_start_notice",
+  "tools_prohibited": [
+    "translation",
+    "research-drafting"
+  ],
+  "data_restrictions": [
+    "personal_data"
+  ],
+  "notes": "Fictional client-terms record. The translation tool has no client-terms check in the registry, so the check claim is downgraded to a count."
+}

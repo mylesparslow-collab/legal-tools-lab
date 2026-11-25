@@ -1,0 +1,229 @@
+{
+  "client_id": "ostervane",
+  "client_name": "Ostervane Industrial Holdings",
+  "document": "data/guideline_docs/ostervane.txt",
+  "rules": [
+    {
+      "rule_id": "OSTERV-P-STAFFING-EVENT-LIMIT-01",
+      "type": "staffing_event_limit",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_attendees": 2,
+        "events": [
+          "deposition",
+          "hearing",
+          "mediation"
+        ]
+      },
+      "source_quote": "We expect lean staffing, and we will pay for no more than 2 of your lawyers at any hearing, deposition or mediation.",
+      "source_ref": "Part A. How we expect matters to be staffed, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-DAILY-HOUR-CAP-01",
+      "type": "daily_hour_cap",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": "12"
+      },
+      "source_quote": "We will question any day on which one person bills more than 12 hours.",
+      "source_ref": "Part A. How we expect matters to be staffed, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-RESEARCH-APPROVAL-01",
+      "type": "research_approval",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": "5"
+      },
+      "source_quote": "Please obtain our approval before spending more than 5 hours on legal research for a matter.",
+      "source_ref": "Part A. How we expect matters to be staffed, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-MINIMUM-INCREMENT-01",
+      "type": "minimum_increment",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "Record time in increments of 0.1 hour.",
+      "source_ref": "Part B. What your invoices should look like, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-BLOCK-BILLING-01",
+      "type": "block_billing",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_tasks": 1,
+        "min_hours": "1.0"
+      },
+      "source_quote": "Do not block bill: an entry exceeding 1.0 hour must describe a single task.",
+      "source_ref": "Part B. What your invoices should look like, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-VAGUE-DESCRIPTION-01",
+      "type": "vague_description",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "always_phrases": [
+          "attention to file",
+          "attention to matter",
+          "various tasks",
+          "work on case",
+          "work on matter"
+        ],
+        "bare_phrases": [
+          "draft correspondence",
+          "legal research",
+          "prepare for hearing",
+          "review documents",
+          "review file",
+          "telephone call",
+          "trial preparation",
+          "work on discovery"
+        ],
+        "min_words": 3
+      },
+      "source_quote": "We cannot pay for entries that are too generic to evaluate, for example \"work on discovery\" or \"attention to matter\".",
+      "source_ref": "Part B. What your invoices should look like, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-REQUIRED-CODES-01",
+      "type": "required_codes",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "require_task": true,
+        "require_activity": true,
+        "require_expense": false
+      },
+      "source_quote": "Each fee entry needs a task code and an activity code.",
+      "source_ref": "Part B. What your invoices should look like, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-DUPLICATE-ENTRIES-01",
+      "type": "duplicate_entries",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "If the same entry appears twice we will pay it once.",
+      "source_ref": "Part B. What your invoices should look like, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-RATE-ABOVE-CARD-01",
+      "type": "rate_above_card",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Bill at the rates on the agreed rate card and no higher.",
+      "source_ref": "Part C. Rates, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-RATE-INCREASE-NOTICE-01",
+      "type": "rate_increase_notice",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "notice_days": 60
+      },
+      "source_quote": "We need 60 days written notice before any rate increase applies to our matters.",
+      "source_ref": "Part C. Rates, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-NON-BILLABLE-TASK-01",
+      "type": "non_billable_task",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "categories": {
+          "clerical": [
+            "scanning",
+            "scan documents",
+            "photocopying",
+            "bates stamping",
+            "organizing files",
+            "organize files",
+            "data entry",
+            "updating file index",
+            "saving documents to"
+          ],
+          "invoice_prep": [
+            "prepare invoice",
+            "preparing invoice",
+            "prebill",
+            "pre-bill",
+            "billing inquiry",
+            "invoice backup",
+            "correct invoice"
+          ]
+        }
+      },
+      "source_quote": "We do not pay for clerical tasks or for time spent preparing, reviewing or correcting invoices.",
+      "source_ref": "Part D. Things we do not pay for, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-EXPENSE-OVERHEAD-01",
+      "type": "expense_overhead",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "codes": [
+          "E103",
+          "E104",
+          "E105",
+          "E108"
+        ],
+        "phrases": [
+          "postage",
+          "word processing",
+          "local telephone",
+          "office supplies",
+          "overtime",
+          "subscription"
+        ]
+      },
+      "source_quote": "We do not reimburse overhead such as word processing, overtime, postage and subscription databases.",
+      "source_ref": "Part D. Things we do not pay for, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "OSTERV-P-EXPENSE-MARKUP-01",
+      "type": "expense_markup",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Pass third-party costs through at cost, without mark-up.",
+      "source_ref": "Part D. Things we do not pay for, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    }
+  ]
+}

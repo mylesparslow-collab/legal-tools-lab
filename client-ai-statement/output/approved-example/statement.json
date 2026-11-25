@@ -1,0 +1,1313 @@
+{
+  "schema": "client-ai-statement/1",
+  "variant": "firm",
+  "organization": "Example Firm LLP (fictional)",
+  "title": "How we use AI tools",
+  "subtitle": "Example Firm LLP (fictional). Statement for clients and proposals.",
+  "as_of": "2026-11-25",
+  "version": "1.0",
+  "registry_as_of": "2026-11-25",
+  "registry_sha256": "6e9230a7d522215a256c5375df164a6c9a3df704cf16c9f985c6bcc7657ba1b5",
+  "footer": "As of 2026-11-25. Version 1.0. Based on the firm's AI tool registry dated 2026-11-25.",
+  "sections": [
+    {
+      "id": "use",
+      "label": "What we use",
+      "sentences": [
+        {
+          "claim_id": "tools_in_use",
+          "variant_id": "by_category",
+          "kind": "evidence",
+          "text": "We use four AI-assisted tools in client work: contract review, legal research and drafting, transcript summaries and translation.",
+          "template": "We use {tools_in_use_phrase} in client work: {category_list}.",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "id",
+                "op": "key_of",
+                "value_from": "inputs.tool_categories"
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "id",
+                "actual": "contract-review"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "id",
+                "actual": "research-drafting"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "id",
+                "actual": "transcript-summary"
+              },
+              {
+                "entry": "translation",
+                "field": "id",
+                "actual": "translation"
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": 1
+        },
+        {
+          "claim_id": "rollout",
+          "variant_id": "split",
+          "kind": "evidence",
+          "text": "Two are in firmwide use and two are in a limited pilot.",
+          "template": "{rollout_phrase}",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": []
+          },
+          "universal": false,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": false,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [],
+            "note": ""
+          },
+          "proposal_order": null
+        },
+        {
+          "claim_id": "named_owner",
+          "variant_id": "each",
+          "kind": "evidence",
+          "text": "Each tool has a named owner at the firm who answers for it.",
+          "template": "Each tool has a named owner at the firm who answers for it.",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "business_owner",
+                "op": "not_in",
+                "ci": true,
+                "value": [
+                  "to be assigned",
+                  "tbd",
+                  "none",
+                  "unassigned",
+                  "unknown"
+                ]
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "business_owner",
+                "actual": "Partner, Corporate Group (role; fictional)"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "business_owner",
+                "actual": "Partner, Litigation Group (role; fictional)"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "business_owner",
+                "actual": "Senior Counsel, Litigation Group (role; fictional)"
+              },
+              {
+                "entry": "translation",
+                "field": "business_owner",
+                "actual": "Director of Knowledge Management (role; fictional)"
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": null
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "label": "What we use it for, and what we do not",
+      "sentences": [
+        {
+          "claim_id": "uses",
+          "variant_id": "listed",
+          "kind": "evidence",
+          "text": "We use these tools for: first-pass review of contracts against our clause checklist; research memos and first drafts of brief sections; summaries of deposition and hearing transcripts; working translations of public and internal documents.",
+          "template": "We use these tools for: {use_list}.",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "id",
+                "op": "key_of",
+                "value_from": "inputs.tool_categories"
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "id",
+                "actual": "contract-review"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "id",
+                "actual": "research-drafting"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "id",
+                "actual": "transcript-summary"
+              },
+              {
+                "entry": "translation",
+                "field": "id",
+                "actual": "translation"
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": null
+        },
+        {
+          "claim_id": "not_for_client_information",
+          "variant_id": "count",
+          "kind": "evidence",
+          "text": "One of four tools in use is not approved to receive client confidential information.",
+          "template": "{Pass} of {scope} tools in use {are} not approved to receive client confidential information.",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "data_boundary.data_allowed",
+                "op": "contains_none",
+                "value": [
+                  "client_confidential",
+                  "personal_data",
+                  "health_information"
+                ]
+              }
+            ]
+          },
+          "universal": false,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": false,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "translation"
+            ],
+            "failing": [
+              {
+                "entry": "contract-review",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "firm_internal",
+                  "client_confidential"
+                ],
+                "expected": "data_boundary.data_allowed must include none of ['client_confidential', 'personal_data', 'health_information']"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "public",
+                  "firm_internal",
+                  "client_confidential"
+                ],
+                "expected": "data_boundary.data_allowed must include none of ['client_confidential', 'personal_data', 'health_information']"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "firm_internal",
+                  "client_confidential"
+                ],
+                "expected": "data_boundary.data_allowed must include none of ['client_confidential', 'personal_data', 'health_information']"
+              }
+            ],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "firm_internal",
+                  "client_confidential"
+                ]
+              },
+              {
+                "entry": "research-drafting",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "public",
+                  "firm_internal",
+                  "client_confidential"
+                ]
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "firm_internal",
+                  "client_confidential"
+                ]
+              },
+              {
+                "entry": "translation",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "public",
+                  "firm_internal"
+                ]
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": null
+        },
+        {
+          "claim_id": "no_sensitive_data",
+          "variant_id": "personal_and_health",
+          "kind": "evidence",
+          "text": "No tool in use is approved to receive personal data or health information.",
+          "template": "No tool in use is approved to receive personal data or health information.",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.data_allowed",
+                "op": "contains_none",
+                "value": [
+                  "personal_data",
+                  "health_information"
+                ]
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "firm_internal",
+                  "client_confidential"
+                ]
+              },
+              {
+                "entry": "research-drafting",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "public",
+                  "firm_internal",
+                  "client_confidential"
+                ]
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "firm_internal",
+                  "client_confidential"
+                ]
+              },
+              {
+                "entry": "translation",
+                "field": "data_boundary.data_allowed",
+                "actual": [
+                  "public",
+                  "firm_internal"
+                ]
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": null
+        }
+      ]
+    },
+    {
+      "id": "protect",
+      "label": "How your information is protected",
+      "sentences": [
+        {
+          "claim_id": "no_training",
+          "variant_id": "all_tools",
+          "kind": "evidence",
+          "text": "No tool we use allows what we enter to be used to train a model.",
+          "template": "No tool we use allows what we enter to be used to train a model.",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.used_for_training",
+                "op": "eq",
+                "value": "no",
+                "unknown_values": [
+                  "unknown"
+                ]
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "data_boundary.used_for_training",
+                "actual": "no"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "data_boundary.used_for_training",
+                "actual": "no"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "data_boundary.used_for_training",
+                "actual": "no"
+              },
+              {
+                "entry": "translation",
+                "field": "data_boundary.used_for_training",
+                "actual": "no"
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": 2
+        },
+        {
+          "claim_id": "provider_agreements",
+          "variant_id": "each",
+          "kind": "evidence",
+          "text": "Each tool approved for client confidential information is covered by a written agreement with its provider, recorded in our tool registry.",
+          "template": "Each tool approved for client confidential information is covered by a written agreement with its provider, recorded in our tool registry.",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.agreements",
+                "op": "non_empty"
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "data_boundary.agreements",
+                "actual": [
+                  "Data protection addendum with Fictional Provider A, signed 2026-02-10"
+                ]
+              },
+              {
+                "entry": "research-drafting",
+                "field": "data_boundary.agreements",
+                "actual": [
+                  "Master services agreement with Fictional Provider B, zero-retention schedule, signed 2026-03-04"
+                ]
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "data_boundary.agreements",
+                "actual": [
+                  "Data protection addendum with Fictional Provider A, signed 2026-02-10"
+                ]
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": null
+        },
+        {
+          "claim_id": "confidentiality",
+          "variant_id": "C1",
+          "kind": "draft_option",
+          "text": "We enter your confidential information only into tools that our registry approves for client confidential information.",
+          "template": "We enter your confidential information only into tools that our registry approves for client confidential information.",
+          "short_template": null,
+          "rule": null,
+          "universal": false,
+          "evidence": null,
+          "proposal_order": null
+        }
+      ]
+    },
+    {
+      "id": "check",
+      "label": "How work is checked",
+      "sentences": [
+        {
+          "claim_id": "human_review",
+          "variant_id": "every",
+          "kind": "evidence",
+          "text": "Every tool in use has a written review step: a person at the firm reviews the tool's output before anyone relies on it.",
+          "template": "Every tool in use has a written review step: a person at the firm reviews the tool's output before anyone relies on it.",
+          "short_template": "Every tool has a written review step: a person at the firm reviews its output before anyone relies on it.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "human_review",
+                "op": "non_empty"
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "human_review",
+                "actual": "The responsible attorney reviews every flagged and unflagged clause before the review is relied on."
+              },
+              {
+                "entry": "research-drafting",
+                "field": "human_review",
+                "actual": "The drafting attorney verifies every proposition and citation; the supervising partner reviews the final draft."
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "human_review",
+                "actual": "An attorney on the matter checks each summary against the transcript before it is circulated."
+              },
+              {
+                "entry": "translation",
+                "field": "human_review",
+                "actual": "A fluent reviewer at the firm checks each translation before it is used."
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": 3
+        },
+        {
+          "claim_id": "testing",
+          "variant_id": "every_in_use",
+          "kind": "evidence",
+          "text": "We test tools against a fixed set of documents with known answers. Every tool in use that this test applies to has a passing result on record.",
+          "template": "We test tools against a fixed set of documents with known answers. Every tool in use that this test applies to has a passing result on record.",
+          "short_template": "Every tool in use that our known-answer test applies to has a passing result on record.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "testable"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "golden_set.status",
+                "op": "eq",
+                "value": "scored"
+              },
+              {
+                "field": "golden_set.passes",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "golden_set.run_date",
+                "op": "on_or_before_as_of"
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "golden_set.status",
+                "actual": "scored"
+              },
+              {
+                "entry": "contract-review",
+                "field": "golden_set.passes",
+                "actual": true
+              },
+              {
+                "entry": "contract-review",
+                "field": "golden_set.run_date",
+                "actual": "2026-09-15"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "golden_set.status",
+                "actual": "scored"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "golden_set.passes",
+                "actual": true
+              },
+              {
+                "entry": "research-drafting",
+                "field": "golden_set.run_date",
+                "actual": "2026-10-02"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "golden_set.status",
+                "actual": "scored"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "golden_set.passes",
+                "actual": true
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "golden_set.run_date",
+                "actual": "2026-10-21"
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": 4
+        },
+        {
+          "claim_id": "court_citations",
+          "variant_id": "each",
+          "kind": "evidence",
+          "text": "For each tool whose output may reach a court filing, we have a written step for an attorney to verify citations before filing and a set place where that verification is logged.",
+          "template": "For each tool whose output may reach a court filing, we have a written step for an attorney to verify citations before filing and a set place where that verification is logged.",
+          "short_template": null,
+          "rule": {
+            "scope": [
+              "in_use",
+              "court"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "sb574_log.mechanism",
+                "op": "not_startswith",
+                "value": "none"
+              },
+              {
+                "field": "sb574_log.log_location",
+                "op": "non_empty"
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "research-drafting"
+            ],
+            "passing": [
+              "research-drafting"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "research-drafting",
+                "field": "sb574_log.mechanism",
+                "actual": "Filing attorney reads each cited authority in the original source and signs the citation check form before filing."
+              },
+              {
+                "entry": "research-drafting",
+                "field": "sb574_log.log_location",
+                "actual": "Matter workspace, folder 'Citation checks'"
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": null
+        },
+        {
+          "claim_id": "review_cycle",
+          "variant_id": "registry_interval",
+          "kind": "evidence",
+          "text": "We review tools every 180 days. Each tool in use has a review on record within that period.",
+          "template": "We review tools every {review_interval_days} days. Each tool in use has a review on record within that period.",
+          "short_template": null,
+          "rule": {
+            "all_of": [
+              {
+                "scope": [
+                  "in_use"
+                ],
+                "quantifier": "all",
+                "require": [
+                  {
+                    "field": "last_review",
+                    "op": "within_days",
+                    "value_from": "registry.review_interval_days"
+                  }
+                ]
+              },
+              {
+                "context": [
+                  {
+                    "field": "registry.review_interval_days",
+                    "op": "lte",
+                    "value": 365
+                  }
+                ]
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary",
+              "translation"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "last_review",
+                "actual": "2026-10-28"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "last_review",
+                "actual": "2026-11-10"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "last_review",
+                "actual": "2026-11-12"
+              },
+              {
+                "entry": "translation",
+                "field": "last_review",
+                "actual": "2026-09-30"
+              },
+              {
+                "entry": "(inputs)",
+                "field": "registry.review_interval_days",
+                "actual": 180
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": null
+        },
+        {
+          "claim_id": "court_disclosure",
+          "variant_id": "D1",
+          "kind": "draft_option",
+          "text": "We tell you before we use one of these tools to draft part of a court filing in your matter.",
+          "template": "We tell you before we use one of these tools to draft part of a court filing in your matter.",
+          "short_template": null,
+          "rule": null,
+          "universal": false,
+          "evidence": null,
+          "proposal_order": null
+        }
+      ]
+    },
+    {
+      "id": "billing",
+      "label": "How we bill for AI-assisted work",
+      "sentences": [
+        {
+          "claim_id": "billing",
+          "variant_id": "B1",
+          "kind": "draft_option",
+          "text": "We bill for the time our lawyers and staff spend, including time spent reviewing and correcting tool output. We do not bill for time a tool saved, and we do not add a separate charge for the tools described here.",
+          "template": "We bill for the time our lawyers and staff spend, including time spent reviewing and correcting tool output. We do not bill for time a tool saved, and we do not add a separate charge for the tools described here.",
+          "short_template": "We bill for the time our people spend, not for time a tool saved, and add no separate charge for the tools.",
+          "rule": null,
+          "universal": false,
+          "evidence": null,
+          "proposal_order": 5
+        }
+      ]
+    },
+    {
+      "id": "terms",
+      "label": "Your terms and opting out",
+      "sentences": [
+        {
+          "claim_id": "client_terms_check",
+          "variant_id": "each_recent",
+          "kind": "evidence",
+          "text": "Before a tool is used on a matter, we check that client's written terms on AI. Each tool approved for client confidential information has this check, and each check was confirmed to work in the past 90 days.",
+          "template": "Before a tool is used on a matter, we check that client's written terms on AI. Each tool approved for client confidential information has this check, and each check was confirmed to work in the past {ocg_check_max_age_days} days.",
+          "short_template": "Before a tool is used on a matter, we check that client's written terms on AI.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "ocg_check.method",
+                "op": "in",
+                "value": [
+                  "automated_gate",
+                  "manual_lookup"
+                ]
+              },
+              {
+                "field": "ocg_check.last_checked",
+                "op": "within_days",
+                "value_from": "registry.ocg_check_max_age_days"
+              }
+            ]
+          },
+          "universal": true,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": true,
+            "scope": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary"
+            ],
+            "passing": [
+              "contract-review",
+              "research-drafting",
+              "transcript-summary"
+            ],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "contract-review",
+                "field": "ocg_check.method",
+                "actual": "automated_gate"
+              },
+              {
+                "entry": "contract-review",
+                "field": "ocg_check.last_checked",
+                "actual": "2026-10-20"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "ocg_check.method",
+                "actual": "manual_lookup"
+              },
+              {
+                "entry": "research-drafting",
+                "field": "ocg_check.last_checked",
+                "actual": "2026-11-03"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "ocg_check.method",
+                "actual": "manual_lookup"
+              },
+              {
+                "entry": "transcript-summary",
+                "field": "ocg_check.last_checked",
+                "actual": "2026-11-03"
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": 6
+        },
+        {
+          "claim_id": "opt_out",
+          "variant_id": "O1",
+          "kind": "draft_option",
+          "text": "You can tell us not to use these tools on your matters, or set conditions on their use. Write to your relationship partner or the Office of General Counsel. We record your instruction in the matter intake record and apply it to work done after we confirm receipt.",
+          "template": "You can tell us not to use these tools on your matters, or set conditions on their use. Write to {opt_out_role}. We record your instruction in the matter intake record and apply it to work done after we confirm receipt.",
+          "short_template": "You can restrict or refuse these tools on your matters by writing to {opt_out_role}.",
+          "rule": null,
+          "universal": false,
+          "evidence": null,
+          "proposal_order": 7
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "label": "Who to contact",
+      "sentences": [
+        {
+          "claim_id": "contact",
+          "variant_id": "role",
+          "kind": "record",
+          "text": "Questions about this statement go to the Office of General Counsel: aiquestions@examplefirm.example.",
+          "template": "Questions about this statement go to {contact_role}: {contact_channel}.",
+          "short_template": null,
+          "rule": {
+            "context": [
+              {
+                "field": "inputs.contact.role",
+                "op": "non_empty"
+              },
+              {
+                "field": "inputs.contact.channel",
+                "op": "non_empty"
+              }
+            ]
+          },
+          "universal": false,
+          "evidence": {
+            "status": "SUPPORTED",
+            "universal": false,
+            "scope": [],
+            "passing": [],
+            "failing": [],
+            "unknown": [],
+            "checked": [
+              {
+                "entry": "(inputs)",
+                "field": "inputs.contact.role",
+                "actual": "the Office of General Counsel"
+              },
+              {
+                "entry": "(inputs)",
+                "field": "inputs.contact.channel",
+                "actual": "aiquestions@examplefirm.example"
+              }
+            ],
+            "note": ""
+          },
+          "proposal_order": null
+        }
+      ]
+    }
+  ],
+  "downgraded": [],
+  "omitted": [],
+  "not_applicable": [
+    {
+      "claim_id": "no_tools_in_use",
+      "section": "use",
+      "reason": "Applies only when the registry has no tool in use."
+    },
+    {
+      "claim_id": "tool_names",
+      "section": "use",
+      "reason": "does not apply: inputs.name_vendors must be True"
+    },
+    {
+      "claim_id": "no_court_use",
+      "section": "check",
+      "reason": "Applies only when no tool in use can reach a court filing."
+    }
+  ],
+  "draft_options": [
+    {
+      "topic": "confidentiality",
+      "option_id": "C1",
+      "name": "Registry-approved tools only",
+      "printed": true
+    },
+    {
+      "topic": "court_disclosure",
+      "option_id": "D1",
+      "name": "Tell the client first",
+      "printed": true
+    },
+    {
+      "topic": "billing",
+      "option_id": "B1",
+      "name": "Time spent, no tool charge",
+      "printed": true
+    },
+    {
+      "topic": "opt_out",
+      "option_id": "O1",
+      "name": "Opt out or set conditions, recorded at intake",
+      "printed": true
+    }
+  ],
+  "warnings": [],
+  "tools_in_use": [
+    "contract-review",
+    "research-drafting",
+    "transcript-summary",
+    "translation"
+  ],
+  "category_check": [
+    {
+      "id": "contract-review",
+      "status": "production",
+      "registry_purpose": "First-pass review of commercial contracts against the firm's clause checklist.",
+      "category": "Contract review",
+      "use": "first-pass review of contracts against our clause checklist"
+    },
+    {
+      "id": "research-drafting",
+      "status": "production",
+      "registry_purpose": "Research memos and first drafts of brief sections from the firm's licensed research sources.",
+      "category": "Legal research and drafting",
+      "use": "research memos and first drafts of brief sections"
+    },
+    {
+      "id": "transcript-summary",
+      "status": "pilot",
+      "registry_purpose": "Summaries and issue indexes of deposition and hearing transcripts.",
+      "category": "Transcript summaries",
+      "use": "summaries of deposition and hearing transcripts"
+    },
+    {
+      "id": "translation",
+      "status": "pilot",
+      "registry_purpose": "Working translations of public and firm-internal documents.",
+      "category": "Translation",
+      "use": "working translations of public and internal documents"
+    }
+  ],
+  "scopes": {
+    "in_use": [
+      {
+        "field": "status",
+        "op": "in",
+        "value": [
+          "pilot",
+          "production"
+        ]
+      }
+    ],
+    "production": [
+      {
+        "field": "status",
+        "op": "eq",
+        "value": "production"
+      }
+    ],
+    "client_conf": [
+      {
+        "field": "data_boundary.data_allowed",
+        "op": "contains",
+        "value": "client_confidential"
+      }
+    ],
+    "court": [
+      {
+        "field": "sb574_log.court_filing_use",
+        "op": "in",
+        "value": [
+          "yes",
+          "possible"
+        ]
+      }
+    ],
+    "testable": [
+      {
+        "field": "golden_set.status",
+        "op": "ne",
+        "value": "not_applicable"
+      }
+    ],
+    "client_restricted": [
+      {
+        "field": "id",
+        "op": "in",
+        "value_from": "derived.client_restricted_ids"
+      }
+    ]
+  },
+  "inputs": {
+    "version": "1.0",
+    "name_vendors": false,
+    "tool_categories": {
+      "contract-review": {
+        "category": "Contract review",
+        "use": "first-pass review of contracts against our clause checklist"
+      },
+      "research-drafting": {
+        "category": "Legal research and drafting",
+        "use": "research memos and first drafts of brief sections"
+      },
+      "transcript-summary": {
+        "category": "Transcript summaries",
+        "use": "summaries of deposition and hearing transcripts"
+      },
+      "translation": {
+        "category": "Translation",
+        "use": "working translations of public and internal documents"
+      }
+    },
+    "contact": {
+      "role": "the Office of General Counsel",
+      "channel": "aiquestions@examplefirm.example"
+    },
+    "opt_out_role": "your relationship partner or the Office of General Counsel",
+    "draft_options": {
+      "billing": "B1",
+      "confidentiality": "C1",
+      "court_disclosure": "D1",
+      "opt_out": "O1",
+      "client_precedence": "P1"
+    },
+    "approval": {
+      "approved_by": "General Counsel (role; fictional sign-off for the demo)",
+      "approved_on": "2026-11-25",
+      "content_hash": "a170aba04792c22317494717fd63b4e34d78020557aad73a99e5cba20202983c"
+    },
+    "exclude_claims": [],
+    "notes": "Sample statement inputs for registry.clean.json and registry.later.json. Fictional."
+  },
+  "client": null,
+  "content_hash": "a170aba04792c22317494717fd63b4e34d78020557aad73a99e5cba20202983c",
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "General Counsel (role; fictional sign-off for the demo)",
+    "approved_on": "2026-11-25",
+    "content_hash": "a170aba04792c22317494717fd63b4e34d78020557aad73a99e5cba20202983c"
+  },
+  "status_line": "Approved for release on 2026-11-25.",
+  "proposal": {
+    "text": "We use four AI-assisted tools in client work: contract review, legal research and drafting, transcript summaries and translation. No tool we use allows what we enter to be used to train a model. Every tool has a written review step: a person at the firm reviews its output before anyone relies on it. Every tool in use that our known-answer test applies to has a passing result on record. We bill for the time our people spend, not for time a tool saved, and add no separate charge for the tools. Before a tool is used on a matter, we check that client's written terms on AI. Our one-page statement dated 2026-11-25 gives the detail.",
+    "words": 115,
+    "target": 120,
+    "max": 135,
+    "sentences": [
+      {
+        "claim_id": "tools_in_use",
+        "variant_id": "by_category",
+        "text": "We use four AI-assisted tools in client work: contract review, legal research and drafting, transcript summaries and translation.",
+        "universal_supported": true
+      },
+      {
+        "claim_id": "no_training",
+        "variant_id": "all_tools",
+        "text": "No tool we use allows what we enter to be used to train a model.",
+        "universal_supported": true
+      },
+      {
+        "claim_id": "human_review",
+        "variant_id": "every",
+        "text": "Every tool has a written review step: a person at the firm reviews its output before anyone relies on it.",
+        "universal_supported": true
+      },
+      {
+        "claim_id": "testing",
+        "variant_id": "every_in_use",
+        "text": "Every tool in use that our known-answer test applies to has a passing result on record.",
+        "universal_supported": true
+      },
+      {
+        "claim_id": "billing",
+        "variant_id": "B1",
+        "text": "We bill for the time our people spend, not for time a tool saved, and add no separate charge for the tools.",
+        "universal_supported": false
+      },
+      {
+        "claim_id": "client_terms_check",
+        "variant_id": "each_recent",
+        "text": "Before a tool is used on a matter, we check that client's written terms on AI.",
+        "universal_supported": true
+      },
+      {
+        "claim_id": "(closing)",
+        "variant_id": "closing",
+        "text": "Our one-page statement dated 2026-11-25 gives the detail.",
+        "universal_supported": false
+      }
+    ],
+    "status": "APPROVED"
+  },
+  "word_count": 483,
+  "word_limit": 620
+}

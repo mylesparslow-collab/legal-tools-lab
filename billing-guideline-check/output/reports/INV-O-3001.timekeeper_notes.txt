@@ -1,0 +1,98 @@
+To: Leocadia Thornquist-Abara (TK21)
+Re: draft invoice INV-O-3001, Ostervane Industrial Holdings, matter OIH-LIT-088
+
+Before this bill goes out, please look at the 1 item below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $540.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 17, 2026-10-16, $540.00 [Minimum time increment, will likely be rejected]
+  Your entry: "Telephone conference with general counsel regarding hearing outcome" (0.75 h x $720.00 = $540.00)
+  What the check saw: 0.75 hours is not a multiple of the 0.1 hour increment.
+  Suggested fix: Ask the timekeeper to restate the time in 0.1 hour increments from their own records.
+  Client rule (OIH-INCR-01, Part B. What your invoices should look like, page 1): "Record time in increments of 0.1 hour."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Emeka Villanueva-Stroud (TK22)
+Re: draft invoice INV-O-3001, Ostervane Industrial Holdings, matter OIH-LIT-088
+
+Before this bill goes out, please look at the 3 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $2,601.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 4, 2026-10-05, $1,377.00 [Block billing prohibited, likely reduced]
+  Your entry: "Draft opposition to motion to transfer venue; telephone conference with client regarding declaration; review exhibits for filing" (2.7 h x $510.00 = $1,377.00)
+  What the check saw: The narrative appears to describe 3 tasks under one time total of 2.7 hours.
+  Suggested fix: Ask the timekeeper to enter each task on its own line with its own time. Tasks the check detected: (1) Draft opposition to motion to transfer venue. (2) telephone conference with client regarding declaration. (3) review exhibits for filing. The tool does not know how the time divides between them and does not rewrite the narrative.
+  Client rule (OIH-BLOCK-01, Part B. What your invoices should look like, page 1): "Do not block bill: an entry exceeding 1.0 hour must describe a single task."
+
+- Line 10, 2026-10-12, $561.00 [Vague descriptions, likely reduced]
+  Your entry: "Work on discovery" (1.1 h x $510.00 = $561.00)
+  What the check saw: The description does not say what was done. It is only "Work on discovery", with no subject or purpose.
+  Suggested fix: Ask the timekeeper to say what was reviewed or done and for what purpose. Do not fill this in for them.
+  Client rule (OIH-VAGUE-01, Part B. What your invoices should look like, page 1): "We cannot pay for entries that are too generic to evaluate, for example "work on discovery" or "attention to matter"."
+
+- Line 20, 2026-10-20, $663.00 [Required task and activity codes, will likely be rejected]
+  Your entry: "Draft deposition notice for purchasing director" (1.3 h x $510.00 = $663.00)
+  What the check saw: The entry has no task code.
+  Suggested fix: Add the missing code. The timekeeper or billing staff should choose it; the check does not guess.
+  Client rule (OIH-CODES-01, Part B. What your invoices should look like, page 1): "Each fee entry needs a task code and an activity code."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Saoirse Kowalczyk-Bello (TK23)
+Re: draft invoice INV-O-3001, Ostervane Industrial Holdings, matter OIH-LIT-088
+
+Before this bill goes out, please look at the 4 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $1,426.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 6, 2026-10-07, $1,441.50 [Rate increase without notice, likely reduced]
+  Your entry: "Research enforceability of forum selection clauses in supply agreements" (3.1 h x $465.00 = $1,441.50)
+  What the check saw: Billed at $465.00 an hour; the last billed rate was $440.00. Notice was given on 2026-08-20, so the new rate applies from 2026-10-19.
+  Suggested fix: Bill this entry at the prior rate, or record the notice the client received.
+  Client rule (OIH-RATEUP-01, Part C. Rates, page 2): "We need 60 days written notice before any rate increase applies to our matters."
+
+- Line 15, 2026-10-15, $1,023.00 [Staffing limit per event, likely reduced]
+  Your entry: "Attend hearing on motion to transfer venue" (2.2 h x $465.00 = $1,023.00)
+  What the check saw: 3 timekeepers billed for attending a hearing on 2026-10-15. The limit is 2. The check keeps the highest-rate attendee(s) and flags the rest; that choice is an assumption.
+  Suggested fix: Decide which attendance to bill, or record the client's approval of the additional attendee.
+  Client rule (OIH-EVENT-01, Part A. How we expect matters to be staffed, page 1): "We expect lean staffing, and we will pay for no more than 2 of your lawyers at any hearing, deposition or mediation."
+
+- Line 15, 2026-10-15, $1,023.00 [Rate increase without notice, likely reduced]
+  Your entry: "Attend hearing on motion to transfer venue" (2.2 h x $465.00 = $1,023.00)
+  What the check saw: Billed at $465.00 an hour; the last billed rate was $440.00. Notice was given on 2026-08-20, so the new rate applies from 2026-10-19.
+  Suggested fix: Bill this entry at the prior rate, or record the notice the client received.
+  Client rule (OIH-RATEUP-01, Part C. Rates, page 2): "We need 60 days written notice before any rate increase applies to our matters."
+
+- Line 22, 2026-10-21, $1,209.00 [Research needs approval above a limit, likely reduced]
+  Your entry: "Research transfer factors applied in recent district decisions" (2.6 h x $465.00 = $1,209.00)
+  What the check saw: Research on this invoice reaches 5.7 hours with this entry. The limit without approval is 5 hours; 0.7 hours of this entry fall over it.
+  Suggested fix: Ask the client to approve the research, or hold the excess time. Research billed on earlier invoices is not counted here.
+  Client rule (OIH-RESEARCH-01, Part A. How we expect matters to be staffed, page 1): "Please obtain our approval before spending more than 5 hours on legal research for a matter."
+  Note: Waiver W-002 expired on 2026-09-30 and does not cover this work.
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Dmitri Oyama-Lindgren (TK24)
+Re: draft invoice INV-O-3001, Ostervane Industrial Holdings, matter OIH-LIT-088
+
+Before this bill goes out, please look at the 2 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $138.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 11, 2026-10-14, $306.00 [Rate above approved rate card, likely reduced]
+  Your entry: "Draft index of exhibits for transfer hearing" (1.2 h x $255.00 = $306.00)
+  What the check saw: Billed at $255.00 an hour. The approved rate for this timekeeper is $240.00.
+  Suggested fix: Correct the rate to the approved rate card, or attach the client's approval of the higher rate.
+  Client rule (OIH-RATE-01, Part C. Rates, page 2): "Bill at the rates on the agreed rate card and no higher."
+
+- Line 28, 2026-10-28, $120.00 [Non-billable task categories, will likely be rejected]
+  Your entry: "Prepare invoice backup for client auditor" (0.5 h x $240.00 = $120.00)
+  What the check saw: The narrative contains "Prepare invoice", which is on this client's list of non-billable invoice prep work.
+  Suggested fix: Move the entry off the bill, or ask the timekeeper whether the description is accurate.
+  Client rule (OIH-NONBILL-01, Part D. Things we do not pay for, page 2): "We do not pay for clerical tasks or for time spent preparing, reviewing or correcting invoices."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.

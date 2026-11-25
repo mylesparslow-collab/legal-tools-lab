@@ -1,0 +1,430 @@
+{
+ "all_queries": {
+  "queries": 37,
+  "precision_at_5": 0.773,
+  "recall_at_10": 0.815,
+  "best_example_ranked_first": 5,
+  "best_example_in_top_3": 5,
+  "best_example_queries": 6
+ },
+ "queries_using_the_corpus_vocabulary": {
+  "queries": 31,
+  "precision_at_5": 0.91,
+  "recall_at_10": 0.959,
+  "best_example_ranked_first": 5,
+  "best_example_in_top_3": 5,
+  "best_example_queries": 6
+ },
+ "by_category": {
+  "best example": {
+   "queries": 6,
+   "precision_at_5": 0.9,
+   "recall_at_10": 0.967,
+   "best_example_ranked_first": 5,
+   "best_example_in_top_3": 5,
+   "best_example_queries": 6
+  },
+  "different vocabulary": {
+   "queries": 6,
+   "precision_at_5": 0.067,
+   "recall_at_10": 0.071
+  },
+  "exact phrase": {
+   "queries": 5,
+   "precision_at_5": 0.8,
+   "recall_at_10": 0.875
+  },
+  "topic and document type": {
+   "queries": 14,
+   "precision_at_5": 0.914,
+   "recall_at_10": 0.976
+  },
+  "topic with a type filter": {
+   "queries": 6,
+   "precision_at_5": 1.0,
+   "recall_at_10": 0.983
+  }
+ },
+ "permission_checks": {
+  "checks_run": 144,
+  "leaks": []
+ },
+ "per_query": [
+  {
+   "id": "Q01",
+   "category": "topic and document type",
+   "query": "family limited partnership agreement",
+   "relevant": 6,
+   "returned": 6,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q02",
+   "category": "topic and document type",
+   "query": "transfer pricing documentation memo",
+   "relevant": 7,
+   "returned": 7,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q03",
+   "category": "topic and document type",
+   "query": "purchase and sale due diligence agreement",
+   "relevant": 6,
+   "returned": 6,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q04",
+   "category": "topic and document type",
+   "query": "arbitration clause enforcement motion",
+   "relevant": 10,
+   "returned": 16,
+   "relaxed": false,
+   "precision_at_5": 0.8,
+   "recall_at_10": 0.8
+  },
+  {
+   "id": "Q05",
+   "category": "topic and document type",
+   "query": "personal jurisdiction motion",
+   "relevant": 9,
+   "returned": 10,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q06",
+   "category": "topic and document type",
+   "query": "guaranty and credit support checklist",
+   "relevant": 7,
+   "returned": 7,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q07",
+   "category": "topic and document type",
+   "query": "probate petition form",
+   "relevant": 7,
+   "returned": 7,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q08",
+   "category": "topic and document type",
+   "query": "earn-out provisions memo",
+   "relevant": 7,
+   "returned": 6,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 0.857
+  },
+  {
+   "id": "Q09",
+   "category": "topic and document type",
+   "query": "trust decanting form",
+   "relevant": 5,
+   "returned": 12,
+   "relaxed": false,
+   "precision_at_5": 0.6,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q10",
+   "category": "topic and document type",
+   "query": "data breach notification agreement",
+   "relevant": 7,
+   "returned": 9,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q11",
+   "category": "topic and document type",
+   "query": "ground lease financing agreement",
+   "relevant": 5,
+   "returned": 5,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q12",
+   "category": "topic and document type",
+   "query": "reasonable accommodation memo",
+   "relevant": 6,
+   "returned": 7,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q13",
+   "category": "topic and document type",
+   "query": "environmental review memo",
+   "relevant": 5,
+   "returned": 12,
+   "relaxed": false,
+   "precision_at_5": 0.6,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q14",
+   "category": "topic and document type",
+   "query": "executive employment agreement form",
+   "relevant": 6,
+   "returned": 15,
+   "relaxed": false,
+   "precision_at_5": 0.8,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q15",
+   "category": "topic with a type filter",
+   "query": "records retention schedule type:\"agreement\"",
+   "relevant": 10,
+   "returned": 9,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 0.9
+  },
+  {
+   "id": "Q16",
+   "category": "topic with a type filter",
+   "query": "trustee removal type:\"agreement\"",
+   "relevant": 6,
+   "returned": 6,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q17",
+   "category": "topic with a type filter",
+   "query": "forum selection clause type:\"brief\"",
+   "relevant": 9,
+   "returned": 10,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q18",
+   "category": "topic with a type filter",
+   "query": "charitable remainder trust type:\"memo\"",
+   "relevant": 5,
+   "returned": 5,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q19",
+   "category": "topic with a type filter",
+   "query": "public bidding type:\"staff report\"",
+   "relevant": 9,
+   "returned": 10,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q20",
+   "category": "topic with a type filter",
+   "query": "borrowing base type:\"opinion letter\"",
+   "relevant": 5,
+   "returned": 6,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q21",
+   "category": "exact phrase",
+   "query": "\"development agreement\" staff report",
+   "relevant": 8,
+   "returned": 9,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q22",
+   "category": "exact phrase",
+   "query": "\"consideration period\" agreement",
+   "relevant": 6,
+   "returned": 17,
+   "relaxed": false,
+   "precision_at_5": 0.4,
+   "recall_at_10": 0.5
+  },
+  {
+   "id": "Q23",
+   "category": "exact phrase",
+   "query": "\"probate petition\" opinion letter",
+   "relevant": 6,
+   "returned": 6,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q24",
+   "category": "exact phrase",
+   "query": "\"likelihood of confusion\" agreement",
+   "relevant": 5,
+   "returned": 10,
+   "relaxed": false,
+   "precision_at_5": 0.6,
+   "recall_at_10": 1.0
+  },
+  {
+   "id": "Q25",
+   "category": "exact phrase",
+   "query": "\"legal hold\" memo",
+   "relevant": 8,
+   "returned": 7,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 0.875
+  },
+  {
+   "id": "Q26",
+   "category": "best example",
+   "query": "indemnification cap and basket agreement",
+   "relevant": 7,
+   "returned": 8,
+   "relaxed": false,
+   "precision_at_5": 0.8,
+   "recall_at_10": 1.0,
+   "best_rank": 1
+  },
+  {
+   "id": "Q27",
+   "category": "best example",
+   "query": "reasonable accommodation form",
+   "relevant": 7,
+   "returned": 9,
+   "relaxed": false,
+   "precision_at_5": 0.8,
+   "recall_at_10": 1.0,
+   "best_rank": 1
+  },
+  {
+   "id": "Q28",
+   "category": "best example",
+   "query": "earn-out provisions form",
+   "relevant": 5,
+   "returned": 4,
+   "relaxed": false,
+   "precision_at_5": 0.8,
+   "recall_at_10": 0.8,
+   "best_rank": null
+  },
+  {
+   "id": "Q29",
+   "category": "best example",
+   "query": "sales tax nexus memo",
+   "relevant": 6,
+   "returned": 8,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0,
+   "best_rank": 1
+  },
+  {
+   "id": "Q30",
+   "category": "best example",
+   "query": "borrowing base memo",
+   "relevant": 6,
+   "returned": 9,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0,
+   "best_rank": 1
+  },
+  {
+   "id": "Q31",
+   "category": "best example",
+   "query": "revocable trust form",
+   "relevant": 7,
+   "returned": 7,
+   "relaxed": false,
+   "precision_at_5": 1.0,
+   "recall_at_10": 1.0,
+   "best_rank": 1
+  },
+  {
+   "id": "Q32",
+   "category": "different vocabulary",
+   "query": "restraint on joining a rival after resignation agreement",
+   "relevant": 1,
+   "returned": 599,
+   "relaxed": true,
+   "precision_at_5": 0.0,
+   "recall_at_10": 0.0
+  },
+  {
+   "id": "Q33",
+   "category": "different vocabulary",
+   "query": "handing premises over to a new occupier agreement",
+   "relevant": 4,
+   "returned": 468,
+   "relaxed": true,
+   "precision_at_5": 0.0,
+   "recall_at_10": 0.0
+  },
+  {
+   "id": "Q34",
+   "category": "different vocabulary",
+   "query": "deferred price contingent on future performance agreement",
+   "relevant": 8,
+   "returned": 460,
+   "relaxed": true,
+   "precision_at_5": 0.0,
+   "recall_at_10": 0.0
+  },
+  {
+   "id": "Q35",
+   "category": "different vocabulary",
+   "query": "keeping the opposing specialist witness out brief",
+   "relevant": 3,
+   "returned": 635,
+   "relaxed": true,
+   "precision_at_5": 0.0,
+   "recall_at_10": 0.0
+  },
+  {
+   "id": "Q36",
+   "category": "different vocabulary",
+   "query": "bank agrees to hold off after missed payments agreement",
+   "relevant": 4,
+   "returned": 747,
+   "relaxed": true,
+   "precision_at_5": 0.0,
+   "recall_at_10": 0.0
+  },
+  {
+   "id": "Q37",
+   "category": "different vocabulary",
+   "query": "telling customers about a hacking incident agreement",
+   "relevant": 7,
+   "returned": 620,
+   "relaxed": true,
+   "precision_at_5": 0.4,
+   "recall_at_10": 0.429
+  }
+ ]
+}

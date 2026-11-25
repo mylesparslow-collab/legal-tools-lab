@@ -1,0 +1,1160 @@
+{
+  "_about": "Claim library. Every sentence the statement may print is listed here with the evidence rule that must hold for it to be printed. Variants are ordered strongest first; the builder prints the first variant whose rule is SUPPORTED, or omits the claim. Entries with type 'draft_option' pull their wording from data/draft_options.json.",
+  "sections": [
+    {
+      "id": "yours",
+      "label": "For your matters",
+      "client_only": true
+    },
+    {
+      "id": "use",
+      "label": "What we use"
+    },
+    {
+      "id": "purpose",
+      "label": "What we use it for, and what we do not"
+    },
+    {
+      "id": "protect",
+      "label": "How your information is protected"
+    },
+    {
+      "id": "check",
+      "label": "How work is checked"
+    },
+    {
+      "id": "billing",
+      "label": "How we bill for AI-assisted work"
+    },
+    {
+      "id": "terms",
+      "label": "Your terms and opting out"
+    },
+    {
+      "id": "contact",
+      "label": "Who to contact"
+    }
+  ],
+  "scopes": {
+    "in_use": [
+      {
+        "field": "status",
+        "op": "in",
+        "value": [
+          "pilot",
+          "production"
+        ]
+      }
+    ],
+    "production": [
+      {
+        "field": "status",
+        "op": "eq",
+        "value": "production"
+      }
+    ],
+    "client_conf": [
+      {
+        "field": "data_boundary.data_allowed",
+        "op": "contains",
+        "value": "client_confidential"
+      }
+    ],
+    "court": [
+      {
+        "field": "sb574_log.court_filing_use",
+        "op": "in",
+        "value": [
+          "yes",
+          "possible"
+        ]
+      }
+    ],
+    "testable": [
+      {
+        "field": "golden_set.status",
+        "op": "ne",
+        "value": "not_applicable"
+      }
+    ],
+    "client_restricted": [
+      {
+        "field": "id",
+        "op": "in",
+        "value_from": "derived.client_restricted_ids"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "client_terms_basis",
+      "section": "yours",
+      "variants": [
+        {
+          "id": "basis",
+          "text": "This section reflects your written terms on AI dated {client_terms_date} ({client_terms_source}).",
+          "rule": {
+            "context": [
+              {
+                "field": "client.terms_date",
+                "op": "on_or_before_as_of"
+              },
+              {
+                "field": "client.terms_source",
+                "op": "non_empty"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_ai_permitted",
+      "section": "yours",
+      "enabled_if": [
+        {
+          "field": "client.ai_use",
+          "op": "eq",
+          "value": "permitted"
+        }
+      ],
+      "variants": [
+        {
+          "id": "permitted",
+          "text": "Your terms permit AI-assisted tools on your matters.",
+          "rule": {
+            "context": [
+              {
+                "field": "client.ai_use",
+                "op": "eq",
+                "value": "permitted"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_ai_prohibited",
+      "section": "yours",
+      "enabled_if": [
+        {
+          "field": "client.ai_use",
+          "op": "eq",
+          "value": "prohibited"
+        }
+      ],
+      "variants": [
+        {
+          "id": "prohibited",
+          "text": "Your terms prohibit AI-assisted tools on your matters.",
+          "rule": {
+            "context": [
+              {
+                "field": "client.ai_use",
+                "op": "eq",
+                "value": "prohibited"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_consent_held",
+      "section": "yours",
+      "enabled_if": [
+        {
+          "field": "client.ai_use",
+          "op": "eq",
+          "value": "permitted_with_consent"
+        },
+        {
+          "field": "client.consent_on_file.date",
+          "op": "non_empty"
+        }
+      ],
+      "variants": [
+        {
+          "id": "held",
+          "text": "Your terms require your consent before we use AI-assisted tools on your matters. We hold your written consent dated {client_consent_date}.",
+          "rule": {
+            "context": [
+              {
+                "field": "client.consent_on_file.date",
+                "op": "on_or_before_as_of"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_consent_missing",
+      "section": "yours",
+      "enabled_if": [
+        {
+          "field": "client.ai_use",
+          "op": "eq",
+          "value": "permitted_with_consent"
+        },
+        {
+          "field": "client.consent_on_file.date",
+          "op": "is_missing"
+        }
+      ],
+      "variants": [
+        {
+          "id": "missing",
+          "text": "Your terms require your consent before we use AI-assisted tools on your matters. We have no consent from you on file as of this date.",
+          "rule": {
+            "context": [
+              {
+                "field": "client.consent_on_file.date",
+                "op": "is_missing"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_tools_prohibited",
+      "section": "yours",
+      "enabled_if": [
+        {
+          "field": "client.tools_prohibited",
+          "op": "non_empty"
+        }
+      ],
+      "variants": [
+        {
+          "id": "listed",
+          "text": "Your terms rule out these tools on your matters: {client_prohibited_list}.",
+          "rule": {
+            "context": [
+              {
+                "field": "client.tools_prohibited",
+                "op": "non_empty"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_data_restrictions",
+      "section": "yours",
+      "enabled_if": [
+        {
+          "field": "client.data_restrictions",
+          "op": "non_empty"
+        }
+      ],
+      "variants": [
+        {
+          "id": "no_tool_approved",
+          "text": "Your terms bar entering {client_restricted_data_list} into AI tools. No tool in use is approved to receive it.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.data_allowed",
+                "op": "contains_none",
+                "value_from": "client.data_restrictions"
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "Your terms bar entering {client_restricted_data_list} into AI tools. {Pass} of {scope} tools in use {are} not approved to receive it.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "data_boundary.data_allowed",
+                "op": "contains_none",
+                "value_from": "client.data_restrictions"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_restriction_check",
+      "section": "yours",
+      "enabled_if": [
+        {
+          "field": "derived.client_restricted_ids",
+          "op": "non_empty"
+        }
+      ],
+      "variants": [
+        {
+          "id": "all_checked_recent",
+          "text": "{client_restricted_phrase} your terms restrict is checked against your terms before use on a matter. That check was confirmed to work in the past {ocg_check_max_age_days} days.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_restricted"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "ocg_check.method",
+                "op": "in",
+                "value": [
+                  "automated_gate",
+                  "manual_lookup"
+                ]
+              },
+              {
+                "field": "ocg_check.last_checked",
+                "op": "within_days",
+                "value_from": "registry.ocg_check_max_age_days"
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "{Pass} of the {scope} tools your terms restrict {are} checked against your terms before use on a matter.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_restricted"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "ocg_check.method",
+                "op": "in",
+                "value": [
+                  "automated_gate",
+                  "manual_lookup"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_disclosure",
+      "section": "yours",
+      "enabled_if": [
+        {
+          "field": "client.disclosure_required",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "required",
+          "text": "Your terms require us to tell you when we use these tools: {client_disclosure_phrase}.",
+          "rule": {
+            "context": [
+              {
+                "field": "client.disclosure_method",
+                "op": "in",
+                "value": [
+                  "matter_start_notice",
+                  "invoice_narrative",
+                  "on_request"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "client_precedence",
+      "section": "yours",
+      "type": "draft_option",
+      "topic": "client_precedence"
+    },
+    {
+      "id": "tools_in_use",
+      "section": "use",
+      "proposal_order": 1,
+      "variants": [
+        {
+          "id": "by_category",
+          "text": "We use {tools_in_use_phrase} in client work: {category_list}.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "id",
+                "op": "key_of",
+                "value_from": "inputs.tool_categories"
+              }
+            ]
+          }
+        },
+        {
+          "id": "count_only",
+          "text": "We use {tools_in_use_phrase} in client work.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "no_tools_in_use",
+      "section": "use",
+      "proposal_order": 1,
+      "variants": [
+        {
+          "id": "none",
+          "text": "We do not use AI-assisted tools in client work as of this date.",
+          "rule": {
+            "quantifier": "none",
+            "on_empty": "supported",
+            "require": [
+              {
+                "field": "status",
+                "op": "in",
+                "value": [
+                  "pilot",
+                  "production"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "alternative_note": "Applies only when the registry has no tool in use."
+    },
+    {
+      "id": "tool_names",
+      "section": "use",
+      "enabled_if": [
+        {
+          "field": "inputs.name_vendors",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "named",
+          "text": "They are: {tool_name_list}.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "rollout",
+      "section": "use",
+      "variants": [
+        {
+          "id": "split",
+          "text": "{rollout_phrase}",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "named_owner",
+      "section": "use",
+      "variants": [
+        {
+          "id": "each",
+          "text": "Each tool has a named owner at the firm who answers for it.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "business_owner",
+                "op": "not_in",
+                "ci": true,
+                "value": [
+                  "to be assigned",
+                  "tbd",
+                  "none",
+                  "unassigned",
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "{Pass} of {scope} tools in use {have} a named owner at the firm.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "business_owner",
+                "op": "not_in",
+                "ci": true,
+                "value": [
+                  "to be assigned",
+                  "tbd",
+                  "none",
+                  "unassigned",
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "uses",
+      "section": "purpose",
+      "variants": [
+        {
+          "id": "listed",
+          "text": "We use these tools for: {use_list}.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "id",
+                "op": "key_of",
+                "value_from": "inputs.tool_categories"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "not_for_client_information",
+      "section": "purpose",
+      "variants": [
+        {
+          "id": "count",
+          "text": "{Pass} of {scope} tools in use {are} not approved to receive client confidential information.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "data_boundary.data_allowed",
+                "op": "contains_none",
+                "value": [
+                  "client_confidential",
+                  "personal_data",
+                  "health_information"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "no_sensitive_data",
+      "section": "purpose",
+      "variants": [
+        {
+          "id": "personal_and_health",
+          "text": "No tool in use is approved to receive personal data or health information.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.data_allowed",
+                "op": "contains_none",
+                "value": [
+                  "personal_data",
+                  "health_information"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "health_only",
+          "text": "No tool in use is approved to receive health information.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.data_allowed",
+                "op": "contains_none",
+                "value": [
+                  "health_information"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "no_training",
+      "section": "protect",
+      "proposal_order": 2,
+      "variants": [
+        {
+          "id": "all_tools",
+          "text": "No tool we use allows what we enter to be used to train a model.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.used_for_training",
+                "op": "eq",
+                "value": "no",
+                "unknown_values": [
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "client_conf_tools",
+          "text": "No tool approved for client confidential information allows what we enter to be used to train a model.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.used_for_training",
+                "op": "eq",
+                "value": "no",
+                "unknown_values": [
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "{Pass} of {scope} tools approved for client confidential information {do} not allow what we enter to be used to train a model.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "data_boundary.used_for_training",
+                "op": "eq",
+                "value": "no",
+                "unknown_values": [
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "provider_agreements",
+      "section": "protect",
+      "variants": [
+        {
+          "id": "each",
+          "text": "Each tool approved for client confidential information is covered by a written agreement with its provider, recorded in our tool registry.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "data_boundary.agreements",
+                "op": "non_empty"
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "{Pass} of {scope} tools approved for client confidential information {are} covered by a written agreement with the provider, recorded in our tool registry.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "data_boundary.agreements",
+                "op": "non_empty"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "confidentiality",
+      "section": "protect",
+      "type": "draft_option",
+      "topic": "confidentiality"
+    },
+    {
+      "id": "human_review",
+      "section": "check",
+      "proposal_order": 3,
+      "variants": [
+        {
+          "id": "every",
+          "text": "Every tool in use has a written review step: a person at the firm reviews the tool's output before anyone relies on it.",
+          "short": "Every tool has a written review step: a person at the firm reviews its output before anyone relies on it.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "human_review",
+                "op": "non_empty"
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "{Pass} of {scope} tools in use {have} a written review step: a person at the firm reviews the tool's output before anyone relies on it.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "human_review",
+                "op": "non_empty"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "section": "check",
+      "proposal_order": 4,
+      "variants": [
+        {
+          "id": "every_in_use",
+          "text": "We test tools against a fixed set of documents with known answers. Every tool in use that this test applies to has a passing result on record.",
+          "short": "Every tool in use that our known-answer test applies to has a passing result on record.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "testable"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "golden_set.status",
+                "op": "eq",
+                "value": "scored"
+              },
+              {
+                "field": "golden_set.passes",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "golden_set.run_date",
+                "op": "on_or_before_as_of"
+              }
+            ]
+          }
+        },
+        {
+          "id": "every_firmwide",
+          "text": "We test tools against a fixed set of documents with known answers. Every tool in firmwide use that this test applies to has a passing result on record.",
+          "short": "Every tool in firmwide use that our known-answer test applies to has a passing result on record.",
+          "rule": {
+            "scope": [
+              "production",
+              "testable"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "golden_set.status",
+                "op": "eq",
+                "value": "scored"
+              },
+              {
+                "field": "golden_set.passes",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "golden_set.run_date",
+                "op": "on_or_before_as_of"
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "We test tools against a fixed set of documents with known answers. {Pass} of {scope} tools in use that this test applies to {have} a passing result on record.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "testable"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "golden_set.status",
+                "op": "eq",
+                "value": "scored"
+              },
+              {
+                "field": "golden_set.passes",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "golden_set.run_date",
+                "op": "on_or_before_as_of"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "court_citations",
+      "section": "check",
+      "variants": [
+        {
+          "id": "each",
+          "text": "For each tool whose output may reach a court filing, we have a written step for an attorney to verify citations before filing and a set place where that verification is logged.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "court"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "sb574_log.mechanism",
+                "op": "not_startswith",
+                "value": "none"
+              },
+              {
+                "field": "sb574_log.log_location",
+                "op": "non_empty"
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "{Pass} of {scope} tools whose output may reach a court filing {have} a written step for an attorney to verify citations before filing and a set place where that verification is logged.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "court"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "sb574_log.mechanism",
+                "op": "not_startswith",
+                "value": "none"
+              },
+              {
+                "field": "sb574_log.log_location",
+                "op": "non_empty"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "no_court_use",
+      "section": "check",
+      "variants": [
+        {
+          "id": "none",
+          "text": "No tool in use is approved for work that goes into court filings.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "sb574_log.court_filing_use",
+                "op": "eq",
+                "value": "no"
+              }
+            ]
+          }
+        }
+      ],
+      "alternative_note": "Applies only when no tool in use can reach a court filing."
+    },
+    {
+      "id": "review_cycle",
+      "section": "check",
+      "variants": [
+        {
+          "id": "registry_interval",
+          "text": "We review tools every {review_interval_days} days. Each tool in use has a review on record within that period.",
+          "rule": {
+            "all_of": [
+              {
+                "scope": [
+                  "in_use"
+                ],
+                "quantifier": "all",
+                "require": [
+                  {
+                    "field": "last_review",
+                    "op": "within_days",
+                    "value_from": "registry.review_interval_days"
+                  }
+                ]
+              },
+              {
+                "context": [
+                  {
+                    "field": "registry.review_interval_days",
+                    "op": "lte",
+                    "value": 365
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "annual",
+          "text": "Each tool in use has a review on record within the past 12 months.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "last_review",
+                "op": "within_days",
+                "value": 365
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "{Pass} of {scope} tools in use {have} a review on record within the past 12 months.",
+          "rule": {
+            "scope": [
+              "in_use"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "last_review",
+                "op": "within_days",
+                "value": 365
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "court_disclosure",
+      "section": "check",
+      "type": "draft_option",
+      "topic": "court_disclosure"
+    },
+    {
+      "id": "billing",
+      "section": "billing",
+      "type": "draft_option",
+      "topic": "billing",
+      "proposal_order": 5
+    },
+    {
+      "id": "client_terms_check",
+      "section": "terms",
+      "proposal_order": 6,
+      "variants": [
+        {
+          "id": "each_recent",
+          "text": "Before a tool is used on a matter, we check that client's written terms on AI. Each tool approved for client confidential information has this check, and each check was confirmed to work in the past {ocg_check_max_age_days} days.",
+          "short": "Before a tool is used on a matter, we check that client's written terms on AI.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "ocg_check.method",
+                "op": "in",
+                "value": [
+                  "automated_gate",
+                  "manual_lookup"
+                ]
+              },
+              {
+                "field": "ocg_check.last_checked",
+                "op": "within_days",
+                "value_from": "registry.ocg_check_max_age_days"
+              }
+            ]
+          }
+        },
+        {
+          "id": "each",
+          "text": "Before a tool is used on a matter, we check that client's written terms on AI. Each tool approved for client confidential information has this check.",
+          "short": "Before a tool is used on a matter, we check that client's written terms on AI.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "all",
+            "require": [
+              {
+                "field": "ocg_check.method",
+                "op": "in",
+                "value": [
+                  "automated_gate",
+                  "manual_lookup"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "count",
+          "text": "{Pass} of {scope} tools approved for client confidential information {have} a check against the client's written terms on AI before use on a matter.",
+          "rule": {
+            "scope": [
+              "in_use",
+              "client_conf"
+            ],
+            "quantifier": "at_least",
+            "n": 1,
+            "require": [
+              {
+                "field": "ocg_check.method",
+                "op": "in",
+                "value": [
+                  "automated_gate",
+                  "manual_lookup"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "opt_out",
+      "section": "terms",
+      "type": "draft_option",
+      "topic": "opt_out",
+      "proposal_order": 7
+    },
+    {
+      "id": "contact",
+      "section": "contact",
+      "variants": [
+        {
+          "id": "role",
+          "text": "Questions about this statement go to {contact_role}: {contact_channel}.",
+          "rule": {
+            "context": [
+              {
+                "field": "inputs.contact.role",
+                "op": "non_empty"
+              },
+              {
+                "field": "inputs.contact.channel",
+                "op": "non_empty"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

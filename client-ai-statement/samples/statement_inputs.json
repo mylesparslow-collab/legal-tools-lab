@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "name_vendors": false,
+  "tool_categories": {
+    "contract-review": {
+      "category": "Contract review",
+      "use": "first-pass review of contracts against our clause checklist"
+    },
+    "research-drafting": {
+      "category": "Legal research and drafting",
+      "use": "research memos and first drafts of brief sections"
+    },
+    "transcript-summary": {
+      "category": "Transcript summaries",
+      "use": "summaries of deposition and hearing transcripts"
+    },
+    "translation": {
+      "category": "Translation",
+      "use": "working translations of public and internal documents"
+    }
+  },
+  "contact": {
+    "role": "the Office of General Counsel",
+    "channel": "aiquestions@examplefirm.example"
+  },
+  "opt_out_role": "your relationship partner or the Office of General Counsel",
+  "draft_options": {
+    "billing": "B1",
+    "confidentiality": "C1",
+    "court_disclosure": "D1",
+    "opt_out": "O1",
+    "client_precedence": "P1"
+  },
+  "approval": {
+    "approved_by": "",
+    "approved_on": "",
+    "content_hash": ""
+  },
+  "exclude_claims": [],
+  "notes": "Sample statement inputs for registry.clean.json and registry.later.json. Fictional."
+}

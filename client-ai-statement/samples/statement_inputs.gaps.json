@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "name_vendors": false,
+  "tool_categories": {
+    "contract-review": {
+      "category": "Contract review",
+      "use": "first-pass review of contracts against our clause checklist"
+    },
+    "intake-assistant": {
+      "category": "Matter intake",
+      "use": "sorting new-matter intake forms"
+    },
+    "email-drafting": {
+      "category": "Correspondence drafting",
+      "use": "first drafts of routine correspondence"
+    },
+    "brief-drafting": {
+      "category": "Brief drafting",
+      "use": "first drafts of motion and brief sections"
+    }
+  },
+  "contact": {
+    "role": "the Office of General Counsel",
+    "channel": "aiquestions@examplefirm.example"
+  },
+  "opt_out_role": "your relationship partner or the Office of General Counsel",
+  "draft_options": {
+    "billing": "B1",
+    "confidentiality": "C0",
+    "court_disclosure": "D1",
+    "opt_out": "O1",
+    "client_precedence": "P1"
+  },
+  "approval": {
+    "approved_by": "",
+    "approved_on": "",
+    "content_hash": ""
+  },
+  "exclude_claims": [],
+  "notes": "Sample statement inputs for registry.gaps.json. One tool in use has no category, on purpose. Fictional."
+}

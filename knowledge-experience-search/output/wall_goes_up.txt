@@ -1,0 +1,96 @@
+A wall goes up
+==============
+Query 'earn-out provisions agreement' as U102.
+Before: 8 results; top result is in matter M0181.
+Then a new wall excludes U102 from M0181. Only the permission tables are refreshed (python -m kx index --permissions-only does the same).
+After: 6 results; documents from M0181 shown: 0.
+Postings before and after: 149360 and 149360 (no document was re-indexed).
+
+Before
+------
+Query: 'earn-out provisions agreement' as U102
+8 results among documents this user can open
+
+ 1. Agreement: earn-out provisions  [D00873]  score 0.724
+    agreement | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-10-09
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Dmitri Halvorsby
+    final
+    Subject: earn-out provisions. Prepared in the course of the stock purchase matter in Brannock Court of Chancery. The section on revenue target cross-refers to the discussion of earn …
+
+ 2. Agreement: earn-out provisions  [D00101]  score 0.718
+    agreement | Corporate and M&A | minority investment | State of Caldmoor | 2019-06-30
+    matter M0021 Quellmar Cooperative: minority investment | author Ugo Ellingsworth
+    final, reused 2x
+    This agreement addresses earn-out provisions in connection with the minority investment matter. Open points on accounting principles are listed at the end with proposed next steps. Section 2 sets …
+
+ 3. Agreement on earn-out provisions (stock purchase)  [D00872]  score 0.714
+    agreement | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-12-26
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Ugo Ellingsworth
+    final
+    The purpose of this agreement is to record the position on earn-out provisions. The drafting team reworked the language on revenue target after comments from the other side. A …
+
+ 4. Agreement on earn-out provisions (asset purchase)  [D00612]  score 0.686
+    agreement | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-04-28
+    matter M0131 Wexcombe Ventures: asset purchase | author Quinn Pennwarden
+    final
+    This agreement was prepared for the asset purchase matter and concerns earn-out provisions. Open points on milestone payment are listed at the end with proposed next steps. Open points …
+
+ 5. Earn-out provisions: agreement for Estermere County Superior Court  [D00614]  score 0.674
+    agreement | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-04-02
+    matter M0131 Wexcombe Ventures: asset purchase | author Dmitri Halvorsby
+    final, reused 2x
+    3 earlier or other version(s) folded in: D01252, D01253, D01254
+    This agreement addresses earn-out provisions in connection with the asset purchase matter. The format follows the practice group's house style. For losses definition, see the separate document on …
+
+Filters available in these results:
+  doc_type: agreement (8)
+  practice: Corporate and M&A (8)
+  matter_type: asset purchase (4), stock purchase (3), minority investment (1)
+  jurisdiction: Estermere County Superior Court (4), Brannock Court of Chancery (2), State of Caldmoor (1), Tavish County (1)
+  client_industry: financial services (4), energy (3), healthcare (1)
+  year: 2022 (4), 2025 (2), 2019 (1), 2023 (1)
+
+After
+-----
+Query: 'earn-out provisions agreement' as U102
+6 results among documents this user can open
+
+ 1. Agreement: earn-out provisions  [D00101]  score 0.720
+    agreement | Corporate and M&A | minority investment | State of Caldmoor | 2019-06-30
+    matter M0021 Quellmar Cooperative: minority investment | author Ugo Ellingsworth
+    final, reused 2x
+    This agreement addresses earn-out provisions in connection with the minority investment matter. Open points on accounting principles are listed at the end with proposed next steps. Section 2 sets …
+
+ 2. Agreement on earn-out provisions (asset purchase)  [D00612]  score 0.689
+    agreement | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-04-28
+    matter M0131 Wexcombe Ventures: asset purchase | author Quinn Pennwarden
+    final
+    This agreement was prepared for the asset purchase matter and concerns earn-out provisions. Open points on milestone payment are listed at the end with proposed next steps. Open points …
+
+ 3. Earn-out provisions: agreement for Estermere County Superior Court  [D00614]  score 0.676
+    agreement | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-04-02
+    matter M0131 Wexcombe Ventures: asset purchase | author Dmitri Halvorsby
+    final, reused 2x
+    3 earlier or other version(s) folded in: D01252, D01253, D01254
+    This agreement addresses earn-out provisions in connection with the asset purchase matter. The format follows the practice group's house style. For losses definition, see the separate document on …
+
+ 4. Earn-out provisions: agreement for Estermere County Superior Court  [D00613]  score 0.671
+    agreement | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-03-20
+    matter M0131 Wexcombe Ventures: asset purchase | author Amara Quistrel
+    final
+    The purpose of this agreement is to record the position on earn-out provisions. Capitalised terms have the meanings given in the main document. The document is subject to partner …
+
+ 5. Project Halcyon - Earn-out provisions: agreement for Tavish County  [D01025]  score 0.662
+    agreement | Corporate and M&A | stock purchase | Tavish County | 2023-02-12
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final
+    3 earlier or other version(s) folded in: D01441, D01442, D01443
+    The purpose of this agreement is to record the position on earn-out provisions. Internal reference: Project Halcyon. Items relating to revenue target were confirmed complete before circulation. The assumptions …
+
+Filters available in these results:
+  doc_type: agreement (6)
+  practice: Corporate and M&A (6)
+  matter_type: asset purchase (4), minority investment (1), stock purchase (1)
+  jurisdiction: Estermere County Superior Court (4), State of Caldmoor (1), Tavish County (1)
+  client_industry: financial services (4), energy (1), healthcare (1)
+  year: 2022 (4), 2019 (1), 2023 (1)

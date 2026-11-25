@@ -1,0 +1,26 @@
+{
+  "doc_sha256": "a8dc375dd1fbd643db65776e7569668ca565fb61394c347ce1e113bb69f6872c",
+  "attestations": [
+    {
+      "citation_id": "f402f4de-1",
+      "citation_text": "97 Cal.5th 210",
+      "attorney": "Perrin Ashgrove (fictional attorney)",
+      "attested_at": "2027-01-12T14:10:00+00:00",
+      "how_checked": "Read the opinion in the firm research database; confirmed the holding, the pinpoint page and the quotation."
+    },
+    {
+      "citation_id": "f402f4de-2",
+      "citation_text": "Id. at 230",
+      "attorney": "Perrin Ashgrove (fictional attorney)",
+      "attested_at": "2027-01-12T14:17:00+00:00",
+      "how_checked": "Opened the cited page and compared the quotation word for word; ran a citator check for later history."
+    },
+    {
+      "citation_id": "b3ac3fd6-1",
+      "citation_text": "977 F.4th 1180",
+      "attorney": "Perrin Ashgrove (fictional attorney)",
+      "attested_at": "2027-01-12T14:24:00+00:00",
+      "how_checked": "Read the full opinion; confirmed it supports the sentence it is cited for and is still citable."
+    }
+  ]
+}

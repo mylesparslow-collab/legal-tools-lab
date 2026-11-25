@@ -1,0 +1,13 @@
+{
+  "filing_id": "F-2027-003",
+  "record_sha256": "982f4762d1ad97c8e671022016d2428c0fae809353f9cbd80e7a6ba5e8cca7d7",
+  "status": "VALID",
+  "valid": true,
+  "checks": {
+    "record_intact": true,
+    "document_unchanged": true,
+    "ledger_intact": true,
+    "in_ledger": true
+  },
+  "problems": []
+}

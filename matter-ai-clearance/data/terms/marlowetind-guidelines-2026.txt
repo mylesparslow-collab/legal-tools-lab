@@ -1,0 +1,25 @@
+MARLOWE-TIND MUTUAL INDEMNITY (fictional)
+Litigation Guidelines for Defense Counsel
+2026 edition
+
+1. Case handling
+
+Counsel must send an initial case assessment within thirty days of assignment. Counsel must obtain prior approval before retaining any expert or vendor.
+
+2. Artificial intelligence and automated tools
+
+2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional.
+
+2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary.
+
+2.3 AI tool subscription or usage fees are overhead and are not reimbursable.
+
+2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service.
+
+2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources.
+
+2.6 Questions about this section should be directed to the Litigation Management Unit.
+
+3. Settlement authority
+
+Counsel has no authority to settle without written authorization from the claims professional.

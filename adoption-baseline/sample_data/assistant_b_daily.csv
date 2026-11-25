@@ -1,0 +1,1782 @@
+Report date;User;Department;Docs prompts;Mail prompts;Meetings prompts;Sheets prompts
+07/09/2026;tate sample-0011;Disputes;1;0;0;0
+07/09/2026;Ellis Sample-0053;Banking and finance;2;1;2;0
+07/09/2026;Jules Sample-0057;Banking and finance;0;1;1;0
+07/09/2026;Jules Sample-0057;Banking and finance;0;1;1;0
+07/09/2026;reese sample-0065;Employment;2;0;0;0
+07/09/2026;Jules Sample-0077;Corporate;0;1;1;0
+07/09/2026;kit sample-0154;Disputes;1;1;0;0
+07/09/2026; Indigo  Sample-0161 ;Banking and finance;2;1;0;0
+07/09/2026;Harper Sample-0165;Intellectual property;1;0;0;0
+07/09/2026;Devon Sample-0176;Real estate;1;0;0;0
+07 Sep 2026;Quinn Sample-0226;Corporate;2;0;0;0
+07/09/2026;Wren Sample-0232;Disputes;0;1;0;0
+07/09/2026;Ellis Sample-0246;Intellectual property;0;1;0;0
+07/09/2026;Noor Sample-0267;Banking and finance;1;0;0;0
+07/09/2026;Bryn Sample-0291;Disputes;1;0;0;0
+07/09/2026;VALE SAMPLE-0304;Corporate;1;1;1;0
+08/09/2026;Gray Sample-0022;Tax;1;0;0;0
+08/09/2026;Alder Sample-0047;Banking and finance;1;0;1;0
+08/09/2026;Ellis Sample-0053;Banking and finance;0;1;0;0
+08/09/2026;Umber Sample-0055;Banking and finance;1;0;0;0
+08/09/2026;Jules Sample-0057;Banking and finance;1;1;0;0
+08/09/2026;Reese Sample-0065;Employment;1;2;0;0
+08/09/2026;Jules Sample-0077;Corporate;0;1;1;0
+08 Sep 2026;Vale Sample-0110;Regulatory;0;1;0;0
+08/09/2026;Alder Sample-0147;Disputes;2;0;0;0
+08/09/2026;Indigo Sample-0161;Banking and finance;0;1;0;0
+08/09/2026; Harper  Sample-0165 ;Intellectual property;1;1;0;0
+08/09/2026;Lane Sample-0210;Disputes;1;1;0;0
+08/09/2026;Wren Sample-0222;Corporate;2;0;1;0
+08/09/2026;Wren Sample-0232;Disputes;1;0;0;0
+08/09/2026;Ellis Sample-0246;Intellectual property;0;0;1;0
+08/09/2026;tate sample-0251;Intellectual property;0;1;0;0
+08 Sep 2026;Gray Sample-0261;Corporate;1;0;1;0
+08/09/2026;Tate Sample-0263;Disputes;1;0;0;0
+08/09/2026;VALE SAMPLE-0304;Corporate;1;0;1;0
+08/09/2026;perry sample-0307;Private client;1;0;0;0
+09/09/2026;Quinn Sample-0010;Intellectual property;1;0;1;0
+09/09/2026;Tate Sample-0011;Disputes;2;1;0;0
+09/09/2026;Gray Sample-0022;Tax;1;0;1;0
+09/09/2026;Umber Sample-0055;Banking and finance;0;2;0;0
+09/09/2026;Jules Sample-0057;Banking and finance;0;0;1;0
+09 Sep 2026;Reese Sample-0065;Employment;1;0;0;0
+09/09/2026;Kit Sample-0154;Disputes;1;0;0;0
+09/09/2026;Indigo Sample-0161;Banking and finance;1;1;0;0
+09/09/2026;Harper Sample-0165;Intellectual property;1;1;0;0
+09/09/2026;Devon Sample-0176;Real estate;0;1;0;0
+09/09/2026;Umber Sample-0208;Disputes;0;0;1;0
+09/09/2026;Lane Sample-0210;Disputes;1;0;0;0
+09/09/2026;Wren Sample-0222;Corporate;1;1;0;0
+09/09/2026;Wren Sample-0232;Disputes;1;0;0;0
+09/09/2026;Wren Sample-0232;Disputes;1;0;0;0
+09/09/2026;Tate Sample-0251;Intellectual property;2;1;0;0
+09/09/2026;Gray Sample-0261;Corporate;0;0;0;1
+09/09/2026;Noor Sample-0267;Banking and finance;1;0;0;0
+09 Sep 2026;Bryn Sample-0291;Disputes;0;0;1;0
+09 Sep 2026; Vale  Sample-0304 ;Corporate;3;0;0;0
+09/09/2026;perry sample-0307;Private client;1;0;0;0
+09/09/2026;Vale Sample-0313;Corporate;0;0;1;0
+10/09/2026;TATE SAMPLE-0011;Disputes;1;0;0;0
+10 Sep 2026;Alder Sample-0047;Banking and finance;1;0;1;0
+10/09/2026;Ellis Sample-0053;Banking and finance;2;1;0;1
+10/09/2026;Jules Sample-0057;Banking and finance;1;1;0;0
+10/09/2026;reese sample-0065;Employment;2;0;1;0
+10/09/2026;JULES SAMPLE-0077;Corporate;1;0;1;0
+10/09/2026;Harper Sample-0165;Intellectual property;0;2;1;1
+10/09/2026;Lane Sample-0210;Disputes;1;1;2;2
+10/09/2026;Wren Sample-0232;Disputes;1;0;0;0
+10/09/2026;Jules Sample-0235;Banking and finance;0;0;1;1
+10/09/2026;Ellis Sample-0246;Intellectual property;2;0;0;0
+10/09/2026;Gray Sample-0261;Corporate;0;1;0;0
+10 Sep 2026;NOOR SAMPLE-0267;Banking and finance;2;1;0;2
+10/09/2026; Vale  Sample-0304 ;Corporate;0;1;0;0
+10/09/2026;Vale Sample-0313;Corporate;0;0;0;1
+11/09/2026;Quinn Sample-0010;Intellectual property;0;0;1;0
+11 Sep 2026;Tate Sample-0011;Disputes;0;3;0;1
+11/09/2026;Gray Sample-0022;Tax;0;1;0;0
+11/09/2026;Alder Sample-0047;Banking and finance;0;0;1;0
+11/09/2026;Ellis Sample-0053;Banking and finance;2;2;1;0
+11/09/2026;jules sample-0057;Banking and finance;0;2;0;0
+11/09/2026;Reese Sample-0065;Employment;0;0;1;0
+11/09/2026;JULES SAMPLE-0077;Corporate;1;2;1;0
+11/09/2026;Vale Sample-0110;Regulatory;0;1;0;0
+11/09/2026;Alder Sample-0147;Disputes;1;0;0;0
+11/09/2026;Kit Sample-0154;Disputes;0;0;0;1
+11/09/2026;Harper Sample-0165;Intellectual property;1;1;0;0
+11/09/2026;Umber Sample-0208;Disputes;1;0;0;1
+11/09/2026;Lane Sample-0210;Disputes;0;0;0;1
+11/09/2026;Ellis Sample-0246;Intellectual property;1;0;0;0
+11/09/2026;Tate Sample-0251;Intellectual property;1;1;1;0
+11/09/2026;Gray Sample-0261;Corporate;0;0;0;1
+11/09/2026;Tate Sample-0263;Disputes;0;0;0;1
+11/09/2026;vale sample-0304;Corporate;3;0;0;0
+11/09/2026;Perry Sample-0307;Private client;1;1;1;1
+11/09/2026;Vale Sample-0313;Corporate;0;0;1;0
+14/09/2026;Quinn Sample-0010;Intellectual property;0;0;0;1
+14/09/2026;Tate Sample-0011;Disputes;2;2;0;0
+14/09/2026;gray sample-0022;Tax;1;1;0;0
+14/09/2026;Perry Sample-0032;Corporate;0;1;1;0
+14 Sep 2026;Alder Sample-0047;Banking and finance;0;1;0;0
+14/09/2026;Wren Sample-0050;Real estate;1;2;0;0
+14/09/2026;Ellis Sample-0053;Banking and finance;2;0;0;0
+14/09/2026;umber sample-0129;Corporate;0;0;1;0
+14/09/2026;Alder Sample-0147;Disputes;1;0;1;1
+14 Sep 2026;Kit Sample-0154;Disputes;2;1;0;0
+14/09/2026;Sage Sample-0163;Banking and finance;0;0;1;0
+14/09/2026;Marlow Sample-0185;Employment;1;0;0;0
+14/09/2026;Lane Sample-0231;Tax;1;0;0;0
+;Zephyr Sample-0020;Disputes;1;0;0;0
+14/09/2026;Ellis Sample-0246;Intellectual property;1;0;0;0
+14/09/2026;Tate Sample-0251;Intellectual property;1;1;0;1
+14/09/2026;Gray Sample-0261;Corporate;0;1;0;0
+14/09/2026;Tate Sample-0263;Disputes;1;0;1;0
+14/09/2026;Noor Sample-0267;Banking and finance;1;0;0;0
+14 Sep 2026;Umber Sample-0274;Corporate;1;0;1;0
+14/09/2026;Perry Sample-0307;Private client;2;3;0;0
+15 Sep 2026;Quinn Sample-0010;Intellectual property;0;0;1;0
+15/09/2026;Tate Sample-0011;Disputes;1;1;0;0
+15/09/2026;Gray Sample-0022;Tax;2;0;0;0
+15/09/2026;Alder Sample-0047;Banking and finance;0;1;0;0
+15/09/2026;Wren Sample-0050;Real estate;1;0;0;0
+15/09/2026;Ellis Sample-0053;Banking and finance;2;0;0;1
+15/09/2026;JULES SAMPLE-0057;Banking and finance;1;0;0;0
+15/09/2026;Quinn Sample-0096;Employment;1;0;0;0
+15/09/2026;Umber Sample-0129;Corporate;0;0;1;0
+15/09/2026;Marlow Sample-0185;Employment;1;0;0;1
+15/09/2026;Lane Sample-0231;Tax;1;1;0;0
+16/11/2026;Umber Sample-0030;Intellectual property;0;0;;0
+15/09/2026;Ellis Sample-0246;Intellectual property;1;0;1;0
+15/09/2026;Tate Sample-0251;Intellectual property;2;1;1;0
+15/09/2026;Gray Sample-0261;Corporate;0;0;1;0
+15/09/2026;Noor Sample-0267;Banking and finance;2;0;0;0
+15 Sep 2026;Umber Sample-0274;Corporate;0;1;2;0
+15/09/2026;Bryn Sample-0291;Disputes;2;0;0;0
+15/09/2026;Perry Sample-0307;Private client;1;0;0;0
+16/09/2026;Gray Sample-0022;Tax;2;1;2;1
+16/09/2026;Alder Sample-0047;Banking and finance;1;0;1;1
+16/09/2026;Wren Sample-0050;Real estate;1;0;0;0
+16 Sep 2026; Jules  Sample-0057 ;Banking and finance;1;0;0;0
+16/09/2026;Umber Sample-0129;Corporate;1;0;0;0
+16/09/2026;Marlow Sample-0185;Employment;0;0;1;0
+16/09/2026;Wren Sample-0222;Corporate;0;1;0;0
+16/09/2026;Ellis Sample-0246;Intellectual property;4;0;0;1
+16/09/2026;Tate Sample-0251;Intellectual property;1;2;0;0
+16/09/2026;gray sample-0261;Corporate;0;1;0;2
+16/09/2026;Tate Sample-0263;Disputes;0;1;0;0
+16/09/2026;UMBER SAMPLE-0274;Corporate;2;1;0;2
+16/09/2026; Bryn  Sample-0291 ;Disputes;0;0;1;0
+16/09/2026;Perry Sample-0307;Private client;1;3;0;0
+17/09/2026;Perry Sample-0032;Corporate;1;0;0;0
+17/09/2026;ALDER SAMPLE-0047;Banking and finance;0;0;0;1
+17/09/2026;Wren Sample-0050;Real estate;1;0;1;0
+17/09/2026;Quinn Sample-0096;Employment;1;0;0;0
+17/09/2026;Umber Sample-0129;Corporate;0;0;1;1
+17/09/2026;Alder Sample-0147;Disputes;1;0;0;0
+17/09/2026;Kit Sample-0154;Disputes;0;0;1;0
+17/09/2026;Sage Sample-0163;Banking and finance;2;0;0;0
+17/09/2026;Harper Sample-0165;Intellectual property;1;1;0;0
+17/09/2026;Yael Sample-0207;Banking and finance;1;0;0;0
+17/09/2026;Ellis Sample-0246;Intellectual property;1;0;0;0
+17/09/2026;Tate Sample-0251;Intellectual property;0;2;0;0
+17/09/2026;Gray Sample-0261;Corporate;1;0;0;0
+17/09/2026;UMBER SAMPLE-0274;Corporate;1;1;1;0
+17 Sep 2026;Perry Sample-0307;Private client;1;1;0;1
+18/09/2026;Gray Sample-0022;Tax;2;0;1;0
+18/09/2026;Alder Sample-0047;Banking and finance;1;0;0;0
+18/09/2026;Wren Sample-0050;Real estate;0;1;0;0
+18/09/2026;Ellis Sample-0053;Banking and finance;3;0;0;0
+18/09/2026;Umber Sample-0055;Banking and finance;0;2;0;0
+18/09/2026;Quinn Sample-0096;Employment;0;1;0;1
+18/09/2026;Umber Sample-0129;Corporate;1;1;0;0
+18/09/2026;Kit Sample-0154;Disputes;0;1;0;0
+18/09/2026;Sage Sample-0163;Banking and finance;0;0;1;0
+18/09/2026;Harper Sample-0165;Intellectual property;0;0;1;0
+18/09/2026;Yael Sample-0207;Banking and finance;1;0;1;0
+18/09/2026;Wren Sample-0222;Corporate;1;0;0;0
+18/09/2026;Quinn Sample-0226;Corporate;0;1;0;0
+18/09/2026;Ellis Sample-0246;Intellectual property;1;0;0;0
+18/09/2026;Tate Sample-0251;Intellectual property;1;2;1;0
+18/09/2026;Gray Sample-0261;Corporate;1;1;0;0
+18/09/2026;Umber Sample-0274;Corporate;3;0;2;1
+18/09/2026;Perry Sample-0307;Private client;1;0;1;0
+21/09/2026;Tate Sample-0011;Disputes;1;0;0;0
+21/09/2026;ALDER SAMPLE-0047;Banking and finance;0;0;1;0
+21/09/2026;Ellis Sample-0053;Banking and finance;1;2;0;0
+21/09/2026;Umber Sample-0055;Banking and finance;0;0;0;1
+21/09/2026;jules sample-0058;Disputes;0;2;0;0
+21 Sep 2026;Reese Sample-0065;Employment;0;1;0;0
+21/09/2026;Jules Sample-0077;Corporate;2;1;0;1
+21/09/2026;Tate Sample-0094;Private client;0;1;0;0
+21/09/2026;Vale Sample-0110;Regulatory;0;1;0;0
+21 Sep 2026;Alder Sample-0147;Disputes;0;1;0;0
+21/09/2026;Sage Sample-0163;Banking and finance;1;0;0;0
+21/09/2026;Harper Sample-0165;Intellectual property;1;1;1;0
+21/09/2026;Devon Sample-0176;Real estate;1;0;0;0
+21/09/2026;Yael Sample-0207;Banking and finance;2;1;0;0
+21/09/2026;noor sample-0216;Disputes;1;2;0;0
+21/09/2026;WREN SAMPLE-0222;Corporate;1;0;0;0
+21/09/2026;Quinn Sample-0226;Corporate;0;0;0;1
+21 Sep 2026;Ellis Sample-0246;Intellectual property;2;0;0;0
+21/09/2026;Tate Sample-0251;Intellectual property;1;0;0;0
+21/09/2026;Gray Sample-0261;Corporate;1;1;0;0
+21/09/2026;Tate Sample-0263;Disputes;0;2;0;0
+21/09/2026;Noor Sample-0267;Banking and finance;2;1;0;1
+21/09/2026;perry sample-0307;Private client;1;0;0;0
+22/09/2026;Marlow Sample-0034;Tax;1;0;1;0
+22/09/2026;Alder Sample-0047;Banking and finance;1;0;0;0
+22/09/2026;Ellis Sample-0053;Banking and finance;1;0;0;0
+30/11/2026;Contractor Sample-9001;External;2;0;0;0
+22/09/2026;Umber Sample-0055;Banking and finance;1;0;0;0
+22/09/2026; Jules  Sample-0057 ;Banking and finance;1;0;1;0
+22/09/2026;Jules Sample-0058;Disputes;0;0;1;0
+22/09/2026; Reese  Sample-0065 ;Employment;0;0;0;1
+22/09/2026;JULES SAMPLE-0077;Corporate;2;3;0;0
+22 Sep 2026;Tate Sample-0094;Private client;0;1;0;0
+22/09/2026;Kit Sample-0154;Disputes;1;0;0;0
+22/09/2026;Indigo Sample-0161;Banking and finance;0;1;0;0
+22/09/2026;SAGE SAMPLE-0163;Banking and finance;0;1;0;0
+22/09/2026;harper sample-0165;Intellectual property;0;1;0;0
+22/09/2026;devon sample-0176;Real estate;1;0;0;0
+22/09/2026;Marlow Sample-0185;Employment;1;0;0;0
+22/09/2026;Marlow Sample-0187;Disputes;0;2;0;0
+22/09/2026; Yael  Sample-0207 ;Banking and finance;0;1;0;0
+22/09/2026;Lane Sample-0210;Disputes;1;1;1;0
+22/09/2026;Noor Sample-0216;Disputes;2;1;0;0
+22/09/2026;Quinn Sample-0226;Corporate;1;0;0;0
+22/09/2026;Lane Sample-0231;Tax;0;1;0;1
+22/09/2026;WREN SAMPLE-0232;Disputes;1;1;0;0
+22/09/2026;Ellis Sample-0246;Intellectual property;0;0;1;0
+22/09/2026;Tate Sample-0251;Intellectual property;1;0;0;0
+22/09/2026;Gray Sample-0261;Corporate;0;1;1;0
+22/09/2026;Tate Sample-0263;Disputes;1;1;0;0
+22/09/2026;Noor Sample-0267;Banking and finance;0;2;0;1
+22/09/2026;Vale Sample-0304;Corporate;1;1;0;0
+23/09/2026;Tate Sample-0011;Disputes;2;0;1;0
+23/09/2026;Marlow Sample-0034;Tax;1;0;0;1
+23/09/2026;Alder Sample-0047;Banking and finance;1;0;0;0
+23 Sep 2026;Umber Sample-0055;Banking and finance;0;1;0;0
+23/09/2026;Jules Sample-0057;Banking and finance;1;0;0;0
+23/09/2026;Jules Sample-0058;Disputes;1;0;1;0
+23/09/2026;Reese Sample-0065;Employment;0;1;1;0
+23/09/2026;Jules Sample-0077;Corporate;2;1;0;0
+23/09/2026;Quinn Sample-0096;Employment;0;0;1;0
+23/09/2026; Vale  Sample-0110 ;Regulatory;1;0;0;0
+23/09/2026;Alder Sample-0147;Disputes;0;0;1;0
+23/09/2026; Kit  Sample-0154 ;Disputes;0;1;0;0
+23/09/2026;Indigo Sample-0161;Banking and finance;0;2;0;0
+23/09/2026;Harper Sample-0165;Intellectual property;2;0;0;0
+23/09/2026;Devon Sample-0176;Real estate;0;1;0;0
+23/09/2026;Marlow Sample-0187;Disputes;1;0;0;0
+23/09/2026;Yael Sample-0207;Banking and finance;1;2;0;0
+23/09/2026;UMBER SAMPLE-0208;Disputes;0;1;1;0
+23/09/2026; Lane  Sample-0210 ;Disputes;1;0;1;0
+23/09/2026;Noor Sample-0216;Disputes;1;3;0;0
+23/09/2026;Lane Sample-0231;Tax;0;1;0;0
+23/09/2026;Wren Sample-0232;Disputes;1;0;1;0
+23/09/2026;Ellis Sample-0246;Intellectual property;1;0;0;1
+23/09/2026;TATE SAMPLE-0251;Intellectual property;1;0;0;0
+23/09/2026;Gray Sample-0261;Corporate;1;2;0;0
+23/09/2026;Tate Sample-0263;Disputes;1;0;1;0
+23/09/2026;Vale Sample-0304;Corporate;1;0;1;0
+23/09/2026;Perry Sample-0307;Private client;0;2;0;0
+24/09/2026;Marlow Sample-0034;Tax;0;1;0;0
+24 Sep 2026;Ellis Sample-0053;Banking and finance;0;0;1;0
+24/09/2026;Jules Sample-0058;Disputes;2;0;0;0
+24/09/2026;Reese Sample-0065;Employment;1;2;1;0
+24/09/2026;Jules Sample-0077;Corporate;1;2;0;0
+24/09/2026;Quinn Sample-0096;Employment;1;1;0;0
+24/09/2026;Alder Sample-0147;Disputes;1;0;0;0
+24/09/2026;Harper Sample-0165;Intellectual property;1;0;0;0
+24/09/2026;Devon Sample-0176;Real estate;0;1;0;0
+24 Sep 2026;Marlow Sample-0185;Employment;0;0;0;1
+24/09/2026;Marlow Sample-0187;Disputes;2;0;0;0
+24/09/2026;Yael Sample-0207;Banking and finance;3;1;0;0
+24/09/2026;Lane Sample-0210;Disputes;1;0;0;0
+24/09/2026;Noor Sample-0216;Disputes;1;1;0;1
+24/09/2026;WREN SAMPLE-0222;Corporate;1;0;1;0
+24/09/2026;Quinn Sample-0226;Corporate;0;1;0;0
+24/09/2026;Lane Sample-0231;Tax;0;1;0;0
+24/09/2026;WREN SAMPLE-0232;Disputes;0;0;0;2
+24/09/2026;Tate Sample-0251;Intellectual property;1;0;0;0
+24/09/2026;Gray Sample-0261;Corporate;1;1;0;1
+24 Sep 2026;Tate Sample-0263;Disputes;0;1;1;0
+24 Sep 2026;Noor Sample-0267;Banking and finance;0;1;0;0
+24/09/2026; Vale  Sample-0304 ;Corporate;1;0;0;1
+24 Sep 2026;PERRY SAMPLE-0307;Private client;1;0;0;0
+25/09/2026;Tate Sample-0011;Disputes;0;0;1;0
+25/09/2026;Marlow Sample-0034;Tax;0;1;0;0
+25/09/2026;Marlow Sample-0034;Tax;0;1;0;0
+25/09/2026;Alder Sample-0047;Banking and finance;0;0;1;0
+25/09/2026;Jules Sample-0057;Banking and finance;2;0;0;0
+11/09/2026;Contractor Sample-9001;External;2;0;0;0
+10/11/2026;Contractor Sample-9001;External;2;0;0;0
+25/09/2026;jules sample-0058;Disputes;1;1;0;0
+25/09/2026;jules sample-0058;Disputes;1;1;0;0
+22/11/2026;Contractor Sample-9001;External;2;0;0;0
+25/09/2026;Reese Sample-0065;Employment;1;0;0;0
+25/09/2026;Jules Sample-0077;Corporate;1;0;0;1
+25/09/2026;Quinn Sample-0096;Employment;2;1;0;0
+25/09/2026;Alder Sample-0147;Disputes;0;2;0;0
+25/09/2026; Kit  Sample-0154 ;Disputes;1;1;0;0
+25/09/2026;Indigo Sample-0161;Banking and finance;0;1;0;0
+25/09/2026;Devon Sample-0176;Real estate;1;0;0;0
+25/09/2026;Marlow Sample-0187;Disputes;1;0;1;0
+25/09/2026;Umber Sample-0208;Disputes;0;2;0;0
+25/09/2026;LANE SAMPLE-0210;Disputes;1;1;0;0
+25/09/2026;Noor Sample-0216;Disputes;1;1;0;0
+25/09/2026; Wren  Sample-0222 ;Corporate;1;0;0;0
+03/10/2026;Cass Sample-0015;Tax;0;0;;0
+25/09/2026;Quinn Sample-0226;Corporate;1;0;0;0
+06/12/2026;Bryn Sample-0148;Tax;0;0;;0
+25/09/2026;Lane Sample-0231;Tax;1;3;0;0
+25/09/2026;Wren Sample-0232;Disputes;1;0;0;0
+25/09/2026;Ellis Sample-0246;Intellectual property;1;1;0;0
+25/09/2026;Tate Sample-0251;Intellectual property;1;0;0;0
+25/09/2026;Gray Sample-0261;Corporate;2;0;0;1
+25/09/2026;Noor Sample-0267;Banking and finance;1;1;0;0
+25/09/2026;Vale Sample-0304;Corporate;1;0;0;1
+28/09/2026;Tate Sample-0011;Disputes;0;0;1;0
+28/09/2026;Gray Sample-0022;Tax;1;0;0;1
+28/09/2026;Wren Sample-0050;Real estate;1;1;0;0
+28/09/2026;Umber Sample-0055;Banking and finance;1;0;0;0
+28/09/2026;Tate Sample-0094;Private client;1;1;0;0
+28/09/2026;Yael Sample-0127;Tax;1;1;0;0
+28 Sep 2026;Ellis Sample-0168;Banking and finance;0;1;0;0
+28/09/2026;Xan Sample-0180;Competition;0;0;0;1
+28/09/2026;Marlow Sample-0187;Disputes;1;0;1;0
+28/09/2026;Lane Sample-0210;Disputes;2;0;0;0
+28/09/2026;Lane Sample-0231;Tax;1;0;0;0
+28/09/2026;Wren Sample-0232;Disputes;1;0;0;0
+28/09/2026;jules sample-0235;Banking and finance;0;1;0;0
+28/09/2026;ELLIS SAMPLE-0246;Intellectual property;1;1;1;0
+28/09/2026;Tate Sample-0251;Intellectual property;1;2;0;0
+28 Sep 2026;Gray Sample-0261;Corporate;1;0;0;0
+28/09/2026;Noor Sample-0267;Banking and finance;1;0;0;0
+28/09/2026;Umber Sample-0274;Corporate;1;2;0;0
+28/09/2026;Kit Sample-0302;Employment;2;1;0;0
+28/09/2026;Vale Sample-0304;Corporate;1;0;0;0
+28/09/2026;Perry Sample-0307;Private client;2;0;0;0
+29/09/2026;Gray Sample-0022;Tax;2;0;0;0
+29/09/2026;Perry Sample-0032;Corporate;1;1;0;0
+29/09/2026;Marlow Sample-0034;Tax;0;1;0;0
+29/09/2026;Umber Sample-0055;Banking and finance;1;1;0;0
+29 Sep 2026;jules sample-0057;Banking and finance;1;0;0;0
+29/09/2026;JULES SAMPLE-0058;Disputes;0;1;0;0
+29/09/2026;Tate Sample-0094;Private client;0;0;0;1
+29/09/2026;Vale Sample-0110;Regulatory;1;0;0;0
+29/09/2026;Alder Sample-0147;Disputes;1;0;1;0
+29/09/2026;Ellis Sample-0168;Banking and finance;2;1;0;1
+29/09/2026;Xan Sample-0180;Competition;1;0;0;0
+29/09/2026;Marlow Sample-0187;Disputes;2;0;1;0
+29/09/2026;Lane Sample-0210;Disputes;0;1;1;1
+29/09/2026;Quinn Sample-0226;Corporate;0;1;0;0
+29/09/2026;Lane Sample-0231;Tax;0;0;1;0
+29 Sep 2026;Wren Sample-0232;Disputes;0;1;0;0
+29/09/2026;jules sample-0235;Banking and finance;1;0;0;0
+29/09/2026;Ellis Sample-0246;Intellectual property;0;1;0;0
+29 Sep 2026;Tate Sample-0251;Intellectual property;0;1;0;0
+29/09/2026;Gray Sample-0261;Corporate;0;0;1;0
+29/09/2026;Noor Sample-0267;Banking and finance;0;0;1;0
+29/09/2026;Umber Sample-0274;Corporate;0;2;1;0
+29/09/2026;Kit Sample-0302;Employment;2;0;1;0
+29 Sep 2026;Vale Sample-0304;Corporate;0;0;1;1
+29/09/2026;Perry Sample-0307;Private client;0;1;0;0
+30/09/2026;Gray Sample-0022;Tax;0;0;0;1
+30/09/2026;Perry Sample-0032;Corporate;1;0;0;0
+30/09/2026;Ellis Sample-0053;Banking and finance;0;0;0;1
+30/09/2026;Jules Sample-0058;Disputes;2;1;0;0
+30/09/2026;Vale Sample-0110;Regulatory;1;0;0;0
+30/09/2026;Yael Sample-0127;Tax;1;0;0;0
+30/09/2026;Alder Sample-0147;Disputes;1;0;0;0
+31/02/2026;Umber Sample-0175;Regulatory;1;0;0;0
+30/09/2026;Ellis Sample-0168;Banking and finance;1;1;0;1
+30/09/2026;Xan Sample-0180;Competition;2;0;1;1
+30/09/2026;Marlow Sample-0187;Disputes;1;1;0;0
+30/09/2026;Wren Sample-0222;Corporate;1;0;0;1
+30/09/2026;Lane Sample-0231;Tax;0;1;0;0
+30/09/2026;Wren Sample-0232;Disputes;0;2;0;0
+30/09/2026;Ellis Sample-0246;Intellectual property;0;0;1;0
+30/09/2026;Tate Sample-0251;Intellectual property;1;2;0;0
+30/09/2026;Gray Sample-0261;Corporate;0;0;1;0
+30/09/2026;Noor Sample-0267;Banking and finance;0;1;0;0
+30/09/2026;Umber Sample-0274;Corporate;1;0;2;0
+30/09/2026;Vale Sample-0304;Corporate;1;0;0;0
+30/09/2026;Perry Sample-0307;Private client;2;0;1;0
+01/10/2026; Tate  Sample-0011 ;Disputes;1;0;0;0
+01/10/2026;Gray Sample-0022;Tax;1;0;0;1
+01/10/2026;Perry Sample-0032;Corporate;0;1;0;0
+01/10/2026;Marlow Sample-0034;Tax;0;2;0;0
+01/10/2026;Wren Sample-0050;Real estate;0;1;0;0
+01/10/2026;Ellis Sample-0053;Banking and finance;0;1;1;0
+01/10/2026;Jules Sample-0058;Disputes;0;0;0;1
+01 Oct 2026;TATE SAMPLE-0094;Private client;0;1;0;0
+01 Oct 2026;Yael Sample-0127;Tax;0;0;1;0
+01/10/2026;Alder Sample-0147;Disputes;1;0;1;0
+01/10/2026;Ellis Sample-0168;Banking and finance;2;0;0;0
+01/10/2026;Lane Sample-0210;Disputes;1;2;0;0
+01/10/2026;wren sample-0222;Corporate;0;0;1;0
+01/10/2026;Quinn Sample-0226;Corporate;1;1;0;0
+01/10/2026;Lane Sample-0231;Tax;2;0;0;0
+01/10/2026; Wren  Sample-0232 ;Disputes;0;1;0;0
+01 Oct 2026;Ellis Sample-0246;Intellectual property;0;1;1;0
+01/10/2026;Tate Sample-0251;Intellectual property;0;0;1;0
+01/10/2026;Noor Sample-0267;Banking and finance;1;0;0;0
+01/10/2026;Umber Sample-0274;Corporate;0;2;0;0
+01/10/2026; Bryn  Sample-0291 ;Disputes;0;1;0;1
+01/10/2026;Kit Sample-0302;Employment;1;0;0;0
+01/10/2026;VALE SAMPLE-0304;Corporate;0;0;3;1
+01/10/2026;Perry Sample-0307;Private client;2;1;0;0
+02/10/2026;Tate Sample-0011;Disputes;0;0;1;0
+02/10/2026;Gray Sample-0022;Tax;1;1;1;1
+02/10/2026;Perry Sample-0032;Corporate;0;1;0;0
+02/10/2026;Marlow Sample-0034;Tax;3;2;0;1
+02/10/2026;Ellis Sample-0053;Banking and finance;1;0;0;0
+02/10/2026;jules sample-0057;Banking and finance;1;0;0;0
+02/10/2026; Jules  Sample-0058 ;Disputes;1;0;0;0
+02/10/2026;Vale Sample-0110;Regulatory;0;1;0;0
+02/10/2026;Yael Sample-0127;Tax;0;0;0;1
+02/10/2026;Ellis Sample-0168;Banking and finance;0;1;1;0
+02 Oct 2026;Xan Sample-0180;Competition;0;1;0;0
+02/10/2026;Marlow Sample-0187;Disputes;0;1;0;2
+02/10/2026;Lane Sample-0210;Disputes;1;1;0;0
+02/10/2026;Quinn Sample-0226;Corporate;0;1;0;0
+02/10/2026;Lane Sample-0231;Tax;0;0;1;0
+02/10/2026;Wren Sample-0232;Disputes;0;0;0;1
+02/10/2026;Jules Sample-0235;Banking and finance;1;0;0;0
+02/10/2026;ellis sample-0246;Intellectual property;0;2;0;0
+02/10/2026;Tate Sample-0251;Intellectual property;0;1;0;1
+02/10/2026;Quinn Sample-0273;Disputes;1;2;2;1
+02/10/2026;Kit Sample-0302;Employment;1;0;0;0
+02/10/2026;Vale Sample-0304;Corporate;0;1;0;0
+02/10/2026;PERRY SAMPLE-0307;Private client;1;0;0;0
+05/10/2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+05/10/2026;Tate Sample-0011;Disputes;1;0;0;0
+05/10/2026;Gray Sample-0027;Banking and finance;1;0;1;0
+05/10/2026;Perry Sample-0032;Corporate;2;3;1;0
+05/10/2026;Yael Sample-0044;Employment;0;1;0;0
+05/10/2026;Alder Sample-0047;Banking and finance;1;0;0;0
+05/10/2026;Ellis Sample-0053;Banking and finance;3;0;0;0
+05/10/2026;Jules Sample-0058;Disputes;0;1;0;1
+05/10/2026; Reese  Sample-0062 ;Employment;0;0;0;1
+05/10/2026; Tate  Sample-0094 ;Private client;0;2;0;0
+05/10/2026; Yael  Sample-0127 ;Tax;2;1;0;0
+05/10/2026;Indigo Sample-0161;Banking and finance;2;1;0;0
+05/10/2026;Sage Sample-0163;Banking and finance;1;0;0;2
+05/10/2026;Bryn Sample-0164;Corporate;0;1;0;1
+05/10/2026;harper sample-0165;Intellectual property;0;0;1;1
+05/10/2026;ELLIS SAMPLE-0168;Banking and finance;1;0;0;0
+05/10/2026;Yael Sample-0207;Banking and finance;1;0;1;0
+05/10/2026;Wren Sample-0222;Corporate;2;0;0;0
+05 Oct 2026;Lane Sample-0231;Tax;0;1;1;1
+05/10/2026;Jules Sample-0235;Banking and finance;0;1;0;0
+07/10/2026;Tate Sample-0213;Corporate;0;0;;0
+05/10/2026;tate sample-0251;Intellectual property;1;0;0;0
+05/10/2026;GRAY SAMPLE-0261;Corporate;1;0;1;0
+05/10/2026;Tate Sample-0263;Disputes;0;2;0;0
+05/10/2026;Quinn Sample-0273;Disputes;1;2;2;0
+05 Oct 2026;Bryn Sample-0291;Disputes;1;0;0;0
+05/10/2026; Lane  Sample-0292 ;Employment;1;0;0;0
+05/10/2026;kit sample-0302;Employment;1;0;0;0
+05/10/2026;Perry Sample-0307;Private client;0;1;0;0
+06/10/2026; Perry  Sample-0032 ;Corporate;3;0;0;1
+06/10/2026;Yael Sample-0044;Employment;0;1;0;0
+06/10/2026;Alder Sample-0047;Banking and finance;1;0;0;0
+06/10/2026;Ellis Sample-0053;Banking and finance;0;2;2;0
+06/10/2026;Jules Sample-0057;Banking and finance;0;1;0;0
+06/10/2026;Jules Sample-0058;Disputes;2;0;0;1
+06/10/2026;Reese Sample-0062;Employment;0;0;1;0
+06/10/2026;Kit Sample-0154;Disputes;1;1;0;0
+06 Oct 2026;Bryn Sample-0164;Corporate;1;0;0;1
+06 Oct 2026;harper sample-0165;Intellectual property;1;0;0;0
+06/10/2026;Ellis Sample-0168;Banking and finance;0;3;0;1
+06/10/2026;Devon Sample-0176;Real estate;0;0;1;1
+06/10/2026;Lane Sample-0210;Disputes;0;1;0;0
+06/10/2026;Wren Sample-0222;Corporate;0;1;0;0
+06/10/2026;lane sample-0231;Tax;1;2;0;0
+06 Oct 2026;JULES SAMPLE-0235;Banking and finance;2;0;0;0
+06/10/2026;Tate Sample-0251;Intellectual property;0;2;0;0
+06/10/2026;Gray Sample-0261;Corporate;1;0;0;0
+06/10/2026; Tate  Sample-0263 ;Disputes;3;2;0;1
+06/10/2026;Noor Sample-0267;Banking and finance;0;1;0;0
+06/10/2026;Quinn Sample-0273;Disputes;1;0;1;1
+06/10/2026;Umber Sample-0274;Corporate;0;2;0;0
+06/10/2026;Bryn Sample-0291;Disputes;1;0;0;0
+06/10/2026;Kit Sample-0302;Employment;0;0;1;0
+06/10/2026;Vale Sample-0304;Corporate;1;0;0;0
+06/10/2026;Perry Sample-0307;Private client;0;1;0;0
+06/10/2026;Harper Sample-0318;Disputes;1;1;0;0
+07/10/2026;Quinn Sample-0010;Intellectual property;0;0;0;1
+07/10/2026;Gray Sample-0027;Banking and finance;0;0;1;0
+07/10/2026;Perry Sample-0032;Corporate;1;1;0;0
+07/10/2026;Yael Sample-0044;Employment;1;2;1;0
+07/10/2026;Alder Sample-0047;Banking and finance;0;0;1;0
+07/10/2026; Jules  Sample-0058 ;Disputes;1;2;0;0
+07/10/2026;Reese Sample-0062;Employment;1;1;0;0
+07/10/2026;Yael Sample-0127;Tax;1;1;0;0
+07/10/2026;Umber Sample-0129;Corporate;2;0;0;1
+07/10/2026;Alder Sample-0147;Disputes;0;1;0;0
+07/10/2026;Indigo Sample-0161;Banking and finance;0;0;1;0
+07/10/2026;Ellis Sample-0168;Banking and finance;0;1;0;0
+07/10/2026;Yael Sample-0207;Banking and finance;0;0;2;0
+07/10/2026;Wren Sample-0222;Corporate;0;0;1;0
+07/10/2026;Lane Sample-0231;Tax;2;0;2;1
+07/10/2026;Jules Sample-0235;Banking and finance;1;0;0;0
+07/10/2026;Ellis Sample-0246;Intellectual property;1;2;0;0
+07/10/2026;Gray Sample-0261;Corporate;1;0;0;0
+07/10/2026;Quinn Sample-0273;Disputes;0;0;1;0
+07/10/2026;Umber Sample-0274;Corporate;2;1;0;0
+07/10/2026;LANE SAMPLE-0292;Employment;0;1;0;0
+07/10/2026;perry sample-0307;Private client;0;1;0;0
+07/09/2026;Cass Sample-0133;Tax;0;0;;0
+07/10/2026;Harper Sample-0318;Disputes;0;0;1;0
+08/10/2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+08/10/2026;Tate Sample-0011;Disputes;0;1;0;0
+08/10/2026;Perry Sample-0032;Corporate;0;0;0;1
+08/10/2026; Yael  Sample-0044 ;Employment;0;0;1;0
+08 Oct 2026;Alder Sample-0047;Banking and finance;1;0;0;0
+08 Oct 2026; Ellis  Sample-0053 ;Banking and finance;2;1;0;0
+08/10/2026;Jules Sample-0058;Disputes;2;2;0;0
+08/10/2026;Reese Sample-0062;Employment;0;1;0;0
+08 Oct 2026;Tate Sample-0094;Private client;1;0;0;0
+08 Oct 2026;Alder Sample-0147;Disputes;0;1;0;0
+08/10/2026;Kit Sample-0154;Disputes;0;0;1;0
+08/10/2026;Harper Sample-0165;Intellectual property;1;0;0;0
+08 Oct 2026;Ellis Sample-0168;Banking and finance;1;1;0;0
+08/10/2026;Devon Sample-0176;Real estate;0;0;1;0
+08/10/2026;Marlow Sample-0185;Employment;1;0;1;0
+08 Oct 2026;Yael Sample-0207;Banking and finance;0;1;0;0
+08/10/2026;Lane Sample-0210;Disputes;1;0;1;0
+08/10/2026;LANE SAMPLE-0231;Tax;2;1;0;0
+08 Oct 2026;Ellis Sample-0246;Intellectual property;0;1;0;0
+08/10/2026;Tate Sample-0251;Intellectual property;1;0;0;0
+08/10/2026;Gray Sample-0261;Corporate;1;0;0;0
+08/10/2026;NOOR SAMPLE-0267;Banking and finance;2;0;1;0
+08/10/2026;QUINN SAMPLE-0273;Disputes;0;2;0;0
+08/10/2026;Umber Sample-0274;Corporate;1;0;1;1
+08/10/2026; Bryn  Sample-0291 ;Disputes;0;0;1;0
+08/10/2026;Lane Sample-0292;Employment;2;0;1;0
+08/10/2026;Kit Sample-0302;Employment;1;1;0;0
+08/10/2026;Vale Sample-0304;Corporate;0;1;0;0
+01/10/2026;Ellis Sample-0209;Real estate;0;0;;0
+09/10/2026;Quinn Sample-0010;Intellectual property;1;1;0;0
+09/10/2026;Tate Sample-0011;Disputes;0;0;0;1
+09/10/2026;perry sample-0032;Corporate;1;0;0;0
+09 Oct 2026;Yael Sample-0044;Employment;1;0;0;0
+09/10/2026;Ellis Sample-0053;Banking and finance;0;1;0;0
+09 Oct 2026;Umber Sample-0129;Corporate;2;0;0;1
+09/10/2026;ALDER SAMPLE-0147;Disputes;1;0;1;0
+09/10/2026;Kit Sample-0154;Disputes;3;0;0;0
+09/10/2026;Sage Sample-0163;Banking and finance;1;0;0;0
+09/10/2026;Bryn Sample-0164;Corporate;1;0;0;0
+09/10/2026;Harper Sample-0165;Intellectual property;1;0;0;1
+29/09/2026;Ellis Sample-0311;Corporate;0;0;;0
+09/10/2026;Devon Sample-0176;Real estate;0;1;0;0
+09/10/2026;Marlow Sample-0185;Employment;1;0;0;0
+09/10/2026;Yael Sample-0207;Banking and finance;1;0;1;0
+09/10/2026;Lane Sample-0210;Disputes;0;1;0;0
+09 Oct 2026;Wren Sample-0222;Corporate;0;1;0;0
+09/10/2026;Lane Sample-0231;Tax;1;0;2;0
+09/10/2026;Ellis Sample-0246;Intellectual property;0;1;0;0
+09/10/2026;Tate Sample-0251;Intellectual property;0;0;1;0
+09/10/2026;Gray Sample-0261;Corporate;2;0;0;0
+09 Oct 2026;Noor Sample-0267;Banking and finance;1;1;0;0
+09/10/2026;Quinn Sample-0273;Disputes;1;0;0;0
+09/10/2026;Umber Sample-0274;Corporate;1;1;0;1
+09/10/2026;LANE SAMPLE-0292;Employment;0;0;0;1
+09 Oct 2026;kit sample-0302;Employment;0;1;0;0
+09/10/2026;VALE SAMPLE-0304;Corporate;0;0;1;0
+09/10/2026;harper sample-0318;Disputes;1;0;0;0
+12 Oct 2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+12/10/2026;Tate Sample-0011;Disputes;0;0;0;1
+25/11/2026;Xan Sample-0157;Real estate;0;0;;0
+12/10/2026;Indigo Sample-0016;Corporate;0;0;1;0
+12 Oct 2026;Perry Sample-0032;Corporate;1;0;0;0
+12/10/2026;Jules Sample-0058;Disputes;2;0;0;1
+12/10/2026;Reese Sample-0065;Employment;1;1;1;0
+12/10/2026;Tate Sample-0094;Private client;2;0;0;0
+12/10/2026;Quinn Sample-0096;Employment;0;1;0;1
+12/10/2026;Yael Sample-0127;Tax;0;0;1;0
+12/10/2026;Kit Sample-0154;Disputes;0;1;0;0
+12/10/2026;Perry Sample-0174;Real estate;0;0;1;0
+12/10/2026;Devon Sample-0176;Real estate;0;1;0;0
+12/10/2026;Marlow Sample-0185;Employment;0;0;1;0
+12/10/2026;LANE SAMPLE-0231;Tax;1;0;1;0
+12/10/2026;Wren Sample-0232;Disputes;0;0;1;1
+12/10/2026;Jules Sample-0235;Banking and finance;2;0;0;0
+12/10/2026;Ellis Sample-0246;Intellectual property;1;0;0;2
+12/10/2026;Tate Sample-0251;Intellectual property;2;0;2;0
+12/10/2026; Gray  Sample-0261 ;Corporate;1;1;0;0
+12/10/2026;Quinn Sample-0273;Disputes;0;1;0;0
+12/10/2026;umber sample-0274;Corporate;1;2;0;0
+12 Oct 2026;Bryn Sample-0291;Disputes;1;1;0;0
+12/10/2026; Vale  Sample-0304 ;Corporate;2;0;0;0
+12/10/2026;Vale Sample-0313;Corporate;0;1;0;0
+13/10/2026;Quinn Sample-0010;Intellectual property;0;1;0;0
+13/10/2026; Tate  Sample-0011 ;Disputes;1;1;0;0
+13/10/2026;Indigo Sample-0016;Corporate;0;2;1;0
+13/10/2026;Gray Sample-0022;Tax;0;1;1;1
+13/10/2026;Ellis Sample-0053;Banking and finance;0;0;0;1
+13/10/2026;Jules Sample-0057;Banking and finance;0;0;1;0
+13/10/2026;Jules Sample-0058;Disputes;1;0;0;1
+13/10/2026;Reese Sample-0065;Employment;0;1;0;0
+13/10/2026;Quinn Sample-0096;Employment;1;0;1;0
+13/10/2026;Yael Sample-0127;Tax;0;2;0;0
+13/10/2026;Alder Sample-0147;Disputes;1;0;0;0
+13/10/2026;Kit Sample-0154;Disputes;3;0;0;0
+13/10/2026;Indigo Sample-0161;Banking and finance;0;1;0;1
+13/10/2026;Ellis Sample-0168;Banking and finance;2;1;0;0
+13/10/2026;Perry Sample-0174;Real estate;1;0;0;0
+13/10/2026;Devon Sample-0176;Real estate;1;0;0;0
+13/10/2026;Marlow Sample-0185;Employment;1;0;0;0
+22/10/2026;Jules Sample-0014;Corporate;0;0;;0
+13/10/2026;lane sample-0210;Disputes;2;1;0;0
+13 Oct 2026;Wren Sample-0222;Corporate;0;1;0;0
+13 Oct 2026;Quinn Sample-0226;Corporate;1;0;0;0
+13/10/2026;Lane Sample-0231;Tax;0;0;1;0
+13/10/2026;wren sample-0232;Disputes;0;1;1;0
+13/10/2026;Ellis Sample-0246;Intellectual property;4;1;1;0
+13/10/2026;TATE SAMPLE-0263;Disputes;0;1;0;1
+13/10/2026;Quinn Sample-0273;Disputes;1;1;0;0
+13/10/2026;Umber Sample-0274;Corporate;1;1;0;0
+14 Oct 2026;Indigo Sample-0016;Corporate;1;1;0;0
+14/10/2026;Perry Sample-0032;Corporate;0;0;1;0
+14/10/2026;Wren Sample-0050;Real estate;1;0;0;0
+14/10/2026;Ellis Sample-0053;Banking and finance;0;0;1;0
+14 Oct 2026;Tate Sample-0094;Private client;0;1;0;0
+14 Oct 2026;Quinn Sample-0096;Employment;1;0;0;0
+14/10/2026;Finley Sample-0108;Tax;1;0;0;0
+14/10/2026;Kit Sample-0154;Disputes;0;1;0;1
+14/10/2026;Devon Sample-0176;Real estate;2;0;0;1
+14/10/2026;Xan Sample-0180;Competition;1;0;0;0
+14/10/2026;Marlow Sample-0185;Employment;1;0;0;0
+14/10/2026;Yael Sample-0207;Banking and finance;0;0;1;1
+14/10/2026;Umber Sample-0208;Disputes;0;1;0;0
+14/10/2026;Lane Sample-0210;Disputes;2;0;0;0
+14/10/2026;Wren Sample-0222;Corporate;0;0;1;0
+14/10/2026;Ellis Sample-0246;Intellectual property;1;1;2;0
+14/10/2026;Tate Sample-0251;Intellectual property;2;0;1;0
+14/10/2026;gray sample-0261;Corporate;2;2;0;0
+14/10/2026;Tate Sample-0263;Disputes;0;1;0;0
+14/10/2026; Quinn  Sample-0273 ;Disputes;2;1;1;0
+14/10/2026;Umber Sample-0274;Corporate;1;0;0;0
+14 Oct 2026;Vale Sample-0304;Corporate;1;1;0;0
+14/10/2026;Perry Sample-0307;Private client;1;0;0;0
+15/10/2026;Perry Sample-0032;Corporate;0;1;0;0
+15/10/2026;ELLIS SAMPLE-0053;Banking and finance;0;2;0;0
+15/10/2026;Jules Sample-0057;Banking and finance;0;0;2;0
+15/10/2026;finley sample-0108;Tax;2;1;0;0
+15/10/2026;Alder Sample-0147;Disputes;1;0;1;0
+15/10/2026;Kit Sample-0154;Disputes;1;0;0;0
+15/10/2026;Ellis Sample-0168;Banking and finance;1;0;0;0
+15 Oct 2026;Devon Sample-0176;Real estate;1;2;0;2
+15/10/2026;Marlow Sample-0185;Employment;0;1;0;0
+15 Oct 2026;Yael Sample-0207;Banking and finance;0;1;0;0
+15/10/2026;Umber Sample-0208;Disputes;0;1;0;0
+11/09/2026;Cass Sample-0140;Regulatory;0;0;;0
+15/10/2026;Lane Sample-0210;Disputes;0;1;0;0
+10/09/2026;Visiting Sample-9002;External;2;0;0;0
+15/10/2026;Lane Sample-0231;Tax;0;0;1;0
+15/10/2026; Wren  Sample-0232 ;Disputes;0;1;1;0
+15/10/2026;Ellis Sample-0246;Intellectual property;2;1;0;0
+15/10/2026;TATE SAMPLE-0251;Intellectual property;1;0;0;0
+15/10/2026;Gray Sample-0261;Corporate;0;0;1;0
+15/10/2026;Tate Sample-0263;Disputes;0;1;0;1
+15/09/2026;Contractor Sample-9001;External;2;0;0;0
+15/10/2026;Quinn Sample-0273;Disputes;0;0;1;0
+15 Oct 2026;umber sample-0274;Corporate;1;0;0;0
+15 Oct 2026;Bryn Sample-0291;Disputes;0;0;1;0
+15/10/2026;Perry Sample-0307;Private client;1;1;0;0
+15/10/2026;Harper Sample-0318;Disputes;1;0;0;0
+16/10/2026;quinn sample-0010;Intellectual property;1;0;0;0
+16/10/2026;Tate Sample-0011;Disputes;2;0;0;0
+16/10/2026; Indigo  Sample-0016 ;Corporate;0;1;0;0
+16/10/2026;Gray Sample-0022;Tax;0;1;0;0
+16/10/2026;Wren Sample-0050;Real estate;1;0;0;0
+16 Oct 2026;Ellis Sample-0053;Banking and finance;1;1;0;0
+16/10/2026;Jules Sample-0057;Banking and finance;0;0;1;0
+16/10/2026;Reese Sample-0065;Employment;1;1;0;0
+16/10/2026;Quinn Sample-0096;Employment;1;1;0;0
+16/10/2026; Finley  Sample-0108 ;Tax;0;0;1;0
+16/10/2026;Yael Sample-0127;Tax;0;2;0;1
+16/10/2026;Kit Sample-0154;Disputes;0;0;1;0
+16/10/2026;Indigo Sample-0161;Banking and finance;0;0;1;0
+16/10/2026;devon sample-0176;Real estate;2;1;0;0
+16/10/2026;Xan Sample-0180;Competition;0;2;0;0
+16 Oct 2026;Marlow Sample-0185;Employment;0;0;0;1
+16/10/2026;Umber Sample-0208;Disputes;0;1;0;0
+16/10/2026;Lane Sample-0210;Disputes;2;0;0;0
+16/10/2026;WREN SAMPLE-0222;Corporate;0;0;2;0
+16/10/2026;Quinn Sample-0226;Corporate;0;2;1;0
+16/10/2026;Wren Sample-0232;Disputes;0;1;0;0
+16/10/2026;Ellis Sample-0246;Intellectual property;1;1;0;0
+13/09/2026;Xan Sample-0236;Banking and finance;0;0;;0
+30/09/2026;Visiting Sample-9002;External;2;0;0;0
+16/10/2026;Ellis Sample-0246;Intellectual property;1;1;0;0
+16/10/2026;TATE SAMPLE-0251;Intellectual property;0;1;0;0
+16/10/2026;Gray Sample-0261;Corporate;1;0;1;0
+16/10/2026;Tate Sample-0263;Disputes;1;0;1;0
+16/10/2026;Quinn Sample-0273;Disputes;1;0;0;0
+16/10/2026;Vale Sample-0304;Corporate;2;1;0;0
+16/10/2026;Perry Sample-0307;Private client;1;1;0;0
+16/10/2026;Vale Sample-0313;Corporate;0;1;0;0
+16/10/2026;Harper Sample-0318;Disputes;2;0;0;0
+19/10/2026;Xan Sample-0001;Regulatory;1;1;0;1
+19/10/2026;Tate Sample-0011;Disputes;1;0;0;0
+19/10/2026; Indigo  Sample-0016 ;Corporate;1;0;0;0
+19/10/2026;Gray Sample-0022;Tax;0;1;0;0
+19/10/2026;Gray Sample-0027;Banking and finance;0;1;0;0
+19 Oct 2026; Perry  Sample-0032 ;Corporate;2;0;0;0
+19/10/2026;Marlow Sample-0034;Tax;1;0;1;1
+19/10/2026;Yael Sample-0127;Tax;1;2;1;0
+19/10/2026;Bryn Sample-0164;Corporate;1;0;1;0
+18/11/2026;Vale Sample-0019;Private client;0;0;;0
+19/10/2026;Bryn Sample-0164;Corporate;1;0;1;0
+19/10/2026;Harper Sample-0165;Intellectual property;2;0;2;0
+19/10/2026;Perry Sample-0174;Real estate;0;1;0;0
+19/10/2026;Devon Sample-0176;Real estate;1;0;1;0
+19/10/2026;Marlow Sample-0185;Employment;0;1;0;0
+19/10/2026;Marlow Sample-0187;Disputes;0;1;0;0
+19/10/2026;umber sample-0208;Disputes;0;0;0;1
+19/10/2026;Lane Sample-0210;Disputes;2;2;0;1
+19/10/2026;Wren Sample-0222;Corporate;0;1;0;0
+19/10/2026;Quinn Sample-0226;Corporate;1;0;0;1
+19/10/2026;Lane Sample-0231;Tax;2;0;0;0
+19/10/2026;Wren Sample-0232;Disputes;0;1;0;0
+19/10/2026;Ellis Sample-0246;Intellectual property;1;0;1;1
+19/10/2026;Tate Sample-0251;Intellectual property;2;0;0;0
+20/09/2026;Harper Sample-0086;Corporate;0;0;;0
+19/10/2026; Umber  Sample-0269 ;Disputes;3;3;0;0
+19/10/2026;Kit Sample-0302;Employment;1;0;0;0
+19/10/2026;vale sample-0304;Corporate;1;0;0;0
+19/10/2026;Vale Sample-0313;Corporate;0;0;1;0
+20 Oct 2026;XAN SAMPLE-0001;Regulatory;3;1;1;0
+20/10/2026;Quinn Sample-0010;Intellectual property;1;0;0;1
+20/10/2026;Tate Sample-0011;Disputes;1;0;0;0
+20 Oct 2026;Gray Sample-0022;Tax;1;0;0;0
+20/10/2026;Gray Sample-0027;Banking and finance;0;1;0;0
+20/10/2026;Gray Sample-0027;Banking and finance;0;1;0;0
+20/10/2026;Marlow Sample-0034;Tax;1;1;0;0
+20 Oct 2026;yael sample-0044;Employment;1;0;0;0
+20/10/2026;Ellis Sample-0053;Banking and finance;1;0;0;0
+20/10/2026;Reese Sample-0062;Employment;2;1;1;1
+20 Oct 2026;Quinn Sample-0096;Employment;1;0;0;0
+20/10/2026; Yael  Sample-0127 ;Tax;1;2;0;0
+20/10/2026;Alder Sample-0147;Disputes;1;0;0;0
+20/10/2026;Kit Sample-0154;Disputes;1;0;0;0
+20 Oct 2026;Bryn Sample-0164;Corporate;1;0;0;0
+20/10/2026;HARPER SAMPLE-0165;Intellectual property;2;3;1;1
+20/10/2026;Ellis Sample-0168;Banking and finance;0;0;0;2
+20/10/2026;Ellis Sample-0168;Banking and finance;0;0;0;2
+20/10/2026;Perry Sample-0174;Real estate;0;1;0;0
+20/10/2026;Devon Sample-0176;Real estate;1;0;0;1
+20/10/2026;Xan Sample-0180;Competition;1;0;1;0
+20/10/2026;Marlow Sample-0187;Disputes;1;0;0;0
+20/10/2026;Marlow Sample-0187;Disputes;1;0;0;0
+20/10/2026;Yael Sample-0207;Banking and finance;2;0;0;0
+20/10/2026;Wren Sample-0222;Corporate;1;0;0;0
+20/10/2026;Quinn Sample-0226;Corporate;0;2;0;0
+20/10/2026;Lane Sample-0231;Tax;1;0;0;0
+20/10/2026;Wren Sample-0232;Disputes;1;0;0;0
+20/10/2026;Ellis Sample-0246;Intellectual property;1;0;0;1
+20/10/2026;Tate Sample-0251;Intellectual property;1;1;0;1
+20/10/2026;Tate Sample-0263;Disputes;0;0;0;1
+20/10/2026;Umber Sample-0269;Disputes;2;0;1;1
+20/10/2026;Kit Sample-0302;Employment;1;0;0;0
+20/10/2026;Vale Sample-0304;Corporate;0;0;0;1
+20/10/2026;Perry Sample-0307;Private client;1;0;0;0
+20/10/2026; Harper  Sample-0318 ;Disputes;1;0;0;0
+21/10/2026; Xan  Sample-0001 ;Regulatory;4;0;0;0
+21/10/2026;Quinn Sample-0010;Intellectual property;1;0;1;0
+21/10/2026;Tate Sample-0011;Disputes;0;1;0;0
+21/10/2026; Indigo  Sample-0016 ;Corporate;0;1;1;1
+21/10/2026;Gray Sample-0022;Tax;1;0;0;0
+21 Oct 2026;Gray Sample-0027;Banking and finance;0;1;0;0
+21/10/2026;Yael Sample-0044;Employment;0;1;0;0
+21/10/2026;Wren Sample-0050;Real estate;0;0;1;0
+21/10/2026;Umber Sample-0055;Banking and finance;1;0;0;0
+21/10/2026;Reese Sample-0062;Employment;1;1;0;0
+21/10/2026;Quinn Sample-0096;Employment;1;0;0;0
+21/10/2026;Yael Sample-0127;Tax;1;0;0;0
+21/10/2026;Alder Sample-0147;Disputes;0;0;1;0
+21/10/2026;Kit Sample-0154;Disputes;1;0;0;0
+21/10/2026;Bryn Sample-0164;Corporate;2;0;1;0
+21 Oct 2026;Harper Sample-0165;Intellectual property;4;0;1;1
+21 Oct 2026;Ellis Sample-0168;Banking and finance;0;1;0;0
+21 Oct 2026;Perry Sample-0174;Real estate;1;0;0;0
+21/10/2026;Devon Sample-0176;Real estate;0;0;0;1
+21/10/2026;Yael Sample-0207;Banking and finance;2;0;1;1
+21/10/2026;Umber Sample-0208;Disputes;0;1;0;0
+21/10/2026;Lane Sample-0210;Disputes;1;2;1;0
+21/10/2026;Wren Sample-0222;Corporate;1;0;0;0
+21/10/2026;Quinn Sample-0226;Corporate;1;0;0;0
+21/10/2026;Lane Sample-0231;Tax;2;0;0;0
+21/10/2026;Wren Sample-0232;Disputes;1;1;1;0
+21/10/2026;Ellis Sample-0246;Intellectual property;0;1;0;0
+21/10/2026;Tate Sample-0251;Intellectual property;2;0;2;1
+21/10/2026; Gray  Sample-0261 ;Corporate;1;0;0;1
+21/10/2026;tate sample-0263;Disputes;0;0;0;1
+21/10/2026;Vale Sample-0304;Corporate;2;1;0;0
+21/10/2026;Perry Sample-0307;Private client;1;0;0;0
+22/10/2026;Xan Sample-0001;Regulatory;2;0;0;0
+22/10/2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+22/10/2026;Tate Sample-0011;Disputes;1;0;1;0
+22/10/2026;indigo sample-0016;Corporate;0;2;0;0
+22/10/2026;Gray Sample-0027;Banking and finance;0;1;0;1
+22/10/2026;Perry Sample-0032;Corporate;1;0;0;0
+22/10/2026;Wren Sample-0050;Real estate;1;0;1;0
+22/10/2026;ellis sample-0053;Banking and finance;0;0;2;0
+22/10/2026;Umber Sample-0055;Banking and finance;0;0;0;1
+22/10/2026;Reese Sample-0062;Employment;1;1;0;0
+22 Oct 2026;Quinn Sample-0096;Employment;0;1;0;0
+22/10/2026;Yael Sample-0127;Tax;1;1;0;0
+22/10/2026;Alder Sample-0147;Disputes;1;0;0;0
+22/10/2026;Kit Sample-0154;Disputes;0;1;0;0
+22/10/2026;Bryn Sample-0164;Corporate;2;0;3;0
+22/10/2026;Harper Sample-0165;Intellectual property;2;0;0;1
+22/10/2026;Ellis Sample-0168;Banking and finance;2;1;1;0
+22/10/2026;Marlow Sample-0185;Employment;1;0;1;0
+22/10/2026;marlow sample-0187;Disputes;0;0;1;0
+22/10/2026;Yael Sample-0207;Banking and finance;1;0;0;0
+22/10/2026;Lane Sample-0210;Disputes;1;0;1;1
+22/10/2026;Wren Sample-0222;Corporate;0;1;0;0
+22/10/2026;WREN SAMPLE-0232;Disputes;0;0;1;0
+22/10/2026;Ellis Sample-0246;Intellectual property;3;1;0;0
+22/10/2026;Tate Sample-0251;Intellectual property;1;1;1;0
+22/10/2026; Gray  Sample-0261 ;Corporate;1;0;0;0
+22/10/2026;Tate Sample-0263;Disputes;0;0;1;0
+22/10/2026;Umber Sample-0269;Disputes;1;2;1;0
+22/10/2026;Quinn Sample-0273;Disputes;0;0;4;0
+22/10/2026;Bryn Sample-0291;Disputes;1;0;0;0
+22/10/2026;Kit Sample-0302;Employment;1;0;0;0
+22/10/2026;Vale Sample-0304;Corporate;1;2;0;0
+22/10/2026;PERRY SAMPLE-0307;Private client;2;3;0;0
+22/10/2026;Vale Sample-0313;Corporate;1;1;0;0
+23/10/2026;Xan Sample-0001;Regulatory;1;0;0;0
+23 Oct 2026;QUINN SAMPLE-0010;Intellectual property;0;1;0;0
+23/10/2026;Tate Sample-0011;Disputes;1;0;0;0
+23/10/2026;Indigo Sample-0016;Corporate;0;0;0;1
+23/10/2026;GRAY SAMPLE-0022;Tax;0;1;0;0
+23/10/2026;Gray Sample-0027;Banking and finance;0;0;1;0
+23/10/2026;Yael Sample-0044;Employment;0;0;0;1
+23/10/2026;Wren Sample-0050;Real estate;1;0;1;0
+23/10/2026;Ellis Sample-0053;Banking and finance;0;0;1;1
+23/10/2026; Umber  Sample-0055 ;Banking and finance;1;0;0;0
+23/10/2026;Reese Sample-0062;Employment;0;0;1;1
+23/10/2026;Yael Sample-0127;Tax;0;2;0;0
+23/10/2026;Alder Sample-0147;Disputes;1;0;0;0
+23/10/2026;BRYN SAMPLE-0164;Corporate;0;1;1;0
+23/10/2026;Harper Sample-0165;Intellectual property;3;0;2;2
+23/10/2026; Ellis  Sample-0168 ;Banking and finance;2;0;0;0
+23/10/2026;PERRY SAMPLE-0174;Real estate;1;0;0;0
+23/10/2026;Devon Sample-0176;Real estate;0;1;0;0
+23/10/2026;Yael Sample-0207;Banking and finance;1;1;0;0
+23/10/2026;Umber Sample-0208;Disputes;0;1;0;0
+23 Oct 2026;Lane Sample-0210;Disputes;1;0;2;0
+23/10/2026;Wren Sample-0222;Corporate;0;0;0;1
+23/10/2026;Lane Sample-0231;Tax;1;0;0;0
+23/10/2026;WREN SAMPLE-0232;Disputes;1;1;0;0
+23/10/2026;Tate Sample-0251;Intellectual property;1;0;0;0
+23/10/2026;Gray Sample-0261;Corporate;2;1;0;0
+23/10/2026;Umber Sample-0269;Disputes;0;1;0;0
+23/10/2026;Quinn Sample-0273;Disputes;1;2;1;1
+00/10/2026;Finley Sample-0295;Intellectual property;1;0;0;0
+23/10/2026;Kit Sample-0302;Employment;0;0;2;0
+23/10/2026;Vale Sample-0304;Corporate;0;1;1;0
+23/10/2026;Perry Sample-0307;Private client;1;0;1;0
+23/10/2026;Vale Sample-0313;Corporate;0;0;1;0
+23/10/2026;Harper Sample-0318;Disputes;0;0;1;0
+26/10/2026;Xan Sample-0001;Regulatory;1;1;1;0
+26/10/2026; Gray  Sample-0027 ;Banking and finance;0;1;0;0
+26/10/2026;Marlow Sample-0034;Tax;2;0;1;1
+26/10/2026;devon sample-0176;Real estate;0;3;0;0
+14/09/2026;Wren Sample-0214;Banking and finance;0;0;;0
+26/10/2026;Xan Sample-0180;Competition;1;0;0;0
+26/10/2026;marlow sample-0185;Employment;0;1;1;0
+26/10/2026;Tate Sample-0251;Intellectual property;0;0;0;1
+26 Oct 2026;Umber Sample-0269;Disputes;1;0;0;0
+26/10/2026;Kit Sample-0302;Employment;0;0;1;0
+26/10/2026; Perry  Sample-0307 ;Private client;2;1;0;0
+27/10/2026;Xan Sample-0001;Regulatory;1;1;0;0
+27/10/2026;marlow sample-0034;Tax;3;2;0;1
+03/10/2026;Visiting Sample-9002;External;2;0;0;0
+27 Oct 2026;Umber Sample-0129;Corporate;1;1;0;0
+27/10/2026;Xan Sample-0180;Competition;0;0;1;0
+27/10/2026;Marlow Sample-0185;Employment;1;0;0;0
+27/10/2026;Wren Sample-0232;Disputes;1;1;0;0
+27/10/2026;Tate Sample-0263;Disputes;0;0;0;1
+27/10/2026;Umber Sample-0269;Disputes;1;0;0;0
+27/10/2026;BRYN SAMPLE-0291;Disputes;0;1;0;0
+28 Oct 2026;Gray Sample-0027;Banking and finance;1;0;0;0
+28/10/2026;Marlow Sample-0034;Tax;1;0;0;0
+28/10/2026;yael sample-0044;Employment;1;0;1;0
+28 Oct 2026;Umber Sample-0129;Corporate;1;0;0;0
+28 Oct 2026;Xan Sample-0180;Competition;1;0;0;0
+28/10/2026;Wren Sample-0232;Disputes;1;0;1;0
+28 Oct 2026;Tate Sample-0251;Intellectual property;0;0;1;0
+28/10/2026;Tate Sample-0263;Disputes;1;0;0;0
+28/10/2026;Umber Sample-0269;Disputes;0;0;0;1
+28/10/2026;Bryn Sample-0291;Disputes;1;0;0;0
+28/10/2026;Kit Sample-0302;Employment;1;0;0;0
+29/10/2026;Xan Sample-0001;Regulatory;1;1;0;0
+29/10/2026;Gray Sample-0027;Banking and finance;0;0;1;0
+29/10/2026;Marlow Sample-0034;Tax;2;1;2;0
+29/10/2026;Yael Sample-0044;Employment;1;0;0;0
+29/10/2026;Wren Sample-0050;Real estate;1;0;0;0
+29/10/2026; Devon  Sample-0176 ;Real estate;0;0;0;1
+29/10/2026;MARLOW SAMPLE-0185;Employment;0;1;0;0
+29/10/2026;Umber Sample-0269;Disputes;1;0;0;0
+30/10/2026;xan sample-0001;Regulatory;1;1;1;0
+30/10/2026;Gray Sample-0027;Banking and finance;0;1;0;0
+30/10/2026;Marlow Sample-0034;Tax;0;2;1;0
+30 Oct 2026;yael sample-0044;Employment;2;1;0;1
+30 Oct 2026;Wren Sample-0050;Real estate;1;0;0;0
+30/10/2026;Umber Sample-0129;Corporate;1;0;0;0
+30/10/2026;Tate Sample-0251;Intellectual property;0;0;1;0
+30 Oct 2026;TATE SAMPLE-0263;Disputes;0;1;0;0
+02 Nov 2026; Quinn  Sample-0010 ;Intellectual property;0;0;0;1
+02/11/2026;Marlow Sample-0034;Tax;0;1;0;0
+02/11/2026;Yael Sample-0044;Employment;0;1;0;0
+12/10/2026;Harper Sample-0097;Corporate;0;0;;0
+02/11/2026;Alder Sample-0047;Banking and finance;1;0;0;0
+02/11/2026;Yael Sample-0061;Real estate;1;0;0;0
+02/11/2026;Jules Sample-0075;Employment;0;0;0;1
+02/11/2026;JULES SAMPLE-0077;Corporate;0;1;0;0
+02/11/2026;Quinn Sample-0096;Employment;2;0;0;0
+02/11/2026;Perry Sample-0099;Real estate;1;0;0;0
+02/11/2026;Perry Sample-0174;Real estate;1;2;0;0
+02/11/2026;Devon Sample-0176;Real estate;0;0;0;1
+02/11/2026;Xan Sample-0180;Competition;0;0;0;1
+02/11/2026;Marlow Sample-0187;Disputes;3;0;0;0
+02/11/2026;Sage Sample-0201;Employment;1;0;1;0
+02/11/2026;Yael Sample-0207;Banking and finance;1;0;0;1
+02/11/2026;Lane Sample-0210;Disputes;1;1;0;0
+02/11/2026;Noor Sample-0216;Disputes;0;0;1;0
+02/11/2026;quinn sample-0226;Corporate;0;0;1;0
+02/11/2026;Lane Sample-0231;Tax;2;1;1;0
+02/11/2026;Wren Sample-0232;Disputes;1;0;0;0
+02 Nov 2026;Jules Sample-0235;Banking and finance;0;0;0;1
+02/11/2026;Tate Sample-0263;Disputes;0;0;0;1
+02 Nov 2026;Noor Sample-0267;Banking and finance;1;0;1;0
+02/11/2026;Umber Sample-0269;Disputes;1;0;0;0
+02/11/2026;Quinn Sample-0273;Disputes;0;0;1;0
+02/11/2026;Umber Sample-0274;Corporate;1;1;0;0
+02/11/2026;Kit Sample-0302;Employment;0;1;0;0
+02 Nov 2026; Perry  Sample-0307 ;Private client;2;1;0;0
+02/11/2026;Harper Sample-0318;Disputes;0;0;0;1
+03/11/2026; Gray  Sample-0022 ;Tax;1;0;1;0
+03 Nov 2026;Marlow Sample-0034;Tax;0;1;0;1
+03/11/2026; Alder  Sample-0047 ;Banking and finance;0;0;1;0
+03/11/2026;Yael Sample-0061;Real estate;0;1;0;0
+03/11/2026;REESE SAMPLE-0062;Employment;0;0;1;0
+03/11/2026;Jules Sample-0077;Corporate;1;0;0;1
+03/11/2026; Perry  Sample-0099 ;Real estate;1;0;0;0
+03/11/2026;Harper Sample-0165;Intellectual property;0;2;0;0
+03/11/2026;Ellis Sample-0168;Banking and finance;2;0;1;0
+03/11/2026;Xan Sample-0180;Competition;1;0;0;0
+03/11/2026;Marlow Sample-0185;Employment;1;0;0;0
+03/11/2026;Marlow Sample-0187;Disputes;0;2;0;0
+03/11/2026;Sage Sample-0201;Employment;1;1;0;0
+03/11/2026;Lane Sample-0210;Disputes;1;0;0;0
+03/11/2026;Noor Sample-0216;Disputes;2;2;0;2
+03/11/2026;Wren Sample-0222;Corporate;1;1;0;0
+03/11/2026;Quinn Sample-0226;Corporate;1;2;0;0
+03/11/2026;Lane Sample-0231;Tax;0;3;0;0
+03/11/2026;Wren Sample-0232;Disputes;0;1;0;0
+03/11/2026;Jules Sample-0235;Banking and finance;0;1;2;0
+03/11/2026;TATE SAMPLE-0263;Disputes;0;0;1;1
+03 Nov 2026;Noor Sample-0267;Banking and finance;1;0;1;0
+03 Nov 2026;Umber Sample-0269;Disputes;1;0;0;0
+03/11/2026;Quinn Sample-0273;Disputes;1;0;1;0
+03/11/2026;Umber Sample-0274;Corporate;0;1;0;1
+03/11/2026;Kit Sample-0302;Employment;2;1;1;0
+03/11/2026;Perry Sample-0307;Private client;0;2;0;0
+03/11/2026;Harper Sample-0318;Disputes;1;1;0;0
+22/11/2026;Xan Sample-0239;Regulatory;0;0;;0
+04/11/2026;GRAY SAMPLE-0022;Tax;1;0;0;0
+04/11/2026;Marlow Sample-0034;Tax;0;1;0;0
+04/11/2026;Alder Sample-0047;Banking and finance;2;0;0;0
+04/11/2026;Yael Sample-0061;Real estate;1;3;1;0
+04/11/2026;Reese Sample-0062;Employment;2;0;0;0
+04/11/2026; Jules  Sample-0075 ;Employment;0;0;0;1
+04/11/2026;perry sample-0099;Real estate;1;0;0;0
+04/11/2026;Marlow Sample-0121;Disputes;0;1;0;0
+04/11/2026;Alder Sample-0147;Disputes;1;0;0;0
+04/11/2026;Harper Sample-0165;Intellectual property;1;0;0;0
+04/11/2026;Perry Sample-0174;Real estate;0;1;0;0
+04/11/2026;Marlow Sample-0185;Employment;0;1;0;0
+04/11/2026;Marlow Sample-0187;Disputes;2;1;1;0
+04/11/2026;Yael Sample-0207;Banking and finance;0;0;1;0
+04 Nov 2026;Noor Sample-0216;Disputes;3;1;0;1
+04/11/2026;Quinn Sample-0226;Corporate;3;2;0;1
+04 Nov 2026;Lane Sample-0231;Tax;2;0;0;0
+04/11/2026;wren sample-0232;Disputes;0;0;1;0
+04/11/2026;JULES SAMPLE-0235;Banking and finance;0;1;0;0
+04/11/2026;Umber Sample-0269;Disputes;0;1;0;0
+04 Nov 2026;Quinn Sample-0273;Disputes;1;2;0;0
+04/11/2026;Umber Sample-0274;Corporate;0;0;1;0
+05/11/2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+05/11/2026;Marlow Sample-0034;Tax;1;0;0;0
+05/11/2026;Yael Sample-0044;Employment;2;0;0;0
+05/11/2026;Alder Sample-0047;Banking and finance;1;0;0;0
+05/11/2026;yael sample-0061;Real estate;1;0;1;0
+05/11/2026;Reese Sample-0062;Employment;0;1;0;0
+05/11/2026;Jules Sample-0075;Employment;1;0;1;1
+05/11/2026;Jules Sample-0077;Corporate;0;0;0;1
+05/11/2026;Perry Sample-0099;Real estate;2;0;0;0
+05/11/2026;Marlow Sample-0121;Disputes;0;1;0;0
+05/11/2026;Harper Sample-0165;Intellectual property;3;2;0;1
+05/11/2026;Xan Sample-0167;Disputes;3;0;0;0
+05/11/2026;DEVON SAMPLE-0176;Real estate;0;1;0;1
+05/11/2026;Marlow Sample-0187;Disputes;2;0;0;0
+05/11/2026;Sage Sample-0201;Employment;1;0;0;2
+05 Nov 2026;Yael Sample-0207;Banking and finance;1;0;0;0
+05/11/2026;Lane Sample-0210;Disputes;0;1;0;0
+05/11/2026;Noor Sample-0216;Disputes;1;1;1;0
+05/11/2026;Wren Sample-0222;Corporate;1;0;0;0
+05 Nov 2026;quinn sample-0226;Corporate;1;1;0;1
+05/11/2026;Lane Sample-0231;Tax;2;1;0;0
+05/11/2026;Wren Sample-0232;Disputes;0;1;0;0
+05/11/2026;Jules Sample-0235;Banking and finance;0;1;1;0
+05/11/2026;Tate Sample-0263;Disputes;0;0;0;1
+05/11/2026;Noor Sample-0267;Banking and finance;2;0;0;0
+05/11/2026;UMBER SAMPLE-0269;Disputes;2;0;0;0
+05/11/2026;Quinn Sample-0273;Disputes;0;1;0;0
+05/11/2026;Kit Sample-0302;Employment;1;0;0;0
+05/11/2026;Perry Sample-0307;Private client;1;0;0;1
+06/11/2026;Quinn Sample-0010;Intellectual property;0;1;0;0
+06/11/2026;Gray Sample-0022;Tax;1;0;0;1
+06/11/2026;MARLOW SAMPLE-0034;Tax;0;0;1;0
+06/11/2026;Alder Sample-0047;Banking and finance;2;0;0;1
+06/11/2026;Yael Sample-0061;Real estate;0;0;0;1
+06/11/2026;REESE SAMPLE-0062;Employment;1;0;0;0
+06/11/2026;Jules Sample-0075;Employment;1;0;0;0
+06/11/2026;QUINN SAMPLE-0096;Employment;1;0;0;1
+06/11/2026;Perry Sample-0099;Real estate;0;1;0;0
+06/11/2026;Alder Sample-0147;Disputes;1;1;0;0
+06/11/2026;Harper Sample-0165;Intellectual property;3;1;0;0
+06/11/2026;xan sample-0167;Disputes;2;0;0;1
+06/11/2026; Ellis  Sample-0168 ;Banking and finance;1;1;1;1
+06/11/2026;PERRY SAMPLE-0174;Real estate;0;0;0;1
+06/11/2026;Marlow Sample-0187;Disputes;1;1;1;0
+06/11/2026;yael sample-0207;Banking and finance;2;0;0;0
+06/11/2026;Lane Sample-0210;Disputes;1;2;0;0
+06/11/2026;Noor Sample-0216;Disputes;1;2;0;1
+06/11/2026;Wren Sample-0232;Disputes;2;1;1;1
+06/11/2026;Jules Sample-0235;Banking and finance;1;1;1;0
+06/11/2026;umber sample-0269;Disputes;0;1;0;0
+06/11/2026;QUINN SAMPLE-0273;Disputes;1;0;0;0
+06/11/2026;umber sample-0274;Corporate;1;0;0;1
+06/11/2026;Kit Sample-0302;Employment;0;0;0;1
+06/11/2026;Perry Sample-0307;Private client;1;0;0;1
+06 Nov 2026;VALE SAMPLE-0308;Disputes;2;1;0;0
+06/11/2026;harper sample-0318;Disputes;1;0;0;0
+09/11/2026;Tate Sample-0006;Banking and finance;1;0;0;0
+09/11/2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+09/11/2026;Indigo Sample-0016;Corporate;1;1;0;0
+01/10/2026;Zephyr Sample-0252;Private client;0;0;;0
+09/11/2026;Marlow Sample-0034;Tax;0;1;1;2
+09/11/2026;Yael Sample-0044;Employment;0;0;0;1
+09/11/2026;Alder Sample-0047;Banking and finance;1;0;0;1
+09/11/2026;Reese Sample-0062;Employment;0;0;1;0
+09/11/2026;Perry Sample-0099;Real estate;4;0;0;0
+09/11/2026;Finley Sample-0108;Tax;2;0;0;0
+09/11/2026;Marlow Sample-0121;Disputes;1;0;0;1
+09/11/2026;Yael Sample-0127;Tax;2;1;0;0
+09/11/2026;Alder Sample-0147;Disputes;0;1;0;0
+09/11/2026;Indigo Sample-0161;Banking and finance;1;0;0;0
+09/11/2026;SAGE SAMPLE-0163;Banking and finance;1;0;0;0
+09 Nov 2026;Bryn Sample-0164;Corporate;0;1;0;0
+09/11/2026;Harper Sample-0165;Intellectual property;2;2;1;0
+09/11/2026;Cass Sample-0173;Banking and finance;0;1;0;0
+09/11/2026;Marlow Sample-0187;Disputes;0;2;1;0
+09/11/2026;Sage Sample-0201;Employment;0;1;1;0
+09 Nov 2026;Lane Sample-0231;Tax;2;0;0;0
+09/11/2026;Wren Sample-0232;Disputes;2;0;0;0
+09/11/2026;Indigo Sample-0240;Corporate;0;0;1;0
+09/11/2026;Ellis Sample-0246;Intellectual property;1;0;0;0
+09/11/2026;Tate Sample-0263;Disputes;1;0;0;0
+09/11/2026;Noor Sample-0267;Banking and finance;2;0;0;0
+09/11/2026;umber sample-0269;Disputes;0;1;0;1
+09/11/2026;Quinn Sample-0273;Disputes;0;1;0;0
+09/11/2026;Umber Sample-0274;Corporate;0;0;0;1
+09/11/2026;Lane Sample-0292;Employment;0;1;0;0
+09/11/2026;Perry Sample-0307;Private client;2;0;0;0
+09/11/2026;Vale Sample-0308;Disputes;0;2;0;0
+09/11/2026;Harper Sample-0318;Disputes;1;0;0;0
+10/11/2026;Quinn Sample-0010;Intellectual property;0;1;0;0
+10/11/2026;Indigo Sample-0016;Corporate;0;1;0;0
+10/11/2026;Marlow Sample-0034;Tax;1;0;0;0
+10/11/2026;alder sample-0047;Banking and finance;1;3;2;0
+10/11/2026;Ellis Sample-0053;Banking and finance;2;1;0;0
+10/11/2026;reese sample-0062;Employment;0;0;0;1
+10 Nov 2026;Perry Sample-0099;Real estate;1;0;0;0
+10/11/2026;Finley Sample-0108;Tax;0;0;0;1
+10/11/2026;Yael Sample-0127;Tax;0;1;2;0
+10/11/2026;Umber Sample-0129;Corporate;3;0;0;0
+10/11/2026; Alder  Sample-0147 ;Disputes;1;0;0;0
+10/11/2026;Harper Sample-0165;Intellectual property;0;1;0;0
+10/11/2026;Cass Sample-0173;Banking and finance;1;1;0;0
+10/11/2026;Xan Sample-0180;Competition;1;1;0;0
+10/11/2026;Marlow Sample-0187;Disputes;0;1;0;0
+10/11/2026;Sage Sample-0201;Employment;1;0;0;0
+10/11/2026;Lane Sample-0210;Disputes;0;0;2;0
+10 Nov 2026;Wren Sample-0222;Corporate;1;0;0;0
+10/11/2026;Wren Sample-0232;Disputes;2;1;0;0
+10/11/2026;Indigo Sample-0240;Corporate;2;0;0;0
+10 Nov 2026;Noor Sample-0267;Banking and finance;1;0;0;0
+10/11/2026;Umber Sample-0269;Disputes;0;1;1;0
+10/11/2026;QUINN SAMPLE-0273;Disputes;0;0;1;0
+10/11/2026;UMBER SAMPLE-0274;Corporate;1;0;1;0
+week 3;Kit Sample-0064;Tax;1;0;0;0
+10/11/2026;Lane Sample-0292;Employment;1;0;0;0
+10/11/2026;Kit Sample-0302;Employment;0;0;0;1
+10/11/2026;Perry Sample-0307;Private client;1;1;0;0
+10/11/2026;Vale Sample-0308;Disputes;1;1;0;0
+11/11/2026;Tate Sample-0011;Disputes;1;0;0;0
+11/11/2026;Indigo Sample-0016;Corporate;3;0;0;0
+11 Nov 2026;Marlow Sample-0034;Tax;2;0;0;0
+11/11/2026;Yael Sample-0044;Employment;0;1;0;0
+11/11/2026;Alder Sample-0047;Banking and finance;2;3;1;1
+11/11/2026;Ellis Sample-0053;Banking and finance;0;2;0;0
+11 Nov 2026; Jules  Sample-0075 ;Employment;1;0;0;0
+11/11/2026;Perry Sample-0099;Real estate;1;1;0;0
+11 Nov 2026;Marlow Sample-0121;Disputes;0;0;0;1
+11/11/2026;Yael Sample-0127;Tax;0;1;0;0
+11/11/2026;Umber Sample-0129;Corporate;1;0;0;1
+11/11/2026;Alder Sample-0147;Disputes;0;0;1;0
+11/11/2026;Indigo Sample-0161;Banking and finance;0;1;0;0
+11/11/2026;Devon Sample-0176;Real estate;1;0;0;1
+11 Nov 2026;Xan Sample-0180;Competition;0;1;0;0
+11/11/2026; Marlow  Sample-0187 ;Disputes;0;1;0;0
+11/11/2026;Sage Sample-0201;Employment;0;1;0;0
+11/11/2026;Lane Sample-0210;Disputes;0;0;2;0
+11/11/2026;Lane Sample-0231;Tax;1;1;0;0
+11/11/2026;Wren Sample-0232;Disputes;1;2;0;0
+11/11/2026;Indigo Sample-0240;Corporate;1;1;0;0
+11/11/2026;Ellis Sample-0246;Intellectual property;1;1;0;0
+11/11/2026;Tate Sample-0263;Disputes;1;0;0;0
+11/11/2026;NOOR SAMPLE-0267;Banking and finance;0;1;1;0
+11/11/2026;quinn sample-0273;Disputes;2;1;0;0
+11/11/2026;Umber Sample-0274;Corporate;2;2;0;1
+11/11/2026;Lane Sample-0292;Employment;2;0;0;0
+11/11/2026;kit sample-0302;Employment;1;0;0;0
+11/11/2026;PERRY SAMPLE-0307;Private client;0;2;0;0
+12/11/2026;Tate Sample-0011;Disputes;0;0;0;1
+12/11/2026;Indigo Sample-0016;Corporate;0;1;0;0
+12/11/2026;Marlow Sample-0034;Tax;3;1;0;1
+12/11/2026;ALDER SAMPLE-0047;Banking and finance;2;1;0;0
+12 Nov 2026;ELLIS SAMPLE-0053;Banking and finance;3;0;0;0
+12/11/2026;Reese Sample-0062;Employment;1;1;1;0
+12/11/2026;Jules Sample-0075;Employment;0;1;0;0
+12/11/2026;Tate Sample-0094;Private client;1;1;0;0
+12/11/2026;Perry Sample-0099;Real estate;1;1;0;0
+12/11/2026;Finley Sample-0108;Tax;2;0;0;0
+12/11/2026; Marlow  Sample-0121 ;Disputes;0;0;0;1
+12/11/2026;Yael Sample-0127;Tax;0;1;1;0
+12/11/2026;Umber Sample-0129;Corporate;0;1;1;0
+12/11/2026;Alder Sample-0147;Disputes;0;0;0;1
+12/11/2026;Sage Sample-0163;Banking and finance;1;0;0;0
+12/11/2026;BRYN SAMPLE-0164;Corporate;1;0;0;0
+12/11/2026;harper sample-0165;Intellectual property;1;0;0;1
+12/11/2026;Devon Sample-0176;Real estate;0;0;0;1
+12/11/2026;Marlow Sample-0187;Disputes;1;0;0;0
+12/11/2026;sage sample-0201;Employment;0;0;1;0
+12/11/2026;LANE SAMPLE-0210;Disputes;1;0;0;0
+12/11/2026;Wren Sample-0222;Corporate;1;0;0;0
+12/11/2026;Lane Sample-0231;Tax;2;0;0;0
+12/11/2026; Wren  Sample-0232 ;Disputes;2;1;0;0
+12/11/2026;Indigo Sample-0240;Corporate;1;1;0;0
+12/11/2026;ellis sample-0246;Intellectual property;1;0;1;0
+12 Nov 2026;Tate Sample-0263;Disputes;1;0;0;0
+12/11/2026;Umber Sample-0269;Disputes;0;0;1;0
+12/11/2026;QUINN SAMPLE-0273;Disputes;0;1;1;0
+12/11/2026;Umber Sample-0274;Corporate;0;0;0;1
+12/11/2026;Lane Sample-0292;Employment;1;1;0;0
+12/11/2026;Perry Sample-0307;Private client;1;0;0;0
+12/11/2026;vale sample-0308;Disputes;1;0;0;0
+12/11/2026;Harper Sample-0318;Disputes;1;0;1;0
+13/11/2026;Tate Sample-0006;Banking and finance;0;0;1;0
+13/10/2026;Xan Sample-0276;Regulatory;0;0;;0
+13/11/2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+13/11/2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+13/11/2026;Tate Sample-0011;Disputes;1;0;0;0
+13/11/2026;Indigo Sample-0016;Corporate;0;0;1;0
+13/11/2026; Marlow  Sample-0034 ;Tax;1;0;0;0
+13/11/2026;yael sample-0044;Employment;2;1;0;1
+13/11/2026;Alder Sample-0047;Banking and finance;2;2;0;0
+13/11/2026;Ellis Sample-0053;Banking and finance;1;0;0;0
+13/11/2026;Jules Sample-0075;Employment;0;0;0;1
+13/11/2026;Wren Sample-0104;Corporate;0;0;0;1
+13/11/2026;Finley Sample-0108;Tax;1;0;0;0
+13/11/2026;Yael Sample-0127;Tax;1;0;1;0
+13/11/2026;Umber Sample-0129;Corporate;1;0;0;0
+13/11/2026;INDIGO SAMPLE-0161;Banking and finance;0;2;0;0
+13/11/2026;Sage Sample-0163;Banking and finance;1;0;0;0
+13/11/2026;Bryn Sample-0164;Corporate;1;1;0;0
+13/11/2026;Harper Sample-0165;Intellectual property;0;2;0;0
+13/11/2026;CASS SAMPLE-0173;Banking and finance;1;0;0;0
+13/11/2026; Devon  Sample-0176 ;Real estate;1;1;0;0
+13/11/2026;Xan Sample-0180;Competition;1;0;0;0
+13/11/2026;Sage Sample-0201;Employment;0;1;0;0
+13/11/2026; Lane  Sample-0210 ;Disputes;1;1;0;1
+13/11/2026;Lane Sample-0231;Tax;0;0;1;0
+13/11/2026;WREN SAMPLE-0232;Disputes;0;0;1;0
+13/11/2026;Indigo Sample-0240;Corporate;1;0;0;1
+13/11/2026;Ellis Sample-0246;Intellectual property;1;0;1;0
+13/11/2026;Quinn Sample-0273;Disputes;0;0;0;1
+13/11/2026;Umber Sample-0274;Corporate;1;0;0;0
+13/11/2026;kit sample-0302;Employment;0;1;1;0
+13/11/2026;VALE SAMPLE-0308;Disputes;2;1;0;0
+13/11/2026;VALE SAMPLE-0308;Disputes;9;1;0;0
+16/11/2026;Xan Sample-0001;Regulatory;0;0;1;0
+16/11/2026;Gray Sample-0022;Tax;2;1;0;0
+16/11/2026;Gray Sample-0027;Banking and finance;0;1;0;0
+16 Nov 2026;Marlow Sample-0034;Tax;3;1;1;0
+16/11/2026;Alder Sample-0047;Banking and finance;2;1;0;0
+16/11/2026;Ellis Sample-0053;Banking and finance;1;0;0;1
+16/11/2026; Jules  Sample-0057 ;Banking and finance;0;0;0;1
+16 Nov 2026;Yael Sample-0061;Real estate;1;0;2;0
+16/11/2026;jules sample-0075;Employment;2;0;1;0
+16/11/2026; Jules  Sample-0077 ;Corporate;0;0;1;0
+16/11/2026;Gray Sample-0080;Disputes;2;0;0;0
+16/11/2026;Tate Sample-0094;Private client;0;1;0;0
+16/11/2026; Perry  Sample-0099 ;Real estate;0;1;0;0
+16/11/2026;Vale Sample-0110;Regulatory;1;0;0;0
+16/11/2026;Yael Sample-0127;Tax;0;1;0;0
+16/11/2026;Indigo Sample-0161;Banking and finance;0;1;0;0
+16/11/2026;Bryn Sample-0164;Corporate;1;0;1;0
+16/11/2026;Xan Sample-0167;Disputes;2;0;0;0
+16/11/2026;ellis sample-0168;Banking and finance;1;1;0;0
+16/11/2026;MARLOW SAMPLE-0185;Employment;1;0;0;0
+16 Nov 2026;Xan Sample-0204;Disputes;0;2;0;0
+16/11/2026;Lane Sample-0210;Disputes;2;0;1;0
+16/11/2026;Noor Sample-0216;Disputes;0;0;1;0
+16/11/2026;Lane Sample-0231;Tax;1;1;1;0
+16/11/2026;Jules Sample-0235;Banking and finance;1;0;0;0
+16/11/2026;Indigo Sample-0240;Corporate;1;0;0;0
+16/11/2026;Tate Sample-0251;Intellectual property;1;1;0;1
+16 Nov 2026;Gray Sample-0261;Corporate;1;1;0;0
+16/11/2026; Tate  Sample-0263 ;Disputes;0;1;0;0
+16/11/2026;Noor Sample-0267;Banking and finance;1;0;0;0
+16/11/2026;Umber Sample-0269;Disputes;0;0;1;0
+16/11/2026;quinn sample-0273;Disputes;0;2;1;0
+16/11/2026;Bryn Sample-0291;Disputes;0;0;0;2
+16 Nov 2026; Kit  Sample-0302 ;Employment;0;1;0;0
+16/11/2026;VALE SAMPLE-0308;Disputes;3;0;0;1
+16/11/2026;Vale Sample-0313;Corporate;1;0;0;0
+17/11/2026;Xan Sample-0001;Regulatory;1;0;0;0
+17/11/2026;Tate Sample-0006;Banking and finance;1;0;0;0
+17/11/2026;Gray Sample-0027;Banking and finance;0;1;0;0
+17/11/2026;Marlow Sample-0034;Tax;1;1;1;0
+17/11/2026;Yael Sample-0044;Employment;0;2;0;0
+17/11/2026;Alder Sample-0047;Banking and finance;2;1;0;0
+17/11/2026;Wren Sample-0050;Real estate;0;0;1;0
+17/11/2026; Ellis  Sample-0053 ;Banking and finance;0;0;1;0
+17 Nov 2026;Umber Sample-0055;Banking and finance;0;1;0;0
+17/11/2026;Yael Sample-0061;Real estate;2;0;2;0
+17/11/2026;Reese Sample-0062;Employment;0;2;0;1
+17/11/2026;JULES SAMPLE-0075;Employment;0;0;1;0
+17/11/2026;Jules Sample-0077;Corporate;2;1;1;0
+17/11/2026;tate sample-0094;Private client;1;0;0;0
+17/11/2026;Quinn Sample-0096;Employment;0;0;0;1
+17/11/2026;Perry Sample-0099;Real estate;1;2;0;0
+17/11/2026;Wren Sample-0104;Corporate;0;1;0;0
+17/11/2026;Vale Sample-0110;Regulatory;1;0;0;0
+17/11/2026;Yael Sample-0127;Tax;3;1;0;0
+17/11/2026;Umber Sample-0129;Corporate;1;1;0;0
+21/11/2026;Xan Sample-0287;Corporate;0;0;;0
+17/11/2026;Kit Sample-0154;Disputes;2;0;1;1
+17/11/2026;Indigo Sample-0161;Banking and finance;1;0;0;0
+17/11/2026;Bryn Sample-0164;Corporate;0;1;0;0
+17/11/2026;Xan Sample-0167;Disputes;0;1;0;0
+17/11/2026;Ellis Sample-0168;Banking and finance;0;1;0;1
+17/11/2026;Yael Sample-0207;Banking and finance;1;0;0;0
+17/11/2026;Lane Sample-0210;Disputes;1;0;0;0
+17/11/2026;Noor Sample-0216;Disputes;0;0;1;0
+17 Nov 2026; Noor  Sample-0238 ;Corporate;1;0;0;0
+17 Nov 2026;Tate Sample-0251;Intellectual property;1;1;0;0
+17/11/2026;Gray Sample-0261;Corporate;0;1;0;0
+17/11/2026;Tate Sample-0263;Disputes;0;0;1;0
+17/11/2026;Umber Sample-0269;Disputes;2;1;0;0
+17/11/2026;Quinn Sample-0273;Disputes;1;1;0;0
+17/11/2026;Umber Sample-0274;Corporate;1;0;0;0
+03/11/2026;Contractor Sample-9001;External;2;0;0;0
+17/11/2026;Vale Sample-0304;Corporate;0;0;1;0
+17/11/2026;PERRY SAMPLE-0307;Private client;1;0;0;0
+17/11/2026; Vale  Sample-0308 ;Disputes;0;0;1;0
+17/11/2026;Harper Sample-0318;Disputes;1;0;0;0
+18/11/2026;Gray Sample-0022;Tax;1;0;0;1
+18/11/2026;Gray Sample-0027;Banking and finance;1;0;0;0
+18/11/2026;Marlow Sample-0034;Tax;1;1;0;0
+18/11/2026;Alder Sample-0047;Banking and finance;0;1;0;0
+18/11/2026;Wren Sample-0050;Real estate;1;0;0;0
+18/11/2026;ELLIS SAMPLE-0053;Banking and finance;0;1;0;0
+18/11/2026;Umber Sample-0055;Banking and finance;1;0;0;0
+10/10/2026;Reese Sample-0100;Corporate;0;0;;0
+18/11/2026; Jules  Sample-0057 ;Banking and finance;1;0;0;0
+18/11/2026; Yael  Sample-0061 ;Real estate;1;0;1;0
+18/11/2026;Jules Sample-0077;Corporate;2;1;0;0
+18/11/2026;Tate Sample-0094;Private client;2;1;0;0
+18/11/2026;Quinn Sample-0096;Employment;1;0;0;1
+18/11/2026;Perry Sample-0099;Real estate;1;0;0;0
+18/11/2026;Wren Sample-0104;Corporate;0;1;0;0
+18/11/2026; Yael  Sample-0127 ;Tax;1;0;0;0
+18/11/2026;Indigo Sample-0161;Banking and finance;1;0;0;0
+18/11/2026;Bryn Sample-0164;Corporate;1;0;0;0
+18/11/2026;XAN SAMPLE-0167;Disputes;2;0;0;0
+18/11/2026;Ellis Sample-0168;Banking and finance;1;0;0;0
+18/11/2026;Marlow Sample-0185;Employment;0;1;0;0
+18/11/2026;Xan Sample-0204;Disputes;0;0;1;0
+18/11/2026;Lane Sample-0210;Disputes;0;1;1;0
+18/11/2026;Noor Sample-0216;Disputes;3;1;0;0
+18/11/2026;Lane Sample-0231;Tax;0;0;1;0
+18/11/2026;Wren Sample-0232;Disputes;0;2;0;0
+18/11/2026;Noor Sample-0238;Corporate;1;0;0;0
+18/11/2026;Indigo Sample-0240;Corporate;2;0;0;0
+18/11/2026;Gray Sample-0261;Corporate;1;0;0;0
+18/11/2026;Tate Sample-0263;Disputes;1;0;0;0
+18/11/2026;Noor Sample-0267;Banking and finance;1;1;0;0
+18/11/2026;Umber Sample-0269;Disputes;0;1;0;0
+18/11/2026;Quinn Sample-0273;Disputes;0;1;2;0
+18/11/2026;lane sample-0292;Employment;1;0;0;0
+27/09/2026;Perry Sample-0068;Disputes;0;0;;0
+18/11/2026;kit sample-0302;Employment;1;0;1;0
+18/11/2026;Vale Sample-0304;Corporate;1;2;0;0
+18/11/2026;Vale Sample-0308;Disputes;1;0;0;0
+18/11/2026;Vale Sample-0313;Corporate;1;0;0;0
+18/11/2026;Harper Sample-0318;Disputes;0;0;1;0
+19/11/2026;tate sample-0006;Banking and finance;3;0;0;0
+19 Nov 2026; Gray  Sample-0027 ;Banking and finance;0;1;1;0
+19/11/2026;Marlow Sample-0034;Tax;1;0;1;0
+19/11/2026;Yael Sample-0044;Employment;1;0;0;0
+19/11/2026;Wren Sample-0050;Real estate;1;0;0;0
+19 Nov 2026;Ellis Sample-0053;Banking and finance;1;0;0;0
+19/11/2026;YAEL SAMPLE-0061;Real estate;1;0;2;1
+19/11/2026;Jules Sample-0075;Employment;0;0;2;0
+19/11/2026;JULES SAMPLE-0077;Corporate;1;0;0;0
+19/11/2026;GRAY SAMPLE-0080;Disputes;1;1;0;0
+19/11/2026;Tate Sample-0094;Private client;1;1;0;1
+19/11/2026;Quinn Sample-0096;Employment;0;1;0;0
+19/11/2026;Quinn Sample-0096;Employment;7;1;0;0
+19/11/2026;Perry Sample-0099;Real estate;1;1;0;0
+19/11/2026;Wren Sample-0104;Corporate;0;1;0;0
+19/11/2026;Xan Sample-0167;Disputes;1;1;0;0
+19/11/2026;ELLIS SAMPLE-0168;Banking and finance;1;0;2;0
+19/11/2026;Marlow Sample-0185;Employment;1;0;0;0
+19/11/2026;Xan Sample-0204;Disputes;1;0;0;0
+19/11/2026;LANE SAMPLE-0210;Disputes;1;1;0;0
+19/11/2026;Noor Sample-0216;Disputes;0;2;0;1
+19/11/2026;Lane Sample-0231;Tax;0;2;1;0
+19/11/2026;Wren Sample-0232;Disputes;0;0;0;1
+19/11/2026;Jules Sample-0235;Banking and finance;1;0;0;0
+16/09/2026;Vale Sample-0150;Banking and finance;0;0;;0
+19/11/2026;Indigo Sample-0240;Corporate;1;0;0;0
+19/11/2026;TATE SAMPLE-0251;Intellectual property;0;0;0;1
+19/11/2026;TATE SAMPLE-0263;Disputes;1;1;0;0
+19/11/2026;Umber Sample-0269;Disputes;1;0;0;1
+19 Nov 2026;Quinn Sample-0273;Disputes;0;3;1;1
+19/11/2026;Bryn Sample-0291;Disputes;0;1;0;0
+19 Nov 2026;Lane Sample-0292;Employment;1;2;0;0
+19/11/2026;Vale Sample-0304;Corporate;0;1;0;0
+19/11/2026;Vale Sample-0308;Disputes;2;0;0;0
+19 Nov 2026;Vale Sample-0313;Corporate;1;0;0;1
+19/11/2026;Harper Sample-0318;Disputes;0;1;0;0
+20/11/2026;Xan Sample-0001;Regulatory;1;2;0;0
+20 Nov 2026;Gray Sample-0027;Banking and finance;0;1;0;0
+20/11/2026;Marlow Sample-0034;Tax;3;1;1;0
+20/11/2026;Alder Sample-0047;Banking and finance;1;1;0;0
+20/11/2026;Wren Sample-0050;Real estate;1;0;0;0
+20 Nov 2026;Ellis Sample-0053;Banking and finance;1;0;0;0
+20/11/2026;Jules Sample-0057;Banking and finance;0;1;0;0
+20 Nov 2026;Yael Sample-0061;Real estate;0;2;0;0
+20/11/2026;Reese Sample-0062;Employment;0;1;0;0
+20/11/2026;Jules Sample-0077;Corporate;1;1;1;0
+20/11/2026;Gray Sample-0080;Disputes;1;0;0;0
+20/11/2026;Quinn Sample-0096;Employment;0;1;0;0
+20/11/2026;perry sample-0099;Real estate;0;1;0;0
+20/11/2026;Yael Sample-0127;Tax;0;0;0;1
+20 Nov 2026;Umber Sample-0129;Corporate;2;0;0;0
+20 Nov 2026; Indigo  Sample-0161 ;Banking and finance;1;0;0;0
+20 Nov 2026;Xan Sample-0167;Disputes;0;0;0;1
+20 Nov 2026;Ellis Sample-0168;Banking and finance;3;0;0;2
+20 Nov 2026;Xan Sample-0204;Disputes;0;2;0;0
+20/11/2026;Yael Sample-0207;Banking and finance;2;1;0;0
+20/11/2026;Lane Sample-0210;Disputes;1;1;1;0
+20/11/2026; Noor  Sample-0216 ;Disputes;1;2;0;0
+20/11/2026;Wren Sample-0232;Disputes;0;1;1;0
+20/11/2026;Noor Sample-0267;Banking and finance;1;1;0;0
+20/11/2026;Umber Sample-0269;Disputes;1;1;0;0
+10/11/2026;Harper Sample-0086;Corporate;-3;0;0;0
+15/09/2026;Quinn Sample-0315;Banking and finance;two;0;0;0
+20/11/2026;Quinn Sample-0273;Disputes;2;2;0;0
+20/11/2026;Umber Sample-0274;Corporate;0;0;0;1
+20/11/2026;Lane Sample-0292;Employment;1;0;1;0
+20/11/2026;Kit Sample-0302;Employment;1;0;0;0
+20/11/2026;Vale Sample-0304;Corporate;1;0;0;0
+20/11/2026;Perry Sample-0307;Private client;1;1;1;0
+20/11/2026;Vale Sample-0308;Disputes;1;0;0;0
+20/11/2026;VALE SAMPLE-0313;Corporate;1;0;1;0
+23/11/2026;XAN SAMPLE-0001;Regulatory;1;0;0;1
+23/11/2026;Quinn Sample-0010;Intellectual property;1;0;0;0
+23/11/2026;tate sample-0011;Disputes;1;0;0;0
+20/09/2026;Yael Sample-0072;Disputes;0;0;;0
+23/11/2026;Indigo Sample-0016;Corporate;0;1;0;0
+23/11/2026;Gray Sample-0022;Tax;0;1;0;0
+23/11/2026;Ellis Sample-0029;Disputes;1;0;0;0
+17/09/2026;Reese Sample-0156;Private client;0;0;;0
+23/11/2026;Perry Sample-0032;Corporate;1;1;0;0
+23/11/2026;Ellis Sample-0053;Banking and finance;1;0;0;0
+23/11/2026;Jules Sample-0057;Banking and finance;0;1;0;0
+23/11/2026; Yael  Sample-0061 ;Real estate;1;0;0;0
+23/11/2026;Gray Sample-0080;Disputes;1;0;0;0
+23/11/2026;Tate Sample-0094;Private client;1;0;1;0
+23/11/2026;Quinn Sample-0096;Employment;0;1;0;0
+23/11/2026;Wren Sample-0104;Corporate;0;0;0;1
+23/11/2026;Finley Sample-0108;Tax;2;0;0;0
+23/11/2026;Marlow Sample-0121;Disputes;1;1;0;0
+23/11/2026; Umber  Sample-0129 ;Corporate;2;1;1;0
+23/11/2026;Alder Sample-0147;Disputes;1;0;0;0
+23/11/2026;Kit Sample-0154;Disputes;2;0;0;1
+23/11/2026;Indigo Sample-0161;Banking and finance;2;0;0;0
+23/11/2026;Bryn Sample-0164;Corporate;0;2;0;0
+23 Nov 2026;harper sample-0165;Intellectual property;1;0;0;1
+23/11/2026;Ellis Sample-0168;Banking and finance;0;1;0;0
+23 Nov 2026;Cass Sample-0173;Banking and finance;1;0;1;0
+23/11/2026;Perry Sample-0174;Real estate;2;0;0;0
+23 Nov 2026;Marlow Sample-0187;Disputes;1;1;0;0
+23/11/2026;Lane Sample-0210;Disputes;0;1;1;0
+23/11/2026;Wren Sample-0222;Corporate;0;1;1;0
+23/11/2026;Quinn Sample-0226;Corporate;0;1;0;0
+23 Nov 2026;Jules Sample-0235;Banking and finance;1;0;0;0
+23 Nov 2026;Noor Sample-0238;Corporate;0;1;1;1
+23/11/2026;indigo sample-0240;Corporate;0;1;0;0
+23 Nov 2026;Tate Sample-0263;Disputes;2;1;1;0
+23 Nov 2026;Noor Sample-0267;Banking and finance;1;0;0;0
+23/11/2026;Quinn Sample-0273;Disputes;2;2;0;0
+23/11/2026;umber sample-0274;Corporate;1;0;0;0
+23/11/2026;Kit Sample-0302;Employment;1;0;0;0
+23/11/2026;Vale Sample-0308;Disputes;1;1;0;0
+24/11/2026;Xan Sample-0001;Regulatory;1;2;1;1
+24/11/2026;Tate Sample-0006;Banking and finance;1;0;0;0
+24/11/2026; Tate  Sample-0011 ;Disputes;0;0;0;1
+24/11/2026;INDIGO SAMPLE-0016;Corporate;3;1;0;0
+24/11/2026;GRAY SAMPLE-0022;Tax;1;0;0;0
+24/11/2026;Gray Sample-0027;Banking and finance;1;1;0;0
+24 Nov 2026;Ellis Sample-0029;Disputes;0;1;0;0
+24/11/2026;Perry Sample-0032;Corporate;0;1;1;0
+24/11/2026;Yael Sample-0044;Employment;0;1;1;0
+24/11/2026;Alder Sample-0047;Banking and finance;0;1;0;0
+24/11/2026;Yael Sample-0061;Real estate;1;1;0;0
+24 Nov 2026; Reese  Sample-0062 ;Employment;1;1;0;0
+24/11/2026;jules sample-0077;Corporate;0;0;1;0
+24/11/2026;Gray Sample-0080;Disputes;0;1;0;0
+24/11/2026;Tate Sample-0094;Private client;0;1;0;0
+24/11/2026;Quinn Sample-0096;Employment;2;0;0;0
+24/11/2026;Perry Sample-0099;Real estate;0;1;0;0
+24/11/2026;Yael Sample-0127;Tax;1;1;0;0
+24/11/2026;umber sample-0129;Corporate;0;0;1;1
+24/11/2026;Alder Sample-0147;Disputes;1;0;0;0
+24/11/2026; Harper  Sample-0165 ;Intellectual property;1;0;0;2
+24/11/2026;Ellis Sample-0168;Banking and finance;1;1;0;0
+24/11/2026;Cass Sample-0173;Banking and finance;1;0;0;0
+24 Nov 2026;Perry Sample-0174;Real estate;2;0;0;0
+24/11/2026;Devon Sample-0176;Real estate;0;1;0;0
+24/11/2026;Xan Sample-0180;Competition;1;0;0;0
+24 Nov 2026;marlow sample-0187;Disputes;0;2;0;0
+24/11/2026;yael sample-0207;Banking and finance;1;1;0;0
+24 Nov 2026;Noor Sample-0216;Disputes;0;1;0;0
+24 Nov 2026;Lane Sample-0231;Tax;1;0;0;0
+24/11/2026;Noor Sample-0238;Corporate;1;0;0;0
+24/11/2026;Indigo Sample-0240;Corporate;2;0;0;0
+24/11/2026;Tate Sample-0263;Disputes;0;1;1;0
+24/11/2026;Noor Sample-0267;Banking and finance;0;1;0;0
+24/11/2026;Quinn Sample-0273;Disputes;1;1;1;0
+24/11/2026;Kit Sample-0302;Employment;0;0;1;0
+24/11/2026;Vale Sample-0304;Corporate;0;2;0;0
+24/11/2026;vale sample-0308;Disputes;0;0;1;1
+24/11/2026;Harper Sample-0318;Disputes;0;1;0;0
+25/11/2026;Xan Sample-0001;Regulatory;0;1;0;0
+25 Nov 2026;Tate Sample-0006;Banking and finance;1;0;0;0
+25/11/2026;Quinn Sample-0010;Intellectual property;0;1;0;0
+25/11/2026;INDIGO SAMPLE-0016;Corporate;1;1;0;0
+25/11/2026;ellis sample-0029;Disputes;0;1;1;0
+25/11/2026;Yael Sample-0044;Employment;0;1;0;0
+25/11/2026;alder sample-0047;Banking and finance;1;0;0;0
+25/11/2026;Ellis Sample-0053;Banking and finance;1;0;0;0
+25/11/2026;Jules Sample-0057;Banking and finance;1;0;0;0
+25/11/2026;Reese Sample-0062;Employment;2;1;1;0
+25 Nov 2026;Jules Sample-0077;Corporate;1;0;1;0
+25/11/2026;Perry Sample-0099;Real estate;1;0;0;0
+25/11/2026;Finley Sample-0108;Tax;1;0;1;0
+25/11/2026; Marlow  Sample-0121 ;Disputes;1;1;0;0
+25/11/2026;Yael Sample-0127;Tax;1;1;1;0
+25/11/2026;UMBER SAMPLE-0129;Corporate;0;1;0;0
+25/11/2026;Alder Sample-0147;Disputes;1;0;0;0
+25/11/2026;Sage Sample-0163;Banking and finance;1;0;0;0
+25/11/2026;Harper Sample-0165;Intellectual property;0;1;0;0
+25/11/2026;Xan Sample-0167;Disputes;0;1;0;0
+25/11/2026;Cass Sample-0173;Banking and finance;0;1;1;0
+25/11/2026;perry sample-0174;Real estate;0;1;0;0
+25/11/2026;Marlow Sample-0187;Disputes;3;0;0;0
+25/11/2026;Yael Sample-0207;Banking and finance;1;0;0;1
+25/11/2026;Lane Sample-0210;Disputes;1;0;1;0
+18/10/2026;Harper Sample-0076;Real estate;0;0;;0
+25/11/2026;Noor Sample-0216;Disputes;1;0;2;0
+25/11/2026;Wren Sample-0222;Corporate;0;1;0;0
+25/11/2026;Quinn Sample-0226;Corporate;0;0;0;1
+25/11/2026;Lane Sample-0231;Tax;0;1;2;0
+25/11/2026;jules sample-0235;Banking and finance;0;0;1;1
+25/11/2026;Noor Sample-0238;Corporate;1;0;0;0
+25/11/2026;INDIGO SAMPLE-0240;Corporate;1;1;0;0
+25/11/2026;Tate Sample-0263;Disputes;2;1;1;0
+25/11/2026;Noor Sample-0267;Banking and finance;0;1;0;0
+25/11/2026;quinn sample-0273;Disputes;2;0;0;0
+25 Nov 2026;Umber Sample-0274;Corporate;0;0;1;0
+12/11/2026;Visiting Sample-9002;External;2;0;0;0
+25/11/2026;kit sample-0302;Employment;1;0;0;0
+25/11/2026;VALE SAMPLE-0304;Corporate;0;1;0;0
+25/11/2026;Vale Sample-0308;Disputes;3;1;0;0
+26/11/2026;Xan Sample-0001;Regulatory;0;1;1;0
+26/11/2026;Quinn Sample-0010;Intellectual property;0;2;0;0
+26/11/2026;Gray Sample-0022;Tax;0;1;1;0
+26/11/2026;Yael Sample-0044;Employment;1;0;0;0
+26/11/2026;alder sample-0047;Banking and finance;0;1;0;0
+26/11/2026;Ellis Sample-0053;Banking and finance;2;1;0;0
+26/11/2026;YAEL SAMPLE-0061;Real estate;0;0;1;0
+26 Nov 2026;Reese Sample-0062;Employment;2;0;0;1
+26/11/2026;Jules Sample-0077;Corporate;0;0;0;1
+26/11/2026;Perry Sample-0099;Real estate;1;0;0;0
+26/11/2026;Finley Sample-0108;Tax;1;0;0;0
+26/11/2026;Marlow Sample-0121;Disputes;0;1;0;0
+26/11/2026;Alder Sample-0147;Disputes;0;1;0;0
+26/11/2026; Kit  Sample-0154 ;Disputes;3;0;0;0
+26/11/2026;Indigo Sample-0161;Banking and finance;0;0;1;0
+26 Nov 2026;Sage Sample-0163;Banking and finance;1;0;0;0
+26/11/2026;Harper Sample-0165;Intellectual property;1;2;1;0
+26/11/2026;Xan Sample-0167;Disputes;0;0;1;0
+26/11/2026;Cass Sample-0173;Banking and finance;0;1;0;0
+26/11/2026;Perry Sample-0174;Real estate;2;0;0;0
+26/11/2026;Xan Sample-0180;Competition;0;0;0;1
+26/11/2026;Marlow Sample-0187;Disputes;1;0;1;0
+26/11/2026;Yael Sample-0207;Banking and finance;1;0;0;0
+26/11/2026;Lane Sample-0210;Disputes;0;0;0;1
+26/11/2026;Noor Sample-0216;Disputes;2;1;0;0
+26 Nov 2026;wren sample-0222;Corporate;1;0;2;0
+26/11/2026;Quinn Sample-0226;Corporate;1;0;0;0
+26/11/2026;Indigo Sample-0240;Corporate;1;0;0;0
+26/11/2026;Gray Sample-0261;Corporate;1;0;0;0
+26/11/2026;TATE SAMPLE-0263;Disputes;2;2;1;0
+26 Nov 2026;Noor Sample-0267;Banking and finance;1;0;0;0
+26/11/2026;Quinn Sample-0273;Disputes;3;0;1;0
+26/11/2026;Kit Sample-0302;Employment;0;1;0;0
+26 Nov 2026;Vale Sample-0304;Corporate;1;0;0;1
+26/11/2026;Vale Sample-0308;Disputes;0;1;2;0
+27/11/2026;Xan Sample-0001;Regulatory;1;0;0;1
+27/11/2026;Quinn Sample-0010;Intellectual property;2;0;0;0
+27/11/2026;Quinn Sample-0010;Intellectual property;9;0;0;0
+27/11/2026;Tate Sample-0011;Disputes;1;0;0;0
+27/11/2026;Indigo Sample-0016;Corporate;0;1;1;0
+27/11/2026;Gray Sample-0022;Tax;0;1;0;0
+27 Nov 2026;Gray Sample-0027;Banking and finance;1;1;0;0
+27/11/2026;Ellis Sample-0029;Disputes;0;1;0;0
+27/11/2026;Perry Sample-0032;Corporate;1;1;0;0
+27/11/2026;Yael Sample-0044;Employment;1;0;0;0
+27/11/2026;Alder Sample-0047;Banking and finance;1;0;1;0
+27/11/2026;Wren Sample-0050;Real estate;1;1;0;0
+27 Nov 2026;Ellis Sample-0053;Banking and finance;0;0;1;0
+27/11/2026;Yael Sample-0061;Real estate;1;0;0;0
+27/11/2026;Reese Sample-0062;Employment;0;0;1;1
+27/11/2026;Quinn Sample-0096;Employment;1;0;1;0
+27/11/2026;Perry Sample-0099;Real estate;1;0;1;0
+27/11/2026;Wren Sample-0104;Corporate;0;1;0;0
+27/11/2026;marlow sample-0121;Disputes;2;0;0;0
+27/11/2026; Alder  Sample-0147 ;Disputes;0;1;0;0
+27/11/2026;KIT SAMPLE-0154;Disputes;0;1;1;0
+27/11/2026;INDIGO SAMPLE-0161;Banking and finance;0;0;1;0
+27/11/2026;Sage Sample-0163;Banking and finance;0;0;1;0
+27/11/2026;Bryn Sample-0164;Corporate;0;0;1;0
+27/11/2026;HARPER SAMPLE-0165;Intellectual property;1;0;1;1
+27 Nov 2026;ellis sample-0168;Banking and finance;0;1;1;0
+27/11/2026;Cass Sample-0173;Banking and finance;0;1;0;0
+27/11/2026; Perry  Sample-0174 ;Real estate;3;0;0;0
+27/11/2026;Devon Sample-0176;Real estate;1;0;0;0
+27/11/2026;Marlow Sample-0187;Disputes;1;2;1;0
+27/11/2026;Yael Sample-0207;Banking and finance;0;0;1;0
+27 Nov 2026;Noor Sample-0216;Disputes;0;0;1;0
+27/11/2026;Wren Sample-0222;Corporate;0;1;0;0
+27/11/2026;Quinn Sample-0226;Corporate;0;0;0;1
+27/11/2026;Lane Sample-0231;Tax;1;0;0;0
+27/11/2026; Indigo  Sample-0240 ;Corporate;0;2;0;0
+27/11/2026;Gray Sample-0261;Corporate;0;2;0;1
+27/11/2026;tate sample-0263;Disputes;2;0;1;0
+27/11/2026;Quinn Sample-0273;Disputes;3;2;2;1
+27/11/2026;Umber Sample-0274;Corporate;0;1;0;0
+27/11/2026;Bryn Sample-0291;Disputes;0;0;1;0
+27/11/2026;Kit Sample-0302;Employment;0;1;0;0
+27/11/2026;VALE SAMPLE-0304;Corporate;0;1;0;0
+27/11/2026;Vale Sample-0308;Disputes;0;1;1;0
+30/11/2026;Xan Sample-0001;Regulatory;0;0;1;1
+30/11/2026;Tate Sample-0011;Disputes;0;3;1;0
+30 Nov 2026;indigo sample-0016;Corporate;0;3;0;1
+30/11/2026;Ellis Sample-0029;Disputes;2;0;0;0
+30/11/2026;Alder Sample-0047;Banking and finance;3;0;0;0
+30/11/2026;Wren Sample-0050;Real estate;0;1;0;0
+30 Nov 2026;Ellis Sample-0053;Banking and finance;1;0;1;0
+30/11/2026;Jules Sample-0075;Employment;1;0;0;0
+30/11/2026;Gray Sample-0080;Disputes;1;1;0;0
+04/11/2026;Reese Sample-0156;Private client;0;0;;0
+30/11/2026;Jules Sample-0085;Corporate;3;0;0;0
+02/12/2026;Gray Sample-0071;Corporate;0;0;;0
+30/11/2026;Tate Sample-0094;Private client;1;0;0;0
+30/11/2026;Quinn Sample-0096;Employment;1;0;0;0
+30/11/2026;Perry Sample-0099;Real estate;1;0;0;0
+30/11/2026;Finley Sample-0108;Tax;0;1;0;0
+30/11/2026;Marlow Sample-0121;Disputes;0;0;1;0
+30/11/2026;Umber Sample-0136;Competition;1;1;0;0
+30/11/2026;Indigo Sample-0161;Banking and finance;2;0;1;0
+30/11/2026;Bryn Sample-0164;Corporate;1;1;0;0
+30/11/2026;ellis sample-0168;Banking and finance;1;2;0;0
+30/11/2026;Devon Sample-0176;Real estate;1;0;0;0
+30/11/2026;Marlow Sample-0185;Employment;1;0;0;0
+08/09/2026;Contractor Sample-9001;External;2;0;0;0
+30/11/2026;Marlow Sample-0187;Disputes;0;0;0;1
+30/11/2026;Lane Sample-0210;Disputes;0;1;1;0
+30/11/2026;Wren Sample-0222;Corporate;0;1;0;0
+30/11/2026;Quinn Sample-0226;Corporate;1;0;0;0
+30/11/2026;Wren Sample-0232;Disputes;1;0;0;0
+02/11/2026;Visiting Sample-9002;External;2;0;0;0
+30/11/2026;JULES SAMPLE-0235;Banking and finance;1;0;0;0
+30 Nov 2026;Noor Sample-0238;Corporate;1;0;0;0
+30/11/2026;Tate Sample-0251;Intellectual property;0;1;0;0
+30/11/2026;Gray Sample-0261;Corporate;1;0;2;0
+30/11/2026;Tate Sample-0263;Disputes;1;0;0;0
+30/11/2026;Umber Sample-0269;Disputes;0;0;0;1
+30/11/2026;Umber Sample-0274;Corporate;0;0;2;0
+30/11/2026;Vale Sample-0304;Corporate;0;1;2;0
+30/11/2026; Perry  Sample-0307 ;Private client;2;0;0;2
+30/11/2026;Vale Sample-0308;Disputes;0;0;0;1
+01/12/2026;Quinn Sample-0010;Intellectual property;0;2;0;0
+01/12/2026;Tate Sample-0011;Disputes;1;0;1;0
+01/12/2026;ELLIS SAMPLE-0029;Disputes;2;1;1;0
+01/12/2026;Marlow Sample-0034;Tax;0;0;1;0
+01/12/2026;Alder Sample-0047;Banking and finance;0;1;0;0
+01/12/2026;Ellis Sample-0053;Banking and finance;2;1;0;1
+01/12/2026;GRAY SAMPLE-0080;Disputes;0;0;0;1
+16/11/2026;Bryn Sample-0009;Real estate;n/a;0;0;0
+01/12/2026;GRAY SAMPLE-0080;Disputes;7;0;0;1
+01/12/2026;Jules Sample-0085;Corporate;1;0;0;0
+01/12/2026;Marlow Sample-0121;Disputes;1;0;0;0
+01/12/2026;Umber Sample-0136;Competition;0;2;0;0
+01/12/2026;Alder Sample-0147;Disputes;1;0;0;0
+01/12/2026;Indigo Sample-0161;Banking and finance;1;0;0;1
+01/12/2026;Bryn Sample-0164;Corporate;0;0;2;0
+01/12/2026;Ellis Sample-0168;Banking and finance;0;1;0;0
+01/12/2026;Perry Sample-0174;Real estate;1;0;0;0
+01/12/2026;Marlow Sample-0185;Employment;1;0;0;0
+01 Dec 2026;Marlow Sample-0187;Disputes;0;3;0;0
+01 Dec 2026;Xan Sample-0204;Disputes;0;2;0;0
+01/12/2026;Lane Sample-0210;Disputes;1;0;1;0
+01/12/2026;Quinn Sample-0226;Corporate;0;1;0;0
+01/12/2026;Wren Sample-0232;Disputes;0;1;0;0
+01 Dec 2026;Tate Sample-0251;Intellectual property;1;0;0;0
+01/12/2026;Gray Sample-0261;Corporate;1;0;0;0
+01 Dec 2026;Tate Sample-0263;Disputes;0;1;0;0
+01/12/2026;UMBER SAMPLE-0269;Disputes;1;1;0;0
+01/12/2026;UMBER SAMPLE-0269;Disputes;8;1;0;0
+01/12/2026;Umber Sample-0274;Corporate;2;0;0;0
+01/12/2026;bryn sample-0291;Disputes;0;0;1;0
+01/12/2026;Wren Sample-0300;Disputes;1;0;1;0
+01/12/2026;Vale Sample-0304;Corporate;2;1;0;0
+01 Dec 2026;Perry Sample-0307;Private client;3;0;0;0
+01/12/2026;Vale Sample-0308;Disputes;0;0;1;0
+01/12/2026;Harper Sample-0318;Disputes;0;0;1;0
+02 Dec 2026;Xan Sample-0001;Regulatory;2;1;0;0
+02/12/2026;Tate Sample-0006;Banking and finance;0;1;0;0
+02 Dec 2026;Quinn Sample-0010;Intellectual property;0;1;0;0
+02/12/2026;Tate Sample-0011;Disputes;0;0;1;0
+22/09/2026;Quinn Sample-0305;Real estate;0;0;;0
+02/12/2026; Indigo  Sample-0016 ;Corporate;1;1;1;0
+02/12/2026;Ellis Sample-0029;Disputes;1;1;0;0
+02/12/2026;Alder Sample-0047;Banking and finance;3;0;0;0
+02/12/2026;Ellis Sample-0053;Banking and finance;1;0;0;1
+02/12/2026;Jules Sample-0075;Employment;0;1;1;0
+02/12/2026;Jules Sample-0085;Corporate;0;0;1;0
+02 Dec 2026;Tate Sample-0094;Private client;0;0;1;0
+02 Dec 2026;Quinn Sample-0096;Employment;1;0;0;0
+02/12/2026;Perry Sample-0099;Real estate;1;1;1;0
+02/12/2026;Marlow Sample-0121;Disputes;1;0;0;0
+02/12/2026; Umber  Sample-0136 ;Competition;2;0;0;0
+02/12/2026;Indigo Sample-0161;Banking and finance;2;0;0;0
+02/12/2026; Bryn  Sample-0164 ;Corporate;0;0;1;0
+02/12/2026;Ellis Sample-0168;Banking and finance;0;1;0;0
+21/11/2026;Wren Sample-0093;Real estate;0;0;;0
+02/12/2026;Devon Sample-0176;Real estate;0;1;0;0
+02/12/2026;Xan Sample-0180;Competition;1;0;0;0
+02 Dec 2026;LANE SAMPLE-0210;Disputes;0;1;0;0
+02/12/2026;Quinn Sample-0226;Corporate;0;0;0;1
+02/12/2026;Wren Sample-0232;Disputes;0;2;0;0
+02/12/2026;JULES SAMPLE-0235;Banking and finance;1;0;0;0
+02/12/2026;Indigo Sample-0240;Corporate;1;1;0;1
+02/12/2026;TATE SAMPLE-0251;Intellectual property;0;1;1;0
+02/12/2026;Tate Sample-0263;Disputes;1;1;1;0
+02/12/2026;Umber Sample-0269;Disputes;0;3;0;1
+2026/10/05;Kit Sample-0040;Real estate;1;0;0;0
+02/12/2026;Vale Sample-0304;Corporate;2;0;0;0
+02/12/2026;Vale Sample-0308;Disputes;1;0;0;0
+02/12/2026;Harper Sample-0318;Disputes;0;0;0;1
+25/09/2026;Devon Sample-0275;Employment;0;0;;0
+03/12/2026;Xan Sample-0001;Regulatory;1;0;0;0
+03/12/2026;Tate Sample-0006;Banking and finance;1;0;0;0
+03/12/2026;Tate Sample-0011;Disputes;0;2;1;0
+03/12/2026;Indigo Sample-0016;Corporate;2;1;0;0
+03/12/2026;Ellis Sample-0029;Disputes;4;0;1;0
+03/12/2026;Perry Sample-0032;Corporate;0;0;1;0
+03/12/2026;Marlow Sample-0034;Tax;2;0;0;0
+03 Dec 2026;Yael Sample-0044;Employment;1;0;0;0
+03/12/2026;Alder Sample-0047;Banking and finance;1;0;0;0
+03/12/2026;Ellis Sample-0053;Banking and finance;0;0;0;1
+03/12/2026;Jules Sample-0075;Employment;2;0;1;0
+03/12/2026;Gray Sample-0080;Disputes;0;1;2;0
+03/12/2026;Jules Sample-0085;Corporate;0;1;0;0
+03/12/2026; Quinn  Sample-0096 ;Employment;1;0;1;0
+03 Dec 2026;Wren Sample-0104;Corporate;0;1;0;0
+03/12/2026;Finley Sample-0108;Tax;0;1;0;0
+03 Dec 2026;marlow sample-0121;Disputes;0;0;1;0
+03/12/2026;Umber Sample-0136;Competition;1;2;0;0
+03/12/2026;Alder Sample-0147;Disputes;1;0;0;0
+03/12/2026;Bryn Sample-0164;Corporate;3;2;0;0
+03/12/2026;Ellis Sample-0168;Banking and finance;1;1;0;1
+03/12/2026;Devon Sample-0176;Real estate;0;0;0;1
+03/12/2026;XAN SAMPLE-0180;Competition;0;2;1;0
+03/12/2026;Marlow Sample-0185;Employment;1;0;0;0
+03/12/2026;MARLOW SAMPLE-0187;Disputes;0;0;1;0
+03/12/2026; Xan  Sample-0204 ;Disputes;1;0;0;0
+03/12/2026; Lane  Sample-0210 ;Disputes;2;0;0;1
+03/12/2026;wren sample-0222;Corporate;1;2;0;0
+03/12/2026;Quinn Sample-0226;Corporate;0;0;0;1
+03 Dec 2026;Lane Sample-0231;Tax;1;0;0;1
+03/12/2026;Jules Sample-0235;Banking and finance;0;0;1;0
+03/12/2026;tate sample-0251;Intellectual property;1;1;1;1
+03/12/2026;Gray Sample-0261;Corporate;3;0;0;0
+03/12/2026;Tate Sample-0263;Disputes;1;1;0;0
+03 Dec 2026;Umber Sample-0269;Disputes;1;0;0;0
+03 Dec 2026;Umber Sample-0274;Corporate;3;0;1;0
+03/12/2026;Wren Sample-0300;Disputes;0;0;0;1
+03/12/2026;Perry Sample-0307;Private client;0;0;0;1
+03/12/2026;Harper Sample-0318;Disputes;1;0;0;0
+04/12/2026;Xan Sample-0001;Regulatory;0;0;0;1
+04/12/2026;tate sample-0011;Disputes;2;1;0;1
+04/12/2026;INDIGO SAMPLE-0016;Corporate;0;2;2;0
+04/12/2026;Ellis Sample-0029;Disputes;2;0;0;0
+04/12/2026; Perry  Sample-0032 ;Corporate;1;0;0;0
+04/12/2026;Marlow Sample-0034;Tax;3;0;0;0
+04 Dec 2026;Yael Sample-0044;Employment;0;1;0;0
+04/12/2026;Alder Sample-0047;Banking and finance;1;0;0;1
+04/12/2026;Wren Sample-0050;Real estate;2;0;0;0
+04/12/2026;Ellis Sample-0053;Banking and finance;0;1;0;0
+04/12/2026;Umber Sample-0055;Banking and finance;0;1;0;0
+04/12/2026;Gray Sample-0080;Disputes;0;1;0;0
+04/12/2026;Jules Sample-0085;Corporate;0;1;0;0
+04/12/2026;tate sample-0094;Private client;1;1;0;0
+04/12/2026;Perry Sample-0099;Real estate;0;0;1;0
+04/12/2026;Wren Sample-0104;Corporate;0;0;1;0
+04/12/2026;Finley Sample-0108;Tax;1;0;0;0
+04/12/2026;Marlow Sample-0121;Disputes;2;0;0;1
+04/12/2026;Umber Sample-0136;Competition;0;0;1;0
+04/12/2026;Indigo Sample-0161;Banking and finance;1;0;0;0
+04/12/2026; Bryn  Sample-0164 ;Corporate;0;0;1;0
+04/12/2026;Ellis Sample-0168;Banking and finance;0;1;0;0
+04/12/2026;Xan Sample-0180;Competition;1;0;0;0
+04/12/2026;Lane Sample-0210;Disputes;1;0;0;0
+04/12/2026;Quinn Sample-0226;Corporate;2;0;0;0
+04/12/2026;Lane Sample-0231;Tax;1;0;0;0
+04/12/2026;noor sample-0238;Corporate;1;0;0;0
+04/12/2026;INDIGO SAMPLE-0240;Corporate;0;0;2;0
+04/12/2026;Tate Sample-0263;Disputes;1;0;0;0
+04/12/2026;Umber Sample-0269;Disputes;1;2;1;0
+04/12/2026;Umber Sample-0274;Corporate;1;2;0;1
+04/12/2026;BRYN SAMPLE-0291;Disputes;0;1;0;1
+04/12/2026;Wren Sample-0300;Disputes;0;0;1;0
+04/12/2026;Vale Sample-0304;Corporate;1;0;0;0
+04/12/2026;Perry Sample-0307;Private client;1;1;0;0

@@ -1,0 +1,11 @@
+{
+  "planted_total": 64,
+  "planted_found": 64,
+  "planted_missed": [],
+  "planted_wrong_status": [],
+  "false_positive_count": 0,
+  "false_positives": [],
+  "total_lines": 177,
+  "clean_lines": 120,
+  "clean_lines_flagged": []
+}

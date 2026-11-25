@@ -1,0 +1,67 @@
+Agency: City of Marlow Ridge (city)
+Title: City Attorney Services   RFP number: 2026-14   Practice: general_counsel
+
+Deadlines:
+  RFP issued                   2026-11-09 
+      line 26: RFP issued November 9, 2026
+  Questions due                2026-11-30 17:00
+      line 27: Written questions due November 30, 2026 at 5:00 p.m.
+  Answers issued               2026-12-04 
+      line 28: Responses to questions posted December 4, 2026
+  Submission due               2026-12-18 16:00
+      line 29: Proposals due December 18, 2026 at 4:00 p.m.
+  Interviews                   2027-01-12 
+      line 30: Interviews January 12, 2027
+  Award or board action        2027-02-02 
+      line 31: Council consideration of contract February 2, 2027
+
+Submission mechanics:
+  copies           one (1) electronic copy
+  format           PDF
+  delivery         email to cityclerk@marlowridge.example
+  not_accepted     Paper copies will not be accepted.
+  page_limit       25
+  page_exclusions  resumes and required forms
+  font             12
+  margins          1.0
+  not_accepted     Late proposals will not be accepted.
+
+Requirements (11):
+  5.1     Cover letter                 Cover Letter. Provide a cover letter signed by a person authorized to 
+  5.2     Firm overview                Firm Overview. Describe the firm, including its history, size, office 
+  5.3     Team                         Proposed Team. Identify the attorney proposed as City Attorney and eac
+  5.4     Experience                   Experience. Describe the firm's experience serving as city attorney or
+  5.5     Approach                     Approach. Describe how the firm will provide day-to-day services, incl
+  5.6     References                   References. Provide at least three (3) references from current or form
+  5.7     Conflicts                    Conflicts of Interest. Disclose any actual or potential conflict of in
+  5.8     Transition plan              Transition Plan. Describe how the firm would take over open matters fr
+  5.9     Rates and fees               Fee Proposal. State the proposed monthly retainer, the services it cov
+  5.10    Diversity and local presence Local Presence. Describe the firm's presence in the region.
+  5.11    Disclosures and exceptions   Litigation and Discipline History. Disclose any malpractice claim or d
+
+Forms and certifications (4):
+  Form A         Proposer Information Sheet
+  Form B         Non-Collusion Declaration
+  Form C         Acknowledgment of Addenda
+  Form D         Insurance Acknowledgment
+
+Evaluation criteria (percent, total 100):
+  35   Qualifications and experience of the firm and team
+  25   Approach to providing services
+  15   References
+  20   Cost
+  5    Local presence
+
+Minimum qualifications (4):
+  [years_admitted] The attorney proposed as City Attorney must have been admitted to practice law in the Stat
+  [office_location] The firm must maintain an office within Larkspur County.
+  [not_checkable] The attorney proposed as City Attorney must have at least five (5) years of experience adv
+  [not_checkable] The firm must not have any pending claim against the City.
+
+Insurance statements (4):
+  Professional liability insurance of not less than $2,000,000 per claim.
+  Commercial general liability insurance of not less than $1,000,000 per occurrence.
+  Workers' compensation insurance as required by law.
+  The proposal must include a statement that the firm can meet these insurance requirements.
+
+Items marked check: 0

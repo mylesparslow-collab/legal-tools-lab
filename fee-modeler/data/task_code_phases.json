@@ -1,0 +1,11 @@
+{
+  "note": "Synthetic task codes invented for this demo. Exact codes win, then the longest matching prefix. Replace with the firm's own code list.",
+  "prefixes": {
+    "AS": "assessment",
+    "DR": "drafting",
+    "DX": "discovery",
+    "HR": "hearing",
+    "CL": "closing"
+  },
+  "exact": {}
+}

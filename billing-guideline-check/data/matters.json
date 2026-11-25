@@ -1,0 +1,250 @@
+{
+  "note": "Fictional matter records: approved timekeepers, rate cards, approvals and budgets.",
+  "matters": [
+    {
+      "client_id": "quillfeather",
+      "name": "Claim file 22871, premises liability defense",
+      "timekeepers": {
+        "TK01": {
+          "name": "Odalys Brightwater",
+          "classification": "PT",
+          "approved_rate": "310.00",
+          "last_billed_rate": "310.00",
+          "rate_notice_date": null
+        },
+        "TK02": {
+          "name": "Idris Vantongeren",
+          "classification": "AS",
+          "approved_rate": "225.00",
+          "last_billed_rate": "225.00",
+          "rate_notice_date": null
+        },
+        "TK03": {
+          "name": "Rowan Achterberg",
+          "classification": "LA",
+          "approved_rate": "110.00",
+          "last_billed_rate": "110.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "QMI-0147",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "quillfeather",
+      "name": "Claim file 23310, wage claim defense",
+      "timekeepers": {
+        "TK01": {
+          "name": "Odalys Brightwater",
+          "classification": "PT",
+          "approved_rate": "310.00",
+          "last_billed_rate": "310.00",
+          "rate_notice_date": null
+        },
+        "TK04": {
+          "name": "Thandeka Oyelaran-Finch",
+          "classification": "AS",
+          "approved_rate": "230.00",
+          "last_billed_rate": "230.00",
+          "rate_notice_date": null
+        },
+        "TK05": {
+          "name": "Bexley Okonkwo-Hale",
+          "classification": "LA",
+          "approved_rate": "115.00",
+          "last_billed_rate": "105.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "QMI-0152",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "brackenmoor",
+      "name": "Pump station bid protest",
+      "timekeepers": {
+        "TK11": {
+          "name": "Caspian Molyneux-Reyes",
+          "classification": "PT",
+          "approved_rate": "395.00",
+          "last_billed_rate": "395.00",
+          "rate_notice_date": null
+        },
+        "TK12": {
+          "name": "Yusra Lindqvist-Amadi",
+          "classification": "AS",
+          "approved_rate": "280.00",
+          "last_billed_rate": "280.00",
+          "rate_notice_date": null
+        },
+        "TK13": {
+          "name": "Marek Dunleavy-Osei",
+          "classification": "LA",
+          "approved_rate": "140.00",
+          "last_billed_rate": "140.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "BRW-2026-03",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      },
+      "budget": {
+        "cap": "60000.00",
+        "billed_to_date": "52242.00",
+        "phases": {
+          "L200": {
+            "cap": "15000.00",
+            "billed_to_date": "4000.00"
+          },
+          "L300": {
+            "cap": "20000.00",
+            "billed_to_date": "18225.00"
+          }
+        }
+      }
+    },
+    {
+      "client_id": "ostervane",
+      "name": "Supply agreement dispute",
+      "timekeepers": {
+        "TK21": {
+          "name": "Leocadia Thornquist-Abara",
+          "classification": "PT",
+          "approved_rate": "720.00",
+          "last_billed_rate": "720.00",
+          "rate_notice_date": null
+        },
+        "TK22": {
+          "name": "Emeka Villanueva-Stroud",
+          "classification": "AS",
+          "approved_rate": "510.00",
+          "last_billed_rate": "510.00",
+          "rate_notice_date": null
+        },
+        "TK23": {
+          "name": "Saoirse Kowalczyk-Bello",
+          "classification": "AS",
+          "approved_rate": "465.00",
+          "last_billed_rate": "440.00",
+          "rate_notice_date": "2026-08-20"
+        },
+        "TK24": {
+          "name": "Dmitri Oyama-Lindgren",
+          "classification": "LA",
+          "approved_rate": "240.00",
+          "last_billed_rate": "240.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "OIH-LIT-088",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "ostervane",
+      "name": "Distributor termination dispute",
+      "timekeepers": {
+        "TK21": {
+          "name": "Leocadia Thornquist-Abara",
+          "classification": "PT",
+          "approved_rate": "720.00",
+          "last_billed_rate": "720.00",
+          "rate_notice_date": null
+        },
+        "TK22": {
+          "name": "Emeka Villanueva-Stroud",
+          "classification": "AS",
+          "approved_rate": "510.00",
+          "last_billed_rate": "510.00",
+          "rate_notice_date": null
+        },
+        "TK24": {
+          "name": "Dmitri Oyama-Lindgren",
+          "classification": "LA",
+          "approved_rate": "240.00",
+          "last_billed_rate": "240.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "OIH-COR-031",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "luminqa",
+      "name": "Patent infringement defense",
+      "timekeepers": {
+        "TK31": {
+          "name": "Anneliese Okafor-Brandt",
+          "classification": "PT",
+          "approved_rate": "680.00",
+          "last_billed_rate": "680.00",
+          "rate_notice_date": null
+        },
+        "TK32": {
+          "name": "Tobias Nakagawa-Reed",
+          "classification": "AS",
+          "approved_rate": "455.00",
+          "last_billed_rate": "455.00",
+          "rate_notice_date": null
+        },
+        "TK33": {
+          "name": "Priya Halvorsen-Mbeki",
+          "classification": "AS",
+          "approved_rate": "420.00",
+          "last_billed_rate": "420.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "LDS-IP-014",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "pellwick",
+      "name": "Equipment lease dispute",
+      "timekeepers": {
+        "TK41": {
+          "name": "Wendeline Abernathy-Cruz",
+          "classification": "PT",
+          "approved_rate": "450.00",
+          "last_billed_rate": "450.00",
+          "rate_notice_date": null
+        },
+        "TK42": {
+          "name": "Hollis Fairweather-Nkemelu",
+          "classification": "AS",
+          "approved_rate": "300.00",
+          "last_billed_rate": "300.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "PBS-001",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    }
+  ]
+}

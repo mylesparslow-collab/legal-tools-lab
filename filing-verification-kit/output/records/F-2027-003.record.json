@@ -1,0 +1,314 @@
+{
+  "record_type": "Filing verification record",
+  "record_version": 1,
+  "kit": "filingkit 0.1.0",
+  "notice": "Personal portfolio demo with fictional data. Not legal advice. Not reviewed by an attorney.",
+  "filing_id": "F-2027-003",
+  "matter": {
+    "number": "M-00502",
+    "client": "Tamsin Aldecott (fictional client)",
+    "caption": "Ferrowmere Holdings v. Aldecott (fictional)",
+    "case_number": "AR-27-000502"
+  },
+  "court_id": "fict-alder-ridge",
+  "court": "Superior Court, County of Alder Ridge (fictional)",
+  "judge_id": "fict-quillon",
+  "planned_filing_date": "2027-01-15",
+  "responsible_attorney": {
+    "name": "Odalys Verhoeven (fictional attorney)",
+    "bar_number": "FICT-000202"
+  },
+  "document": {
+    "path": "document.txt",
+    "title": "Reply in support of demurrer",
+    "type": "reply",
+    "sha256": "93ae3a470d3e573a98bf6661316c79756355af003661c1a4d3c5b252fd76e855",
+    "verifier_text_sha256": "4c0b28b3ba14d725cee1fc560c7596986edd492a75c2044b376176a460b05573"
+  },
+  "citation_report": {
+    "source_format": "citecheck-report",
+    "doc_sha256": "4c0b28b3ba14d725cee1fc560c7596986edd492a75c2044b376176a460b05573",
+    "matches_document": true,
+    "summary": {
+      "PASS": 2,
+      "WARN": 0,
+      "FAIL": 0,
+      "MANUAL": 0,
+      "total": 2,
+      "quotes": 2,
+      "unverified_quotes": 0
+    }
+  },
+  "citations": [
+    {
+      "id": "f402f4de-1",
+      "citation": "Halvorsen v. Bright Harbor Staffing, Inc. 97 Cal.5th 210, 223",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "PASS",
+      "machine_flags": [],
+      "attested_by": "Odalys Verhoeven (fictional attorney)",
+      "attested_at": "2027-01-12T14:10:00+00:00",
+      "how_checked": "Read the opinion in the firm research database; confirmed the holding, the pinpoint page and the quotation.",
+      "resolution": null,
+      "attestation_counts": true
+    },
+    {
+      "id": "f402f4de-2",
+      "citation": "Id. at 230",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "PASS",
+      "machine_flags": [],
+      "attested_by": "Odalys Verhoeven (fictional attorney)",
+      "attested_at": "2027-01-12T14:17:00+00:00",
+      "how_checked": "Opened the cited page and compared the quotation word for word; ran a citator check for later history.",
+      "resolution": null,
+      "attestation_counts": true
+    }
+  ],
+  "ai_use": {
+    "used": false,
+    "tools": [],
+    "purposes": [],
+    "output_verified": null,
+    "protected_info_entered": null,
+    "protected_info_review_by": null
+  },
+  "disclosure": {
+    "decision": null,
+    "option_id": null,
+    "text": null,
+    "decided_by": null,
+    "decided_on": null,
+    "reason": null,
+    "approved_by": null,
+    "wording_status": null
+  },
+  "judge_order_snapshot": {
+    "court_id": "fict-alder-ridge",
+    "judge_id": "fict-quillon",
+    "as_of": "2027-01-12",
+    "staleness_days": 30,
+    "status": "current",
+    "message": "1 entry found for judge 'fict-quillon' in court 'fict-alder-ridge', checked within 30 days (most recent 6 days before 2027-01-12). No requirement was known when last checked. That is a record of a search, not a statement that no order exists.",
+    "fictional_sample_data": true,
+    "entries": [
+      {
+        "entry_id": "JO-001",
+        "court_id": "fict-alder-ridge",
+        "court": "Superior Court, County of Alder Ridge (fictional)",
+        "judge_id": "fict-quillon",
+        "judge": "Hon. Thessaly Quillon (fictional judge)",
+        "order_title": "No standing order on generative AI found (fictional entry)",
+        "effective_date": null,
+        "requirement_type": "none_known",
+        "applies_when": "always",
+        "required_text": null,
+        "source_url": "https://courts.example/alder-ridge/dept-4/standing-orders",
+        "last_checked": "2027-01-06",
+        "checked_by": "Jun Tessaro (fictional paralegal)",
+        "age_days": 6,
+        "stale": false
+      }
+    ]
+  },
+  "judge_order_check": null,
+  "judge_order_response": null,
+  "checklist": {
+    "generated_at": "2027-01-12T17:30:00+00:00",
+    "policy_version": "draft-0.1",
+    "result": "CLEAR TO FILE",
+    "clear_to_file": true,
+    "counts": {
+      "PASS": 11,
+      "FAIL": 0,
+      "NEEDS ATTENTION": 0,
+      "NOT APPLICABLE": 4
+    },
+    "items": [
+      {
+        "id": "document_scope",
+        "title": "Document type is in scope",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "'reply' is treated as a paper filed in court. Every citation needs personal verification.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "sb574_enactment"
+        ],
+        "details": []
+      },
+      {
+        "id": "responsible_attorney",
+        "title": "Responsible attorney named",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "Responsible attorney: Odalys Verhoeven (fictional attorney).",
+        "authority_keys": [
+          "ccp_128_7_b2A"
+        ],
+        "details": []
+      },
+      {
+        "id": "document_present",
+        "title": "Document found and hashed",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "SHA-256 of file: 93ae3a470d3e573a98bf6661316c79756355af003661c1a4d3c5b252fd76e855.",
+        "authority_keys": [],
+        "details": []
+      },
+      {
+        "id": "citation_report_present",
+        "title": "Citation report present",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "citecheck-report, citations listed: 2 (machine: 2 pass, 0 warn, 0 fail, 0 manual).",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "report_matches_document",
+        "title": "Report matches the document",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "The report's document hash equals the hash of the document text as it is now.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "citations_attested",
+        "title": "Every citation attested by the attorney",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "All 2 citations have an attestation by Odalys Verhoeven (fictional attorney) with date and method.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "citations_resolved",
+        "title": "No unresolved or not-found citations",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "No citation is unresolved or not found.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "quotes_match",
+        "title": "No quote mismatches",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "No quotation was reported as a mismatch.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "machine_warnings",
+        "title": "Machine warnings resolved",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "No machine warnings.",
+        "authority_keys": [
+          "ccp_128_7_b2A",
+          "bpc_6068_1_a3Bi"
+        ],
+        "details": []
+      },
+      {
+        "id": "ai_use_recorded",
+        "title": "AI-use answer recorded",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "Recorded answer: generative AI was not used.",
+        "authority_keys": [],
+        "details": []
+      },
+      {
+        "id": "ai_output_verified",
+        "title": "AI output reviewed and corrected",
+        "status": "NOT APPLICABLE",
+        "blocking": false,
+        "reason": "Generative AI was not used.",
+        "authority_keys": [],
+        "details": []
+      },
+      {
+        "id": "protected_info_check",
+        "title": "Protected information question answered",
+        "status": "NOT APPLICABLE",
+        "blocking": false,
+        "reason": "Generative AI was not used.",
+        "authority_keys": [],
+        "details": []
+      },
+      {
+        "id": "ai_disclosure_decision",
+        "title": "AI-use disclosure decision recorded",
+        "status": "NOT APPLICABLE",
+        "blocking": false,
+        "reason": "Generative AI was not used.",
+        "authority_keys": [],
+        "details": []
+      },
+      {
+        "id": "judge_order_checked",
+        "title": "Judge and court AI orders checked",
+        "status": "PASS",
+        "blocking": false,
+        "reason": "1 entry found for judge 'fict-quillon' in court 'fict-alder-ridge', checked within 30 days (most recent 6 days before 2027-01-12). No requirement was known when last checked. That is a record of a search, not a statement that no order exists.",
+        "authority_keys": [],
+        "details": []
+      },
+      {
+        "id": "judge_order_complied",
+        "title": "Judge order requirement met",
+        "status": "NOT APPLICABLE",
+        "blocking": false,
+        "reason": "No requirement is on file for this judge or court.",
+        "authority_keys": [],
+        "details": []
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "key": "bpc_6068_1_a3Bi",
+      "section": "Bus. & Prof. Code § 6068.1(a)(3)(B)(i)",
+      "paraphrase": "An attorney using generative AI must take reasonable steps to verify its output, including all case and statutory citations.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "ccp_128_7_b2A",
+      "section": "Code Civ. Proc. § 128.7(b)(2)(A)",
+      "paraphrase": "A brief, pleading, motion or other paper filed in any court must not contain any citation that the responsible attorney has not personally verified. This covers any citation, not only cases and statutes.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "sb574_enactment",
+      "section": "Stats. 2026, ch. 858 (SB 574)",
+      "paraphrase": "Approved Sept. 30, 2026. No urgency clause. Operative Jan. 1, 2027. Adds Bus. & Prof. Code § 6068.1, amends Code Civ. Proc. § 128.7, adds Code Civ. Proc. §§ 180 and 1282.1, and amends Bus. & Prof. Code § 6173.",
+      "verified_on": "2026-11-25"
+    }
+  ],
+  "signer": {
+    "name": "Odalys Verhoeven (fictional attorney)",
+    "statement": "I am the attorney responsible for this filing. I personally verified each citation listed in this record, in the way stated next to it. I reviewed the generative AI output used in preparing this document, if any, and corrected what needed correcting. The answers in this record are mine."
+  },
+  "signed_at": "2027-01-12T17:30:00+00:00",
+  "record_sha256": "982f4762d1ad97c8e671022016d2428c0fae809353f9cbd80e7a6ba5e8cca7d7"
+}

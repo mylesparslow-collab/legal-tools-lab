@@ -1,0 +1,26 @@
+rule_type,rule,Brackenmoor Regional Water Agency,Luminqa Data Systems,Ostervane Industrial Holdings,Pellwick Bakery Supply,Quillfeather Mutual Indemnity
+block_billing,Block billing prohibited,yes (over 0.5 h),yes (any entry),yes (over 1 h),,yes (any entry)
+minimum_increment,Minimum time increment,yes (0.1 h),yes (0.1 h),yes (0.1 h),yes (0.1 h),yes (0.1 h)
+rounding_pattern,Rounding-up pattern,,,,,yes
+daily_hour_cap,Daily hour cap per timekeeper,,,yes (12 h a day),,yes (10 h a day)
+staffing_matter_limit,Staffing limit per matter,,,,,yes (max 3)
+staffing_event_limit,Staffing limit per event,,,yes (max 2 at hearing/deposition/mediation),,yes (max 1 at deposition/hearing/mediation)
+unapproved_timekeeper,Unapproved timekeeper,yes,,,,yes
+rate_above_card,Rate above approved rate card,yes,yes,yes,yes,yes
+rate_increase_notice,Rate increase without notice,,,yes (60 days notice),,yes (30 days notice)
+non_billable_task,Non-billable task categories,yes (clerical),,"yes (clerical, invoice prep)",,"yes (clerical, training, conflicts, invoice prep)"
+internal_conference_limit,Internal conference limit,,yes (0.5 h an entry),,,yes (0.3 h an entry)
+research_approval,Research needs approval above a limit,,,yes (over 5 h),,yes (over 3 h)
+travel_time,Travel time,yes (approval needed),,,,yes (50% of rate)
+expense_overhead,Overhead expenses not reimbursable,,yes,yes,,yes
+expense_receipt_threshold,Receipt threshold,yes ($10.00 or more),,,"yes ($75.00, over)",yes ($25.00 or more)
+expense_per_diem,Per-diem caps,"yes (meal $45.00, lodging $160.00)",,,,"yes (meal $50.00, lodging $175.00)"
+expense_markup,Expense mark-up prohibited,,,yes,,yes
+vague_description,Vague descriptions,,yes,yes,,yes
+required_codes,Required task and activity codes,yes (task),,"yes (task, activity)",,"yes (task, activity, expense)"
+late_time,Late time,yes (over 90 days),yes (over 45 days),,"proposed, not enforced (over 30 days)",yes (over 60 days)
+budget_cap,Matter budget or not-to-exceed cap,yes,,,,
+phase_cap,Phase budget cap,yes,,,,
+duplicate_entries,Duplicate entries,yes,,yes,yes,yes
+ai_disclosure_required,AI-assisted work must be disclosed on the invoice,,yes (marker [AI-assisted]),,,
+ai_nonpayable_task,Client will not pay for certain AI-assisted tasks,,yes,,,

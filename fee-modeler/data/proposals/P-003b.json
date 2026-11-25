@@ -1,0 +1,23 @@
+{
+  "proposal_id": "P-003b",
+  "title": "Internal investigation, comps closed in the last three years only",
+  "matter_type": "internal_investigation",
+  "attributes": {},
+  "selection_rules": {
+    "closed_within_years": 3,
+    "min_comps": 8
+  },
+  "ai_assumptions": {},
+  "scenarios": [
+    {
+      "type": "fixed",
+      "fee": "100000"
+    },
+    {
+      "type": "capped",
+      "cap": "130000"
+    }
+  ],
+  "as_of": "2026-01-01",
+  "target_probability": "0.80"
+}

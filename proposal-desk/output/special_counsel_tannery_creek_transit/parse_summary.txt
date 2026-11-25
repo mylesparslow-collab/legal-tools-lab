@@ -1,0 +1,70 @@
+Agency: Tannery Creek Transit Authority (transit)
+Title: Special Counsel - Eastline Extension Capital Project   RFP number: TCTA-26-031   Practice: capital_projects
+
+Deadlines:
+  RFP issued                   2026-11-02 
+      line 36: Solicitation issued November 2, 2026
+  Pre-proposal conference      2026-11-12 10:00
+      line 37: Pre-proposal conference (optional) November 12, 2026, 10:00 a.m.
+  Questions due                2026-12-11 17:00  [changed by Addendum 1; was 2026-12-08 17:00]
+      line 38: Requests for clarification due December 8, 2026, 5:00 p.m.
+  Submission due               2027-01-08 15:00
+      line 39: Proposals due January 8, 2027, 3:00 p.m.
+  Interviews                   2027-01-26 
+      line 40: Oral presentations January 26-27, 2027
+  Award or board action        2027-02-18 
+      line 41: Anticipated Board action February 18, 2027
+
+Submission mechanics:
+  page_limit       25  [changed by Addendum 1; was 30]
+  page_exclusions  resumes, required forms and the Cost Proposal
+  font             11
+  margins          1.0
+  delivery         online portal
+  format           separate PDF files
+  not_accepted     Hard copies will not be accepted.
+
+Requirements (9):
+  C.2.1   Firm overview                Executive Summary and Firm Profile. Summarize the proposal and describ
+  C.2.2   Team                         Project Team. Identify the lead attorney and each team member, with ro
+  C.2.3   Experience                   Relevant Experience. Describe up to five engagements as counsel on pub
+  C.2.4   Approach                     Project Approach. Describe how the firm would advise on design-build c
+  C.2.5   References                   References. Provide three references for engagements described in C.2.
+  C.2.6   Conflicts                    Conflicts of Interest. Disclose any current or past representation of 
+  C.2.7   Diversity and local presence Small and Local Business Participation. Describe the firm's local pres
+  C.2.8   Rates and fees               Cost Proposal. Submit hourly rates and a not-to-exceed budget for the 
+  C.2.9   Transition plan              Staffing Continuity and Transition. Describe how the firm will keep th
+
+Forms and certifications (7):
+  Attachment 1   Proposal Signature Page
+  Attachment 2   Non-Collusion Declaration
+  Attachment 3   Conflict of Interest Disclosure
+  Attachment 4   Campaign Contribution Disclosure
+  Attachment 5   Small and Local Business Participation Form
+  Attachment 6   Insurance Certification
+  Attachment 7   Addendum Acknowledgment
+
+Evaluation criteria (points, total 100):
+  30   Relevant experience on capital projects
+  25   Project team
+  20   Project approach
+  15   Cost
+  10   Small and local business participation
+
+Minimum qualifications (3):
+  [years_admitted] The proposed lead attorney shall have not less than twelve (12) years of admission to the 
+  [not_checkable] The proposed lead attorney shall have served as lead counsel on at least one public transi
+  [not_checkable] The firm shall have an office in the Authority's service area or commit to attending proje
+
+Insurance statements (4):
+  Professional liability: $5,000,000 per claim.
+  Commercial general liability: $2,000,000 per occurrence.
+  Cyber liability: $1,000,000 per claim.
+  Automobile liability: $1,000,000 combined single limit.
+
+Addendum 1 (issued 2026-11-20): 3 change(s) applied, 0 item(s) to read
+  questions_due: 2026-12-08 -> 2026-12-11
+  page_limit: 30 -> 25
+  form_added: None -> Addendum Acknowledgment
+
+Items marked check: 0

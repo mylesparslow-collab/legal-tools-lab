@@ -1,0 +1,30 @@
+{
+ "source": "synthetic files in data/synthetic",
+ "mode": "full",
+ "people": 120,
+ "matters": 250,
+ "matters_removed": 0,
+ "documents_removed_with_matters": 0,
+ "team_rows": 1009,
+ "time_entries": 6610,
+ "documents_added": 1500,
+ "documents_updated": 0,
+ "documents_unchanged": 0,
+ "documents_deleted": 0,
+ "documents_rejected": [],
+ "permission_warnings": [],
+ "walls": 3,
+ "grants": 62,
+ "cursor": "2026-06-28T00:00:00",
+ "index": {
+  "documents": 1500,
+  "matters": 250,
+  "people": 120,
+  "terms": 992,
+  "postings": 149360,
+  "near_duplicate_pairs": 370,
+  "version_families": 128,
+  "matters_hidden_from_everyone": 0,
+  "fts5_available_but_unused": true
+ }
+}

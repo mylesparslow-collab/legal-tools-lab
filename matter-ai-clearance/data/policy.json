@@ -1,0 +1,1018 @@
+{
+ "description": "Firm policy rules for matter clearance. Every rule here is a configurable firm policy default, not a statement of law. The engine reads only this file. Fictional demo data.",
+ "version": "2026.11-demo",
+ "decision_precedence": [
+  "NOT_ALLOWED",
+  "HOLD_FOR_REVIEW",
+  "ALLOWED_WITH_CONDITIONS",
+  "ALLOWED"
+ ],
+ "data_classes": [
+  {
+   "id": "public",
+   "label": "public information",
+   "restricted": false,
+   "in_play": "never"
+  },
+  {
+   "id": "firm_internal",
+   "label": "firm internal information",
+   "restricted": false,
+   "in_play": "never"
+  },
+  {
+   "id": "client_confidential",
+   "label": "client confidential information",
+   "restricted": false,
+   "in_play": "always"
+  },
+  {
+   "id": "phi",
+   "label": "PHI",
+   "restricted": true,
+   "in_play": {
+    "fact": "matter.data_flags.phi",
+    "unless": "no"
+   },
+   "exclude_condition": {
+    "short": "no PHI",
+    "text": "Do not put protected health information in this feature."
+   }
+  },
+  {
+   "id": "protective_order_material",
+   "label": "protective-order material",
+   "restricted": true,
+   "in_play": {
+    "fact": "matter.protective_order.present",
+    "unless": "no"
+   },
+   "exclude_condition": {
+    "short": "no protective-order material",
+    "text": "Do not put protective-order material in this feature."
+   }
+  },
+  {
+   "id": "sealed",
+   "label": "sealed material",
+   "restricted": true,
+   "in_play": {
+    "fact": "matter.data_flags.sealed",
+    "unless": "no"
+   },
+   "exclude_condition": {
+    "short": "no sealed material",
+    "text": "Do not put sealed material in this feature."
+   }
+  }
+ ],
+ "rollup": {
+  "base_class": "client_confidential",
+  "restricted_class_denied": "block_feature",
+  "restricted_class_denied_options": [
+   "block_feature",
+   "exclude_class"
+  ],
+  "hold_propagates": false,
+  "unknown_class_status": "hold_feature",
+  "note": "block_feature (default): a feature that is not approved for a restricted data class present on the matter is off for the whole matter; a hold on that class holds the feature. exclude_class (opt-in): the feature stays usable for the matter's other material with a condition to keep that class out, which depends on people keeping restricted material out by hand. hold_propagates applies only under exclude_class: true makes a hold on one data class hold the whole feature instead of excluding the class. unknown_class_status hold_feature: if intake does not say whether a restricted class is present, no feature is cleared and the feature is held, not denied, in either mode. See OQ-24."
+ },
+ "unknown_guard": {
+  "rule_id": "POL-GUARD-01",
+  "facts": {
+   "phi": [
+    "matter.data_flags.phi",
+    "feature.baa_covers_feature",
+    "feature.used_for_training",
+    "feature.connectors_enabled",
+    "feature.web_access_enabled",
+    "feature.retention_class"
+   ],
+   "protective_order_material": [
+    "matter.protective_order.present",
+    "matter.protective_order.restrictions.ai_use",
+    "matter.protective_order.restrictions.vendor_processing",
+    "matter.protective_order.restrictions.no_retention_after_matter",
+    "matter.protective_order.restrictions.attorneys_eyes_only_tier",
+    "feature.used_for_training",
+    "feature.hosting",
+    "feature.retention_class"
+   ],
+   "sealed": [
+    "matter.data_flags.sealed"
+   ]
+  }
+ },
+ "rules": [
+  {
+   "id": "POL-LANE-01",
+   "text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+   "owner_role": "Chief Information Officer",
+   "review_date": "2027-06-30",
+   "source": "tool_lane",
+   "data_classes": [
+    "*"
+   ],
+   "when": {
+    "fact": "feature.data_allowed",
+    "op": "not_contains",
+    "value_fact": "ctx.data_class"
+   },
+   "decision": "NOT_ALLOWED",
+   "banner": "feature not approved for this data class",
+   "open_question": "OQ-01"
+  },
+  {
+   "id": "POL-LANE-02",
+   "text": "Only features in production or pilot status may be used on matters.",
+   "owner_role": "Chief Information Officer",
+   "review_date": "2027-06-30",
+   "source": "tool_lane",
+   "data_classes": [
+    "*"
+   ],
+   "when": {
+    "fact": "feature.status",
+    "op": "not_in",
+    "value": [
+     "production",
+     "pilot"
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "banner": "feature not in service"
+  },
+  {
+   "id": "POL-LANE-03",
+   "text": "A feature that trains on inputs, or whose training terms are unknown, may not receive client or restricted data.",
+   "owner_role": "Chief Information Officer",
+   "review_date": "2027-06-30",
+   "source": "tool_lane",
+   "data_classes": [
+    "client_confidential",
+    "phi",
+    "protective_order_material",
+    "sealed"
+   ],
+   "when": {
+    "fact": "feature.used_for_training",
+    "op": "ne",
+    "value": "no"
+   },
+   "decision": "NOT_ALLOWED",
+   "banner": "training terms not confirmed",
+   "open_question": "OQ-02"
+  },
+  {
+   "id": "POL-PHI-01",
+   "text": "If intake does not say whether the matter involves protected health information, no feature is cleared until intake is completed.",
+   "owner_role": "Privacy Officer",
+   "review_date": "2027-06-30",
+   "source": "intake",
+   "data_classes": [
+    "phi"
+   ],
+   "when": {
+    "fact": "matter.data_flags.phi",
+    "op": "eq",
+    "value": "unknown"
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "banner": "PHI status unknown",
+   "open_question": "OQ-03"
+  },
+  {
+   "id": "POL-PHI-02",
+   "text": "Protected health information may go only into a feature that a business associate agreement is confirmed to cover. Unknown counts as not covered.",
+   "owner_role": "Privacy Officer",
+   "review_date": "2027-06-30",
+   "source": "tool_lane",
+   "data_classes": [
+    "phi"
+   ],
+   "when": {
+    "fact": "feature.baa_covers_feature",
+    "op": "ne",
+    "value": true
+   },
+   "decision": "NOT_ALLOWED",
+   "banner": "no confirmed business associate agreement",
+   "open_question": "OQ-04"
+  },
+  {
+   "id": "POL-PHI-03",
+   "text": "Protected health information may not go into a feature with connectors or web access switched on, or where that setting is unknown.",
+   "owner_role": "Chief Information Officer",
+   "review_date": "2027-06-30",
+   "source": "tool_lane",
+   "data_classes": [
+    "phi"
+   ],
+   "when": {
+    "any": [
+     {
+      "fact": "feature.connectors_enabled",
+      "op": "ne",
+      "value": false
+     },
+     {
+      "fact": "feature.web_access_enabled",
+      "op": "ne",
+      "value": false
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "banner": "connectors or web access on",
+   "open_question": "OQ-05"
+  },
+  {
+   "id": "POL-PHI-04",
+   "text": "Protected health information may not go into a feature whose retention is unknown or left at the vendor default.",
+   "owner_role": "Privacy Officer",
+   "review_date": "2027-06-30",
+   "source": "tool_lane",
+   "data_classes": [
+    "phi"
+   ],
+   "when": {
+    "fact": "feature.retention_class",
+    "op": "in",
+    "value": [
+     "unknown",
+     "vendor_default"
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "banner": "retention not confirmed",
+   "open_question": "OQ-06"
+  },
+  {
+   "id": "POL-PHI-05",
+   "text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+   "owner_role": "Privacy Officer",
+   "review_date": "2027-06-30",
+   "source": "firm_policy",
+   "data_classes": [
+    "phi"
+   ],
+   "when": {
+    "fact": "matter.data_flags.phi",
+    "op": "eq",
+    "value": "yes"
+   },
+   "decision": "ALLOWED_WITH_CONDITIONS",
+   "condition": {
+    "short": "PHI use logged",
+    "text": "Record each use with protected health information in the matter log."
+   },
+   "open_question": "OQ-07"
+  },
+  {
+   "id": "POL-PO-01",
+   "text": "If intake does not say whether a protective order applies, no feature is cleared until intake is completed.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "intake",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "fact": "matter.protective_order.present",
+    "op": "eq",
+    "value": "unknown"
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "banner": "protective order status unknown"
+  },
+  {
+   "id": "POL-PO-02",
+   "text": "Where intake records that the protective order bars AI use, protective-order material may not go into any feature. Client consent does not change this.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "protective_order",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "fact": "matter.protective_order.restrictions.ai_use",
+    "op": "eq",
+    "value": "prohibited"
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "po_field": "ai_use"
+   },
+   "banner": "protective order bars AI use",
+   "open_question": "OQ-08"
+  },
+  {
+   "id": "POL-PO-03",
+   "text": "Where the protective order does not address AI, or intake has not recorded what it says, protective-order material is held for an attorney decision.",
+   "owner_role": "General Counsel",
+   "review_date": "2026-09-30",
+   "source": "protective_order",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "fact": "matter.protective_order.restrictions.ai_use",
+    "op": "in",
+    "value": [
+     "not_addressed",
+     "unknown"
+    ]
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "evidence": {
+    "po_field": "ai_use"
+   },
+   "banner": "protective order silent or not yet read for AI terms",
+   "open_question": "OQ-09"
+  },
+  {
+   "id": "POL-PO-04",
+   "text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "protective_order",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "all": [
+     {
+      "fact": "matter.protective_order.restrictions.vendor_processing",
+      "op": "eq",
+      "value": "barred"
+     },
+     {
+      "fact": "feature.hosting",
+      "op": "ne",
+      "value": "local"
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "po_field": "vendor_processing"
+   },
+   "banner": "order bars vendor processing",
+   "open_question": "OQ-10"
+  },
+  {
+   "id": "POL-PO-05",
+   "text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "protective_order",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "all": [
+     {
+      "fact": "matter.protective_order.restrictions.vendor_processing",
+      "op": "eq",
+      "value": "permitted_with_undertaking"
+     },
+     {
+      "fact": "feature.hosting",
+      "op": "ne",
+      "value": "local"
+     },
+     {
+      "fact": "matter.protective_order.undertakings_signed_tool_ids",
+      "op": "not_contains",
+      "value_fact": "feature.tool_id"
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "po_field": "vendor_processing"
+   },
+   "banner": "vendor undertaking not on file",
+   "open_question": "OQ-10"
+  },
+  {
+   "id": "POL-PO-06",
+   "text": "Where intake has not recorded the order's vendor terms, vendor-hosted features are held.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "protective_order",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "all": [
+     {
+      "fact": "matter.protective_order.restrictions.vendor_processing",
+      "op": "in",
+      "value": [
+       "unknown",
+       "not_addressed"
+      ]
+     },
+     {
+      "fact": "feature.hosting",
+      "op": "ne",
+      "value": "local"
+     }
+    ]
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "evidence": {
+    "po_field": "vendor_processing"
+   },
+   "banner": "order's vendor terms not recorded",
+   "open_question": "OQ-10"
+  },
+  {
+   "id": "POL-PO-07",
+   "text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "protective_order",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "all": [
+     {
+      "fact": "matter.protective_order.restrictions.no_retention_after_matter",
+      "op": "ne",
+      "value": "no"
+     },
+     {
+      "fact": "feature.retention_class",
+      "op": "not_in",
+      "value": [
+       "zero",
+       "matter_controlled"
+      ]
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "po_field": "no_retention_after_matter"
+   },
+   "banner": "retention does not fit the order",
+   "open_question": "OQ-11"
+  },
+  {
+   "id": "POL-PO-08",
+   "text": "Where the order has an attorneys-eyes-only tier, or that is unknown, protective-order material is held for an attorney decision.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "protective_order",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "fact": "matter.protective_order.restrictions.attorneys_eyes_only_tier",
+    "op": "ne",
+    "value": "no"
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "evidence": {
+    "po_field": "attorneys_eyes_only_tier"
+   },
+   "banner": "attorneys-eyes-only tier",
+   "open_question": "OQ-12"
+  },
+  {
+   "id": "POL-PO-09",
+   "text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "protective_order",
+   "data_classes": [
+    "protective_order_material"
+   ],
+   "when": {
+    "fact": "matter.protective_order.restrictions.ai_use",
+    "op": "eq",
+    "value": "permitted_with_conditions"
+   },
+   "decision": "ALLOWED_WITH_CONDITIONS",
+   "condition": {
+    "short": "order conditions confirmed",
+    "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used."
+   },
+   "evidence": {
+    "po_field": "ai_use"
+   },
+   "open_question": "OQ-08"
+  },
+  {
+   "id": "POL-SEAL-01",
+   "text": "If intake does not say whether the matter has sealed material, no feature is cleared until intake is completed.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "intake",
+   "data_classes": [
+    "sealed"
+   ],
+   "when": {
+    "fact": "matter.data_flags.sealed",
+    "op": "eq",
+    "value": "unknown"
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "banner": "sealed status unknown"
+  },
+  {
+   "id": "POL-SEAL-02",
+   "text": "Sealed material may not go into any feature.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "firm_policy",
+   "data_classes": [
+    "sealed"
+   ],
+   "when": {
+    "fact": "matter.data_flags.sealed",
+    "op": "eq",
+    "value": "yes"
+   },
+   "decision": "NOT_ALLOWED",
+   "banner": "sealed material",
+   "open_question": "OQ-13"
+  },
+  {
+   "id": "POL-CT-01",
+   "text": "If the client's terms are not on file, no feature is cleared until they are received and scanned.",
+   "owner_role": "Knowledge Management",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "fact": "terms.status",
+    "op": "eq",
+    "value": "not_on_file"
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "banner": "client terms not on file",
+   "open_question": "OQ-14"
+  },
+  {
+   "id": "POL-CT-02",
+   "text": "Where the terms prohibit AI, no feature may be used on the matter.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "fact": "terms.classes",
+    "op": "contains",
+    "value": "ai_prohibited"
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "clause_class": "ai_prohibited"
+   },
+   "banner": "terms prohibit AI",
+   "open_question": "OQ-15"
+  },
+  {
+   "id": "POL-CT-03",
+   "text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.classes",
+      "op": "contains",
+      "value": "consent_required"
+     },
+     {
+      "fact": "consent.covers_feature",
+      "op": "ne",
+      "value": true
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "clause_class": "consent_required"
+   },
+   "banner": "consent required and not on file",
+   "open_question": "OQ-16"
+  },
+  {
+   "id": "POL-CT-04",
+   "text": "Where consent is on file, use stays within the scope of that consent.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.classes",
+      "op": "contains",
+      "value": "consent_required"
+     },
+     {
+      "fact": "consent.covers_feature",
+      "op": "eq",
+      "value": true
+     }
+    ]
+   },
+   "decision": "ALLOWED_WITH_CONDITIONS",
+   "condition": {
+    "short": "consent on file",
+    "text": "Stay within the consent on file from {terms.party_name}: {consent.reference}."
+   },
+   "evidence": {
+    "clause_class": "consent_required"
+   },
+   "open_question": "OQ-16"
+  },
+  {
+   "id": "POL-CT-05",
+   "text": "Where the terms require disclosure or notice, notice is given before first use and kept on the matter.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "fact": "terms.classes",
+    "op": "contains",
+    "value": "disclosure_required"
+   },
+   "decision": "ALLOWED_WITH_CONDITIONS",
+   "condition": {
+    "short": "notice to {terms.party_short}",
+    "text": "Give notice to {terms.party_name} before first use. Intake shows notice given: {notice.given}."
+   },
+   "evidence": {
+    "clause_class": "disclosure_required"
+   },
+   "open_question": "OQ-17"
+  },
+  {
+   "id": "POL-CT-06",
+   "text": "Where the terms bar training on client data, a feature may be used only if it is confirmed not to train on inputs.",
+   "owner_role": "Chief Information Officer",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.classes",
+      "op": "contains",
+      "value": "no_training"
+     },
+     {
+      "fact": "feature.used_for_training",
+      "op": "ne",
+      "value": "no"
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "clause_class": "no_training"
+   },
+   "banner": "terms bar training on client data",
+   "open_question": "OQ-02"
+  },
+  {
+   "id": "POL-CT-07",
+   "text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+   "owner_role": "Knowledge Management",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.classes",
+      "op": "contains",
+      "value": "approved_tools_only"
+     },
+     {
+      "fact": "terms.approved_tools",
+      "op": "is_unknown"
+     }
+    ]
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "evidence": {
+    "clause_class": "approved_tools_only"
+   },
+   "banner": "approved tool list not on file",
+   "open_question": "OQ-18"
+  },
+  {
+   "id": "POL-CT-08",
+   "text": "Where the terms limit use to approved tools, a tool that is not on the recorded list may not be used.",
+   "owner_role": "Knowledge Management",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.classes",
+      "op": "contains",
+      "value": "approved_tools_only"
+     },
+     {
+      "fact": "terms.approved_tools",
+      "op": "is_list"
+     },
+     {
+      "fact": "terms.approved_tools",
+      "op": "not_contains",
+      "value_fact": "feature.tool_id"
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "clause_class": "approved_tools_only"
+   },
+   "banner": "tool not on the approved list",
+   "open_question": "OQ-18"
+  },
+  {
+   "id": "POL-CT-09",
+   "text": "Where the terms set data residency or retention limits and an analyst has not recorded the limits, features are held.",
+   "owner_role": "Knowledge Management",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.classes",
+      "op": "contains",
+      "value": "data_residency_retention"
+     },
+     {
+      "fact": "terms.findings.recorded",
+      "op": "ne",
+      "value": true
+     }
+    ]
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "evidence": {
+    "clause_class": "data_residency_retention"
+   },
+   "banner": "residency or retention terms not yet recorded",
+   "open_question": "OQ-19"
+  },
+  {
+   "id": "POL-CT-10",
+   "text": "Where an analyst has recorded a retention limit, a feature whose retention is longer, or unknown, may not be used.",
+   "owner_role": "Chief Information Officer",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.classes",
+      "op": "contains",
+      "value": "data_residency_retention"
+     },
+     {
+      "fact": "terms.findings.retention_max_days",
+      "op": "is_number"
+     },
+     {
+      "any": [
+       {
+        "fact": "feature.retention_days",
+        "op": "is_unknown"
+       },
+       {
+        "fact": "feature.retention_days",
+        "op": "gt",
+        "value_fact": "terms.findings.retention_max_days"
+       }
+      ]
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "clause_class": "data_residency_retention"
+   },
+   "banner": "retention longer than the terms allow",
+   "open_question": "OQ-19"
+  },
+  {
+   "id": "POL-CT-11",
+   "text": "Where an analyst has recorded allowed regions, a feature hosted elsewhere, or in an unknown region, may not be used.",
+   "owner_role": "Chief Information Officer",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.classes",
+      "op": "contains",
+      "value": "data_residency_retention"
+     },
+     {
+      "fact": "terms.findings.allowed_regions",
+      "op": "is_list"
+     },
+     {
+      "fact": "terms.findings.allowed_regions",
+      "op": "not_contains",
+      "value_fact": "feature.data_region"
+     }
+    ]
+   },
+   "decision": "NOT_ALLOWED",
+   "evidence": {
+    "clause_class": "data_residency_retention"
+   },
+   "banner": "hosting region outside the terms",
+   "open_question": "OQ-19"
+  },
+  {
+   "id": "POL-CT-12",
+   "text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+   "owner_role": "Billing Partner Committee",
+   "review_date": "2026-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "fact": "terms.classes",
+    "op": "contains",
+    "value": "billing_restriction"
+   },
+   "decision": "ALLOWED_WITH_CONDITIONS",
+   "condition": {
+    "short": "billing review",
+    "text": "Billing partner checks AI-assisted time and charges against the terms of {terms.party_name} and discloses on the invoice where the terms say so."
+   },
+   "evidence": {
+    "clause_class": "billing_restriction"
+   },
+   "open_question": "OQ-20"
+  },
+  {
+   "id": "POL-CT-13",
+   "text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "fact": "terms.classes",
+    "op": "contains",
+    "value": "human_review_required"
+   },
+   "decision": "ALLOWED_WITH_CONDITIONS",
+   "condition": {
+    "short": "attorney review",
+    "text": "An attorney reviews all AI output before it is used or sent."
+   },
+   "evidence": {
+    "clause_class": "human_review_required"
+   },
+   "open_question": "OQ-21"
+  },
+  {
+   "id": "POL-CT-14",
+   "text": "Where one party's documents conflict on AI use, features are held until an analyst and the responsible attorney resolve the conflict. The tool does not pick a side.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "fact": "terms.has_conflict",
+    "op": "eq",
+    "value": true
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "evidence": {
+    "conflicts": true
+   },
+   "banner": "terms conflict: needs analyst review",
+   "open_question": "OQ-22"
+  },
+  {
+   "id": "POL-CT-15",
+   "text": "Where a clause is ambiguous, features are held until an analyst reviews it.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "fact": "terms.has_review_hits",
+    "op": "eq",
+    "value": true
+   },
+   "decision": "HOLD_FOR_REVIEW",
+   "evidence": {
+    "review_hits": true
+   },
+   "banner": "ambiguous terms: needs analyst review",
+   "open_question": "OQ-22"
+  },
+  {
+   "id": "POL-CT-16",
+   "text": "Where the client's terms on file say nothing about AI, the firm default applies: features may be used within their lanes.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "client_terms",
+   "data_classes": [
+    "*"
+   ],
+   "per": "terms_party",
+   "when": {
+    "all": [
+     {
+      "fact": "terms.status",
+      "op": "eq",
+      "value": "silent"
+     },
+     {
+      "fact": "terms.role",
+      "op": "eq",
+      "value": "client"
+     }
+    ]
+   },
+   "decision": "ALLOWED",
+   "open_question": "OQ-23"
+  },
+  {
+   "id": "POL-GUARD-01",
+   "text": "Unknown never clears restricted data. If any listed fact for a restricted data class is unknown, the result for that class cannot be better than hold for review.",
+   "owner_role": "General Counsel",
+   "review_date": "2027-06-30",
+   "source": "firm_policy",
+   "data_classes": [
+    "phi",
+    "protective_order_material",
+    "sealed"
+   ],
+   "kind": "unknown_guard",
+   "decision": "HOLD_FOR_REVIEW",
+   "banner": "required fact unknown",
+   "open_question": "OQ-03"
+  }
+ ]
+}

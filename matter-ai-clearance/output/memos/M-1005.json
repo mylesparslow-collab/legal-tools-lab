@@ -1,0 +1,2028 @@
+{
+ "matter": {
+  "id": "M-1005",
+  "name": "Ostrava Row: slip and fall defense (insured)",
+  "client_id": "ostrava",
+  "matter_type": "insurance defense litigation",
+  "responsible_attorney": "A. Vantongeren (fictional)",
+  "intake_date": "2026-10-20",
+  "data_flags": {
+   "phi": "no",
+   "sealed": "no"
+  },
+  "protective_order": {
+   "present": "no"
+  },
+  "intake_note": null
+ },
+ "client_name": "Ostrava Row Property Management (fictional)",
+ "as_of": "2026-11-25",
+ "policy_version": "2026.11-demo",
+ "pattern_version": "1.4",
+ "data_classes_in_play": [
+  "client_confidential"
+ ],
+ "flags": {
+  "needs_analyst_review": false,
+  "unknown_inputs": []
+ },
+ "terms": [
+  {
+   "party_id": "ostrava",
+   "party_name": "Ostrava Row Property Management (fictional)",
+   "role": "client",
+   "status": "clear",
+   "documents": [
+    "ostrava-el-2026"
+   ],
+   "classes": [
+    "billing_restriction",
+    "ai_permitted"
+   ],
+   "conflicts": [],
+   "review_spans": [],
+   "dismissed_by_analyst": [],
+   "guarded": [],
+   "consent_on_file": [],
+   "notice_on_file": []
+  },
+  {
+   "party_id": "marlowetind",
+   "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+   "role": "insurer",
+   "status": "clear",
+   "documents": [
+    "marlowetind-guidelines-2026"
+   ],
+   "classes": [
+    "consent_required",
+    "approved_tools_only",
+    "billing_restriction",
+    "human_review_required"
+   ],
+   "conflicts": [],
+   "review_spans": [],
+   "dismissed_by_analyst": [],
+   "guarded": [],
+   "consent_on_file": [],
+   "notice_on_file": []
+  }
+ ],
+ "decisions": [
+  {
+   "feature_id": "assistant-a.chat-web",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "Chat with web search",
+   "short_name": "Assistant A web chat",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-LANE-01"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "feature not approved for this data class"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-LANE-01"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "assistant-a.file-analysis",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "File upload and analysis",
+   "short_name": "Assistant A files",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file"
+   ],
+   "rule_ids": [
+    "POL-CT-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "assistant-a.dms-connector",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "Connector to the document management system",
+   "short_name": "Assistant A connector",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file"
+   ],
+   "rule_ids": [
+    "POL-CT-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.doc-summary",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Summary and drafting in the word processor",
+   "short_name": "Suite B documents",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file"
+   ],
+   "rule_ids": [
+    "POL-CT-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.email",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Email drafting with mailbox access",
+   "short_name": "Suite B email",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file"
+   ],
+   "rule_ids": [
+    "POL-CT-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.meeting-notes",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Meeting transcription and notes",
+   "short_name": "Suite B meeting notes",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file"
+   ],
+   "rule_ids": [
+    "POL-CT-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "research-c.qa",
+   "tool_id": "research-c",
+   "tool_name": "Research C",
+   "feature": "Research questions over the vendor's library",
+   "short_name": "Research C questions",
+   "category": "legal research AI",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file"
+   ],
+   "rule_ids": [
+    "POL-CT-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "research-c.brief-upload",
+   "tool_id": "research-c",
+   "tool_name": "Research C",
+   "feature": "Brief upload and analysis",
+   "short_name": "Research C brief upload",
+   "category": "legal research AI",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-LANE-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "training terms not confirmed"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-LANE-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-03",
+     "rule_text": "A feature that trains on inputs, or whose training terms are unknown, may not receive client or restricted data.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "training terms not confirmed",
+     "open_question": "OQ-02",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "review-d.review",
+   "tool_id": "review-d",
+   "tool_name": "Review D",
+   "feature": "Review coding and summaries",
+   "short_name": "Review D",
+   "category": "document review AI",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file"
+   ],
+   "rule_ids": [
+    "POL-CT-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "transcribe-e.dictation",
+   "tool_id": "transcribe-e",
+   "tool_name": "Transcribe E",
+   "feature": "Dictation",
+   "short_name": "Transcribe E",
+   "category": "dictation and transcription",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-LANE-01",
+      "POL-LANE-02",
+      "POL-LANE-03"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "feature not approved for this data class",
+    "feature not in service",
+    "training terms not confirmed"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-LANE-01",
+    "POL-LANE-02",
+    "POL-LANE-03"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 318,
+       "end": 527,
+       "class": "consent_required",
+       "quote": "2.1 Defense counsel may not use generative AI tools to prepare coverage analyses, reports to the claims professional, or any court filing without the prior written approval of the assigned claims professional."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-02",
+     "rule_text": "Only features in production or pilot status may be used on matters.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not in service",
+     "open_question": null,
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-03",
+     "rule_text": "A feature that trains on inputs, or whose training terms are unknown, may not receive client or restricted data.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "training terms not confirmed",
+     "open_question": "OQ-02",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-07",
+     "rule_text": "Where the terms limit use to approved tools and the approved list is not on file, features are held.",
+     "source": "client_terms",
+     "owner_role": "Knowledge Management",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "HOLD_FOR_REVIEW",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 777,
+       "end": 902,
+       "class": "approved_tools_only",
+       "quote": "2.4 Claim files, medical records and claimant personal information must never be uploaded to a publicly available AI service."
+      }
+     ],
+     "banner": "approved tool list not on file",
+     "open_question": "OQ-18",
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "ostrava",
+     "party_name": "Ostrava Row Property Management (fictional)",
+     "evidence": [
+      {
+       "document_id": "ostrava-el-2026",
+       "start": 528,
+       "end": 602,
+       "class": "billing_restriction",
+       "quote": "The Firm will not charge the Client for the cost of AI tool subscriptions."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Ostrava Row Property Management (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 529,
+       "end": 696,
+       "class": "billing_restriction",
+       "quote": "2.2 Time billed for tasks performed with the assistance of AI must reflect the actual time spent, and the Company will not pay for time that AI tools made unnecessary."
+      },
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 698,
+       "end": 775,
+       "class": "billing_restriction",
+       "quote": "2.3 AI tool subscription or usage fees are overhead and are not reimbursable."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Marlowe-Tind Mutual Indemnity (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential"
+     ],
+     "party_id": "marlowetind",
+     "party_name": "Marlowe-Tind Mutual Indemnity (fictional)",
+     "evidence": [
+      {
+       "document_id": "marlowetind-guidelines-2026",
+       "start": 904,
+       "end": 1037,
+       "class": "human_review_required",
+       "quote": "2.5 Counsel remains responsible for the accuracy of every citation and must verify all AI-generated research against primary sources."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    }
+   ]
+  }
+ ],
+ "counts": {
+  "ALLOWED": 0,
+  "ALLOWED_WITH_CONDITIONS": 0,
+  "HOLD_FOR_REVIEW": 0,
+  "NOT_ALLOWED": 10
+ },
+ "rules_past_review": [
+  {
+   "rule_id": "POL-PO-03",
+   "review_date": "2026-09-30",
+   "owner_role": "General Counsel",
+   "used_on_this_matter": false
+  },
+  {
+   "rule_id": "POL-CT-12",
+   "review_date": "2026-06-30",
+   "owner_role": "Billing Partner Committee",
+   "used_on_this_matter": true
+  }
+ ],
+ "open_questions": [
+  "OQ-01",
+  "OQ-02",
+  "OQ-16",
+  "OQ-18",
+  "OQ-20",
+  "OQ-21"
+ ],
+ "disclaimer": "Personal portfolio demo with fictional data. Every rule shown is a configurable firm policy default, not a statement of law. Not legal advice. Not reviewed by an attorney.",
+ "banner": "AI: not allowed on this matter (consent required and not on file)"
+}

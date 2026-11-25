@@ -1,0 +1,233 @@
+{
+ "about": "Generator facts for the demo and tests. Not read by the search code.",
+ "seed": 20260630,
+ "as_of": "2026-06-30",
+ "counts": {
+  "documents": 1500,
+  "matters": 250,
+  "people": 120,
+  "practices": 10,
+  "offices": 8,
+  "time_entries": 6610,
+  "restricted_matters": 15,
+  "walls": 3,
+  "draft_documents": 257,
+  "planted_near_duplicates": 30
+ },
+ "walls": {
+  "W1": {
+   "matters": [
+    "M0211"
+   ],
+   "excluded": [
+    "U002",
+    "U004",
+    "U005",
+    "U011"
+   ],
+   "codenames": [
+    "Halcyon"
+   ]
+  },
+  "W2": {
+   "matters": [
+    "M0242",
+    "M0072"
+   ],
+   "excluded": [
+    "U016",
+    "U021",
+    "U023",
+    "U024"
+   ],
+   "codenames": [
+    "Cinderford",
+    "Tamarisk"
+   ]
+  },
+  "W3": {
+   "matters": [
+    "M0107"
+   ],
+   "excluded": [
+    "U074",
+    "U081",
+    "U084"
+   ],
+   "codenames": [
+    "Orrery"
+   ]
+  }
+ },
+ "restricted_matters": [
+  "M0025",
+  "M0063",
+  "M0068",
+  "M0072",
+  "M0121",
+  "M0122",
+  "M0123",
+  "M0136",
+  "M0144",
+  "M0149",
+  "M0162",
+  "M0170",
+  "M0207",
+  "M0214",
+  "M0241"
+ ],
+ "demo_users": [
+  {
+   "person_id": "U102",
+   "label": "New associate, no special access",
+   "note": "Sees every firm-wide matter. Not on any restricted team. Not behind a wall.",
+   "name": "Mirela Halvorsby"
+  },
+  {
+   "person_id": "U002",
+   "label": "Excluded by wall W1",
+   "note": "Walled from Project Halcyon. Searches run as this user must show no trace of that matter.",
+   "name": "Amara Quistrel"
+  },
+  {
+   "person_id": "U003",
+   "label": "Lead on the matter behind wall W1",
+   "note": "Leads Project Halcyon and sees its documents.",
+   "name": "Quinn Pennwarden"
+  },
+  {
+   "person_id": "U016",
+   "label": "Excluded by wall W2",
+   "note": "In the litigation group, which has a grant on one of the two walled matters. The wall still wins.",
+   "name": "Ugo Ostergaarde"
+  },
+  {
+   "person_id": "U020",
+   "label": "Has left the firm",
+   "note": "Not active, so every query returns nothing.",
+   "name": "Anselm Underhaye"
+  }
+ ],
+ "near_duplicates": [
+  [
+   "D01214",
+   "D00918"
+  ],
+  [
+   "D01215",
+   "D00900"
+  ],
+  [
+   "D01216",
+   "D00521"
+  ],
+  [
+   "D01217",
+   "D00169"
+  ],
+  [
+   "D01218",
+   "D01021"
+  ],
+  [
+   "D01219",
+   "D00499"
+  ],
+  [
+   "D01220",
+   "D00056"
+  ],
+  [
+   "D01221",
+   "D00727"
+  ],
+  [
+   "D01222",
+   "D00104"
+  ],
+  [
+   "D01223",
+   "D00511"
+  ],
+  [
+   "D01224",
+   "D00733"
+  ],
+  [
+   "D01225",
+   "D00154"
+  ],
+  [
+   "D01226",
+   "D00336"
+  ],
+  [
+   "D01227",
+   "D00188"
+  ],
+  [
+   "D01228",
+   "D01124"
+  ],
+  [
+   "D01229",
+   "D00935"
+  ],
+  [
+   "D01230",
+   "D00797"
+  ],
+  [
+   "D01231",
+   "D00379"
+  ],
+  [
+   "D01232",
+   "D00034"
+  ],
+  [
+   "D01233",
+   "D00715"
+  ],
+  [
+   "D01234",
+   "D01184"
+  ],
+  [
+   "D01235",
+   "D00710"
+  ],
+  [
+   "D01236",
+   "D01112"
+  ],
+  [
+   "D01237",
+   "D00693"
+  ],
+  [
+   "D01238",
+   "D00347"
+  ],
+  [
+   "D01239",
+   "D00361"
+  ],
+  [
+   "D01240",
+   "D00730"
+  ],
+  [
+   "D01241",
+   "D00067"
+  ],
+  [
+   "D01242",
+   "D00076"
+  ],
+  [
+   "D01243",
+   "D00451"
+  ]
+ ]
+}

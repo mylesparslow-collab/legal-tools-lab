@@ -1,0 +1,67 @@
+population,practice,measure,numerator,denominator,people,rate,suppressed
+lawyers,Banking and finance,weekly_active_latest,9,22,22,0.4091,
+lawyers,Banking and finance,weekly_active_last_4_weeks,42,92,24,0.4565,
+lawyers,Banking and finance,regular_use,8,24,24,0.3333,
+lawyers,Banking and finance,activated,15,25,25,0.6000,
+lawyers,Banking and finance,weekly_active_last_4_weeks:Assistant A,21,57,15,0.3684,
+lawyers,Banking and finance,weekly_active_last_4_weeks:Assistant B,25,92,24,0.2717,
+lawyers,Competition,weekly_active_latest,,,,,small_group
+lawyers,Competition,weekly_active_last_4_weeks,,,,,small_group
+lawyers,Competition,regular_use,,,,,small_group
+lawyers,Competition,activated,,,,,small_group
+lawyers,Competition,weekly_active_last_4_weeks:Assistant A,,,,,small_group
+lawyers,Competition,weekly_active_last_4_weeks:Assistant B,,,,,small_group
+lawyers,Corporate,weekly_active_latest,20,36,36,0.5556,
+lawyers,Corporate,weekly_active_last_4_weeks,70,141,37,0.4965,
+lawyers,Corporate,regular_use,16,37,37,0.4324,
+lawyers,Corporate,activated,24,38,38,0.6316,
+lawyers,Corporate,weekly_active_last_4_weeks:Assistant A,49,103,27,0.4757,
+lawyers,Corporate,weekly_active_last_4_weeks:Assistant B,37,141,37,0.2624,
+lawyers,Disputes,weekly_active_latest,24,33,33,0.7273,
+lawyers,Disputes,weekly_active_last_4_weeks,90,128,33,0.7031,
+lawyers,Disputes,regular_use,22,33,33,0.6667,
+lawyers,Disputes,activated,30,36,36,0.8333,
+lawyers,Disputes,weekly_active_last_4_weeks:Assistant A,80,128,33,0.6250,
+lawyers,Disputes,weekly_active_last_4_weeks:Assistant B,46,128,33,0.3594,
+lawyers,Employment,weekly_active_latest,9,20,20,0.4500,
+lawyers,Employment,weekly_active_last_4_weeks,37,78,20,0.4744,
+lawyers,Employment,regular_use,9,20,20,0.4500,
+lawyers,Employment,activated,12,20,20,0.6000,
+lawyers,Employment,weekly_active_last_4_weeks:Assistant A,23,54,14,0.4259,
+lawyers,Employment,weekly_active_last_4_weeks:Assistant B,14,78,20,0.1795,
+lawyers,Intellectual property,weekly_active_latest,3,16,16,0.1875,
+lawyers,Intellectual property,weekly_active_last_4_weeks,15,63,16,0.2381,
+lawyers,Intellectual property,regular_use,2,16,16,0.1250,
+lawyers,Intellectual property,activated,7,16,16,0.4375,
+lawyers,Intellectual property,weekly_active_last_4_weeks:Assistant A,,,,,complementary
+lawyers,Intellectual property,weekly_active_last_4_weeks:Assistant B,8,63,16,0.1270,
+lawyers,Private client,weekly_active_latest,3,14,14,0.2143,
+lawyers,Private client,weekly_active_last_4_weeks,11,55,15,0.2000,
+lawyers,Private client,regular_use,2,15,15,0.1333,
+lawyers,Private client,activated,4,15,15,0.2667,
+lawyers,Private client,weekly_active_last_4_weeks:Assistant A,6,36,10,0.1667,
+lawyers,Private client,weekly_active_last_4_weeks:Assistant B,3,55,15,0.0545,
+lawyers,Real estate,weekly_active_latest,4,22,22,0.1818,
+lawyers,Real estate,weekly_active_last_4_weeks,16,94,25,0.1702,
+lawyers,Real estate,regular_use,3,25,25,0.1200,
+lawyers,Real estate,activated,6,25,25,0.2400,
+lawyers,Real estate,weekly_active_last_4_weeks:Assistant A,6,69,18,0.0870,
+lawyers,Real estate,weekly_active_last_4_weeks:Assistant B,12,94,25,0.1277,
+lawyers,Regulatory,weekly_active_latest,,,,,complementary
+lawyers,Regulatory,weekly_active_last_4_weeks,,,,,complementary
+lawyers,Regulatory,regular_use,,,,,complementary
+lawyers,Regulatory,activated,,,,,complementary
+lawyers,Regulatory,weekly_active_last_4_weeks:Assistant A,9,44,11,0.2045,
+lawyers,Regulatory,weekly_active_last_4_weeks:Assistant B,,,,,complementary
+lawyers,Tax,weekly_active_latest,8,14,14,0.5714,
+lawyers,Tax,weekly_active_last_4_weeks,33,59,16,0.5593,
+lawyers,Tax,regular_use,9,16,16,0.5625,
+lawyers,Tax,activated,10,16,16,0.6250,
+lawyers,Tax,weekly_active_last_4_weeks:Assistant A,20,43,12,0.4651,
+lawyers,Tax,weekly_active_last_4_weeks:Assistant B,15,59,16,0.2542,
+lawyers,All,weekly_active_latest,87,193,193,0.4508,
+lawyers,All,weekly_active_last_4_weeks,337,777,203,0.4337,
+lawyers,All,regular_use,77,203,203,0.3793,
+lawyers,All,activated,118,208,208,0.5673,
+lawyers,All,weekly_active_last_4_weeks:Assistant A,230,578,151,0.3979,
+lawyers,All,weekly_active_last_4_weeks:Assistant B,165,777,203,0.2124,

@@ -1,0 +1,27 @@
+QUILLFETHER SYSTEMS (fictional)
+Working with outside counsel
+2025
+
+How we work
+
+We want short advice we can act on. Call before you write a long memo.
+
+AI and automation
+
+Quillfether encourages outside counsel to use AI tools where they reduce cost without reducing quality.
+
+Counsel must disclose on each invoice which tasks were performed with AI assistance.
+
+We expect efficiency gains from AI to be passed through to us in lower fees.
+
+Counsel must not allow our source code or product roadmaps to be used for training any third-party model.
+
+Human review of AI output is required in every case.
+
+Our own engineers use AI coding assistants; counsel should assume that documents we send may contain AI-generated text.
+
+Company employees are prohibited from sharing privileged advice with AI chatbots, and counsel should remind them of this when sending advice.
+
+Invoices
+
+Send invoices monthly. We pay in 45 days.

@@ -1,0 +1,17 @@
+scope,group,survey_claimed,survey_respondents,logged_active,logged_eligible,gap_points,suppressed
+practice,Banking and finance,8,13,10,23,18.1,
+practice,Competition,,,,,,small_group
+practice,Corporate,13,21,21,37,5.1,
+practice,Disputes,18,19,25,31,14.1,
+practice,Employment,6,10,8,19,17.9,
+practice,Intellectual property,,,,,,complementary
+practice,Private client,1,8,2,14,-1.8,
+practice,Real estate,11,14,5,24,57.7,
+practice,Regulatory,3,6,4,13,19.2,
+practice,Tax,7,11,9,15,3.6,
+role,associate,50,77,62,123,14.5,
+role,counsel,13,19,10,27,31.4,
+role,paralegal,8,17,11,38,18.1,
+role,partner,8,16,17,45,12.2,
+role,staff,12,31,7,67,28.3,
+all lawyers,All lawyers,71,112,89,195,17.8,

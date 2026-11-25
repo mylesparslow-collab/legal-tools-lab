@@ -1,0 +1,69 @@
+{
+  "client_id": "pellwick",
+  "client_name": "Pellwick Bakery Supply",
+  "document": "data/guideline_docs/pellwick.txt",
+  "rules": [
+    {
+      "rule_id": "PELLWI-P-MINIMUM-INCREMENT-01",
+      "type": "minimum_increment",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "Please bill in 0.1 hour increments at the rates in your engagement letter and not above them.",
+      "source_ref": "page 1, paragraph 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "PELLWI-P-RATE-ABOVE-CARD-01",
+      "type": "rate_above_card",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Please bill in 0.1 hour increments at the rates in your engagement letter and not above them.",
+      "source_ref": "page 1, paragraph 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "PELLWI-P-DUPLICATE-ENTRIES-01",
+      "type": "duplicate_entries",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "We do not want to be charged twice for the same work.",
+      "source_ref": "page 1, paragraph 3",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "PELLWI-P-EXPENSE-RECEIPT-THRESHOLD-01",
+      "type": "expense_receipt_threshold",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "threshold": "75.00",
+        "inclusive": false
+      },
+      "source_quote": "Send a receipt with any expense over $75.00.",
+      "source_ref": "page 1, paragraph 4",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    },
+    {
+      "rule_id": "PELLWI-P-LATE-TIME-01",
+      "type": "late_time",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 30
+      },
+      "source_quote": "We would rather not see time that is more than 30 days old.",
+      "source_ref": "page 1, paragraph 5",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+    }
+  ]
+}

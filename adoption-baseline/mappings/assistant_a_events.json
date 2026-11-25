@@ -1,0 +1,21 @@
+{
+  "source": "assistant_a_events",
+  "description": "Example mapping for the synthetic Assistant A export in sample_data. One row per interaction. This layout is invented for the demo and is not any vendor's real export.",
+  "tool": "Assistant A",
+  "shape": "long",
+  "delimiter": ",",
+  "user": {"column": "user_email", "match_on": "email"},
+  "date": {"column": "timestamp", "formats": ["iso8601"], "timezone": "as_given"},
+  "feature": {
+    "column": "action",
+    "map": {
+      "chat_message": "chat",
+      "file_upload": "document upload",
+      "project_query": "project",
+      "web_search": "web search"
+    },
+    "default": "other"
+  },
+  "count": {"column": null, "default": 1},
+  "dedupe_key": ["event_id"]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "client_id": "brackenmoor",
+    "client_name": "Brackenmoor Regional Water Agency",
+    "rules_on_file": 13,
+    "proposed": 13,
+    "matched": 13,
+    "missed": [],
+    "extra": 0,
+    "extra_candidates": []
+  },
+  {
+    "client_id": "luminqa",
+    "client_name": "Luminqa Data Systems",
+    "rules_on_file": 9,
+    "proposed": 9,
+    "matched": 9,
+    "missed": [],
+    "extra": 0,
+    "extra_candidates": []
+  },
+  {
+    "client_id": "ostervane",
+    "client_name": "Ostervane Industrial Holdings",
+    "rules_on_file": 13,
+    "proposed": 13,
+    "matched": 13,
+    "missed": [],
+    "extra": 0,
+    "extra_candidates": []
+  },
+  {
+    "client_id": "pellwick",
+    "client_name": "Pellwick Bakery Supply",
+    "rules_on_file": 5,
+    "proposed": 5,
+    "matched": 5,
+    "missed": [],
+    "extra": 0,
+    "extra_candidates": []
+  },
+  {
+    "client_id": "quillfeather",
+    "client_name": "Quillfeather Mutual Indemnity",
+    "rules_on_file": 21,
+    "proposed": 21,
+    "matched": 21,
+    "missed": [],
+    "extra": 0,
+    "extra_candidates": []
+  }
+]

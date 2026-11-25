@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+var/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm

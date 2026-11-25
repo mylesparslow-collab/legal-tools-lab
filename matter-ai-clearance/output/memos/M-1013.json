@@ -1,0 +1,2835 @@
+{
+ "matter": {
+  "id": "M-1013",
+  "name": "Verdanthe: resident care claim",
+  "client_id": "verdanthe",
+  "matter_type": "health care litigation",
+  "responsible_attorney": "R. Tollefsen (fictional)",
+  "intake_date": "2026-11-12",
+  "data_flags": {
+   "phi": "yes",
+   "sealed": "no"
+  },
+  "protective_order": {
+   "present": "yes",
+   "document_id": "PO-M1013 (fictional protective order)",
+   "restrictions": {
+    "ai_use": "permitted_with_conditions",
+    "vendor_processing": "permitted_with_undertaking",
+    "no_retention_after_matter": "yes",
+    "attorneys_eyes_only_tier": "no"
+   },
+   "undertakings_signed_tool_ids": [
+    "review-d"
+   ],
+   "quoted_terms": [
+    {
+     "field": "ai_use",
+     "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public."
+    },
+    {
+     "field": "vendor_processing",
+     "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A."
+    }
+   ]
+  },
+  "intake_note": null
+ },
+ "client_name": "Verdanthe Senior Living (fictional)",
+ "as_of": "2026-11-25",
+ "policy_version": "2026.11-demo",
+ "pattern_version": "1.4",
+ "data_classes_in_play": [
+  "client_confidential",
+  "phi",
+  "protective_order_material"
+ ],
+ "flags": {
+  "needs_analyst_review": false,
+  "unknown_inputs": []
+ },
+ "terms": [
+  {
+   "party_id": "verdanthe",
+   "party_name": "Verdanthe Senior Living (fictional)",
+   "role": "client",
+   "status": "clear",
+   "documents": [
+    "verdanthe-el-2026"
+   ],
+   "classes": [
+    "billing_restriction",
+    "human_review_required",
+    "ai_permitted"
+   ],
+   "conflicts": [],
+   "review_spans": [],
+   "dismissed_by_analyst": [],
+   "guarded": [],
+   "consent_on_file": [],
+   "notice_on_file": []
+  }
+ ],
+ "decisions": [
+  {
+   "feature_id": "assistant-a.chat-web",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "Chat with web search",
+   "short_name": "Assistant A web chat",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PHI-02",
+      "POL-PHI-03"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "feature not approved for this data class",
+    "no confirmed business associate agreement",
+    "connectors or web access on",
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-LANE-01",
+    "POL-PHI-02",
+    "POL-PHI-03",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-02",
+     "rule_text": "Protected health information may go only into a feature that a business associate agreement is confirmed to cover. Unknown counts as not covered.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "no confirmed business associate agreement",
+     "open_question": "OQ-04",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-03",
+     "rule_text": "Protected health information may not go into a feature with connectors or web access switched on, or where that setting is unknown.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "connectors or web access on",
+     "open_question": "OQ-05",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "assistant-a.file-analysis",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "File upload and analysis",
+   "short_name": "Assistant A files",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [
+    {
+     "short": "billing review",
+     "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+     "rule_id": "POL-CT-12"
+    },
+    {
+     "short": "attorney review",
+     "text": "An attorney reviews all AI output before it is used or sent.",
+     "rule_id": "POL-CT-13"
+    }
+   ],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PHI-02"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "feature not approved for this data class",
+    "no confirmed business associate agreement",
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-12",
+    "POL-CT-13",
+    "POL-LANE-01",
+    "POL-PHI-02",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-02",
+     "rule_text": "Protected health information may go only into a feature that a business associate agreement is confirmed to cover. Unknown counts as not covered.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "no confirmed business associate agreement",
+     "open_question": "OQ-04",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "assistant-a.dms-connector",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "Connector to the document management system",
+   "short_name": "Assistant A connector",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [
+    {
+     "short": "billing review",
+     "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+     "rule_id": "POL-CT-12"
+    },
+    {
+     "short": "attorney review",
+     "text": "An attorney reviews all AI output before it is used or sent.",
+     "rule_id": "POL-CT-13"
+    }
+   ],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PHI-02",
+      "POL-PHI-03"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "feature not approved for this data class",
+    "no confirmed business associate agreement",
+    "connectors or web access on",
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-12",
+    "POL-CT-13",
+    "POL-LANE-01",
+    "POL-PHI-02",
+    "POL-PHI-03",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-02",
+     "rule_text": "Protected health information may go only into a feature that a business associate agreement is confirmed to cover. Unknown counts as not covered.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "no confirmed business associate agreement",
+     "open_question": "OQ-04",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-03",
+     "rule_text": "Protected health information may not go into a feature with connectors or web access switched on, or where that setting is unknown.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "connectors or web access on",
+     "open_question": "OQ-05",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.doc-summary",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Summary and drafting in the word processor",
+   "short_name": "Suite B documents",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [
+    {
+     "short": "billing review",
+     "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+     "rule_id": "POL-CT-12"
+    },
+    {
+     "short": "attorney review",
+     "text": "An attorney reviews all AI output before it is used or sent.",
+     "rule_id": "POL-CT-13"
+    },
+    {
+     "short": "PHI use logged",
+     "text": "Record each use with protected health information in the matter log.",
+     "rule_id": "POL-PHI-05"
+    }
+   ],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13"
+     ]
+    },
+    "phi": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13",
+      "POL-PHI-05"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-12",
+    "POL-CT-13",
+    "POL-PHI-05",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.email",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Email drafting with mailbox access",
+   "short_name": "Suite B email",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [
+    {
+     "short": "billing review",
+     "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+     "rule_id": "POL-CT-12"
+    },
+    {
+     "short": "attorney review",
+     "text": "An attorney reviews all AI output before it is used or sent.",
+     "rule_id": "POL-CT-13"
+    }
+   ],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PHI-03"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "feature not approved for this data class",
+    "connectors or web access on",
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-12",
+    "POL-CT-13",
+    "POL-LANE-01",
+    "POL-PHI-03",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-03",
+     "rule_text": "Protected health information may not go into a feature with connectors or web access switched on, or where that setting is unknown.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "connectors or web access on",
+     "open_question": "OQ-05",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.meeting-notes",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Meeting transcription and notes",
+   "short_name": "Suite B meeting notes",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [
+    {
+     "short": "billing review",
+     "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+     "rule_id": "POL-CT-12"
+    },
+    {
+     "short": "attorney review",
+     "text": "An attorney reviews all AI output before it is used or sent.",
+     "rule_id": "POL-CT-13"
+    }
+   ],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-PHI-02",
+      "POL-PHI-04"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "feature not approved for this data class",
+    "no confirmed business associate agreement",
+    "retention not confirmed",
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-12",
+    "POL-CT-13",
+    "POL-LANE-01",
+    "POL-PHI-02",
+    "POL-PHI-04",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-02",
+     "rule_text": "Protected health information may go only into a feature that a business associate agreement is confirmed to cover. Unknown counts as not covered.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "no confirmed business associate agreement",
+     "open_question": "OQ-04",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-04",
+     "rule_text": "Protected health information may not go into a feature whose retention is unknown or left at the vendor default.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention not confirmed",
+     "open_question": "OQ-06",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "research-c.qa",
+   "tool_id": "research-c",
+   "tool_name": "Research C",
+   "feature": "Research questions over the vendor's library",
+   "short_name": "Research C questions",
+   "category": "legal research AI",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [
+    {
+     "short": "billing review",
+     "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+     "rule_id": "POL-CT-12"
+    },
+    {
+     "short": "attorney review",
+     "text": "An attorney reviews all AI output before it is used or sent.",
+     "rule_id": "POL-CT-13"
+    }
+   ],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PHI-02"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "feature not approved for this data class",
+    "no confirmed business associate agreement",
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-12",
+    "POL-CT-13",
+    "POL-LANE-01",
+    "POL-PHI-02",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-02",
+     "rule_text": "Protected health information may go only into a feature that a business associate agreement is confirmed to cover. Unknown counts as not covered.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "no confirmed business associate agreement",
+     "open_question": "OQ-04",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "research-c.brief-upload",
+   "tool_id": "research-c",
+   "tool_name": "Research C",
+   "feature": "Brief upload and analysis",
+   "short_name": "Research C brief upload",
+   "category": "legal research AI",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-03"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-LANE-03",
+      "POL-PHI-02",
+      "POL-PHI-04"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-LANE-03",
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "feature not approved for this data class",
+    "training terms not confirmed",
+    "no confirmed business associate agreement",
+    "retention not confirmed",
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-LANE-01",
+    "POL-LANE-03",
+    "POL-PHI-02",
+    "POL-PHI-04",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-03",
+     "rule_text": "A feature that trains on inputs, or whose training terms are unknown, may not receive client or restricted data.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "training terms not confirmed",
+     "open_question": "OQ-02",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-02",
+     "rule_text": "Protected health information may go only into a feature that a business associate agreement is confirmed to cover. Unknown counts as not covered.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "no confirmed business associate agreement",
+     "open_question": "OQ-04",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-04",
+     "rule_text": "Protected health information may not go into a feature whose retention is unknown or left at the vendor default.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention not confirmed",
+     "open_question": "OQ-06",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "review-d.review",
+   "tool_id": "review-d",
+   "tool_name": "Review D",
+   "feature": "Review coding and summaries",
+   "short_name": "Review D",
+   "category": "document review AI",
+   "decision": "ALLOWED_WITH_CONDITIONS",
+   "decision_label": "ALLOWED WITH CONDITIONS",
+   "conditions": [
+    {
+     "short": "billing review",
+     "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+     "rule_id": "POL-CT-12"
+    },
+    {
+     "short": "attorney review",
+     "text": "An attorney reviews all AI output before it is used or sent.",
+     "rule_id": "POL-CT-13"
+    },
+    {
+     "short": "PHI use logged",
+     "text": "Record each use with protected health information in the matter log.",
+     "rule_id": "POL-PHI-05"
+    },
+    {
+     "short": "order conditions confirmed",
+     "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+     "rule_id": "POL-PO-09"
+    }
+   ],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13"
+     ]
+    },
+    "phi": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13",
+      "POL-PHI-05"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-12",
+      "POL-CT-13",
+      "POL-PO-09"
+     ]
+    }
+   },
+   "reasons": [],
+   "rule_ids": [
+    "POL-CT-12",
+    "POL-CT-13",
+    "POL-PHI-05",
+    "POL-PO-09"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": true
+    }
+   ]
+  },
+  {
+   "feature_id": "transcribe-e.dictation",
+   "tool_id": "transcribe-e",
+   "tool_name": "Transcribe E",
+   "feature": "Dictation",
+   "short_name": "Transcribe E",
+   "category": "dictation and transcription",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-LANE-02",
+      "POL-LANE-03"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-LANE-02",
+      "POL-LANE-03",
+      "POL-PHI-02",
+      "POL-PHI-03",
+      "POL-PHI-04"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-LANE-01",
+      "POL-LANE-02",
+      "POL-LANE-03",
+      "POL-PO-05",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "feature not approved for this data class",
+    "feature not in service",
+    "training terms not confirmed",
+    "no confirmed business associate agreement",
+    "connectors or web access on",
+    "retention not confirmed",
+    "vendor undertaking not on file",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-LANE-01",
+    "POL-LANE-02",
+    "POL-LANE-03",
+    "POL-PHI-02",
+    "POL-PHI-03",
+    "POL-PHI-04",
+    "POL-PO-05",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-02",
+     "rule_text": "Only features in production or pilot status may be used on matters.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not in service",
+     "open_question": null,
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-03",
+     "rule_text": "A feature that trains on inputs, or whose training terms are unknown, may not receive client or restricted data.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "training terms not confirmed",
+     "open_question": "OQ-02",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-02",
+     "rule_text": "Protected health information may go only into a feature that a business associate agreement is confirmed to cover. Unknown counts as not covered.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "no confirmed business associate agreement",
+     "open_question": "OQ-04",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-03",
+     "rule_text": "Protected health information may not go into a feature with connectors or web access switched on, or where that setting is unknown.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "connectors or web access on",
+     "open_question": "OQ-05",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PHI-04",
+     "rule_text": "Protected health information may not go into a feature whose retention is unknown or left at the vendor default.",
+     "source": "tool_lane",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention not confirmed",
+     "open_question": "OQ-06",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-05",
+     "rule_text": "Where the order allows vendors who sign its undertaking, a vendor-hosted feature may receive protective-order material only after intake records the signed undertaking for that tool.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "vendor undertaking not on file",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-12",
+     "rule_text": "Where the terms restrict billing for AI-assisted work, the billing partner checks time and charges against the terms before the invoice goes out.",
+     "source": "client_terms",
+     "owner_role": "Billing Partner Committee",
+     "review_date": "2026-06-30",
+     "past_review_date": true,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 379,
+       "end": 450,
+       "class": "billing_restriction",
+       "quote": "Where AI tools shorten a task, our bills will reflect the shorter time."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-20",
+     "condition": {
+      "short": "billing review",
+      "text": "Billing partner checks AI-assisted time and charges against the terms of Verdanthe Senior Living (fictional) and discloses on the invoice where the terms say so.",
+      "rule_id": "POL-CT-12"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-CT-13",
+     "rule_text": "Where the terms require human review, an attorney reviews all AI output before it is used.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "phi",
+      "protective_order_material"
+     ],
+     "party_id": "verdanthe",
+     "party_name": "Verdanthe Senior Living (fictional)",
+     "evidence": [
+      {
+       "document_id": "verdanthe-el-2026",
+       "start": 274,
+       "end": 378,
+       "class": "human_review_required",
+       "quote": "Any such use will be supervised by the attorney responsible for your matter, who will verify the result."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-21",
+     "condition": {
+      "short": "attorney review",
+      "text": "An attorney reviews all AI output before it is used or sent.",
+      "rule_id": "POL-CT-13"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PHI-05",
+     "rule_text": "Where a feature is in the health-data lane, each use with protected health information is recorded on the matter.",
+     "source": "firm_policy",
+     "owner_role": "Privacy Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "phi"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": null,
+     "open_question": "OQ-07",
+     "condition": {
+      "short": "PHI use logged",
+      "text": "Record each use with protected health information in the matter log.",
+      "rule_id": "POL-PHI-05"
+     },
+     "decisive": false
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1013 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  }
+ ],
+ "counts": {
+  "ALLOWED": 0,
+  "ALLOWED_WITH_CONDITIONS": 1,
+  "HOLD_FOR_REVIEW": 0,
+  "NOT_ALLOWED": 9
+ },
+ "rules_past_review": [
+  {
+   "rule_id": "POL-PO-03",
+   "review_date": "2026-09-30",
+   "owner_role": "General Counsel",
+   "used_on_this_matter": false
+  },
+  {
+   "rule_id": "POL-CT-12",
+   "review_date": "2026-06-30",
+   "owner_role": "Billing Partner Committee",
+   "used_on_this_matter": true
+  }
+ ],
+ "open_questions": [
+  "OQ-01",
+  "OQ-02",
+  "OQ-04",
+  "OQ-05",
+  "OQ-06",
+  "OQ-07",
+  "OQ-08",
+  "OQ-10",
+  "OQ-11",
+  "OQ-20",
+  "OQ-21"
+ ],
+ "disclaimer": "Personal portfolio demo with fictional data. Every rule shown is a configurable firm policy default, not a statement of law. Not legal advice. Not reviewed by an attorney.",
+ "banner": "AI: Review D allowed with billing review, attorney review, PHI use logged, order conditions confirmed; no PHI in any tool except Review D; no protective-order material in any tool except Review D"
+}

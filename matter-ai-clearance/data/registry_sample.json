@@ -1,0 +1,107 @@
+{
+ "organization": "The firm (fictional)",
+ "registry_owner": "Office of General Counsel (fictional)",
+ "as_of": "2026-11-25",
+ "review_interval_days": 180,
+ "notes": "Fictional registry in the governance-eval-kit format, used to show the import path.",
+ "tools": [
+  {
+   "id": "intake-summarizer",
+   "name": "Intake summarizer",
+   "purpose": "Summarize new matter intake forms.",
+   "status": "pilot",
+   "business_owner": "Director of Practice Technology",
+   "data_boundary": {
+    "runs_in": "Firm productivity-suite tenant",
+    "model_provider": "Vendor-hosted model inside the tenant boundary",
+    "data_allowed": [
+     "public",
+     "firm_internal",
+     "client_confidential",
+     "health_information"
+    ],
+    "retention": "Per tenant retention policy",
+    "used_for_training": "no",
+    "agreements": [
+     "Enterprise data protection addendum"
+    ]
+   },
+   "ocg_check": {
+    "method": "manual_lookup",
+    "last_checked": "2026-11-01"
+   },
+   "golden_set": {
+    "status": "not_run"
+   },
+   "sb574_log": {
+    "court_filing_use": "possible",
+    "mechanism": "Placeholder entry for the import demo"
+   },
+   "human_review": "Supervising attorney reviews output.",
+   "last_review": "2026-11-01"
+  },
+  {
+   "id": "contract-compare",
+   "name": "Contract comparison assistant",
+   "purpose": "Compare a draft against a playbook.",
+   "status": "production",
+   "business_owner": "Knowledge Management",
+   "data_boundary": {
+    "runs_in": "Vendor cloud",
+    "model_provider": "Third-party model vendor",
+    "data_allowed": [
+     "public",
+     "firm_internal",
+     "client_confidential",
+     "personal_data"
+    ],
+    "retention": "Vendor keeps inputs 30 days",
+    "used_for_training": "no",
+    "agreements": []
+   },
+   "ocg_check": {
+    "method": "manual_lookup",
+    "last_checked": "2026-11-01"
+   },
+   "golden_set": {
+    "status": "not_run"
+   },
+   "sb574_log": {
+    "court_filing_use": "possible",
+    "mechanism": "Placeholder entry for the import demo"
+   },
+   "human_review": "Supervising attorney reviews output.",
+   "last_review": "2026-10-10"
+  },
+  {
+   "id": "idea-board",
+   "name": "Brainstorming assistant",
+   "purpose": "Generate outlines from public sources.",
+   "status": "proposed",
+   "business_owner": "To be assigned",
+   "data_boundary": {
+    "runs_in": "Vendor cloud",
+    "model_provider": "Third-party model vendor",
+    "data_allowed": [
+     "public"
+    ],
+    "retention": "Vendor default",
+    "used_for_training": "unknown",
+    "agreements": []
+   },
+   "ocg_check": {
+    "method": "manual_lookup",
+    "last_checked": "2026-11-01"
+   },
+   "golden_set": {
+    "status": "not_run"
+   },
+   "sb574_log": {
+    "court_filing_use": "possible",
+    "mechanism": "Placeholder entry for the import demo"
+   },
+   "human_review": "Supervising attorney reviews output.",
+   "last_review": "2026-04-02"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+party_id,party_name,role,status,documents,pending_documents,ai_prohibited,consent_required,disclosure_required,no_training,approved_tools_only,data_residency_retention,billing_restriction,human_review_required,ai_permitted,ambiguous,silent,conflicts,ambiguous_spans,dismissed_by_analyst,scoped_by_analyst,approved_list_on_file,residency_retention_findings_recorded
+quenby,Quenby Vale Health System (fictional),client,clear,quenby-ocg-2026; quenby-el-2026,,,quenby-ocg-2026,quenby-el-2026; quenby-ocg-2026,quenby-ocg-2026,quenby-ocg-2026,quenby-ocg-2026,quenby-el-2026,quenby-el-2026; quenby-ocg-2026,,,,,0,0,1,yes,yes
+drennick,Drennick Freight Lines (fictional),client,silent,drennick-ocg-2025; drennick-el-2025,,,,,,,,,,,,all documents,,0,0,0,no,no
+ostrava,Ostrava Row Property Management (fictional),client,clear,ostrava-el-2026,,,,,,,,ostrava-el-2026,,ostrava-el-2026,,,,0,0,0,no,no
+orrinthe,Orrinthe Biologics (fictional),client,clear,orrinthe-ocg-2026; orrinthe-el-2026,,orrinthe-el-2026; orrinthe-ocg-2026,,orrinthe-ocg-2026,,,,,,,,,,0,0,0,no,no
+tessaly,Tessaly Harbor Bank (fictional),client,clear,tessaly-ocg-2025; tessaly-el-2025,,,tessaly-el-2025; tessaly-ocg-2025,,tessaly-ocg-2025,,tessaly-ocg-2025,,,,,,,0,2,0,no,yes
+marrowfinch,Marrowfinch Outfitters (fictional),client,needs_analyst_review,marrowfinch-ocg-2024; marrowfinch-el-2025,,marrowfinch-ocg-2024,,marrowfinch-el-2025,,,,,marrowfinch-el-2025,marrowfinch-el-2025,,,"ai_prohibited vs ai_permitted (marrowfinch-el-2025, marrowfinch-ocg-2024)",0,0,0,no,no
+quillfether,Quillfether Systems (fictional),client,clear,quillfether-ocg-v1-2025,quillfether-ocg-v2-2026,,,quillfether-ocg-v1-2025,quillfether-ocg-v1-2025,,,quillfether-ocg-v1-2025,quillfether-ocg-v1-2025,quillfether-ocg-v1-2025,,,,0,0,0,no,no
+sablemere,Sablemere Water District (fictional),client,needs_analyst_review,sablemere-ocg-2025; sablemere-el-2025,,,,sablemere-ocg-2025,,,sablemere-ocg-2025,,,,sablemere-ocg-2025,,,2,0,0,no,no
+verdanthe,Verdanthe Senior Living (fictional),client,clear,verdanthe-el-2026,,,,,,,,verdanthe-el-2026,verdanthe-el-2026,verdanthe-el-2026,,,,0,0,0,no,no
+ironvale,Ironvale Bridge Capital (fictional),client,clear,ironvale-ocg-2026; ironvale-el-2026,,,ironvale-ocg-2026,,,ironvale-ocg-2026,ironvale-ocg-2026,ironvale-ocg-2026,,,,,,0,0,1,yes,yes
+pallister,Pallister Grove Foods (fictional),client,not_on_file,,,,,,,,,,,,,,,0,0,0,no,no
+marlowetind,Marlowe-Tind Mutual Indemnity (fictional),insurer,clear,marlowetind-guidelines-2026,,,marlowetind-guidelines-2026,,,marlowetind-guidelines-2026,,marlowetind-guidelines-2026,marlowetind-guidelines-2026,,,,,0,0,0,no,no
+hesperwick,Hesperwick Joint Defense Group (fictional),co_counsel,needs_analyst_review,hesperwick-protocol-2026,,hesperwick-protocol-2026,,hesperwick-protocol-2026,,hesperwick-protocol-2026,,,,,,,ai_prohibited vs approved_tools_only (hesperwick-protocol-2026),0,0,0,yes,no

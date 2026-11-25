@@ -1,0 +1,22 @@
+{
+ "id": "M-1010",
+ "name": "Marrowfinch: distributor termination",
+ "client_id": "marrowfinch",
+ "matter_type": "commercial dispute",
+ "responsible_attorney": "L. Arkwell (fictional)",
+ "intake_date": "2026-09-22",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "marrowfinch-ocg-2024",
+  "marrowfinch-el-2025"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

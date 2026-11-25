@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge and experience search (demo)</title>
+<style>
+:root {
+  --bg: #f7f6f3; --panel: #ffffff; --ink: #1d2126; --muted: #5d6670; --line: #d9d6cf;
+  --accent: #1f5a7a; --accent-ink: #ffffff; --mark: #fbe9a6; --warn-bg: #fdf3dc; --warn-ink: #6b4a00;
+  --chip: #ecebe6; --ok: #2d6a4f;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15181c; --panel: #1d2126; --ink: #e7e5e0; --muted: #9aa3ad; --line: #343a42;
+    --accent: #7fb8d6; --accent-ink: #10202a; --mark: #5d4f12; --warn-bg: #33290f; --warn-ink: #f0d58a;
+    --chip: #2a3038; --ok: #86c9a6;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 16px; }
+header h1 { font-size: 1.25rem; margin: 0 0 4px; font-weight: 650; }
+.banner { background: var(--warn-bg); color: var(--warn-ink); border-radius: 6px;
+  padding: 8px 12px; font-size: .875rem; margin: 8px 0 16px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+label { font-size: .8125rem; color: var(--muted); display: block; margin-bottom: 4px; }
+select, input[type=text], button { font: inherit; color: var(--ink); background: var(--panel);
+  border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
+select, input[type=text] { width: 100%; }
+button { cursor: pointer; }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; }
+.user-note { font-size: .875rem; color: var(--muted); margin: 8px 0 0; min-height: 1.3em; }
+.tabs { display: flex; gap: 4px; margin: 16px 0 0; border-bottom: 1px solid var(--line); }
+.tabs button { border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0;
+  background: transparent; color: var(--muted); padding: 8px 14px; }
+.tabs button[aria-selected=true] { background: var(--panel); color: var(--ink);
+  border-color: var(--line); font-weight: 600; margin-bottom: -1px; }
+.searchrow { display: flex; gap: 8px; margin-top: 14px; }
+.searchrow input { flex: 1; min-width: 0; }
+.hint { font-size: .8125rem; color: var(--muted); margin: 6px 0 0; }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.chip { background: var(--chip); border: 1px solid transparent; border-radius: 999px;
+  padding: 3px 10px; font-size: .8125rem; color: var(--ink); }
+button.chip:hover { border-color: var(--accent); }
+.layout { display: grid; grid-template-columns: 220px 1fr; gap: 16px; margin-top: 16px; align-items: start; }
+@media (max-width: 760px) { .layout { grid-template-columns: 1fr; } }
+.facets h3 { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+  margin: 12px 0 4px; }
+.facets h3:first-child { margin-top: 0; }
+.facets button { display: flex; justify-content: space-between; gap: 8px; width: 100%; text-align: left;
+  border: none; background: none; padding: 3px 0; font-size: .875rem; }
+.facets button:hover { color: var(--accent); }
+.facets .n { color: var(--muted); font-variant-numeric: tabular-nums; }
+.status { font-size: .9375rem; margin: 0 0 10px; }
+.message { background: var(--warn-bg); color: var(--warn-ink); border-radius: 6px; padding: 8px 12px;
+  font-size: .875rem; margin: 0 0 12px; }
+.result { border-top: 1px solid var(--line); padding: 12px 0; }
+.result:first-of-type { border-top: none; padding-top: 0; }
+.result h2 { font-size: 1rem; margin: 0; font-weight: 600; }
+.meta { font-size: .8125rem; color: var(--muted); margin: 2px 0 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0; }
+.badge { font-size: .75rem; border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; color: var(--muted); }
+.badge.good { color: var(--ok); border-color: var(--ok); }
+.snippet { font-size: .9375rem; margin: 6px 0; }
+mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; }
+details { margin-top: 6px; font-size: .8125rem; }
+summary { cursor: pointer; color: var(--accent); width: fit-content; }
+table { border-collapse: collapse; margin: 6px 0; width: 100%; }
+th, td { text-align: left; padding: 3px 8px 3px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tablewrap { overflow-x: auto; }
+.active-filters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.person .rank { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 6px; }
+footer { font-size: .8125rem; color: var(--muted); margin: 24px 0 8px; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Knowledge and experience search</h1>
+    <div class="banner" id="banner">Demo on synthetic data. Every client, person, matter and document is invented. Not legal advice.</div>
+  </header>
+
+  <section class="panel" aria-label="Who is searching">
+    <label for="user">Searching as (demo only: a real deployment takes the user from sign-in, not from a menu)</label>
+    <select id="user"></select>
+    <p class="user-note" id="userNote"></p>
+  </section>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-search" aria-selected="true" aria-controls="view">Find a precedent</button>
+    <button role="tab" id="tab-who" aria-selected="false" aria-controls="view">Who has done this</button>
+  </div>
+
+  <section class="panel" style="border-top-left-radius:0" id="view" role="tabpanel">
+    <form id="form" autocomplete="off">
+      <label for="q" id="qLabel">Search documents you can open</label>
+      <div class="searchrow">
+        <input type="text" id="q" list="suggestions" placeholder='e.g. earn-out provisions memo, or "forum selection clause" type:motion'>
+        <datalist id="suggestions"></datalist>
+        <button class="primary" type="submit">Search</button>
+      </div>
+    </form>
+    <p class="hint" id="hint"></p>
+    <div class="presets" id="presets"></div>
+    <div class="active-filters" id="activeFilters"></div>
+  </section>
+
+  <div class="layout">
+    <aside class="panel facets" id="facets" aria-label="Filters from these results" hidden></aside>
+    <main class="panel" id="results" aria-live="polite">
+      <p class="status">Pick a user, then search. Switch user and run the same query again to see what permissions change.</p>
+    </main>
+  </div>
+
+  <footer>
+    Results, counts, filters and suggestions are computed only from documents the selected user may open.
+    Every query is written to an audit log.
+  </footer>
+</div>
+
+<script>
+/*__SNAPSHOT__*/
+const SNAP = window.KX_SNAPSHOT || null;
+const state = { tab: "search", filters: {}, users: [] };
+const $ = (id) => document.getElementById(id);
+const FACET_LABELS = { doc_type: "Document type", practice: "Practice", matter_type: "Matter type",
+  jurisdiction: "Jurisdiction or court", client_industry: "Client industry", year: "Year" };
+const FACET_TO_FILTER = { doc_type: "type", practice: "practice", matter_type: "mtype",
+  jurisdiction: "jurisdiction", client_industry: "industry", year: "year" };
+const CANONICAL_TO_FILTER = { doc_type: "type", practice: "practice", matter_type: "mtype",
+  jurisdiction: "jurisdiction", client_industry: "industry", year: "year", office: "office",
+  author: "author", after: "after", before: "before", was_filed: "filed", model_form: "model", is_final: "final" };
+
+function el(tag, attrs, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === "class") node.className = v; else if (k === "text") node.textContent = v;
+    else if (k.startsWith("on")) node.addEventListener(k.slice(2), v); else node.setAttribute(k, v);
+  }
+  for (const c of children) if (c != null) node.append(c);
+  return node;
+}
+
+async function api(path, params) {
+  if (SNAP) {
+    if (path === "meta") return SNAP.meta;
+    if (path === "suggest") return { suggestions: [] };
+    const key = params.user + "|" + params.q;
+    return SNAP[path][key] || { access: "ok", message: "This query is not in the static snapshot. Start the local server to run it.", total: 0, results: [], facets: {}, people: [], matters_matched: 0, filters: {} };
+  }
+  const url = "/api/" + path + "?" + new URLSearchParams(params).toString();
+  const res = await fetch(url);
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || "Request failed");
+  return data;
+}
+
+function highlight(snippet) {
+  const p = el("p", { class: "snippet" });
+  let pos = 0;
+  for (const [s, e] of snippet.highlights || []) {
+    if (s > pos) p.append(snippet.text.slice(pos, s));
+    p.append(el("mark", { text: snippet.text.slice(s, e) }));
+    pos = e;
+  }
+  p.append(snippet.text.slice(pos));
+  return p;
+}
+
+function explainBlock(e) {
+  const d = el("details", {}, el("summary", { text: "Why this ranked here" }));
+  d.append(el("p", { text: "Text match " + e.text.contribution.toFixed(3) + " (BM25 " + e.text.bm25 +
+    " against the best in your results, " + e.text.best_bm25_in_your_results + ", times weight " + e.text.weight +
+    "). Term statistics are taken over " + e.statistics_scope + "." }));
+  const t1 = el("table", {}, el("tr", {}, el("th", { text: "Term" }), el("th", { text: "Matched in" }),
+    el("th", { class: "num", text: "Visible documents with term" }), el("th", { class: "num", text: "BM25" })));
+  for (const t of e.text.terms) {
+    const where = Object.entries(t.matched_in).map(([k, v]) => k + " ×" + v).join(", ");
+    t1.append(el("tr", {}, el("td", { text: t.term }), el("td", { text: where }),
+      el("td", { class: "num", text: t.documents_you_can_see_with_term }), el("td", { class: "num", text: t.bm25 })));
+  }
+  const t2 = el("table", {}, el("tr", {}, el("th", { text: "Quality signal" }), el("th", { class: "num", text: "Value" }),
+    el("th", { class: "num", text: "Weight" }), el("th", { class: "num", text: "Adds" })));
+  for (const s of e.signals) {
+    t2.append(el("tr", {}, el("td", { text: s.signal.replace(/_/g, " ") }), el("td", { class: "num", text: s.value }),
+      el("td", { class: "num", text: s.weight }), el("td", { class: "num", text: s.contribution })));
+  }
+  d.append(el("div", { class: "tablewrap" }, t1), el("div", { class: "tablewrap" }, t2),
+    el("p", { text: "Total score " + e.total }));
+  return d;
+}
+
+function renderSearch(data) {
+  const box = $("results");
+  box.replaceChildren();
+  if (data.message) box.append(el("p", { class: "message", text: data.message }));
+  if (data.access !== "ok") { $("facets").hidden = true; return; }
+  box.append(el("p", { class: "status", text: data.total + (data.total === 1 ? " result" : " results") +
+    " among the documents this user can open" }));
+  for (const r of data.results) {
+    const art = el("article", { class: "result" });
+    art.append(el("h2", { text: r.rank + ". " + r.title }));
+    art.append(el("p", { class: "meta", text: [r.doc_type, r.practice, r.matter_type, r.jurisdiction, r.date].filter(Boolean).join(" · ") }));
+    const badges = el("div", { class: "badges" });
+    if (r.model_form) badges.append(el("span", { class: "badge good", text: "model form" }));
+    badges.append(el("span", { class: "badge" + (r.is_final ? " good" : ""), text: r.is_final ? "final" : "draft v" + r.version_no }));
+    if (r.was_filed) badges.append(el("span", { class: "badge good", text: "filed" }));
+    if (r.reuse_count) badges.append(el("span", { class: "badge", text: "reused " + r.reuse_count + " times" }));
+    if (r.other_versions.length) badges.append(el("span", { class: "badge", text: r.other_versions.length + " other version" + (r.other_versions.length > 1 ? "s" : "") + " folded in" }));
+    if (r.near_duplicates.length) badges.append(el("span", { class: "badge", text: r.near_duplicates.length + " near-duplicate" + (r.near_duplicates.length > 1 ? "s" : "") + " folded in" }));
+    art.append(badges);
+    if (r.snippet.text) art.append(highlight(r.snippet));
+    art.append(el("p", { class: "meta", text: "Matter " + r.matter_id + " " + r.matter_name + " · author " + r.author.name +
+      (r.author.departed ? " (has left the firm)" : "") + " · " + r.doc_id + " · score " + r.score.toFixed(3) }));
+    if (r.explain) art.append(explainBlock(r.explain));
+    box.append(art);
+  }
+  renderFacets(data.facets || {});
+}
+
+function renderFacets(facets) {
+  const side = $("facets");
+  side.replaceChildren();
+  let any = false;
+  for (const [field, values] of Object.entries(facets)) {
+    if (!values.length) continue;
+    any = true;
+    side.append(el("h3", { text: FACET_LABELS[field] || field }));
+    for (const v of values) {
+      const b = el("button", { type: "button", title: SNAP ? "" : "Filter to " + v.value },
+        el("span", { text: v.value }), el("span", { class: "n", text: v.count }));
+      if (SNAP) b.disabled = true;
+      else b.addEventListener("click", () => { state.filters[FACET_TO_FILTER[field]] = v.value; run(); });
+      side.append(b);
+    }
+  }
+  side.hidden = !any;
+}
+
+function renderWho(data) {
+  const box = $("results");
+  box.replaceChildren();
+  $("facets").hidden = true;
+  if (data.message) box.append(el("p", { class: "message", text: data.message }));
+  if (data.access !== "ok") return;
+  box.append(el("p", { class: "status", text: data.matters_matched + " matching matter" + (data.matters_matched === 1 ? "" : "s") +
+    " this user can open" + (data.confident ? "" : " · not enough to rank") }));
+  for (const p of data.people) {
+    const art = el("article", { class: "result person" });
+    const h = el("h2", {});
+    if (p.rank) h.append(el("span", { class: "rank", text: p.rank + "." }));
+    h.append(p.name);
+    art.append(h);
+    art.append(el("p", { class: "meta", text: [p.title, p.practice, p.office].filter(Boolean).join(" · ") }));
+    const badges = el("div", { class: "badges" });
+    if (p.departed) badges.append(el("span", { class: "badge", text: "has left the firm" }));
+    if (p.evidence_level === "thin") badges.append(el("span", { class: "badge", text: "thin evidence: " + p.evidence_note }));
+    badges.append(el("span", { class: "badge", text: p.matters + " matter" + (p.matters === 1 ? "" : "s") + ", " + p.lead_matters + " as lead" }));
+    badges.append(el("span", { class: "badge", text: p.hours + " hours" }));
+    badges.append(el("span", { class: "badge", text: "last activity " + p.last_activity }));
+    art.append(badges);
+    const d = el("details", {}, el("summary", { text: "Matters counted (" + p.evidence.length + ")" }));
+    const t = el("table", {}, el("tr", {}, el("th", { text: "Matter" }), el("th", { text: "Type" }), el("th", { text: "Role" }),
+      el("th", { class: "num", text: "Hours" }), el("th", { text: "Last activity" }), el("th", { text: "Matched on" })));
+    for (const e of p.evidence) {
+      t.append(el("tr", {}, el("td", { text: e.matter_id + " " + e.matter_name }), el("td", { text: e.matter_type }),
+        el("td", { text: e.role }), el("td", { class: "num", text: e.hours }), el("td", { text: e.last_activity }),
+        el("td", { text: e.matched_on })));
+    }
+    d.append(el("div", { class: "tablewrap" }, t));
+    art.append(d);
+    box.append(art);
+  }
+}
+
+function renderActiveFilters() {
+  const box = $("activeFilters");
+  box.replaceChildren();
+  for (const [k, v] of Object.entries(state.filters)) {
+    box.append(el("button", { type: "button", class: "chip", title: "Remove filter",
+      onclick: () => { delete state.filters[k]; run(); } }, k + ": " + v + "  ×"));
+  }
+}
+
+async function run() {
+  const q = $("q").value.trim();
+  renderActiveFilters();
+  if (!q && !Object.keys(state.filters).length) return;
+  const params = Object.assign({ user: $("user").value, q: q }, state.filters);
+  try {
+    if (state.tab === "search") { params.explain = "1"; renderSearch(await api("search", params)); }
+    else renderWho(await api("who", params));
+  } catch (err) {
+    $("results").replaceChildren(el("p", { class: "message", text: String(err.message || err) }));
+  }
+}
+
+function setTab(tab) {
+  state.tab = tab;
+  state.filters = {};
+  $("tab-search").setAttribute("aria-selected", tab === "search");
+  $("tab-who").setAttribute("aria-selected", tab === "who");
+  $("qLabel").textContent = tab === "search" ? "Search documents you can open" : "Describe the work";
+  $("q").placeholder = tab === "search" ? 'e.g. earn-out provisions memo, or "forum selection clause" type:motion'
+    : "e.g. loan workout, or zoning entitlement";
+  $("hint").textContent = SNAP ? "Static snapshot: choose one of the prepared queries below. Start the local server to type your own."
+    : (tab === "search" ? 'Quotes for an exact phrase. Filters: type: practice: mtype: jurisdiction: industry: author: after: before: filed:yes model:yes final:yes'
+      : "Matches matter type and practice, then matter description, then document titles in the matter. Filters: practice: mtype: jurisdiction: industry: office:");
+  renderPresets();
+  $("results").replaceChildren(el("p", { class: "status", text: "Enter a query." }));
+  $("facets").hidden = true;
+  renderActiveFilters();
+}
+
+function renderPresets() {
+  const box = $("presets");
+  box.replaceChildren();
+  const list = (state.presets || {})[state.tab] || [];
+  for (const q of list) {
+    box.append(el("button", { type: "button", class: "chip", onclick: () => { $("q").value = q; state.filters = {}; run(); } }, q));
+  }
+}
+
+function updateUserNote() {
+  const u = state.users.find((x) => x.person_id === $("user").value);
+  $("userNote").textContent = u ? (u.note || [u.title, u.practice, u.office].filter(Boolean).join(" · ") + (u.status === "departed" ? " · has left the firm" : "")) : "";
+}
+
+let suggestTimer = null;
+$("q").addEventListener("input", () => {
+  if (SNAP || state.tab !== "search") return;
+  clearTimeout(suggestTimer);
+  suggestTimer = setTimeout(async () => {
+    const text = $("q").value;
+    try {
+      const data = await api("suggest", { user: $("user").value, q: text });
+      const base = text.replace(/[A-Za-z0-9]+$/, "");
+      $("suggestions").replaceChildren(...data.suggestions.map((s) => el("option", { value: base + s })));
+    } catch (err) { /* suggestions are optional */ }
+  }, 150);
+});
+$("form").addEventListener("submit", (ev) => { ev.preventDefault(); run(); });
+$("tab-search").addEventListener("click", () => setTab("search"));
+$("tab-who").addEventListener("click", () => setTab("who"));
+$("user").addEventListener("change", () => { updateUserNote(); $("suggestions").replaceChildren(); run(); });
+
+(async function init() {
+  const meta = await api("meta", {});
+  state.presets = meta.presets || {};
+  const demo = meta.demo_users || [];
+  const demoIds = new Set(demo.map((u) => u.person_id));
+  const others = (meta.people || []).filter((p) => !demoIds.has(p.person_id));
+  state.users = demo.concat(others);
+  const sel = $("user");
+  const g1 = el("optgroup", { label: "Demo users chosen to show permissions" });
+  for (const u of demo) g1.append(el("option", { value: u.person_id, text: u.name + " — " + u.label }));
+  sel.append(g1);
+  if (others.length) {
+    const g2 = el("optgroup", { label: "Everyone else" });
+    for (const p of others) g2.append(el("option", { value: p.person_id, text: p.name + " — " + p.title + ", " + p.practice }));
+    sel.append(g2);
+  }
+  if (SNAP) { $("q").readOnly = true; $("banner").textContent += " This page is a static snapshot of prepared queries."; }
+  // Optional deep link: #q=...&user=...&tab=who
+  const link = new URLSearchParams(location.hash.slice(1));
+  if (link.get("user") && state.users.some((u) => u.person_id === link.get("user"))) sel.value = link.get("user");
+  updateUserNote();
+  setTab(link.get("tab") === "who" ? "who" : "search");
+  if (link.get("q")) { $("q").value = link.get("q"); run(); }
+})();
+</script>
+</body>
+</html>

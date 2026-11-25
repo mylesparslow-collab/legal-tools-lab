@@ -1,0 +1,23 @@
+{
+ "id": "M-1002",
+ "name": "Quenby Vale: workplace investigation",
+ "client_id": "quenby",
+ "matter_type": "employment investigation",
+ "responsible_attorney": "R. Tollefsen (fictional)",
+ "intake_date": "2026-11-10",
+ "data_flags": {
+  "phi": "unknown",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "quenby-ocg-2026",
+  "quenby-el-2026"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": [],
+ "intake_note": "Intake form left the health information question blank."
+}

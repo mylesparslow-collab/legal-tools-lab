@@ -1,0 +1,74 @@
+[
+ {
+  "id": "A-H-P-2026-H-redwood-flats-b",
+  "proposal_id": "P-2026-H-redwood-flats",
+  "proposal_agency": "Redwood Flats Water District",
+  "agency_type": "special_district",
+  "practice": "general_counsel",
+  "submitted": "2026-12-17",
+  "outcome": "won",
+  "question_type": "firm_overview",
+  "question_text": "Firm Qualifications. Describe the firm's history, size, office locations and its work for special districts.",
+  "answer_text": "Example Firm LLP is a public agency law firm. Our special district group serves as general counsel to water, fire, sanitary and recreation districts. For {AGENCY} the work would be led from our Stonemill office. Every client has one responsible partner, and that partner stays on the engagement.",
+  "approved": false,
+  "approver": "",
+  "review_by": "2028-06-17",
+  "tags": [
+   "harvested"
+  ]
+ },
+ {
+  "id": "A-H-P-2026-H-redwood-flats-c",
+  "proposal_id": "P-2026-H-redwood-flats",
+  "proposal_agency": "Redwood Flats Water District",
+  "agency_type": "special_district",
+  "practice": "general_counsel",
+  "submitted": "2026-12-17",
+  "outcome": "won",
+  "question_type": "team",
+  "question_text": "Assigned Personnel. Name the lead attorney and other attorneys who would serve the District, and state each person's role. Attach resumes.",
+  "answer_text": "We staff each engagement with a small team so that {AGENCY_SHORT} always speaks to someone who knows its matters. The lead attorney is responsible for all advice and attends {GOVERNING_BODY} meetings in person. The backup attorney is copied on open matters and can step in on short notice.",
+  "approved": false,
+  "approver": "",
+  "review_by": "2028-06-17",
+  "tags": [
+   "harvested"
+  ]
+ },
+ {
+  "id": "A-H-P-2026-H-redwood-flats-e",
+  "proposal_id": "P-2026-H-redwood-flats",
+  "proposal_agency": "Redwood Flats Water District",
+  "agency_type": "special_district",
+  "practice": "general_counsel",
+  "submitted": "2026-12-17",
+  "outcome": "won",
+  "question_type": "approach",
+  "question_text": "Work Plan. Describe how the firm would deliver the services in Section III, including meeting attendance, turnaround times and how the firm keeps the Board informed.",
+  "answer_text": "We propose to serve {AGENCY} with one lead attorney who attends every regular {GOVERNING_BODY} meeting. Before each meeting we review the agenda with the {CHIEF_EXEC}. When {AGENCY_SHORT} considers new rates and charges we review the rate study before it goes to the {GOVERNING_BODY}.",
+  "approved": false,
+  "approver": "",
+  "review_by": "2028-06-17",
+  "tags": [
+   "harvested"
+  ]
+ },
+ {
+  "id": "A-H-P-2026-H-redwood-flats-i",
+  "proposal_id": "P-2026-H-redwood-flats",
+  "proposal_agency": "Redwood Flats Water District",
+  "agency_type": "special_district",
+  "practice": "general_counsel",
+  "submitted": "2026-12-17",
+  "outcome": "won",
+  "question_type": "transition",
+  "question_text": "Transition. Describe how the firm would take over from retiring counsel.",
+  "answer_text": "We would meet retiring counsel in the first week, collect the open files and calendar every deadline. We would give the {GOVERNING_BODY} a written list of open matters with a recommended next step for each. This is the same plan we used for Kettle Bend Irrigation District.",
+  "approved": false,
+  "approver": "",
+  "review_by": "2028-06-17",
+  "tags": [
+   "harvested"
+  ]
+ }
+]

@@ -1,0 +1,161 @@
+{
+  "seed": 20261207,
+  "period_start": "2026-09-07",
+  "period_end": "2026-12-06",
+  "people": 320,
+  "weekly_active_lawyers": [
+    {
+      "week": "2026-W37",
+      "active": 54,
+      "eligible": 180
+    },
+    {
+      "week": "2026-W38",
+      "active": 61,
+      "eligible": 183
+    },
+    {
+      "week": "2026-W39",
+      "active": 62,
+      "eligible": 178
+    },
+    {
+      "week": "2026-W40",
+      "active": 56,
+      "eligible": 177
+    },
+    {
+      "week": "2026-W41",
+      "active": 72,
+      "eligible": 194
+    },
+    {
+      "week": "2026-W42",
+      "active": 65,
+      "eligible": 194
+    },
+    {
+      "week": "2026-W43",
+      "active": 73,
+      "eligible": 195
+    },
+    {
+      "week": "2026-W44",
+      "active": 30,
+      "eligible": 170
+    },
+    {
+      "week": "2026-W45",
+      "active": 70,
+      "eligible": 197
+    },
+    {
+      "week": "2026-W46",
+      "active": 76,
+      "eligible": 196
+    },
+    {
+      "week": "2026-W47",
+      "active": 85,
+      "eligible": 193
+    },
+    {
+      "week": "2026-W48",
+      "active": 89,
+      "eligible": 195
+    },
+    {
+      "week": "2026-W49",
+      "active": 87,
+      "eligible": 193
+    }
+  ],
+  "holiday_week": "2026-W44",
+  "survey_week": "2026-W48",
+  "licences": {
+    "Assistant A": {
+      "licensed": 195,
+      "activated": 99,
+      "unused_30_days": 97
+    },
+    "Assistant B": {
+      "licensed": 286,
+      "activated": 76,
+      "unused_30_days": 211
+    }
+  },
+  "heavy_users": [
+    "SYN-0016",
+    "SYN-0143",
+    "SYN-0164",
+    "SYN-0208",
+    "SYN-0210",
+    "SYN-0284",
+    "SYN-0287",
+    "SYN-0320"
+  ],
+  "top_8_by_interactions": [
+    "SYN-0016",
+    "SYN-0143",
+    "SYN-0164",
+    "SYN-0208",
+    "SYN-0210",
+    "SYN-0284",
+    "SYN-0287",
+    "SYN-0320"
+  ],
+  "unlicensed_assistant_a_users": [
+    "SYN-0203",
+    "SYN-0249"
+  ],
+  "practice_changers": [
+    "SYN-0061",
+    "SYN-0310",
+    "SYN-0314"
+  ],
+  "usage_in_full_leave_weeks": 5,
+  "new_office": "Lakeshore",
+  "new_office_start": "2026-10-05",
+  "new_office_lawyers": 15,
+  "overclaim_practice": "Real estate",
+  "small_practice": {
+    "name": "Competition",
+    "lawyers": 4
+  },
+  "small_office": {
+    "name": "Midvale",
+    "lawyers": 4
+  },
+  "roster_people_with_no_usage": 173,
+  "total_interactions": 12445,
+  "exports": {
+    "assistant_a_events": {
+      "duplicate": 40,
+      "unknown_user": 25,
+      "bad_date": 6,
+      "missing_user": 4,
+      "outside_period": 12,
+      "identifier_repaired": 1108,
+      "unmapped_feature": 187,
+      "usage_without_licence": 39,
+      "rows_read": 9434,
+      "rows_kept": 9347
+    },
+    "assistant_b_daily": {
+      "duplicate": 10,
+      "conflicting_duplicate": 5,
+      "unknown_user": 12,
+      "bad_date": 5,
+      "bad_count": 3,
+      "zero_count": 30,
+      "identifier_repaired": 330,
+      "alternate_date_format": 180,
+      "rows_read": 1781,
+      "rows_kept": 1716
+    }
+  },
+  "survey": {
+    "responses": 160,
+    "top_blocker": "unsure_allowed"
+  }
+}

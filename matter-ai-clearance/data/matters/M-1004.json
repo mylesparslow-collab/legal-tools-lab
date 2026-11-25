@@ -1,0 +1,40 @@
+{
+ "id": "M-1004",
+ "name": "Drennick v. Castellane Cold Storage (fictional): warehouse loss",
+ "client_id": "drennick",
+ "matter_type": "commercial litigation",
+ "responsible_attorney": "M. Okonjo (fictional)",
+ "intake_date": "2026-09-15",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "yes",
+  "document_id": "PO-M1004 (fictional stipulated protective order)",
+  "restrictions": {
+   "ai_use": "not_addressed",
+   "vendor_processing": "permitted_with_undertaking",
+   "no_retention_after_matter": "yes",
+   "attorneys_eyes_only_tier": "no"
+  },
+  "undertakings_signed_tool_ids": [],
+  "quoted_terms": [
+   {
+    "field": "vendor_processing",
+    "quote": "Protected Material may be disclosed to outside vendors retained for litigation support who have signed Exhibit A."
+   },
+   {
+    "field": "no_retention_after_matter",
+    "quote": "Within sixty days after final disposition each party shall return or destroy all Protected Material."
+   }
+  ]
+ },
+ "terms_document_ids": [
+  "drennick-ocg-2025",
+  "drennick-el-2025"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

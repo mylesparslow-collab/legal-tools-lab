@@ -1,0 +1,36 @@
+{
+  "_about": "Ranking weights and thresholds. Every number that affects order is here, not in code. Blend weights are applied to values between 0 and 1 and are shown per result in the explain output.",
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "field_weights": {"title": 2.5, "body": 1.0, "metadata": 1.5}
+  },
+  "blend": {
+    "text": 0.60,
+    "model_form": 0.14,
+    "is_final": 0.08,
+    "was_filed": 0.06,
+    "reuse": 0.07,
+    "recency": 0.05
+  },
+  "reuse_cap": 20,
+  "recency_half_life_years": 4,
+  "match_mode": "all",
+  "relax_to_any_when_empty": true,
+  "near_duplicate_threshold": 0.6,
+  "snippet_words": 30,
+  "facet_values_shown": 12,
+  "rerank_top_k": 20,
+  "acl_max_age_hours": null,
+  "as_of": null,
+  "experience": {
+    "role_weights": {"lead": 1.0, "support": 0.5, "timekeeper": 0.3},
+    "basis_weights": {"matter": 1.0, "description": 0.8, "documents": 0.6},
+    "recency_half_life_years": 3,
+    "hours_cap": 200,
+    "hours_floor": 0.15,
+    "thin_person_max_matters": 1,
+    "thin_person_max_hours": 15,
+    "confident_min_matters": 3
+  }
+}

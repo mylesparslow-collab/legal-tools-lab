@@ -1,0 +1,32 @@
+Walk-forward back-test (minimum 8 comps)
+Walk-forward. Each matter is modeled only from same-type matters that closed before it opened, using time dated before it opened. Abnormally closed matters are neither tested nor used as comps. Amounts are at today's standard rates on both sides.
+Upper bands are judged one-sided with an exact binomial check: a band is said to understate overruns when seeing that many matters above it, or more, would happen less than 1 time in 20 if the band were right. With about a dozen matter types and two bands each, expect the odd flag by chance.
+
+matter type                            tested  in P25-P75    <= P75        <= P90       
+                                               (nominal 50%) (nominal 75%) (nominal 90%)
+administrative_licensing_appeal            27   13/27   48%   22/27   81%   26/27   96% 
+    Overruns at P75 and P90 are within what chance would explain at n=27. At the P75 figure, 5 of 27 back-tested matters cost more; the band implies about 7. At the P90 figure, 1 of 27 back-tested matters cost more; the band implies about 3.
+commercial_lease_review                    38   11/38   29%   27/38   71%   30/38   79% 
+    Bands understate overruns at P90 (n=38): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P90. At the P75 figure, 11 of 38 back-tested matters cost more; the band implies about 10. At the P90 figure, 8 of 38 back-tested matters cost more; the band implies about 4. Middle band: 11 of 38 inside P25 to P75 against a nominal 50%.
+contract_dispute_arbitration               19    7/19   37%   17/19   89%   19/19  100% 
+    Overruns at P75 and P90 are within what chance would explain at n=19. At the P75 figure, 2 of 19 back-tested matters cost more; the band implies about 5. At the P90 figure, 0 of 19 back-tested matters cost more; the band implies about 2.
+election_law_advisory                       0       n/a           n/a           n/a     
+    Not back-tested: no matter of this type ever had 8 earlier closed matters to model from.
+employment_single_plaintiff_defense        41   16/41   39%   26/41   63%   31/41   76% 
+    Bands understate overruns at P90 (n=41): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P90. At the P75 figure, 15 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 10 of 41 back-tested matters cost more; the band implies about 4.
+facility_change_of_ownership               37   16/37   43%   27/37   73%   29/37   78% 
+    Bands understate overruns at P90 (n=37): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P90. At the P75 figure, 10 of 37 back-tested matters cost more; the band implies about 9. At the P90 figure, 8 of 37 back-tested matters cost more; the band implies about 4.
+internal_investigation                     31    9/31   29%   13/31   42%   22/31   71% 
+    Costs shifted over time (later closes 1.57x earlier ones) and bands built from older matters missed. Restrict comps to recent closes and re-test. At the P75 figure, 18 of 31 back-tested matters cost more; the band implies about 8. At the P90 figure, 9 of 31 back-tested matters cost more; the band implies about 3. Middle band: 9 of 31 inside P25 to P75 against a nominal 50%.
+ordinance_drafting                         41   16/41   39%   27/41   66%   34/41   83% 
+    Overruns at P75 and P90 are within what chance would explain at n=41. At the P75 figure, 14 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 7 of 41 back-tested matters cost more; the band implies about 4.
+paga_response                              35   18/35   51%   20/35   57%   28/35   80% 
+    Bands understate overruns at P75 (n=35): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P75. At the P75 figure, 15 of 35 back-tested matters cost more; the band implies about 9. At the P90 figure, 7 of 35 back-tested matters cost more; the band implies about 4.
+public_records_litigation                  53   28/53   53%   38/53   72%   44/53   83% 
+    Overruns at P75 and P90 are within what chance would explain at n=53. At the P75 figure, 15 of 53 back-tested matters cost more; the band implies about 13. At the P90 figure, 9 of 53 back-tested matters cost more; the band implies about 5.
+public_works_bid_protest                   41   16/41   39%   32/41   78%   37/41   90% 
+    Overruns at P75 and P90 are within what chance would explain at n=41. At the P75 figure, 9 of 41 back-tested matters cost more; the band implies about 10. At the P90 figure, 4 of 41 back-tested matters cost more; the band implies about 4.
+regulatory_compliance_audit                22   12/22   55%   19/22   86%   21/22   95% 
+    Overruns at P75 and P90 are within what chance would explain at n=22. At the P75 figure, 3 of 22 back-tested matters cost more; the band implies about 6. At the P90 figure, 1 of 22 back-tested matters cost more; the band implies about 2.
+ALL TYPES                                 385  162/385  42%  268/385  70%  321/385  83% 
+    Bands understate overruns at P75 and P90 (n=385): more back-tested matters exceeded the band than chance would explain. Do not read that figure as a true P75 or P90. At the P75 figure, 117 of 385 back-tested matters cost more; the band implies about 96. At the P90 figure, 64 of 385 back-tested matters cost more; the band implies about 39.
