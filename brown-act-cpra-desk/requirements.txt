@@ -1,0 +1,3 @@
+pypdfium2>=5
+reportlab>=4  # only to build the sample PDFs and run the redaction tests
+pytest>=8

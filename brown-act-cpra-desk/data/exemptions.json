@@ -1,0 +1,53 @@
+{
+ "meta": {
+  "title": "Exemption categories the desk can propose",
+  "note": "Every proposal is a suggestion for a human reviewer. Nothing is withheld or redacted until a named reviewer approves it."
+ },
+ "categories": {
+  "employee_contact": {
+   "label": "Employee home address, home or personal cell number, birthdate",
+   "cite": "Gov. Code § 7928.300",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7928.300",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "personal_privacy": {
+   "label": "Personal information in personnel, medical or similar files (unwarranted invasion of privacy)",
+   "cite": "Gov. Code § 7927.700",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7927.700",
+   "status": "verified",
+   "verified_on": "2026-11-25",
+   "note": "There is no general 'PII' exemption in the CPRA. The reviewer must confirm the record type and the privacy balance."
+  },
+  "attorney_client": {
+   "label": "Attorney-client privileged communication (Evid. Code § 954) via § 7927.705",
+   "cite": "Gov. Code § 7927.705",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7927.705",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "draft": {
+   "label": "Preliminary draft or note not retained in the ordinary course",
+   "cite": "Gov. Code § 7927.500",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7927.500",
+   "status": "verified",
+   "verified_on": "2026-11-25",
+   "note": "Applies only if not retained in the ordinary course and the interest in withholding clearly outweighs disclosure."
+  },
+  "deliberative": {
+   "label": "Deliberative process, asserted under the public-interest balancing test",
+   "cite": "Gov. Code § 7922.000",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7922.000",
+   "status": "verified",
+   "verified_on": "2026-11-25",
+   "note": "Deliberative process is not an express CPRA exemption. It is argued under § 7922.000 and case law. Attorney review needed."
+  },
+  "security": {
+   "label": "Information security record that would reveal vulnerabilities",
+   "cite": "Gov. Code § 7929.210",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7929.210",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  }
+ }
+}

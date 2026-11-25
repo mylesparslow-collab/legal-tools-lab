@@ -1,0 +1,502 @@
+[
+ {
+  "agency": "Quillhaven Valley Water District (fictional)",
+  "body": "Board of Directors",
+  "meeting": {
+   "type": "regular",
+   "start": "2027-01-12T18:00",
+   "location": "District Boardroom, 400 Larkmoor Road",
+   "in_jurisdiction": true,
+   "open_to_public": true,
+   "public_remote_access": "two_way_av",
+   "agenda_lists_remote_access": true
+  },
+  "counts": {
+   "fail": 5,
+   "review": 6,
+   "info": 6,
+   "pass": 10
+  },
+  "sections": {
+   "clocks": [
+    {
+     "level": "pass",
+     "code": "regular_agenda",
+     "message": "Agenda posted at a public location 97.5 hours before the meeting (needs 72).",
+     "cite": "Gov. Code § 54954.2(a)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "fail",
+     "code": "regular_agenda",
+     "message": "Agenda posted on the website 69.8 hours before the meeting. The rule is 72 hours. Latest compliant time was 2027-01-09 18:00.",
+     "cite": "Gov. Code § 54954.2(a)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "pass",
+     "code": "accommodation_notice",
+     "message": "Agenda includes the disability accommodation request information.",
+     "cite": "Gov. Code § 54954.2(a)(1)(C)(ii)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    }
+   ],
+   "quorum": [
+    {
+     "level": "info",
+     "code": "quorum_basis",
+     "message": "7 seats, so a quorum is 4. 6 members participating.",
+     "cite": null,
+     "source_status": "assumption",
+     "source_url": null
+    },
+    {
+     "level": "pass",
+     "code": "quorum_total",
+     "message": "6 of 7 participating meets the quorum of 4.",
+     "cite": null,
+     "source_status": "assumption",
+     "source_url": null
+    },
+    {
+     "level": "info",
+     "code": "ada_counts",
+     "message": "Director Imamura: counted as attending in person at the meeting location. No location posting needed.",
+     "cite": "Gov. Code § 54953(c)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953"
+    },
+    {
+     "level": "fail",
+     "code": "teleconf_agenda_posted_at_location",
+     "message": "Director Ashgrove: teleconference agenda is not posted at the location.",
+     "cite": "Gov. Code § 54953(b)(3)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953"
+    },
+    {
+     "level": "pass",
+     "code": "teleconf_jurisdiction_quorum",
+     "message": "4 members participating from inside the agency's territory; 4 needed when traditional teleconferencing is used.",
+     "cite": "Gov. Code § 54953(b)(3)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953"
+    },
+    {
+     "level": "pass",
+     "code": "alt_public_access",
+     "message": "Public remote access recorded as 'two_way_av'.",
+     "cite": "Gov. Code § 54953.8(b)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8"
+    },
+    {
+     "level": "review",
+     "code": "alt_adults",
+     "message": "Director Pell: before any action, must disclose whether adults are in the room and the general relationship.",
+     "cite": "Gov. Code § 54953.8(e)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8"
+    },
+    {
+     "level": "info",
+     "code": "alt_minutes",
+     "message": "Minutes must list each remote member and the provision relied on.",
+     "cite": "Gov. Code § 54953.8(b)(7)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8"
+    },
+    {
+     "level": "pass",
+     "code": "jc_inperson_quorum",
+     "message": "4 members in person at the single noticed location (disability-accommodation participants count as in person); 4 needed for anyone to use just cause.",
+     "cite": "Gov. Code § 54953.8.3",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.3"
+    },
+    {
+     "level": "info",
+     "code": "jc_ground",
+     "message": "Director Pell: ground is 'Travel on official business' (§ 54953.8.3(c)(4)). Minutes must name it.",
+     "cite": "Gov. Code § 54953.8.3",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.3"
+    },
+    {
+     "level": "pass",
+     "code": "jc_cap",
+     "message": "Director Pell: this would be use 3 this year; cap is 5 for a body meeting 2 time(s) a month.",
+     "cite": "Gov. Code § 54953.8.3",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.3"
+    },
+    {
+     "level": "review",
+     "code": "mixed_modes",
+     "message": "More than one teleconference track is used at this meeting. § 54953.8(f) says the tracks are cumulative; how their quorum rules combine needs attorney review."
+    }
+   ],
+   "items": [
+    {
+     "level": "fail",
+     "code": "creep_action",
+     "message": "Item 4: description reads as discussion only, but the staff report recommends action (adopt, authorize, execute, increase).",
+     "cite": "Gov. Code § 54954.2(a)(1)(A)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "review",
+     "code": "creep_money",
+     "message": "Item 4: staff report involves $4,200,000 but the description gives no amount.",
+     "cite": "Gov. Code § 54954.2(a)(1)(A)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "pass",
+     "code": "desc_ok",
+     "message": "Item 5: description is 16 words; no mismatch with the staff report detected.",
+     "cite": "Gov. Code § 54954.2(a)(1)(A)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "review",
+     "code": "desc_thin",
+     "message": "Item 6: description is 1 word(s) ('Updates.'). It may not tell the public what will be discussed.",
+     "cite": "Gov. Code § 54954.2(a)(1)(A)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "fail",
+     "code": "closed_fields",
+     "message": "Item 9: missing from the § 54954.5 form: Under negotiation.",
+     "cite": "Gov. Code § 54954.5(b)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "pass",
+     "code": "closed_ok",
+     "message": "Item 10: matches the § 54954.5 form 'CONFERENCE WITH LEGAL COUNSEL—EXISTING LITIGATION'.",
+     "cite": "Gov. Code § 54954.5(c)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "review",
+     "code": "closed_label",
+     "message": "Item 11: heading does not match the § 54954.5 form for § 54957(a) ('THREAT TO PUBLIC SERVICES OR FACILITIES'). The form is optional, but without it the safe harbor may not apply.",
+     "cite": "Gov. Code § 54954.5(e)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "fail",
+     "code": "closed_fields",
+     "message": "Item 11: missing from the § 54954.5 form: Consultation with.",
+     "cite": "Gov. Code § 54954.5(e)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "info",
+     "code": "closed_cyber",
+     "message": "Item 11: AB 2715 (Stats. 2024, ch. 243, effective 1/1/2025) added cybersecurity threats to critical infrastructure controls or information to § 54957(a). It did not amend § 54954.5, so there is no separate cybersecurity form; this is the existing § 54957 form.",
+     "cite": "Gov. Code § 54954.5(e)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "pass",
+     "code": "closed_ok",
+     "message": "Item 12: matches the § 54954.5 form 'CONFERENCE WITH LABOR NEGOTIATORS'.",
+     "cite": "Gov. Code § 54954.5(f)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "review",
+     "code": "closed_number",
+     "message": "Item 13: the form calls for the number of potential cases.",
+     "cite": "Gov. Code § 54954.5(c)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "info",
+     "code": "closed_reminder",
+     "message": "Item 13: § 54956.9(e)(2)-(5) may require more facts on the agenda or in an oral statement before the closed session.",
+     "cite": "Gov. Code § 54954.5(c)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    }
+   ]
+  }
+ },
+ {
+  "agency": "Quillhaven Valley Water District (fictional)",
+  "body": "Board of Directors",
+  "meeting": {
+   "type": "special",
+   "start": "2027-02-03T09:00",
+   "location": "District Boardroom, 400 Larkmoor Road",
+   "in_jurisdiction": true,
+   "open_to_public": true
+  },
+  "counts": {
+   "fail": 2,
+   "review": 1,
+   "info": 1,
+   "pass": 4
+  },
+  "sections": {
+   "clocks": [
+    {
+     "level": "pass",
+     "code": "special_posting",
+     "message": "Call and notice posted at a public location 24.5 hours before the meeting (needs 24).",
+     "cite": "Gov. Code § 54956(a)(2)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956"
+    },
+    {
+     "level": "pass",
+     "code": "special_notice",
+     "message": "Notice posted on the website 24.2 hours before the meeting (needs 24).",
+     "cite": "Gov. Code § 54956(a)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956"
+    },
+    {
+     "level": "fail",
+     "code": "special_notice",
+     "message": "Written notice received by members 22.8 hours before the meeting. The rule is 24 hours. Latest compliant time was 2027-02-02 09:00.",
+     "cite": "Gov. Code § 54956(a)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956"
+    },
+    {
+     "level": "pass",
+     "code": "special_notice",
+     "message": "Written notice received by media that asked for it 24.2 hours before the meeting (needs 24).",
+     "cite": "Gov. Code § 54956(a)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956"
+    }
+   ],
+   "quorum": [
+    {
+     "level": "info",
+     "code": "quorum_basis",
+     "message": "7 seats, so a quorum is 4. 5 members participating.",
+     "cite": null,
+     "source_status": "assumption",
+     "source_url": null
+    },
+    {
+     "level": "pass",
+     "code": "quorum_total",
+     "message": "5 of 7 participating meets the quorum of 4.",
+     "cite": null,
+     "source_status": "assumption",
+     "source_url": null
+    }
+   ],
+   "items": [
+    {
+     "level": "review",
+     "code": "creep_money",
+     "message": "Item 1: staff report involves $268,000 but the description gives no amount.",
+     "cite": "Gov. Code § 54954.2(a)(1)(A)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "fail",
+     "code": "special_pay",
+     "message": "Item 1: appears to concern executive or board pay at a special meeting.",
+     "cite": "Gov. Code § 54956(b)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956"
+    }
+   ]
+  }
+ },
+ {
+  "agency": "Quillhaven Valley Water District (fictional)",
+  "body": "Board of Directors",
+  "meeting": {
+   "type": "regular",
+   "start": "2027-01-26T18:00",
+   "location": "District Boardroom, 400 Larkmoor Road",
+   "in_jurisdiction": true,
+   "open_to_public": true,
+   "public_remote_access": "phone_plus_webcast",
+   "agenda_lists_remote_access": true
+  },
+  "counts": {
+   "fail": 0,
+   "review": 0,
+   "info": 6,
+   "pass": 12
+  },
+  "sections": {
+   "clocks": [
+    {
+     "level": "pass",
+     "code": "regular_agenda",
+     "message": "Agenda posted at a public location 99 hours before the meeting (needs 72).",
+     "cite": "Gov. Code § 54954.2(a)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "pass",
+     "code": "regular_agenda",
+     "message": "Agenda posted on the website 98.9 hours before the meeting (needs 72).",
+     "cite": "Gov. Code § 54954.2(a)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "pass",
+     "code": "accommodation_notice",
+     "message": "Agenda includes the disability accommodation request information.",
+     "cite": "Gov. Code § 54954.2(a)(1)(C)(ii)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    }
+   ],
+   "quorum": [
+    {
+     "level": "info",
+     "code": "quorum_basis",
+     "message": "7 seats, so a quorum is 4. 6 members participating.",
+     "cite": null,
+     "source_status": "assumption",
+     "source_url": null
+    },
+    {
+     "level": "pass",
+     "code": "quorum_total",
+     "message": "6 of 7 participating meets the quorum of 4.",
+     "cite": null,
+     "source_status": "assumption",
+     "source_url": null
+    },
+    {
+     "level": "info",
+     "code": "ada_counts",
+     "message": "Director Imamura: counted as attending in person at the meeting location. No location posting needed.",
+     "cite": "Gov. Code § 54953(c)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953"
+    },
+    {
+     "level": "pass",
+     "code": "alt_public_access",
+     "message": "Public remote access recorded as 'phone_plus_webcast'.",
+     "cite": "Gov. Code § 54953.8(b)(1)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8"
+    },
+    {
+     "level": "info",
+     "code": "alt_minutes",
+     "message": "Minutes must list each remote member and the provision relied on.",
+     "cite": "Gov. Code § 54953.8(b)(7)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8"
+    },
+    {
+     "level": "pass",
+     "code": "jc_inperson_quorum",
+     "message": "5 members in person at the single noticed location (disability-accommodation participants count as in person); 4 needed for anyone to use just cause.",
+     "cite": "Gov. Code § 54953.8.3",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.3"
+    },
+    {
+     "level": "info",
+     "code": "jc_ground",
+     "message": "Director Pell: ground is 'Contagious illness' (§ 54953.8.3(c)(2)). Minutes must name it.",
+     "cite": "Gov. Code § 54953.8.3",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.3"
+    },
+    {
+     "level": "pass",
+     "code": "jc_cap",
+     "message": "Director Pell: this would be use 4 this year; cap is 5 for a body meeting 2 time(s) a month.",
+     "cite": "Gov. Code § 54953.8.3",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.3"
+    }
+   ],
+   "items": [
+    {
+     "level": "pass",
+     "code": "desc_ok",
+     "message": "Item 3: description is 16 words; no mismatch with the staff report detected.",
+     "cite": "Gov. Code § 54954.2(a)(1)(A)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2"
+    },
+    {
+     "level": "pass",
+     "code": "closed_ok",
+     "message": "Item 7: matches the § 54954.5 form 'CONFERENCE WITH REAL PROPERTY NEGOTIATORS'.",
+     "cite": "Gov. Code § 54954.5(b)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "info",
+     "code": "closed_cyber",
+     "message": "Item 8: AB 2715 (Stats. 2024, ch. 243, effective 1/1/2025) added cybersecurity threats to critical infrastructure controls or information to § 54957(a). It did not amend § 54954.5, so there is no separate cybersecurity form; this is the existing § 54957 form.",
+     "cite": "Gov. Code § 54954.5(e)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "pass",
+     "code": "closed_ok",
+     "message": "Item 8: matches the § 54954.5 form 'THREAT TO PUBLIC SERVICES OR FACILITIES'.",
+     "cite": "Gov. Code § 54954.5(e)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "info",
+     "code": "closed_reminder",
+     "message": "Item 9: § 54956.9(e)(2)-(5) may require more facts on the agenda or in an oral statement before the closed session.",
+     "cite": "Gov. Code § 54954.5(c)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "pass",
+     "code": "closed_ok",
+     "message": "Item 9: matches the § 54954.5 form 'CONFERENCE WITH LEGAL COUNSEL—ANTICIPATED LITIGATION'.",
+     "cite": "Gov. Code § 54954.5(c)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    },
+    {
+     "level": "pass",
+     "code": "closed_ok",
+     "message": "Item 10: matches the § 54954.5 form 'PUBLIC EMPLOYEE PERFORMANCE EVALUATION'.",
+     "cite": "Gov. Code § 54954.5(e)",
+     "source_status": "verified",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5"
+    }
+   ]
+  }
+ }
+]

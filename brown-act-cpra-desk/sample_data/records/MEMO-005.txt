@@ -1,0 +1,7 @@
+DRAFT - not for distribution
+From: Engineering
+To: General Manager
+Date: 2026-10-12
+Subject: Well 7 options
+
+Option B is cheaper by $80,000. SCADA admin login for the test bench: qvwd-admin / see vault.

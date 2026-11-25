@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//brown-act-cpra-desk//demo//EN
+BEGIN:VEVENT
+UID:PRA-2027-001-determination_due@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:CPRA determination due: PRA-2027-001
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-001-extension_latest@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:CPRA latest extended date (only if extension noticed): PRA-2027-001
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-002-determination_due@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:CPRA determination due: PRA-2027-002
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-002-extension_latest@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:CPRA latest extended date (only if extension noticed): PRA-2027-002
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-003-determination_due@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:CPRA determination due: PRA-2027-003
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-003-extension_latest@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:CPRA latest extended date (only if extension noticed): PRA-2027-003
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-004-determination_due@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:CPRA determination due: PRA-2027-004
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-004-extension_latest@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:CPRA latest extended date (only if extension noticed): PRA-2027-004
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-005-determination_due@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:CPRA determination due: PRA-2027-005
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+BEGIN:VEVENT
+UID:PRA-2027-005-extension_latest@desk.demo
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:CPRA latest extended date (only if extension noticed): PRA-2027-005
+DESCRIPTION:Demo output with fictional data. Check the date against Gov. Code § 7922.535.
+END:VEVENT
+END:VCALENDAR

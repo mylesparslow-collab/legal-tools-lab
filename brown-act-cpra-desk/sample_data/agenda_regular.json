@@ -1,0 +1,120 @@
+{
+ "_note": "Fictional agency, people and facts. Built to trip several checks.",
+ "agency": "Quillhaven Valley Water District (fictional)",
+ "body": "Board of Directors",
+ "seats": 7,
+ "meets_per_month": 2,
+ "accommodation_notice": true,
+ "meeting": {
+  "type": "regular",
+  "start": "2027-01-12T18:00",
+  "location": "District Boardroom, 400 Larkmoor Road",
+  "in_jurisdiction": true,
+  "open_to_public": true,
+  "public_remote_access": "two_way_av",
+  "agenda_lists_remote_access": true
+ },
+ "posting": {
+  "has_website": true,
+  "physical_posted_at": "2027-01-08T16:30",
+  "website_posted_at": "2027-01-09T20:15"
+ },
+ "attendance": [
+  {
+   "member": "Director Okafor-Lindqvist",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Vasquez-Thorne",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Halloran",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Imamura",
+   "mode": "ada_remote",
+   "audio_visual": true,
+   "adults_disclosed": true
+  },
+  {
+   "member": "Director Pell",
+   "mode": "just_cause",
+   "just_cause_ground": "c4",
+   "just_cause_uses_this_year": 2,
+   "audio_visual": true,
+   "adults_disclosed": false
+  },
+  {
+   "member": "Director Ashgrove",
+   "mode": "teleconf_posted",
+   "location_on_agenda": true,
+   "location_public": true,
+   "agenda_posted_at_location": false,
+   "location_in_jurisdiction": false
+  },
+  {
+   "member": "Director Nwosu",
+   "mode": "absent"
+  }
+ ],
+ "items": [
+  {
+   "no": "4",
+   "section": "open",
+   "title": "Rate study",
+   "description": "Discussion of the water rate study.",
+   "staff_report": "Background: the consultant finished the cost-of-service study in November. Staff recommends that the Board adopt Resolution 2027-03 to increase the monthly base charge by 9 percent and authorize the General Manager to execute a $4,200,000 financing agreement. The increase would take effect March 1."
+  },
+  {
+   "no": "5",
+   "section": "open",
+   "title": "Well 7",
+   "description": "Award a construction contract for the Well 7 rehabilitation project to Brightwater Pump Co. for $612,400.",
+   "staff_report": "Staff recommends the Board award the Well 7 rehabilitation contract to Brightwater Pump Co. in the amount of $612,400."
+  },
+  {
+   "no": "6",
+   "section": "open",
+   "title": "Updates",
+   "description": "Updates.",
+   "staff_report": ""
+  },
+  {
+   "no": "9",
+   "section": "closed",
+   "authority": "Gov. Code § 54956.8",
+   "title": "Larkmoor parcel",
+   "text": "CONFERENCE WITH REAL PROPERTY NEGOTIATORS\nProperty: APN 041-220-017, Larkmoor Road\nAgency negotiator: General Manager Corwin Achterberg\nNegotiating parties: Sablefield Orchards LLC"
+  },
+  {
+   "no": "10",
+   "section": "closed",
+   "authority": "54956.9(d)(1)",
+   "title": "Litigation",
+   "text": "CONFERENCE WITH LEGAL COUNSEL - EXISTING LITIGATION\n(Paragraph (1) of subdivision (d) of Section 54956.9)\nName of case: Tamsin Ridge Homeowners Assn. v. Quillhaven Valley Water District, Case No. 26CV-01187"
+  },
+  {
+   "no": "11",
+   "section": "closed",
+   "authority": "54957(a)",
+   "title": "Cybersecurity",
+   "text": "CYBERSECURITY BRIEFING\nDiscussion of ransomware attempt on SCADA network with IT consultant."
+  },
+  {
+   "no": "12",
+   "section": "closed",
+   "authority": "54957.6",
+   "title": "Labor",
+   "text": "CONFERENCE WITH LABOR NEGOTIATORS\nAgency designated representatives: Corwin Achterberg, Mirela Dunmore\nEmployee organization: Quillhaven Water Employees Association"
+  },
+  {
+   "no": "13",
+   "section": "closed",
+   "authority": "54956.9(d)(2)",
+   "title": "Exposure",
+   "text": "CONFERENCE WITH LEGAL COUNSEL—ANTICIPATED LITIGATION\nSignificant exposure to litigation pursuant to paragraph (2) of subdivision (d) of Section 54956.9: several matters"
+  }
+ ]
+}

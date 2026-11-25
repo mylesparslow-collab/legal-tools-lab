@@ -1,0 +1,58 @@
+{
+ "meta": {
+  "title": "CPRA rules used by the records desk",
+  "verified_on": "2026-11-25",
+  "method": "Section text read on leginfo.legislature.ca.gov on the verified_on date. 'verified' means the number or wording below was compared with that text. It does not mean an attorney has reviewed how the rule is applied here."
+ },
+ "determination": {
+  "days": 10,
+  "what": "Within 10 days from receipt of a request for a copy of records, decide whether it seeks disclosable records in the agency's possession and promptly tell the requester the decision and reasons, with an estimated date the records will be available. This is a deadline to decide and notify, not to produce.",
+  "cite": "Gov. Code § 7922.535(a)",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7922.535",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ },
+ "extension": {
+  "max_days": 14,
+  "what": "In unusual circumstances, the head of the agency or a designee may extend by written notice giving the reasons and the date a determination is expected. The extension cannot exceed 14 days.",
+  "cite": "Gov. Code § 7922.535(b)",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7922.535",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ },
+ "unusual_circumstances": {
+  "c1": "Search and collect from field facilities or separate establishments",
+  "c2": "Voluminous separate and distinct records in a single request",
+  "c3": "Consultation with another agency or agency component with a substantial interest",
+  "c4": "Compile data, write a program or build a computer report to extract data",
+  "c5": "Cyberattack prevents access to electronic servers or systems",
+  "c6": "Governor-proclaimed state of emergency affecting the agency's ability to respond (not for records about the emergency)",
+  "cite": "Gov. Code § 7922.535(c)",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7922.535",
+  "status": "verified",
+  "verified_on": "2026-11-25",
+  "note": "Paragraphs (5) and (6) are in the text as amended by AB 370 (Stats. 2025, ch. 34), effective 1/1/2026."
+ },
+ "roll_forward": {
+  "enabled": true,
+  "what": "If the last day lands on a Saturday, Sunday or listed holiday, the desk moves it to the next business day. This comes from general time-computation rules (Civ. Code § 10; Code Civ. Proc. §§ 12-12a), not from § 7922.535. The section text itself says only '10 days'.",
+  "status": "assumption",
+  "cite": "Civ. Code § 10; Code Civ. Proc. §§ 12, 12a",
+  "source_url": null,
+  "verified_on": null
+ },
+ "denial": {
+  "what": "A denial in whole or part of a written request must be in writing and give the names and titles of each person responsible for the denial. Withholding is justified under § 7922.000.",
+  "cite": "Gov. Code § 7922.540",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7922.540",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ },
+ "justification": {
+  "what": "The agency must show an express exemption applies, or that on the facts the public interest in nondisclosure clearly outweighs the public interest in disclosure.",
+  "cite": "Gov. Code § 7922.000",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7922.000",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "counsel": [
+  "Ottoline Farrow",
+  "farrowmeade-law.example"
+ ],
+ "_note": "Reviewer decisions on the proposals. Ids come from 'python -m desk propose'. Anything not listed stays proposed and is not applied.",
+ "decisions": {
+  "EM-001-01": {
+   "decision": "approve",
+   "reviewer": "Mirela Dunmore, Records Coordinator (fictional)"
+  },
+  "EM-001-02": {
+   "decision": "approve",
+   "reviewer": "Mirela Dunmore, Records Coordinator (fictional)"
+  },
+  "EM-001-03": {
+   "decision": "approve",
+   "reviewer": "Mirela Dunmore, Records Coordinator (fictional)"
+  },
+  "EM-002-01": {
+   "decision": "approve",
+   "reviewer": "Mirela Dunmore, Records Coordinator (fictional)"
+  },
+  "EM-004-01": {
+   "decision": "approve",
+   "reviewer": "Ottoline Farrow, District Counsel (fictional)"
+  },
+  "MEMO-005-01": {
+   "decision": "reject",
+   "reviewer": "Ottoline Farrow, District Counsel (fictional)"
+  },
+  "MEMO-005-02": {
+   "decision": "approve",
+   "reviewer": "Mirela Dunmore, Records Coordinator (fictional)"
+  }
+ }
+}

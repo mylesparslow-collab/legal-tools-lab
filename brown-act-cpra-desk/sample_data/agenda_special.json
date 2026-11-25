@@ -1,0 +1,61 @@
+{
+ "_note": "Fictional. Special meeting with a pay item.",
+ "agency": "Quillhaven Valley Water District (fictional)",
+ "body": "Board of Directors",
+ "seats": 7,
+ "meets_per_month": 2,
+ "meeting": {
+  "type": "special",
+  "start": "2027-02-03T09:00",
+  "location": "District Boardroom, 400 Larkmoor Road",
+  "in_jurisdiction": true,
+  "open_to_public": true
+ },
+ "posting": {
+  "has_website": true,
+  "physical_posted_at": "2027-02-02T08:30",
+  "website_posted_at": "2027-02-02T08:45",
+  "members_notice_received_at": "2027-02-02T10:10",
+  "media_requested_notice": true,
+  "media_notified_at": "2027-02-02T08:50"
+ },
+ "attendance": [
+  {
+   "member": "Director Okafor-Lindqvist",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Vasquez-Thorne",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Halloran",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Imamura",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Pell",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Ashgrove",
+   "mode": "absent"
+  },
+  {
+   "member": "Director Nwosu",
+   "mode": "absent"
+  }
+ ],
+ "items": [
+  {
+   "no": "1",
+   "section": "open",
+   "title": "GM contract",
+   "description": "Approve amended employment agreement increasing the General Manager's salary.",
+   "staff_report": "Staff recommends the Board approve the Third Amendment increasing the General Manager's base salary to $268,000."
+  }
+ ]
+}

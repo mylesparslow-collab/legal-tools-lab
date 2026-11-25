@@ -1,0 +1,93 @@
+{
+ "meta": {
+  "title": "Former CPRA sections (Gov. Code § 6250 et seq.) mapped to Division 10 (§ 7920.000 et seq.)",
+  "pairing_status": "unverified",
+  "note": "New-section text read on leginfo 2026-11-25. The old-to-new pairing is from the recodification (AB 473, Stats. 2021, ch. 614, operative 1/1/2023) as recalled, and was not checked against the Law Revision Commission disposition table."
+ },
+ "map": [
+  {
+   "old": "6253(c)",
+   "new": "7922.535",
+   "topic": "10-day determination and 14-day extension",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6253(b)",
+   "new": "7922.530",
+   "topic": "Copies promptly available on payment of direct duplication cost",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6255(a)",
+   "new": "7922.000",
+   "topic": "Justify withholding; public-interest balancing",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6255(b)",
+   "new": "7922.540",
+   "topic": "Written denial",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254(a)",
+   "new": "7927.500",
+   "topic": "Preliminary drafts, notes and memoranda not kept in the ordinary course",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254(b)",
+   "new": "7927.200",
+   "topic": "Pending litigation and claims",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254(c)",
+   "new": "7927.700",
+   "topic": "Personnel, medical or similar files",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254(f)",
+   "new": "7923.600",
+   "topic": "Law enforcement investigatory records (see §§ 7923.600-7923.625)",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254(h)",
+   "new": "7928.705",
+   "topic": "Real estate appraisals and engineering or feasibility estimates",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254(k)",
+   "new": "7927.705",
+   "topic": "Records exempt under other federal or state law, including Evidence Code privileges",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254(aa)",
+   "new": "7929.200",
+   "topic": "Vulnerability assessments prepared for closed session",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254.3",
+   "new": "7928.300",
+   "topic": "Employee home addresses, phone numbers and birthdates",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254.15",
+   "new": "7927.605",
+   "topic": "Corporate financial and proprietary records for facility siting",
+   "new_text_status": "verified"
+  },
+  {
+   "old": "6254.19",
+   "new": "7929.210",
+   "topic": "Information security records",
+   "new_text_status": "verified"
+  }
+ ]
+}

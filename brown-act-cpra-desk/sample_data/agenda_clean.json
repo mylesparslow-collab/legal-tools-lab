@@ -1,0 +1,92 @@
+{
+ "_note": "Fictional. Meets every coded rule.",
+ "agency": "Quillhaven Valley Water District (fictional)",
+ "body": "Board of Directors",
+ "seats": 7,
+ "meets_per_month": 2,
+ "accommodation_notice": true,
+ "meeting": {
+  "type": "regular",
+  "start": "2027-01-26T18:00",
+  "location": "District Boardroom, 400 Larkmoor Road",
+  "in_jurisdiction": true,
+  "open_to_public": true,
+  "public_remote_access": "phone_plus_webcast",
+  "agenda_lists_remote_access": true
+ },
+ "posting": {
+  "has_website": true,
+  "physical_posted_at": "2027-01-22T15:00",
+  "website_posted_at": "2027-01-22T15:05"
+ },
+ "attendance": [
+  {
+   "member": "Director Okafor-Lindqvist",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Vasquez-Thorne",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Halloran",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Nwosu",
+   "mode": "in_person"
+  },
+  {
+   "member": "Director Imamura",
+   "mode": "ada_remote",
+   "audio_visual": true,
+   "adults_disclosed": true
+  },
+  {
+   "member": "Director Pell",
+   "mode": "just_cause",
+   "just_cause_ground": "c2",
+   "just_cause_uses_this_year": 3,
+   "audio_visual": true,
+   "adults_disclosed": true
+  },
+  {
+   "member": "Director Ashgrove",
+   "mode": "absent"
+  }
+ ],
+ "items": [
+  {
+   "no": "3",
+   "section": "open",
+   "title": "Well 7",
+   "description": "Award a construction contract for the Well 7 rehabilitation project to Brightwater Pump Co. for $612,400.",
+   "staff_report": "Staff recommends the Board award the contract to Brightwater Pump Co. for $612,400."
+  },
+  {
+   "no": "7",
+   "section": "closed",
+   "authority": "54956.8",
+   "text": "CONFERENCE WITH REAL PROPERTY NEGOTIATORS\nProperty: APN 041-220-017\nAgency negotiator: Corwin Achterberg\nNegotiating parties: Sablefield Orchards LLC\nUnder negotiation: Price and terms of payment"
+  },
+  {
+   "no": "8",
+   "section": "closed",
+   "authority": "54957(a)",
+   "title": "Cybersecurity",
+   "text": "THREAT TO PUBLIC SERVICES OR FACILITIES\nConsultation with: Ilse Brandvold, Security Operations Manager, Quillhaven Valley Water District"
+  },
+  {
+   "no": "9",
+   "section": "closed",
+   "authority": "54956.9(d)(2)",
+   "text": "CONFERENCE WITH LEGAL COUNSEL—ANTICIPATED LITIGATION\nSignificant exposure to litigation pursuant to paragraph (2) of subdivision (d) of Section 54956.9: 1 potential case"
+  },
+  {
+   "no": "10",
+   "section": "closed",
+   "authority": "54957(b)",
+   "text": "PUBLIC EMPLOYEE PERFORMANCE EVALUATION\nTitle: General Manager"
+  }
+ ]
+}

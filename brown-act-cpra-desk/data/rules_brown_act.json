@@ -1,0 +1,434 @@
+{
+ "meta": {
+  "title": "Brown Act rules used by the agenda validator",
+  "verified_on": "2026-11-25",
+  "method": "Section text read on leginfo.legislature.ca.gov on the verified_on date. 'verified' means the number or wording below was compared with that text. It does not mean an attorney has reviewed how the rule is applied here.",
+  "status_values": {
+   "verified": "compared with leginfo text",
+   "assumption": "design choice or common practice, not statute text",
+   "not_modeled": "statute exists but this demo does not check it"
+  }
+ },
+ "clocks": [
+  {
+   "id": "regular_agenda",
+   "meeting_type": "regular",
+   "hours": 72,
+   "what": "Agenda posted in a freely accessible location and on the agency website (if it has one) at least 72 hours before a regular meeting",
+   "cite": "Gov. Code § 54954.2(a)(1)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  {
+   "id": "special_notice",
+   "meeting_type": "special",
+   "hours": 24,
+   "what": "Written notice received by each member (unless waived) and by media that asked for notice, at least 24 hours before the meeting; also posted on the website",
+   "cite": "Gov. Code § 54956(a)(1)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  {
+   "id": "special_posting",
+   "meeting_type": "special",
+   "hours": 24,
+   "what": "Call and notice posted at least 24 hours before in a freely accessible location",
+   "cite": "Gov. Code § 54956(a)(2)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  {
+   "id": "emergency_media",
+   "meeting_type": "emergency",
+   "hours": 1,
+   "what": "Media that asked for special-meeting notice notified by phone (or email if they asked for email) one hour before an emergency meeting. This is a media notice, not a posting clock.",
+   "cite": "Gov. Code § 54956.5(b)(2)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956.5",
+   "status": "verified",
+   "verified_on": "2026-11-25",
+   "note": "The research report called this a 1-hour posting clock."
+  },
+  {
+   "id": "dire_emergency_media",
+   "meeting_type": "dire_emergency",
+   "hours": 0,
+   "what": "For a dire emergency, media notified at or near the time members are notified",
+   "cite": "Gov. Code § 54956.5(b)(2)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956.5",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  {
+   "id": "emergency_minutes",
+   "meeting_type": "emergency",
+   "hours": null,
+   "what": "Minutes, list of persons notified, rollcall vote and actions posted for at least 10 days as soon after the meeting as possible",
+   "cite": "Gov. Code § 54956.5(e)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956.5",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  }
+ ],
+ "description": {
+  "guideline_words": 20,
+  "what": "A brief general description of each item, including closed-session items. The description 'generally need not exceed 20 words'. This is a guideline on length, not a cap.",
+  "cite": "Gov. Code § 54954.2(a)(1)(A)",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ },
+ "accommodation_notice": {
+  "what": "Agenda says how, to whom and when to ask for a disability-related modification or accommodation",
+  "cite": "Gov. Code § 54954.2(a)(1)(C)(ii)",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.2",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ },
+ "special_meeting_pay_bar": {
+  "what": "No special meeting on salaries, salary schedules or fringe benefits of the legislative body or a local agency executive (budget discussion excepted)",
+  "cite": "Gov. Code § 54956(b)",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54956",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ },
+ "quorum": {
+  "what": "Quorum is computed as a majority of all seats. Check the agency's enabling act or bylaws; some bodies count differently.",
+  "status": "assumption",
+  "cite": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ "modes": {
+  "in_person": {
+   "label": "In person at the noticed meeting location",
+   "counts_in_person": true,
+   "cite": "Gov. Code § 54953(a)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "teleconf_posted": {
+   "label": "Traditional teleconference from a posted, public location",
+   "counts_in_person": false,
+   "requires": [
+    "location_on_agenda",
+    "location_public",
+    "agenda_posted_at_location"
+   ],
+   "what": "Each teleconference location is identified in the notice and agenda, is accessible to the public, and has the agenda posted. At least a quorum participates from locations inside the agency's territory.",
+   "cite": "Gov. Code § 54953(b)(3)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "ada_remote": {
+   "label": "Remote participation as a disability accommodation",
+   "counts_in_person": true,
+   "what": "Treated as in-person attendance at the physical meeting location for all purposes, including quorum-location rules. Audio and video required unless a disability-related physical condition requires off-camera participation. Member discloses any adults in the room before action is taken. Subdivision (b) and §§ 54953.8-54953.8.7 do not apply.",
+   "cite": "Gov. Code § 54953(c)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "just_cause": {
+   "label": "Remote for just cause",
+   "counts_in_person": false,
+   "sunset": "2030-01-01",
+   "grounds": {
+    "c1": "Childcare or caregiving need",
+    "c2": "Contagious illness",
+    "c3": "Physical or mental condition not covered by § 54953(c)",
+    "c4": "Travel on official business",
+    "c5": "Immunocompromised family member",
+    "c6": "Physical or family medical emergency",
+    "c7": "Military service obligations"
+   },
+   "annual_caps": {
+    "once_per_month_or_less": 2,
+    "twice_per_month": 5,
+    "three_or_more_per_month": 7
+   },
+   "what": "At least a quorum participates in person from one physical location named on the agenda, open to the public and inside the agency's territory. Member gives notice with a general description, uses audio and video, and stays within the yearly cap. Minutes name the ground relied on.",
+   "cite": "Gov. Code § 54953.8.3",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.3",
+   "status": "verified",
+   "verified_on": "2026-11-25",
+   "note": "The research report said the AB 2449 rules ended on 12/31/2025. SB 707 re-enacted a just-cause track here, repealed 1/1/2030 by its own terms."
+  },
+  "emergency_remote": {
+   "label": "Remote during a proclaimed state of emergency or local emergency",
+   "counts_in_person": false,
+   "renewal_days": 45,
+   "what": "Allowed during a proclaimed emergency to decide, or after deciding by majority vote, that meeting in person would present imminent risks. Findings renewed every 45 days. No physical public location required. Phone-only public access is allowed.",
+   "cite": "Gov. Code § 54953.8.2",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.2",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "other_54953_8": {
+   "label": "Other § 54953.8 track (health authority, neighborhood council, student organization, subsidiary body, multijurisdictional body)",
+   "counts_in_person": false,
+   "what": "§§ 54953.8.1, .8.4, .8.5, .8.6 and .8.7 each have their own conditions. This demo does not check them.",
+   "cite": "Gov. Code §§ 54953.8.1, 54953.8.4-54953.8.7",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8.6",
+   "status": "not_modeled",
+   "verified_on": null
+  },
+  "absent": {
+   "label": "Absent",
+   "counts_in_person": false,
+   "cite": null,
+   "source_url": null,
+   "status": "assumption",
+   "verified_on": null
+  }
+ },
+ "alt_teleconference_common": {
+  "public_access": {
+   "allowed": [
+    "two_way_av",
+    "phone_plus_webcast"
+   ],
+   "what": "Public can hear, see and address the body remotely through a two-way audiovisual platform, or a two-way phone service plus a live webcast",
+   "cite": "Gov. Code § 54953.8(b)(1)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "agenda_access_notice": {
+   "what": "Agenda gives the call-in or internet option for attending and commenting",
+   "cite": "Gov. Code § 54953.8(b)(2)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "adults_disclosure": {
+   "what": "Remote member discloses, before any action, whether adults are in the room and the general relationship",
+   "cite": "Gov. Code § 54953.8(e)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  },
+  "minutes_listing": {
+   "what": "Minutes list each remote member and the provision relied on",
+   "cite": "Gov. Code § 54953.8(b)(7)",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54953.8",
+   "status": "verified",
+   "verified_on": "2026-11-25"
+  }
+ },
+ "closed_session_safe_harbors": {
+  "standard": {
+   "what": "Using the § 54954.5 forms is optional. A body is not in violation of § 54954.2 or § 54956 if closed-session items were described in substantial compliance with § 54954.5, whatever the format.",
+   "cite": "Gov. Code § 54954.5",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+   "status": "verified",
+   "verified_on": "2026-11-25",
+   "note": "The research report said the descriptions must be exact. The text says substantial compliance."
+  },
+  "forms": [
+   {
+    "id": "real_property",
+    "authority": "54956.8",
+    "label": "CONFERENCE WITH REAL PROPERTY NEGOTIATORS",
+    "fields": [
+     [
+      "Property"
+     ],
+     [
+      "Agency negotiator",
+      "Agency negotiators"
+     ],
+     [
+      "Negotiating parties",
+      "Negotiating party"
+     ],
+     [
+      "Under negotiation"
+     ]
+    ],
+    "field_checks": {
+     "Under negotiation": "price|terms of payment|terms"
+    },
+    "cite": "Gov. Code § 54954.5(b)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "lit_existing",
+    "authority": "54956.9(d)(1)",
+    "label": "CONFERENCE WITH LEGAL COUNSEL—EXISTING LITIGATION",
+    "fields": [
+     [
+      "Name of case",
+      "Case name unspecified"
+     ]
+    ],
+    "cite": "Gov. Code § 54954.5(c)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "lit_exposure",
+    "authority": "54956.9(d)(2)",
+    "alt_authority": [
+     "54956.9(d)(3)"
+    ],
+    "label": "CONFERENCE WITH LEGAL COUNSEL—ANTICIPATED LITIGATION",
+    "fields": [
+     [
+      "Significant exposure to litigation"
+     ]
+    ],
+    "needs_number": true,
+    "reminder": "§ 54956.9(e)(2)-(5) may require more facts on the agenda or in an oral statement before the closed session.",
+    "cite": "Gov. Code § 54954.5(c)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "lit_initiation",
+    "authority": "54956.9(d)(4)",
+    "label": "CONFERENCE WITH LEGAL COUNSEL—ANTICIPATED LITIGATION",
+    "fields": [
+     [
+      "Initiation of litigation"
+     ]
+    ],
+    "needs_number": true,
+    "cite": "Gov. Code § 54954.5(c)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "liability_claims",
+    "authority": "54956.95",
+    "label": "LIABILITY CLAIMS",
+    "fields": [
+     [
+      "Claimant"
+     ],
+     [
+      "Agency claimed against"
+     ]
+    ],
+    "cite": "Gov. Code § 54954.5(d)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "threat",
+    "authority": "54957(a)",
+    "label": "THREAT TO PUBLIC SERVICES OR FACILITIES",
+    "fields": [
+     [
+      "Consultation with"
+     ]
+    ],
+    "note": "AB 2715 (Stats. 2024, ch. 243, effective 1/1/2025) added cybersecurity threats to critical infrastructure controls or information to § 54957(a). It did not amend § 54954.5, so there is no separate cybersecurity form; this is the existing § 54957 form.",
+    "cite": "Gov. Code § 54954.5(e)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "appointment",
+    "authority": "54957(b)",
+    "label": "PUBLIC EMPLOYEE APPOINTMENT",
+    "fields": [
+     [
+      "Title"
+     ]
+    ],
+    "match_label": true,
+    "cite": "Gov. Code § 54954.5(e)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "employment",
+    "authority": "54957(b)",
+    "label": "PUBLIC EMPLOYMENT",
+    "fields": [
+     [
+      "Title"
+     ]
+    ],
+    "match_label": true,
+    "cite": "Gov. Code § 54954.5(e)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "evaluation",
+    "authority": "54957(b)",
+    "label": "PUBLIC EMPLOYEE PERFORMANCE EVALUATION",
+    "fields": [
+     [
+      "Title"
+     ]
+    ],
+    "match_label": true,
+    "cite": "Gov. Code § 54954.5(e)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "discipline",
+    "authority": "54957(b)",
+    "label": "PUBLIC EMPLOYEE DISCIPLINE/DISMISSAL/RELEASE",
+    "fields": [],
+    "match_label": true,
+    "cite": "Gov. Code § 54954.5(e)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   },
+   {
+    "id": "labor",
+    "authority": "54957.6",
+    "label": "CONFERENCE WITH LABOR NEGOTIATORS",
+    "fields": [
+     [
+      "Agency designated representatives",
+      "Agency designated representative"
+     ],
+     [
+      "Employee organization",
+      "Unrepresented employee"
+     ]
+    ],
+    "cite": "Gov. Code § 54954.5(f)",
+    "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54954.5",
+    "status": "verified",
+    "verified_on": "2026-11-25"
+   }
+  ],
+  "not_modeled": "Forms in § 54954.5(a), (g), (h), (i), (j) and (k) (license/permit, case review, trade secret and hospital hearings, federal-law complaints, joint powers agency, state audit) are not checked."
+ },
+ "cure_and_correct": {
+  "what": "Written demand to cure within 90 days of the action, or 30 days if the action was in open session in violation of § 54954.2. The body has 30 days to respond.",
+  "cite": "Gov. Code § 54960.1(c)",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54960.1",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ },
+ "social_media": {
+  "what": "A member may use public social media to inform or hear from the public, but a majority may not discuss agency business among themselves there, and a member may not respond directly to another member's post on agency business. SB 707 kept this rule in the section.",
+  "cite": "Gov. Code § 54952.2(b)(3)",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=54952.2",
+  "status": "verified",
+  "verified_on": "2026-11-25"
+ }
+}
