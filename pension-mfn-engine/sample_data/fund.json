@@ -1,0 +1,36 @@
+{
+  "name": "Harbor Crest Capital Partners V, L.P. (fictional)",
+  "general_partner": "Harbor Crest GP V, LLC (fictional)",
+  "fund_type": "private_equity",
+  "subscription_date": "2026-10-30",
+  "final_closing_date": "2026-11-13",
+  "compendium_delivery_date": "2026-11-16",
+  "mfn_terms": {
+    "clause_ref": "LPA \u00a7 14.6 (fictional)",
+    "election_window_days": 20,
+    "day_type": "calendar",
+    "roll_forward_if_weekend": true,
+    "aggregate_affiliates": true,
+    "excluded_categories": [
+      "lpac_seat",
+      "transfer"
+    ]
+  },
+  "placement_agents": [
+    {
+      "name": "Dana Whitlock",
+      "firm": "Bluewater Placement Advisors LLC",
+      "claims_exemption": null
+    },
+    {
+      "name": "Marcus Oyelaran",
+      "firm": "Bluewater Placement Advisors LLC",
+      "claims_exemption": null
+    },
+    {
+      "name": "Priya Venkataraman",
+      "firm": "Harbor Crest Management LLC",
+      "claims_exemption": "82047.3(b)"
+    }
+  ]
+}

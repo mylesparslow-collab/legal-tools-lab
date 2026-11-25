@@ -1,0 +1,13 @@
+{
+  "name": "Tule County Employees' Retirement Association (fictional 1937 Act system)",
+  "system_type": "local",
+  "commitment": 60000000,
+  "affiliates": [],
+  "statuses": [
+    "governmental_plan",
+    "public_records",
+    "tax_exempt",
+    "state_entity:California"
+  ],
+  "admitted_at_initial_closing": false
+}

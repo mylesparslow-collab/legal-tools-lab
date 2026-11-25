@@ -1,0 +1,37 @@
+[
+  {
+    "provision_id": 30,
+    "page": 10,
+    "category": "other",
+    "quote": "shall hold an annual meeting of Limited Partners",
+    "note": "An annual-meeting covenant, not a key-person trigger."
+  },
+  {
+    "provision_id": 36,
+    "page": 12,
+    "category": "reporting",
+    "quote": "shall report any change in valuation methodology",
+    "note": "Quarterly valuation schedule."
+  },
+  {
+    "provision_id": 2,
+    "page": 1,
+    "category": "management_fee",
+    "quote": "reduced by 50 basis points per annum",
+    "note": "Fabricated figure; the text says 10."
+  },
+  {
+    "provision_id": 9,
+    "page": 4,
+    "category": "co_investment",
+    "quote": "opportunity to co-invest",
+    "note": "Wrong page; provision 9 is on page 3."
+  },
+  {
+    "provision_id": 13,
+    "page": 5,
+    "category": "best_terms",
+    "quote": "Key Person Event",
+    "note": "Category not in the fixed list."
+  }
+]

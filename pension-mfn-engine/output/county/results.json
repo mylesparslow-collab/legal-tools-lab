@@ -1,0 +1,852 @@
+{
+  "investor": {
+    "name": "Tule County Employees' Retirement Association (fictional 1937 Act system)",
+    "system_type": "local",
+    "commitment": 60000000,
+    "affiliates": [],
+    "statuses": [
+      "governmental_plan",
+      "public_records",
+      "tax_exempt",
+      "state_entity:California"
+    ],
+    "admitted_at_initial_closing": false
+  },
+  "fund": {
+    "name": "Harbor Crest Capital Partners V, L.P. (fictional)",
+    "general_partner": "Harbor Crest GP V, LLC (fictional)",
+    "fund_type": "private_equity",
+    "subscription_date": "2026-10-30",
+    "final_closing_date": "2026-11-13",
+    "compendium_delivery_date": "2026-11-16",
+    "mfn_terms": {
+      "clause_ref": "LPA § 14.6 (fictional)",
+      "election_window_days": 20,
+      "day_type": "calendar",
+      "roll_forward_if_weekend": true,
+      "aggregate_affiliates": true,
+      "excluded_categories": [
+        "lpac_seat",
+        "transfer"
+      ]
+    }
+  },
+  "aggregated_commitment": 60000000,
+  "deadline": {
+    "delivery_date": "2026-11-16",
+    "raw_deadline": "2026-12-06",
+    "deadline": "2026-12-07",
+    "rolled": true,
+    "window": "20 calendar days"
+  },
+  "gate": [
+    {
+      "rule_id": "GOV-7514.7",
+      "title": "Annual fee, expense and carried-interest disclosure by the fund vehicle",
+      "citation": "Gov. Code § 7514.7(a)(1)-(5), (c)(1), (d)",
+      "verification_status": "verified_primary_text",
+      "status": "FLAG",
+      "section": "§ 2 Fee Reporting",
+      "quote": "The General Partner shall provide such information solely to the extent it is tracked by the General Partner in the ordinary course and can be provided without incremental expense to the General Partner or the Fund.",
+      "why": "§ 7514.7(a) says the public fund 'shall require' the disclosures. The text has no cost-based exception."
+    },
+    {
+      "rule_id": "GOV-7514.7",
+      "title": "Annual fee, expense and carried-interest disclosure by the fund vehicle",
+      "citation": "Gov. Code § 7514.7(a)(1)-(5), (c)(1), (d)",
+      "verification_status": "verified_primary_text",
+      "status": "FLAG",
+      "section": "§ 2 Fee Reporting",
+      "quote": "The General Partner shall provide such information solely to the extent it is tracked by the General Partner in the ordinary course and can be provided without incremental expense to the General Partner or the Fund.",
+      "why": "Limits the disclosure to what the manager already tracks. § 7514.7(a) has no such limit."
+    },
+    {
+      "rule_id": "GOV-7514.7",
+      "title": "Annual fee, expense and carried-interest disclosure by the fund vehicle",
+      "citation": "Gov. Code § 7514.7(a)(1)-(5), (c)(1), (d)",
+      "verification_status": "verified_primary_text",
+      "status": "FLAG",
+      "section": "§ 2 Fee Reporting",
+      "quote": "The General Partner shall use commercially reasonable efforts to provide the Investor, annually, with the information described in California Government Code Section 7514.7, including the Investor's pro rata share of fees and expenses paid from the Fund to the General Partner and the Investor's pro rata share of carried interest distributed to the General Partner.",
+      "why": "'Reasonable efforts' appears only in § 7514.7(d)(2), for pre-2017 contracts, and it is the public fund's own duty, not a standard for the manager."
+    },
+    {
+      "rule_id": "GOV-7514.7",
+      "title": "Annual fee, expense and carried-interest disclosure by the fund vehicle",
+      "citation": "Gov. Code § 7514.7(a)(1)-(5), (c)(1), (d)",
+      "verification_status": "verified_primary_text",
+      "status": "GAP",
+      "section": "§ 2",
+      "quote": null,
+      "why": "Not named in the clause: (a)(1) fees and expenses paid directly; (a)(4) pro rata share of portfolio-company fees and expenses."
+    },
+    {
+      "rule_id": "GOV-7928.710",
+      "title": "Public Records Act: fund-level items that stay disclosable",
+      "citation": "Gov. Code § 7928.710(b), (c)(1)-(9)",
+      "verification_status": "verified_primary_text",
+      "status": "FLAG",
+      "section": "§ 3 Public Records",
+      "quote": "The Investor may disclose the name and vintage year of the Fund, the amount of the Investor's Commitment, the amount of the Investor's contributions and distributions, and the net internal rate of return of the Fund; provided that, before making any such disclosure, the Investor shall obtain the prior written consent of the General Partner and deliver to the General Partner an opinion of counsel that the disclosure is required by law.",
+      "why": "Makes a statutory disclosure depend on the manager's consent. § 7928.710(c) says the listed items are 'subject to disclosure'. (That a consent condition is improper is an attorney judgment; the statute does not mention side-letter conditions.)"
+    },
+    {
+      "rule_id": "GOV-7928.710",
+      "title": "Public Records Act: fund-level items that stay disclosable",
+      "citation": "Gov. Code § 7928.710(b), (c)(1)-(9)",
+      "verification_status": "verified_primary_text",
+      "status": "FLAG",
+      "section": "§ 3 Public Records",
+      "quote": "The Investor may disclose the name and vintage year of the Fund, the amount of the Investor's Commitment, the amount of the Investor's contributions and distributions, and the net internal rate of return of the Fund; provided that, before making any such disclosure, the Investor shall obtain the prior written consent of the General Partner and deliver to the General Partner an opinion of counsel that the disclosure is required by law.",
+      "why": "Makes a statutory disclosure depend on a legal opinion. Same note as above."
+    },
+    {
+      "rule_id": "GOV-7928.710",
+      "title": "Public Records Act: fund-level items that stay disclosable",
+      "citation": "Gov. Code § 7928.710(b), (c)(1)-(9)",
+      "verification_status": "verified_primary_text",
+      "status": "FLAG",
+      "section": "§ 3 Public Records",
+      "quote": "The General Partner acknowledges that the Investor is subject to public records laws, including California Government Code Section 6254.26.",
+      "why": "Cites the pre-2023 section number. The current section is § 7928.710 (operative January 1, 2023). The old number was not re-read in this build."
+    },
+    {
+      "rule_id": "GOV-7928.710",
+      "title": "Public Records Act: fund-level items that stay disclosable",
+      "citation": "Gov. Code § 7928.710(b), (c)(1)-(9)",
+      "verification_status": "verified_primary_text",
+      "status": "GAP",
+      "section": "§ 3",
+      "quote": null,
+      "why": "Not named in the clause: (c)(5) distributions plus remaining value; (c)(7) investment multiple; (c)(8) management fees and costs paid; (c)(9) cash profit received."
+    },
+    {
+      "rule_id": "GOV-7513.85",
+      "title": "Manager must agree in writing to the board's placement-agent disclosure policy",
+      "citation": "Gov. Code § 7513.85(a)-(d)",
+      "verification_status": "verified_primary_text",
+      "status": "MISSING",
+      "section": null,
+      "quote": null,
+      "why": "No sentence on this point was found in the draft."
+    },
+    {
+      "rule_id": "GOV-7513.86",
+      "title": "Placement agents for a state system must be registered lobbyists",
+      "citation": "Gov. Code §§ 7513.86, 82039(a)(2), 82047.3",
+      "verification_status": "verified_primary_text",
+      "status": "NOT_APPLICABLE",
+      "section": null,
+      "quote": null,
+      "why": "Reaches state systems; this investor is a local system."
+    },
+    {
+      "rule_id": "GOV-7513.87",
+      "title": "Placement agents for a local system: local lobbying rules",
+      "citation": "Gov. Code § 7513.87(a), (b)",
+      "verification_status": "verified_primary_text",
+      "status": "REVIEW",
+      "section": null,
+      "quote": null,
+      "why": "Check whether the county or city has a lobbying ordinance and whether each named placement agent has filed under it. This build has no local registry data."
+    },
+    {
+      "rule_id": "GOV-86205(f)",
+      "title": "No contingent placement fees on state-system investments",
+      "citation": "Gov. Code §§ 86205(f), 82039(a)(2), 82002(a)(2)",
+      "verification_status": "verified_primary_text",
+      "status": "NOT_APPLICABLE",
+      "section": null,
+      "quote": null,
+      "why": "Reaches state systems; this investor is a local system."
+    },
+    {
+      "rule_id": "GOV-7513.9",
+      "title": "Placement agent's disclosure of campaign contributions and gifts",
+      "citation": "Gov. Code § 7513.9(a), (b)",
+      "verification_status": "verified_primary_text",
+      "status": "REVIEW",
+      "section": null,
+      "quote": null,
+      "why": "No sentence on this point was found in the draft."
+    },
+    {
+      "rule_id": "CONST-XVI-6",
+      "title": "Indemnification by a public fund (gift and lending-of-credit clause)",
+      "citation": "Cal. Const. art. XVI, § 6",
+      "verification_status": "interpretive_attorney_review",
+      "status": "FLAG",
+      "section": "§ 5 Indemnification",
+      "quote": "The Investor shall indemnify the General Partner and the Fund against any losses arising from a breach of the Investor's representations in its subscription agreement, without limitation as to amount.",
+      "why": "Uncapped indemnity from a public fund. Art. XVI § 6 restricts gifts of public money and lending of public credit; whether and how it limits an LP indemnity is an attorney judgment."
+    },
+    {
+      "rule_id": "CONST-XVI-6",
+      "title": "Indemnification by a public fund (gift and lending-of-credit clause)",
+      "citation": "Cal. Const. art. XVI, § 6",
+      "verification_status": "interpretive_attorney_review",
+      "status": "REVIEW",
+      "section": "§ 5",
+      "quote": null,
+      "why": "No cap at the commitment and no 'to the extent permitted by law' limiter was found in the indemnity section."
+    },
+    {
+      "rule_id": "SOVEREIGN-IMMUNITY",
+      "title": "Immunity, forum and jury-trial waivers",
+      "citation": "No citation given in the report",
+      "verification_status": "unverified",
+      "status": "FLAG",
+      "section": "§ 6 Governing Law; Forum",
+      "quote": "The Investor submits to the exclusive jurisdiction of the courts of the State of Delaware, waives any immunity from suit or enforcement to which it may be entitled, and waives any right to a trial by jury.",
+      "why": "Waiver of immunity. The report lists 'sovereign immunity' with no authority; nothing was verified here."
+    },
+    {
+      "rule_id": "SOVEREIGN-IMMUNITY",
+      "title": "Immunity, forum and jury-trial waivers",
+      "citation": "No citation given in the report",
+      "verification_status": "unverified",
+      "status": "FLAG",
+      "section": "§ 6 Governing Law; Forum",
+      "quote": "The Investor submits to the exclusive jurisdiction of the courts of the State of Delaware, waives any immunity from suit or enforcement to which it may be entitled, and waives any right to a trial by jury.",
+      "why": "Exclusive out-of-state forum."
+    },
+    {
+      "rule_id": "SOVEREIGN-IMMUNITY",
+      "title": "Immunity, forum and jury-trial waivers",
+      "citation": "No citation given in the report",
+      "verification_status": "unverified",
+      "status": "FLAG",
+      "section": "§ 6 Governing Law; Forum",
+      "quote": "The Investor submits to the exclusive jurisdiction of the courts of the State of Delaware, waives any immunity from suit or enforcement to which it may be entitled, and waives any right to a trial by jury.",
+      "why": "Jury-trial waiver."
+    }
+  ],
+  "mfn": [
+    {
+      "id": 1,
+      "page": 1,
+      "category": "reporting",
+      "category_label": "Reporting and fee transparency",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "No conditions in the lead-in.",
+          "quote": "Granted to one or more Limited Partners."
+        }
+      ],
+      "lead_in": "Granted to one or more Limited Partners.",
+      "text": "Granted to one or more Limited Partners. The General Partner shall deliver the Fund's audited annual financial statements within 120 days after the end of each fiscal year, and shall include in each annual report a schedule of all fees and expenses charged to the Fund.",
+      "own_draft": "Has a clause on this topic: § 2"
+    },
+    {
+      "id": 2,
+      "page": 1,
+      "category": "management_fee",
+      "category_label": "Management fee",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $50,000,000; investor counts $60,000,000 = $60,000,000. Met.",
+          "quote": "Commitment of at least $50,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $50,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $50,000,000. The Management Fee payable by the Limited Partner shall be reduced by 10 basis points per annum during the Commitment Period.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 3,
+      "page": 1,
+      "category": "management_fee",
+      "category_label": "Management fee",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $100,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $100,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $100,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $100,000,000. The Management Fee payable by the Limited Partner shall be reduced by 25 basis points per annum during the Commitment Period and by a further 10 basis points per annum after the Commitment Period ends.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 4,
+      "page": 2,
+      "category": "management_fee",
+      "category_label": "Management fee",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $250,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $250,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $250,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $250,000,000. The Management Fee payable by the Limited Partner shall be reduced by 40 basis points per annum for the life of the Fund.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 5,
+      "page": 2,
+      "category": "regulatory_status",
+      "category_label": "Regulatory status (ERISA, BHCA, insurance)",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (erisa). Investor has none of these.",
+          "quote": "Granted to a Limited Partner that is subject to ERISA."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is subject to ERISA.",
+      "text": "Granted to a Limited Partner that is subject to ERISA. The General Partner shall use reasonable best efforts to conduct the Fund's affairs so that the assets of the Fund are not treated as plan assets, and shall deliver an annual certificate to that effect.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 6,
+      "page": 2,
+      "category": "regulatory_status",
+      "category_label": "Regulatory status (ERISA, BHCA, insurance)",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (governmental_plan). Investor shares: governmental_plan.",
+          "quote": "Granted to a Limited Partner that is a governmental plan."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is a governmental plan.",
+      "text": "Granted to a Limited Partner that is a governmental plan. The General Partner acknowledges that the Limited Partner is not subject to Title I of ERISA and agrees that no representation in the Subscription Agreement shall be read to say otherwise.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 7,
+      "page": 3,
+      "category": "public_records",
+      "category_label": "Public records and confidentiality",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (public_records). Investor shares: public_records.",
+          "quote": "Granted to a Limited Partner that is subject to public records laws."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is subject to public records laws.",
+      "text": "Granted to a Limited Partner that is subject to public records laws. The General Partner agrees that the Limited Partner may disclose, without notice to or consent of the General Partner, the name, address and vintage year of the Fund, the amount of its Commitment, its contributions and distributions, the remaining value of its Interest, the Fund's net internal rate of return and investment multiple, the management fees and costs it has paid, and the cash profit it has received.",
+      "own_draft": "Has a clause on this topic: § 3"
+    },
+    {
+      "id": 8,
+      "page": 3,
+      "category": "regulatory_status",
+      "category_label": "Regulatory status (ERISA, BHCA, insurance)",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (bhca). Investor has none of these.",
+          "quote": "Granted to a Limited Partner that is subject to the Bank Holding Company Act."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is subject to the Bank Holding Company Act.",
+      "text": "Granted to a Limited Partner that is subject to the Bank Holding Company Act. The Limited Partner's Interest shall be treated as a non-voting interest to the extent it exceeds 4.99% of the voting Interests of the Fund.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 9,
+      "page": 3,
+      "category": "co_investment",
+      "category_label": "Co-investment",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $100,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $100,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $100,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $100,000,000. The General Partner shall offer the Limited Partner the opportunity to co-invest, without management fee or carried interest, in each co-investment opportunity that the General Partner makes available to Limited Partners generally, in priority to third parties.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 10,
+      "page": 4,
+      "category": "co_investment",
+      "category_label": "Co-investment",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $250,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $250,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $250,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $250,000,000. The General Partner shall offer the Limited Partner a pro rata share of every co-invest opportunity exceeding $25,000,000 before offering it to any other person.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 11,
+      "page": 4,
+      "category": "lpac_seat",
+      "category_label": "LPAC seat",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Category 'LPAC seat' is carved out of the MFN by the fund agreement (LPA § 14.6 (fictional)).",
+          "quote": "appoint one member to the Advisory Committee"
+        },
+        {
+          "text": "Requires a commitment of at least $100,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $100,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $100,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $100,000,000. The Limited Partner may appoint one member to the Advisory Committee for so long as it holds its Interest.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 12,
+      "page": 4,
+      "category": "lpac_observer",
+      "category_label": "LPAC observer rights",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $50,000,000; investor counts $60,000,000 = $60,000,000. Met.",
+          "quote": "Commitment of at least $50,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $50,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $50,000,000. The Limited Partner may designate one non-voting observer to attend each meeting of the Advisory Committee and to receive all materials delivered to its members.",
+      "own_draft": "Has a clause on this topic: § 7"
+    },
+    {
+      "id": 13,
+      "page": 5,
+      "category": "key_person",
+      "category_label": "Key-person triggers",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "No conditions in the lead-in.",
+          "quote": "Granted to one or more Limited Partners."
+        }
+      ],
+      "lead_in": "Granted to one or more Limited Partners.",
+      "text": "Granted to one or more Limited Partners. If a Key Person Event occurs and is continuing for 90 days, the Limited Partner may, by notice to the General Partner, decline to fund any capital call for a new Portfolio Investment until the Advisory Committee approves a replacement.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 14,
+      "page": 5,
+      "category": "key_person",
+      "category_label": "Key-person triggers",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $100,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $100,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $100,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $100,000,000. The General Partner shall notify the Limited Partner within five Business Days if any Key Person devotes less than substantially all of that person's business time to the Fund and its predecessor funds.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 15,
+      "page": 5,
+      "category": "excuse",
+      "category_label": "Excuse rights (ESG, sanctions, policy)",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (state_entity:Texas). Investor has none of these.",
+          "quote": "Granted to a Limited Partner that is an instrumentality of the State of Texas."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is an instrumentality of the State of Texas.",
+      "text": "Granted to a Limited Partner that is an instrumentality of the State of Texas. The General Partner acknowledges that the Limited Partner may be excused from any Portfolio Investment that would cause it to violate Chapter 809 of the Texas Government Code.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 16,
+      "page": 6,
+      "category": "excuse",
+      "category_label": "Excuse rights (ESG, sanctions, policy)",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "No conditions in the lead-in.",
+          "quote": "Granted to one or more Limited Partners."
+        }
+      ],
+      "lead_in": "Granted to one or more Limited Partners.",
+      "text": "Granted to one or more Limited Partners. The Limited Partner shall be excused from participating in any Portfolio Investment in a company that, at the time of investment, is the subject of sanctions administered by the Office of Foreign Assets Control.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 17,
+      "page": 6,
+      "category": "excuse",
+      "category_label": "Excuse rights (ESG, sanctions, policy)",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (governmental_plan, public_records). Investor shares: governmental_plan, public_records.",
+          "quote": "Granted to a Limited Partner that is a governmental plan or is subject to public records laws."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is a governmental plan or is subject to public records laws.",
+      "text": "Granted to a Limited Partner that is a governmental plan or is subject to public records laws. The Limited Partner shall be excused from any Portfolio Investment that its governing board determines, in a written policy delivered to the General Partner before the Final Closing, to be prohibited to it.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 18,
+      "page": 6,
+      "category": "management_fee",
+      "category_label": "Management fee",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Limited to investors admitted at the Initial Closing. Investor was not admitted then.",
+          "quote": "Granted to a Limited Partner admitted at the Initial Closing."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner admitted at the Initial Closing.",
+      "text": "Granted to a Limited Partner admitted at the Initial Closing. The Management Fee payable by the Limited Partner shall be reduced by 15 basis points per annum for the first two years of the Commitment Period.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 19,
+      "page": 7,
+      "category": "management_fee",
+      "category_label": "Management fee",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted to an affiliate of the General Partner.",
+          "quote": "Granted to a Limited Partner that is an Affiliate of the General Partner."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is an Affiliate of the General Partner.",
+      "text": "Granted to a Limited Partner that is an Affiliate of the General Partner. No Management Fee and no Carried Interest shall be payable in respect of the Limited Partner's Interest.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 20,
+      "page": 7,
+      "category": "reporting",
+      "category_label": "Reporting and fee transparency",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $50,000,000; investor counts $60,000,000 = $60,000,000. Met.",
+          "quote": "Commitment of at least $50,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $50,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $50,000,000. The General Partner shall provide, with each quarterly report, the Limited Partner's pro rata share of fees and expenses paid from the Fund to the General Partner and its related parties, and of all fees paid by portfolio companies to the General Partner and its related parties, in the reporting template published by the Institutional Limited Partners Association.",
+      "own_draft": "Has a clause on this topic: § 2"
+    },
+    {
+      "id": 21,
+      "page": 7,
+      "category": "carried_interest",
+      "category_label": "Carried interest and distributions",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "No conditions in the lead-in.",
+          "quote": "Granted to one or more Limited Partners."
+        }
+      ],
+      "lead_in": "Granted to one or more Limited Partners.",
+      "text": "Granted to one or more Limited Partners. The General Partner shall provide the Limited Partner, annually and without qualification as to cost, the Limited Partner's pro rata share of Carried Interest distributed to the General Partner and its related parties.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 22,
+      "page": 8,
+      "category": "tax",
+      "category_label": "Tax",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (non_us). Investor has none of these.",
+          "quote": "Granted to a Limited Partner that is a non-U.S. investor."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is a non-U.S. investor.",
+      "text": "Granted to a Limited Partner that is a non-U.S. investor. The General Partner shall use commercially reasonable efforts to structure Portfolio Investments so that the Limited Partner does not recognise income effectively connected with a United States trade or business.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 23,
+      "page": 8,
+      "category": "tax",
+      "category_label": "Tax",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (tax_exempt). Investor shares: tax_exempt.",
+          "quote": "Granted to a Limited Partner that is tax-exempt."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is tax-exempt.",
+      "text": "Granted to a Limited Partner that is tax-exempt. The General Partner shall use commercially reasonable efforts to minimise unrelated business taxable income and shall report the amount of any UBTI allocated to the Limited Partner each year.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 24,
+      "page": 8,
+      "category": "regulatory_status",
+      "category_label": "Regulatory status (ERISA, BHCA, insurance)",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (insurance). Investor has none of these.",
+          "quote": "Granted to a Limited Partner that is an insurance company."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is an insurance company.",
+      "text": "Granted to a Limited Partner that is an insurance company. The General Partner shall provide the information the Limited Partner reasonably requests to complete its statutory filings with its state insurance regulator.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 25,
+      "page": 9,
+      "category": "transfer",
+      "category_label": "Transfers",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Category 'Transfers' is carved out of the MFN by the fund agreement (LPA § 14.6 (fictional)).",
+          "quote": "Transfer"
+        },
+        {
+          "text": "Requires a commitment of at least $100,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $100,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $100,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $100,000,000. The Limited Partner may Transfer all of its Interest to an Affiliate without the consent of the General Partner, on ten days' notice.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 26,
+      "page": 9,
+      "category": "indemnity_immunity",
+      "category_label": "Indemnity, immunity and forum",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (sovereign). Investor has none of these.",
+          "quote": "Granted to a Limited Partner that is entitled to sovereign immunity."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is entitled to sovereign immunity.",
+      "text": "Granted to a Limited Partner that is entitled to sovereign immunity. Nothing in the Partnership Agreement or the Subscription Agreement shall be a waiver of any immunity to which the Limited Partner is entitled, and the Limited Partner does not submit to the exclusive jurisdiction of any court outside its home state.",
+      "own_draft": "Has a clause on this topic: § 5, § 6"
+    },
+    {
+      "id": 27,
+      "page": 9,
+      "category": "indemnity_immunity",
+      "category_label": "Indemnity, immunity and forum",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (governmental_plan). Investor shares: governmental_plan.",
+          "quote": "Granted to a Limited Partner that is a governmental plan."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is a governmental plan.",
+      "text": "Granted to a Limited Partner that is a governmental plan. The Limited Partner's obligation to indemnify the Fund under the Subscription Agreement shall apply only to the extent permitted by the law that governs the Limited Partner and shall not exceed its unfunded Commitment.",
+      "own_draft": "Has a clause on this topic: § 5, § 6"
+    },
+    {
+      "id": 28,
+      "page": 10,
+      "category": "placement_agent",
+      "category_label": "Placement agents",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "No conditions in the lead-in.",
+          "quote": "Granted to one or more Limited Partners."
+        }
+      ],
+      "lead_in": "Granted to one or more Limited Partners.",
+      "text": "Granted to one or more Limited Partners. The General Partner represents that it has disclosed every placement agent engaged in connection with the Limited Partner's investment and all compensation paid or payable to each of them, and shall comply with the Limited Partner's placement agent policy.",
+      "own_draft": "Has a clause on this topic: § 4"
+    },
+    {
+      "id": 29,
+      "page": 10,
+      "category": "carried_interest",
+      "category_label": "Carried interest and distributions",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $250,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $250,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $250,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $250,000,000. The Preferred Return applicable to the Limited Partner's Interest shall be 9% per annum rather than 8% per annum.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 30,
+      "page": 10,
+      "category": "key_person",
+      "category_label": "Key-person triggers",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "No conditions in the lead-in.",
+          "quote": "Granted to one or more Limited Partners."
+        }
+      ],
+      "lead_in": "Granted to one or more Limited Partners.",
+      "text": "Granted to one or more Limited Partners. The General Partner shall hold an annual meeting of Limited Partners and shall make the Key Persons available at that meeting.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 31,
+      "page": 11,
+      "category": "other",
+      "category_label": "Other",
+      "category_source": "keyword rule",
+      "verdict": "REVIEW",
+      "reasons": [
+        {
+          "text": "Lead-in has qualifying language the parser does not recognise.",
+          "quote": null
+        }
+      ],
+      "lead_in": "Granted to certain Limited Partners in the amounts agreed with the General Partner.",
+      "text": "Granted to certain Limited Partners in the amounts agreed with the General Partner. The General Partner shall waive up to $2,000,000 of organisational expenses otherwise allocable to the Limited Partner.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 32,
+      "page": 11,
+      "category": "other",
+      "category_label": "Other",
+      "category_source": "keyword rule",
+      "verdict": "REVIEW",
+      "reasons": [
+        {
+          "text": "No 'Granted to / Available to' lead-in sentence; conditions could not be read.",
+          "quote": null
+        }
+      ],
+      "lead_in": null,
+      "text": "The General Partner confirms, for a Limited Partner with a Commitment of $75,000,000, that capital calls shall be made on not less than twelve Business Days' notice.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 33,
+      "page": 11,
+      "category": "carried_interest",
+      "category_label": "Carried interest and distributions",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $50,000,000; investor counts $60,000,000 = $60,000,000. Met.",
+          "quote": "Commitment of at least $50,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $50,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $50,000,000. The General Partner shall give the Limited Partner prompt written notice of any clawback obligation of the General Partner and of the amount held in escrow against it.",
+      "own_draft": "No clause on this topic"
+    },
+    {
+      "id": 34,
+      "page": 12,
+      "category": "public_records",
+      "category_label": "Public records and confidentiality",
+      "category_source": "keyword rule",
+      "verdict": "ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (public_records). Investor shares: public_records.",
+          "quote": "Granted to a Limited Partner that is subject to public records laws."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is subject to public records laws.",
+      "text": "Granted to a Limited Partner that is subject to public records laws. The General Partner shall mark as confidential any document it considers a trade secret before delivering it, and agrees that unmarked Confidential Information may be treated by the Limited Partner as disclosable.",
+      "own_draft": "Has a clause on this topic: § 3"
+    },
+    {
+      "id": 35,
+      "page": 12,
+      "category": "indemnity_immunity",
+      "category_label": "Indemnity, immunity and forum",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Granted on account of status (state_entity:Oregon). Investor has none of these.",
+          "quote": "Granted to a Limited Partner that is a public pension plan of the State of Oregon."
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner that is a public pension plan of the State of Oregon.",
+      "text": "Granted to a Limited Partner that is a public pension plan of the State of Oregon. The General Partner consents to the jurisdiction of the courts of the State of Oregon for any claim brought by the Limited Partner.",
+      "own_draft": "Has a clause on this topic: § 5, § 6"
+    },
+    {
+      "id": 36,
+      "page": 12,
+      "category": "reporting",
+      "category_label": "Reporting and fee transparency",
+      "category_source": "keyword rule",
+      "verdict": "NOT_ELECTABLE",
+      "reasons": [
+        {
+          "text": "Requires a commitment of at least $100,000,000; investor counts $60,000,000 = $60,000,000. Not met.",
+          "quote": "Commitment of at least $100,000,000"
+        }
+      ],
+      "lead_in": "Granted to a Limited Partner with a Commitment of at least $100,000,000.",
+      "text": "Granted to a Limited Partner with a Commitment of at least $100,000,000. The General Partner shall deliver quarterly a schedule of each Portfolio Investment's cost and fair value, and shall report any change in valuation methodology.",
+      "own_draft": "Has a clause on this topic: § 2"
+    }
+  ],
+  "model": null,
+  "counts": {
+    "ELECTABLE": 16,
+    "REVIEW": 2,
+    "NOT_ELECTABLE": 18
+  }
+}

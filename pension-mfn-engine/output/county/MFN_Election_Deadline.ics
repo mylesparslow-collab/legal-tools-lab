@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pension-mfn-engine demo//EN
+BEGIN:VEVENT
+UID:mfn-election-2026-12-07@demo.invalid
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:MFN election deadline (demo) - Harbor Crest Capital Partners V, L.P. (fictional)
+DESCRIPTION:Contract deadline computed from the fund file. Demo data. Confirm against the fund agreement.
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:MFN election due in 7 days
+END:VALARM
+END:VEVENT
+END:VCALENDAR

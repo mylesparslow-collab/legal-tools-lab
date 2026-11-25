@@ -1,0 +1,208 @@
+{
+  "_meta": {
+    "note": "Statutory rules as data. Every 'quote' was read on leginfo.legislature.ca.gov on the verified_on date. 'screen' patterns are screening heuristics written for this demo, not statutory text. Not legal advice.",
+    "verified_on": "2026-11-25",
+    "statuses": {
+      "verified_primary_text": "Section text read on leginfo on verified_on; the quote is verbatim.",
+      "interpretive_attorney_review": "Primary text read, but the rule as applied to a side letter is an interpretation the text does not state. Needs attorney sign-off.",
+      "unverified": "No primary source confirmed in this build. Treated as a prompt for attorney review only."
+    }
+  },
+  "rules": [
+    {
+      "id": "GOV-7514.7",
+      "title": "Annual fee, expense and carried-interest disclosure by the fund vehicle",
+      "citation": "Gov. Code § 7514.7(a)(1)-(5), (c)(1), (d)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7514.7",
+      "verification_status": "verified_primary_text",
+      "quote": "Every public investment fund shall require each alternative investment vehicle in which it invests to make the following disclosures at least annually:",
+      "supporting_quotes": [
+        "“Alternative investment” means an investment in a private equity fund, venture fund, hedge fund, or absolute return fund.",
+        "This section applies to all new contracts the public investment fund enters into on or after January 1, 2017, and to all existing contracts pursuant to which the public investment fund makes a new capital commitment on or after January 1, 2017.",
+        "With respect to existing contracts not covered by paragraph (1), the public investment fund shall undertake reasonable efforts to obtain the information described in subdivision (a)"
+      ],
+      "applies": {"system_types": ["state", "local"], "fund_types": ["private_equity", "venture", "hedge", "absolute_return"], "contract_on_or_after": "2017-01-01"},
+      "screen": {
+        "kind": "required_topic",
+        "topic": ["7514\\.7", "fee and expense (reporting|disclosure)", "fee (reporting|disclosure|transparency)"],
+        "coverage": {
+          "(a)(1) fees and expenses paid directly": ["fees and expenses[^.]{0,80}(paid|pays)[^.]{0,40}directly", "directly[^.]{0,60}fees and expenses"],
+          "(a)(2) pro rata share of fees and expenses paid from the vehicle": ["pro rata share of[^.]{0,40}fees and expenses"],
+          "(a)(3) pro rata share of carried interest": ["carried interest"],
+          "(a)(4) pro rata share of portfolio-company fees and expenses": ["portfolio compan(y|ies)"]
+        },
+        "red_flags": [
+          {"pattern": "without[^.;]{0,30}incremental (cost|expense)", "why": "§ 7514.7(a) says the public fund 'shall require' the disclosures. The text has no cost-based exception."},
+          {"pattern": "to the extent[^.;]{0,60}(tracked|maintained|readily available)", "why": "Limits the disclosure to what the manager already tracks. § 7514.7(a) has no such limit."},
+          {"pattern": "(commercially )?reasonable efforts", "why": "'Reasonable efforts' appears only in § 7514.7(d)(2), for pre-2017 contracts, and it is the public fund's own duty, not a standard for the manager."},
+          {"pattern": "sole discretion", "why": "Leaves the disclosure to the manager's discretion."}
+        ]
+      },
+      "report_claim": "Requires GPs to make reasonable efforts to report management fees, carried interest, fund expenses, and pro-rata portfolio-company fees.",
+      "correction": "The duty runs to the public investment fund, which 'shall require' each vehicle to disclose. 'Reasonable efforts' is in (d)(2) only, for contracts older than 2017 with no new commitment, and is the public fund's duty. The definition of 'alternative investment' names private equity, venture, hedge and absolute return funds; the report's private credit, infrastructure and real-estate examples are not named."
+    },
+    {
+      "id": "GOV-7928.710",
+      "title": "Public Records Act: fund-level items that stay disclosable",
+      "citation": "Gov. Code § 7928.710(b), (c)(1)-(9)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7928.710",
+      "verification_status": "verified_primary_text",
+      "quote": "Notwithstanding subdivision (b), the following information contained in records described in subdivision (b) regarding alternative investments in which public investment funds invest is subject to disclosure pursuant to this division and shall not be considered a trade secret exempt from disclosure:",
+      "supporting_quotes": [],
+      "applies": {"system_types": ["state", "local"], "fund_types": ["private_equity", "venture", "hedge", "absolute_return"]},
+      "screen": {
+        "kind": "required_topic",
+        "topic": ["7928\\.710", "6254\\.26", "public records"],
+        "coverage": {
+          "(c)(1) name, address and vintage year": ["vintage"],
+          "(c)(2) commitment since inception": ["amount of[^.;]{0,40}commitment"],
+          "(c)(3) cash contributions since inception": ["contributions"],
+          "(c)(4) fiscal year-end cash distributions": ["distributions"],
+          "(c)(5) distributions plus remaining value": ["remaining value"],
+          "(c)(6) net internal rate of return": ["internal rate of return|\\bIRR\\b"],
+          "(c)(7) investment multiple": ["multiple"],
+          "(c)(8) management fees and costs paid": ["management fees"],
+          "(c)(9) cash profit received": ["cash profit"]
+        },
+        "red_flags": [
+          {"pattern": "prior (written )?consent", "why": "Makes a statutory disclosure depend on the manager's consent. § 7928.710(c) says the listed items are 'subject to disclosure'. (That a consent condition is improper is an attorney judgment; the statute does not mention side-letter conditions.)"},
+          {"pattern": "opinion of (its |outside )?counsel", "why": "Makes a statutory disclosure depend on a legal opinion. Same note as above."},
+          {"pattern": "6254\\.26", "why": "Cites the pre-2023 section number. The current section is § 7928.710 (operative January 1, 2023). The old number was not re-read in this build."}
+        ]
+      },
+      "report_claim": "Mandates public disclosure of fund name, vintage, commitment size, aggregate distributions, and IRR while protecting portfolio-company trade secrets; LPA confidentiality clauses must allow statutory disclosure without requiring prior GP consent or a formal opinion of counsel.",
+      "correction": "Subdivision (c) lists nine items, not five; the report left out cash contributions, distributions plus remaining value, the investment multiple, management fees and costs, and cash profit. The section says nothing about GP consent or opinions of counsel; that part is a drafting position, not statutory text."
+    },
+    {
+      "id": "GOV-7513.85",
+      "title": "Manager must agree in writing to the board's placement-agent disclosure policy",
+      "citation": "Gov. Code § 7513.85(a)-(d)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7513.85",
+      "verification_status": "verified_primary_text",
+      "quote": "The system shall not enter into any agreement with an external manager that does not agree in writing to comply with the policy.",
+      "supporting_quotes": [
+        "Any external manager or placement agent that violates the policy shall not solicit new investments from the system for five years after the violation was committed. However, this prohibition may be reduced by a majority vote of the board at a public session upon a showing of good cause."
+      ],
+      "applies": {"system_types": ["state", "local"]},
+      "screen": {
+        "kind": "required_sentence",
+        "all_of": ["placement agent", "polic(y|ies)", "compl(y|ies|iance)"],
+        "topic": ["placement agent"]
+      },
+      "report_claim": "Enforces 5-year solicitation bans for violations (§ 7513.85), listed alongside the contingent-fee and lobbyist rules and attributed to AB 1743.",
+      "correction": "The five-year bar is § 7513.85(b). It follows a violation of the board's disclosure policy, not of the lobbyist rules, and the board can shorten it by majority vote for good cause. §§ 7513.85 and 7513.9 were added by AB 1584 (Stats. 2009, ch. 301); AB 1743 (Stats. 2010, ch. 668) added § 7513.86."
+    },
+    {
+      "id": "GOV-7513.86",
+      "title": "Placement agents for a state system must be registered lobbyists",
+      "citation": "Gov. Code §§ 7513.86, 82039(a)(2), 82047.3",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7513.86",
+      "verification_status": "verified_primary_text",
+      "quote": "a person shall not act as a placement agent in connection with any potential system investment made by a state public retirement system unless that person is registered as a lobbyist",
+      "supporting_quotes": [
+        "(2) A placement agent, as defined in Section 82047.3.",
+        "an individual who is an employee, officer, director, equityholder, partner, member, or trustee of an external manager and who spends one-third or more of the individual’s time, during a calendar year, managing the securities or assets owned, controlled, invested, or held by the external manager is not a placement agent."
+      ],
+      "applies": {"system_types": ["state"]},
+      "screen": {"kind": "registry"},
+      "report_claim": "Mandates FPPC lobbyist registration (§ 82039(b)).",
+      "correction": "The registration requirement is § 7513.86. The definition that makes a placement agent a lobbyist is § 82039(a)(2); § 82039(b) is an exclusion. It covers state public retirement systems only. Which systems count as 'state public retirement systems' was not confirmed in this build."
+    },
+    {
+      "id": "GOV-7513.87",
+      "title": "Placement agents for a local system: local lobbying rules",
+      "citation": "Gov. Code § 7513.87(a), (b)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7513.87",
+      "verification_status": "verified_primary_text",
+      "quote": "A person acting as a placement agent in connection with any potential system investment made by a local public retirement system shall file any applicable reports with a local government agency that requires lobbyists to register and file reports",
+      "supporting_quotes": [],
+      "applies": {"system_types": ["local"]},
+      "screen": {"kind": "manual", "prompt": "Check whether the county or city has a lobbying ordinance and whether each named placement agent has filed under it. This build has no local registry data."},
+      "report_claim": "Treats CalPERS, CalSTRS and 1937 Act systems alike for lobbyist registration.",
+      "correction": "For local systems (which includes 1937 Act county systems) the state lobbyist registration rule does not apply. § 7513.87 points to local lobbying requirements instead."
+    },
+    {
+      "id": "GOV-86205(f)",
+      "title": "No contingent placement fees on state-system investments",
+      "citation": "Gov. Code §§ 86205(f), 82039(a)(2), 82002(a)(2)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=86205",
+      "verification_status": "verified_primary_text",
+      "quote": "Accept or agree to accept any payment in any way contingent upon the defeat, enactment, or outcome of any proposed legislative or administrative action.",
+      "supporting_quotes": [
+        "With regard only to placement agents, the decision by any state agency to enter into a contract to invest state public retirement system assets on behalf of a state public retirement system."
+      ],
+      "applies": {"system_types": ["state"]},
+      "screen": {
+        "kind": "red_flag_only",
+        "topic": ["placement agent"],
+        "red_flags": [
+          {"pattern": "contingent (up)?on", "why": "Placement fee described as contingent. § 86205(f) bars a lobbyist from accepting payment contingent on the outcome of administrative action, which for placement agents includes a state agency's decision to invest state retirement assets (§ 82002(a)(2))."},
+          {"pattern": "payable (only )?(up)?on[^.;]{0,60}(admission|closing|acceptance of[^.;]{0,30}subscription)", "why": "Fee is payable only if the investment closes, which reads as contingent on the investment decision."},
+          {"pattern": "success fee", "why": "Success fees are contingent by definition."},
+          {"pattern": "percent(age)?[^.;]{0,20}of the Investor[’']s Commitment|%\\)? of the Investor[’']s Commitment", "why": "Fee sized as a share of this investor's commitment. Whether that makes it 'contingent' is an attorney judgment."}
+        ]
+      },
+      "report_claim": "Prohibits contingent placement-agent fees on state pension commitments (Gov't Code § 86205(f)).",
+      "correction": "Citation is right. The reach is state systems only: § 86205(f) binds lobbyists, and a placement agent is a lobbyist only as defined in § 82047.3 (state public retirement systems). It does not reach placement agents for local systems."
+    },
+    {
+      "id": "GOV-7513.9",
+      "title": "Placement agent's disclosure of campaign contributions and gifts",
+      "citation": "Gov. Code § 7513.9(a), (b)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7513.9",
+      "verification_status": "verified_primary_text",
+      "quote": "Any placement agent, prior to acting as a placement agent in connection with any potential system investment, shall disclose to the board all campaign contributions made by the placement agent to any elected member of the board during the prior 24-month period.",
+      "supporting_quotes": [],
+      "applies": {"system_types": ["state", "local"]},
+      "screen": {"kind": "required_sentence", "all_of": ["campaign contribution|gift"], "topic": ["placement agent"], "severity_if_missing": "REVIEW"},
+      "report_claim": "(Not mentioned in the report.)",
+      "correction": "Added. The duty is the placement agent's, owed to the board. A side-letter representation is a common way to document it, but the statute does not require one."
+    },
+    {
+      "id": "CONST-XVI-6",
+      "title": "Indemnification by a public fund (gift and lending-of-credit clause)",
+      "citation": "Cal. Const. art. XVI, § 6",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CONS&sectionNum=SEC.%206.&article=XVI",
+      "verification_status": "interpretive_attorney_review",
+      "quote": "The Legislature shall have no power to give or to lend, or to authorize the giving or lending, of the credit of the State, or of any county, city and county, city, township or other political corporation or subdivision of the State",
+      "supporting_quotes": [],
+      "applies": {"system_types": ["state", "local"]},
+      "screen": {
+        "kind": "red_flag_only",
+        "topic": ["indemnif"],
+        "red_flags": [
+          {"pattern": "without (limit|limitation)|unlimited", "why": "Uncapped indemnity from a public fund. Art. XVI § 6 restricts gifts of public money and lending of public credit; whether and how it limits an LP indemnity is an attorney judgment."},
+          {"pattern": "in excess of[^.;]{0,40}(Commitment|capital)", "why": "Indemnity could exceed the commitment."}
+        ],
+        "expect_in_topic": [{"pattern": "to the (fullest |maximum )?extent permitted by[^.;]{0,30}law|not[^.;]{0,30}exceed[^.;]{0,40}Commitment", "why_missing": "No cap at the commitment and no 'to the extent permitted by law' limiter was found in the indemnity section."}]
+      },
+      "report_claim": "Bars unlimited public-fund indemnification (Art. XVI § 6 gift/credit clause).",
+      "correction": "The section text restricts gifts of public money and lending of public credit. It does not mention indemnification. Applying it to an LP indemnity is an interpretation, so this rule only raises a review item."
+    },
+    {
+      "id": "SOVEREIGN-IMMUNITY",
+      "title": "Immunity, forum and jury-trial waivers",
+      "citation": "No citation given in the report",
+      "source_url": null,
+      "verification_status": "unverified",
+      "quote": null,
+      "supporting_quotes": [],
+      "applies": {"system_types": ["state", "local"]},
+      "screen": {
+        "kind": "red_flag_only",
+        "topic": ["immunit", "jurisdiction", "jury"],
+        "red_flags": [
+          {"pattern": "waives?[^.;]{0,80}immunit", "why": "Waiver of immunity. The report lists 'sovereign immunity' with no authority; nothing was verified here."},
+          {"pattern": "exclusive jurisdiction", "why": "Exclusive out-of-state forum."},
+          {"pattern": "waives?[^.;]{0,80}jury", "why": "Jury-trial waiver."}
+        ]
+      },
+      "report_claim": "Lists 'sovereign immunity' as a mandatory checklist item with no citation.",
+      "correction": "No authority was given and none was verified. The engine flags the clauses for an attorney and makes no statement about the law."
+    }
+  ],
+  "contract_terms_not_statute": [
+    {"item": "20-day MFN election window", "note": "The report calls this a '20-day post-closing MFN election sprint'. No statute sets it. It is a fund-agreement term, so the engine reads the window, day-count and roll-forward rule from the fund file."},
+    {"item": "Commitment tiers ($50M, $100M, $250M+)", "note": "Contract terms. The engine reads each threshold from the compendium text."}
+  ]
+}

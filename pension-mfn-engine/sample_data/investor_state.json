@@ -1,0 +1,19 @@
+{
+  "name": "Redwood State Public Employees' Retirement Fund (fictional)",
+  "system_type": "state",
+  "commitment": 85000000,
+  "affiliates": [
+    {
+      "name": "Redwood State Retiree Health Benefit Trust (fictional)",
+      "commitment": 40000000
+    }
+  ],
+  "statuses": [
+    "governmental_plan",
+    "public_records",
+    "sovereign",
+    "tax_exempt",
+    "state_entity:California"
+  ],
+  "admitted_at_initial_closing": false
+}
