@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.22/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.22",
+  "version": "1.0.0",
+  "id": "a14b4c44-082c-5d81-a369-7b6785ebe045",
+  "developer": {
+    "name": "Myles Parslow (personal portfolio demo)",
+    "websiteUrl": "https://mylesparslow-collab.github.io/",
+    "privacyUrl": "https://mylesparslow-collab.github.io/",
+    "termsOfUseUrl": "https://mylesparslow-collab.github.io/"
+  },
+  "name": {
+    "short": "Arbitration Check",
+    "full": "Arbitration Check (demo checklist agent)"
+  },
+  "description": {
+    "short": "Checks a nursing facility resident arbitration agreement and admission packet",
+    "full": "Checks a nursing facility resident arbitration agreement and admission packet against the federal long-term care rule (42 C.F.R. § 483.70(m)) and California admission-contract statutes. Checklist aid only. Not legal advice."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#2F4858",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "arbitration-check",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  }
+}

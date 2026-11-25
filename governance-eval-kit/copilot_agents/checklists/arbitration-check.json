@@ -1,0 +1,27 @@
+{
+  "id": "arbitration-check",
+  "name": "Arbitration Check",
+  "description": "Checks a nursing facility resident arbitration agreement and admission packet against the federal long-term care rule (42 C.F.R. § 483.70(m)) and California admission-contract statutes. Checklist aid only. Not legal advice.",
+  "scope": "binding arbitration agreements offered to residents of California skilled nursing and other long-term care facilities",
+  "input": "the arbitration agreement, the admission agreement it accompanies, and any facility policy on how the agreement is presented",
+  "starters": [
+    {"title": "Check an agreement", "text": "Check this resident arbitration agreement against the checklist."},
+    {"title": "Admission packet layout", "text": "Is the arbitration clause on a separate form with the required separate signatures?"},
+    {"title": "Rescission language", "text": "Find the rescission clause and compare it with the federal and California periods."},
+    {"title": "What is missing", "text": "List every checklist item this agreement does not address."}
+  ],
+  "items": [
+    {"check": "Signing is not a condition of admission or of continued care, the facility tells the resident so, and the agreement says so in express words.", "authority": ["42 C.F.R. § 483.70(m)(1)", "42 C.F.R. § 483.70(m)(4)", "Health & Saf. Code § 1599.81(a)"]},
+    {"check": "The agreement is explained to the resident and representative in a form, manner and language they understand, and the resident or representative acknowledges understanding.", "authority": ["42 C.F.R. § 483.70(m)(2)(i)", "42 C.F.R. § 483.70(m)(2)(ii)"]},
+    {"check": "The agreement provides for a neutral arbitrator agreed on by both parties and a venue convenient to both parties.", "authority": ["42 C.F.R. § 483.70(m)(2)(iii)", "42 C.F.R. § 483.70(m)(2)(iv)"]},
+    {"check": "The agreement gives an express right to rescind within 30 calendar days of signing.", "authority": ["42 C.F.R. § 483.70(m)(3)", "Code Civ. Proc. § 1295(c)"]},
+    {"check": "Nothing in the agreement prohibits or discourages the resident or anyone else from communicating with federal, state or local officials, surveyors or the Long-Term Care Ombudsman.", "authority": ["42 C.F.R. § 483.70(m)(5)"]},
+    {"check": "Facility policy: after a dispute is resolved in arbitration, the signed agreement and the arbitrator's final decision are kept for 5 years and are available to CMS on request.", "authority": ["42 C.F.R. § 483.70(m)(6)"]},
+    {"check": "The arbitration clause is on a form separate from the rest of the admission contract, with its own signature space.", "authority": ["Health & Saf. Code § 1599.81(b)"]},
+    {"check": "Clauses on arbitration of medical malpractice claims are clearly separated from other arbitration clauses and each has its own signature.", "authority": ["Health & Saf. Code § 1599.81(c)"]},
+    {"check": "The arbitration attachment states that under Health & Saf. Code § 1430 the patient may not waive the ability to sue for violation of the Patient's Bill of Rights.", "authority": ["Health & Saf. Code § 1599.81(d)", "Health & Saf. Code § 1430(b)"]},
+    {"check": "For the medical malpractice clause: it is the first article of the contract, uses the statutory wording, and the statutory notice appears immediately before the signature line in at least 10-point bold red type.", "authority": ["Code Civ. Proc. § 1295(a)", "Code Civ. Proc. § 1295(b)"]},
+    {"check": "Fee terms: in a consumer arbitration, if the drafting party does not pay required fees within 30 days after the due date it is in material breach. Flag any clause that shifts provider fees to the resident.", "authority": ["Code Civ. Proc. § 1281.97", "Code Civ. Proc. § 1281.98"]},
+    {"check": "Flag for attorney judgment, without giving a conclusion: who signed and on what authority (resident, agent under a power of attorney, family member), and any term that may be unconscionable.", "authority": ["Civ. Code § 1670.5"]}
+  ]
+}

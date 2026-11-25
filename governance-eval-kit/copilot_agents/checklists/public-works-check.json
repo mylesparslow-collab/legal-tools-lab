@@ -1,0 +1,31 @@
+{
+  "id": "public-works-check",
+  "name": "Public Works Check",
+  "description": "Checks a California local agency construction contract or bid package against a fixed list of statutory terms (prevailing wage, registration, bonds, retention, payment timing, listing, required clauses). Checklist aid only. Not legal advice.",
+  "scope": "bid documents and construction contracts of California local agencies (cities, counties and special districts) for public works",
+  "input": "the notice inviting bids, the contract or general conditions, the contract price and the type of agency",
+  "starters": [
+    {"title": "Check a contract", "text": "Check this public works contract against the checklist. Agency: [type]. Contract price: [amount]."},
+    {"title": "Check a bid notice", "text": "Does this notice inviting bids contain the required prevailing wage, registration and payment bond statements?"},
+    {"title": "Retention and payment", "text": "Review the retention and payment clauses in this contract."},
+    {"title": "Progressive design-build", "text": "Which statute governs progressive design-build for this agency and project?"}
+  ],
+  "items": [
+    {"check": "Prevailing wages are required (public works over $1,000). The call for bids, specifications and contract state the prevailing rates or say that copies are on file at the agency's principal office.", "authority": ["Lab. Code § 1771", "Lab. Code § 1773.2"]},
+    {"check": "Bid invitation and contract give notice that every contractor and subcontractor must be registered with the Department of Industrial Relations. The only size exemption is a project of $25,000 or less ($15,000 or less for maintenance).", "authority": ["Lab. Code § 1771.1(a)", "Lab. Code § 1771.1(b)", "Lab. Code § 1771.1(n)", "Lab. Code § 1725.5"]},
+    {"check": "The awarding body gives the Department notice of the contract within 30 days of award and no later than the first day workers are on the job.", "authority": ["Lab. Code § 1773.3(a)(1)"]},
+    {"check": "Certified payroll records are due within 10 days of a written request.", "authority": ["Lab. Code § 1776"]},
+    {"check": "Apprenticeship requirements apply unless the contract involves less than $30,000.", "authority": ["Lab. Code § 1777.5"]},
+    {"check": "The contract contains the hours-of-labor penalty stipulation ($25 per worker per day), and the contractor signs the workers' compensation certification before starting work.", "authority": ["Lab. Code § 1813", "Lab. Code § 1861"]},
+    {"check": "A payment bond is required for a contract over $25,000, the call for bids says so, and the bond is at least 100 percent of the contract amount.", "authority": ["Civ. Code § 9550", "Civ. Code § 9554(a)"]},
+    {"check": "Retention is no more than 5 percent of each payment and of the contract price, and is released within 60 days after completion.", "authority": ["Pub. Contract Code § 7201(b)(1)", "Pub. Contract Code § 7107(c)"]},
+    {"check": "Undisputed progress payments are made within 30 days of a proper request, with interest if late. An improper request is returned within seven days with written reasons.", "authority": ["Pub. Contract Code § 20104.50"]},
+    {"check": "Bidders list each subcontractor whose work exceeds one-half of 1 percent of the bid (or $10,000 if greater, for streets, highways and bridges).", "authority": ["Pub. Contract Code § 4104(a)(1)"]},
+    {"check": "The bid form includes the noncollusion declaration.", "authority": ["Pub. Contract Code § 7106"]},
+    {"check": "Any brand or trade name in the specifications is followed by 'or equal', unless a listed exception and finding is recited.", "authority": ["Pub. Contract Code § 3400(b)"]},
+    {"check": "No clause limits the contractor to a time extension for unreasonable, uncontemplated delay caused by the agency, and no clause makes the contractor liable for the agency's active negligence.", "authority": ["Pub. Contract Code § 7102", "Civ. Code § 2782(b)"]},
+    {"check": "If trenches or excavations go deeper than four feet, the contract has the differing site conditions clause.", "authority": ["Pub. Contract Code § 7104"]},
+    {"check": "The claims procedure allows the agency no more than 45 days to respond to a claim. The text of § 9204 on leginfo says the section is repealed on January 1, 2027 by its own terms: tell the user to check whether it has been extended.", "authority": ["Pub. Contract Code § 9204"]},
+    {"check": "Progressive design-build: for local agencies generally the statute is SB 706, Pub. Contract Code §§ 22185 to 22185.11 (up to 10 projects, each over $5,000,000; subcontract rule at § 22185.6; retention at § 22185.7; report to the Legislature by December 31, 2028 under § 22185.8; repealed January 1, 2030). Sections 22170 to 22174 are a different statute, SB 991, limited to water, wastewater and recycled water projects (up to 15 projects; repealed January 1, 2029). Say which one the document relies on and flag a mismatch.", "authority": ["Pub. Contract Code §§ 22185-22185.11", "Pub. Contract Code §§ 22170-22174"]}
+  ]
+}

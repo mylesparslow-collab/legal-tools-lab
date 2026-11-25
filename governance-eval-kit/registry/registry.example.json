@@ -1,0 +1,99 @@
+{
+  "organization": "Larkspur & Vane LLP (fictional)",
+  "registry_owner": "Office of General Counsel (fictional)",
+  "as_of": "2026-11-25",
+  "review_interval_days": 180,
+  "ocg_check_max_age_days": 90,
+  "notes": "Example data only. The firm, people, systems and scores are invented. The golden-set figures for the first entry come from the kit's made-up Sample Tool A run and say nothing about any real product.",
+  "tools": [
+    {
+      "id": "checklist-agents",
+      "name": "Checklist agents (five declarative agents)",
+      "purpose": "Run fixed statutory checklists on a draft agenda, records request, public works contract, resident arbitration agreement or fair hearing bylaws.",
+      "status": "pilot",
+      "business_owner": "R. Okafor, Partner, Public Agency Group",
+      "technical_owner": "Practice Technology",
+      "users": "15 pilot attorneys",
+      "data_boundary": {
+        "runs_in": "Firm productivity-suite tenant",
+        "model_provider": "Vendor-hosted model inside the tenant boundary",
+        "data_allowed": ["public", "firm_internal", "client_confidential"],
+        "retention": "Per tenant retention policy; no copy outside the tenant",
+        "used_for_training": "no",
+        "agreements": ["Enterprise data protection addendum"],
+        "notes": "No web search, connectors or plugins enabled on these agents."
+      },
+      "ocg_check": {
+        "method": "manual_lookup",
+        "description": "User confirms in the matter intake record that the client's outside counsel guidelines permit AI use before pasting any client document.",
+        "last_checked": "2026-11-10",
+        "matters_blocked": 4
+      },
+      "golden_set": {
+        "status": "scored",
+        "corpus": "governance-eval-kit corpus v1 (12 synthetic documents)",
+        "run_date": "2026-11-25",
+        "high_severity_recall": 0.95,
+        "quote_grounding": 1.0,
+        "net_minutes_saved_per_document": 75,
+        "passes": true,
+        "notes": "Illustrative: figures from the made-up Sample Tool A run."
+      },
+      "sb574_log": {
+        "court_filing_use": "no",
+        "mechanism": "Not used for court filings. Each checklist output ends with a verification notice; the reviewing attorney initials the checklist in the matter file.",
+        "log_location": "Matter workspace, folder 'AI checklists'"
+      },
+      "human_review": "Supervising attorney reviews every checklist result against the statute before it is relied on.",
+      "last_review": "2026-11-20",
+      "open_issues": ["Practice group leaders have not yet signed off on each checklist."]
+    },
+    {
+      "id": "deadline-helper",
+      "name": "California deadlines helper",
+      "purpose": "Count court days and calendar days for motion notice and response periods under the Code of Civil Procedure.",
+      "status": "pilot",
+      "business_owner": "M. Castellanos, Litigation Practice Manager",
+      "technical_owner": "Practice Technology",
+      "users": "Litigation docketing staff",
+      "data_boundary": {
+        "runs_in": "Local command line; no network access",
+        "model_provider": "None (deterministic code, no AI model)",
+        "data_allowed": ["none"],
+        "retention": "Nothing stored",
+        "used_for_training": "no"
+      },
+      "ocg_check": {"method": "not_applicable", "description": "Dates only; no client data entered.", "last_checked": null},
+      "golden_set": {"status": "not_applicable", "notes": "Covered by its own test suite, including a sweep of every 2026-2027 hearing date."},
+      "sb574_log": {
+        "court_filing_use": "possible",
+        "mechanism": "Not generative AI. Dates are confirmed by the docketing clerk and responsible attorney under the existing docketing procedure.",
+        "log_location": "Docketing system entry"
+      },
+      "human_review": "Docketing clerk and responsible attorney confirm each date.",
+      "last_review": "2026-11-25"
+    },
+    {
+      "id": "general-drafting-assistant",
+      "name": "General drafting assistant",
+      "purpose": "First drafts of correspondence, summaries and research outlines.",
+      "status": "proposed",
+      "business_owner": "To be assigned",
+      "data_boundary": {
+        "runs_in": "Vendor cloud",
+        "model_provider": "Third-party model vendor",
+        "data_allowed": ["public"],
+        "retention": "Vendor default retention applies until a zero-retention term is signed",
+        "used_for_training": "unknown"
+      },
+      "ocg_check": {"method": "none", "last_checked": null},
+      "golden_set": {"status": "not_run"},
+      "sb574_log": {
+        "court_filing_use": "possible",
+        "mechanism": "None yet"
+      },
+      "last_review": "2026-04-02",
+      "open_issues": ["Owner not assigned.", "Retention and training terms not confirmed.", "No citation verification log."]
+    }
+  ]
+}

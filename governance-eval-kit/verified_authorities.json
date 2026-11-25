@@ -1,0 +1,645 @@
+{
+ "_about": "Sections read on the official source on the date shown, in whole or in the part the kit relies on. Used by tests: an agent checklist, the defect catalog and the deadlines rule table may cite only sections listed here. 'note' records the amendment line or a point worth knowing.",
+ "sources": {
+  "leginfo": "https://leginfo.legislature.ca.gov (read through a desktop browser; the site blocks automated clients)",
+  "ecfr": "https://www.ecfr.gov (current version)",
+  "courts": "https://courts.ca.gov/about/court-holidays"
+ },
+ "sections": {
+  "Gov. Code § 54952.2": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54953": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2025, ch. 327 (SB 707), eff. 1/1/2026."
+  },
+  "Gov. Code § 54953.4": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Operative 7/1/2026. Amended by Stats. 2026, ch. 324 (SB 1187), eff. 9/18/2026. Repealed 1/1/2030."
+  },
+  "Gov. Code § 54953.8": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Added by SB 707, eff. 1/1/2026."
+  },
+  "Gov. Code § 54953.8.1": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54953.8.2": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54953.8.3": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Added by SB 707. Repealed 1/1/2030."
+  },
+  "Gov. Code § 54953.8.4": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54953.8.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54953.8.6": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54953.8.7": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54954.2": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54954.3": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54954.5": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Last amended Stats. 2012, ch. 759. No cybersecurity-specific heading."
+  },
+  "Gov. Code § 54956": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54956.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54957": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2024, ch. 243 (AB 2715), eff. 1/1/2025."
+  },
+  "Gov. Code § 54957.1": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54957.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54957.7": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 54960.1": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7921.505": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7922.000": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7922.500": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7922.525": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7922.530": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7922.535": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2025, ch. 34 (AB 370), eff. 1/1/2026."
+  },
+  "Gov. Code § 7922.540": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7922.570": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7922.600": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7923.600": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7927.200": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7927.500": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7927.700": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7927.705": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7928.705": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 7929.210": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 6700": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2026, ch. 7 (AB 2156), eff. 3/26/2026. March 31 is now 'Farmworkers Day'."
+  },
+  "Gov. Code § 6701": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Gov. Code § 12964.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 2600": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 2601": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 3400": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 4104": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 7102": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 7103.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 7104": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 7106": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 7107": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 7201": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 9204": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Text shows 'Repealed as of January 1, 2027, by its own provisions.' Check for an extension."
+  },
+  "Pub. Contract Code § 20104.50": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22170": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "SB 991 (Stats. 2022, ch. 243): water projects. Repealed 1/1/2029."
+  },
+  "Pub. Contract Code § 22171": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Up to 15 projects over $5,000,000."
+  },
+  "Pub. Contract Code § 22172": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22174": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "SB 706 (Stats. 2023, ch. 500). Repealed 1/1/2030."
+  },
+  "Pub. Contract Code § 22185.1": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Up to 10 projects over $5,000,000."
+  },
+  "Pub. Contract Code § 22185.2": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185.3": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185.4": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185.6": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185.7": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185.8": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Report to the Legislature by 12/31/2028."
+  },
+  "Pub. Contract Code § 22185.9": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185.10": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Pub. Contract Code § 22185.11": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 201": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 202": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 206.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 221": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 227.3": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 232": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 925": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1400.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1401": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2025, ch. 229 (SB 617), eff. 1/1/2026."
+  },
+  "Lab. Code § 1725.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1771": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1771.1": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1773.2": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1773.3": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1775": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1776": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2025, ch. 616 (AB 538), eff. 1/1/2026."
+  },
+  "Lab. Code § 1777.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1813": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 1861": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 2751": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 2802": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 2804": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 2870": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 2871": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Lab. Code § 2872": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 827": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2024, ch. 1015 (SB 1103), eff. 1/1/2025."
+  },
+  "Civ. Code § 1670.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 1671": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 1938": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 1950.7": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 1950.9": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Added by SB 1103, eff. 1/1/2025."
+  },
+  "Civ. Code § 1951.4": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 1995.260": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 2782": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 8122": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 9550": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Civ. Code § 9554": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 10": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 12": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 12a": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 12b": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 12c": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 13": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 135": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2025, ch. 358 (AB 268), eff. 1/1/2026. Excludes Lunar New Year, Diwali, April 24, September 9 and Columbus Day."
+  },
+  "Code Civ. Proc. § 430.40": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 437c": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2024, ch. 99 (AB 2049), eff. 1/1/2025: 81, 20 and 11 days."
+  },
+  "Code Civ. Proc. § 631": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 659": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 1001": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 1002.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 1005": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 1010.6": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Amended by Stats. 2024, ch. 151 (AB 2283), eff. 7/18/2024."
+  },
+  "Code Civ. Proc. § 1013": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 1281.97": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 1281.98": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 1295": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 2016.050": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 2024.020": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 2030.260": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Code Civ. Proc. § 2030.300": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 805": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 805.01": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.05": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.1": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.2": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.3": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.4": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.6": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.7": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.8": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 809.9": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 16600": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 16600.1": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 16600.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Bus. & Prof. Code § 16601": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Health & Saf. Code § 1253.3": {
+   "source": "leginfo",
+   "read": "2026-11-25",
+   "note": "Added by Stats. 2022, ch. 578 (AB 1502)."
+  },
+  "Health & Saf. Code § 1267.5": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Health & Saf. Code § 1430": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Health & Saf. Code § 1569.191": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Health & Saf. Code § 1599.81": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Rev. & Tax. Code § 6811": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "Rev. & Tax. Code § 6812": {
+   "source": "leginfo",
+   "read": "2026-11-25"
+  },
+  "42 C.F.R. § 483.70": {
+   "source": "ecfr",
+   "read": "2026-11-25",
+   "note": "Binding arbitration agreements are at paragraph (m)."
+  }
+ }
+}

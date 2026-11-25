@@ -1,0 +1,32 @@
+{
+  "organization": "Your organization",
+  "registry_owner": "Role that owns this registry",
+  "as_of": "2026-01-01",
+  "review_interval_days": 180,
+  "ocg_check_max_age_days": 90,
+  "tools": [
+    {
+      "id": "tool-id",
+      "name": "Tool name",
+      "purpose": "What it is used for, in one sentence.",
+      "status": "proposed",
+      "business_owner": "To be assigned",
+      "technical_owner": "",
+      "users": "",
+      "data_boundary": {
+        "runs_in": "Where the tool runs",
+        "model_provider": "Who runs the model, or 'None'",
+        "data_allowed": ["public"],
+        "retention": "What is stored, where and for how long",
+        "used_for_training": "unknown",
+        "agreements": []
+      },
+      "ocg_check": {"method": "none", "description": "", "last_checked": null, "matters_blocked": null},
+      "golden_set": {"status": "not_run"},
+      "sb574_log": {"court_filing_use": "possible", "mechanism": "None yet", "log_location": "", "disclosure_step": ""},
+      "human_review": "",
+      "last_review": "2026-01-01",
+      "open_issues": []
+    }
+  ]
+}

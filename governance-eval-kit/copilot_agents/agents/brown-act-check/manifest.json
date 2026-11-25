@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.22/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.22",
+  "version": "1.0.0",
+  "id": "380b9f80-4acb-51f6-9506-fa9dd2869617",
+  "developer": {
+    "name": "Myles Parslow (personal portfolio demo)",
+    "websiteUrl": "https://mylesparslow-collab.github.io/",
+    "privacyUrl": "https://mylesparslow-collab.github.io/",
+    "termsOfUseUrl": "https://mylesparslow-collab.github.io/"
+  },
+  "name": {
+    "short": "Brown Act Check",
+    "full": "Brown Act Check (demo checklist agent)"
+  },
+  "description": {
+    "short": "Checks a draft local agency agenda or meeting plan against a fixed Ralph M.",
+    "full": "Checks a draft local agency agenda or meeting plan against a fixed Ralph M. Brown Act checklist (posting, descriptions, closed session, teleconference rules after SB 707). Checklist aid only. Not legal advice."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#2F4858",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "brown-act-check",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  }
+}

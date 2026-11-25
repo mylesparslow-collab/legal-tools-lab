@@ -1,0 +1,31 @@
+{
+  "id": "fair-hearing-map",
+  "name": "Fair Hearing Map",
+  "description": "Maps medical staff bylaws or a hearing notice to the California peer review fair hearing minimums in Bus. & Prof. Code §§ 809 to 809.9 and flags related section 805 reporting triggers. Checklist aid only. Not legal advice.",
+  "scope": "medical staff bylaws, notices of proposed action and hearing notices of California peer review bodies under Bus. & Prof. Code §§ 809 to 809.9",
+  "input": "the bylaws fair hearing article or the notice, and a short description of the proposed action and the practitioner's license type",
+  "starters": [
+    {"title": "Map bylaws", "text": "Map this fair hearing article to Bus. & Prof. Code §§ 809.1 to 809.4 and list anything that falls short of the statute."},
+    {"title": "Check a notice", "text": "Does this notice of proposed action contain the four items § 809.1(b) requires?"},
+    {"title": "Summary suspension", "text": "A summary suspension was imposed on [date] by [who]. What does the checklist require next?"},
+    {"title": "Reporting flags", "text": "Which section 805 reporting triggers might apply to these facts?"}
+  ],
+  "items": [
+    {"check": "Applicability: the practitioner is a physician and surgeon, podiatrist, clinical psychologist, marriage and family therapist, clinical social worker, professional clinical counselor or dentist, and the action is a final proposed action for which an 805 report is required. Sections 809.1 to 809.4 do not apply to state or county hospitals, listed University of California and medical school teaching hospitals, or postgraduate trainees; due process still applies there.", "authority": ["Bus. & Prof. Code § 809(b)", "Bus. & Prof. Code § 809.1(a)", "Bus. & Prof. Code § 809.7"]},
+    {"check": "Notice of final proposed action states: that the action, if adopted, will be taken and reported under § 805; the action; the right to request a hearing; and the time limit to request one. The statute does not set the number of days; quote the period the bylaws set.", "authority": ["Bus. & Prof. Code § 809.1(b)"]},
+    {"check": "After a timely request, a second notice states the reasons, including the acts or omissions charged, and the place, time and date of the hearing.", "authority": ["Bus. & Prof. Code § 809.1(c)"]},
+    {"check": "Trier of fact: an arbitrator chosen by a mutually acceptable process, or a panel of unbiased individuals with no direct financial benefit from the outcome who have not acted as accuser, investigator, factfinder or initial decisionmaker, including where feasible someone in the same specialty.", "authority": ["Bus. & Prof. Code § 809.2(a)"]},
+    {"check": "Hearing officer gains no direct financial benefit from the outcome, does not act as prosecutor or advocate, and does not vote.", "authority": ["Bus. & Prof. Code § 809.2(b)"]},
+    {"check": "Right to voir dire panel members and the hearing officer and to challenge impartiality.", "authority": ["Bus. & Prof. Code § 809.2(c)"]},
+    {"check": "Each side may inspect and copy relevant documents as soon as practicable after the hearing request. Failure to give access at least 30 days before the hearing is good cause for a continuance.", "authority": ["Bus. & Prof. Code § 809.2(d)"]},
+    {"check": "On request, the sides exchange witness lists and copies of documents. Failure to do so at least 10 days before the hearing starts is good cause for a continuance.", "authority": ["Bus. & Prof. Code § 809.2(f)"]},
+    {"check": "The hearing starts within 60 days after receipt of the request, unless the statutory exceptions apply.", "authority": ["Bus. & Prof. Code § 809.2(h)"]},
+    {"check": "Hearing rights for both sides: all information given to the trier of fact; a record; to call, examine and cross-examine witnesses; to present and rebut relevant evidence; a written closing statement.", "authority": ["Bus. & Prof. Code § 809.3(a)"]},
+    {"check": "Burdens: the peer review body presents evidence first. An initial applicant must prove qualifications by a preponderance. Otherwise the peer review body must prove by a preponderance that the action is reasonable and warranted.", "authority": ["Bus. & Prof. Code § 809.3(b)"]},
+    {"check": "Written bylaw provisions say whether the practitioner may have an attorney; the peer review body is not represented by an attorney if the practitioner is not.", "authority": ["Bus. & Prof. Code § 809.3(c)"]},
+    {"check": "Decision: written, with findings of fact and a conclusion connecting the evidence to the decision, plus a written explanation of any appeal procedure. Any appeal includes the right to appear and respond, to be represented, and to receive a written decision.", "authority": ["Bus. & Prof. Code § 809.4"]},
+    {"check": "Summary suspension: permitted where failure to act may result in imminent danger to the health of any individual; notice and hearing rights follow. A suspension imposed by the governing body ends automatically unless the peer review body ratifies it within two working days, excluding weekends and holidays.", "authority": ["Bus. & Prof. Code § 809.5"]},
+    {"check": "Bylaws may add notice and hearing provisions that are not inconsistent with §§ 809.1 to 809.4; those sections cannot be waived.", "authority": ["Bus. & Prof. Code § 809.6"]},
+    {"check": "Reporting flags (state the rule; do not compute dates): an 805 report is due within 15 days after the effective date of a listed action, including restrictions totalling 30 days or more in any 12 months; within 15 days after a resignation or similar step taken after notice of an investigation; and within 15 days after a summary suspension that stays in effect more than 14 days. A separate report is due within 15 days after a final decision or recommendation based on the acts listed in § 805.01.", "authority": ["Bus. & Prof. Code § 805(b)", "Bus. & Prof. Code § 805(c)", "Bus. & Prof. Code § 805(e)", "Bus. & Prof. Code § 805.01(b)"]}
+  ]
+}

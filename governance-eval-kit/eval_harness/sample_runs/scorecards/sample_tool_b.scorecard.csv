@@ -1,0 +1,13 @@
+tool,doc_id,doc_type,defects,found,recall,high_defects,high_found,findings,quotes_grounded,extra_findings,baseline_min,with_tool_min,net_saved_min
+"Sample Tool B (made-up output, not a real product)",apa-01,snf_rcfe_apa,7,5,0.714,7,5,7,7,2,210,135.5,74.5
+"Sample Tool B (made-up output, not a real product)",apa-02,snf_rcfe_apa,7,2,0.286,6,2,4,4,2,180,164.5,15.5
+"Sample Tool B (made-up output, not a real product)",apa-03,snf_rcfe_apa,8,1,0.125,7,0,4,4,3,240,252.0,-12.0
+"Sample Tool B (made-up output, not a real product)",emp-01,executive_employment,8,3,0.375,8,3,6,6,3,210,183.9,26.1
+"Sample Tool B (made-up output, not a real product)",emp-02,executive_employment,7,3,0.429,7,3,7,4,4,195,186.3,8.7
+"Sample Tool B (made-up output, not a real product)",emp-03,executive_employment,8,2,0.250,8,2,5,5,3,200,191.5,8.5
+"Sample Tool B (made-up output, not a real product)",lease-01,commercial_lease,7,4,0.571,6,3,6,4,2,180,151.3,28.7
+"Sample Tool B (made-up output, not a real product)",lease-02,commercial_lease,6,4,0.667,4,3,7,7,3,200,131.0,69.0
+"Sample Tool B (made-up output, not a real product)",lease-03,commercial_lease,7,3,0.429,6,3,7,6,4,190,165.2,24.8
+"Sample Tool B (made-up output, not a real product)",pw-01,public_works_contract,9,2,0.222,9,2,5,4,3,210,210.0,0.0
+"Sample Tool B (made-up output, not a real product)",pw-02,public_works_contract,8,4,0.500,8,4,6,5,2,195,161.9,33.1
+"Sample Tool B (made-up output, not a real product)",pw-03,public_works_contract,8,5,0.625,8,5,7,6,2,200,147.2,52.8

@@ -11,3 +11,4 @@ Personal portfolio demos of legal tools. Fictional data only. Not legal advice; 
 - [ipd-seismic/](ipd-seismic/): IFOA risk/reward pool ledger checker and waterfall, plus a hospital seismic deadline tracker (report Tool 4). Python, live-formula workbook, fictional data.
 - [sb706-validator/](sb706-validator/): checks a progressive design-build procurement record against SB 706, Pub. Cont. Code §§ 22185–22185.11 (report Tool 5). Node, no dependencies, fictional data.
 - [prop65-intel/](prop65-intel/): Prop 65 sixty-day notice benchmarks from public Attorney General data, deterministic triage, and a record-cite checker (report Tool 12). Python; public OAG data plus synthetic documents.
+- [governance-eval-kit/](governance-eval-kit/): AI Tool Registry template, eval harness with a 12-document synthetic California corpus, five Copilot checklist agent packages, and a California court-deadlines helper (report Days 1–30). Python, fictional data.

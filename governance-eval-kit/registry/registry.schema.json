@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Tool Registry",
+  "type": "object",
+  "required": ["organization", "registry_owner", "as_of", "tools"],
+  "additionalProperties": false,
+  "properties": {
+    "organization": {"type": "string", "minLength": 1},
+    "registry_owner": {"type": "string", "minLength": 1},
+    "as_of": {"type": "string", "format": "date"},
+    "review_interval_days": {"type": "integer", "minimum": 1},
+    "ocg_check_max_age_days": {"type": "integer", "minimum": 1},
+    "notes": {"type": "string"},
+    "tools": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "purpose", "status", "business_owner", "data_boundary", "ocg_check", "golden_set", "sb574_log", "last_review"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+          "name": {"type": "string", "minLength": 1},
+          "purpose": {"type": "string", "minLength": 1},
+          "status": {"enum": ["proposed", "pilot", "production", "paused", "retired"]},
+          "business_owner": {"type": "string", "minLength": 1},
+          "technical_owner": {"type": "string"},
+          "users": {"type": "string"},
+          "data_boundary": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["runs_in", "model_provider", "data_allowed", "retention", "used_for_training"],
+            "properties": {
+              "runs_in": {"type": "string", "minLength": 1},
+              "model_provider": {"type": "string", "minLength": 1},
+              "data_allowed": {"type": "array", "items": {"enum": ["public", "firm_internal", "client_confidential", "personal_data", "health_information", "none"]}, "minItems": 1},
+              "retention": {"type": "string", "minLength": 1},
+              "used_for_training": {"enum": ["no", "yes", "unknown"]},
+              "agreements": {"type": "array", "items": {"type": "string"}},
+              "notes": {"type": "string"}
+            }
+          },
+          "ocg_check": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["method", "last_checked"],
+            "properties": {
+              "method": {"enum": ["automated_gate", "manual_lookup", "not_applicable", "none"]},
+              "description": {"type": "string"},
+              "last_checked": {"type": ["string", "null"], "format": "date"},
+              "matters_blocked": {"type": ["integer", "null"], "minimum": 0}
+            }
+          },
+          "golden_set": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status"],
+            "properties": {
+              "status": {"enum": ["scored", "not_run", "not_applicable"]},
+              "corpus": {"type": "string"},
+              "run_date": {"type": ["string", "null"], "format": "date"},
+              "high_severity_recall": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+              "quote_grounding": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+              "net_minutes_saved_per_document": {"type": ["number", "null"]},
+              "passes": {"type": ["boolean", "null"]},
+              "notes": {"type": "string"}
+            }
+          },
+          "sb574_log": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["court_filing_use", "mechanism"],
+            "properties": {
+              "court_filing_use": {"enum": ["yes", "no", "possible"]},
+              "mechanism": {"type": "string", "minLength": 1},
+              "log_location": {"type": "string"},
+              "disclosure_step": {"type": "string"}
+            }
+          },
+          "human_review": {"type": "string"},
+          "last_review": {"type": "string", "format": "date"},
+          "open_issues": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

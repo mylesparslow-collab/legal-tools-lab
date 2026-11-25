@@ -1,0 +1,26 @@
+{
+  "id": "cpra-intake",
+  "name": "CPRA Intake",
+  "description": "Turns an incoming California Public Records Act request into an intake sheet: what was asked, the statutory response steps, and current Division 10 citations in place of the old 6250-series numbers. Checklist aid only. Not legal advice.",
+  "scope": "incoming requests to a California state or local agency under the California Public Records Act (Gov. Code § 7920.000 et seq.)",
+  "input": "the text of the request, the date the agency received it, and any draft response or denial letter",
+  "starters": [
+    {"title": "Intake a request", "text": "Build an intake sheet for this public records request. Received: [date]."},
+    {"title": "Check a denial letter", "text": "Check this draft denial letter against the CPRA checklist and flag any pre-2023 section numbers."},
+    {"title": "Extension notice", "text": "Does this draft extension notice state a listed unusual circumstance and stay within the 14-day limit?"},
+    {"title": "Old citation lookup", "text": "This letter cites Gov. Code § 6254(k). What is the current section?"}
+  ],
+  "items": [
+    {"check": "Record the date of receipt. The agency must decide within 10 days from receipt whether the request seeks disclosable records it holds, and promptly tell the requester the decision and the reasons. If records will be disclosed, the notice states the estimated date and time they will be available.", "authority": ["Gov. Code § 7922.535(a)"]},
+    {"check": "An extension needs written notice from the agency head or a designee, stating the reasons and the date a determination is expected, and may not exceed 14 days. It is allowed only for a listed unusual circumstance: records at field or separate facilities; voluminous separate records; consultation with another agency or component with a substantial interest; need to compile data or write a program or report; a cyberattack that blocks access to electronic systems; or a Governor-proclaimed state of emergency that directly affects the agency's ability to respond.", "authority": ["Gov. Code § 7922.535(b)", "Gov. Code § 7922.535(c)"]},
+    {"check": "Duty to assist: help the requester identify responsive records, describe the information technology and physical location in which records exist, and suggest ways around any practical basis for denial.", "authority": ["Gov. Code § 7922.600(a)"]},
+    {"check": "Copies are made promptly available on payment of the direct cost of duplication or a statutory fee. An exact copy is provided unless impracticable.", "authority": ["Gov. Code § 7922.530(a)"]},
+    {"check": "Electronic records are provided in an electronic format the agency holds, and in the requested format if the agency already uses that format for itself or other agencies.", "authority": ["Gov. Code § 7922.570"]},
+    {"check": "Any reasonably segregable portion of a record is released after the exempt portions are deleted.", "authority": ["Gov. Code § 7922.525(b)"]},
+    {"check": "A denial of a written request, in whole or part, is in writing and names each person responsible for the denial with title or position.", "authority": ["Gov. Code § 7922.540(a)", "Gov. Code § 7922.540(b)"]},
+    {"check": "Each withholding is justified by an express exemption, or by facts showing the public interest in nondisclosure clearly outweighs the public interest in disclosure.", "authority": ["Gov. Code § 7922.000", "Gov. Code § 7922.540(c)"]},
+    {"check": "The response does not delay or obstruct inspection or copying.", "authority": ["Gov. Code § 7922.500"]},
+    {"check": "Flag every citation to former Gov. Code §§ 6250 to 6276.48. The Act was recodified as Division 10 (§ 7920.000 et seq.), operative January 1, 2023. Current sections for common exemptions: preliminary drafts § 7927.500; pending litigation § 7927.200; personnel, medical or similar files § 7927.700; law enforcement investigatory records § 7923.600; real estate appraisals and engineering or feasibility estimates § 7928.705; records exempt or prohibited under other law, including privilege § 7927.705; information security records § 7929.210; public interest balancing § 7922.000. Tell the user to confirm the old-to-new mapping in the Law Revision Commission disposition table.", "authority": ["Gov. Code § 7927.500", "Gov. Code § 7927.200", "Gov. Code § 7927.700", "Gov. Code § 7923.600", "Gov. Code § 7928.705", "Gov. Code § 7927.705", "Gov. Code § 7929.210"]},
+    {"check": "Warn before any selective release: disclosing an exempt record to a member of the public waives the listed exemptions.", "authority": ["Gov. Code § 7921.505(b)"]}
+  ]
+}

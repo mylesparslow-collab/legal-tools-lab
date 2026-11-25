@@ -1,0 +1,81 @@
+# Defect catalog
+
+Every planted defect in the corpus comes from this list. Each rule below was read
+on the official source on 2026-11-25 (leginfo.legislature.ca.gov for California
+codes, ecfr.gov for federal regulations). A defect is a clause, or a missing
+clause, that conflicts with the rule as stated here. Nothing outside this list is
+planted, so an answer key never depends on a rule that was not checked.
+
+"Key" is the string the harness looks for in a finding's cited authority.
+
+## Commercial lease
+
+| Code | Rule (as read) | Key | Example defect |
+| --- | --- | --- | --- |
+| L1 | Civ. Code § 1938(a): every commercial lease signed on or after 1/1/2017 must state whether the premises have had a Certified Access Specialist (CASp) inspection. § 1938(e): if no disability access inspection certificate has been issued, the lease must include the statutory CASp notice paragraph. | 1938 | Accessibility section allocates ADA costs but never says whether a CASp inspection happened (omission). |
+| L2 | Civ. Code § 1950.7(c): a commercial security deposit, or the remaining part of it, must be returned no later than 30 days from the date the landlord receives possession (two weeks for the part above one month's rent when the only claim is unpaid rent). | 1950.7 | "Landlord shall return the Security Deposit within ninety (90) days after the Expiration Date." |
+| L3 | Civ. Code § 1951.4(a)-(b): the landlord may keep the lease in effect after breach and abandonment and collect rent as it comes due only if the lease provides for that remedy and the tenant may sublet or assign, subject at most to reasonable standards or consent that is not unreasonably withheld. | 1951.4 | Lease invokes the § 1951.4 remedy and also bars all assignment and subletting, or lets the landlord withhold consent in its sole and absolute discretion. |
+| L4 | Code Civ. Proc. § 631(a), (f): in a civil case a jury may be waived only in the ways listed in subdivision (f) (for example written consent filed with the clerk, oral consent in open court, failure to demand or to pay fees). A clause in a contract signed before any dispute is not on the list. | 631 | "Landlord and Tenant each waive trial by jury in any action arising out of this Lease." |
+| L5 | Civ. Code § 827(b): for a qualified commercial tenant on a month-to-month or shorter periodic tenancy, a rent increase needs at least 30 days' written notice if the increase is 10 percent or less over the prior 12 months, and at least 90 days' notice if it is more than 10 percent. | 827 | Holdover or month-to-month clause lets the landlord raise rent by 25 percent on 10 days' notice, in a lease that recites the tenant is a qualified commercial tenant. |
+| L6 | Civ. Code § 1950.9(a)-(c): a landlord may not charge a qualified commercial tenant a fee to recover building operating costs unless the costs are allocated proportionately (by square footage or another documented method), were incurred in the prior 18 months or are reasonably expected in the next 12, the landlord gave a pre-signing notice of the right to inspect supporting documents, and the landlord supplies the documents within 30 days of a written request. Costs paid directly by the tenant to a third party, or reimbursed by insurance or a third party, cannot be included. | 1950.9 | CAM clause lets the landlord allocate operating costs "in its sole discretion", denies any right to backup documents, or passes through costs already reimbursed by insurance, in a lease that recites the tenant is a qualified commercial tenant. |
+| L7 | Civ. Code § 1671(b): a liquidated damages clause is valid unless it was unreasonable under the circumstances when the contract was made. | 1671 | Late charge of 25 percent of monthly rent for any payment one day late, stacked with default interest (medium severity; needs judgment). |
+
+For L5 and L6 the lease must say, somewhere in its recitals or basic terms, that the
+tenant has given notice that it is a "qualified commercial tenant".
+
+## SNF or RCFE asset purchase agreement
+
+| Code | Rule (as read) | Key | Example defect |
+| --- | --- | --- | --- |
+| A1 | Health & Saf. Code § 1253.3(a): no one may acquire an ownership interest in, operate or manage a skilled nursing facility before the Department of Public Health reviews, approves and issues a license. § 1253.3(a)(1): the application must be filed at least 120 calendar days before. | 1253.3 | Closing set for 45 days after signing whether or not the Department has approved the buyer. |
+| A2 | Health & Saf. Code § 1253.3(b)(1)-(2): the section covers interim or longer-term management agreements that transfer operational control or management, and agreements that let another entity make financial decisions or direct patient care or direct-care staffing. | 1253.3 | Interim management agreement effective at signing that hands the buyer's affiliate operational control pending licensure. |
+| A3 | Health & Saf. Code § 1253.3(a)(2): the outgoing licensee must report the planned change to the Department 120 calendar days before the anticipated change, and may not relinquish ownership, operations or management until the Department approves the incoming applicant. | 1253.3 | Seller covenant to notify the Department 30 days before closing, or seller's right to hand over operations at closing regardless of approval. |
+| A4 | Health & Saf. Code § 1267.5(a)(1), (b)(1): license applicants must disclose every person with a beneficial ownership interest of 5 percent or more, and no person may acquire a 5 percent or greater beneficial interest in a licensee or its management company without the Department's prior written approval. | 1267.5 | Ownership disclosure schedule limited to holders of 25 percent or more. |
+| A5 | Health & Saf. Code § 1569.191(a)(1): on the sale of a residential care facility for the elderly that will result in a new license, the licensee must give written notice to the Department of Social Services and to each resident or legal representative at least 30 days before the transfer, or when a bona fide offer is made, whichever period is longer. | 1569.191 | Resident notice 10 days before closing. |
+| A6 | Health & Saf. Code § 1569.191(b), (b)(2): the property and business may not be transferred until the buyer qualifies for a license or provisional license, and the buyer must apply for a license within five days of the seller's acceptance of the offer. | 1569.191 | Buyer to apply for the RCFE license within 60 days after closing. |
+| A7 | Lab. Code § 1401(a) with § 1400.5(a): an employer may not order a mass layoff, relocation or termination at a covered establishment (75 or more employees in the prior 12 months) without 60 days' written notice. | 1401 | Seller to terminate all 140 facility employees at closing on 15 days' notice. |
+| A8 | Bus. & Prof. Code § 16600(a)-(b), § 16600.1(a), § 16601: a noncompete is void unless an exception applies; the sale-of-business exception covers a person selling the goodwill of a business or an owner disposing of an ownership interest. It is unlawful to require an employee to enter a noncompete that does not fit an exception. | 16600 | APA requires the facility administrator and director of nursing, who own nothing, to sign three-year noncompetes. |
+| A9 | Rev. & Tax. Code §§ 6811-6812: a buyer of a business must withhold enough of the purchase price to cover the seller's sales and use tax liability until the seller produces a receipt or a certificate that no amount is due; a buyer who does not becomes personally liable up to the purchase price. | 6811 | Buyer waives any tax clearance certificate and releases the full price at closing (medium severity). |
+| A10 | 42 C.F.R. § 483.70(m)(1), (3): a long-term care facility may not require a resident to sign a binding arbitration agreement as a condition of admission, and the agreement must give a right to rescind within 30 calendar days of signing. | 483.70 | Exhibit form of admission agreement, which the buyer must use after closing, makes arbitration mandatory with a 3-day rescission window (SNF documents only). |
+
+A1 to A4 and A10 apply to skilled nursing facilities. A5 and A6 apply to RCFEs.
+
+## Public works contract (local agency)
+
+| Code | Rule (as read) | Key | Example defect |
+| --- | --- | --- | --- |
+| P1 | Pub. Contract Code § 7201(b)(1): retention may not exceed 5 percent of a payment, and total retention may not exceed 5 percent of the contract price. | 7201 | 10 percent retention. |
+| P2 | Pub. Contract Code § 7107(c), (f): retention must be released within 60 days after completion; late payment carries a charge of 2 percent per month. | 7107 | Retention released 120 days after completion. |
+| P3 | Pub. Contract Code § 20104.50(b): a local agency that does not pay an undisputed, properly submitted progress payment request within 30 days of receipt owes interest at the legal rate. | 20104.50 | Progress payments due within 75 days, with no interest on late payment. |
+| P4 | Lab. Code § 1771 and § 1773.2: prevailing wages must be paid on public works over $1,000, and the awarding body must state the prevailing rates in the call for bids and the contract, or state that copies are on file at its principal office. | 1771 | Contract says the contractor may set wage rates and that prevailing wage law does not apply. |
+| P5 | Lab. Code § 1771.1(a)-(b), (n): a contractor or subcontractor may not bid on, be listed for, or work on a public work unless registered with the Department of Industrial Relations under § 1725.5; notice of this must be in bid invitations and contracts. The only size exemption is projects of $25,000 or less ($15,000 or less for maintenance). | 1771.1 | Contract exempts subcontractors with subcontracts under $250,000 from registration. |
+| P6 | Civ. Code § 9550(a) and § 9554(a): a payment bond is required before work starts on a public works contract over $25,000, in an amount not less than 100 percent of the contract price. | 9550 | Payment bond set at 50 percent of the contract price, or waived. |
+| P7 | Pub. Contract Code § 7102: a clause that limits the contractor to a time extension for delay that the agency caused, that is unreasonable and was not contemplated by the parties, does not bar damages; a waiver of this rule is void. | 7102 | "An extension of time is Contractor's sole remedy for any delay, including delay caused by the District." |
+| P8 | Civ. Code § 2782(b): a clause in a construction contract with a public agency that makes the contractor liable for the agency's active negligence is void. | 2782 | Indemnity covers claims "including those arising from the active negligence of the District". |
+| P9 | Pub. Contract Code § 3400(b): specifications may not name a product by brand or trade name unless followed by the words "or equal" (subject to listed exceptions that require a finding). | 3400 | Specification requires a named brand "with no substitutions", with no finding recited. |
+| P10 | Lab. Code § 1776(d), (h): certified payroll records must be supplied within 10 days of a written request; the penalty is $100 per worker per day after that. | 1776 | Contractor has 60 days to supply payroll records. |
+| P11 | Lab. Code § 1777.5(o): the apprenticeship requirements do not apply to contracts of general contractors, or specialty contractors not bidding through a general, that involve less than $30,000. | 1777.5 | Contract says apprenticeship rules apply only to subcontracts over $500,000. |
+| P12 | Pub. Contract Code § 4104(a)(1): the prime must list each subcontractor doing work worth more than one-half of 1 percent of the prime's total bid (or $10,000 if greater, for streets, highways and bridges). | 4104 | Listing required only for subcontractors above 5 percent of the bid. |
+| P13 | Pub. Contract Code § 7104: a local public works contract involving trenches or excavation deeper than four feet must contain the differing-site-conditions clause set out in the section. | 7104 | Contract includes 12-foot trenching and puts all subsurface risk on the contractor with no notice-and-investigation clause. |
+| P14 | Lab. Code § 1813: the contract must contain a stipulation that the contractor forfeits $25 per worker per day for work over 8 hours a day or 40 hours a week in violation of the article. Lab. Code § 1861: the contractor must sign the workers' compensation certification before starting work. | 1813 | No hours-of-labor penalty stipulation (omission). |
+
+The agency in each contract must be a local agency (city, county or special district)
+and the contract price must be well over $1,000,000.
+
+## Executive employment agreement
+
+| Code | Rule (as read) | Key | Example defect |
+| --- | --- | --- | --- |
+| E1 | Bus. & Prof. Code § 16600(a)-(b) and § 16600.1(a): a noncompete clause in an employment contract is void, no matter how narrowly tailored, unless an exception in the chapter applies, and it is unlawful to include one. | 16600 | Twelve-month post-employment noncompete. |
+| E2 | Bus. & Prof. Code § 16600.5(a)-(b): a contract void under the chapter is unenforceable regardless of where and when it was signed, and an employer may not try to enforce it even if signed and performed outside California. | 16600.5 | Clause says the restrictive covenants are governed by Delaware law and enforceable "regardless of where Executive resides". |
+| E3 | Lab. Code § 925(a), (e): an employer may not require an employee who primarily lives and works in California to litigate or arbitrate California claims outside California, or to give up California law, unless the employee was in fact individually represented by counsel in negotiating the forum or choice-of-law term. | 925 | Texas forum and Texas law, in an agreement that recites the executive lives and works in California and was not represented by counsel. |
+| E4 | Lab. Code § 2870: an invention assignment clause does not apply to an invention developed entirely on the employee's own time without the employer's equipment, supplies, facilities or trade secrets, unless it relates to the employer's business or research or results from work for the employer. § 2872: the employer must give written notice of this at signing. | 2870 | Assignment of "all inventions conceived during the Term, whether or not on Company time or related to the Company's business", with no § 2870 notice. |
+| E5 | Lab. Code § 2802(a) and § 2804: the employer must reimburse necessary business expenses, and an agreement to waive that right is void. | 2802 | "Executive shall bear all home office, mobile phone and travel costs without reimbursement." |
+| E6 | Lab. Code § 201(a) and § 202(a): on discharge, earned wages are due immediately; on resignation without 72 hours' notice, within 72 hours. | 201 | Final wages payable on the next regular payroll date or within 30 days. |
+| E7 | Lab. Code § 227.3: an employment contract may not provide for forfeiture of vested vacation on termination; vested vacation is paid as wages at the final rate. | 227.3 | Accrued unused vacation is forfeited on termination for Cause. |
+| E8 | Lab. Code § 221: an employer may not collect or receive back from an employee any part of wages already paid. | 221 | Executive must repay three months of base salary if the executive resigns within the first year. |
+| E9 | Lab. Code § 232(a)-(b): an employer may not require an employee to refrain from disclosing the amount of the employee's wages, or to sign a waiver of the right to disclose them. | 232 | Executive may not disclose compensation to any other employee. |
+| E10 | Lab. Code § 206.5(a): an employer may not require a release of a claim for wages due unless those wages have been paid; such a release is void. | 206.5 | Payment of an earned, unpaid bonus is conditioned on signing a general release. |
+| E11 | Gov. Code § 12964.5(b)(1)(A), (b)(4): a separation agreement may not prohibit disclosure of information about unlawful acts in the workplace, and the employer must tell the employee of the right to consult an attorney and allow a reasonable period of at least five business days. | 12964.5 | Exhibit form of separation agreement bars any statement about workplace conduct and gives 48 hours to sign. |
+
+The executive in each agreement must be recited as living and working primarily in California.
