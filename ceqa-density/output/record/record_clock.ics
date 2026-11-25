@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ceqa-density demo//EN
+BEGIN:VEVENT
+UID:ceqa-record-0@demo.invalid
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+SUMMARY:Petition and request to prepare the record filed (fictional demo)
+DESCRIPTION:Pub. Resources Code 21167.6(a)
+END:VEVENT
+BEGIN:VEVENT
+UID:ceqa-record-1@demo.invalid
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261030
+SUMMARY:Last day to personally serve the request on the agency (10 business days) (fictional demo)
+DESCRIPTION:Pub. Resources Code 21167.6(a)
+END:VEVENT
+BEGIN:VEVENT
+UID:ceqa-record-2@demo.invalid
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261023
+SUMMARY:Request served on the agency (fictional demo)
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+UID:ceqa-record-3@demo.invalid
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261115
+SUMMARY:Case management conference to be held by (30 days from filing) (fictional demo)
+DESCRIPTION:Pub. Resources Code 21167.6(b)(1)(B)
+END:VEVENT
+BEGIN:VEVENT
+UID:ceqa-record-4@demo.invalid
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261222
+SUMMARY:Record certified and lodged by (60 days from service of the request) (fictional demo)
+DESCRIPTION:Pub. Resources Code 21167.6(b)(1)(A)
+END:VEVENT
+END:VCALENDAR

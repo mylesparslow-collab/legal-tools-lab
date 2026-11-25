@@ -1,0 +1,1048 @@
+{
+ "_about": "Legal numbers as data. status: official_source = read on the issuing body's site; secondary_copy_of_primary_text = read on a mirror of the chaptered text (leginfo was unreachable); unverified = not read against primary text, do not rely on it.",
+ "density_bonus": {
+  "tables": {
+   "LI": {
+    "value": [
+     [
+      10,
+      20.0
+     ],
+     [
+      11,
+      21.5
+     ],
+     [
+      12,
+      23.0
+     ],
+     [
+      13,
+      24.5
+     ],
+     [
+      14,
+      26.0
+     ],
+     [
+      15,
+      27.5
+     ],
+     [
+      16,
+      29.0
+     ],
+     [
+      17,
+      30.5
+     ],
+     [
+      18,
+      32.0
+     ],
+     [
+      19,
+      33.5
+     ],
+     [
+      20,
+      35.0
+     ],
+     [
+      21,
+      38.75
+     ],
+     [
+      22,
+      42.5
+     ],
+     [
+      23,
+      46.25
+     ],
+     [
+      24,
+      50.0
+     ]
+    ],
+    "cite": "Gov. Code 65915(f)(1)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "percent lower income units -> percent density bonus"
+   },
+   "VLI": {
+    "value": [
+     [
+      5,
+      20.0
+     ],
+     [
+      6,
+      22.5
+     ],
+     [
+      7,
+      25.0
+     ],
+     [
+      8,
+      27.5
+     ],
+     [
+      9,
+      30.0
+     ],
+     [
+      10,
+      32.5
+     ],
+     [
+      11,
+      35.0
+     ],
+     [
+      12,
+      38.75
+     ],
+     [
+      13,
+      42.5
+     ],
+     [
+      14,
+      46.25
+     ],
+     [
+      15,
+      50.0
+     ]
+    ],
+    "cite": "Gov. Code 65915(f)(2)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "percent very low income units -> percent density bonus"
+   },
+   "MOD_SALE": {
+    "value": [
+     [
+      10,
+      5.0
+     ],
+     [
+      11,
+      6.0
+     ],
+     [
+      12,
+      7.0
+     ],
+     [
+      13,
+      8.0
+     ],
+     [
+      14,
+      9.0
+     ],
+     [
+      15,
+      10.0
+     ],
+     [
+      16,
+      11.0
+     ],
+     [
+      17,
+      12.0
+     ],
+     [
+      18,
+      13.0
+     ],
+     [
+      19,
+      14.0
+     ],
+     [
+      20,
+      15.0
+     ],
+     [
+      21,
+      16.0
+     ],
+     [
+      22,
+      17.0
+     ],
+     [
+      23,
+      18.0
+     ],
+     [
+      24,
+      19.0
+     ],
+     [
+      25,
+      20.0
+     ],
+     [
+      26,
+      21.0
+     ],
+     [
+      27,
+      22.0
+     ],
+     [
+      28,
+      23.0
+     ],
+     [
+      29,
+      24.0
+     ],
+     [
+      30,
+      25.0
+     ],
+     [
+      31,
+      26.0
+     ],
+     [
+      32,
+      27.0
+     ],
+     [
+      33,
+      28.0
+     ],
+     [
+      34,
+      29.0
+     ],
+     [
+      35,
+      30.0
+     ],
+     [
+      36,
+      31.0
+     ],
+     [
+      37,
+      32.0
+     ],
+     [
+      38,
+      33.0
+     ],
+     [
+      39,
+      34.0
+     ],
+     [
+      40,
+      35.0
+     ],
+     [
+      41,
+      38.75
+     ],
+     [
+      42,
+      42.5
+     ],
+     [
+      43,
+      46.25
+     ],
+     [
+      44,
+      50.0
+     ]
+    ],
+    "cite": "Gov. Code 65915(f)(4)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "percent moderate income for-sale units -> percent density bonus"
+   },
+   "STUDENT": {
+    "value": [
+     [
+      20,
+      35.0
+     ],
+     [
+      21,
+      38.75
+     ],
+     [
+      22,
+      42.5
+     ],
+     [
+      23,
+      46.25
+     ],
+     [
+      24,
+      50.0
+     ]
+    ],
+    "cite": "Gov. Code 65915(f)(3)(C)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "percent lower income student units -> percent density bonus"
+   },
+   "ADD_VLI": {
+    "value": [
+     [
+      5,
+      20.0
+     ],
+     [
+      6,
+      23.75
+     ],
+     [
+      7,
+      27.5
+     ],
+     [
+      8,
+      31.25
+     ],
+     [
+      9,
+      35.0
+     ],
+     [
+      10,
+      38.75
+     ]
+    ],
+    "cite": "Gov. Code 65915(v)(2)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "unverified",
+    "read_on": "2026-11-25",
+    "note": "additional percent very low income units -> additional bonus. Table rows fell outside the text that could be read; the end points (5->20, 10->38.75) match HCD's April 2026 fact sheet. Check every row on leginfo."
+   },
+   "ADD_MOD": {
+    "value": [
+     [
+      5,
+      20.0
+     ],
+     [
+      6,
+      22.5
+     ],
+     [
+      7,
+      25.0
+     ],
+     [
+      8,
+      27.5
+     ],
+     [
+      9,
+      30.0
+     ],
+     [
+      10,
+      32.5
+     ],
+     [
+      11,
+      35.0
+     ],
+     [
+      12,
+      38.75
+     ],
+     [
+      13,
+      42.5
+     ],
+     [
+      14,
+      46.25
+     ],
+     [
+      15,
+      50.0
+     ]
+    ],
+    "cite": "Gov. Code 65915(v)(2)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "unverified",
+    "read_on": "2026-11-25",
+    "note": "additional percent moderate income units -> additional bonus. Same caveat as ADD_VLI (end points 5->20, 15->50 match HCD)."
+   }
+  },
+  "flat": {
+   "SENIOR_pct_of_senior_units": {
+    "value": 20.0,
+    "cite": "Gov. Code 65915(f)(3)(A)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "SPECIAL_pct_of_qualifying_units": {
+    "value": 20.0,
+    "cite": "Gov. Code 65915(f)(3)(B)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "transitional foster youth, disabled veterans, homeless persons; bonus is 20% of the units giving rise to it"
+   },
+   "SPECIAL_min_pct": {
+    "value": 10,
+    "cite": "Gov. Code 65915(b)(1)(E)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "AFF100_pct_of_lower_income_units": {
+    "value": 80.0,
+    "cite": "Gov. Code 65915(f)(3)(D)(i)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "AFF100_max_moderate_pct": {
+    "value": 20,
+    "cite": "Gov. Code 65915(b)(1)(G)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "AFF100_no_density_cap_transit_miles": {
+    "value": 0.5,
+    "cite": "Gov. Code 65915(f)(3)(D)(ii)",
+    "source": "LegiScan copy of chaptered AB 87 (Stats. 2025, ch. 486), which reprints Gov. Code 65915",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "within one-half mile of a major transit stop no maximum density applies"
+   },
+   "AFF100_height_bonus": {
+    "value": "up to three additional stories, or 33 feet",
+    "cite": "Gov. Code 65915(d)(2)(D)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   }
+  },
+  "additional_bonus_gate": {
+   "LI": {
+    "value": 24,
+    "cite": "Gov. Code 65915(v)(1)(A)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "base project must provide 24% lower income"
+   },
+   "VLI": {
+    "value": 15,
+    "cite": "Gov. Code 65915(v)(1)(B)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "base project must provide 15% very low income"
+   },
+   "MOD_SALE": {
+    "value": 44,
+    "cite": "Gov. Code 65915(v)(1)(C)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "base project must provide 44% moderate income"
+   },
+   "max_restricted_pct_of_total_units": {
+    "value": 50,
+    "cite": "Gov. Code 65915(v)(1)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "additional bonus only if the development would not restrict more than 50% of total units"
+   },
+   "base_excludes_bonus_units": {
+    "value": true,
+    "cite": "Gov. Code 65915(v)(4), (o)(9)(A)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   }
+  },
+  "concessions": {
+   "value": {
+    "LI": [
+     [
+      10,
+      1
+     ],
+     [
+      17,
+      2
+     ],
+     [
+      24,
+      3
+     ]
+    ],
+    "VLI": [
+     [
+      5,
+      1
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      15,
+      3
+     ],
+     [
+      16,
+      4
+     ]
+    ],
+    "MOD_SALE": [
+     [
+      10,
+      1
+     ],
+     [
+      20,
+      2
+     ],
+     [
+      30,
+      3
+     ],
+     [
+      45,
+      4
+     ]
+    ],
+    "STUDENT": [
+     [
+      20,
+      1
+     ],
+     [
+      23,
+      2
+     ]
+    ],
+    "AFF100": [
+     [
+      0,
+      5
+     ]
+    ],
+    "SENIOR": [],
+    "SPECIAL": []
+   },
+   "cite": "Gov. Code 65915(d)(2)(A)-(F)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "minimum percent -> number of incentives or concessions"
+  },
+  "rounding": {
+   "value": "each component separately rounded up to the next whole number",
+   "cite": "Gov. Code 65915(q), (f)(5)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "parking": {
+   "per_unit_0_1_br": {
+    "value": 1.0,
+    "cite": "Gov. Code 65915(p)(1)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "per_unit_2_3_br": {
+    "value": 1.5,
+    "cite": "Gov. Code 65915(p)(1)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "per_unit_4plus_br": {
+    "value": 2.5,
+    "cite": "Gov. Code 65915(p)(1)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "transit_per_unit": {
+    "value": 0.5,
+    "cite": "Gov. Code 65915(p)(2)(A)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "needs 20% lower income or 11% very low income, within 1/2 mile of a major transit stop with unobstructed access"
+   },
+   "transit_min_pct": {
+    "value": {
+     "LI": 20,
+     "VLI": 11
+    },
+    "cite": "Gov. Code 65915(p)(2)(A)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "transit_mod_per_bedroom": {
+    "value": 0.5,
+    "cite": "Gov. Code 65915(p)(2)(A)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "40% moderate income for-sale"
+   },
+   "transit_mod_min_pct": {
+    "value": 40,
+    "cite": "Gov. Code 65915(p)(2)(A)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": ""
+   },
+   "aff100_transit": {
+    "value": 0.0,
+    "cite": "Gov. Code 65915(p)(3)(A)",
+    "source": "california.public.law mirror of the code section",
+    "status": "secondary_copy_of_primary_text",
+    "read_on": "2026-11-25",
+    "note": "no parking standard for a 100% affordable (b)(1)(G) project within 1/2 mile of a major transit stop"
+   },
+   "ab2097": {
+    "value": "separate statute, not part of 65915(p)",
+    "cite": "Gov. Code 65863.2",
+    "source": "HCD fact sheet (April 2026) mentions it",
+    "status": "unverified",
+    "read_on": "2026-11-25",
+    "note": "not computed by this tool"
+   }
+  }
+ },
+ "sb4": {
+  "ownership_cutoff": {
+   "value": "2024-01-01",
+   "cite": "Gov. Code 65913.16(c)(1)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "land owned on or before this date"
+  },
+  "max_moderate_pct": {
+   "value": 20,
+   "cite": "Gov. Code 65913.16(c)(9)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "max_staff_pct": {
+   "value": 5,
+   "cite": "Gov. Code 65913.16(c)(9)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "heavy_industrial_ft": {
+   "value": 1200,
+   "cite": "Gov. Code 65913.16(c)(6)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "title_v_ft": {
+   "value": 1600,
+   "cite": "Gov. Code 65913.16(c)(7)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "oil_gas_ft": {
+   "value": 3200,
+   "cite": "Gov. Code 65913.16(c)(8)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "applies where multifamily is not an existing permitted use"
+  },
+  "light_industrial_adjoining_share": {
+   "value": "more than one-third of square footage",
+   "cite": "Gov. Code 65913.16(c)(5)(A)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "nonresidential_zone_du_ac": {
+   "value": 40,
+   "cite": "Gov. Code 65913.16(j)(2)(A)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "residential_zone_density": {
+   "value": "density deemed appropriate for lower income housing",
+   "cite": "Gov. Code 65913.16(j)(1)(A), 65583.2(c)(3)(B)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "default_density_du_ac": {
+   "value": {
+    "metropolitan": 30,
+    "suburban": 20,
+    "nonmetro_incorporated": 15,
+    "nonmetro_unincorporated": 10
+   },
+   "cite": "Gov. Code 65583.2(c)(3)(B)",
+   "source": "not read; commonly cited figures",
+   "status": "unverified",
+   "read_on": "2026-11-25",
+   "note": "check the section before relying on these"
+  },
+  "height": {
+   "value": "one story above the maximum height otherwise applicable",
+   "cite": "Gov. Code 65913.16(j)(1)(A), (j)(2)(A)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "in a non-residential zone a concession or waiver cannot be used to go higher: (j)(2)(B)"
+  },
+  "density_bonus_eligible": {
+   "value": true,
+   "cite": "Gov. Code 65913.16(j)(1)(C), (j)(2)(C)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "parking_max_per_unit": {
+   "value": 1.0,
+   "cite": "Gov. Code 65913.16(k)(1)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "parking_zero_transit_miles": {
+   "value": 0.5,
+   "cite": "Gov. Code 65913.16(k)(2)(A)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "also zero if a car share vehicle is within one block: (k)(2)(B)"
+  },
+  "prevailing_wage_over_units": {
+   "value": 10,
+   "cite": "Gov. Code 65913.16(c)(12)(B)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "labor_standards_units": {
+   "value": 50,
+   "cite": "Gov. Code 65913.16(g)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "sunset": {
+   "value": "2036-01-01",
+   "cite": "Gov. Code 65913.16(p)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "consistency_review_days": {
+   "value": {
+    "units_150_or_fewer": 60,
+    "more_than_150": 90
+   },
+   "cite": "Gov. Code 65913.16(l)(1)",
+   "source": "LegiScan copy of chaptered SB 4 (Stats. 2023, ch. 771)",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  }
+ },
+ "ab130": {
+  "max_acres": {
+   "value": 20,
+   "cite": "Pub. Resources Code 21080.66(a)(1)(A)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "max_acres_builders_remedy": {
+   "value": 4,
+   "cite": "Pub. Resources Code 21080.66(a)(1)(B)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "builder's remedy project per Gov. Code 65589.5(a)(11)"
+  },
+  "perimeter_urban_pct": {
+   "value": 75,
+   "cite": "Pub. Resources Code 21080.66(a)(3)(B)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "quarter_mile_urban_pct": {
+   "value": 75,
+   "cite": "Pub. Resources Code 21080.66(a)(3)(C)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "min_density_fraction": {
+   "value": 0.5,
+   "cite": "Pub. Resources Code 21080.66(a)(5)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "of the Gov. Code 65583.2(c)(3)(B) density"
+  },
+  "tribal_notice_days": {
+   "value": 14,
+   "cite": "Pub. Resources Code 21080.66(b)(1)(A)(i)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "from application deemed complete"
+  },
+  "tribal_response_days": {
+   "value": 60,
+   "cite": "Pub. Resources Code 21080.66(b)(2)(A)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "consult_start_days": {
+   "value": 14,
+   "cite": "Pub. Resources Code 21080.66(b)(3)(A)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "from the tribe's acceptance"
+  },
+  "consult_conclude_days": {
+   "value": 45,
+   "cite": "Pub. Resources Code 21080.66(b)(3)(F)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "consult_extension_days": {
+   "value": 15,
+   "cite": "Pub. Resources Code 21080.66(b)(3)(F)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "one time, on a participating tribe's request"
+  },
+  "freeway_ft": {
+   "value": 500,
+   "cite": "Pub. Resources Code 21080.66(c)(2)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "MERV 16 filtration and other conditions"
+  },
+  "labor_height_ft": {
+   "value": 85,
+   "cite": "Pub. Resources Code 21080.66(d)(2)",
+   "source": "california.public.law mirror of the code section",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "approval_days_after_consultation": {
+   "value": 30,
+   "cite": "attributed to SB 158 (2025)",
+   "source": "law firm summary (bwslaw.com)",
+   "status": "unverified",
+   "read_on": "2026-11-25",
+   "note": "not found in the 21080.66 text that was read"
+  }
+ },
+ "ceqa_record": {
+  "request_service_business_days": {
+   "value": 10,
+   "cite": "Pub. Resources Code 21167.6(a)",
+   "source": "LegiScan copy of chaptered SB 131 (Stats. 2025, ch. 24), sec. 19",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "request and petition personally served on the agency within 10 business days of filing"
+  },
+  "certify_days": {
+   "value": 60,
+   "cite": "Pub. Resources Code 21167.6(b)(1)(A)",
+   "source": "LegiScan copy of chaptered SB 131 (Stats. 2025, ch. 24), sec. 19",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "from the date the request to prepare the record was served on the agency"
+  },
+  "cmc_days": {
+   "value": 30,
+   "cite": "Pub. Resources Code 21167.6(b)(1)(B)",
+   "source": "LegiScan copy of chaptered SB 131 (Stats. 2025, ch. 24), sec. 19",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "case management conference within 30 days of filing"
+  },
+  "election_denial_business_days": {
+   "value": 5,
+   "cite": "Pub. Resources Code 21167.6(b)(3)",
+   "source": "LegiScan copy of chaptered SB 131 (Stats. 2025, ch. 24), sec. 19",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "max_single_extension_days": {
+   "value": 60,
+   "cite": "Pub. Resources Code 21167.6(c)",
+   "source": "LegiScan copy of chaptered SB 131 (Stats. 2025, ch. 24), sec. 19",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "unless the court finds a longer extension is in the public interest"
+  },
+  "record_categories": {
+   "value": 11,
+   "cite": "Pub. Resources Code 21167.6(e)(1)-(11)",
+   "source": "LegiScan copy of chaptered SB 131 (Stats. 2025, ch. 24), sec. 19",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "distribution_center_min_sqft": {
+   "value": 50000,
+   "cite": "Pub. Resources Code 21060.4",
+   "source": "LegiScan copy of chaptered SB 131 (Stats. 2025, ch. 24), sec. 19",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": "warehouse distribution center as defined in Lab. Code 2100"
+  },
+  "oil_gas_definition": {
+   "value": "facility used for production, processing, transmission, storage, or distribution of petroleum or natural gas",
+   "cite": "Pub. Resources Code 21064.8",
+   "source": "LegiScan copy of chaptered SB 131 (Stats. 2025, ch. 24), sec. 19",
+   "status": "secondary_copy_of_primary_text",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "paper_bound_volume_max_pages": {
+   "value": 300,
+   "cite": "Cal. Rules of Court, rule 3.2208(b)",
+   "source": "courts.ca.gov, California Rules of Court (2026)",
+   "status": "official_source",
+   "read_on": "2026-11-25",
+   "note": "binders: 400 pages"
+  },
+  "electronic_format": {
+   "value": "PDF or similar, bookmarked files, full-text searchable, unalterable medium; index may include hyperlinks",
+   "cite": "Cal. Rules of Court, rule 3.2207(a)",
+   "source": "courts.ca.gov, California Rules of Court (2026)",
+   "status": "official_source",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "order_of_documents": {
+   "value": [
+    "A Notice of Determination",
+    "B Resolutions or ordinances",
+    "C CEQA findings",
+    "D Final EIR and related documents",
+    "E Initial study",
+    "F Staff reports",
+    "G Transcripts and minutes",
+    "H Remainder of the record"
+   ],
+   "cite": "Cal. Rules of Court, rule 3.2205(a)(1)(A)-(H)",
+   "source": "courts.ca.gov, California Rules of Court (2026)",
+   "status": "official_source",
+   "read_on": "2026-11-25",
+   "note": ""
+  },
+  "weekend_holiday_roll": {
+   "value": "next court day",
+   "cite": "Code Civ. Proc. 12, 12a",
+   "source": "not read",
+   "status": "unverified",
+   "read_on": "2026-11-25",
+   "note": "whether day 60 rolls forward when it lands on a weekend or court holiday is an attorney call"
+  },
+  "court_holidays": {
+   "value": [
+    "2026-11-26",
+    "2026-11-27",
+    "2026-12-25",
+    "2027-01-01",
+    "2027-01-18",
+    "2027-02-12",
+    "2027-02-15",
+    "2027-03-31",
+    "2027-05-31",
+    "2027-06-18",
+    "2027-07-05",
+    "2027-09-06",
+    "2027-09-27",
+    "2027-11-11",
+    "2027-11-25",
+    "2027-11-26",
+    "2027-12-24"
+   ],
+   "cite": "Code Civ. Proc. 135; Gov. Code 6700",
+   "source": "not read; entered by hand",
+   "status": "unverified",
+   "read_on": "2026-11-25",
+   "note": "replace with the court's published calendar"
+  }
+ }
+}

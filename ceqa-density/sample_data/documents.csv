@@ -1,0 +1,43 @@
+doc_id,date,title,author,recipient,doc_type,e_category,rule_group,internal_agency_comm,electronic,staff_notes,logistical,presented_to_decisionmaking_body,reviewed_by,privilege_flag,draft_env_doc,released_for_public_review,file
+CB-0001,2026-09-18,Notice of Determination,Planning Division,County Clerk,notice_of_determination,5,A,N,N,N,N,N,none,none,N,N,docs/CB-0001.txt
+CB-0002,2026-09-15,Resolution No. 2026-41 certifying the Final EIR,City Council,,resolution,9,B,N,N,N,N,N,none,none,N,N,docs/CB-0002.txt
+CB-0003,2026-09-15,Resolution No. 2026-42 approving the project,City Council,,resolution,9,B,N,N,N,N,N,none,none,N,N,docs/CB-0003.txt
+CB-0004,2026-09-15,CEQA Findings and Statement of Overriding Considerations,City Council,,ceqa_findings,9,C,N,N,N,N,N,none,none,N,N,docs/CB-0004.txt
+CB-0005,2026-08-20,Final Environmental Impact Report,Estuary Environmental Consulting,City of Calder Bay,final_eir,9,D,N,N,N,N,N,none,none,N,N,docs/CB-0005.txt
+CB-0006,2026-03-02,Draft Environmental Impact Report,Estuary Environmental Consulting,City of Calder Bay,draft_eir,10,D,N,N,N,N,N,none,none,N,N,docs/CB-0006.txt
+CB-0007,2025-10-06,Initial Study,Planning Division,,initial_study,10,E,N,N,N,N,N,none,none,N,N,docs/CB-0007.txt
+CB-0008,2026-08-27,Planning Commission staff report,"R. Okafor, Senior Planner",Planning Commission,staff_report,2,F,N,N,N,N,N,none,none,N,N,docs/CB-0008.txt
+CB-0009,2026-09-15,City Council staff report,"R. Okafor, Senior Planner",City Council,staff_report,2,F,N,N,N,N,N,none,none,N,N,docs/CB-0009.txt
+CB-0010,2026-08-27,Planning Commission minutes,Commission Secretary,,minutes,4,G,N,N,N,N,N,none,none,N,N,docs/CB-0010.txt
+CB-0011,2026-09-15,City Council hearing transcript,City Clerk,,transcript,4,G,N,N,N,N,N,none,none,N,N,docs/CB-0011.txt
+CB-0012,2025-08-11,Project application and plan set,Tidewater Housing Partners LLC,Planning Division,application,1,H,N,N,N,N,N,none,none,N,N,docs/CB-0012.txt
+CB-0013,2025-10-20,Notice of Preparation,Planning Division,State Clearinghouse,notice,5,H,N,N,N,N,N,none,none,N,N,docs/CB-0013.txt
+CB-0014,2026-03-02,Notice of Availability of Draft EIR,Planning Division,,notice,5,H,N,N,N,N,N,none,none,N,N,docs/CB-0014.txt
+CB-0015,2026-09-01,Notice of public hearing,City Clerk,,notice,5,H,N,N,N,N,N,none,none,N,N,docs/CB-0015.txt
+CB-0016,2026-04-10,Comment letter on Draft EIR,Friends of Tidewater Marsh,Planning Division,comment_letter,6,H,N,N,N,N,N,none,none,N,N,docs/CB-0016.txt
+CB-0017,2026-04-14,Comment letter on Draft EIR,Calder Bay Unified School District,Planning Division,comment_letter,6,H,N,N,N,N,N,none,none,N,N,docs/CB-0017.txt
+CB-0018,2026-04-15,Comment letter on Draft EIR,Regional Water Board staff,Planning Division,comment_letter,6,H,N,N,N,N,N,none,none,N,N,docs/CB-0018.txt
+CB-0019,2026-06-03,Letter transmitting revised traffic study,Tidewater Housing Partners LLC,Planning Division,correspondence,7,H,N,N,N,N,N,none,none,N,N,docs/CB-0019.txt
+CB-0020,2025-09-12,Letter to applicant requesting additional information,Planning Division,Tidewater Housing Partners LLC,correspondence,7,H,N,N,N,N,N,none,none,N,N,docs/CB-0020.txt
+CB-0021,2026-09-08,Applicant's proposed findings,Tidewater Housing Partners LLC,City Council,proposed_findings,8,H,N,N,N,N,N,none,none,N,N,docs/CB-0021.txt
+CB-0022,2026-01-22,Transportation impact study,Gridline Traffic Engineers,Planning Division,study,10,H,N,N,N,N,N,none,none,N,N,docs/CB-0022.txt
+CB-0023,2026-01-30,Biological resources technical report,Estuary Environmental Consulting,Planning Division,study,10,H,N,N,N,N,N,none,none,N,N,docs/CB-0023.txt
+CB-0024,2026-05-19,Internal memo: wetland buffer recommendation,"M. Castellanos, Public Works",R. Okafor,internal_memo,10,H,Y,N,N,N,N,none,none,N,N,docs/CB-0024.txt
+CB-0025,2026-05-06,Email: draft response to school district comment,R. Okafor,M. Castellanos,internal_email,10,H,Y,Y,N,N,N,none,none,N,N,docs/CB-0025.txt
+CB-0026,2026-05-22,Email: traffic count discrepancy,M. Castellanos,R. Okafor,internal_email,10,H,Y,Y,N,N,N,none,none,N,N,docs/CB-0026.txt
+CB-0027,2026-06-11,Email: questions on shade study,"J. Lindqvist, Associate Planner",R. Okafor,internal_email,10,H,Y,Y,N,N,N,none,none,N,N,docs/CB-0027.txt
+CB-0028,2026-07-02,"Email: mitigation measure wording, forwarded to City Manager",R. Okafor,"D. Abara, City Manager",internal_email,10,H,Y,Y,N,N,N,lead_agency_executive,none,N,N,docs/CB-0028.txt
+CB-0029,2026-07-09,"Email: buffer width options, reviewed by Planning Director",J. Lindqvist,"P. Navarrete, Planning Director",internal_email,10,H,Y,Y,N,N,N,supervisory_official,none,N,N,docs/CB-0029.txt
+CB-0030,2026-09-10,Email: staff summary attached to Council packet,R. Okafor,City Clerk,internal_email,10,H,Y,Y,N,N,Y,none,none,N,N,docs/CB-0030.txt
+CB-0031,2025-10-01,"Email: meeting invitation, EIR kickoff",J. Lindqvist,Project team,internal_email,10,H,Y,Y,N,Y,N,none,none,N,N,docs/CB-0031.txt
+CB-0032,2026-02-17,Email: reschedule Thursday check-in,J. Lindqvist,Project team,internal_email,10,H,Y,Y,N,Y,N,none,none,N,N,docs/CB-0032.txt
+CB-0033,2025-11-14,Handwritten staff notes from site visit,J. Lindqvist,,staff_notes,10,H,Y,N,Y,N,N,none,none,N,N,docs/CB-0033.txt
+CB-0034,2026-06-25,Email: City Attorney advice on recirculation,Office of the City Attorney,R. Okafor,internal_email,10,H,Y,Y,N,N,N,none,attorney_client,N,N,docs/CB-0034.txt
+CB-0035,2026-08-05,Memo: litigation risk assessment,Office of the City Attorney,City Council,internal_memo,10,H,Y,N,N,N,N,none,attorney_client,N,N,docs/CB-0035.txt
+CB-0036,2026-07-21,Email: pre-decisional policy options,P. Navarrete,D. Abara,internal_email,10,H,Y,Y,N,N,N,none,deliberative_process,N,N,docs/CB-0036.txt
+CB-0037,2026-01-12,Administrative draft EIR (not released),Estuary Environmental Consulting,Planning Division,admin_draft,10,H,N,N,N,N,N,none,none,Y,N,docs/CB-0037.txt
+CB-0038,2026-05-01,Email from applicant: schedule for response to comments,Tidewater Housing Partners LLC,R. Okafor,correspondence,7,H,N,Y,N,N,N,none,none,N,N,docs/CB-0038.txt
+CB-0039,2026-09-12,Email from resident opposing project,A. Whitcombe,City Council,comment_letter,6,H,N,Y,N,N,N,none,none,N,N,docs/CB-0039.txt
+CB-D001,2026-04-10,Comment letter on Draft EIR (shared-drive copy),Friends of Tidewater Marsh,Planning Division,comment_letter,6,H,N,N,N,N,N,none,none,N,N,docs/CB-D001.txt
+CB-D002,2026-01-22,Transportation impact study (shared-drive copy),Gridline Traffic Engineers,Planning Division,study,10,H,N,N,N,N,N,none,none,N,N,docs/CB-D002.txt
+CB-D003,2026-05-22,Email: traffic count discrepancy (shared-drive copy),M. Castellanos,R. Okafor,internal_email,10,H,Y,Y,N,N,N,none,none,N,N,docs/CB-D003.txt

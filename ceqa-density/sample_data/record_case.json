@@ -1,0 +1,17 @@
+{
+ "case_name": "Friends of Tidewater Marsh v. City of Calder Bay",
+ "court": "Superior Court of California, County of Santa Lucinda (fictional)",
+ "case_number": "26-CEQA-00417 (fictional)",
+ "filed": "2026-10-16",
+ "request_served": "2026-10-23",
+ "as_of": "2026-11-25",
+ "record_preparer": "agency",
+ "extensions": [],
+ "project": {
+  "name": "Harborview Commons Mixed-Use Project",
+  "description": "312 apartments over ground-floor retail on a 6.1-acre former boatyard",
+  "includes_warehouse_distribution_center": false,
+  "distribution_center_sqft": 0,
+  "includes_oil_gas_infrastructure": false
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "case_name": "Friends of Tidewater Marsh v. City of Calder Bay (Eastgate Logistics Center)",
+ "court": "Superior Court of California, County of Santa Lucinda (fictional)",
+ "case_number": "26-CEQA-00418 (fictional)",
+ "filed": "2026-10-16",
+ "request_served": "2026-10-23",
+ "as_of": "2026-11-25",
+ "record_preparer": "agency",
+ "extensions": [
+  {
+   "type": "stipulation",
+   "days": 30
+  }
+ ],
+ "project": {
+  "name": "Eastgate Logistics Center",
+  "description": "640,000 sq ft warehouse distribution center (same document set reused to show the other branch)",
+  "includes_warehouse_distribution_center": true,
+  "distribution_center_sqft": 640000,
+  "includes_oil_gas_infrastructure": false
+ }
+}

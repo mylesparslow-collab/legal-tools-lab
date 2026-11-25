@@ -1,0 +1,60 @@
+{
+ "case": "Friends of Tidewater Marsh v. City of Calder Bay (Eastgate Logistics Center)",
+ "branch": "A",
+ "branch_reason": "Project includes a warehouse distribution center of 640,000 sq ft (threshold 50,000): Pub. Resources Code 21167.6(e)(10)(A), 21060.4, 21064.8.",
+ "clock": [
+  {
+   "event": "Petition and request to prepare the record filed",
+   "date": "2026-10-16",
+   "cite": "Pub. Resources Code 21167.6(a)"
+  },
+  {
+   "event": "Last day to personally serve the request on the agency (10 business days)",
+   "date": "2026-10-30",
+   "cite": "Pub. Resources Code 21167.6(a)"
+  },
+  {
+   "event": "Request served on the agency",
+   "date": "2026-10-23",
+   "cite": ""
+  },
+  {
+   "event": "Case management conference to be held by (30 days from filing)",
+   "date": "2026-11-15",
+   "cite": "Pub. Resources Code 21167.6(b)(1)(B)"
+  },
+  {
+   "event": "Record certified and lodged by (60 days from service of the request)",
+   "date": "2026-12-22",
+   "cite": "Pub. Resources Code 21167.6(b)(1)(A)"
+  },
+  {
+   "event": "Extension 1 (stipulation, 30 days): record now due",
+   "date": "2027-01-21",
+   "cite": "Pub. Resources Code 21167.6(c)"
+  }
+ ],
+ "record_due": "2027-01-21",
+ "days_remaining": 57,
+ "flags": [],
+ "counts": {
+  "INCLUDE": 33,
+  "EXCLUDE_LOGISTICAL": 2,
+  "ATTORNEY_REVIEW": 1,
+  "EXCLUDE_DUPLICATE": 3,
+  "WITHHOLD_PENDING_PRIVILEGE_REVIEW": 3
+ },
+ "pages": 501,
+ "volumes": [
+  {
+   "file": "AR_Vol_01.pdf",
+   "first": 1,
+   "last": 297
+  },
+  {
+   "file": "AR_Vol_02.pdf",
+   "first": 298,
+   "last": 501
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "case": "Friends of Tidewater Marsh v. City of Calder Bay",
+ "branch": "B",
+ "branch_reason": "Project includes no distribution center (50,000 sq ft or larger) and no oil and gas infrastructure: Pub. Resources Code 21167.6(e)(10)(B).",
+ "clock": [
+  {
+   "event": "Petition and request to prepare the record filed",
+   "date": "2026-10-16",
+   "cite": "Pub. Resources Code 21167.6(a)"
+  },
+  {
+   "event": "Last day to personally serve the request on the agency (10 business days)",
+   "date": "2026-10-30",
+   "cite": "Pub. Resources Code 21167.6(a)"
+  },
+  {
+   "event": "Request served on the agency",
+   "date": "2026-10-23",
+   "cite": ""
+  },
+  {
+   "event": "Case management conference to be held by (30 days from filing)",
+   "date": "2026-11-15",
+   "cite": "Pub. Resources Code 21167.6(b)(1)(B)"
+  },
+  {
+   "event": "Record certified and lodged by (60 days from service of the request)",
+   "date": "2026-12-22",
+   "cite": "Pub. Resources Code 21167.6(b)(1)(A)"
+  }
+ ],
+ "record_due": "2026-12-22",
+ "days_remaining": 27,
+ "flags": [],
+ "counts": {
+  "INCLUDE": 29,
+  "EXCLUDE_LOGISTICAL": 2,
+  "ATTORNEY_REVIEW": 2,
+  "EXCLUDE_DUPLICATE": 3,
+  "NOT_REQUIRED": 3,
+  "WITHHOLD_PENDING_PRIVILEGE_REVIEW": 3
+ },
+ "pages": 492,
+ "volumes": [
+  {
+   "file": "AR_Vol_01.pdf",
+   "first": 1,
+   "last": 297
+  },
+  {
+   "file": "AR_Vol_02.pdf",
+   "first": 298,
+   "last": 492
+  }
+ ]
+}
