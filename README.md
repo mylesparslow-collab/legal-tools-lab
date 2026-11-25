@@ -8,3 +8,4 @@ Personal portfolio demos of legal tools. Fictional data only. Not legal advice; 
 - [prop218-tabulator/](prop218-tabulator/) — Prop 218 written-protest tabulator and AB 2257 objection gate (Python, fictional data).
 - [brown-act-cpra-desk/](brown-act-cpra-desk/): Brown Act agenda checks and a CPRA records desk with verified PDF redaction (report Tool 6). Python, fictional data.
 - [buy-america-auditor](buy-america-auditor/): checks a transit bill of materials against FTA Buy America (49 CFR Part 661) and BABA (2 CFR Part 184). Synthetic data.
+- [ipd-seismic/](ipd-seismic/): IFOA risk/reward pool ledger checker and waterfall, plus a hospital seismic deadline tracker (report Tool 4). Python, live-formula workbook, fictional data.
