@@ -1,0 +1,56 @@
+{
+  "synthetic": true,
+  "agency": "Tule Bay Transit District (fictional)",
+  "projects": [
+    {
+      "project_id": "TB-BEB-40",
+      "name": "30 battery electric buses",
+      "funding": "FTA",
+      "vehicle_type": "bus",
+      "vehicle_count": 30,
+      "average_vehicle_cost": 1150000,
+      "scheduled_delivery_date": "2027-03-15",
+      "final_assembly_country": "US",
+      "service_area": "urbanized_over_200k",
+      "revenue_service": true,
+      "stage": "contract_signed",
+      "documents": {
+        "bidder_buy_america_certificate": true,
+        "pre_award_buy_america_certification": true,
+        "pre_award_purchaser_requirements_certification": true,
+        "fmvss_pre_award": true
+      }
+    },
+    {
+      "project_id": "TB-LRV",
+      "name": "12 light rail vehicles",
+      "funding": "FTA",
+      "vehicle_type": "railcar",
+      "vehicle_count": 12,
+      "average_vehicle_cost": 4600000,
+      "scheduled_delivery_date": "2026-08-20",
+      "final_assembly_country": "US",
+      "service_area": "urbanized_over_200k",
+      "revenue_service": true,
+      "stage": "delivered",
+      "documents": {
+        "bidder_buy_america_certificate": true,
+        "pre_award_buy_america_certification": true,
+        "pre_award_purchaser_requirements_certification": true,
+        "resident_inspector_report": true
+      }
+    },
+    {
+      "project_id": "TB-DEPOT",
+      "name": "Bus depot charging and facility upgrade",
+      "funding": "FTA",
+      "awarding_authority_type": "local_agency",
+      "stage": "contract_signed",
+      "total_applicable_cost": 18400000,
+      "federal_assistance": 14720000,
+      "documents": {
+        "bidder_buy_america_certificate": true
+      }
+    }
+  ]
+}

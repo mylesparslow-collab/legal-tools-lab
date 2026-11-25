@@ -1,0 +1,271 @@
+{
+  "_about": "Every threshold the engine uses lives here with its source and verification status. Nothing is hard-coded in engine.py. 'verified' means the text was read at the listed source on the listed date. It does not mean a lawyer has confirmed how the rule applies to any project.",
+  "rules": [
+    {
+      "id": "rs_domestic_content_by_fy",
+      "label": "Rolling stock domestic content threshold, by federal fiscal year of delivery",
+      "value": [
+        {
+          "fy_from": 2016,
+          "fy_to": 2017,
+          "pct": 60
+        },
+        {
+          "fy_from": 2018,
+          "fy_to": 2019,
+          "pct": 65
+        },
+        {
+          "fy_from": 2020,
+          "fy_to": null,
+          "pct": 70
+        }
+      ],
+      "comparison": "strictly more than",
+      "source": "49 U.S.C. 5323(j)(2)(C)(i)(I)-(III)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/49/5323",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "Statute read on Cornell LII (uscode.house.gov link failed). Same percentages confirmed on FTA's Buy America page.",
+      "note": "49 CFR 661.11(a) on eCFR still reads 'more than 60 percent'. The regulation has not been amended to match the statute. The statute controls."
+    },
+    {
+      "id": "rs_subcomponent_test_follows_fy",
+      "label": "Subcomponent share needed for a component to be of domestic origin uses the same percentage as the vehicle",
+      "value": true,
+      "source": "FTA policy notice, 81 FR 60278 (Sept. 1, 2016), sections III.C and IV.A; 49 CFR 661.11(g)",
+      "source_url": "https://www.federalregister.gov/documents/full_text/text/2016/09/01/2016-21007.txt",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "Federal Register text read on federalregister.gov.",
+      "note": "49 CFR 661.11(g) itself still reads 'more that 60 percent'. FTA's policy applies 65 percent (FY2018-19) and 70 percent (FY2020 on). This is agency policy guidance, not regulation text."
+    },
+    {
+      "id": "rs_threshold_date_basis",
+      "label": "Which date picks the fiscal year",
+      "value": "scheduled_delivery_date",
+      "source": "FTA policy notice, 81 FR 60278 (Sept. 1, 2016)",
+      "source_url": "https://www.federalregister.gov/documents/full_text/text/2016/09/01/2016-21007.txt",
+      "status": "partially_verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "Notice read in part. It ties the percentage to vehicle delivery date, with special handling for options, piggybacks and older contracts that was not modeled.",
+      "note": "Every delivery from Oct. 1, 2019 on lands at 70 percent, so this only matters for old contracts."
+    },
+    {
+      "id": "rs_final_assembly_us",
+      "label": "Final assembly of rolling stock must occur in the United States; final assembly labor is left out of component cost",
+      "value": true,
+      "source": "49 U.S.C. 5323(j)(2)(C)(ii), (j)(4); 49 CFR 661.11(a), (p), (r)",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-VI/part-661/section-661.11",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API and LII."
+    },
+    {
+      "id": "rs_partial_credit",
+      "label": "US-manufactured component that fails the subcomponent test still counts its domestic subcomponents plus the cost of manufacturing the component",
+      "value": true,
+      "source": "49 CFR 661.11(l)",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-VI/part-661/section-661.11",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API.",
+      "note": "The engine takes 'cost of manufacturing the component' as component cost minus the sum of listed subcomponent costs. Check that against the manufacturer's cost build-up."
+    },
+    {
+      "id": "rs_tariff_exempt_reexport",
+      "label": "US-made subcomponent in a foreign-made component counts only if it re-enters under the tariff exemption in 19 CFR 10.11-10.24",
+      "value": true,
+      "source": "49 CFR 661.11(i), (j), (k)",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-VI/part-661/section-661.11",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API.",
+      "note": "US raw materials exported into a foreign component are not subcomponents and do not count (661.11(k))."
+    },
+    {
+      "id": "rs_frame_shell_steel_credit_min_avg_cost",
+      "label": "Average vehicle cost above which US steel or iron in a non-US frame or car shell is counted",
+      "value": 300000,
+      "unit": "USD per vehicle",
+      "comparison": "strictly more than",
+      "source": "49 U.S.C. 5323(j)(5)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/49/5323",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "Statute read on Cornell LII."
+    },
+    {
+      "id": "fta_manufactured_product_all_components_us",
+      "label": "FTA manufactured product: all manufacturing processes in the US and every component manufactured in the US. Subcomponent origin is ignored.",
+      "value": 100,
+      "unit": "percent of components",
+      "source": "49 CFR 661.5(d)(1)-(2)",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-VI/part-661/section-661.5",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API. FTA's Buy America page says the same."
+    },
+    {
+      "id": "fta_steel_iron_all_processes_us",
+      "label": "FTA steel and iron: all manufacturing processes in the US, except metallurgical processes involving refinement of steel additives",
+      "value": true,
+      "source": "49 CFR 661.5(b)-(c)",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-VI/part-661/section-661.5",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API.",
+      "note": "Applies to construction materials made primarily of steel or iron. Does not apply to steel used as a component or subcomponent of a manufactured product or of rolling stock (661.5(c))."
+    },
+    {
+      "id": "baba_manufactured_product_pct",
+      "label": "BABA manufactured product: manufactured in the US and cost of US components greater than this share of all component cost",
+      "value": 55,
+      "unit": "percent",
+      "comparison": "strictly greater than",
+      "source": "2 CFR 184.3, definition of 'Produced in the United States', paragraph (2); cost rules in 2 CFR 184.5",
+      "source_url": "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-I/part-184",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API."
+    },
+    {
+      "id": "baba_does_not_displace_fta_standards",
+      "label": "Part 184 does not apply to an existing Buy America preference that meets or exceeds BABA section 70914. For FTA-funded projects it mainly adds construction materials.",
+      "value": true,
+      "source": "2 CFR 184.2(a); FTA Buy America page, 'Requirements for Construction Materials'",
+      "source_url": "https://www.transit.dot.gov/buyamerica",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API and transit.dot.gov.",
+      "note": "FTA's page says Part 184 'largely does not affect FTA's existing standards for iron, steel, and manufactured products'. 'Largely' is FTA's word. Edge cases are for counsel."
+    },
+    {
+      "id": "baba_iron_steel_standard",
+      "label": "BABA iron or steel products: all manufacturing processes, from the initial melting stage through the application of coatings, in the US",
+      "value": true,
+      "source": "2 CFR 184.3, definition of 'Produced in the United States', paragraph (1)",
+      "source_url": "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-I/part-184",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API."
+    },
+    {
+      "id": "baba_predominantly_iron_steel_pct",
+      "label": "An item is 'predominantly' iron or steel when iron and steel content exceeds this share of total component cost",
+      "value": 50,
+      "unit": "percent",
+      "source": "2 CFR 184.3, definition of 'Predominantly of iron or steel or a combination of both'",
+      "source_url": "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-I/part-184",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API.",
+      "note": "Recorded for reference. The engine does not classify items. Category is an input."
+    },
+    {
+      "id": "baba_construction_materials",
+      "label": "BABA construction materials and the 'all manufacturing processes' standard for each",
+      "value": {
+        "non_ferrous_metals": "From initial smelting or melting through final shaping, coating, and assembly (184.6(a)(1))",
+        "plastic_polymer": "From initial combination of constituent plastic or polymer-based inputs until the item is in its final form (184.6(a)(2))",
+        "glass": "From initial batching and melting of raw materials through annealing, cooling, and cutting (184.6(a)(3))",
+        "fiber_optic_cable": "From initial ribboning (if applicable) through buffering, fiber stranding and jacketing; also the glass and optical fiber standards (184.6(a)(4))",
+        "optical_fiber": "From initial preform fabrication through completion of the draw (184.6(a)(5))",
+        "lumber": "From initial debarking through treatment and planing (184.6(a)(6))",
+        "drywall": "From initial blending of mined or synthetic gypsum plaster and additives through cutting and drying of sandwiched panels (184.6(a)(7))",
+        "engineered_wood": "From initial combination of constituent materials until the wood product is in its final form (184.6(a)(8))"
+      },
+      "source": "2 CFR 184.3 (definition of 'Construction materials') and 184.6(a)",
+      "source_url": "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-I/part-184",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API. Standards are paraphrased closely; read the section for exact wording."
+    },
+    {
+      "id": "baba_section_70917c_materials",
+      "label": "Cement and cementitious materials, aggregates (stone, sand, gravel), and aggregate binding agents or additives are a separate category, not manufactured products or construction materials",
+      "value": true,
+      "source": "2 CFR 184.3, definition of 'Section 70917(c) materials'; 184.4(e)",
+      "source_url": "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-I/part-184",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API.",
+      "note": "How FTA's own Part 661 treats these items was not researched. The engine reports them as 'review'."
+    },
+    {
+      "id": "dot_de_minimis_waiver",
+      "label": "DOT public interest waiver for de minimis costs and small grants",
+      "value": {
+        "max_noncompliant_usd": 1000000,
+        "max_noncompliant_pct_of_applicable_cost": 5,
+        "small_grant_federal_usd_below": 500000
+      },
+      "source": "DOT waiver announced Aug. 16, 2023, as summarized on FTA's Buy America page",
+      "source_url": "https://www.transit.dot.gov/buyamerica",
+      "status": "partially_verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "Only FTA's one-paragraph summary was read. The waiver notice itself, its scope (it may exclude rolling stock or iron and steel) and whether it is still in effect were not checked.",
+      "note": "The engine reports whether a project's non-compliant total fits inside these numbers. It never changes a FAIL to a PASS because of it."
+    },
+    {
+      "id": "p663_resident_inspector_exceptions",
+      "label": "Post-delivery purchaser's requirements: resident inspector not required for these procurements",
+      "value": {
+        "max_buses": 10,
+        "max_vehicles_rural_or_small_urbanized": 20,
+        "small_urbanized_population_max": 200000,
+        "unmodified_standard_vans": true
+      },
+      "source": "49 CFR 663.37(c); 49 U.S.C. 5323(m)",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-VI/part-663",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API and LII."
+    },
+    {
+      "id": "p663_audit_timing",
+      "label": "Pre-award audit complete before the contract is signed; post-delivery audit complete before title transfers",
+      "value": true,
+      "source": "49 CFR 663.21, 663.23, 663.25, 663.27, 663.31, 663.33, 663.35, 663.37, 663.41, 663.43",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-VI/part-663",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "eCFR renderer API.",
+      "note": "Part 663 applies to rolling stock that carries passengers in revenue service (663.3)."
+    },
+    {
+      "id": "ca_buy_clean_scope",
+      "label": "Buy Clean California Act applies to state agencies under the State Contract Act, UC Regents and CSU Trustees. Eligible materials: carbon steel rebar, flat glass, insulation, structural steel.",
+      "value": {
+        "awarding_authorities": [
+          "state_agency",
+          "uc",
+          "csu"
+        ],
+        "eligible_materials": [
+          "carbon_steel_rebar",
+          "flat_glass",
+          "insulation",
+          "structural_steel"
+        ]
+      },
+      "source": "Cal. Pub. Contract Code 3501(a), (c); 3503",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PCC&division=2.&part=1.&chapter=3.&article=5.",
+      "status": "verified",
+      "verified_on": "2026-11-25",
+      "verified_how": "leginfo.legislature.ca.gov.",
+      "note": "A local transit district is not an 'awarding authority' under 3501(a). The check is off unless the project says its awarding authority is one of the three listed."
+    },
+    {
+      "id": "ca_buy_clean_gwp_limits",
+      "label": "Maximum acceptable global warming potential per eligible material",
+      "value": {},
+      "source": "Set by the Department of General Services under Cal. Pub. Contract Code 3502, published outside the statute",
+      "source_url": null,
+      "status": "not_loaded",
+      "verified_on": null,
+      "verified_how": "Not checked. The DGS limits were not read, so none are loaded.",
+      "note": "Add limits here as {material: {limit, unit}} after reading the current DGS table. Until then the engine reports 'limit not loaded' instead of guessing."
+    }
+  ]
+}
