@@ -1,0 +1,204 @@
+{
+  "facility": "Calloway Ridge Medical Center (fictional)",
+  "owner": "Calloway Ridge Health Care District (fictional)",
+  "perm_id": 990001,
+  "as_of": "2026-11-25",
+  "milestone_status_last_updated": "2026-08-14",
+  "eligibility": {
+    "licensed_beds": 118,
+    "gac_beds": 96,
+    "rural": "N",
+    "critical_access": "N",
+    "district": "Y",
+    "dhlp_recipient": "N",
+    "integrated_system": "N",
+    "system_bears_seismic_cost": "N",
+    "system_operated_by_district": "N",
+    "system_in_financial_distress": "N",
+    "gac_revenue_2020": 212000000,
+    "npc5_report_by_2025_01_01": "Y",
+    "compliance_plan_submitted": "2025-11-18"
+  },
+  "approved_delay_date": "2032-07-01",
+  "additional_delay_granted": "N",
+  "linked_project": {
+    "name": "Replacement Patient Tower (IFOA)",
+    "baseline_completion": "2031-03-31",
+    "forecast_completion": "2031-09-12",
+    "scenario_extra_drift_days": 0
+  },
+  "buildings": [
+    {
+      "building_nbr": "BLD-90001",
+      "name": "Main Hospital (1968)",
+      "spc": "2",
+      "npc": "2",
+      "hcai_status": "OSHPD 1-In Service",
+      "method": "Replace services to a new building",
+      "linked_to_project": "Y",
+      "forecast_compliance_date": "2031-08-15"
+    },
+    {
+      "building_nbr": "BLD-90002",
+      "name": "East Wing",
+      "spc": "2",
+      "npc": "3",
+      "hcai_status": "OSHPD 1-In Service",
+      "method": "SPC and NPC retrofit",
+      "linked_to_project": "N",
+      "forecast_compliance_date": "2032-04-20"
+    },
+    {
+      "building_nbr": "BLD-90003",
+      "name": "Diagnostic Pavilion",
+      "spc": "4",
+      "npc": "4",
+      "hcai_status": "OSHPD 1-In Service",
+      "method": "NPC retrofit",
+      "linked_to_project": "N",
+      "forecast_compliance_date": "2029-10-30"
+    },
+    {
+      "building_nbr": "BLD-90005",
+      "name": "Central Plant",
+      "spc": "5",
+      "npc": "5",
+      "hcai_status": "OSHPD 1-In Service",
+      "method": "Building is already compliant",
+      "linked_to_project": "N",
+      "forecast_compliance_date": null
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M01",
+      "building": "BLD-90001",
+      "type": "Construction Project Submittal",
+      "description": "Tower increment 1 documents",
+      "critical": "N",
+      "approved_date": "2025-12-15",
+      "forecast_or_actual_date": "2025-12-09",
+      "status": "Completed"
+    },
+    {
+      "id": "M02",
+      "building": "BLD-90001",
+      "type": "Permit Issuance",
+      "description": "Tower increment 1 permit",
+      "critical": "Y",
+      "approved_date": "2026-06-30",
+      "forecast_or_actual_date": "2026-07-21",
+      "status": "Completed"
+    },
+    {
+      "id": "M03",
+      "building": "BLD-90001",
+      "type": "Construction Commencement",
+      "description": "Tower foundations",
+      "critical": "Y",
+      "approved_date": "2026-09-15",
+      "forecast_or_actual_date": "2026-12-18",
+      "status": "In Progress"
+    },
+    {
+      "id": "M04",
+      "building": "BLD-90001",
+      "type": "Construction Milestone",
+      "description": "Tower structure topped out",
+      "critical": "Y",
+      "approved_date": "2028-11-30",
+      "forecast_or_actual_date": "2029-03-15",
+      "status": "Not Started"
+    },
+    {
+      "id": "M05",
+      "building": "BLD-90001",
+      "type": "Construction Final",
+      "description": "Tower construction final",
+      "critical": "Y",
+      "approved_date": "2031-03-31",
+      "forecast_or_actual_date": "2031-09-12",
+      "status": "Not Started"
+    },
+    {
+      "id": "M06",
+      "building": "BLD-90001",
+      "type": "Compliant Building",
+      "description": "Acute services moved out of Main Hospital",
+      "critical": "Y",
+      "approved_date": "2031-08-15",
+      "forecast_or_actual_date": "2032-01-27",
+      "status": "Not Started"
+    },
+    {
+      "id": "M07",
+      "building": "BLD-90002",
+      "type": "Evaluation Report Submittal",
+      "description": "SPC 4D evaluation",
+      "critical": "N",
+      "approved_date": "2026-05-01",
+      "forecast_or_actual_date": "2026-04-22",
+      "status": "Completed"
+    },
+    {
+      "id": "M08",
+      "building": "BLD-90002",
+      "type": "Material Testing Report Submittal",
+      "description": "Material testing results",
+      "critical": "Y",
+      "approved_date": "2026-11-02",
+      "forecast_or_actual_date": "2026-11-20",
+      "status": "In Progress"
+    },
+    {
+      "id": "M09",
+      "building": "BLD-90002",
+      "type": "Permit Issuance",
+      "description": "SPC 4D retrofit permit",
+      "critical": "Y",
+      "approved_date": "2028-06-30",
+      "forecast_or_actual_date": "2028-06-30",
+      "status": "Not Started"
+    },
+    {
+      "id": "M10",
+      "building": "BLD-90002",
+      "type": "Construction Final",
+      "description": "SPC 4D and NPC 5 retrofit final",
+      "critical": "Y",
+      "approved_date": "2032-04-20",
+      "forecast_or_actual_date": "2032-04-20",
+      "status": "Not Started"
+    },
+    {
+      "id": "M11",
+      "building": "BLD-90003",
+      "type": "Construction Project Submittal",
+      "description": "NPC 5 documents",
+      "critical": "N",
+      "approved_date": "2026-03-01",
+      "forecast_or_actual_date": "2026-02-20",
+      "status": "Completed"
+    },
+    {
+      "id": "M12",
+      "building": "BLD-90003",
+      "type": "Permit Issuance",
+      "description": "NPC 5 permit",
+      "critical": "Y",
+      "approved_date": "2028-03-01",
+      "forecast_or_actual_date": "2028-02-01",
+      "status": "Not Started"
+    },
+    {
+      "id": "M13",
+      "building": "BLD-90003",
+      "type": "Construction Final",
+      "description": "NPC 5 retrofit final",
+      "critical": "Y",
+      "approved_date": "2029-10-30",
+      "forecast_or_actual_date": "2029-10-30",
+      "status": "Not Started"
+    }
+  ]
+}

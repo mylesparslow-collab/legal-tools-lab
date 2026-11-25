@@ -1,0 +1,7 @@
+County Code,Perm ID,Facility Name,City,Building Nbr,Building Name,Building Status,SPC Rating *,Building URL,Height (ft),Stories,Building Code,Building Code Year,Year Completed,AB 1882 Notice,Latitude,Longitude,Count
+99 - Example,990001,Calloway Ridge Medical Center,Calloway Ridge,BLD-90001,Main Hospital,OSHPD 1-In Service,2,,62,5,1964 Uniform Building Code (UBC),1964,1968,"This building does not significantly jeopardize life, but may not be repairable or functional following an earthquake.",0,0,1
+99 - Example,990001,Calloway Ridge Medical Center,Calloway Ridge,BLD-90002,East Wing,OSHPD 1-In Service,2,,44,3,1970 Uniform Building Code (UBC),1970,1974,"This building does not significantly jeopardize life, but may not be repairable or functional following an earthquake.",0,0,1
+99 - Example,990001,Calloway Ridge Medical Center,Calloway Ridge,BLD-90003,Diagnostic Pavilion,OSHPD 1-In Service,3,,30,2,1988 Uniform Building Code (UBC),1988,1991,,0,0,1
+99 - Example,990001,Calloway Ridge Medical Center,Calloway Ridge,BLD-90004,Annex,OSHPD 1-In Service,2,,18,1,1970 Uniform Building Code (UBC),1970,1975,"This building does not significantly jeopardize life, but may not be repairable or functional following an earthquake.",0,0,1
+99 - Example,990001,Calloway Ridge Medical Center,Calloway Ridge,BLD-90005,Central Plant,OSHPD 1-In Service,5,,24,1,2010 California Building Code (CBC),2010,2014,,0,0,1
+99 - Example,990002,Other Example Hospital,Elsewhere,BLD-90100,Main,OSHPD 1-In Service,4,,40,3,1995 California Building Code (CBC),1995,1999,,0,0,1

@@ -1,0 +1,122 @@
+[
+  {
+    "code": "L10",
+    "severity": "warn",
+    "where": "Amendment 6",
+    "message": "Sable Curtainwall: whether the joining party has its own counsel is not recorded."
+  },
+  {
+    "code": "L3",
+    "severity": "error",
+    "where": "Amendment 6",
+    "message": "Stated ICL shares sum to 99.50%, not 100.00%."
+  },
+  {
+    "code": "L4",
+    "severity": "error",
+    "where": "Amendment 6",
+    "message": "Brightwater Builders: stated share 48.67% vs 49.18% computed from ICL dollars."
+  },
+  {
+    "code": "L2",
+    "severity": "error",
+    "where": "Amendment 8",
+    "message": "Exhibit states target cost of 421,500,000.00; prior total plus this amendment's change is 421,750,000.00 (difference -250,000.00)."
+  },
+  {
+    "code": "W2",
+    "severity": "warn",
+    "where": "Waterfall",
+    "message": "Forecast overrun uses all shared contingency and 25.3% of the ICL."
+  },
+  {
+    "code": "W4",
+    "severity": "info",
+    "where": "Waterfall",
+    "message": "12,950,000.00 of the forecast overrun is not yet covered by a logged contingency draw."
+  },
+  {
+    "code": "S4",
+    "severity": "warn",
+    "where": "BLD-90001",
+    "message": "Main Hospital (1968): 156 days of float to the 2032-07-01 deadline."
+  },
+  {
+    "code": "S4",
+    "severity": "warn",
+    "where": "BLD-90002",
+    "message": "East Wing: 72 days of float to the 2032-07-01 deadline."
+  },
+  {
+    "code": "S7",
+    "severity": "error",
+    "where": "M02",
+    "message": "BLD-90001 Permit Issuance (Tower increment 1 permit): critical milestone runs 21 days past its approved date of 2026-06-30."
+  },
+  {
+    "code": "S7",
+    "severity": "error",
+    "where": "M03",
+    "message": "BLD-90001 Construction Commencement (Tower foundations): critical milestone runs 94 days past its approved date of 2026-09-15."
+  },
+  {
+    "code": "S7",
+    "severity": "error",
+    "where": "M04",
+    "message": "BLD-90001 Construction Milestone (Tower structure topped out): critical milestone runs 105 days past its approved date of 2028-11-30."
+  },
+  {
+    "code": "S8",
+    "severity": "info",
+    "where": "M04",
+    "message": "A schedule adjustment request for this milestone is due by 2028-10-31."
+  },
+  {
+    "code": "S7",
+    "severity": "error",
+    "where": "M05",
+    "message": "BLD-90001 Construction Final (Tower construction final): critical milestone runs 165 days past its approved date of 2031-03-31."
+  },
+  {
+    "code": "S8",
+    "severity": "info",
+    "where": "M05",
+    "message": "A schedule adjustment request for this milestone is due by 2031-03-01."
+  },
+  {
+    "code": "S7",
+    "severity": "error",
+    "where": "M06",
+    "message": "BLD-90001 Compliant Building (Acute services moved out of Main Hospital): critical milestone runs 165 days past its approved date of 2031-08-15."
+  },
+  {
+    "code": "S8",
+    "severity": "info",
+    "where": "M06",
+    "message": "A schedule adjustment request for this milestone is due by 2031-07-16."
+  },
+  {
+    "code": "S7",
+    "severity": "error",
+    "where": "M08",
+    "message": "BLD-90002 Material Testing Report Submittal (Material testing results): critical milestone runs 18 days past its approved date of 2026-11-02."
+  },
+  {
+    "code": "S9",
+    "severity": "error",
+    "where": "Facility",
+    "message": "2 approved milestone(s) are unmet and overdue. Under \u00a7 130065.1(i) no building permit issues for the facility except seismic compliance, maintenance, and emergency repair work until they are met."
+  },
+  {
+    "code": "H2",
+    "severity": "error",
+    "where": "BLD-90003",
+    "message": "SPC rating is 4 in the campus plan and 3 in the HCAI export."
+  },
+  {
+    "code": "H1",
+    "severity": "warn",
+    "where": "BLD-90004",
+    "message": "Annex is in the HCAI export (SPC 2) but not in the campus plan."
+  }
+]

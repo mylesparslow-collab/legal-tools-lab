@@ -1,0 +1,360 @@
+{
+  "project": "Calloway Ridge Medical Center - Replacement Patient Tower (fictional)",
+  "owner": "Calloway Ridge Health Care District (fictional)",
+  "as_of": "2026-11-25",
+  "terms": {
+    "owner_savings_pct": 50,
+    "team_savings_pct": 50,
+    "icl_cap_multiple": 2.0,
+    "tax_exempt_bond_financed": true,
+    "post_occupancy_services_in_scope": false
+  },
+  "forecast_actual_cost": 441300000,
+  "amendments": [
+    {
+      "no": 0,
+      "date": "2024-03-15",
+      "type": "BASE",
+      "title": "Integrated Form of Agreement",
+      "base_members": [
+        "Halvorsen Ito Architects",
+        "Brightwater Builders",
+        "Pallas Structural"
+      ],
+      "deltas": {
+        "target_cost": 318000000,
+        "shared_contingency": 11000000,
+        "owner_contingency": 18000000,
+        "emp": 372000000
+      },
+      "icl_changes": [
+        {
+          "member": "Halvorsen Ito Architects",
+          "delta": 4200000
+        },
+        {
+          "member": "Brightwater Builders",
+          "delta": 13300000
+        },
+        {
+          "member": "Pallas Structural",
+          "delta": 1500000
+        }
+      ],
+      "provenance": {
+        "document": "IFOA (executed)",
+        "exhibit": "Exhibit 4 - Business Terms",
+        "page": 3,
+        "quote": "The Target Cost is $318,000,000."
+      },
+      "stated": {
+        "target_cost": 318000000,
+        "shared_contingency": 11000000,
+        "owner_contingency": 18000000,
+        "emp": 372000000,
+        "icl_total": 19000000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 22.11,
+          "Brightwater Builders": 70.0,
+          "Pallas Structural": 7.89
+        }
+      }
+    },
+    {
+      "no": 1,
+      "date": "2024-06-03",
+      "type": "JOINING",
+      "title": "Joining Agreement - mechanical trade partner",
+      "joining": {
+        "member": "Northspan Mechanical",
+        "role": "Mechanical / plumbing trade partner",
+        "counsel_status": "represented",
+        "nonrep_notice_logged": false
+      },
+      "deltas": {
+        "target_cost": 52000000,
+        "emp": 57000000
+      },
+      "icl_changes": [
+        {
+          "member": "Northspan Mechanical",
+          "delta": 4400000
+        }
+      ],
+      "provenance": {
+        "document": "Joining Agreement No. 1",
+        "exhibit": "Exhibit A - Risk Pool Schedule",
+        "page": 2,
+        "quote": "Northspan's ICL is $4,400,000."
+      },
+      "stated": {
+        "target_cost": 370000000,
+        "shared_contingency": 11000000,
+        "owner_contingency": 18000000,
+        "emp": 429000000,
+        "icl_total": 23400000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 17.95,
+          "Brightwater Builders": 56.84,
+          "Pallas Structural": 6.41,
+          "Northspan Mechanical": 18.8
+        }
+      }
+    },
+    {
+      "no": 2,
+      "date": "2024-07-22",
+      "type": "JOINING",
+      "title": "Joining Agreement - electrical trade partner",
+      "joining": {
+        "member": "Kestrel Electric",
+        "role": "Electrical trade partner",
+        "counsel_status": "unrepresented",
+        "nonrep_notice_logged": true
+      },
+      "deltas": {
+        "target_cost": 31000000,
+        "emp": 34000000
+      },
+      "icl_changes": [
+        {
+          "member": "Kestrel Electric",
+          "delta": 2600000
+        }
+      ],
+      "provenance": {
+        "document": "Joining Agreement No. 2",
+        "exhibit": "Exhibit A - Risk Pool Schedule",
+        "page": 2,
+        "quote": "Kestrel's ICL is $2,600,000."
+      },
+      "stated": {
+        "target_cost": 401000000,
+        "shared_contingency": 11000000,
+        "owner_contingency": 18000000,
+        "emp": 463000000,
+        "icl_total": 26000000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 16.16,
+          "Brightwater Builders": 51.15,
+          "Pallas Structural": 5.77,
+          "Northspan Mechanical": 16.92,
+          "Kestrel Electric": 10.0
+        }
+      }
+    },
+    {
+      "no": 3,
+      "date": "2024-11-08",
+      "type": "VALIDATION_GATE",
+      "title": "Validation Gate Amendment",
+      "deltas": {
+        "target_cost": -6500000,
+        "shared_contingency": 1500000,
+        "emp": -5000000
+      },
+      "provenance": {
+        "document": "Amendment No. 3",
+        "exhibit": "Exhibit 4 (restated)",
+        "page": 1,
+        "quote": "Target Cost is reduced by $6,500,000 following validation."
+      },
+      "stated": {
+        "target_cost": 394500000,
+        "shared_contingency": 12500000,
+        "owner_contingency": 18000000,
+        "emp": 458000000,
+        "icl_total": 26000000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 16.16,
+          "Brightwater Builders": 51.15,
+          "Pallas Structural": 5.77,
+          "Northspan Mechanical": 16.92,
+          "Kestrel Electric": 10.0
+        }
+      }
+    },
+    {
+      "no": 4,
+      "date": "2025-04-17",
+      "type": "TARGET_COST_ADJUSTMENT",
+      "title": "Owner-directed scope: imaging suite",
+      "deltas": {
+        "target_cost": 9250000,
+        "emp": 10000000
+      },
+      "icl_changes": [
+        {
+          "member": "Brightwater Builders",
+          "delta": 420000
+        },
+        {
+          "member": "Halvorsen Ito Architects",
+          "delta": 180000
+        },
+        {
+          "member": "Northspan Mechanical",
+          "delta": 150000
+        }
+      ],
+      "provenance": {
+        "document": "Amendment No. 4",
+        "exhibit": "Exhibit 4 (restated)",
+        "page": 2,
+        "quote": "Target Cost is increased by $9,250,000 and ICL by $750,000."
+      },
+      "stated": {
+        "target_cost": 403750000,
+        "shared_contingency": 12500000,
+        "owner_contingency": 18000000,
+        "emp": 468000000,
+        "icl_total": 26750000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 16.37,
+          "Brightwater Builders": 51.29,
+          "Pallas Structural": 5.61,
+          "Northspan Mechanical": 17.01,
+          "Kestrel Electric": 9.72
+        }
+      }
+    },
+    {
+      "no": 5,
+      "date": "2025-09-30",
+      "type": "CONTINGENCY_DRAW",
+      "title": "Shared contingency draw: unforeseen soil conditions",
+      "draws": {
+        "shared": 2300000
+      },
+      "provenance": {
+        "document": "Amendment No. 5",
+        "exhibit": "Contingency Log",
+        "page": 1,
+        "quote": "Draw of $2,300,000 from Shared Contingency."
+      },
+      "stated": {
+        "target_cost": 403750000,
+        "shared_contingency": 12500000,
+        "owner_contingency": 18000000,
+        "emp": 468000000,
+        "icl_total": 26750000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 16.37,
+          "Brightwater Builders": 51.29,
+          "Pallas Structural": 5.61,
+          "Northspan Mechanical": 17.01,
+          "Kestrel Electric": 9.72
+        }
+      }
+    },
+    {
+      "no": 6,
+      "date": "2026-02-12",
+      "type": "JOINING",
+      "title": "Joining Agreement - curtainwall trade partner",
+      "joining": {
+        "member": "Sable Curtainwall",
+        "role": "Exterior envelope trade partner",
+        "counsel_status": "unknown",
+        "nonrep_notice_logged": false
+      },
+      "deltas": {
+        "target_cost": 14600000,
+        "emp": 15750000
+      },
+      "icl_changes": [
+        {
+          "member": "Sable Curtainwall",
+          "delta": 1150000
+        }
+      ],
+      "provenance": {
+        "document": "Joining Agreement No. 3",
+        "exhibit": "Exhibit A - Risk Pool Schedule",
+        "page": 2,
+        "quote": "Sable's ICL is $1,150,000."
+      },
+      "stated": {
+        "target_cost": 418350000,
+        "shared_contingency": 12500000,
+        "owner_contingency": 18000000,
+        "emp": 483750000,
+        "icl_total": 27900000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 15.7,
+          "Brightwater Builders": 48.67,
+          "Pallas Structural": 5.38,
+          "Northspan Mechanical": 16.31,
+          "Kestrel Electric": 9.32,
+          "Sable Curtainwall": 4.12
+        }
+      }
+    },
+    {
+      "no": 7,
+      "date": "2026-06-25",
+      "type": "CONTINGENCY_DRAW",
+      "title": "Contingency draws: steel escalation and owner equipment change",
+      "draws": {
+        "shared": 3100000,
+        "owner": 1200000
+      },
+      "provenance": {
+        "document": "Amendment No. 7",
+        "exhibit": "Contingency Log",
+        "page": 1,
+        "quote": "Draws of $3,100,000 (Shared) and $1,200,000 (Owner)."
+      },
+      "stated": {
+        "target_cost": 418350000,
+        "shared_contingency": 12500000,
+        "owner_contingency": 18000000,
+        "emp": 483750000,
+        "icl_total": 27900000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 15.7,
+          "Brightwater Builders": 49.17,
+          "Pallas Structural": 5.38,
+          "Northspan Mechanical": 16.31,
+          "Kestrel Electric": 9.32,
+          "Sable Curtainwall": 4.12
+        }
+      }
+    },
+    {
+      "no": 8,
+      "date": "2026-10-09",
+      "type": "TARGET_COST_ADJUSTMENT",
+      "title": "Code-required changes from plan review comments",
+      "deltas": {
+        "target_cost": 3400000,
+        "emp": 3400000
+      },
+      "provenance": {
+        "document": "Amendment No. 8",
+        "exhibit": "Exhibit 4 (restated)",
+        "page": 1,
+        "quote": "Target Cost is increased by $3,400,000."
+      },
+      "stated": {
+        "target_cost": 421500000,
+        "shared_contingency": 12500000,
+        "owner_contingency": 18000000,
+        "emp": 487150000,
+        "icl_total": 27900000,
+        "icl_shares": {
+          "Halvorsen Ito Architects": 15.7,
+          "Brightwater Builders": 49.17,
+          "Pallas Structural": 5.38,
+          "Northspan Mechanical": 16.31,
+          "Kestrel Electric": 9.32,
+          "Sable Curtainwall": 4.12
+        }
+      }
+    }
+  ],
+  "seeded_errors": [
+    "Amendment 6: stated ICL shares sum to 99.50%",
+    "Amendment 8: restated target cost is $250,000 low"
+  ]
+}
