@@ -1,0 +1,44 @@
+chemical,aliases,endpoint,date_listed,level_type,level_ug_day,route,cas,source
+Acrylamide,,cancer,1990-01-01,NSRL,0.2,any,79-06-1,OEHHA list 2026-07-31; 27 CCR 25705
+Acrylamide,,reproductive,2011-02-25,MADL,140,any,79-06-1,OEHHA list 2026-07-31; 27 CCR 25805
+Arsenic (inorganic arsenic compounds),arsenic,cancer,1987-02-27,NSRL,0.06,inhalation,,OEHHA list 2026-07-31; 27 CCR 25705
+Arsenic (inorganic oxides),arsenic,reproductive,1997-05-01,,,,,OEHHA list 2026-07-31
+Benzene,,cancer,1987-02-27,NSRL,6.4,oral,71-43-2,OEHHA list 2026-07-31; 27 CCR 25705
+Benzene,,cancer,1987-02-27,NSRL,13,inhalation,71-43-2,27 CCR 25705
+Benzene,,reproductive,1997-12-26,MADL,24,oral,71-43-2,OEHHA list 2026-07-31; 27 CCR 25805
+Benzene,,reproductive,1997-12-26,MADL,49,inhalation,71-43-2,27 CCR 25805
+Bisphenol A (BPA),bpa|bisphenol a,reproductive,2015-05-11,MADL,3,dermal (solid materials),80-05-7,OEHHA list 2026-07-31; 27 CCR 25805
+Bisphenol S (BPS),bps|bisphenol s,reproductive (female),2023-12-29,,,,80-09-1,OEHHA list 2026-07-31
+Bisphenol S (BPS),bps|bisphenol s,reproductive (male),2025-01-03,,,,80-09-1,OEHHA list 2026-07-31
+Bisphenol S (BPS),bps|bisphenol s,reproductive (developmental),2025-12-08,,,,80-09-1,OEHHA list 2026-07-31
+Butyl benzyl phthalate (BBP),bbp,reproductive,2005-12-02,MADL,1200,oral,85-68-7,OEHHA list 2026-07-31; 27 CCR 25805
+Cadmium,cadmium and cadmium compounds,reproductive,1997-05-01,MADL,4.1,oral,,OEHHA list 2026-07-31; 27 CCR 25805
+Cadmium and cadmium compounds,cadmium,cancer,1987-10-01,NSRL,0.05,inhalation,,OEHHA list 2026-07-31; 27 CCR 25705
+Carbon monoxide,,reproductive,1989-07-01,,,,630-08-0,OEHHA list 2026-07-31
+Chromium (hexavalent compounds),hexavalent chromium|chromium vi,cancer,1987-02-27,NSRL,0.001,inhalation,,OEHHA list 2026-07-31; 27 CCR 25705
+Chromium (hexavalent compounds),hexavalent chromium|chromium vi,reproductive,2008-12-19,MADL,8.2,oral,,OEHHA list 2026-07-31; 27 CCR 25805
+Diethanolamine,,cancer,2012-06-22,,,,111-42-2,OEHHA list 2026-07-31
+Di(2-ethylhexyl)phthalate (DEHP),dehp,cancer,1988-01-01,NSRL,310,any,117-81-7,OEHHA list 2026-07-31; 27 CCR 25705
+Di(2-ethylhexyl)phthalate (DEHP),dehp,reproductive,2003-10-24,MADL,410,oral (adults),117-81-7,27 CCR 25805
+Di-isodecyl phthalate (DIDP),didp,reproductive,2007-04-20,MADL,2200,any,,OEHHA list 2026-07-31; 27 CCR 25805
+Diisononyl phthalate (DINP),dinp,cancer,2013-12-20,NSRL,146,any,,OEHHA list 2026-07-31; 27 CCR 25705
+Di-n-butyl phthalate (DBP),dbp,reproductive,2005-12-02,MADL,8.7,any,84-74-2,OEHHA list 2026-07-31; 27 CCR 25805
+Di-n-hexyl phthalate (DnHP),dnhp,reproductive,2005-12-02,MADL,2200,oral,84-75-3,OEHHA list 2026-07-31; 27 CCR 25805
+"1,4-Dioxane",,cancer,1988-01-01,NSRL,30,any,123-91-1,OEHHA list 2026-07-31; 27 CCR 25705
+Ethylene oxide,,cancer,1987-07-01,NSRL,2,any,75-21-8,OEHHA list 2026-07-31; 27 CCR 25705
+Ethylene oxide,,reproductive,1987-02-27,MADL,20,any,75-21-8,OEHHA list 2026-07-31; 27 CCR 25805
+Formaldehyde (gas),formaldehyde,cancer,1988-01-01,NSRL,40,any,50-00-0,OEHHA list 2026-07-31; 27 CCR 25705
+Glyphosate,,cancer,2017-07-07,NSRL,1100,any,1071-83-6,OEHHA list 2026-07-31; 27 CCR 25705
+Lead,lead and lead compounds,reproductive,1987-02-27,MADL,0.5,any,,OEHHA list 2026-07-31; 27 CCR 25805
+Lead and lead compounds,lead,cancer,1992-10-01,NSRL,15,oral,,OEHHA list 2026-07-31 (listing date); 27 CCR 25705 (level for Lead)
+Mercury and mercury compounds,mercury,reproductive,1990-07-01,,,,,OEHHA list 2026-07-31
+Perfluorononanoic acid (PFNA) and its salts,pfna,reproductive,2021-12-31,,,,,OEHHA list 2026-07-31
+Perfluorooctane sulfonate (PFOS),pfos,reproductive,2017-11-10,,,,1763-23-1,OEHHA list 2026-07-31
+Perfluorooctane sulfonic acid (PFOS) and its salts and transformation and degradation precursors,pfos,cancer,2021-12-24,,,,,OEHHA list 2026-07-31
+Perfluorooctanoic acid (PFOA),pfoa,cancer,2022-02-25,,,,335-67-1,OEHHA list 2026-07-31
+Perfluorooctanoic acid (PFOA),pfoa,reproductive,2017-11-10,,,,335-67-1,OEHHA list 2026-07-31
+Styrene,,cancer,2016-04-22,NSRL,27,any,100-42-5,OEHHA list 2026-07-31; 27 CCR 25705
+Tetrachloroethylene (Perchloroethylene),perchloroethylene|perc,cancer,1988-04-01,NSRL,14,any,127-18-4,OEHHA list 2026-07-31; 27 CCR 25705
+"Tris(1,3-dichloro-2-propyl) phosphate (TDCPP)",tdcpp,cancer,2011-10-28,NSRL,5.4,any,13674-87-8,OEHHA list 2026-07-31; 27 CCR 25705
+Vinyl acetate,,cancer,2025-01-03,,,,108-05-4,OEHHA list 2026-07-31
+Wood dust,,cancer,2009-12-18,,,,,OEHHA list 2026-07-31

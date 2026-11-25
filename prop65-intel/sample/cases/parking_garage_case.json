@@ -1,0 +1,14 @@
+{
+  "_note": "Synthetic case for the 14-day special compliance procedure under Health & Saf. Code 25249.7(k).",
+  "case_id": "SYN-P65-003",
+  "defendant": "Alder Quay Parking Partners, LP (fictional)",
+  "service_method": "mail_in_ca",
+  "employee_count": 31,
+  "exposure_type": "parking_engine_exhaust",
+  "facilities": 2,
+  "claims": {
+    "service_date": {"value": "2026-11-16", "anchor_status": "VERIFIED"},
+    "exposure_date": {"value": "2026-10-20", "anchor_status": "VERIFIED"}
+  },
+  "chemicals": [{"name": "Carbon monoxide", "route": "inhalation"}]
+}

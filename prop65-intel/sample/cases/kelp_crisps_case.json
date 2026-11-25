@@ -1,0 +1,25 @@
+{
+  "_note": "Synthetic case. Values under claims are what an extraction step (a person or a model) would hand over. Each one carries the page, line and words it came from, and the verifier checks that anchor before any calculation uses the value.",
+  "case_id": "SYN-P65-001",
+  "defendant": "Juniper & Vale Provisions, Inc. (fictional)",
+  "noticing_firm": "Pellham Dray LLP (fictional)",
+  "product_description": "Smoked kelp crisps, seaweed snack",
+  "service_method": "mail_in_ca",
+  "employee_count": 46,
+  "entity_type": "private",
+  "claims": {
+    "service_date": {"value": "2026-11-16", "value_text": "11/16/2026", "anchor": {"cite": "NOV-0001:13", "quote": "served by first class mail on 11/16/2026"}},
+    "exposure_date": {"value": "2026-09-18", "value_text": "09/18/2026", "anchor": {"cite": "NOV-0001:11", "quote": "purchased in Alameda County, California on 09/18/2026"}},
+    "lead_ppm": {"value": 0.08, "value_text": "0.08 mg/kg", "anchor": {"cite": "COA-0001:8", "quote": "Lead 0.08 mg/kg"}},
+    "cadmium_ppm": {"value": 1.2, "value_text": "1.2 mg/kg", "anchor": {"cite": "COA-0001:9", "quote": "Cadmium 1.2 mg/kg"}},
+    "serving_g": {"value": 5, "value_text": "5 g", "anchor": {"cite": "COA-0001:12", "quote": "Serving size stated on the nutrition panel: 5 g"}},
+    "servings_per_day": {"value": 1, "value_text": "1 serving per day", "anchor": {"cite": "COA-0001:13", "quote": "average users eat 1 serving per day"}},
+    "label_text": {"value": "WARNING: Reproductive Harm - www.P65Warnings.ca.gov/food", "anchor": {"cite": "COA-0001:11", "quote": "WARNING: Reproductive Harm - www.P65Warnings.ca.gov/food"}}
+  },
+  "chemicals": [
+    {"name": "Lead", "unit": "mg/kg", "route": "oral", "concentration_claim": "lead_ppm", "serving_claim": "serving_g", "servings_per_day_claim": "servings_per_day"},
+    {"name": "Cadmium", "unit": "mg/kg", "route": "oral", "concentration_claim": "cadmium_ppm", "serving_claim": "serving_g", "servings_per_day_claim": "servings_per_day"}
+  ],
+  "label": {"text": "label_text", "category": "food", "endpoints": ["cancer", "reproductive"], "chemicals": ["Lead", "Cadmium"], "manufactured_labeled": "2026-08-12", "type_size_pt": 6},
+  "benchmark": {"chemical": "Lead", "product_class": "seafood"}
+}

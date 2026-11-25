@@ -1,0 +1,53 @@
+SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+LARKSPUR GLEN CARE CENTER (fictional)                                  CHART-0001
+RESIDENT FACE SHEET
+Resident: R. M. (initials only)          MRN: LG-004417
+Admitted: 02/03/2026                     Room: 114-B
+Attending: Dr. A. Okonkwo-Reyes          Code status: Full code
+Primary diagnoses: Type 2 diabetes mellitus; atrial fibrillation; history of falls.
+Allergies: Sulfa.
+Fall risk assessment on admission: Morse score 55 (high risk).
+Care plan interventions entered 02/03/2026: bed in low position; call light within
+reach; non-skid footwear; two-hour rounding while awake.
+Responsible party notified of care plan on 02/04/2026 by telephone.SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+LARKSPUR GLEN CARE CENTER (fictional)                                  CHART-0002
+MEDICATION ADMINISTRATION RECORD - MARCH 2026
+Resident: R. M.     MRN: LG-004417
+Order: Apixaban 5 mg by mouth twice daily. Start 02/03/2026.
+Order: Insulin glargine 18 units subcutaneous at bedtime. Start 02/03/2026.
+Order: Metoprolol tartrate 25 mg by mouth twice daily. Hold if SBP below 100.
+03/14/2026 08:05  Apixaban 5 mg given. Initials: TN.
+03/14/2026 08:05  Metoprolol 25 mg given. BP 128/74. Initials: TN.
+03/14/2026 20:10  Apixaban 5 mg given. Initials: JS.
+03/14/2026 20:10  Metoprolol 25 mg HELD. BP 96/58. Physician notified 20:25. Initials: JS.
+03/14/2026 21:40  Insulin glargine 18 units given. Blood glucose 212 mg/dL. Initials: JS.
+03/15/2026 08:10  Apixaban 5 mg given. Initials: TN.
+03/15/2026 08:10  Metoprolol 25 mg given. BP 118/70. Initials: TN.SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+LARKSPUR GLEN CARE CENTER (fictional)                                  CHART-0003
+NURSING PROGRESS NOTES
+Resident: R. M.     MRN: LG-004417
+03/14/2026 22:15  Rounding completed. Resident asleep, bed in low position, call light
+within reach. J. Salcedo, LVN.
+03/15/2026 00:20  Rounding completed. Resident asleep. No distress. J. Salcedo, LVN.
+03/15/2026 02:35  Resident found seated on floor beside bed. Resident states she was
+trying to reach the bathroom and did not use the call light. No loss of consciousness
+reported. Alert and oriented to person and place. J. Salcedo, LVN.
+03/15/2026 02:40  Vital signs: BP 104/62, pulse 88, respirations 18, SpO2 96% on room air.
+Complains of pain in right hip, 6 out of 10. Right leg not shortened or rotated.
+03/15/2026 02:50  Dr. Okonkwo-Reyes notified by telephone. Order received for portable
+X-ray of right hip and pelvis. Responsible party notified at 03:05.
+03/15/2026 06:45  X-ray completed. Preliminary read: no acute fracture identified.
+03/15/2026 14:30  Resident reports increased pain with weight bearing. Physician ordered
+transfer to emergency department for CT. Transferred by ambulance at 15:10.SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+LARKSPUR GLEN CARE CENTER (fictional)                                  CHART-0004
+TREATMENT ADMINISTRATION RECORD AND SKIN ASSESSMENT
+Resident: R. M.     MRN: LG-004417
+Weekly skin assessment 03/10/2026: skin intact. Braden score 17. No pressure injury.
+Weekly skin assessment 03/17/2026: resident out of facility (hospital).
+Order: Reposition every two hours while in bed. Start 02/03/2026.
+03/14/2026 20:00  Repositioned to left side. Initials: MC.
+03/14/2026 22:00  Repositioned to back. Initials: MC.
+03/15/2026 00:00  Repositioned to right side. Initials: MC.
+03/15/2026 02:00  Entry blank.
+Late entry 03/15/2026 07:20: 02:00 repositioning not documented at the time; resident
+was repositioned to left side per M. Castellanos, CNA.

@@ -1,0 +1,12 @@
+{
+  "_note": "Synthetic case for the 12-month grace period. BPS was listed for female reproductive toxicity on 2023-12-29, male on 2025-01-03 and developmental on 2025-12-08 (OEHHA list dated 2026-07-31).",
+  "case_id": "SYN-P65-002",
+  "defendant": "Fennimore Street Market, Inc. (fictional)",
+  "service_method": "personal",
+  "employee_count": 210,
+  "claims": {
+    "service_date": {"value": "2026-11-02", "anchor_status": "VERIFIED"},
+    "exposure_date": {"value": "2026-10-02", "anchor_status": "VERIFIED"}
+  },
+  "chemicals": [{"name": "Bisphenol S (BPS)", "route": "dermal"}]
+}

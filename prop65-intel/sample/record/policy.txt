@@ -1,0 +1,63 @@
+SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+TIDEWATER SPECIMEN INSURANCE COMPANY (fictional)                         POL-0001
+COMMERCIAL GENERAL AND PROFESSIONAL LIABILITY POLICY - DECLARATIONS
+Policy number: TSI-GL-2291047          Policy period: 01/01/2026 to 01/01/2027
+Named insured: Larkspur Glen Care Center, LLC
+Each occurrence limit: $1,000,000
+General aggregate limit: $3,000,000
+Professional liability each claim limit: $1,000,000
+Self-insured retention: $50,000 each claim
+Forms and endorsements attached: TS 00 01 (base form); TS 21 07 (Endorsement 1);
+TS 22 14 (Endorsement 2); TS 24 30 (Endorsement 3).SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+TIDEWATER SPECIMEN INSURANCE COMPANY (fictional)                         POL-0002
+FORM TS 00 01 - SECTION I - COVERAGES
+1. Insuring Agreement
+We will pay those sums that the insured becomes legally obligated to pay as damages
+because of bodily injury or property damage to which this insurance applies. We will
+have the right and duty to defend the insured against any suit seeking those damages.
+However, we will have no duty to defend the insured against any suit seeking damages
+to which this insurance does not apply.
+2. Exclusions
+This insurance does not apply to:
+a. Expected or Intended Injury. Bodily injury or property damage expected or intended
+from the standpoint of the insured.
+b. Contractual Liability. Bodily injury or property damage for which the insured is
+obligated to pay damages by reason of the assumption of liability in a contract.SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+TIDEWATER SPECIMEN INSURANCE COMPANY (fictional)                         POL-0003
+FORM TS 00 01 - SECTION I - COVERAGES (continued)
+c. Workers Compensation. Any obligation of the insured under a workers compensation
+law or any similar law.
+d. Fines and Penalties. Fines, penalties, and punitive or exemplary damages, except
+where insurable by law.
+e. Abuse or Neglect. Bodily injury arising out of the actual or threatened abuse or
+neglect of any person in the care, custody or control of any insured.
+f. Pollution. Bodily injury or property damage arising out of the actual, alleged or
+threatened discharge, dispersal, seepage, migration, release or escape of pollutants.
+g. Professional Services. Bodily injury arising out of the rendering of or failure to
+render professional health care services, except as provided by endorsement.SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+TIDEWATER SPECIMEN INSURANCE COMPANY (fictional)                         POL-0004
+ENDORSEMENT 1 - FORM TS 21 07
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+ABUSE OR NEGLECT - LIMITED COVERAGE
+Exclusion e. of SECTION I - COVERAGES is replaced by the following:
+e. Abuse or Neglect. This insurance applies to bodily injury arising out of the actual
+or alleged abuse or neglect of a resident, subject to a sublimit of $250,000 each claim
+and $500,000 in the aggregate, which is part of and not in addition to the limits shown
+in the Declarations. This sublimit does not apply to the cost of defense.
+We will not pay damages awarded under any statute that provides for enhanced remedies
+where the conduct of the insured is found to be reckless, oppressive, fraudulent or
+malicious. We will defend such claims subject to a reservation of rights.SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+TIDEWATER SPECIMEN INSURANCE COMPANY (fictional)                         POL-0005
+ENDORSEMENT 2 - FORM TS 22 14
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+HEALTH CARE PROFESSIONAL SERVICES
+Exclusion g. of SECTION I - COVERAGES is deleted.
+Coverage for professional health care services is provided on a claims-made basis
+subject to the professional liability each claim limit shown in the Declarations.
+ENDORSEMENT 3 - FORM TS 24 30
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+SELECTION OF COUNSEL
+Where we defend under a reservation of rights and the insured is entitled by law to
+independent counsel, we will pay reasonable fees at the rates we actually pay to
+counsel we retain in the ordinary course of business in the defense of similar actions
+in the community where the claim arose or is being defended.

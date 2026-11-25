@@ -10,3 +10,4 @@ Personal portfolio demos of legal tools. Fictional data only. Not legal advice; 
 - [buy-america-auditor](buy-america-auditor/): checks a transit bill of materials against FTA Buy America (49 CFR Part 661) and BABA (2 CFR Part 184). Synthetic data.
 - [ipd-seismic/](ipd-seismic/): IFOA risk/reward pool ledger checker and waterfall, plus a hospital seismic deadline tracker (report Tool 4). Python, live-formula workbook, fictional data.
 - [sb706-validator/](sb706-validator/): checks a progressive design-build procurement record against SB 706, Pub. Cont. Code §§ 22185–22185.11 (report Tool 5). Node, no dependencies, fictional data.
+- [prop65-intel/](prop65-intel/): Prop 65 sixty-day notice benchmarks from public Attorney General data, deterministic triage, and a record-cite checker (report Tool 12). Python; public OAG data plus synthetic documents.

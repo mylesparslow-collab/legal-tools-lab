@@ -1,0 +1,195 @@
+{
+  "_meta": {
+    "description": "Proposition 65 rules used by the triage engine, stored as data. Each rule carries its citation, where the text was read, the date it was read, and a verification status. Nothing in code hardcodes a legal number; code reads params from here.",
+    "status_values": {
+      "verified_primary": "Text read on the official source (leginfo, courts.ca.gov, OEHHA) on the date shown.",
+      "verified_mirror": "Text read on Cornell LII's mirror of the California Code of Regulations on the date shown. The official CCR host (Westlaw) was not read.",
+      "unverified": "Not read. Included so the gap is visible. Do not rely on it."
+    },
+    "read_on": "2026-11-25",
+    "not_legal_advice": "Personal portfolio demo by a non-attorney. Every output needs attorney review."
+  },
+  "rules": [
+    {
+      "id": "warning_duty",
+      "citation": "Health & Saf. Code § 25249.6",
+      "summary": "No person in the course of doing business shall knowingly and intentionally expose any individual to a listed chemical without first giving clear and reasonable warning, except as provided in § 25249.10.",
+      "params": {},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25249.6",
+      "status": "verified_primary"
+    },
+    {
+      "id": "civil_penalty",
+      "citation": "Health & Saf. Code § 25249.7(b)(1)-(2)",
+      "summary": "Civil penalty not to exceed $2,500 per day for each violation. The court weighs seven listed factors, including good faith compliance measures and the economic effect on the violator.",
+      "params": {"max_per_day_per_violation_usd": 2500},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25249.7",
+      "status": "verified_primary"
+    },
+    {
+      "id": "penalty_split",
+      "citation": "Health & Saf. Code § 25249.12(c)-(d)",
+      "summary": "75 percent of civil penalties go to the Safe Drinking Water and Toxic Enforcement Fund; 25 percent go to the office or private person that brought the action.",
+      "params": {"state_share": 0.75, "enforcer_share": 0.25},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25249.12",
+      "status": "verified_primary"
+    },
+    {
+      "id": "private_action_60_day",
+      "citation": "Health & Saf. Code § 25249.7(d)(1); 27 CCR § 25903(d); Code Civ. Proc. §§ 12, 12a, 1013",
+      "summary": "A private action may be commenced only more than 60 days after notice to the Attorney General, the local prosecutors and the alleged violator. Under 27 CCR § 25903(d), the 60 days run from the date of service as it would be calculated under CCP § 1013 (mail adds 5 calendar days inside California, 10 if either end is outside California but in the U.S., 20 if outside the U.S.). If the sixtieth day is a holiday under CCP § 12a (which includes Saturdays), it rolls to the next non-holiday.",
+      "params": {"wait_days": 60, "mail_extension_days": {"personal": 0, "mail_in_ca": 5, "mail_out_of_state": 10, "mail_outside_us": 20}},
+      "source": "leginfo (HSC 25249.7, CCP 12, 12a, 1013); https://www.law.cornell.edu/regulations/california/27-CCR-25903",
+      "status": "verified_primary",
+      "status_note": "Statutes read on leginfo. 27 CCR § 25903 read on the LII mirror. Judicial holidays under CCP § 135 are not encoded; the engine rolls weekends only and says so.",
+      "attorney_review": "How the § 1013 extension applies to a given service method, and whether a court holiday moves the date."
+    },
+    {
+      "id": "certificate_of_merit",
+      "citation": "Health & Saf. Code § 25249.7(d)(1), (h)(2)",
+      "summary": "A notice alleging a § 25249.6 violation must include a certificate of merit stating that the certifier consulted a person with relevant expertise who reviewed facts, studies or other data on the exposure. If the court later finds no credible factual basis, the action is deemed frivolous under CCP § 128.5.",
+      "params": {},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25249.7",
+      "status": "verified_primary"
+    },
+    {
+      "id": "notice_contents",
+      "citation": "27 CCR § 25903(b)",
+      "summary": "A notice must identify the noticing party, the alleged violator, the approximate period of violation, each listed chemical, the route of exposure, and for consumer products the product or specific type of product. It need not state the exposure level, the UPC, or the place or date of purchase.",
+      "params": {"required_fields": ["noticing_party_contact", "alleged_violator", "time_period", "chemical", "route_of_exposure", "product_identification"]},
+      "source": "https://www.law.cornell.edu/regulations/california/27-CCR-25903",
+      "status": "verified_mirror"
+    },
+    {
+      "id": "grace_12_month",
+      "citation": "Health & Saf. Code § 25249.10(b)",
+      "summary": "The warning requirement does not apply to an exposure that takes place less than twelve months after the chemical was listed. The statute keys on the date of the exposure, not the date of purchase.",
+      "params": {"months": 12},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25249.10",
+      "status": "verified_primary",
+      "attorney_review": "Which listing date applies when a chemical is listed for more than one endpoint, and what date counts as the exposure for a product bought earlier and used later."
+    },
+    {
+      "id": "safe_harbor_exemption",
+      "citation": "Health & Saf. Code § 25249.10(c); 27 CCR §§ 25701(b)(3)(A), 25705, 25721(c), (d)(4); 27 CCR §§ 25801(b)(2), 25805, 25821(b), (c)(2)",
+      "summary": "No warning is required if the person responsible can show the exposure poses no significant risk (carcinogens) or no observable effect at 1,000 times the level (reproductive toxicants). The burden is on the defendant. Daily exposure at or below a level listed in § 25705 (NSRL) or § 25805 (MADL) is deemed to meet the test. Level of exposure is the concentration multiplied by the reasonably anticipated rate of intake for average users of the product, not a per capita figure.",
+      "params": {"cancer_risk_level": "1 in 100,000 (27 CCR § 25703(b))", "burden": "defendant"},
+      "source": "leginfo (HSC 25249.10); LII mirror of 27 CCR 25701, 25703, 25705 (version operative 10/1/2025), 25721, 25801, 25805, 25821; OEHHA Proposition 65 list dated 2026-07-31",
+      "status": "verified_mirror",
+      "attorney_review": "Intake assumptions, averaging over time, route of exposure, naturally occurring allowances (27 CCR § 25501, not read), and whether to build a custom risk assessment where no level is listed. A chemical with no listed level is not presumed unsafe (27 CCR §§ 25701(c), 25801(d))."
+    },
+    {
+      "id": "small_business_exemption",
+      "citation": "Health & Saf. Code § 25249.11(b)",
+      "summary": "A person in the course of doing business does not include a person employing fewer than 10 employees, a city, county, district, state or federal agency, or an entity operating a public water system.",
+      "params": {"min_employees": 10},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25249.11",
+      "status": "verified_primary",
+      "attorney_review": "How employees are counted, and whether an upstream manufacturer or a retailer with 10 or more employees is still exposed."
+    },
+    {
+      "id": "special_compliance_cure",
+      "citation": "Health & Saf. Code § 25249.7(k), (m), (n); Cal. Rules of Court, Appendix H",
+      "summary": "For four kinds of exposure only (alcoholic beverages consumed on premises; chemicals formed by cooking in food or beverages prepared and sold on premises for immediate consumption and not intentionally added; environmental tobacco smoke on premises where smoking is permitted; engine exhaust inside a facility primarily for parking noncommercial vehicles), the noticing party may not sue or collect fees if, within 14 days after service, the alleged violator corrects the violation, agrees to pay the statutory civil penalty per facility, and notifies the noticing party in writing with the proof of compliance form. The penalty must be delivered within 30 days of service. Available once per exposure per facility. Public prosecutors may still sue.",
+      "params": {
+        "eligible_exposures": ["alcohol_on_premises", "food_cooked_on_premises", "tobacco_smoke_on_premises", "parking_engine_exhaust"],
+        "correct_and_agree_days": 14,
+        "pay_days": 30,
+        "penalty_per_facility": [
+          {"from": "2024-04-01", "to": "2029-03-31", "usd": 610, "source": "Cal. Rules of Court, Appendix H (effective April 1, 2024)"}
+        ],
+        "statutory_base_usd": 500,
+        "next_adjustment": "2029-04-01",
+        "once_per_exposure_per_facility": true
+      },
+      "source": "leginfo (HSC 25249.7); https://courts.ca.gov/cms/rules/index/appendix_h (PDF read 2026-11-25)",
+      "status": "verified_primary",
+      "status_note": "The amount in effect before April 1, 2024 was not read and is not encoded.",
+      "attorney_review": "Whether the exposure really falls in one of the four categories and whether the correction is complete."
+    },
+    {
+      "id": "short_form_warning",
+      "citation": "27 CCR §§ 25602(a)(4), 25603(b)-(c); 27 CCR § 25607.2(b) (food)",
+      "summary": "As amended effective January 1, 2025, a short-form label warning must carry the triangle symbol, a signal word (WARNING:, CA WARNING: or CALIFORNIA WARNING:) and one of the listed sentences naming at least one chemical for each endpoint. The pre-2025 short form with no chemical name may still be used on a product manufactured and labeled before January 1, 2028, whenever it is sold. Short-form type may never be smaller than 6-point. Food short-form content is in § 25607.2(b), points to www.P65Warnings.ca.gov/food, and does not list the triangle symbol.",
+      "params": {
+        "amendment_operative": "2025-01-01",
+        "old_short_form_cutoff_manufactured_and_labeled_before": "2028-01-01",
+        "min_type_pt": 6,
+        "signal_words": ["WARNING:", "CA WARNING:", "CALIFORNIA WARNING:"],
+        "url": "www.P65Warnings.ca.gov",
+        "food_url": "www.P65Warnings.ca.gov/food"
+      },
+      "source": "https://www.law.cornell.edu/regulations/california/27-CCR-25602 ; .../27-CCR-25603 ; .../27-CCR-25607.2",
+      "status": "verified_mirror",
+      "status_note": "27 CCR § 25601(c) (short-form type size relative to other consumer information) was not read; only the 6-point floor is checked.",
+      "attorney_review": "Whether the old short form remains available for food labels (the transition sentence is in § 25603(c), not § 25607.2), and whether a tailored warning under § 25607 et seq. applies to the product."
+    },
+    {
+      "id": "long_form_warning",
+      "citation": "27 CCR § 25603(a)",
+      "summary": "The full consumer product warning carries the symbol, the signal word in capitals and bold, and a sentence naming one or more chemicals for each endpoint, ending with a pointer to www.P65Warnings.ca.gov.",
+      "params": {},
+      "source": "https://www.law.cornell.edu/regulations/california/27-CCR-25603",
+      "status": "verified_mirror"
+    },
+    {
+      "id": "safe_harbor_not_exclusive",
+      "citation": "27 CCR § 25600(e)-(f)",
+      "summary": "The safe harbor warnings are one way to comply, not the only way. A warning that follows a court-approved settlement or judgment is deemed clear and reasonable for that exposure.",
+      "params": {},
+      "source": "https://www.law.cornell.edu/regulations/california/27-CCR-25600",
+      "status": "verified_mirror"
+    },
+    {
+      "id": "internet_retailer_transition",
+      "citation": "27 CCR § 25602(b)(2)",
+      "summary": "For internet purchases made before January 1, 2028, a retail seller is not responsible for posting the new online warning until 60 calendar days after it receives a warning or written notice updating the old short form to the new content.",
+      "params": {"days": 60, "until": "2028-01-01"},
+      "source": "https://www.law.cornell.edu/regulations/california/27-CCR-25602",
+      "status": "verified_mirror"
+    },
+    {
+      "id": "settlement_approval",
+      "citation": "Health & Saf. Code § 25249.7(f)(4)",
+      "summary": "A settlement of a private action must be approved by the court on noticed motion. The court must find that the warning complies, the fee award is reasonable under California law, and the penalty is reasonable under the § 25249.7(b)(2) factors.",
+      "params": {},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25249.7",
+      "status": "verified_primary",
+      "status_note": "The statute does not cite CCP § 1021.5. The Attorney General's settlement guidelines (11 CCR §§ 3200-3204) were not read."
+    },
+    {
+      "id": "ag_settlement_guidelines",
+      "citation": "11 CCR §§ 3200-3204",
+      "summary": "Attorney General guidelines on private Proposition 65 settlements, fees and payments in lieu of penalties.",
+      "params": {},
+      "source": "not read",
+      "status": "unverified"
+    },
+    {
+      "id": "record_cite_sanctions",
+      "citation": "Code Civ. Proc. § 128.7",
+      "summary": "By presenting a paper to the court the signer certifies, among other things, that factual contentions have evidentiary support. SB 574 (Stats. 2026, ch. 858) amends this section effective January 1, 2027 to bar any citation the responsible attorney has not personally verified; that text was read in the sibling SB 574 tool, not here. Leginfo still displays the 2005 version.",
+      "params": {"sb574_operative": "2027-01-01"},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=128.7",
+      "status": "verified_primary",
+      "status_note": "Current text confirmed. The 2027 amendment is taken from the project's SB 574 notes."
+    },
+    {
+      "id": "cumis_independent_counsel",
+      "citation": "Civ. Code § 2860",
+      "summary": "Where a duty to defend exists and a conflict of interest arises, the insurer must provide independent counsel unless the insured expressly waives the right in writing. A conflict may exist when the insurer reserves rights on an issue and the outcome of that coverage issue can be controlled by defense counsel. Fees are limited to rates the insurer actually pays for similar defense work in the community.",
+      "params": {},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2860",
+      "status": "verified_primary"
+    },
+    {
+      "id": "elder_abuse_remedies",
+      "citation": "Welf. & Inst. Code §§ 15657, 15610.57",
+      "summary": "Enhanced remedies (attorney's fees, costs, survival of pain and suffering damages) where physical abuse, neglect or abandonment is proven by clear and convincing evidence, or by a preponderance under § 15657.02, with recklessness, oppression, fraud or malice. § 15657 was amended effective January 1, 2026 (AB 251). § 15600 is only the legislative findings section.",
+      "params": {},
+      "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=WIC&sectionNum=15657",
+      "status": "verified_primary",
+      "status_note": "§ 15657.02 itself was not read."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+SYNTHETIC DOCUMENT - FICTIONAL PERSONS AND ENTITIES - NOT A REAL RECORD
+HOLLIS RIDGE ANALYTICAL LABORATORY (fictional)                            COA-0001
+CERTIFICATE OF ANALYSIS
+Client: Juniper & Vale Provisions, Inc.       Report date: 11/20/2026
+Sample: Smoked Kelp Crisps, lot JV-2609-A, 40 g bag, received 11/18/2026
+Method: ICP-MS after microwave digestion. Results on an as-sold basis.
+Analyte        Result        Reporting limit
+Lead           0.08 mg/kg    0.01 mg/kg
+Cadmium        1.2 mg/kg     0.01 mg/kg
+Arsenic        Not tested
+Label panel as received reads: WARNING: Reproductive Harm - www.P65Warnings.ca.gov/food
+Serving size stated on the nutrition panel: 5 g. Servings per container: 8.
+Client usage survey summary (attached separately): average users eat 1 serving per day.

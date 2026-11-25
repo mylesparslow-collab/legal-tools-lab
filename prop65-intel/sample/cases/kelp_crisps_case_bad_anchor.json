@@ -1,0 +1,16 @@
+{
+  "_note": "Same case, but the cadmium figure was mis-transcribed as 0.12 mg/kg. The record says 1.2. The verifier rejects the anchor and the cadmium safe harbor calculation does not run.",
+  "case_id": "SYN-P65-001-BAD",
+  "service_method": "mail_in_ca",
+  "employee_count": 46,
+  "claims": {
+    "service_date": {"value": "2026-11-16", "value_text": "11/16/2026", "anchor": {"cite": "NOV-0001:13", "quote": "served by first class mail on 11/16/2026"}},
+    "exposure_date": {"value": "2026-09-18", "value_text": "09/18/2026", "anchor": {"cite": "NOV-0001:11", "quote": "purchased in Alameda County, California on 09/18/2026"}},
+    "cadmium_ppm": {"value": 0.12, "value_text": "0.12 mg/kg", "anchor": {"cite": "COA-0001:9", "quote": "Cadmium 0.12 mg/kg"}},
+    "serving_g": {"value": 5, "value_text": "5 g", "anchor": {"cite": "COA-0001:12", "quote": "Serving size stated on the nutrition panel: 5 g"}},
+    "servings_per_day": {"value": 1, "value_text": "1 serving per day", "anchor": {"cite": "COA-0001:13", "quote": "average users eat 1 serving per day"}}
+  },
+  "chemicals": [
+    {"name": "Cadmium", "unit": "mg/kg", "route": "oral", "concentration_claim": "cadmium_ppm", "serving_claim": "serving_g", "servings_per_day_claim": "servings_per_day"}
+  ]
+}

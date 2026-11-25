@@ -1,0 +1,631 @@
+[
+ {
+  "case_id": "SYN-P65-001",
+  "as_of": "2026-11-25",
+  "blocked_claims": [],
+  "checks": [
+   {
+    "check": "sixty_day_clock",
+    "status": "COMPUTED",
+    "summary": "Served 2026-11-16 (mail in ca, +5 days). The sixtieth day is 2027-01-20; a private suit may be filed on or after 2027-01-21.",
+    "detail": {
+     "service_date": "2026-11-16",
+     "extension_days": 5,
+     "sixtieth_day_raw": "2027-01-20",
+     "sixtieth_day": "2027-01-20",
+     "earliest_filing": "2027-01-21",
+     "rolled_for_weekend": false
+    },
+    "rules": [
+     {
+      "rule_id": "private_action_60_day",
+      "citation": "Health & Saf. Code \u00a7 25249.7(d)(1); 27 CCR \u00a7 25903(d); Code Civ. Proc. \u00a7\u00a7 12, 12a, 1013",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "How the \u00a7 1013 extension applies to a given service method, and whether a court holiday moves the date.",
+     "Court holidays other than weekends are not checked."
+    ]
+   },
+   {
+    "check": "business_exemption",
+    "status": "NOT_EXEMPT",
+    "summary": "46 employees is 10 or more.",
+    "detail": {
+     "employee_count": 46
+    },
+    "rules": [
+     {
+      "rule_id": "small_business_exemption",
+      "citation": "Health & Saf. Code \u00a7 25249.11(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "How employees are counted, and whether an upstream manufacturer or a retailer with 10 or more employees is still exposed."
+    ]
+   },
+   {
+    "check": "grace_period",
+    "status": "NOT_EXEMPT",
+    "summary": "On 2026-09-18 every listing of Lead was more than 12 months old. The grace period does not help.",
+    "detail": {
+     "endpoints": [
+      {
+       "endpoint": "reproductive",
+       "date_listed": "1987-02-27",
+       "warning_required_from": "1988-02-27",
+       "in_grace": false
+      },
+      {
+       "endpoint": "cancer",
+       "date_listed": "1992-10-01",
+       "warning_required_from": "1993-10-01",
+       "in_grace": false
+      }
+     ]
+    },
+    "rules": [
+     {
+      "rule_id": "grace_12_month",
+      "citation": "Health & Saf. Code \u00a7 25249.10(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "Which listing date applies when a chemical is listed for more than one endpoint, and what date counts as the exposure for a product bought earlier and used later."
+    ]
+   },
+   {
+    "check": "safe_harbor",
+    "status": "BELOW",
+    "summary": "Computed exposure of 0.4 \u00b5g/day is at or below every listed level for Lead by the oral route. On these inputs the safe harbor exemption is available, and the defendant carries the burden of proving it.",
+    "detail": {
+     "chemical": "Lead",
+     "concentration": 0.08,
+     "unit": "mg/kg",
+     "serving_size": 5,
+     "servings_per_day": 1,
+     "amount_per_day": 5,
+     "route": "oral",
+     "daily_exposure_ug": 0.4,
+     "formula": "concentration x serving size x servings per day",
+     "comparisons": [
+      {
+       "endpoint": "cancer",
+       "level_type": "NSRL",
+       "level_ug_day": 15.0,
+       "level_route": "oral",
+       "ratio": 0.0267,
+       "result": "AT_OR_BELOW",
+       "source": "OEHHA list 2026-07-31 (listing date); 27 CCR 25705 (level for Lead)"
+      },
+      {
+       "endpoint": "reproductive",
+       "level_type": "MADL",
+       "level_ug_day": 0.5,
+       "level_route": "any",
+       "ratio": 0.8,
+       "result": "AT_OR_BELOW",
+       "source": "OEHHA list 2026-07-31; 27 CCR 25805"
+      }
+     ]
+    },
+    "rules": [
+     {
+      "rule_id": "safe_harbor_exemption",
+      "citation": "Health & Saf. Code \u00a7 25249.10(c); 27 CCR \u00a7\u00a7 25701(b)(3)(A), 25705, 25721(c), (d)(4); 27 CCR \u00a7\u00a7 25801(b)(2), 25805, 25821(b), (c)(2)",
+      "status": "verified_mirror"
+     }
+    ],
+    "attorney_review": [
+     "Intake assumptions, averaging over time, route of exposure, naturally occurring allowances (27 CCR \u00a7 25501, not read), and whether to build a custom risk assessment where no level is listed. A chemical with no listed level is not presumed unsafe (27 CCR \u00a7\u00a7 25701(c), 25801(d))."
+    ]
+   },
+   {
+    "check": "grace_period",
+    "status": "NOT_EXEMPT",
+    "summary": "On 2026-09-18 every listing of Cadmium was more than 12 months old. The grace period does not help.",
+    "detail": {
+     "endpoints": [
+      {
+       "endpoint": "reproductive",
+       "date_listed": "1997-05-01",
+       "warning_required_from": "1998-05-01",
+       "in_grace": false
+      },
+      {
+       "endpoint": "cancer",
+       "date_listed": "1987-10-01",
+       "warning_required_from": "1988-10-01",
+       "in_grace": false
+      }
+     ]
+    },
+    "rules": [
+     {
+      "rule_id": "grace_12_month",
+      "citation": "Health & Saf. Code \u00a7 25249.10(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "Which listing date applies when a chemical is listed for more than one endpoint, and what date counts as the exposure for a product bought earlier and used later."
+    ]
+   },
+   {
+    "check": "safe_harbor",
+    "status": "ABOVE",
+    "summary": "Computed exposure of 6 \u00b5g/day is above at least one listed level for Cadmium. On these inputs the listed safe harbor does not apply.",
+    "detail": {
+     "chemical": "Cadmium",
+     "concentration": 1.2,
+     "unit": "mg/kg",
+     "serving_size": 5,
+     "servings_per_day": 1,
+     "amount_per_day": 5,
+     "route": "oral",
+     "daily_exposure_ug": 6.0,
+     "formula": "concentration x serving size x servings per day",
+     "comparisons": [
+      {
+       "endpoint": "cancer",
+       "level_type": "NSRL",
+       "level_ug_day": null,
+       "result": "NO_LISTED_LEVEL",
+       "note": "No level is listed for the oral route. A custom assessment would be needed."
+      },
+      {
+       "endpoint": "reproductive",
+       "level_type": "MADL",
+       "level_ug_day": 4.1,
+       "level_route": "oral",
+       "ratio": 1.4634,
+       "result": "ABOVE",
+       "source": "OEHHA list 2026-07-31; 27 CCR 25805"
+      }
+     ]
+    },
+    "rules": [
+     {
+      "rule_id": "safe_harbor_exemption",
+      "citation": "Health & Saf. Code \u00a7 25249.10(c); 27 CCR \u00a7\u00a7 25701(b)(3)(A), 25705, 25721(c), (d)(4); 27 CCR \u00a7\u00a7 25801(b)(2), 25805, 25821(b), (c)(2)",
+      "status": "verified_mirror"
+     }
+    ],
+    "attorney_review": [
+     "Intake assumptions, averaging over time, route of exposure, naturally occurring allowances (27 CCR \u00a7 25501, not read), and whether to build a custom risk assessment where no level is listed. A chemical with no listed level is not presumed unsafe (27 CCR \u00a7\u00a7 25701(c), 25801(d))."
+    ]
+   },
+   {
+    "check": "label",
+    "status": "FAIL",
+    "form": "short_form_pre_2025",
+    "summary": "Does not meet the safe harbor content on at least one point.",
+    "detail": {
+     "findings": [
+      {
+       "code": "FORM",
+       "level": "PASS",
+       "message": "Matches the short form pre 2025 wording.",
+       "rule_id": "short_form_warning",
+       "citation": "27 CCR \u00a7\u00a7 25602(a)(4), 25603(b)-(c); 27 CCR \u00a7 25607.2(b) (food)",
+       "status": "verified_mirror"
+      },
+      {
+       "code": "ENDPOINT",
+       "level": "FAIL",
+       "message": "The warning does not cover: cancer.",
+       "rule_id": "short_form_warning",
+       "citation": "27 CCR \u00a7\u00a7 25602(a)(4), 25603(b)-(c); 27 CCR \u00a7 25607.2(b) (food)",
+       "status": "verified_mirror"
+      },
+      {
+       "code": "OLD_FORM_FOOD",
+       "level": "REVIEW",
+       "message": "Pre-2025 short form on a food label. The transition sentence sits in \u00a7 25603(c); whether it reaches food labels under \u00a7 25607.2 needs attorney review.",
+       "rule_id": "short_form_warning",
+       "citation": "27 CCR \u00a7\u00a7 25602(a)(4), 25603(b)-(c); 27 CCR \u00a7 25607.2(b) (food)",
+       "status": "verified_mirror"
+      }
+     ],
+     "named_chemicals": [],
+     "endpoints_covered": [
+      "reproductive"
+     ]
+    },
+    "rules": [
+     {
+      "rule_id": "short_form_warning",
+      "citation": "27 CCR \u00a7\u00a7 25602(a)(4), 25603(b)-(c); 27 CCR \u00a7 25607.2(b) (food)",
+      "status": "verified_mirror"
+     },
+     {
+      "rule_id": "long_form_warning",
+      "citation": "27 CCR \u00a7 25603(a)",
+      "status": "verified_mirror"
+     },
+     {
+      "rule_id": "safe_harbor_not_exclusive",
+      "citation": "27 CCR \u00a7 25600(e)-(f)",
+      "status": "verified_mirror"
+     }
+    ],
+    "attorney_review": [
+     "Whether the old short form remains available for food labels (the transition sentence is in \u00a7 25603(c), not \u00a7 25607.2), and whether a tailored warning under \u00a7 25607 et seq. applies to the product."
+    ]
+   }
+  ],
+  "title": "SYN-P65-001: Juniper & Vale Provisions, Inc. (fictional)",
+  "note": "Synthetic case. Values under claims are what an extraction step (a person or a model) would hand over. Each one carries the page, line and words it came from, and the verifier checks that anchor before any calculation uses the value.",
+  "claims": {
+   "service_date": {
+    "value": "2026-11-16",
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at NOV-0001:13."
+   },
+   "exposure_date": {
+    "value": "2026-09-18",
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at NOV-0001:11."
+   },
+   "lead_ppm": {
+    "value": 0.08,
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at COA-0001:8."
+   },
+   "cadmium_ppm": {
+    "value": 1.2,
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at COA-0001:9."
+   },
+   "serving_g": {
+    "value": 5,
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at COA-0001:12."
+   },
+   "servings_per_day": {
+    "value": 1,
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at COA-0001:13."
+   },
+   "label_text": {
+    "value": "WARNING: Reproductive Harm - www.P65Warnings.ca.gov/food",
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at COA-0001:11."
+   }
+  }
+ },
+ {
+  "case_id": "SYN-P65-001-BAD",
+  "as_of": "2026-11-25",
+  "blocked_claims": [
+   "cadmium_ppm"
+  ],
+  "checks": [
+   {
+    "check": "sixty_day_clock",
+    "status": "COMPUTED",
+    "summary": "Served 2026-11-16 (mail in ca, +5 days). The sixtieth day is 2027-01-20; a private suit may be filed on or after 2027-01-21.",
+    "detail": {
+     "service_date": "2026-11-16",
+     "extension_days": 5,
+     "sixtieth_day_raw": "2027-01-20",
+     "sixtieth_day": "2027-01-20",
+     "earliest_filing": "2027-01-21",
+     "rolled_for_weekend": false
+    },
+    "rules": [
+     {
+      "rule_id": "private_action_60_day",
+      "citation": "Health & Saf. Code \u00a7 25249.7(d)(1); 27 CCR \u00a7 25903(d); Code Civ. Proc. \u00a7\u00a7 12, 12a, 1013",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "How the \u00a7 1013 extension applies to a given service method, and whether a court holiday moves the date.",
+     "Court holidays other than weekends are not checked."
+    ]
+   },
+   {
+    "check": "business_exemption",
+    "status": "NOT_EXEMPT",
+    "summary": "46 employees is 10 or more.",
+    "detail": {
+     "employee_count": 46
+    },
+    "rules": [
+     {
+      "rule_id": "small_business_exemption",
+      "citation": "Health & Saf. Code \u00a7 25249.11(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "How employees are counted, and whether an upstream manufacturer or a retailer with 10 or more employees is still exposed."
+    ]
+   },
+   {
+    "check": "grace_period",
+    "status": "NOT_EXEMPT",
+    "summary": "On 2026-09-18 every listing of Cadmium was more than 12 months old. The grace period does not help.",
+    "detail": {
+     "endpoints": [
+      {
+       "endpoint": "reproductive",
+       "date_listed": "1997-05-01",
+       "warning_required_from": "1998-05-01",
+       "in_grace": false
+      },
+      {
+       "endpoint": "cancer",
+       "date_listed": "1987-10-01",
+       "warning_required_from": "1988-10-01",
+       "in_grace": false
+      }
+     ]
+    },
+    "rules": [
+     {
+      "rule_id": "grace_12_month",
+      "citation": "Health & Saf. Code \u00a7 25249.10(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "Which listing date applies when a chemical is listed for more than one endpoint, and what date counts as the exposure for a product bought earlier and used later."
+    ]
+   },
+   {
+    "check": "safe_harbor",
+    "status": "BLOCKED",
+    "summary": "Not run. Not anchored to the record: cadmium_ppm.",
+    "detail": {},
+    "rules": [],
+    "attorney_review": []
+   }
+  ],
+  "title": "SYN-P65-001-BAD",
+  "note": "Same case, but the cadmium figure was mis-transcribed as 0.12 mg/kg. The record says 1.2. The verifier rejects the anchor and the cadmium safe harbor calculation does not run.",
+  "claims": {
+   "service_date": {
+    "value": "2026-11-16",
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at NOV-0001:13."
+   },
+   "exposure_date": {
+    "value": "2026-09-18",
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at NOV-0001:11."
+   },
+   "cadmium_ppm": {
+    "value": 0.12,
+    "anchor_status": "FAILED",
+    "anchor_message": "These words are not in the record. Closest passage is on COA-0001."
+   },
+   "serving_g": {
+    "value": 5,
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at COA-0001:12."
+   },
+   "servings_per_day": {
+    "value": 1,
+    "anchor_status": "VERIFIED",
+    "anchor_message": "Found at COA-0001:13."
+   }
+  }
+ },
+ {
+  "case_id": "SYN-P65-002",
+  "as_of": "2026-11-25",
+  "blocked_claims": [],
+  "checks": [
+   {
+    "check": "sixty_day_clock",
+    "status": "COMPUTED",
+    "summary": "Served 2026-11-02 (personal, +0 days). The sixtieth day is 2027-01-01; a private suit may be filed on or after 2027-01-02.",
+    "detail": {
+     "service_date": "2026-11-02",
+     "extension_days": 0,
+     "sixtieth_day_raw": "2027-01-01",
+     "sixtieth_day": "2027-01-01",
+     "earliest_filing": "2027-01-02",
+     "rolled_for_weekend": false
+    },
+    "rules": [
+     {
+      "rule_id": "private_action_60_day",
+      "citation": "Health & Saf. Code \u00a7 25249.7(d)(1); 27 CCR \u00a7 25903(d); Code Civ. Proc. \u00a7\u00a7 12, 12a, 1013",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "How the \u00a7 1013 extension applies to a given service method, and whether a court holiday moves the date.",
+     "Court holidays other than weekends are not checked."
+    ]
+   },
+   {
+    "check": "business_exemption",
+    "status": "NOT_EXEMPT",
+    "summary": "210 employees is 10 or more.",
+    "detail": {
+     "employee_count": 210
+    },
+    "rules": [
+     {
+      "rule_id": "small_business_exemption",
+      "citation": "Health & Saf. Code \u00a7 25249.11(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "How employees are counted, and whether an upstream manufacturer or a retailer with 10 or more employees is still exposed."
+    ]
+   },
+   {
+    "check": "grace_period",
+    "status": "PARTIAL",
+    "summary": "On 2026-10-02 the grace period had run for some listings of Bisphenol S (BPS) but not all. The notice can rest only on the endpoints already past 12 months.",
+    "detail": {
+     "endpoints": [
+      {
+       "endpoint": "reproductive (female)",
+       "date_listed": "2023-12-29",
+       "warning_required_from": "2024-12-29",
+       "in_grace": false
+      },
+      {
+       "endpoint": "reproductive (male)",
+       "date_listed": "2025-01-03",
+       "warning_required_from": "2026-01-03",
+       "in_grace": false
+      },
+      {
+       "endpoint": "reproductive (developmental)",
+       "date_listed": "2025-12-08",
+       "warning_required_from": "2026-12-08",
+       "in_grace": true
+      }
+     ]
+    },
+    "rules": [
+     {
+      "rule_id": "grace_12_month",
+      "citation": "Health & Saf. Code \u00a7 25249.10(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "Which listing date applies when a chemical is listed for more than one endpoint, and what date counts as the exposure for a product bought earlier and used later."
+    ]
+   }
+  ],
+  "title": "SYN-P65-002: Fennimore Street Market, Inc. (fictional)",
+  "note": "Synthetic case for the 12-month grace period. BPS was listed for female reproductive toxicity on 2023-12-29, male on 2025-01-03 and developmental on 2025-12-08 (OEHHA list dated 2026-07-31).",
+  "claims": {
+   "service_date": {
+    "value": "2026-11-02",
+    "anchor_status": "VERIFIED",
+    "anchor_message": null
+   },
+   "exposure_date": {
+    "value": "2026-10-02",
+    "anchor_status": "VERIFIED",
+    "anchor_message": null
+   }
+  }
+ },
+ {
+  "case_id": "SYN-P65-003",
+  "as_of": "2026-11-25",
+  "blocked_claims": [],
+  "checks": [
+   {
+    "check": "sixty_day_clock",
+    "status": "COMPUTED",
+    "summary": "Served 2026-11-16 (mail in ca, +5 days). The sixtieth day is 2027-01-20; a private suit may be filed on or after 2027-01-21.",
+    "detail": {
+     "service_date": "2026-11-16",
+     "extension_days": 5,
+     "sixtieth_day_raw": "2027-01-20",
+     "sixtieth_day": "2027-01-20",
+     "earliest_filing": "2027-01-21",
+     "rolled_for_weekend": false
+    },
+    "rules": [
+     {
+      "rule_id": "private_action_60_day",
+      "citation": "Health & Saf. Code \u00a7 25249.7(d)(1); 27 CCR \u00a7 25903(d); Code Civ. Proc. \u00a7\u00a7 12, 12a, 1013",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "How the \u00a7 1013 extension applies to a given service method, and whether a court holiday moves the date.",
+     "Court holidays other than weekends are not checked."
+    ]
+   },
+   {
+    "check": "business_exemption",
+    "status": "NOT_EXEMPT",
+    "summary": "31 employees is 10 or more.",
+    "detail": {
+     "employee_count": 31
+    },
+    "rules": [
+     {
+      "rule_id": "small_business_exemption",
+      "citation": "Health & Saf. Code \u00a7 25249.11(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "How employees are counted, and whether an upstream manufacturer or a retailer with 10 or more employees is still exposed."
+    ]
+   },
+   {
+    "check": "grace_period",
+    "status": "NOT_EXEMPT",
+    "summary": "On 2026-10-20 every listing of Carbon monoxide was more than 12 months old. The grace period does not help.",
+    "detail": {
+     "endpoints": [
+      {
+       "endpoint": "reproductive",
+       "date_listed": "1989-07-01",
+       "warning_required_from": "1990-07-01",
+       "in_grace": false
+      }
+     ]
+    },
+    "rules": [
+     {
+      "rule_id": "grace_12_month",
+      "citation": "Health & Saf. Code \u00a7 25249.10(b)",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "Which listing date applies when a chemical is listed for more than one endpoint, and what date counts as the exposure for a product bought earlier and used later."
+    ]
+   },
+   {
+    "check": "special_compliance",
+    "status": "ELIGIBLE",
+    "summary": "Eligible. By 2026-11-30: correct the violation, agree to pay $610 per facility ($1,220 for 2), and send the completed proof of compliance form. Deliver payment by 2026-12-16.",
+    "detail": {
+     "exposure_type": "parking_engine_exhaust",
+     "correct_agree_notify_by": "2026-11-30",
+     "pay_by": "2026-12-16",
+     "penalty_per_facility_usd": 610,
+     "facilities": 2,
+     "total_penalty_usd": 1220,
+     "days_left_to_cure": 5
+    },
+    "rules": [
+     {
+      "rule_id": "special_compliance_cure",
+      "citation": "Health & Saf. Code \u00a7 25249.7(k), (m), (n); Cal. Rules of Court, Appendix H",
+      "status": "verified_primary"
+     }
+    ],
+    "attorney_review": [
+     "Whether the exposure really falls in one of the four categories and whether the correction is complete."
+    ]
+   }
+  ],
+  "title": "SYN-P65-003: Alder Quay Parking Partners, LP (fictional)",
+  "note": "Synthetic case for the 14-day special compliance procedure under Health & Saf. Code 25249.7(k).",
+  "claims": {
+   "service_date": {
+    "value": "2026-11-16",
+    "anchor_status": "VERIFIED",
+    "anchor_message": null
+   },
+   "exposure_date": {
+    "value": "2026-10-20",
+    "anchor_status": "VERIFIED",
+    "anchor_message": null
+   }
+  }
+ }
+]

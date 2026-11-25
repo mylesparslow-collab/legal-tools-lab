@@ -1,0 +1,728 @@
+[
+ {
+  "draft": "coverage_tender_letter",
+  "counts": {
+   "PASS": 5,
+   "WARN": 2,
+   "FAIL": 2,
+   "MANUAL": 0
+  },
+  "results": [
+   {
+    "id": "coverage_tender_letter#1",
+    "paragraph": 3,
+    "cite": "POL-0001:4",
+    "assertion": "The policy was in force on the date of the incident, with a policy period of 01/01/2026 to 01/01/2027",
+    "items": [
+     {
+      "type": "datetime",
+      "text": "01/01/2026",
+      "found": {
+       "page": "POL-0001",
+       "lines": [
+        4,
+        4
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     },
+     {
+      "type": "datetime",
+      "text": "01/01/2027",
+      "found": {
+       "page": "POL-0001",
+       "lines": [
+        4,
+        4
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "coverage_tender_letter#2",
+    "paragraph": 4,
+    "cite": "POL-0002:6-7",
+    "assertion": "The insuring agreement provides that Tidewater \"will have the right and duty to defend the insured against any suit seeking those damages.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "will have the right and duty to defend the insured against any suit seeking those damages.",
+      "found": {
+       "page": "POL-0002",
+       "lines": [
+        6,
+        7
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "coverage_tender_letter#3",
+    "paragraph": 5,
+    "cite": "POL-0003:8-9",
+    "assertion": "Tidewater's reservation of rights letter relies on the abuse exclusion, which it quotes as barring coverage for \"Bodily injury arising out of the actual or threatened abuse or neglect of any person in the care, custody or control of any insured.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "Bodily injury arising out of the actual or threatened abuse or neglect of any person in the care, custody or control of any insured.",
+      "found": {
+       "page": "POL-0003",
+       "lines": [
+        8,
+        9
+       ]
+      },
+      "status": "WARN",
+      "message": "The quoted language is in Exclusion e., which an endorsement says is replaced (POL-0004:6). Quote the endorsement instead, or explain.",
+      "code": "SUPERSEDED",
+      "superseded_by": {
+       "page": "POL-0004",
+       "line": 6
+      }
+     }
+    ],
+    "status": "WARN"
+   },
+   {
+    "id": "coverage_tender_letter#4",
+    "paragraph": 6,
+    "cite": "POL-0004:8",
+    "assertion": "In fact Endorsement 1 restores coverage for abuse or neglect claims, subject to a sublimit of $500,000 each claim",
+    "items": [
+     {
+      "type": "money",
+      "text": "$500,000",
+      "found": {
+       "page": "POL-0004",
+       "lines": [
+        9,
+        9
+       ]
+      },
+      "status": "WARN",
+      "code": "VALUE_OTHER_LINE",
+      "on_lines_instead": [
+       "$250,000"
+      ],
+      "message": "$500,000 is on the cited page at line 9, not at the cited line 8. The cited line has: $250,000."
+     }
+    ],
+    "status": "WARN"
+   },
+   {
+    "id": "coverage_tender_letter#5",
+    "paragraph": 7,
+    "cite": "POL-0004:10",
+    "assertion": "That sublimit \"does not apply to the cost of defense.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "does not apply to the cost of defense.",
+      "found": {
+       "page": "POL-0004",
+       "lines": [
+        10,
+        10
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "coverage_tender_letter#6",
+    "paragraph": 8,
+    "cite": "POL-0004:13",
+    "assertion": "Endorsement 1 also states that Tidewater \"shall defend such claims subject to a reservation of rights.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "shall defend such claims subject to a reservation of rights.",
+      "status": "FAIL",
+      "code": "QUOTE_NOT_IN_RECORD",
+      "closest": {
+       "score": 0.954,
+       "page": "POL-0004",
+       "text": "We will defend such claims subject to a reservation of rights.",
+       "diff": [
+        {
+         "draft": "shall",
+         "record": "We will"
+        }
+       ]
+      },
+      "message": "These words are not in the record. Closest passage is on POL-0004."
+     }
+    ],
+    "status": "FAIL"
+   },
+   {
+    "id": "coverage_tender_letter#7",
+    "paragraph": 9,
+    "cite": "POL-0005:13-14",
+    "assertion": "Because Tidewater defends under a reservation of rights on the enhanced remedies issue, the insured requests independent counsel. The policy commits Tidewater to pay \"reasonable fees at the rates we actually pay to counsel we retain in the ordinary course of business\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "reasonable fees at the rates we actually pay to counsel we retain in the ordinary course of business",
+      "found": {
+       "page": "POL-0005",
+       "lines": [
+        13,
+        14
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "coverage_tender_letter#8",
+    "paragraph": 10,
+    "cite": "POL-0001:9",
+    "assertion": "The self-insured retention is $50,000 each claim",
+    "items": [
+     {
+      "type": "money",
+      "text": "$50,000",
+      "found": {
+       "page": "POL-0001",
+       "lines": [
+        9,
+        9
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "coverage_tender_letter#9",
+    "paragraph": 10,
+    "cite": "POL-0006:6",
+    "assertion": ", and the professional services exclusion \"is deleted.\"",
+    "items": [
+     {
+      "type": "cite",
+      "status": "FAIL",
+      "code": "PAGE_NOT_IN_RECORD",
+      "text": "POL-0006:6",
+      "message": "POL has 5 pages. There is no page 6."
+     }
+    ],
+    "status": "FAIL"
+   }
+  ]
+ },
+ {
+  "draft": "prop65_response_memo",
+  "counts": {
+   "PASS": 5,
+   "WARN": 0,
+   "FAIL": 1,
+   "MANUAL": 1
+  },
+  "results": [
+   {
+    "id": "prop65_response_memo#1",
+    "paragraph": 2,
+    "cite": "NOV-0001:13",
+    "assertion": "The notice was \"served by first class mail on 11/16/2026 from Oakland, California.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "served by first class mail on 11/16/2026 from Oakland, California.",
+      "found": {
+       "page": "NOV-0001",
+       "lines": [
+        13,
+        13
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "prop65_response_memo#2",
+    "paragraph": 3,
+    "cite": "NOV-0001:8",
+    "assertion": "The notice alleges exposure to \"Lead and lead compounds; Cadmium and cadmium compounds.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "Lead and lead compounds; Cadmium and cadmium compounds.",
+      "found": {
+       "page": "NOV-0001",
+       "lines": [
+        8,
+        8
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "prop65_response_memo#3",
+    "paragraph": 3,
+    "cite": "NOV-0001:9",
+    "assertion": "and identifies the route of exposure as ingestion",
+    "items": [
+     {
+      "type": "cite",
+      "status": "MANUAL",
+      "code": "NOTHING_TO_MATCH",
+      "text": "NOV-0001:9",
+      "message": "The cite carries no quotation, time, amount or measurement to match. Read the page."
+     }
+    ],
+    "status": "MANUAL"
+   },
+   {
+    "id": "prop65_response_memo#4",
+    "paragraph": 4,
+    "cite": "NOV-0001:11",
+    "assertion": "The purchase date alleged is 09/18/2026",
+    "items": [
+     {
+      "type": "datetime",
+      "text": "09/18/2026",
+      "found": {
+       "page": "NOV-0001",
+       "lines": [
+        10,
+        10
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "prop65_response_memo#5",
+    "paragraph": 5,
+    "cite": "COA-0001:8-9",
+    "assertion": "The lab reported lead at 0.08 mg/kg and cadmium at 0.12 mg/kg",
+    "items": [
+     {
+      "type": "measure",
+      "text": "0.08 mg/kg",
+      "found": {
+       "page": "COA-0001",
+       "lines": [
+        8,
+        8
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     },
+     {
+      "type": "measure",
+      "text": "0.12 mg/kg",
+      "status": "FAIL",
+      "code": "VALUE_NOT_ON_PAGE",
+      "on_page_instead": [
+       "0.01 mg/kg",
+       "0.08 mg/kg",
+       "1.2 mg/kg",
+       "40 g",
+       "5 g"
+      ],
+      "found_elsewhere": [],
+      "message": "0.12 mg/kg is not on the cited page. The page has: 0.01 mg/kg, 0.08 mg/kg, 1.2 mg/kg, 40 g, 5 g."
+     }
+    ],
+    "status": "FAIL"
+   },
+   {
+    "id": "prop65_response_memo#6",
+    "paragraph": 6,
+    "cite": "COA-0001:12",
+    "assertion": "The nutrition panel serving size is 5 g",
+    "items": [
+     {
+      "type": "measure",
+      "text": "5 g",
+      "found": {
+       "page": "COA-0001",
+       "lines": [
+        12,
+        12
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "prop65_response_memo#7",
+    "paragraph": 7,
+    "cite": "NOV-0002:7-8",
+    "assertion": "The certificate of merit states that counsel \"consulted with one or more persons with relevant and appropriate experience or expertise\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "consulted with one or more persons with relevant and appropriate experience or expertise",
+      "found": {
+       "page": "NOV-0002",
+       "lines": [
+        7,
+        8
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     }
+    ],
+    "status": "PASS"
+   }
+  ]
+ },
+ {
+  "draft": "trial_brief_excerpt",
+  "counts": {
+   "PASS": 6,
+   "WARN": 0,
+   "FAIL": 4,
+   "MANUAL": 0
+  },
+  "results": [
+   {
+    "id": "trial_brief_excerpt#1",
+    "paragraph": 2,
+    "cite": "CHART-0001:10-11",
+    "assertion": "On admission the facility scored the resident's fall risk and entered care plan interventions including \"bed in low position; call light within reach; non-skid footwear\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "bed in low position; call light within reach; non-skid footwear",
+      "found": {
+       "page": "CHART-0001",
+       "lines": [
+        10,
+        11
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "trial_brief_excerpt#2",
+    "paragraph": 3,
+    "cite": "CHART-0002:12",
+    "assertion": "On the evening before the fall, the evening dose of insulin glargine 18 units was given on 03/14/2026 at 20:40",
+    "items": [
+     {
+      "type": "datetime",
+      "text": "03/14/2026 at 20:40",
+      "status": "FAIL",
+      "code": "VALUE_NOT_ON_PAGE",
+      "on_page_instead": [
+       "02/03/2026",
+       "03/14/2026 08:05",
+       "03/14/2026 20:10",
+       "03/14/2026 21:40",
+       "03/15/2026 08:10"
+      ],
+      "found_elsewhere": [],
+      "message": "03/14/2026 at 20:40 is not on the cited page. The page has: 02/03/2026, 03/14/2026 08:05, 03/14/2026 20:10, 03/14/2026 21:40, 03/15/2026 08:10."
+     },
+     {
+      "type": "measure",
+      "text": "18 units",
+      "found": {
+       "page": "CHART-0002",
+       "lines": [
+        6,
+        6
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "FAIL"
+   },
+   {
+    "id": "trial_brief_excerpt#3",
+    "paragraph": 4,
+    "cite": "CHART-0003:5-7",
+    "assertion": "Staff rounded on the resident at 22:15 and again at 00:20, and each time found her asleep",
+    "items": [
+     {
+      "type": "time",
+      "text": "22:15",
+      "found": {
+       "page": "CHART-0003",
+       "lines": [
+        5,
+        5
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     },
+     {
+      "type": "time",
+      "text": "00:20",
+      "found": {
+       "page": "CHART-0003",
+       "lines": [
+        7,
+        7
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "trial_brief_excerpt#4",
+    "paragraph": 5,
+    "cite": "CHART-0003:8-9",
+    "assertion": "At 02:35 the nurse documented that the resident \"was trying to reach the bathroom and did not use the call light.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "was trying to reach the bathroom and did not use the call light.",
+      "found": {
+       "page": "CHART-0003",
+       "lines": [
+        8,
+        9
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     },
+     {
+      "type": "time",
+      "text": "02:35",
+      "found": {
+       "page": "CHART-0003",
+       "lines": [
+        8,
+        8
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "trial_brief_excerpt#5",
+    "paragraph": 6,
+    "cite": "CHART-0003:13-14",
+    "assertion": "The physician was notified at 02:50 and ordered a portable X-ray, and the \"Responsible party [was] notified at 03:05.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "Responsible party [was] notified at 03:05.",
+      "found": {
+       "page": "CHART-0003",
+       "lines": [
+        14,
+        14
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     },
+     {
+      "type": "time",
+      "text": "02:50",
+      "found": {
+       "page": "CHART-0003",
+       "lines": [
+        13,
+        13
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "trial_brief_excerpt#6",
+    "paragraph": 7,
+    "cite": "CHART-0004:15",
+    "assertion": "The preliminary X-ray read was \"no acute fracture identified.\"",
+    "items": [
+     {
+      "type": "cite",
+      "status": "FAIL",
+      "code": "LINE_NOT_ON_PAGE",
+      "text": "CHART-0004:15",
+      "message": "CHART-0004 has 13 lines."
+     },
+     {
+      "type": "quote",
+      "text": "no acute fracture identified.",
+      "status": "WARN",
+      "code": "WRONG_PAGE",
+      "found": {
+       "page": "CHART-0003",
+       "lines": [
+        15,
+        15
+       ]
+      },
+      "message": "Quote is not on the cited page. The same words are at CHART-0003:15-15."
+     }
+    ],
+    "status": "FAIL"
+   },
+   {
+    "id": "trial_brief_excerpt#7",
+    "paragraph": 8,
+    "cite": "CHART-0003:10",
+    "assertion": "The nursing note records that the resident was \"alert and oriented to person, place and time.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "alert and oriented to person, place and time.",
+      "status": "FAIL",
+      "code": "QUOTE_NOT_IN_RECORD",
+      "closest": {
+       "score": 0.772,
+       "page": "CHART-0003",
+       "text": "Alert and oriented to person and place. J. Salcedo, LVN.",
+       "diff": [
+        {
+         "draft": "",
+         "record": "and"
+        },
+        {
+         "draft": "and time.",
+         "record": "J. Salcedo, LVN."
+        }
+       ]
+      },
+      "message": "These words are not in the record. Closest passage is on CHART-0003."
+     }
+    ],
+    "status": "FAIL"
+   },
+   {
+    "id": "trial_brief_excerpt#8",
+    "paragraph": 9,
+    "cite": "CHART-0004:11",
+    "assertion": "Plaintiff relies on the 02:00 repositioning entry, which reads \"Entry blank.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "Entry blank.",
+      "found": {
+       "page": "CHART-0004",
+       "lines": [
+        11,
+        11
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     },
+     {
+      "type": "time",
+      "text": "02:00",
+      "found": {
+       "page": "CHART-0004",
+       "lines": [
+        11,
+        11
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "trial_brief_excerpt#9",
+    "paragraph": 9,
+    "cite": "CHART-0004:12-13",
+    "assertion": "The late entry made at 07:20 states the resident \"was repositioned to left side per M. Castellanos, CNA.\"",
+    "items": [
+     {
+      "type": "quote",
+      "text": "was repositioned to left side per M. Castellanos, CNA.",
+      "found": {
+       "page": "CHART-0004",
+       "lines": [
+        13,
+        13
+       ]
+      },
+      "status": "PASS",
+      "message": "Quote is on the cited page and lines, word for word."
+     },
+     {
+      "type": "time",
+      "text": "07:20",
+      "found": {
+       "page": "CHART-0004",
+       "lines": [
+        12,
+        12
+       ]
+      },
+      "status": "PASS",
+      "message": "Value is on the cited page and lines."
+     }
+    ],
+    "status": "PASS"
+   },
+   {
+    "id": "trial_brief_excerpt#10",
+    "paragraph": 10,
+    "cite": null,
+    "assertion": "\"our staff did everything the care plan required that night.\"",
+    "status": "FAIL",
+    "items": [
+     {
+      "type": "quote",
+      "status": "FAIL",
+      "code": "QUOTE_WITHOUT_CITE",
+      "text": "our staff did everything the care plan required that night.",
+      "message": "Quotation with no record cite after it."
+     }
+    ]
+   }
+  ]
+ }
+]

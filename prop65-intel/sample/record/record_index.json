@@ -1,0 +1,25 @@
+{
+ "_note": "Synthetic record. Every person, company, policy and lab here is fictional.",
+ "documents": [
+  {
+   "prefix": "CHART",
+   "title": "Larkspur Glen Care Center chart excerpts (fictional)",
+   "file": "chart.txt"
+  },
+  {
+   "prefix": "POL",
+   "title": "Tidewater Specimen Insurance policy TSI-GL-2291047 (fictional)",
+   "file": "policy.txt"
+  },
+  {
+   "prefix": "NOV",
+   "title": "Sixty-day notice and certificate of merit (fictional)",
+   "file": "notice.txt"
+  },
+  {
+   "prefix": "COA",
+   "title": "Hollis Ridge Analytical certificate of analysis (fictional)",
+   "file": "coa.txt"
+  }
+ ]
+}
