@@ -1,0 +1,225 @@
+submission_id,received,apn,signer,status,reason,resolved_by
+S-0045,2026-08-08T11:45:00,901016004,Callum Ndiaye,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0162,2026-08-08T13:30:00,903018003,Renata Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,account
+S-0048,2026-08-08T13:45:00,904016008,Thaddeus Mwangi,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0102,2026-08-08T14:00:00,901013009,Noor Petrosyan,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0118,2026-08-08T15:00:00,904010002,Ingrid Halvorsen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0074,2026-08-08T15:15:00,903013001,Otto Kowalczyk,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0067,2026-08-09T11:15:00,904018001,Sunita Ndiaye,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0101,2026-08-09T14:15:00,901015004,Marisol Whitlock,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0192,2026-08-09T14:30:00,,Marisol Fairweather,INVALID,channel 'email' is not an accepted written channel (agency policy),
+S-0135,2026-08-10T09:15:00,901014003,Callum Oyelaran,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0006,2026-08-10T09:30:00,902010003,Gideon Petrosyan,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0091,2026-08-10T10:15:00,902017001,Thaddeus Kowalczyk,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0190,2026-08-10T10:45:00,,Otto Nakagawa,INVALID,channel 'email' is not an accepted written channel (agency policy),
+S-0034,2026-08-11T13:45:00,902014008,Gideon Ostrowski,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0016,2026-08-12T12:30:00,904010009,Renata Whitlock,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0023,2026-08-12T14:15:00,902014006,Marisol Kowalczyk,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0106,2026-08-13T11:15:00,902010005,Tomas Tanaka,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0200,2026-08-13T14:30:00,901019002,Thaddeus Mwangi Jr.,REVIEW,signer is not a record owner or a customer of record for the parcel,apn
+S-0216,2026-08-13T15:00:00,901012001,Heron Lane Holdings LLC,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0216,2026-08-13T15:00:00,901012002,Heron Lane Holdings LLC,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0216,2026-08-13T15:00:00,901012003,Heron Lane Holdings LLC,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0066,2026-08-14T13:00:00,905010001,Gideon Achterberg,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0024,2026-08-15T14:00:00,902014001,Otto Petrosyan,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0086,2026-08-15T14:00:00,904013001,Wendell Quintero,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0015,2026-08-15T15:30:00,902018009,Hollis Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0217,2026-08-15T15:30:00,905010002,Otto Castellanos,NOT_COUNTED,parcel is on the roll but is not an identified parcel for this fee,apn
+S-0094,2026-08-15T16:30:00,903017005,Tomas Fairweather,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0218,2026-08-16T10:15:00,905010003,Sunita Achterberg,NOT_COUNTED,parcel is on the roll but is not an identified parcel for this fee,apn
+S-0081,2026-08-16T10:45:00,902012008,Desmond Sorrento,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0002,2026-08-16T11:15:00,904011001,Cyrus Fairweather,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0148,2026-08-16T14:15:00,901011003,Luca Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0057,2026-08-16T15:45:00,902016008,Renata Rasmussen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0182,2026-08-16T16:00:00,,Thaddeus Sorrento,INVALID,not signed (agency policy),
+S-0122,2026-08-17T10:15:00,904014009,Noor Nakagawa,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0111,2026-08-17T14:45:00,901013003,Mireille Sorrento,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0030,2026-08-17T15:30:00,903019004,Wendell Rasmussen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0124,2026-08-17T15:30:00,901014005,Wendell Quintero,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0177,2026-08-18T09:15:00,,Emeka Castellanos,REVIEW,"parcel not resolved: no parcel, account, or address given",
+S-0153,2026-08-18T16:00:00,903014006,Daniel Nakagawa,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0156,2026-08-19T16:00:00,903016010,Desmond Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0001,2026-08-19T16:30:00,904012008,Hollis Tanaka,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0205,2026-08-20T10:00:00,901018003,Tamsin Okafor,WITHDRAWN,withdrawn by S-0206,apn
+S-0075,2026-08-20T13:45:00,903010002,Yara Tanaka,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0207,2026-08-21T10:00:00,904017004,Bashir Lindqvist,WITHDRAWN,withdrawn by S-0208,apn
+S-0029,2026-08-21T10:30:00,904018010,Cyrus Tanaka,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0115,2026-08-21T11:30:00,901010002,Kenji Thistlewood,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0181,2026-08-21T14:15:00,,Wendell Petrosyan,INVALID,not signed (agency policy),
+S-0054,2026-08-22T09:30:00,901017002,Daniel Thistlewood,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0209,2026-08-22T10:00:00,902012005,Gideon Ndiaye,WITHDRAWN,withdrawn by S-0210,apn
+S-0121,2026-08-22T11:15:00,904014009,Noor Nakagawa,DUPLICATE,same signer already protested for this parcel,apn
+S-0040,2026-08-22T13:30:00,901019009,Marisol Kowalczyk,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0095,2026-08-22T16:00:00,904016009,Thaddeus Whitlock,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0211,2026-08-23T10:00:00,904019006,Bashir Varga,WITHDRAWN,withdrawn by S-0212,apn
+S-0093,2026-08-23T10:30:00,901013006,Hollis Whitlock,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0076,2026-08-23T15:15:00,901010009,Gideon Kowalczyk,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0213,2026-08-24T10:00:00,901015005,Farah Oyelaran,WITHDRAWN,withdrawn by S-0214,apn
+S-0194,2026-08-24T14:45:00,,Callum Okafor,INVALID,channel 'email' is not an accepted written channel (agency policy),
+S-0088,2026-08-24T15:30:00,901017010,Callum Delacroix,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0172,2026-08-24T16:45:00,902016004,Leilani Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,address
+S-0128,2026-08-25T13:00:00,902012006,Ines Ndiaye,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0147,2026-08-25T14:00:00,901011003,Luca Abernathy,DUPLICATE,same signer already protested for this parcel,apn
+S-0080,2026-08-25T14:45:00,904017009,Callum Whitlock,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0165,2026-08-25T14:45:00,902011002,Leilani Tanaka,COUNTED,owner of the parcel; first valid protest for the parcel,account
+S-0064,2026-08-25T15:45:00,903010007,Sunita Petrosyan,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0150,2026-08-25T15:45:00,901019010,Ingrid Lindqvist,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0143,2026-08-25T16:30:00,901015008,Luca Thistlewood,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0173,2026-08-26T11:00:00,904016005,Callum Whitlock,COUNTED,owner of the parcel; first valid protest for the parcel,address
+S-0169,2026-08-26T11:45:00,902010010,Rafael Fairweather,COUNTED,owner of the parcel; first valid protest for the parcel,address
+S-0201,2026-08-26T12:15:00,903017004,Thaddeus Ndiaye Jr.,REVIEW,signer is not a record owner or a customer of record for the parcel,apn
+S-0164,2026-08-26T14:00:00,901018004,Farah Nakagawa,COUNTED,owner of the parcel; first valid protest for the parcel,account
+S-0178,2026-08-26T16:15:00,,Zofia Quintero,REVIEW,parcel not resolved: account number not found,
+S-0168,2026-08-27T14:30:00,903010004,Tomas Sorrento,COUNTED,owner of the parcel; first valid protest for the parcel,address
+S-0204,2026-08-27T15:30:00,901016007,Daniel Ostrowski Jr.,REVIEW,signer is not a record owner or a customer of record for the parcel,apn
+S-0037,2026-08-27T16:15:00,904017008,Yara Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0063,2026-08-28T09:30:00,902010001,Bashir Rasmussen,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0157,2026-08-28T10:30:00,903012009,Luca Whitlock,COUNTED,owner of the parcel; first valid protest for the parcel,account
+S-0114,2026-08-28T11:15:00,904017005,Daniel Rasmussen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0145,2026-08-28T11:45:00,901018006,Rafael Achterberg,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0110,2026-08-28T16:15:00,903018008,Ingrid Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0141,2026-08-29T14:30:00,901015006,Thaddeus Castellanos,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0199,2026-08-30T10:00:00,903014010,Marisol Thistlewood Jr.,REVIEW,signer is not a record owner or a customer of record for the parcel,apn
+S-0044,2026-08-30T14:15:00,904011003,Thaddeus Quintero,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0009,2026-08-30T16:15:00,904013009,Marisol Lindqvist,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0065,2026-08-31T13:45:00,904010003,Farah Marchetti,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0132,2026-08-31T13:45:00,901012009,Leilani Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0005,2026-09-01T11:15:00,902013001,Noor Halvorsen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0011,2026-09-01T12:30:00,904010008,Leilani Bellweather,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0073,2026-09-01T14:00:00,901019007,Noor Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0119,2026-09-01T14:45:00,901018001,Sunita Ostrowski,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0060,2026-09-02T10:45:00,902012009,Otto Thistlewood,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0056,2026-09-02T12:45:00,901015003,Gideon Yamane,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0069,2026-09-03T10:45:00,902012004,Cyrus Rasmussen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0180,2026-09-03T12:15:00,,Odalys Halvorsen,INVALID,not signed (agency policy),
+S-0053,2026-09-03T13:00:00,901015001,Yara Fairweather,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0013,2026-09-04T09:45:00,902011001,Zofia Sorrento,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0107,2026-09-05T09:30:00,902011010,Priya Achterberg,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0176,2026-09-05T09:30:00,,Yara Ndiaye,REVIEW,"parcel not resolved: no parcel, account, or address given",
+S-0108,2026-09-05T10:00:00,902011010,Renata Achterberg,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); tenant of the parcel,apn
+S-0221,2026-09-05T14:30:00,955001001,Kenji Quintero,REVIEW,APN is not on the parcel roll,apn
+S-0020,2026-09-06T10:15:00,904014008,Ingrid Sorrento,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0131,2026-09-06T11:30:00,901012009,Tamsin Abernathy,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); owner of the parcel,apn
+S-0166,2026-09-07T10:15:00,903011001,Yara Oyelaran,COUNTED,tenant of the parcel; first valid protest for the parcel,account
+S-0130,2026-09-07T10:45:00,901010007,Kenji Fairweather,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0142,2026-09-07T10:45:00,901015006,Priya Castellanos,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); owner of the parcel,apn
+S-0026,2026-09-07T13:30:00,903017008,Marisol Sorrento,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0198,2026-09-07T13:45:00,902014005,Emeka Okafor Jr.,REVIEW,signer is not a record owner or a customer of record for the parcel,apn
+S-0125,2026-09-08T11:15:00,902015006,Priya Sorrento,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0149,2026-09-08T12:30:00,901019010,Ingrid Lindqvist,DUPLICATE,same signer already protested for this parcel,apn
+S-0174,2026-09-08T14:00:00,901012010,Tomas Quintero,COUNTED,tenant of the parcel; first valid protest for the parcel,address
+S-0113,2026-09-08T16:00:00,904017005,Daniel Rasmussen,DUPLICATE,same signer already protested for this parcel,apn
+S-0047,2026-09-09T09:00:00,901010007,Emeka Fairweather,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); owner of the parcel,apn
+S-0203,2026-09-09T09:30:00,903012010,Odalys Whitlock Jr.,REVIEW,signer is not a record owner or a customer of record for the parcel,apn
+S-0146,2026-09-09T12:15:00,901018006,Rafael Achterberg,DUPLICATE,same signer already protested for this parcel,apn
+S-0079,2026-09-09T14:00:00,903018006,Noor Ostrowski,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0139,2026-09-09T16:00:00,901014010,Ines Oyelaran,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0042,2026-09-09T16:45:00,901012004,Farah Yamane,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0112,2026-09-09T16:45:00,901013003,Mireille Sorrento,DUPLICATE,same signer already protested for this parcel,apn
+S-0175,2026-09-09T16:45:00,,Bashir Ndiaye,REVIEW,"parcel not resolved: no parcel, account, or address given",
+S-0007,2026-09-10T09:00:00,902017004,Priya Achterberg,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0070,2026-09-10T09:45:00,901016001,Emeka Delacroix,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0206,2026-09-10T10:00:00,901018003,Tamsin Okafor,WITHDRAWAL_APPLIED,removed this signer's earlier protest,apn
+S-0171,2026-09-10T12:00:00,904016006,Tomas Delacroix,COUNTED,owner of the parcel; first valid protest for the parcel,address
+S-0050,2026-09-11T09:00:00,903015001,Cyrus Delacroix,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0014,2026-09-11T10:00:00,904019009,Daniel Quintero,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0208,2026-09-11T10:00:00,904017004,Bashir Lindqvist,WITHDRAWAL_APPLIED,removed this signer's earlier protest,apn
+S-0120,2026-09-11T14:00:00,901018001,Odalys Rasmussen,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); tenant of the parcel,apn
+S-0220,2026-09-12T09:30:00,905010005,Zofia Sorrento,NOT_COUNTED,parcel is on the roll but is not an identified parcel for this fee,apn
+S-0183,2026-09-12T10:00:00,,Ingrid Thistlewood,INVALID,not signed (agency policy),
+S-0210,2026-09-12T10:00:00,902012005,Gideon Ndiaye,WITHDRAWAL_APPLIED,removed this signer's earlier protest,apn
+S-0161,2026-09-12T11:00:00,903010005,Desmond Fairweather,COUNTED,tenant of the parcel; first valid protest for the parcel,account
+S-0159,2026-09-12T11:45:00,901015007,Cyrus Achterberg,COUNTED,tenant of the parcel; first valid protest for the parcel,account
+S-0082,2026-09-12T12:45:00,901010010,Kenji Nakagawa,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0059,2026-09-12T16:00:00,903011002,Renata Okafor,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0144,2026-09-13T09:00:00,901015008,Abena Thistlewood,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); owner of the parcel,apn
+S-0152,2026-09-13T09:15:00,904019008,Abena Quintero,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0212,2026-09-13T10:00:00,904019006,Bashir Varga,WITHDRAWAL_APPLIED,removed this signer's earlier protest,apn
+S-0055,2026-09-13T12:00:00,902018008,Bashir Ostrowski,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0202,2026-09-13T16:45:00,901013001,Ines Bellweather Jr.,REVIEW,signer is not a record owner or a customer of record for the parcel,apn
+S-0214,2026-09-14T10:00:00,901015005,Farah Oyelaran,WITHDRAWAL_APPLIED,removed this signer's earlier protest,apn
+S-0003,2026-09-14T11:00:00,903011007,Daniel Ostrowski,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0018,2026-09-14T11:30:00,901012009,Tamsin Abernathy,DUPLICATE,same signer already protested for this parcel,apn
+S-0098,2026-09-14T12:00:00,901019001,Desmond Rasmussen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0126,2026-09-14T12:45:00,902015006,Priya Sorrento,DUPLICATE,same signer already protested for this parcel,apn
+S-0129,2026-09-14T13:00:00,901010007,Emeka Fairweather,DUPLICATE,same signer already protested for this parcel,apn
+S-0061,2026-09-14T15:00:00,903019002,Hollis Quintero,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0158,2026-09-15T10:15:00,901016009,Rafael Marchetti,COUNTED,tenant of the parcel; first valid protest for the parcel,account
+S-0012,2026-09-15T13:15:00,904018009,Abena Oyelaran,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0078,2026-09-15T15:15:00,902010007,Bashir Bellweather,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0039,2026-09-16T15:30:00,904015009,Mireille Fairweather,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0051,2026-09-17T09:00:00,904017002,Tomas Achterberg,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0138,2026-09-17T13:30:00,901014006,Rafael Kowalczyk,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0222,2026-09-17T14:00:00,956002003,Farah Castellanos,REVIEW,APN is not on the parcel roll,apn
+S-0134,2026-09-18T12:00:00,901013001,Kenji Ndiaye,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0071,2026-09-18T12:15:00,901017003,Emeka Lindqvist,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0104,2026-09-18T12:45:00,902011009,Daniel Nakagawa,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0004,2026-09-19T11:00:00,901015006,Thaddeus Castellanos,DUPLICATE,same signer already protested for this parcel,apn
+S-0100,2026-09-19T15:15:00,903016001,Gideon Ndiaye,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0105,2026-09-19T15:15:00,902010005,Tomas Tanaka,DUPLICATE,same signer already protested for this parcel,apn
+S-0028,2026-09-19T15:45:00,902018001,Abena Halvorsen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0103,2026-09-19T16:45:00,903012002,Abena Castellanos,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0117,2026-09-20T09:45:00,904010002,Ingrid Halvorsen,DUPLICATE,same signer already protested for this parcel,apn
+S-0160,2026-09-20T11:30:00,904019004,Mireille Sorrento,COUNTED,tenant of the parcel; first valid protest for the parcel,account
+S-0068,2026-09-20T12:30:00,904012005,Zofia Sorrento,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0097,2026-09-21T10:45:00,903019009,Luca Whitlock,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0155,2026-09-21T11:00:00,903016010,Desmond Abernathy,DUPLICATE,same signer already protested for this parcel,apn
+S-0151,2026-09-21T15:15:00,904019008,Abena Quintero,DUPLICATE,same signer already protested for this parcel,apn
+S-0189,2026-09-21T16:30:00,,Hollis Rasmussen,INVALID,channel 'email' is not an accepted written channel (agency policy),
+S-0137,2026-09-22T10:00:00,901014006,Otto Kowalczyk,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); owner of the parcel,apn
+S-0092,2026-09-22T11:00:00,903017001,Rafael Fairweather,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0025,2026-09-22T13:00:00,904017001,Priya Kowalczyk,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0043,2026-09-22T13:45:00,901011002,Callum Sorrento,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0072,2026-09-22T14:00:00,902019009,Noor Castellanos,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0219,2026-09-22T15:15:00,905010004,Wendell Castellanos,NOT_COUNTED,parcel is on the roll but is not an identified parcel for this fee,apn
+S-0179,2026-09-23T11:30:00,,Hollis Oyelaran,REVIEW,parcel not resolved: account number not found,
+S-0087,2026-09-23T12:30:00,901016008,Zofia Yamane,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0062,2026-09-23T13:15:00,901015002,Cyrus Petrosyan,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0123,2026-09-23T14:15:00,901014005,Wendell Quintero,DUPLICATE,same signer already protested for this parcel,apn
+S-0041,2026-09-24T10:00:00,902011005,Cyrus Fairweather,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0090,2026-09-24T11:00:00,901016010,Renata Castellanos,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0035,2026-09-24T16:30:00,904018004,Ines Okafor,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0058,2026-09-25T09:45:00,902014004,Priya Oyelaran,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0032,2026-09-25T11:45:00,904011005,Abena Petrosyan,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0136,2026-09-25T14:15:00,901014003,Wendell Oyelaran,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); owner of the parcel,apn
+S-0089,2026-09-25T15:30:00,901017005,Ingrid Mwangi,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0052,2026-09-26T10:00:00,904019003,Renata Castellanos,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0008,2026-09-26T12:30:00,902019004,Mireille Abernathy,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0163,2026-09-26T12:30:00,902016005,Marisol Yamane,COUNTED,owner of the parcel; first valid protest for the parcel,account
+S-0038,2026-09-26T15:00:00,903016003,Emeka Okafor,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0033,2026-09-26T15:45:00,903015007,Yara Delacroix,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0031,2026-09-27T13:45:00,901014010,Ines Oyelaran,DUPLICATE,same signer already protested for this parcel,apn
+S-0017,2026-09-27T16:00:00,901014006,Otto Kowalczyk,DUPLICATE,same signer already protested for this parcel,apn
+S-0010,2026-09-27T16:15:00,904011002,Wendell Lindqvist,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0077,2026-09-27T16:30:00,902019006,Noor Nakagawa,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0019,2026-09-28T11:30:00,902019005,Odalys Achterberg,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0167,2026-09-28T12:30:00,904014001,Tamsin Fairweather,COUNTED,owner of the parcel; first valid protest for the parcel,address
+S-0084,2026-09-29T09:45:00,904017007,Odalys Whitlock,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0184,2026-09-29T10:30:00,,Odalys Ostrowski,INVALID,not signed (agency policy),
+S-0116,2026-09-29T12:30:00,901010002,Kenji Thistlewood,DUPLICATE,same signer already protested for this parcel,apn
+S-0085,2026-09-30T12:00:00,903014008,Tomas Petrosyan,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0049,2026-09-30T13:00:00,903014005,Desmond Halvorsen,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0140,2026-09-30T14:45:00,901014010,Tamsin Oyelaran,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); owner of the parcel,apn
+S-0191,2026-09-30T16:30:00,,Abena Halvorsen,INVALID,channel 'email' is not an accepted written channel (agency policy),
+S-0021,2026-10-01T10:30:00,902016003,Mireille Mwangi,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0127,2026-10-01T10:45:00,902012006,Ines Ndiaye,DUPLICATE,same signer already protested for this parcel,apn
+S-0099,2026-10-01T12:00:00,903010001,Emeka Achterberg,COUNTED,tenant of the parcel; first valid protest for the parcel,apn
+S-0154,2026-10-01T15:45:00,903014006,Daniel Nakagawa,DUPLICATE,same signer already protested for this parcel,apn
+S-0096,2026-10-01T16:45:00,901017006,Otto Nakagawa,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0109,2026-10-02T09:00:00,903018008,Ingrid Abernathy,DUPLICATE,same signer already protested for this parcel,apn
+S-0133,2026-10-02T13:30:00,901013001,Yara Ndiaye,DUPLICATE,parcel already counted once (Gov. Code § 53755(b)); owner of the parcel,apn
+S-0022,2026-10-03T13:45:00,902017010,Yara Marchetti,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0083,2026-10-03T13:45:00,903019010,Marisol Thistlewood,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0036,2026-10-04T10:45:00,901014009,Hollis Fairweather,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0193,2026-10-04T11:00:00,,Leilani Whitlock,INVALID,channel 'email' is not an accepted written channel (agency policy),
+S-0027,2026-10-04T13:15:00,902010002,Cyrus Petrosyan,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0170,2026-10-04T14:45:00,901011005,Hollis Thistlewood,COUNTED,tenant of the parcel; first valid protest for the parcel,address
+S-0046,2026-10-04T16:45:00,901018007,Noor Marchetti,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0215,2026-10-06T19:05:00,901018003,Tamsin Okafor,COUNTED,owner of the parcel; first valid protest for the parcel,apn
+S-0195,2026-10-06T19:38:00,,Renata Kowalczyk,INVALID,channel 'oral' is not an accepted written channel (agency policy),
+S-0196,2026-10-06T19:40:00,,Odalys Quintero,INVALID,channel 'oral' is not an accepted written channel (agency policy),
+S-0197,2026-10-06T19:49:00,,Cyrus Mwangi,INVALID,channel 'oral' is not an accepted written channel (agency policy),
+S-0186,2026-10-06T21:10:00,,Luca Whitlock,INVALID,received after the close of the hearing,
+S-0188,2026-10-06T21:10:00,,Priya Yamane,INVALID,received after the close of the hearing,
+S-0185,2026-10-07T21:10:00,,Leilani Thistlewood,INVALID,received after the close of the hearing,
+S-0187,2026-10-07T21:10:00,,Mireille Whitlock,INVALID,received after the close of the hearing,

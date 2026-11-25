@@ -1,0 +1,183 @@
+{
+  "disclaimer": "Fictional data. Portfolio demo, not legal advice.",
+  "case": {
+    "agency": "Marlow Creek Water District (fictional)",
+    "proceeding": "section_6_fee",
+    "service": "water",
+    "notice_mailed": "2026-08-03",
+    "hearing_date": "2026-10-06",
+    "hearing_close": "2026-10-06T20:30:00"
+  },
+  "protest_tally": {
+    "identified_parcels": 400,
+    "threshold": 201,
+    "threshold_rule": "Cal. Const. art. XIII D, \u00a7 6(a)(2)",
+    "counted_protests": 147,
+    "review_items_that_could_add_a_parcel": 13,
+    "max_possible_protests": 160,
+    "outcome": "NO_MAJORITY_PROTEST",
+    "shortfall_to_majority": 54,
+    "submissions_received": 222,
+    "lines_by_status": {
+      "COUNTED": 147,
+      "DUPLICATE": 31,
+      "INVALID": 18,
+      "NOT_COUNTED": 4,
+      "REVIEW": 14,
+      "WITHDRAWAL_APPLIED": 5,
+      "WITHDRAWN": 5
+    }
+  },
+  "calendar_checks": [
+    {
+      "id": "hearing_gap",
+      "ok": true,
+      "detail": "Hearing is 64 days after the notice was mailed; at least 45 required.",
+      "source": "Cal. Const. art. XIII D, \u00a7 6(a)(2)"
+    },
+    {
+      "id": "ab2257_scope",
+      "ok": true,
+      "detail": "Service type 'water' is within the \u00a7 53759.1 definition of fee or assessment.",
+      "source": "Gov. Code \u00a7 53759.1(a)(2)"
+    },
+    {
+      "id": "fee_available",
+      "ok": true,
+      "detail": "Proposed fee was public 49 days before the objection deadline; at least 45 required.",
+      "source": "Gov. Code \u00a7 53759.1(c)(1)"
+    },
+    {
+      "id": "objection_window",
+      "ok": true,
+      "detail": "Objection deadline is 49 days after notice; at least 45 required.",
+      "source": "Gov. Code \u00a7 53759.1(c)(4)"
+    },
+    {
+      "id": "deadline_before_hearing",
+      "ok": true,
+      "detail": "Objection deadline 2026-09-21 is on or before the hearing date 2026-10-06.",
+      "source": "Gov. Code \u00a7 53759.1(c)(7)"
+    },
+    {
+      "id": "written_basis_posted",
+      "ok": true,
+      "detail": "Written basis posted on the website and linked in the mailed notice.",
+      "source": "Gov. Code \u00a7 53759.1(c)(2)"
+    },
+    {
+      "id": "notice_statement",
+      "ok": true,
+      "detail": "Notice carries the prominent failure-to-object statement and the requirements for objecting.",
+      "source": "Gov. Code \u00a7 53759.1(c)(6)(A)-(B)"
+    },
+    {
+      "id": "mail_on_request",
+      "ok": true,
+      "detail": "2 request(s) for a mailed copy of the written basis; 0 not yet mailed.",
+      "source": "Gov. Code \u00a7 53759.1(c)(3)"
+    },
+    {
+      "id": "sol_statement",
+      "ok": true,
+      "detail": "Notice states the 120-day statute of limitations.",
+      "source": "Gov. Code \u00a7 53759(d)"
+    }
+  ],
+  "objection_gate": {
+    "timely_objections": 9,
+    "answered": 7,
+    "open": [
+      "OBJ-007",
+      "OBJ-009"
+    ],
+    "untimely": 2,
+    "protest_letters_awaiting_triage": [
+      {
+        "submission_id": "S-0007",
+        "received": "2026-09-10T09:00:00",
+        "keywords": "tier, subsid"
+      },
+      {
+        "submission_id": "S-0009",
+        "received": "2026-08-30T16:15:00",
+        "keywords": "article xiii d, methodology"
+      }
+    ],
+    "gate": "BLOCKED",
+    "source": "Gov. Code \u00a7 53759.1(c)(5)"
+  },
+  "statute_of_limitations": {
+    "runs_from": "2027-01-01",
+    "last_day_raw": "2027-05-01",
+    "falls_on_weekend": true,
+    "note": "Weekend and holiday roll-forward rules were not checked; an attorney must confirm.",
+    "source": "Gov. Code \u00a7 53759(a)"
+  },
+  "record_index": [
+    {
+      "category": "A",
+      "description": "Cost-of-service or rate study, engineer's report, staff reports, related documents",
+      "documents": [
+        "2026 Water Cost-of-Service Study",
+        "Staff report, Oct. 6, 2026"
+      ],
+      "present": true
+    },
+    {
+      "category": "B",
+      "description": "Transcripts or minutes of proceedings before the decisionmaking body and advisory bodies",
+      "documents": [
+        "Minutes, Finance Committee, July 14, 2026"
+      ],
+      "present": true
+    },
+    {
+      "category": "C",
+      "description": "All notices issued",
+      "documents": [
+        "Prop 218 notice mailed Aug. 3, 2026"
+      ],
+      "present": true
+    },
+    {
+      "category": "D",
+      "description": "Timely written objections and agency responses",
+      "documents": [
+        "Objections OBJ-001 to OBJ-011 and responses"
+      ],
+      "present": true
+    },
+    {
+      "category": "E",
+      "description": "Written evidence or correspondence submitted to or sent from the agency before the hearing was completed",
+      "documents": [],
+      "present": false
+    },
+    {
+      "category": "F",
+      "description": "Documentation of the final decision (ordinance, resolution, minutes)",
+      "documents": [
+        "Draft Resolution 2026-14"
+      ],
+      "present": true
+    },
+    {
+      "category": "G",
+      "description": "Protests, ballots, and tabulation records",
+      "documents": [
+        "Protest audit log and tabulation"
+      ],
+      "present": true
+    },
+    {
+      "category": "H",
+      "description": "Written evidence supporting the fee in the agency's files before the hearing was completed",
+      "documents": [
+        "Capital improvement plan 2027-2031"
+      ],
+      "present": true
+    }
+  ],
+  "rules_verified_on": "2026-11-25"
+}

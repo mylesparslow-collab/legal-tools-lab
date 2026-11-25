@@ -1,0 +1,15 @@
+submission_id,received,apn,signer,reason
+S-0200,2026-08-13T14:30:00,901019002,Thaddeus Mwangi Jr.,signer is not a record owner or a customer of record for the parcel
+S-0177,2026-08-18T09:15:00,,Emeka Castellanos,"parcel not resolved: no parcel, account, or address given"
+S-0201,2026-08-26T12:15:00,903017004,Thaddeus Ndiaye Jr.,signer is not a record owner or a customer of record for the parcel
+S-0178,2026-08-26T16:15:00,,Zofia Quintero,parcel not resolved: account number not found
+S-0204,2026-08-27T15:30:00,901016007,Daniel Ostrowski Jr.,signer is not a record owner or a customer of record for the parcel
+S-0199,2026-08-30T10:00:00,903014010,Marisol Thistlewood Jr.,signer is not a record owner or a customer of record for the parcel
+S-0176,2026-09-05T09:30:00,,Yara Ndiaye,"parcel not resolved: no parcel, account, or address given"
+S-0221,2026-09-05T14:30:00,955001001,Kenji Quintero,APN is not on the parcel roll
+S-0198,2026-09-07T13:45:00,902014005,Emeka Okafor Jr.,signer is not a record owner or a customer of record for the parcel
+S-0203,2026-09-09T09:30:00,903012010,Odalys Whitlock Jr.,signer is not a record owner or a customer of record for the parcel
+S-0175,2026-09-09T16:45:00,,Bashir Ndiaye,"parcel not resolved: no parcel, account, or address given"
+S-0202,2026-09-13T16:45:00,901013001,Ines Bellweather Jr.,signer is not a record owner or a customer of record for the parcel
+S-0222,2026-09-17T14:00:00,956002003,Farah Castellanos,APN is not on the parcel roll
+S-0179,2026-09-23T11:30:00,,Hollis Oyelaran,parcel not resolved: account number not found

@@ -1,0 +1,76 @@
+{
+  "agency": "Marlow Creek Water District (fictional)",
+  "proceeding": "section_6_fee",
+  "service": "water",
+  "notice_mailed": "2026-08-03",
+  "hearing_date": "2026-10-06",
+  "hearing_close": "2026-10-06T20:30:00",
+  "adoption_date": "2026-10-06",
+  "effective_date": "2027-01-01",
+  "ab2257": {
+    "proposed_fee_available": "2026-08-03",
+    "objection_deadline": "2026-09-21T17:00:00",
+    "notice": {
+      "written_basis_on_website": true,
+      "website_link_in_notice": true,
+      "exhaustion_statement_prominent": true,
+      "objection_requirements_stated": true,
+      "sol_120_day_statement": true
+    },
+    "written_basis_mail_requests": [
+      {
+        "requester": "Resident A",
+        "requested": "2026-08-11",
+        "mailed": "2026-08-12"
+      },
+      {
+        "requester": "Resident B",
+        "requested": "2026-09-02",
+        "mailed": "2026-09-03"
+      }
+    ]
+  },
+  "policy": {
+    "accepted_channels": [
+      "mail",
+      "hand_delivery",
+      "hearing_written"
+    ],
+    "require_signature": true,
+    "allow_withdrawal": true
+  },
+  "record_documents": [
+    {
+      "category": "A",
+      "title": "2026 Water Cost-of-Service Study"
+    },
+    {
+      "category": "A",
+      "title": "Staff report, Oct. 6, 2026"
+    },
+    {
+      "category": "B",
+      "title": "Minutes, Finance Committee, July 14, 2026"
+    },
+    {
+      "category": "C",
+      "title": "Prop 218 notice mailed Aug. 3, 2026"
+    },
+    {
+      "category": "D",
+      "title": "Objections OBJ-001 to OBJ-011 and responses"
+    },
+    {
+      "category": "F",
+      "title": "Draft Resolution 2026-14"
+    },
+    {
+      "category": "G",
+      "title": "Protest audit log and tabulation"
+    },
+    {
+      "category": "H",
+      "title": "Capital improvement plan 2027-2031"
+    }
+  ]
+}

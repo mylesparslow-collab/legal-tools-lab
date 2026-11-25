@@ -1,0 +1,215 @@
+{
+  "_about": "Legal numbers and rules used by the engine, kept as data. Each entry carries its source, a short quote, and a verification status. 'verified_primary' means the text was read on leginfo.legislature.ca.gov on the date shown. Nothing here is legal advice; an attorney must confirm every entry before any real use.",
+  "verified_on": "2026-11-25",
+  "verification_method": "Read the current code text on leginfo.legislature.ca.gov (Gov. Code Title 5, Div. 2, Pt. 1, Ch. 4, Arts. 4.6 and 4.7; Cal. Const. art. XIII D).",
+  "rules": {
+    "fee_hearing_min_days_after_notice": {
+      "value": 45,
+      "unit": "days",
+      "source": "Cal. Const. art. XIII D, § 6(a)(2)",
+      "quote": "not less than 45 days after mailing the notice of the proposed fee or charge",
+      "status": "verified_primary"
+    },
+    "fee_majority_protest": {
+      "value": "more_than_half_of_identified_parcels",
+      "source": "Cal. Const. art. XIII D, § 6(a)(2)",
+      "quote": "If written protests against the proposed fee or charge are presented by a majority of owners of the identified parcels, the agency shall not impose the fee or charge.",
+      "status": "verified_primary",
+      "note": "The denominator is every identified parcel, not the protests received. The engine uses floor(N/2)+1, which is the smallest whole number greater than half. '50% + 1' overstates the threshold when N is odd."
+    },
+    "fee_one_protest_per_parcel": {
+      "value": 1,
+      "unit": "written protests counted per parcel",
+      "source": "Gov. Code § 53755(b)",
+      "quote": "One written protest per parcel, filed by an owner or tenant of the parcel, shall be counted in calculating a majority protest",
+      "status": "verified_primary"
+    },
+    "tenant_as_property_owner": {
+      "value": "tenants directly liable to pay the fee",
+      "source": "Cal. Const. art. XIII D, § 2(g); Gov. Code § 53755(b)",
+      "quote": "\"Property ownership\" shall be deemed to include tenancies of real property where tenants are directly liable to pay the assessment, fee, or charge in question.",
+      "status": "verified_primary",
+      "note": "The engine treats a tenant as eligible only when the tenant is the customer of record on a billing account for the parcel. Whether that is the right test for a given agency is an attorney question."
+    },
+    "protest_retention_years": {
+      "value": 2,
+      "unit": "years after the hearing",
+      "source": "Gov. Code § 53755(d)",
+      "quote": "The agency shall maintain all written protests for a minimum of two years following the date of the hearing",
+      "status": "verified_primary"
+    },
+    "assessment_hearing_min_days_after_notice": {
+      "value": 45,
+      "unit": "days",
+      "source": "Cal. Const. art. XIII D, § 4(e); Gov. Code § 53753(b)",
+      "quote": "not less than 45 days after mailing the notice of the proposed assessment",
+      "status": "verified_primary"
+    },
+    "assessment_majority_protest": {
+      "value": "weighted_opposed_exceeds_weighted_in_favor",
+      "source": "Cal. Const. art. XIII D, § 4(e); Gov. Code § 53753(e)(4)",
+      "quote": "A majority protest exists if, upon the conclusion of the hearing, ballots submitted in opposition to the assessment exceed the ballots submitted in favor of the assessment. ... the ballots shall be weighted according to the proportional financial obligation of the affected property.",
+      "status": "verified_primary",
+      "note": "Only ballots submitted and not withdrawn are compared. A tie is not a majority protest. This is a different test from the § 6 fee protest."
+    },
+    "assessment_multi_owner_allocation": {
+      "value": "allocate_parcel_amount_among_submitted_ballots_by_record_interest",
+      "source": "Gov. Code § 53753(e)(3)",
+      "quote": "the amount of the proposed assessment to be imposed upon the identified parcel shall be allocated to each ballot submitted in proportion to the respective record ownership interests",
+      "status": "verified_primary",
+      "note": "ATTORNEY REVIEW: when only some co-owners return ballots, the engine spreads the whole parcel amount across the ballots returned, in proportion to their interests. The other reading gives each ballot only its own share. If interests are not on the record the statute leaves it to documentation satisfactory to the agency, so the engine sends that parcel to review."
+    },
+    "assessment_ballot_change_or_withdraw": {
+      "value": "allowed_before_conclusion_of_public_testimony",
+      "source": "Gov. Code § 53753(c)",
+      "quote": "an assessment ballot may be submitted, or changed, or withdrawn by the person who submitted the ballot prior to the conclusion of the public testimony",
+      "status": "verified_primary"
+    },
+    "assessment_ballot_signed": {
+      "value": true,
+      "source": "Gov. Code § 53753(c)",
+      "quote": "Each assessment ballot shall be signed and either mailed or otherwise delivered to the address indicated on the assessment ballot.",
+      "status": "verified_primary"
+    },
+    "assessment_ballot_retention_years": {
+      "value": 2,
+      "unit": "years",
+      "source": "Gov. Code § 53753(e)(2)",
+      "quote": "The ballots shall be preserved for a minimum of two years",
+      "status": "verified_primary"
+    },
+    "sol_days": {
+      "value": 120,
+      "unit": "days",
+      "source": "Gov. Code § 53759(a)",
+      "quote": "shall be commenced within 120 days of the effective date or of the date of the final passage, adoption, or approval of the ordinance, resolution, or motion, whichever is later",
+      "status": "verified_primary",
+      "note": "Water or sewer fees and charges only. The engine reports the raw 120th day and flags a weekend; it does not apply holiday or weekend roll-forward rules (Code Civ. Proc. §§ 12-12b), which were not checked in this build."
+    },
+    "sol_applies_to_fees_adopted_after": {
+      "value": "2022-01-01",
+      "source": "Gov. Code § 53759(f)",
+      "quote": "This section shall only apply to a fee or charge for water or sewer service that has been adopted, modified, or amended after January 1, 2022.",
+      "status": "verified_primary"
+    },
+    "sol_statement_in_notice": {
+      "value": true,
+      "source": "Gov. Code § 53759(d)",
+      "quote": "shall include in the written notice a statement that there is a 120-day statute of limitations for challenging any new, increased, or extended fee or charge",
+      "status": "verified_primary"
+    },
+    "ab2257_operative": {
+      "value": "2025-01-01",
+      "source": "Stats. 2024, ch. 561 (AB 2257), §§ 2-3, adding Gov. Code §§ 53759.1, 53759.2",
+      "quote": "Effective January 1, 2025.",
+      "status": "verified_primary"
+    },
+    "ab2257_scope": {
+      "value": ["water", "sewer", "special_assessment"],
+      "source": "Gov. Code § 53759.1(a)(2)",
+      "quote": "\"Fee or assessment\" means the amount of any property-related water or sewer fee or charge, or any special assessment levied or the methodology used to develop and levy the fee, charge, or assessment.",
+      "status": "verified_primary",
+      "note": "'Sewer' is defined to include storm water works (§ 53759.1(a)(3)). Refuse collection fees are not in the definition."
+    },
+    "ab2257_fee_available_min_days_before_objection_deadline": {
+      "value": 45,
+      "unit": "days",
+      "source": "Gov. Code § 53759.1(c)(1)",
+      "quote": "Makes available to the public a proposed fee or assessment no less than 45 days prior to the deadline for a ratepayer to submit an objection",
+      "status": "verified_primary"
+    },
+    "ab2257_written_basis_on_website_and_link_in_notice": {
+      "value": true,
+      "source": "Gov. Code § 53759.1(c)(2)",
+      "quote": "Posts on its internet website a written basis for the fee or assessment and includes a link to the internet website in the written notice",
+      "status": "verified_primary"
+    },
+    "ab2257_mail_written_basis_on_request": {
+      "value": true,
+      "source": "Gov. Code § 53759.1(c)(3)",
+      "quote": "Mails the written basis described in paragraph (2) to a property owner upon request.",
+      "status": "verified_primary"
+    },
+    "ab2257_objection_deadline_min_days_after_notice": {
+      "value": 45,
+      "unit": "days",
+      "source": "Gov. Code § 53759.1(c)(4)",
+      "quote": "submitted by a deadline established by the local agency, which shall be no less than 45 days after notice is provided",
+      "status": "verified_primary"
+    },
+    "ab2257_respond_in_writing_before_hearing_close": {
+      "value": true,
+      "source": "Gov. Code § 53759.1(c)(5)",
+      "quote": "Considers and responds in writing ... to any timely submitted written objections prior to the close of the protest hearing or ballot tabulation hearing ... The agency's response shall explain the substantive basis for retaining or altering the proposed fee or assessment ... Timely submitted written objections and agency responses ... shall be presented to the local agency's governing body for consideration prior to or during a protest hearing",
+      "status": "verified_primary",
+      "note": "The statute does not say what happens if one timely objection goes unanswered. Subdivision (c) says the exhaustion requirement 'applies only if the local agency does all of the following', and (e) says there is no independent cause of action over the adequacy of a response. The engine's gate is a conservative internal control, not a statement of the legal consequence."
+    },
+    "ab2257_notice_statement": {
+      "value": true,
+      "source": "Gov. Code § 53759.1(c)(6)(A)-(B)",
+      "quote": "a prominently displayed statement ... That all written objections must be submitted within the written objection period ... and that a failure to timely object in writing bars any right to challenge that fee or assessment through a legal proceeding. ... All substantive and procedural requirements for submitting an objection",
+      "status": "verified_primary"
+    },
+    "ab2257_complete_before_hearing_ends": {
+      "value": true,
+      "source": "Gov. Code § 53759.1(c)(7)",
+      "quote": "Completes the procedures described in paragraphs (1) to (6), inclusive, prior to the completion of the protest hearing and ballot tabulating hearing",
+      "status": "verified_primary"
+    },
+    "ab2257_record_categories": {
+      "value": {
+        "A": "Cost-of-service or rate study, engineer's report, staff reports, related documents",
+        "B": "Transcripts or minutes of proceedings before the decisionmaking body and advisory bodies",
+        "C": "All notices issued",
+        "D": "Timely written objections and agency responses",
+        "E": "Written evidence or correspondence submitted to or sent from the agency before the hearing was completed",
+        "F": "Documentation of the final decision (ordinance, resolution, minutes)",
+        "G": "Protests, ballots, and tabulation records",
+        "H": "Written evidence supporting the fee in the agency's files before the hearing was completed"
+      },
+      "source": "Gov. Code § 53759.2(b)(1)(A)-(H)",
+      "quote": "the court's review shall be limited to the record of proceedings before the local agency",
+      "status": "verified_primary",
+      "note": "Review is not strictly closed. § 53759.2(b)(2)(A)-(E) lets in outside evidence on standing, affirmative defenses, completeness of the record, compliance with § 53759.1(c), and to explain the record."
+    },
+    "hydrant_costs": {
+      "value": "may be included in water rates",
+      "source": "Gov. Code § 53750.5(b) (SB 1386, Stats. 2020, ch. 240)",
+      "quote": "may include the costs to construct, maintain, repair, or replace hydrants",
+      "status": "verified_primary",
+      "note": "Used only as an issue tag for objections."
+    },
+    "peaking_factors": {
+      "value": "may allocate incrementally higher costs by meter size or peaking factors",
+      "source": "Gov. Code § 53750.6(b)(2) (AB 1827, Stats. 2024, ch. 359)",
+      "quote": "may be allocated among customer classes, within customer classes, or both, based on meter size or peaking factors",
+      "status": "verified_primary",
+      "note": "Used only as an issue tag for objections. The report did not cite this section."
+    },
+    "case_capistrano": {
+      "value": "Capistrano Taxpayers Assn., Inc. v. City of San Juan Capistrano (2015) 235 Cal.App.4th 1493",
+      "source": "Named in the research report without a citation; citation supplied from memory",
+      "status": "not_verified",
+      "note": "Not read in this build. Not used by the engine."
+    },
+    "case_coziahr": {
+      "value": "Coziahr v. Otay Water District (2024) 103 Cal.App.5th 785",
+      "source": "Named in the research report without a citation; citation supplied from memory",
+      "status": "not_verified",
+      "note": "Not read in this build. Not used by the engine."
+    }
+  },
+  "agency_policy_defaults": {
+    "_about": "These are not in the Constitution or the Government Code. Agencies set them in their own protest guidelines. The values below are invented for the fictional sample agency.",
+    "status": "agency_policy_fictional",
+    "accepted_channels": ["mail", "hand_delivery", "hearing_written"],
+    "require_signature": true,
+    "allow_withdrawal": true,
+    "tenant_must_be_customer_of_record": true
+  },
+  "objection_keywords": {
+    "_about": "A plain keyword pre-sort that routes protest letters to a person for objection triage. It is a heuristic, not law, and it decides nothing.",
+    "status": "heuristic",
+    "terms": ["article xiii d", "prop 218", "prop. 218", "proposition 218", "proportional", "cost of service", "cost-of-service", "tier", "peaking", "hydrant", "exceeds the cost", "subsid", "unconstitutional", "illegal", "unlawful", "methodology", "53750", "noncompliance"]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "weighted_yes_cents": 954000.0,
+  "weighted_no_cents": 1469000.0,
+  "weighted_yes_exact": "954000",
+  "weighted_no_exact": "1469000",
+  "majority_protest": true,
+  "parcels_in_review": [
+    "970100023"
+  ],
+  "outcome": "MAJORITY_PROTEST"
+}

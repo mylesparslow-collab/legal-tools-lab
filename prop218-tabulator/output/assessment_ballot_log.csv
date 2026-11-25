@@ -1,0 +1,27 @@
+ballot_id,apn,owner,status,reason,weight_cents
+B-008,970100007,Tamsin Petrosyan,COUNTED,,42000
+B-016,970100017,Kenji Abernathy,COUNTED,,42000
+B-018,970100019,Luca Delacroix,COUNTED,,61500
+B-005,970100004,Daniel Delacroix,INVALID,not signed (Gov. Code § 53753(c)),
+B-010,970100011,Thaddeus Ndiaye,COUNTED,,125000
+B-011,970100012,Noor Marchetti,COUNTED,,42000
+B-025,970100024,Kenji Lindqvist,COUNTED,,155000
+B-003,970100003,Odalys Rasmussen,COUNTED,,125000
+B-015,970100016,Sunita Ndiaye,COUNTED,,44000
+B-012,970100013,Marisol Yamane,COUNTED,,88000
+B-019,970100020,Noor Thistlewood,COUNTED,,125000
+B-022,970100023,Sunita Rasmussen,REVIEW,co-owner interests not on the record (Gov. Code § 53753(e)(3)),
+B-004,970100004,Emeka Halvorsen,COUNTED,,61500
+B-009,970100009,Marisol Mwangi,COUNTED,,310000
+B-024,970100024,Thaddeus Quintero,COUNTED,,155000
+B-014,970100016,Otto Marchetti,COUNTED,,44000
+B-002,970100002,Kenji Fairweather,COUNTED,,88000
+B-001,970100001,Hollis Rasmussen,SUPERSEDED,changed or withdrawn by B-900,
+B-007,970100006,Desmond Sorrento,COUNTED,,61500
+B-020,970100021,Otto Nakagawa,COUNTED,,61500
+B-023,970100023,Tamsin Thistlewood,REVIEW,co-owner interests not on the record (Gov. Code § 53753(e)(3)),
+B-017,970100018,Bashir Okafor,COUNTED,,310000
+B-021,970100022,Daniel Ndiaye,COUNTED,,88000
+B-006,970100005,Daniel Sorrento,COUNTED,,42000
+B-013,970100014,Yara Achterberg,COUNTED,,310000
+B-900,970100001,Hollis Rasmussen,COUNTED,,42000

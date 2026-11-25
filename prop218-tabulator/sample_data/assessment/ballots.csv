@@ -1,0 +1,27 @@
+ballot_id,received,apn,owner_name,vote,signed
+B-001,2026-09-24T10:00:00,970-100-001,Hollis Rasmussen,no,Y
+B-002,2026-09-23T10:00:00,970-100-002,Kenji Fairweather,no,Y
+B-003,2026-09-14T10:00:00,970-100-003,Odalys Rasmussen,yes,Y
+B-004,2026-09-20T10:00:00,970-100-004,Emeka Halvorsen,no,Y
+B-005,2026-09-11T10:00:00,970-100-004,Daniel Delacroix,yes,N
+B-006,2026-09-26T10:00:00,970-100-005,Daniel Sorrento,yes,Y
+B-007,2026-09-24T10:00:00,970-100-006,Desmond Sorrento,no,Y
+B-008,2026-09-01T10:00:00,970-100-007,Tamsin Petrosyan,no,Y
+B-009,2026-09-20T10:00:00,970-100-009,Marisol Mwangi,no,Y
+B-010,2026-09-13T10:00:00,970-100-011,Thaddeus Ndiaye,no,Y
+B-011,2026-09-13T10:00:00,970-100-012,Noor Marchetti,no,Y
+B-012,2026-09-16T10:00:00,970-100-013,Marisol Yamane,no,Y
+B-013,2026-09-27T10:00:00,970-100-014,Yara Achterberg,yes,Y
+B-014,2026-09-21T10:00:00,970-100-016,Otto Marchetti,no,Y
+B-015,2026-09-14T10:00:00,970-100-016,Sunita Ndiaye,no,Y
+B-016,2026-09-08T10:00:00,970-100-017,Kenji Abernathy,no,Y
+B-017,2026-09-25T10:00:00,970-100-018,Bashir Okafor,yes,Y
+B-018,2026-09-08T10:00:00,970-100-019,Luca Delacroix,no,Y
+B-019,2026-09-16T10:00:00,970-100-020,Noor Thistlewood,yes,Y
+B-020,2026-09-24T10:00:00,970-100-021,Otto Nakagawa,no,Y
+B-021,2026-09-25T10:00:00,970-100-022,Daniel Ndiaye,no,Y
+B-022,2026-09-17T10:00:00,970-100-023,Sunita Rasmussen,yes,Y
+B-023,2026-09-24T10:00:00,970-100-023,Tamsin Thistlewood,yes,Y
+B-024,2026-09-20T10:00:00,970-100-024,Thaddeus Quintero,no,Y
+B-025,2026-09-13T10:00:00,970-100-024,Kenji Lindqvist,no,Y
+B-900,2026-10-01T10:00:00,970-100-001,Hollis Rasmussen,yes,Y
