@@ -1,0 +1,28 @@
+{
+  "filing_id": "F-2027-008",
+  "scenario": "Not-found citation and quote mismatch (blocked)",
+  "matter": {
+    "number": "M-09127",
+    "client": "Wrenfield Dairy Partners (fictional client)",
+    "caption": "Wrenfield Dairy Partners v. Castellane (fictional)",
+    "case_number": "AR-26-009127"
+  },
+  "court_id": "fict-alder-ridge",
+  "court": "Superior Court, County of Alder Ridge (fictional)",
+  "judge_id": "fict-quillon",
+  "document": {
+    "path": "document.txt",
+    "title": "Opposition to motion to strike",
+    "type": "opposition"
+  },
+  "planned_filing_date": "2027-01-15",
+  "responsible_attorney": {
+    "name": "Perrin Ashgrove (fictional attorney)",
+    "bar_number": "FICT-000101"
+  },
+  "genai": {
+    "used": false
+  },
+  "citation_report": "citation_report.json",
+  "attestations": "attestations.json"
+}

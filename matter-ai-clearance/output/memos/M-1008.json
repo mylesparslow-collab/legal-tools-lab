@@ -1,0 +1,2224 @@
+{
+ "matter": {
+  "id": "M-1008",
+  "name": "Tessaly Harbor v. Bexmoor Holdings (fictional): loan enforcement",
+  "client_id": "tessaly",
+  "matter_type": "commercial litigation",
+  "responsible_attorney": "D. Castellane (fictional)",
+  "intake_date": "2026-10-01",
+  "data_flags": {
+   "phi": "no",
+   "sealed": "no"
+  },
+  "protective_order": {
+   "present": "yes",
+   "document_id": "PO-M1008 (fictional protective order)",
+   "restrictions": {
+    "ai_use": "permitted_with_conditions",
+    "vendor_processing": "barred",
+    "no_retention_after_matter": "yes",
+    "attorneys_eyes_only_tier": "no"
+   },
+   "undertakings_signed_tool_ids": [],
+   "quoted_terms": [
+    {
+     "field": "ai_use",
+     "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public."
+    },
+    {
+     "field": "vendor_processing",
+     "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed."
+    }
+   ]
+  },
+  "intake_note": null
+ },
+ "client_name": "Tessaly Harbor Bank (fictional)",
+ "as_of": "2026-11-25",
+ "policy_version": "2026.11-demo",
+ "pattern_version": "1.4",
+ "data_classes_in_play": [
+  "client_confidential",
+  "protective_order_material"
+ ],
+ "flags": {
+  "needs_analyst_review": false,
+  "unknown_inputs": []
+ },
+ "terms": [
+  {
+   "party_id": "tessaly",
+   "party_name": "Tessaly Harbor Bank (fictional)",
+   "role": "client",
+   "status": "clear",
+   "documents": [
+    "tessaly-ocg-2025",
+    "tessaly-el-2025"
+   ],
+   "classes": [
+    "consent_required",
+    "no_training",
+    "data_residency_retention"
+   ],
+   "conflicts": [],
+   "review_spans": [],
+   "dismissed_by_analyst": [
+    {
+     "document_id": "tessaly-ocg-2025",
+     "class": "disclosure_required",
+     "quote": "2.2 A request for consent must identify the tool, the vendor, the categories of Bank data involved and the safeguards in place.",
+     "start": 453,
+     "end": 580,
+     "by": "Knowledge analyst",
+     "date": "2025-10-02",
+     "reason": "Describes what a consent request contains. Not a separate notice duty."
+    },
+    {
+     "document_id": "tessaly-ocg-2025",
+     "class": "approved_tools_only",
+     "quote": "2.7 All attorneys working on Bank matters must complete the Firm's AI training before using an approved tool.",
+     "start": 1056,
+     "end": 1165,
+     "by": "Knowledge analyst",
+     "date": "2025-10-02",
+     "reason": "Staff training clause. The words 'approved tool' refer back to consent under 2.1."
+    }
+   ],
+   "guarded": [
+    {
+     "document_id": "tessaly-ocg-2025",
+     "class": "ai_prohibited",
+     "start": 863,
+     "end": 1054,
+     "quote": "2.6 Nothing in this section prohibits the use of spell-check, document comparison or e-discovery review tools already in routine use, even where those tools include machine learning features.",
+     "pattern_id": "PRO-03",
+     "guard_id": "G-NEG-01",
+     "guard_kind": "negation"
+    }
+   ],
+   "consent_on_file": [
+    "Written consent from the Office of the General Counsel, 2026-10-14 (fictional)"
+   ],
+   "notice_on_file": []
+  }
+ ],
+ "decisions": [
+  {
+   "feature_id": "assistant-a.chat-web",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "Chat with web search",
+   "short_name": "Assistant A web chat",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10",
+      "POL-LANE-01"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10",
+      "POL-LANE-01",
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "retention longer than the terms allow",
+    "feature not approved for this data class",
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-10",
+    "POL-LANE-01",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-10",
+     "rule_text": "Where an analyst has recorded a retention limit, a feature whose retention is longer, or unknown, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "retention longer than the terms allow",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "assistant-a.file-analysis",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "File upload and analysis",
+   "short_name": "Assistant A files",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10",
+      "POL-LANE-01",
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "retention longer than the terms allow",
+    "feature not approved for this data class",
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-10",
+    "POL-LANE-01",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-10",
+     "rule_text": "Where an analyst has recorded a retention limit, a feature whose retention is longer, or unknown, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "retention longer than the terms allow",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "assistant-a.dms-connector",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "feature": "Connector to the document management system",
+   "short_name": "Assistant A connector",
+   "category": "general assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10",
+      "POL-LANE-01",
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "retention longer than the terms allow",
+    "feature not approved for this data class",
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-10",
+    "POL-LANE-01",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-10",
+     "rule_text": "Where an analyst has recorded a retention limit, a feature whose retention is longer, or unknown, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "retention longer than the terms allow",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.doc-summary",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Summary and drafting in the word processor",
+   "short_name": "Suite B documents",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [
+    {
+     "short": "consent on file",
+     "text": "Stay within the consent on file from Tessaly Harbor Bank (fictional): Written consent from the Office of the General Counsel, 2026-10-14 (fictional).",
+     "rule_id": "POL-CT-04"
+    }
+   ],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-04"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-04",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-04",
+     "rule_text": "Where consent is on file, use stays within the scope of that consent.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-16",
+     "condition": {
+      "short": "consent on file",
+      "text": "Stay within the consent on file from Tessaly Harbor Bank (fictional): Written consent from the Office of the General Counsel, 2026-10-14 (fictional).",
+      "rule_id": "POL-CT-04"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.email",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Email drafting with mailbox access",
+   "short_name": "Suite B email",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-LANE-01",
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "feature not approved for this data class",
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-LANE-01",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "suite-b.meeting-notes",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "feature": "Meeting transcription and notes",
+   "short_name": "Suite B meeting notes",
+   "category": "productivity suite assistant",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10",
+      "POL-LANE-01",
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "retention longer than the terms allow",
+    "feature not approved for this data class",
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-10",
+    "POL-LANE-01",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-10",
+     "rule_text": "Where an analyst has recorded a retention limit, a feature whose retention is longer, or unknown, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "retention longer than the terms allow",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "research-c.qa",
+   "tool_id": "research-c",
+   "tool_name": "Research C",
+   "feature": "Research questions over the vendor's library",
+   "short_name": "Research C questions",
+   "category": "legal research AI",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-10",
+      "POL-LANE-01",
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "retention longer than the terms allow",
+    "feature not approved for this data class",
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-10",
+    "POL-LANE-01",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-10",
+     "rule_text": "Where an analyst has recorded a retention limit, a feature whose retention is longer, or unknown, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "retention longer than the terms allow",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "research-c.brief-upload",
+   "tool_id": "research-c",
+   "tool_name": "Research C",
+   "feature": "Brief upload and analysis",
+   "short_name": "Research C brief upload",
+   "category": "legal research AI",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-06",
+      "POL-CT-10",
+      "POL-CT-11",
+      "POL-LANE-03"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-06",
+      "POL-CT-10",
+      "POL-CT-11",
+      "POL-LANE-01",
+      "POL-LANE-03",
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "terms bar training on client data",
+    "retention longer than the terms allow",
+    "hosting region outside the terms",
+    "feature not approved for this data class",
+    "training terms not confirmed",
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-06",
+    "POL-CT-10",
+    "POL-CT-11",
+    "POL-LANE-01",
+    "POL-LANE-03",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-06",
+     "rule_text": "Where the terms bar training on client data, a feature may be used only if it is confirmed not to train on inputs.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 775,
+       "end": 861,
+       "class": "no_training",
+       "quote": "2.5 The Bank's information may not be used for model training under any circumstances."
+      }
+     ],
+     "banner": "terms bar training on client data",
+     "open_question": "OQ-02",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-10",
+     "rule_text": "Where an analyst has recorded a retention limit, a feature whose retention is longer, or unknown, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "retention longer than the terms allow",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-11",
+     "rule_text": "Where an analyst has recorded allowed regions, a feature hosted elsewhere, or in an unknown region, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "hosting region outside the terms",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-03",
+     "rule_text": "A feature that trains on inputs, or whose training terms are unknown, may not receive client or restricted data.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "training terms not confirmed",
+     "open_question": "OQ-02",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "feature_id": "review-d.review",
+   "tool_id": "review-d",
+   "tool_name": "Review D",
+   "feature": "Review coding and summaries",
+   "short_name": "Review D",
+   "category": "document review AI",
+   "decision": "ALLOWED_WITH_CONDITIONS",
+   "decision_label": "ALLOWED WITH CONDITIONS",
+   "conditions": [
+    {
+     "short": "consent on file",
+     "text": "Stay within the consent on file from Tessaly Harbor Bank (fictional): Written consent from the Office of the General Counsel, 2026-10-14 (fictional).",
+     "rule_id": "POL-CT-04"
+    },
+    {
+     "short": "order conditions confirmed",
+     "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+     "rule_id": "POL-PO-09"
+    }
+   ],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-04"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "rule_ids": [
+      "POL-CT-04",
+      "POL-PO-09"
+     ]
+    }
+   },
+   "reasons": [],
+   "rule_ids": [
+    "POL-CT-04",
+    "POL-PO-09"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-04",
+     "rule_text": "Where consent is on file, use stays within the scope of that consent.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-16",
+     "condition": {
+      "short": "consent on file",
+      "text": "Stay within the consent on file from Tessaly Harbor Bank (fictional): Written consent from the Office of the General Counsel, 2026-10-14 (fictional).",
+      "rule_id": "POL-CT-04"
+     },
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": true
+    }
+   ]
+  },
+  {
+   "feature_id": "transcribe-e.dictation",
+   "tool_id": "transcribe-e",
+   "tool_name": "Transcribe E",
+   "feature": "Dictation",
+   "short_name": "Transcribe E",
+   "category": "dictation and transcription",
+   "decision": "NOT_ALLOWED",
+   "decision_label": "NOT ALLOWED",
+   "conditions": [],
+   "conditions_if_cleared": [],
+   "excluded_data_classes": [],
+   "pending_data_classes": [],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-06",
+      "POL-CT-10",
+      "POL-CT-11",
+      "POL-LANE-01",
+      "POL-LANE-02",
+      "POL-LANE-03"
+     ]
+    },
+    "protective_order_material": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-06",
+      "POL-CT-10",
+      "POL-CT-11",
+      "POL-LANE-01",
+      "POL-LANE-02",
+      "POL-LANE-03",
+      "POL-PO-04",
+      "POL-PO-07"
+     ]
+    }
+   },
+   "reasons": [
+    "consent required and not on file",
+    "terms bar training on client data",
+    "retention longer than the terms allow",
+    "hosting region outside the terms",
+    "feature not approved for this data class",
+    "feature not in service",
+    "training terms not confirmed",
+    "order bars vendor processing",
+    "retention does not fit the order"
+   ],
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-06",
+    "POL-CT-10",
+    "POL-CT-11",
+    "POL-LANE-01",
+    "POL-LANE-02",
+    "POL-LANE-03",
+    "POL-PO-04",
+    "POL-PO-07"
+   ],
+   "drivers": [
+    {
+     "rule_id": "POL-CT-03",
+     "rule_text": "Where the terms require prior written consent, a feature may not be used until intake records consent that covers it.",
+     "source": "client_terms",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 221,
+       "end": 451,
+       "class": "consent_required",
+       "quote": "2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel."
+      },
+      {
+       "document_id": "tessaly-el-2025",
+       "start": 216,
+       "end": 381,
+       "class": "consent_required",
+       "quote": "This engagement is governed by the Bank's Outside Counsel Guidelines, including the requirement that we obtain the Bank's written consent before using generative AI."
+      }
+     ],
+     "banner": "consent required and not on file",
+     "open_question": "OQ-16",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-06",
+     "rule_text": "Where the terms bar training on client data, a feature may be used only if it is confirmed not to train on inputs.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 775,
+       "end": 861,
+       "class": "no_training",
+       "quote": "2.5 The Bank's information may not be used for model training under any circumstances."
+      }
+     ],
+     "banner": "terms bar training on client data",
+     "open_question": "OQ-02",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-10",
+     "rule_text": "Where an analyst has recorded a retention limit, a feature whose retention is longer, or unknown, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "retention longer than the terms allow",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-CT-11",
+     "rule_text": "Where an analyst has recorded allowed regions, a feature hosted elsewhere, or in an unknown region, may not be used.",
+     "source": "client_terms",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": "tessaly",
+     "party_name": "Tessaly Harbor Bank (fictional)",
+     "evidence": [
+      {
+       "document_id": "tessaly-ocg-2025",
+       "start": 653,
+       "end": 773,
+       "class": "data_residency_retention",
+       "quote": "2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends."
+      }
+     ],
+     "banner": "hosting region outside the terms",
+     "open_question": "OQ-19",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-01",
+     "rule_text": "A feature may receive a data class only if the tool lanes file lists that class for the feature.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not approved for this data class",
+     "open_question": "OQ-01",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-02",
+     "rule_text": "Only features in production or pilot status may be used on matters.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "feature not in service",
+     "open_question": null,
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-LANE-03",
+     "rule_text": "A feature that trains on inputs, or whose training terms are unknown, may not receive client or restricted data.",
+     "source": "tool_lane",
+     "owner_role": "Chief Information Officer",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "client_confidential",
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "training terms not confirmed",
+     "open_question": "OQ-02",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-04",
+     "rule_text": "Where intake records that the order bars processing by outside vendors, protective-order material may go only into features hosted by the firm itself.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.vendor_processing",
+       "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": "order bars vendor processing",
+     "open_question": "OQ-10",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-07",
+     "rule_text": "Where the order requires return or destruction at the end of the matter, or that term is unknown, protective-order material may go only into features with zero or matter-controlled retention.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "NOT_ALLOWED",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [],
+     "banner": "retention does not fit the order",
+     "open_question": "OQ-11",
+     "decisive": true
+    },
+    {
+     "rule_id": "POL-PO-09",
+     "rule_text": "Where the order allows AI use on conditions, the responsible attorney confirms each condition before use.",
+     "source": "protective_order",
+     "owner_role": "General Counsel",
+     "review_date": "2027-06-30",
+     "past_review_date": false,
+     "decision": "ALLOWED_WITH_CONDITIONS",
+     "data_classes": [
+      "protective_order_material"
+     ],
+     "party_id": null,
+     "party_name": null,
+     "evidence": [
+      {
+       "document_id": "PO-M1008 (fictional protective order)",
+       "start": null,
+       "end": null,
+       "class": "protective_order.ai_use",
+       "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public.",
+       "note": "Quoted by the person who completed intake. The tool does not read the order."
+      }
+     ],
+     "banner": null,
+     "open_question": "OQ-08",
+     "condition": {
+      "short": "order conditions confirmed",
+      "text": "Responsible attorney confirms the protective order's conditions are met before protective-order material is used.",
+      "rule_id": "POL-PO-09"
+     },
+     "decisive": false
+    }
+   ]
+  }
+ ],
+ "counts": {
+  "ALLOWED": 0,
+  "ALLOWED_WITH_CONDITIONS": 1,
+  "HOLD_FOR_REVIEW": 0,
+  "NOT_ALLOWED": 9
+ },
+ "rules_past_review": [
+  {
+   "rule_id": "POL-PO-03",
+   "review_date": "2026-09-30",
+   "owner_role": "General Counsel",
+   "used_on_this_matter": false
+  },
+  {
+   "rule_id": "POL-CT-12",
+   "review_date": "2026-06-30",
+   "owner_role": "Billing Partner Committee",
+   "used_on_this_matter": false
+  }
+ ],
+ "open_questions": [
+  "OQ-01",
+  "OQ-02",
+  "OQ-08",
+  "OQ-10",
+  "OQ-11",
+  "OQ-16",
+  "OQ-19"
+ ],
+ "disclaimer": "Personal portfolio demo with fictional data. Every rule shown is a configurable firm policy default, not a statement of law. Not legal advice. Not reviewed by an attorney.",
+ "banner": "AI: Review D allowed with consent on file, order conditions confirmed; no protective-order material in any tool except Review D"
+}

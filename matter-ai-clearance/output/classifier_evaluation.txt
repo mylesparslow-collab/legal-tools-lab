@@ -1,0 +1,27 @@
+Clause classifier against the hand-labeled answer key
+  labeled spans: 91 (59 positive, 32 hard negatives)
+  overall: precision 0.947, recall 0.915 (tp 54, fp 3, fn 5)
+  hard negatives wrongly classified: 2 of 32
+  split dev      precision 0.944, recall 1.0 (tp 34, fp 2, fn 0, 12 documents)
+  split heldout  precision 0.952, recall 0.8 (tp 20, fp 1, fn 5, 8 documents)
+  per class:
+    ai_permitted               precision 1.0   recall 1.0   tp 4 fp 0 fn 0
+    ai_prohibited              precision 1.0   recall 1.0   tp 5 fp 0 fn 0
+    ambiguous                  precision 1.0   recall 0.667 tp 2 fp 0 fn 1
+    approved_tools_only        precision 0.667 recall 0.667 tp 4 fp 2 fn 2
+    billing_restriction        precision 1.0   recall 1.0   tp 9 fp 0 fn 0
+    consent_required           precision 1.0   recall 1.0   tp 6 fp 0 fn 0
+    data_residency_retention   precision 1.0   recall 1.0   tp 7 fp 0 fn 0
+    disclosure_required        precision 0.875 recall 0.875 tp 7 fp 1 fn 1
+    human_review_required      precision 1.0   recall 1.0   tp 6 fp 0 fn 0
+    no_training                precision 1.0   recall 0.8   tp 4 fp 0 fn 1
+  false positives:
+    [disclosure_required] tessaly-ocg-2025: 2.2 A request for consent must identify the tool, the vendor, the categories of Bank data involved and the saf
+    [approved_tools_only] tessaly-ocg-2025: 2.7 All attorneys working on Bank matters must complete the Firm's AI training before using an approved tool.
+    [approved_tools_only] ironvale-ocg-2026: 4.2 Use of any AI platform not on that list requires advance approval from Ironvale's Chief Legal Officer.
+  misses:
+    [approved_tools_only] quillfether-ocg-v2-2026: Approval will list the specific tools cleared for that matter; no other tool may be used.
+    [disclosure_required] quillfether-ocg-v2-2026: Counsel must continue to identify AI-assisted tasks on each invoice.
+    [ambiguous] quillfether-ocg-v2-2026: Quillfether no longer encourages unsupervised use of AI tools for first drafts of court filings.
+    [approved_tools_only] verdanthe-el-2026: Resident records will only be placed in tools that we have confirmed are appropriate for health information.
+    [no_training] ironvale-ocg-2026: No Ironvale data may be used to develop or improve any AI vendor's products.

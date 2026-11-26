@@ -1,0 +1,829 @@
+{
+ "meta": {
+  "agency": "City of Marlow Ridge",
+  "agency_short": "City",
+  "agency_type": "city",
+  "agency_source": {
+   "line": 11,
+   "text": "The City of Marlow Ridge (\"City\") invites proposals from qualified law firms to"
+  },
+  "agency_confidence": "ok",
+  "title": "City Attorney Services",
+  "rfp_number": "2026-14",
+  "practice": "general_counsel",
+  "subjects": [
+   "land use",
+   "open meetings",
+   "public records",
+   "public contracting",
+   "personnel",
+   "claims",
+   "code enforcement"
+  ]
+ },
+ "deadlines": [
+  {
+   "kind": "issued",
+   "label": "RFP issued",
+   "date": "2026-11-09",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 26,
+    "text": "RFP issued November 9, 2026"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D1"
+  },
+  {
+   "kind": "questions_due",
+   "label": "Written questions due",
+   "date": "2026-11-30",
+   "end_date": null,
+   "time": "17:00",
+   "source": {
+    "line": 27,
+    "text": "Written questions due November 30, 2026 at 5:00 p.m."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D2"
+  },
+  {
+   "kind": "answers_issued",
+   "label": "Responses to questions posted",
+   "date": "2026-12-04",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 28,
+    "text": "Responses to questions posted December 4, 2026"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D3"
+  },
+  {
+   "kind": "submission_due",
+   "label": "Proposals due",
+   "date": "2026-12-18",
+   "end_date": null,
+   "time": "16:00",
+   "source": {
+    "line": 29,
+    "text": "Proposals due December 18, 2026 at 4:00 p.m."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D4"
+  },
+  {
+   "kind": "interview",
+   "label": "Interviews",
+   "date": "2027-01-12",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 30,
+    "text": "Interviews January 12, 2027"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D5"
+  },
+  {
+   "kind": "award",
+   "label": "Council consideration of contract",
+   "date": "2027-02-02",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 31,
+    "text": "Council consideration of contract February 2, 2027"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D6"
+  }
+ ],
+ "mechanics": [
+  {
+   "kind": "copies",
+   "value": "one (1) electronic copy",
+   "source": {
+    "line": 121,
+    "text": "Submit one (1) electronic copy of the proposal in PDF format by email to cityclerk@marlowridge.example."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB1"
+  },
+  {
+   "kind": "format",
+   "value": "PDF",
+   "source": {
+    "line": 121,
+    "text": "Submit one (1) electronic copy of the proposal in PDF format by email to cityclerk@marlowridge.example."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB2"
+  },
+  {
+   "kind": "delivery",
+   "value": "email to cityclerk@marlowridge.example",
+   "source": {
+    "line": 121,
+    "text": "Submit one (1) electronic copy of the proposal in PDF format by email to cityclerk@marlowridge.example."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB3"
+  },
+  {
+   "kind": "not_accepted",
+   "value": "Paper copies will not be accepted.",
+   "source": {
+    "line": 121,
+    "text": "Paper copies will not be accepted."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB4"
+  },
+  {
+   "kind": "page_limit",
+   "value": 25,
+   "source": {
+    "line": 121,
+    "text": "The proposal, excluding resumes and required forms, must not exceed 25 pages."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB5"
+  },
+  {
+   "kind": "page_exclusions",
+   "value": "resumes and required forms",
+   "source": {
+    "line": 121,
+    "text": "The proposal, excluding resumes and required forms, must not exceed 25 pages."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB6"
+  },
+  {
+   "kind": "font",
+   "value": 12,
+   "source": {
+    "line": 121,
+    "text": "Use 12-point font and one-inch margins."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB7"
+  },
+  {
+   "kind": "margins",
+   "value": 1.0,
+   "source": {
+    "line": 121,
+    "text": "Use 12-point font and one-inch margins."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB8"
+  },
+  {
+   "kind": "not_accepted",
+   "value": "Late proposals will not be accepted.",
+   "source": {
+    "line": 121,
+    "text": "Late proposals will not be accepted."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB9"
+  }
+ ],
+ "requirements": [
+  {
+   "id": "R-5.1",
+   "label": "5.1",
+   "title": "Cover Letter",
+   "text": "Cover Letter. Provide a cover letter signed by a person authorized to bind the firm.",
+   "qtype": "cover_letter",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 62,
+    "text": "5.1 Cover Letter. Provide a cover letter signed by a person authorized to bind"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.2",
+   "label": "5.2",
+   "title": "Firm Overview",
+   "text": "Firm Overview. Describe the firm, including its history, size, office locations and public agency practice.",
+   "qtype": "firm_overview",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 64,
+    "text": "5.2 Firm Overview. Describe the firm, including its history, size, office"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.3",
+   "label": "5.3",
+   "title": "Proposed Team",
+   "text": "Proposed Team. Identify the attorney proposed as City Attorney and each attorney who would back up that person. Include resumes as an appendix.",
+   "qtype": "team",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 66,
+    "text": "5.3 Proposed Team. Identify the attorney proposed as City Attorney and each"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.4",
+   "label": "5.4",
+   "title": "Experience",
+   "text": "Experience. Describe the firm's experience serving as city attorney or general counsel to public agencies during the past five years.",
+   "qtype": "experience",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 68,
+    "text": "5.4 Experience. Describe the firm's experience serving as city attorney or"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.5",
+   "label": "5.5",
+   "title": "Approach",
+   "text": "Approach. Describe how the firm will provide day-to-day services, including availability, response times and attendance at City Council meetings.",
+   "qtype": "approach",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 70,
+    "text": "5.5 Approach. Describe how the firm will provide day-to-day services, including"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.6",
+   "label": "5.6",
+   "title": "References",
+   "text": "References. Provide at least three (3) references from current or former public agency clients, with a contact name, telephone number and email.",
+   "qtype": "references",
+   "mandatory": true,
+   "references_required": 3,
+   "source": {
+    "line": 72,
+    "text": "5.6 References. Provide at least three (3) references from current or former"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.7",
+   "label": "5.7",
+   "title": "Conflicts of Interest",
+   "text": "Conflicts of Interest. Disclose any actual or potential conflict of interest with the City, its officials or its employees.",
+   "qtype": "conflicts",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 74,
+    "text": "5.7 Conflicts of Interest. Disclose any actual or potential conflict of"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.8",
+   "label": "5.8",
+   "title": "Transition Plan",
+   "text": "Transition Plan. Describe how the firm would take over open matters from the current city attorney.",
+   "qtype": "transition",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 76,
+    "text": "5.8 Transition Plan. Describe how the firm would take over open matters from"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.9",
+   "label": "5.9",
+   "title": "Fee Proposal",
+   "text": "Fee Proposal. State the proposed monthly retainer, the services it covers and hourly rates for services outside the retainer.",
+   "qtype": "rates",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 78,
+    "text": "5.9 Fee Proposal. State the proposed monthly retainer, the services it covers"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.10",
+   "label": "5.10",
+   "title": "Local Presence",
+   "text": "Local Presence. Describe the firm's presence in the region.",
+   "qtype": "diversity_local",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 80,
+    "text": "5.10 Local Presence. Describe the firm's presence in the region."
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-5.11",
+   "label": "5.11",
+   "title": "Litigation and Discipline History",
+   "text": "Litigation and Discipline History. Disclose any malpractice claim or disciplinary action against the firm or any proposed attorney in the past five years.",
+   "qtype": "disclosure",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 81,
+    "text": "5.11 Litigation and Discipline History. Disclose any malpractice claim or"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  }
+ ],
+ "forms": [
+  {
+   "ref": "Form A",
+   "name": "Proposer Information Sheet",
+   "text": "Form A: Proposer Information Sheet",
+   "signature": true,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 91,
+    "text": "Form A - Proposer Information Sheet"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F1"
+  },
+  {
+   "ref": "Form B",
+   "name": "Non-Collusion Declaration",
+   "text": "Form B: Non-Collusion Declaration",
+   "signature": true,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 92,
+    "text": "Form B - Non-Collusion Declaration"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F2"
+  },
+  {
+   "ref": "Form C",
+   "name": "Acknowledgment of Addenda",
+   "text": "Form C: Acknowledgment of Addenda",
+   "signature": true,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 93,
+    "text": "Form C - Acknowledgment of Addenda"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F3"
+  },
+  {
+   "ref": "Form D",
+   "name": "Insurance Acknowledgment",
+   "text": "Form D: Insurance Acknowledgment",
+   "signature": true,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 94,
+    "text": "Form D - Insurance Acknowledgment"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F4"
+  }
+ ],
+ "min_quals": [
+  {
+   "label": "4.1",
+   "text": "The attorney proposed as City Attorney must have been admitted to practice law in the State of Westmark for at least ten (10) years.",
+   "check_kind": "years_admitted",
+   "value": 10,
+   "source": {
+    "line": 50,
+    "text": "4.1 The attorney proposed as City Attorney must have been admitted to practice"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-4.1"
+  },
+  {
+   "label": "4.2",
+   "text": "The firm must maintain an office within Larkspur County.",
+   "check_kind": "office_location",
+   "value": "Larkspur County",
+   "source": {
+    "line": 52,
+    "text": "4.2 The firm must maintain an office within Larkspur County."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-4.2"
+  },
+  {
+   "label": "4.3",
+   "text": "The attorney proposed as City Attorney must have at least five (5) years of experience advising a city council or comparable governing body.",
+   "check_kind": "not_checkable",
+   "value": null,
+   "source": {
+    "line": 53,
+    "text": "4.3 The attorney proposed as City Attorney must have at least five (5) years of"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-4.3"
+  },
+  {
+   "label": "4.4",
+   "text": "The firm must not have any pending claim against the City.",
+   "check_kind": "not_checkable",
+   "value": null,
+   "source": {
+    "line": 55,
+    "text": "4.4 The firm must not have any pending claim against the City."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-4.4"
+  }
+ ],
+ "insurance": [
+  {
+   "label": "8.1",
+   "text": "Professional liability insurance of not less than $2,000,000 per claim.",
+   "amounts": [
+    "$2,000,000"
+   ],
+   "source": {
+    "line": 111,
+    "text": "8.1 Professional liability insurance of not less than $2,000,000 per claim."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS1"
+  },
+  {
+   "label": "8.2",
+   "text": "Commercial general liability insurance of not less than $1,000,000 per occurrence.",
+   "amounts": [
+    "$1,000,000"
+   ],
+   "source": {
+    "line": 112,
+    "text": "8.2 Commercial general liability insurance of not less than $1,000,000 per"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS2"
+  },
+  {
+   "label": "8.3",
+   "text": "Workers' compensation insurance as required by law.",
+   "amounts": [],
+   "source": {
+    "line": 114,
+    "text": "8.3 Workers' compensation insurance as required by law."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS3"
+  },
+  {
+   "label": "",
+   "text": "The proposal must include a statement that the firm can meet these insurance requirements.",
+   "amounts": [],
+   "source": {
+    "line": 116,
+    "text": "The proposal must include a statement that the firm can meet these insurance"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS4"
+  }
+ ],
+ "scope_items": [
+  {
+   "label": "a",
+   "text": "attend all regular City Council meetings and Planning Commission meetings on request;",
+   "source": {
+    "line": 39,
+    "text": "(a) attend all regular City Council meetings and Planning Commission meetings"
+   }
+  },
+  {
+   "label": "b",
+   "text": "advise the City Council and staff on open meeting, public records and conflict of interest questions;",
+   "source": {
+    "line": 41,
+    "text": "(b) advise the City Council and staff on open meeting, public records and"
+   }
+  },
+  {
+   "label": "c",
+   "text": "draft and review ordinances, resolutions and contracts;",
+   "source": {
+    "line": 43,
+    "text": "(c) draft and review ordinances, resolutions and contracts;"
+   }
+  },
+  {
+   "label": "d",
+   "text": "advise on land use, planning and code enforcement matters;",
+   "source": {
+    "line": 44,
+    "text": "(d) advise on land use, planning and code enforcement matters;"
+   }
+  },
+  {
+   "label": "e",
+   "text": "advise on personnel matters and public works bidding;",
+   "source": {
+    "line": 45,
+    "text": "(e) advise on personnel matters and public works bidding;"
+   }
+  },
+  {
+   "label": "f",
+   "text": "manage litigation and supervise outside counsel.",
+   "source": {
+    "line": 46,
+    "text": "(f) manage litigation and supervise outside counsel."
+   }
+  }
+ ],
+ "parties": [
+  {
+   "name": "City of Marlow Ridge",
+   "category": "agency",
+   "role": "Issuing agency",
+   "source": {
+    "line": 11,
+    "text": "The City of Marlow Ridge (\"City\") invites proposals from qualified law firms to"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Renata Oyelaran",
+   "category": "staff",
+   "role": "City Manager",
+   "source": {
+    "line": 11,
+    "text": "The City of Marlow Ridge (\"City\") invites proposals from qualified law firms to serve as City Attorney on a contract basis. The City is a general law city with a population of about 41,000 and a five-member City Council. The City Manager is"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Tobias Whitlock",
+   "category": "board",
+   "role": "Mayor",
+   "source": {
+    "line": 17,
+    "text": "City Council: Mayor Tobias Whitlock Vice Mayor Imani Castellanos Councilmember Greta Lindqvist Councilmember Samir Haddad Councilmember Paulette Nakagawa"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Imani Castellanos",
+   "category": "board",
+   "role": "Vice Mayor",
+   "source": {
+    "line": 17,
+    "text": "City Council: Mayor Tobias Whitlock Vice Mayor Imani Castellanos Councilmember Greta Lindqvist Councilmember Samir Haddad Councilmember Paulette Nakagawa"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Greta Lindqvist",
+   "category": "board",
+   "role": "Councilmember",
+   "source": {
+    "line": 17,
+    "text": "City Council: Mayor Tobias Whitlock Vice Mayor Imani Castellanos Councilmember Greta Lindqvist Councilmember Samir Haddad Councilmember Paulette Nakagawa"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Samir Haddad",
+   "category": "board",
+   "role": "Councilmember",
+   "source": {
+    "line": 17,
+    "text": "City Council: Mayor Tobias Whitlock Vice Mayor Imani Castellanos Councilmember Greta Lindqvist Councilmember Samir Haddad Councilmember Paulette Nakagawa"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Paulette Nakagawa",
+   "category": "board",
+   "role": "Councilmember",
+   "source": {
+    "line": 17,
+    "text": "City Council: Mayor Tobias Whitlock Vice Mayor Imani Castellanos Councilmember Greta Lindqvist Councilmember Samir Haddad Councilmember Paulette Nakagawa"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Halvard Brennan",
+   "category": "staff",
+   "role": "Deputy City Clerk",
+   "source": {
+    "line": 121,
+    "text": "Submit one (1) electronic copy of the proposal in PDF format by email to cityclerk@marlowridge.example. Paper copies will not be accepted. The proposal, excluding resumes and required forms, must not exceed 25 pages. Use 12-point font and o"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  }
+ ],
+ "deleted_requirements": [],
+ "sections": [
+  {
+   "kind": "intro",
+   "title": "INTRODUCTION",
+   "label": "1",
+   "line": 9
+  },
+  {
+   "kind": "schedule",
+   "title": "SCHEDULE",
+   "label": "2",
+   "line": 24
+  },
+  {
+   "kind": "scope",
+   "title": "SCOPE OF SERVICES",
+   "label": "3",
+   "line": 35
+  },
+  {
+   "kind": "minquals",
+   "title": "MINIMUM QUALIFICATIONS",
+   "label": "4",
+   "line": 48
+  },
+  {
+   "kind": "content",
+   "title": "PROPOSAL CONTENT",
+   "label": "5",
+   "line": 57
+  },
+  {
+   "kind": "forms",
+   "title": "REQUIRED FORMS",
+   "label": "6",
+   "line": 85
+  },
+  {
+   "kind": "evaluation",
+   "title": "EVALUATION CRITERIA",
+   "label": "7",
+   "line": 96
+  },
+  {
+   "kind": "insurance",
+   "title": "INSURANCE",
+   "label": "8",
+   "line": 106
+  },
+  {
+   "kind": "submission",
+   "title": "SUBMISSION INSTRUCTIONS",
+   "label": "9",
+   "line": 119
+  }
+ ],
+ "evaluation": {
+  "criteria": [
+   {
+    "name": "Qualifications and experience of the firm and team",
+    "weight": 35,
+    "source": {
+     "line": 100,
+     "text": "Qualifications and experience of the firm and team 35%"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV1"
+   },
+   {
+    "name": "Approach to providing services",
+    "weight": 25,
+    "source": {
+     "line": 101,
+     "text": "Approach to providing services 25%"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV2"
+   },
+   {
+    "name": "References",
+    "weight": 15,
+    "source": {
+     "line": 102,
+     "text": "References 15%"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV3"
+   },
+   {
+    "name": "Cost",
+    "weight": 20,
+    "source": {
+     "line": 103,
+     "text": "Cost 20%"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV4"
+   },
+   {
+    "name": "Local presence",
+    "weight": 5,
+    "source": {
+     "line": 104,
+     "text": "Local presence 5%"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV5"
+   }
+  ],
+  "total_stated": null,
+  "unit": "percent",
+  "total": 100,
+  "confidence": "ok",
+  "check_reason": ""
+ },
+ "addenda": [],
+ "checks": []
+}

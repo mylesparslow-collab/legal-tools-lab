@@ -1,0 +1,31 @@
+QUENBY VALE HEALTH SYSTEM (fictional)
+Outside Counsel Guidelines
+Effective January 1, 2026
+
+1. Staffing
+
+Matters must be staffed leanly. The Company's prior written consent is required before adding any timekeeper who is not listed in the engagement letter.
+
+2. Billing
+
+Invoices must be submitted monthly through the e-billing portal. The Company does not pay for summer associate time, internal conferences, or training of Firm personnel.
+
+3. Use of artificial intelligence
+
+3.1 The Firm must notify the Company's Legal Department in writing before using any generative artificial intelligence tool on a Company matter.
+
+3.2 The Firm shall ensure that no Company information is used to train, fine-tune or otherwise improve any artificial intelligence model.
+
+3.3 Only tools on the Firm's approved list, as shared with the Company at the start of each matter, may be used with Company information.
+
+3.4 Company information entered into an AI tool must be stored and processed within the United States and deleted from the tool within thirty days after the task is complete.
+
+3.5 A licensed attorney must review all AI output for accuracy before it is used in any work product delivered to the Company.
+
+3.6 Patient information must not be entered into any AI tool unless the Company has confirmed in writing that the tool is covered by an appropriate agreement with the Firm.
+
+3.7 The Company will review these guidelines each year and may issue further requirements for AI tools.
+
+4. Media
+
+The Firm may not speak to the press about any Company matter.

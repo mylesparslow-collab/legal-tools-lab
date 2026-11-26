@@ -1,0 +1,37 @@
+Filing F-2027-008  (opposition)  checked 2027-01-12T17:00:00+00:00
+
+  PASS            Document type is in scope
+                  'opposition' is treated as a paper filed in court. Every citation needs personal verification.
+  PASS            Responsible attorney named
+                  Responsible attorney: Perrin Ashgrove (fictional attorney).
+  PASS            Document found and hashed
+                  SHA-256 of file: ab8776ca75557e3904bbbc1c38fd7ce3041e6878091a033acde0d91aa1723653.
+  PASS            Citation report present
+                  citecheck-report, citations listed: 3 (machine: 1 pass, 0 warn, 2 fail, 0 manual).
+  PASS            Report matches the document
+                  The report's document hash equals the hash of the document text as it is now.
+  PASS            Every citation attested by the attorney
+                  All 3 citations have an attestation by Perrin Ashgrove (fictional attorney) with date and method.
+  FAIL            No unresolved or not-found citations [blocks]
+                  1 unresolved citation problem(s). Policy does not allow sign-off over a not-found citation: correct or remove it and run the check again.
+                  - Renwick v. Tallmadge Freight Systems 940 Cal.App.5th 1312, 1320: NOT FOUND. No case found at 940 Cal. App. 5th 1312 (mirror coverage for Cal. App. 5th complete as of 2026-11-25). Possible fabricated or mistyped citation.
+  FAIL            No quote mismatches [blocks]
+                  1 quotation(s) do not match the source. Correct the quotation and run the check again.
+                  - Ostrander v. Cypress Fold Logistics 912 Cal.App.5th 455, 462: [UNVERIFIED QUOTE] Not found verbatim in the source.
+  PASS            Machine warnings resolved
+                  No machine warnings.
+  PASS            AI-use answer recorded
+                  Recorded answer: generative AI was not used.
+  NOT APPLICABLE  AI output reviewed and corrected
+                  Generative AI was not used.
+  NOT APPLICABLE  Protected information question answered
+                  Generative AI was not used.
+  NOT APPLICABLE  AI-use disclosure decision recorded
+                  Generative AI was not used.
+  PASS            Judge and court AI orders checked
+                  1 entry found for judge 'fict-quillon' in court 'fict-alder-ridge', checked within 30 days (most recent 6 days before 2027-01-12). No requirement was known when last checked. That is a record of a search, not a statement that no order exists.
+  NOT APPLICABLE  Judge order requirement met
+                  No requirement is on file for this judge or court.
+
+Result: BLOCKED
+Blocking items: citations_resolved, quotes_match

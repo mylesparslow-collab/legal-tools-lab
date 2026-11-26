@@ -1,0 +1,18 @@
+{
+  "_about": "Words the generated statement may not contain. 'hype' and 'vague' terms are refused everywhere. 'absolute' terms are allowed only in a sentence whose evidence rule is universal (covers every entry in scope) and SUPPORTED.",
+  "hype": [
+    "cutting-edge", "cutting edge", "leverage", "leverages", "leveraging", "revolutionary", "revolutionize",
+    "robust", "world-class", "best-in-class", "state-of-the-art", "state of the art", "innovative",
+    "transformative", "game-changing", "next-generation", "seamless", "seamlessly", "unlock", "empower",
+    "bank-grade", "military-grade", "industry-leading", "powerful", "unparalleled"
+  ],
+  "vague": [
+    "appropriate", "appropriately", "as needed", "where possible", "where practicable", "strive", "strives",
+    "best efforts", "industry standard", "industry-standard", "from time to time", "generally", "typically",
+    "etc", "and so on", "as applicable", "reasonable", "reasonably"
+  ],
+  "absolute": [
+    "never", "always", "guarantee", "guarantees", "guaranteed", "fully secure", "completely secure",
+    "100%", "every", "each", "all", "none", "no tool"
+  ]
+}

@@ -1,0 +1,605 @@
+[
+ {
+  "id": "B01",
+  "name": "Margit Solberg",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 1996,
+  "office": "Alder Bay",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "city",
+   "special_district"
+  ],
+  "subjects": [
+   "governance",
+   "open meetings",
+   "public records"
+  ],
+  "roles": [
+   "general counsel",
+   "city attorney"
+  ],
+  "bio_text": "Margit advises cities and special districts on governance, open meetings and public records.",
+  "departed_date": ""
+ },
+ {
+  "id": "B02",
+  "name": "Desmond Achebe",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 2004,
+  "office": "Alder Bay",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "city"
+  ],
+  "subjects": [
+   "land use",
+   "open meetings",
+   "public contracting",
+   "code enforcement"
+  ],
+  "roles": [
+   "city attorney"
+  ],
+  "bio_text": "Desmond advises cities on land use, open meetings, public contracting and code enforcement.",
+  "departed_date": ""
+ },
+ {
+  "id": "B03",
+  "name": "Priya Raghunathan",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 2006,
+  "office": "Stonemill",
+  "practices": [
+   "labor"
+  ],
+  "agency_types": [
+   "school_district",
+   "city"
+  ],
+  "subjects": [
+   "collective bargaining",
+   "personnel",
+   "schools"
+  ],
+  "roles": [
+   "chief negotiator"
+  ],
+  "bio_text": "Priya advises school districts and cities on collective bargaining, personnel and schools.",
+  "departed_date": ""
+ },
+ {
+  "id": "B04",
+  "name": "Tomasz Wieczorek",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 2001,
+  "office": "Port Verity",
+  "practices": [
+   "capital_projects"
+  ],
+  "agency_types": [
+   "transit",
+   "special_district"
+  ],
+  "subjects": [
+   "construction",
+   "claims",
+   "public contracting",
+   "transit"
+  ],
+  "roles": [
+   "special counsel"
+  ],
+  "bio_text": "Tomasz advises transit agencies and special districts on construction, claims, public contracting and transit.",
+  "departed_date": ""
+ },
+ {
+  "id": "B05",
+  "name": "Leilani Kahananui",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 2009,
+  "office": "Stonemill",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "special_district"
+  ],
+  "subjects": [
+   "water",
+   "rates and charges",
+   "governance",
+   "public contracting"
+  ],
+  "roles": [
+   "general counsel"
+  ],
+  "bio_text": "Leilani advises special districts on water, rates and charges, governance and public contracting.",
+  "departed_date": ""
+ },
+ {
+  "id": "B06",
+  "name": "Corwin Halloway",
+  "title": "Partner",
+  "status": "departed",
+  "admit_year": 1999,
+  "office": "Stonemill",
+  "practices": [
+   "labor"
+  ],
+  "agency_types": [
+   "school_district"
+  ],
+  "subjects": [
+   "collective bargaining",
+   "schools"
+  ],
+  "roles": [
+   "chief negotiator"
+  ],
+  "bio_text": "Corwin advises school districts on collective bargaining and schools.",
+  "departed_date": "2025-08-31"
+ },
+ {
+  "id": "B07",
+  "name": "Nadia El-Masri",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 2008,
+  "office": "Alder Bay",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "city"
+  ],
+  "subjects": [
+   "land use",
+   "code enforcement",
+   "real property"
+  ],
+  "roles": [
+   "city attorney"
+  ],
+  "bio_text": "Nadia advises cities on land use, code enforcement and real property.",
+  "departed_date": ""
+ },
+ {
+  "id": "B08",
+  "name": "Jerome Fitzwilliam",
+  "title": "Of Counsel",
+  "status": "active",
+  "admit_year": 1991,
+  "office": "Port Verity",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "special_district"
+  ],
+  "subjects": [
+   "water",
+   "rates and charges",
+   "real property"
+  ],
+  "roles": [
+   "general counsel"
+  ],
+  "bio_text": "Jerome advises special districts on water, rates and charges and real property.",
+  "departed_date": ""
+ },
+ {
+  "id": "B09",
+  "name": "Ingrid Castellane",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 2010,
+  "office": "Stonemill",
+  "practices": [
+   "labor"
+  ],
+  "agency_types": [
+   "school_district"
+  ],
+  "subjects": [
+   "collective bargaining",
+   "schools",
+   "personnel"
+  ],
+  "roles": [
+   "chief negotiator"
+  ],
+  "bio_text": "Ingrid advises school districts on collective bargaining, schools and personnel.",
+  "departed_date": ""
+ },
+ {
+  "id": "B10",
+  "name": "Rafael Montoya-Reyes",
+  "title": "Senior Associate",
+  "status": "active",
+  "admit_year": 2015,
+  "office": "Alder Bay",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "city",
+   "special_district"
+  ],
+  "subjects": [
+   "public records",
+   "open meetings",
+   "public contracting"
+  ],
+  "roles": [
+   "assistant general counsel"
+  ],
+  "bio_text": "Rafael advises cities and special districts on public records, open meetings and public contracting.",
+  "departed_date": ""
+ },
+ {
+  "id": "B11",
+  "name": "Hyejin Baek",
+  "title": "Senior Associate",
+  "status": "active",
+  "admit_year": 2016,
+  "office": "Stonemill",
+  "practices": [
+   "labor"
+  ],
+  "agency_types": [
+   "school_district"
+  ],
+  "subjects": [
+   "collective bargaining",
+   "personnel"
+  ],
+  "roles": [
+   "negotiations support"
+  ],
+  "bio_text": "Hyejin advises school districts on collective bargaining and personnel.",
+  "departed_date": ""
+ },
+ {
+  "id": "B12",
+  "name": "Oluwaseun Adeyemi",
+  "title": "Senior Associate",
+  "status": "active",
+  "admit_year": 2014,
+  "office": "Port Verity",
+  "practices": [
+   "capital_projects"
+  ],
+  "agency_types": [
+   "transit"
+  ],
+  "subjects": [
+   "construction",
+   "claims",
+   "public contracting"
+  ],
+  "roles": [
+   "project counsel"
+  ],
+  "bio_text": "Oluwaseun advises transit agencies on construction, claims and public contracting.",
+  "departed_date": ""
+ },
+ {
+  "id": "B13",
+  "name": "Bridget O'Callaghan",
+  "title": "Associate",
+  "status": "active",
+  "admit_year": 2019,
+  "office": "Alder Bay",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "city"
+  ],
+  "subjects": [
+   "public records",
+   "code enforcement"
+  ],
+  "roles": [
+   "associate"
+  ],
+  "bio_text": "Bridget advises cities on public records and code enforcement.",
+  "departed_date": ""
+ },
+ {
+  "id": "B14",
+  "name": "Mateus Carvalho",
+  "title": "Associate",
+  "status": "active",
+  "admit_year": 2020,
+  "office": "Stonemill",
+  "practices": [
+   "labor"
+  ],
+  "agency_types": [
+   "school_district",
+   "city"
+  ],
+  "subjects": [
+   "personnel",
+   "collective bargaining"
+  ],
+  "roles": [
+   "associate"
+  ],
+  "bio_text": "Mateus advises school districts and cities on personnel and collective bargaining.",
+  "departed_date": ""
+ },
+ {
+  "id": "B15",
+  "name": "Anneliese Brandt",
+  "title": "Associate",
+  "status": "active",
+  "admit_year": 2018,
+  "office": "Stonemill",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "special_district"
+  ],
+  "subjects": [
+   "water",
+   "public contracting",
+   "governance"
+  ],
+  "roles": [
+   "associate"
+  ],
+  "bio_text": "Anneliese advises special districts on water, public contracting and governance.",
+  "departed_date": ""
+ },
+ {
+  "id": "B16",
+  "name": "Darius Farrokhzad",
+  "title": "Senior Associate",
+  "status": "active",
+  "admit_year": 2013,
+  "office": "Port Verity",
+  "practices": [
+   "capital_projects"
+  ],
+  "agency_types": [
+   "transit",
+   "city"
+  ],
+  "subjects": [
+   "real property",
+   "construction",
+   "transit"
+  ],
+  "roles": [
+   "right-of-way counsel"
+  ],
+  "bio_text": "Darius advises transit agencies and cities on real property, construction and transit.",
+  "departed_date": ""
+ },
+ {
+  "id": "B17",
+  "name": "Simone Beauregard",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 2005,
+  "office": "Port Verity",
+  "practices": [
+   "capital_projects"
+  ],
+  "agency_types": [
+   "transit"
+  ],
+  "subjects": [
+   "transit",
+   "construction",
+   "real property",
+   "claims"
+  ],
+  "roles": [
+   "special counsel"
+  ],
+  "bio_text": "Simone advises transit agencies on transit, construction, real property and claims.",
+  "departed_date": ""
+ },
+ {
+  "id": "B18",
+  "name": "Kwabena Osei",
+  "title": "Associate",
+  "status": "active",
+  "admit_year": 2021,
+  "office": "Alder Bay",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "city",
+   "special_district"
+  ],
+  "subjects": [
+   "open meetings",
+   "public contracting"
+  ],
+  "roles": [
+   "associate"
+  ],
+  "bio_text": "Kwabena advises cities and special districts on open meetings and public contracting.",
+  "departed_date": ""
+ },
+ {
+  "id": "B19",
+  "name": "Talia Rosenthal",
+  "title": "Senior Associate",
+  "status": "active",
+  "admit_year": 2012,
+  "office": "Stonemill",
+  "practices": [
+   "labor"
+  ],
+  "agency_types": [
+   "school_district"
+  ],
+  "subjects": [
+   "schools",
+   "personnel",
+   "collective bargaining"
+  ],
+  "roles": [
+   "negotiations support"
+  ],
+  "bio_text": "Talia advises school districts on schools, personnel and collective bargaining.",
+  "departed_date": ""
+ },
+ {
+  "id": "B20",
+  "name": "Viktor Lindahl",
+  "title": "Of Counsel",
+  "status": "active",
+  "admit_year": 1994,
+  "office": "Port Verity",
+  "practices": [
+   "capital_projects"
+  ],
+  "agency_types": [
+   "transit",
+   "special_district"
+  ],
+  "subjects": [
+   "claims",
+   "construction"
+  ],
+  "roles": [
+   "claims counsel"
+  ],
+  "bio_text": "Viktor advises transit agencies and special districts on claims and construction.",
+  "departed_date": ""
+ },
+ {
+  "id": "B21",
+  "name": "Marisela Quintanar",
+  "title": "Associate",
+  "status": "active",
+  "admit_year": 2022,
+  "office": "Alder Bay",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "city"
+  ],
+  "subjects": [
+   "public records"
+  ],
+  "roles": [
+   "associate"
+  ],
+  "bio_text": "Marisela advises cities on public records.",
+  "departed_date": ""
+ },
+ {
+  "id": "B22",
+  "name": "Gideon Abramowitz",
+  "title": "Partner",
+  "status": "active",
+  "admit_year": 2002,
+  "office": "Stonemill",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "special_district",
+   "city"
+  ],
+  "subjects": [
+   "governance",
+   "rates and charges",
+   "personnel"
+  ],
+  "roles": [
+   "general counsel"
+  ],
+  "bio_text": "Gideon advises special districts and cities on governance, rates and charges and personnel.",
+  "departed_date": ""
+ },
+ {
+  "id": "B23",
+  "name": "Chiara Benedetti",
+  "title": "Associate",
+  "status": "active",
+  "admit_year": 2023,
+  "office": "Stonemill",
+  "practices": [
+   "labor"
+  ],
+  "agency_types": [
+   "school_district"
+  ],
+  "subjects": [
+   "collective bargaining"
+  ],
+  "roles": [
+   "associate"
+  ],
+  "bio_text": "Chiara advises school districts on collective bargaining.",
+  "departed_date": ""
+ },
+ {
+  "id": "B24",
+  "name": "Emeka Nwosu",
+  "title": "Senior Associate",
+  "status": "active",
+  "admit_year": 2011,
+  "office": "Stonemill",
+  "practices": [
+   "general_counsel"
+  ],
+  "agency_types": [
+   "special_district"
+  ],
+  "subjects": [
+   "water",
+   "real property",
+   "rates and charges"
+  ],
+  "roles": [
+   "assistant general counsel"
+  ],
+  "bio_text": "Emeka advises special districts on water, real property and rates and charges.",
+  "departed_date": ""
+ },
+ {
+  "id": "B25",
+  "name": "Fiona MacAllister",
+  "title": "Associate",
+  "status": "active",
+  "admit_year": 2019,
+  "office": "Port Verity",
+  "practices": [
+   "capital_projects"
+  ],
+  "agency_types": [
+   "transit"
+  ],
+  "subjects": [
+   "construction",
+   "public contracting"
+  ],
+  "roles": [
+   "associate"
+  ],
+  "bio_text": "Fiona advises transit agencies on construction and public contracting.",
+  "departed_date": ""
+ }
+]

@@ -1,0 +1,1202 @@
+{
+  "notice": "Fictional data. Not legal or billing advice.",
+  "batch": "batch_b",
+  "intake": {
+    "summary": {
+      "expected_rules": 48,
+      "proposed_correctly": 20,
+      "right_type_wrong_parameters": 5,
+      "missed": 23,
+      "wrong_proposals": 2
+    },
+    "clients": [
+      {
+        "client_id": "bramblewick",
+        "expected_rules": 18,
+        "proposed_correctly": 8,
+        "right_type_wrong_parameters": [
+          {
+            "rule_id": "BFC-BLOCK-01",
+            "type": "block_billing",
+            "differences": {
+              "min_hours": {
+                "expected": "0.5",
+                "proposed": 0
+              }
+            },
+            "source_quote": "One task per line once a line is over 0.5 h."
+          },
+          {
+            "rule_id": "BFC-CONF-01",
+            "type": "internal_conference_limit",
+            "differences": {
+              "max_hours_per_entry": {
+                "expected": "0.4",
+                "proposed": 0
+              }
+            },
+            "source_quote": "0.4 h cap per line."
+          }
+        ],
+        "missed": [
+          {
+            "rule_id": "BFC-TK-01",
+            "type": "unapproved_timekeeper",
+            "source_quote": "Named on the matter staffing list only."
+          },
+          {
+            "rule_id": "BFC-RATEUP-01",
+            "type": "rate_increase_notice",
+            "source_quote": "90 days written notice before a rise applies."
+          },
+          {
+            "rule_id": "BFC-VAGUE-01",
+            "type": "vague_description",
+            "source_quote": "Must name the work product or the person dealt with; \"review documents\" or \"emails\" will not do."
+          },
+          {
+            "rule_id": "BFC-DAYCAP-01",
+            "type": "daily_hour_cap",
+            "source_quote": "8.0 h per person per day; more needs a note from the partner."
+          },
+          {
+            "rule_id": "BFC-DUP-01",
+            "type": "duplicate_entries",
+            "source_quote": "Paid once."
+          },
+          {
+            "rule_id": "BFC-OVERHEAD-01",
+            "type": "expense_overhead",
+            "source_quote": "No postage, phone, in-house word processing, staff overtime or database subscriptions."
+          },
+          {
+            "rule_id": "BFC-AIDISC-01",
+            "type": "ai_disclosure_required",
+            "source_quote": "A line done with a generative AI tool must carry the tag [GAI]."
+          },
+          {
+            "rule_id": "BFC-AINOPAY-01",
+            "type": "ai_nonpayable_task",
+            "source_quote": "No payment for AI-made summaries of transcripts or documents, or AI first-pass document review."
+          }
+        ],
+        "wrong_proposals": [],
+        "candidates_proposed": 10
+      },
+      {
+        "client_id": "coldwaterfen",
+        "expected_rules": 15,
+        "proposed_correctly": 9,
+        "right_type_wrong_parameters": [
+          {
+            "rule_id": "CFH-ROUND-01",
+            "type": "rounding_pattern",
+            "differences": {
+              "threshold_percent": {
+                "expected": 75,
+                "proposed": 80
+              }
+            },
+            "source_quote": "The Authority's auditors will inquire into the records of any timekeeper three-quarters or more of whose entries (eight entries being the minimum examined) are stated in whole hours."
+          }
+        ],
+        "missed": [
+          {
+            "rule_id": "CFH-BUDGET-01",
+            "type": "budget_cap",
+            "source_quote": "The Authority's obligation to pay Counsel on any assignment is limited to the ceiling amount fixed in the assignment order, and Counsel proceeds at its own risk as to any fees or costs that would carry total billings past that ceiling."
+          },
+          {
+            "rule_id": "CFH-PHASE-01",
+            "type": "phase_cap",
+            "source_quote": "Where an assignment order apportions the ceiling amount among stages, billings attributable to a stage shall be held within the sum apportioned to it."
+          },
+          {
+            "rule_id": "CFH-RATE-01",
+            "type": "rate_above_card",
+            "source_quote": "Services shall be charged at the rates enumerated in the assignment order and not otherwise."
+          },
+          {
+            "rule_id": "CFH-BLOCK-01",
+            "type": "block_billing",
+            "source_quote": "A time entry shall describe a single service, and the Authority declines to pay for composite entries in which two or more services share one time figure."
+          },
+          {
+            "rule_id": "CFH-RESEARCH-01",
+            "type": "research_approval",
+            "source_quote": "Counsel shall obtain the written concurrence of the Chief Legal Officer before devoting in excess of four (4) hours to legal research on an assignment."
+          }
+        ],
+        "wrong_proposals": [
+          {
+            "type": "unapproved_timekeeper",
+            "source_quote": "Travel time, where the Chief Legal Officer has approved the travel in advance, is compensated at one-half of the timekeeper's rate; unapproved travel time is not compensated.",
+            "on_a_listed_non_rule_sentence": false
+          }
+        ],
+        "candidates_proposed": 11
+      },
+      {
+        "client_id": "nettlecombe",
+        "expected_rules": 15,
+        "proposed_correctly": 3,
+        "right_type_wrong_parameters": [
+          {
+            "rule_id": "NHL-BLOCK-01",
+            "type": "block_billing",
+            "differences": {
+              "min_hours": {
+                "expected": "0.3",
+                "proposed": 0
+              }
+            },
+            "source_quote": "Anything over 18 minutes (0.3) that covers more than one task comes back to you."
+          },
+          {
+            "rule_id": "NHL-TRAVEL-01",
+            "type": "travel_time",
+            "differences": {
+              "billable_percent": {
+                "expected": 50,
+                "proposed": 100
+              }
+            },
+            "source_quote": "Travel time gets billed at half your normal rate."
+          }
+        ],
+        "missed": [
+          {
+            "rule_id": "NHL-VAGUE-01",
+            "type": "vague_description",
+            "source_quote": "Same for entries that don't say anything: \"attention to matter\", \"draft correspondence\" and the like."
+          },
+          {
+            "rule_id": "NHL-RATE-01",
+            "type": "rate_above_card",
+            "source_quote": "Stick to the rates in the engagement letter."
+          },
+          {
+            "rule_id": "NHL-DUP-01",
+            "type": "duplicate_entries",
+            "source_quote": "Double entries get paid once."
+          },
+          {
+            "rule_id": "NHL-DAYCAP-01",
+            "type": "daily_hour_cap",
+            "source_quote": "Eleven hours is the most I'll accept from one person in a day without a call first."
+          },
+          {
+            "rule_id": "NHL-EVENT-01",
+            "type": "staffing_event_limit",
+            "source_quote": "No more than two of your people at any deposition, hearing or mediation."
+          },
+          {
+            "rule_id": "NHL-CONF-01",
+            "type": "internal_conference_limit",
+            "source_quote": "Lawyers talking to each other inside your firm: 0.3 max per entry."
+          },
+          {
+            "rule_id": "NHL-RESEARCH-01",
+            "type": "research_approval",
+            "source_quote": "Ask me before legal research on a file goes past 5 hours."
+          },
+          {
+            "rule_id": "NHL-NONBILL-01",
+            "type": "non_billable_task",
+            "source_quote": "Don't bill us for clerical work, conflict checks or training your own people."
+          },
+          {
+            "rule_id": "NHL-OVERHEAD-01",
+            "type": "expense_overhead",
+            "source_quote": "No overhead on the bill either: postage, word processing, phone charges, office supplies, online research fees."
+          },
+          {
+            "rule_id": "NHL-LATE-01",
+            "type": "late_time",
+            "source_quote": "Try to get time to us within 60 days."
+          }
+        ],
+        "wrong_proposals": [
+          {
+            "type": "rounding_pattern",
+            "source_quote": "Eleven hours is the most I'll accept from one person in a day without a call first.",
+            "on_a_listed_non_rule_sentence": false
+          }
+        ],
+        "candidates_proposed": 6
+      }
+    ]
+  },
+  "engine_with_hand_confirmed_rules": {
+    "planted_total": 86,
+    "planted_counted": 84,
+    "planted_found": 74,
+    "planted_missed": 10,
+    "planted_wrong_status": 0,
+    "false_positive_findings": 1,
+    "must_not_flag_lines": 116,
+    "must_not_flag_lines_flagged": 1,
+    "unjudged_extra_findings_on_planted_lines": 2,
+    "excluded_from_recall": [
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 21,
+        "timekeeper_id": "D34",
+        "rule_type": "ai_nonpayable_task",
+        "rule_id": "BFC-AINOPAY-01",
+        "expected_status": "open",
+        "note": "AI first-pass document review, which the client will not pay for; marker is present",
+        "difficulty": "easy",
+        "why": "not checkable in the LEDES layout"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 22,
+        "timekeeper_id": "D32",
+        "rule_type": "ai_disclosure_required",
+        "rule_id": "BFC-AIDISC-01",
+        "expected_status": "open",
+        "note": "narrative says an AI tool was used; no [GAI] marker",
+        "difficulty": "medium",
+        "why": "not checkable in the LEDES layout"
+      }
+    ],
+    "schema_limit_findings": [],
+    "by_difficulty": {
+      "easy": {
+        "found": 48,
+        "missed": 0
+      },
+      "hard": {
+        "found": 10,
+        "missed": 10
+      },
+      "medium": {
+        "found": 16,
+        "missed": 0
+      }
+    },
+    "by_rule_type": {
+      "ARITH-LINE": {
+        "found": 1,
+        "missed": 0
+      },
+      "ARITH-TOTAL": {
+        "found": 1,
+        "missed": 0
+      },
+      "ai_disclosure_required": {
+        "found": 2,
+        "missed": 0
+      },
+      "ai_nonpayable_task": {
+        "found": 1,
+        "missed": 0
+      },
+      "block_billing": {
+        "found": 6,
+        "missed": 0
+      },
+      "budget_cap": {
+        "found": 1,
+        "missed": 0
+      },
+      "daily_hour_cap": {
+        "found": 3,
+        "missed": 0
+      },
+      "duplicate_entries": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_markup": {
+        "found": 2,
+        "missed": 0
+      },
+      "expense_overhead": {
+        "found": 4,
+        "missed": 1
+      },
+      "expense_per_diem": {
+        "found": 3,
+        "missed": 1
+      },
+      "expense_receipt_threshold": {
+        "found": 4,
+        "missed": 0
+      },
+      "internal_conference_limit": {
+        "found": 4,
+        "missed": 1
+      },
+      "late_time": {
+        "found": 3,
+        "missed": 0
+      },
+      "minimum_increment": {
+        "found": 5,
+        "missed": 0
+      },
+      "non_billable_task": {
+        "found": 3,
+        "missed": 6
+      },
+      "phase_cap": {
+        "found": 1,
+        "missed": 0
+      },
+      "rate_above_card": {
+        "found": 3,
+        "missed": 0
+      },
+      "rate_increase_notice": {
+        "found": 2,
+        "missed": 0
+      },
+      "required_codes": {
+        "found": 3,
+        "missed": 0
+      },
+      "research_approval": {
+        "found": 2,
+        "missed": 0
+      },
+      "rounding_pattern": {
+        "found": 1,
+        "missed": 0
+      },
+      "staffing_event_limit": {
+        "found": 1,
+        "missed": 1
+      },
+      "staffing_matter_limit": {
+        "found": 2,
+        "missed": 0
+      },
+      "travel_time": {
+        "found": 2,
+        "missed": 0
+      },
+      "unapproved_timekeeper": {
+        "found": 3,
+        "missed": 0
+      },
+      "vague_description": {
+        "found": 7,
+        "missed": 0
+      }
+    },
+    "missed": [
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 7,
+        "timekeeper_id": "D31",
+        "rule_type": "internal_conference_limit",
+        "rule_id": "BFC-CONF-01",
+        "expected_status": "open",
+        "note": "0.6 hour in-firm meeting against a 0.4 hour limit; no conference wording and coded A101",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 21,
+        "timekeeper_id": "D34",
+        "rule_type": "non_billable_task",
+        "rule_id": "BFC-NONBILL-01",
+        "expected_status": "open",
+        "note": "training, described without the word",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 25,
+        "timekeeper_id": "D34",
+        "rule_type": "non_billable_task",
+        "rule_id": "BFC-NONBILL-01",
+        "expected_status": "open",
+        "note": "time spent answering a billing question; invoice work described without the usual words",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4402",
+        "line_no": 26,
+        "timekeeper_id": "",
+        "rule_type": "expense_overhead",
+        "rule_id": "BFC-OVERHEAD-01",
+        "expected_status": "open",
+        "note": "database subscription, described without the word subscription",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 4,
+        "timekeeper_id": "D34",
+        "rule_type": "non_billable_task",
+        "rule_id": "BFC-NONBILL-01",
+        "expected_status": "open",
+        "note": "clerical file handling described as what was done",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": 15,
+        "timekeeper_id": "E42",
+        "rule_type": "staffing_event_limit",
+        "rule_id": "CFH-EVENT-01",
+        "expected_status": "open",
+        "note": "second attorney at a mediation, no approval; the word attend is not used. Either attendee line is acceptable as the flagged line",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": 25,
+        "timekeeper_id": "",
+        "rule_type": "expense_per_diem",
+        "rule_id": "CFH-PERDIEM-01",
+        "expected_status": "open",
+        "note": "238.00 a night against a 225.00 lodging cap; described as a room",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 28,
+        "timekeeper_id": "G54",
+        "rule_type": "non_billable_task",
+        "rule_id": "NHL-NONBILL-01",
+        "expected_status": "open",
+        "note": "conflicts check, described as what was done",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8802",
+        "line_no": 8,
+        "timekeeper_id": "G54",
+        "rule_type": "non_billable_task",
+        "rule_id": "NHL-NONBILL-01",
+        "expected_status": "open",
+        "note": "clerical file handling described as what was done",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8802",
+        "line_no": 15,
+        "timekeeper_id": "G54",
+        "rule_type": "non_billable_task",
+        "rule_id": "NHL-NONBILL-01",
+        "expected_status": "open",
+        "note": "training, described without the word",
+        "difficulty": "hard"
+      }
+    ],
+    "wrong_status": [],
+    "false_positives": [
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 16,
+        "rule_type": "ai_nonpayable_task",
+        "rule_id": "BFC-AINOPAY-01",
+        "narrative": "Draft motion for summary adjudication on liability cap [GAI]",
+        "explanation": "The entry is AI-assisted and describes a task (\"summary\") that this client's terms say it will not pay for when AI-assisted."
+      }
+    ],
+    "unjudged": [
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 21,
+        "rule_type": "ai_nonpayable_task",
+        "rule_id": "BFC-AINOPAY-01",
+        "narrative": "Used generative AI tool for first-pass document review of dispatch emails [GAI]",
+        "explanation": "The entry is AI-assisted and describes a task (\"first-pass document review\") that this client's terms say it will not pay for when AI-assisted."
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 22,
+        "rule_type": "ai_disclosure_required",
+        "rule_id": "BFC-AIDISC-01",
+        "narrative": "Tighten audit response with an AI writing assistant",
+        "explanation": "The entry mentions an AI tool but the narrative does not carry the client's disclosure marker \"[GAI]\"."
+      }
+    ],
+    "not_enforced_respected": true,
+    "not_checked_notes": {
+      "INV-BFC-4402": [
+        "BFC-AIDISC-01 (AI-assisted work must be disclosed on the invoice): the file has no AI-assisted flag for some entries, so only the narrative text was checked for them"
+      ],
+      "INV-BFC-4403": [
+        "BFC-RECEIPT-01 (Receipt threshold): 1 expense line(s) at or over the threshold could not be checked because the file does not say whether a receipt is attached",
+        "BFC-MARKUP-01 (Expense mark-up prohibited): 2 expense line(s) could not be checked for mark-up because the file has no cost for them",
+        "BFC-AIDISC-01 (AI-assisted work must be disclosed on the invoice): the file has no AI-assisted flag for some entries, so only the narrative text was checked for them"
+      ],
+      "INV-CFH-6602": [
+        "CFH-PHASE-01 (Phase budget cap): no phase budget is recorded for this matter"
+      ]
+    }
+  },
+  "engine_with_intake_proposals_only": {
+    "planted_total": 86,
+    "planted_counted": 84,
+    "planted_found": 37,
+    "planted_missed": 47,
+    "planted_wrong_status": 0,
+    "false_positive_findings": 3,
+    "must_not_flag_lines": 116,
+    "must_not_flag_lines_flagged": 3,
+    "unjudged_extra_findings_on_planted_lines": 0,
+    "excluded_from_recall": [
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 21,
+        "timekeeper_id": "D34",
+        "rule_type": "ai_nonpayable_task",
+        "rule_id": "BFC-AINOPAY-01",
+        "expected_status": "open",
+        "note": "AI first-pass document review, which the client will not pay for; marker is present",
+        "difficulty": "easy",
+        "why": "not checkable in the LEDES layout"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 22,
+        "timekeeper_id": "D32",
+        "rule_type": "ai_disclosure_required",
+        "rule_id": "BFC-AIDISC-01",
+        "expected_status": "open",
+        "note": "narrative says an AI tool was used; no [GAI] marker",
+        "difficulty": "medium",
+        "why": "not checkable in the LEDES layout"
+      }
+    ],
+    "schema_limit_findings": [],
+    "by_difficulty": {
+      "easy": {
+        "found": 25,
+        "missed": 23
+      },
+      "hard": {
+        "found": 6,
+        "missed": 14
+      },
+      "medium": {
+        "found": 6,
+        "missed": 10
+      }
+    },
+    "by_rule_type": {
+      "ARITH-LINE": {
+        "found": 1,
+        "missed": 0
+      },
+      "ARITH-TOTAL": {
+        "found": 1,
+        "missed": 0
+      },
+      "ai_disclosure_required": {
+        "found": 0,
+        "missed": 2
+      },
+      "ai_nonpayable_task": {
+        "found": 0,
+        "missed": 1
+      },
+      "block_billing": {
+        "found": 4,
+        "missed": 2
+      },
+      "budget_cap": {
+        "found": 0,
+        "missed": 1
+      },
+      "daily_hour_cap": {
+        "found": 0,
+        "missed": 3
+      },
+      "duplicate_entries": {
+        "found": 1,
+        "missed": 3
+      },
+      "expense_markup": {
+        "found": 2,
+        "missed": 0
+      },
+      "expense_overhead": {
+        "found": 0,
+        "missed": 5
+      },
+      "expense_per_diem": {
+        "found": 3,
+        "missed": 1
+      },
+      "expense_receipt_threshold": {
+        "found": 4,
+        "missed": 0
+      },
+      "internal_conference_limit": {
+        "found": 2,
+        "missed": 3
+      },
+      "late_time": {
+        "found": 3,
+        "missed": 0
+      },
+      "minimum_increment": {
+        "found": 5,
+        "missed": 0
+      },
+      "non_billable_task": {
+        "found": 2,
+        "missed": 7
+      },
+      "phase_cap": {
+        "found": 0,
+        "missed": 1
+      },
+      "rate_above_card": {
+        "found": 1,
+        "missed": 2
+      },
+      "rate_increase_notice": {
+        "found": 0,
+        "missed": 2
+      },
+      "required_codes": {
+        "found": 3,
+        "missed": 0
+      },
+      "research_approval": {
+        "found": 0,
+        "missed": 2
+      },
+      "rounding_pattern": {
+        "found": 1,
+        "missed": 0
+      },
+      "staffing_event_limit": {
+        "found": 0,
+        "missed": 2
+      },
+      "staffing_matter_limit": {
+        "found": 2,
+        "missed": 0
+      },
+      "travel_time": {
+        "found": 1,
+        "missed": 1
+      },
+      "unapproved_timekeeper": {
+        "found": 1,
+        "missed": 2
+      },
+      "vague_description": {
+        "found": 0,
+        "missed": 7
+      }
+    },
+    "missed": [
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 5,
+        "timekeeper_id": "D33",
+        "rule_type": "rate_increase_notice",
+        "rule_id": "BFC-RATEUP-01",
+        "expected_status": "open",
+        "note": "360 billed, last billed 340; notice given 2026-07-20, so the 90 day period ran to 2026-10-18",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 7,
+        "timekeeper_id": "D31",
+        "rule_type": "internal_conference_limit",
+        "rule_id": "BFC-CONF-01",
+        "expected_status": "open",
+        "note": "0.6 hour in-firm meeting against a 0.4 hour limit; no conference wording and coded A101",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 10,
+        "timekeeper_id": "D34",
+        "rule_type": "vague_description",
+        "rule_id": "BFC-VAGUE-01",
+        "expected_status": "open",
+        "note": "generic phrase, no object",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 11,
+        "timekeeper_id": "D32",
+        "rule_type": "vague_description",
+        "rule_id": "BFC-VAGUE-01",
+        "expected_status": "open",
+        "note": "one word",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 12,
+        "timekeeper_id": "D33",
+        "rule_type": "rate_increase_notice",
+        "rule_id": "BFC-RATEUP-01",
+        "expected_status": "open",
+        "note": "360 billed, last billed 340; before the notice period ended on 2026-10-18",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 14,
+        "timekeeper_id": "D32",
+        "rule_type": "daily_hour_cap",
+        "rule_id": "BFC-DAYCAP-01",
+        "expected_status": "waived",
+        "note": "D32 day total 8.3 hours on 2026-10-13 against an 8 hour limit; client approved the long day, see waiver W-B01",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 17,
+        "timekeeper_id": "D34",
+        "rule_type": "ai_nonpayable_task",
+        "rule_id": "BFC-AINOPAY-01",
+        "expected_status": "open",
+        "note": "AI-assisted transcript summary, which the client will not pay for; marker is present",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 18,
+        "timekeeper_id": "D33",
+        "rule_type": "ai_disclosure_required",
+        "rule_id": "BFC-AIDISC-01",
+        "expected_status": "open",
+        "note": "time system flags the entry as AI-assisted and the narrative has no [GAI] marker. (The 360 rate is allowed on this date: the notice period ended 2026-10-18.)",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 20,
+        "timekeeper_id": "D39",
+        "rule_type": "unapproved_timekeeper",
+        "rule_id": "BFC-TK-01",
+        "expected_status": "open",
+        "note": "D39 is not on the approved list for the matter",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 21,
+        "timekeeper_id": "D34",
+        "rule_type": "non_billable_task",
+        "rule_id": "BFC-NONBILL-01",
+        "expected_status": "open",
+        "note": "training, described without the word",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 23,
+        "timekeeper_id": "D31",
+        "rule_type": "duplicate_entries",
+        "rule_id": "BFC-DUP-01",
+        "expected_status": "open",
+        "note": "same as the entry before it",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 25,
+        "timekeeper_id": "D34",
+        "rule_type": "non_billable_task",
+        "rule_id": "BFC-NONBILL-01",
+        "expected_status": "open",
+        "note": "time spent answering a billing question; invoice work described without the usual words",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 30,
+        "timekeeper_id": "",
+        "rule_type": "expense_overhead",
+        "rule_id": "BFC-OVERHEAD-01",
+        "expected_status": "open",
+        "note": "telephone charges (expense code E105)",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-BFC-4402",
+        "line_no": 19,
+        "timekeeper_id": "D32",
+        "rule_type": "vague_description",
+        "rule_id": "BFC-VAGUE-01",
+        "expected_status": "open",
+        "note": "generic phrase, no object",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4402",
+        "line_no": 22,
+        "timekeeper_id": "D32",
+        "rule_type": "ai_disclosure_required",
+        "rule_id": "BFC-AIDISC-01",
+        "expected_status": "open",
+        "note": "narrative says a machine-generated work product was used; no [GAI] marker; time-system flag blank",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-BFC-4402",
+        "line_no": 26,
+        "timekeeper_id": "",
+        "rule_type": "expense_overhead",
+        "rule_id": "BFC-OVERHEAD-01",
+        "expected_status": "open",
+        "note": "database subscription, described without the word subscription",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 4,
+        "timekeeper_id": "D34",
+        "rule_type": "non_billable_task",
+        "rule_id": "BFC-NONBILL-01",
+        "expected_status": "open",
+        "note": "clerical file handling described as what was done",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 9,
+        "timekeeper_id": "D32",
+        "rule_type": "daily_hour_cap",
+        "rule_id": "BFC-DAYCAP-01",
+        "expected_status": "open",
+        "note": "D32 day total 8.4 hours on 2026-10-12 against an 8 hour limit; 0.4 hour of this entry is over",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 10,
+        "timekeeper_id": "D34",
+        "rule_type": "vague_description",
+        "rule_id": "BFC-VAGUE-01",
+        "expected_status": "open",
+        "note": "generic phrase, no object",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 16,
+        "timekeeper_id": "D34",
+        "rule_type": "duplicate_entries",
+        "rule_id": "BFC-DUP-01",
+        "expected_status": "open",
+        "note": "same as the entry before it",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 19,
+        "timekeeper_id": "D39",
+        "rule_type": "unapproved_timekeeper",
+        "rule_id": "BFC-TK-01",
+        "expected_status": "open",
+        "note": "D39 is not on the approved list for the matter",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-BFC-4403",
+        "line_no": 25,
+        "timekeeper_id": "",
+        "rule_type": "expense_overhead",
+        "rule_id": "BFC-OVERHEAD-01",
+        "expected_status": "open",
+        "note": "postage, described as stamps and certified mail (expense code E108)",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": 7,
+        "timekeeper_id": "E43",
+        "rule_type": "research_approval",
+        "rule_id": "CFH-RESEARCH-01",
+        "expected_status": "open",
+        "note": "legal research reaches 4.4 hours (lines 5, 6 and 7) against a 4 hour limit, no approval; lines 6 and 7 do not use the word research and line 6 is coded A104",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": 11,
+        "timekeeper_id": "E42",
+        "rule_type": "block_billing",
+        "rule_id": "CFH-BLOCK-01",
+        "expected_status": "open",
+        "note": "two tasks in one entry, joined by then; this client allows one",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": 13,
+        "timekeeper_id": "E41",
+        "rule_type": "rate_above_card",
+        "rule_id": "CFH-RATE-01",
+        "expected_status": "open",
+        "note": "billed at 510 against an approved 495",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": 15,
+        "timekeeper_id": "E42",
+        "rule_type": "staffing_event_limit",
+        "rule_id": "CFH-EVENT-01",
+        "expected_status": "open",
+        "note": "second attorney at a mediation, no approval; the word attend is not used. Either attendee line is acceptable as the flagged line",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": 25,
+        "timekeeper_id": "",
+        "rule_type": "expense_per_diem",
+        "rule_id": "CFH-PERDIEM-01",
+        "expected_status": "open",
+        "note": "238.00 a night against a 225.00 lodging cap; described as a room",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": null,
+        "timekeeper_id": "",
+        "rule_type": "budget_cap",
+        "rule_id": "CFH-BUDGET-01",
+        "expected_status": "open",
+        "note": "ceiling 120,000.00, billed to date 104,000.00, this invoice 17,521.75: the assignment goes 1,521.75 over the ceiling",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-CFH-6601",
+        "line_no": null,
+        "timekeeper_id": "",
+        "rule_type": "phase_cap",
+        "rule_id": "CFH-PHASE-01",
+        "expected_status": "open",
+        "note": "stage L100 allotment 30,000.00, billed to date 22,500.00, L1xx fee lines on this invoice 8,640.00: 1,140.00 over the stage allotment",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-CFH-6602",
+        "line_no": 8,
+        "timekeeper_id": "E42",
+        "rule_type": "block_billing",
+        "rule_id": "CFH-BLOCK-01",
+        "expected_status": "open",
+        "note": "two tasks in one entry (review a production; prepare an outline); this client allows one",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 5,
+        "timekeeper_id": "G53",
+        "rule_type": "internal_conference_limit",
+        "rule_id": "NHL-CONF-01",
+        "expected_status": "open",
+        "note": "0.6 hour in-firm briefing against a 0.3 hour limit; no conference wording",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 8,
+        "timekeeper_id": "G54",
+        "rule_type": "non_billable_task",
+        "rule_id": "NHL-NONBILL-01",
+        "expected_status": "open",
+        "note": "clerical work (data entry)",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 11,
+        "timekeeper_id": "G51",
+        "rule_type": "vague_description",
+        "rule_id": "NHL-VAGUE-01",
+        "expected_status": "open",
+        "note": "generic phrase",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 12,
+        "timekeeper_id": "G52",
+        "rule_type": "vague_description",
+        "rule_id": "NHL-VAGUE-01",
+        "expected_status": "open",
+        "note": "no object: to whom and about what",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 19,
+        "timekeeper_id": "G52",
+        "rule_type": "daily_hour_cap",
+        "rule_id": "NHL-DAYCAP-01",
+        "expected_status": "open",
+        "note": "G52 day total 11.3 hours on 2026-10-19 against an 11 hour limit; 0.3 hour of this entry is over",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 21,
+        "timekeeper_id": "G53",
+        "rule_type": "staffing_event_limit",
+        "rule_id": "NHL-EVENT-01",
+        "expected_status": "open",
+        "note": "third lawyer at a deposition; client pays for two. The word attend is not used. Any one of lines 17, 20 and 21 is acceptable as the flagged line",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 22,
+        "timekeeper_id": "G51",
+        "rule_type": "travel_time",
+        "rule_id": "NHL-TRAVEL-01",
+        "expected_status": "open",
+        "note": "travel billed at the full 430 rate; client pays 50%. The word travel is not used",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 25,
+        "timekeeper_id": "G54",
+        "rule_type": "rate_above_card",
+        "rule_id": "NHL-RATE-01",
+        "expected_status": "open",
+        "note": "billed at 155 against an approved 140",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 27,
+        "timekeeper_id": "G52",
+        "rule_type": "duplicate_entries",
+        "rule_id": "NHL-DUP-01",
+        "expected_status": "open",
+        "note": "same as the entry before it",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 28,
+        "timekeeper_id": "G54",
+        "rule_type": "non_billable_task",
+        "rule_id": "NHL-NONBILL-01",
+        "expected_status": "open",
+        "note": "conflicts check, described as what was done",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 33,
+        "timekeeper_id": "",
+        "rule_type": "expense_overhead",
+        "rule_id": "NHL-OVERHEAD-01",
+        "expected_status": "open",
+        "note": "word processing",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-NHL-8802",
+        "line_no": 4,
+        "timekeeper_id": "G53",
+        "rule_type": "research_approval",
+        "rule_id": "NHL-RESEARCH-01",
+        "expected_status": "open",
+        "note": "legal research reaches 5.5 hours (lines 3 and 4) against a 5 hour limit, no approval; this line does not use the word research (coded A102)",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-NHL-8802",
+        "line_no": 8,
+        "timekeeper_id": "G54",
+        "rule_type": "non_billable_task",
+        "rule_id": "NHL-NONBILL-01",
+        "expected_status": "open",
+        "note": "clerical file handling described as what was done",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8802",
+        "line_no": 9,
+        "timekeeper_id": "G51",
+        "rule_type": "internal_conference_limit",
+        "rule_id": "NHL-CONF-01",
+        "expected_status": "open",
+        "note": "0.5 hour in-firm call against a 0.3 hour limit",
+        "difficulty": "medium"
+      },
+      {
+        "invoice_id": "INV-NHL-8802",
+        "line_no": 12,
+        "timekeeper_id": "G51",
+        "rule_type": "vague_description",
+        "rule_id": "NHL-VAGUE-01",
+        "expected_status": "open",
+        "note": "generic phrase",
+        "difficulty": "easy"
+      },
+      {
+        "invoice_id": "INV-NHL-8802",
+        "line_no": 15,
+        "timekeeper_id": "G54",
+        "rule_type": "non_billable_task",
+        "rule_id": "NHL-NONBILL-01",
+        "expected_status": "open",
+        "note": "training, described without the word",
+        "difficulty": "hard"
+      },
+      {
+        "invoice_id": "INV-NHL-8802",
+        "line_no": 23,
+        "timekeeper_id": "",
+        "rule_type": "expense_overhead",
+        "rule_id": "NHL-OVERHEAD-01",
+        "expected_status": "open",
+        "note": "postage",
+        "difficulty": "easy"
+      }
+    ],
+    "wrong_status": [],
+    "false_positives": [
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 6,
+        "rule_type": "internal_conference_limit",
+        "rule_id": "BRAMBL-P-INTERNAL-CONFERENCE-LIMIT-01",
+        "narrative": "Internal conference with T. Ilves-Moreau on limitation-of-liability defense",
+        "explanation": "Internal conference of 0.4 hours (read from \"Internal conference\"). The limit is 0 hours per entry."
+      },
+      {
+        "invoice_id": "INV-BFC-4401",
+        "line_no": 8,
+        "rule_type": "block_billing",
+        "rule_id": "BRAMBL-P-BLOCK-BILLING-01",
+        "narrative": "Email to shipper's counsel on protective order; review redline",
+        "explanation": "The narrative appears to describe 2 tasks under one time total of 0.4 hours."
+      },
+      {
+        "invoice_id": "INV-NHL-8801",
+        "line_no": 10,
+        "rule_type": "block_billing",
+        "rule_id": "NETTLE-P-BLOCK-BILLING-01",
+        "narrative": "Email borrower's counsel about inspection date; calendar it",
+        "explanation": "The narrative appears to describe 2 tasks under one time total of 0.3 hours."
+      }
+    ],
+    "unjudged": [],
+    "not_enforced_respected": true,
+    "not_checked_notes": {
+      "INV-BFC-4403": [
+        "BRAMBL-P-EXPENSE-RECEIPT-THRESHOLD-01 (Receipt threshold): 1 expense line(s) at or over the threshold could not be checked because the file does not say whether a receipt is attached",
+        "BRAMBL-P-EXPENSE-MARKUP-01 (Expense mark-up prohibited): 2 expense line(s) could not be checked for mark-up because the file has no cost for them"
+      ]
+    }
+  }
+}

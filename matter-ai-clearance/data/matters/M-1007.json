@@ -1,0 +1,22 @@
+{
+ "id": "M-1007",
+ "name": "Orrinthe: collaboration and license agreement",
+ "client_id": "orrinthe",
+ "matter_type": "licensing",
+ "responsible_attorney": "S. Pemberly (fictional)",
+ "intake_date": "2026-07-01",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "orrinthe-ocg-2026",
+  "orrinthe-el-2026"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

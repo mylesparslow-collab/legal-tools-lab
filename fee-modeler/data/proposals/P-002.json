@@ -1,0 +1,39 @@
+{
+  "proposal_id": "P-002",
+  "title": "Change of ownership, three facilities, with hours-reduction assumptions",
+  "matter_type": "facility_change_of_ownership",
+  "attributes": {
+    "num_units": 3,
+    "unit_label": "facilities",
+    "num_parties": 2
+  },
+  "selection_rules": {
+    "num_units_range": [
+      2,
+      4
+    ],
+    "min_comps": 8
+  },
+  "ai_assumptions": {
+    "drafting": "20",
+    "discovery": "10"
+  },
+  "scenarios": [
+    {
+      "type": "fixed",
+      "fee": "45000"
+    },
+    {
+      "type": "capped",
+      "cap": "55000"
+    },
+    {
+      "type": "collar",
+      "fee": "45000",
+      "band_pct": "10",
+      "share_pct": "50"
+    }
+  ],
+  "as_of": "2026-01-01",
+  "target_probability": "0.80"
+}

@@ -1,0 +1,305 @@
+{
+ "about": "Every thesaurus group added after the first run of held-out batch A. Batch B was sealed when these were written.",
+ "prompted_by_a_specific_batch_a_miss": [
+  [
+   "retention",
+   "retain",
+   "keep",
+   "keeping"
+  ],
+  [
+   "destruction",
+   "destroy",
+   "shredding",
+   "shred"
+  ],
+  [
+   "records",
+   "files"
+  ],
+  [
+   "regulation",
+   "rule",
+   "ordinance",
+   "bylaw"
+  ],
+  [
+   "council",
+   "local authority",
+   "municipality",
+   "city",
+   "public agency"
+  ],
+  [
+   "public contract",
+   "government contract",
+   "public works contract",
+   "council contract"
+  ],
+  [
+   "unrelated business income",
+   "unrelated business income tax",
+   "ubit",
+   "unrelated business taxable income",
+   "ubti"
+  ],
+  [
+   "parent company",
+   "parent",
+   "holding company"
+  ],
+  [
+   "parent guaranty",
+   "parent company guarantee",
+   "corporate guaranty"
+  ],
+  [
+   "staff",
+   "employees",
+   "workforce",
+   "personnel",
+   "workers"
+  ],
+  [
+   "overtime",
+   "time and a half",
+   "overtime pay"
+  ],
+  [
+   "exempt",
+   "salaried",
+   "exempt employee",
+   "salaried employee"
+  ],
+  [
+   "ownership",
+   "owner",
+   "own",
+   "owned"
+  ],
+  [
+   "joint ownership",
+   "co-ownership",
+   "jointly owned"
+  ],
+  [
+   "joint development",
+   "research partnership",
+   "collaboration",
+   "development partnership",
+   "research partner"
+  ],
+  [
+   "drag-along",
+   "forced sale",
+   "forced to sell",
+   "compelled sale"
+  ],
+  [
+   "majority shareholder",
+   "controlling shareholder",
+   "majority holder"
+  ],
+  [
+   "minority shareholder",
+   "minority holder",
+   "minority investor"
+  ],
+  [
+   "first drawdown",
+   "initial drawdown",
+   "initial advance",
+   "initial funding"
+  ],
+  [
+   "domain name dispute",
+   "cybersquatting",
+   "domain dispute",
+   "domain name complaint"
+  ],
+  [
+   "lending",
+   "financing",
+   "loans"
+  ]
+ ],
+ "abbreviations_added_as_a_class": [
+  [
+   "share purchase agreement",
+   "stock purchase agreement",
+   "spa"
+  ],
+  [
+   "asset purchase agreement",
+   "apa"
+  ],
+  [
+   "statement of work",
+   "sow"
+  ],
+  [
+   "end user licence agreement",
+   "eula",
+   "end user license agreement"
+  ],
+  [
+   "terms of service",
+   "tos",
+   "terms of use"
+  ],
+  [
+   "initial public offering",
+   "ipo"
+  ],
+  [
+   "limited liability company",
+   "llc"
+  ],
+  [
+   "motion for summary judgment",
+   "msj",
+   "summary judgment motion"
+  ],
+  [
+   "motion to dismiss",
+   "mtd"
+  ],
+  [
+   "condition precedent",
+   "cp"
+  ],
+  [
+   "data processing agreement",
+   "dpa",
+   "data processing addendum"
+  ],
+  [
+   "data subject access request",
+   "dsar",
+   "subject access request"
+  ],
+  [
+   "standard contractual clauses",
+   "scc",
+   "model clauses"
+  ],
+  [
+   "conditional use permit",
+   "cup"
+  ],
+  [
+   "environmental impact report",
+   "eir",
+   "environmental impact statement",
+   "eis"
+  ],
+  [
+   "planned unit development",
+   "pud"
+  ],
+  [
+   "homeowners association",
+   "hoa"
+  ],
+  [
+   "tenant improvement",
+   "ti",
+   "tenant improvements"
+  ],
+  [
+   "subordination non-disturbance and attornment agreement",
+   "snda"
+  ],
+  [
+   "purchase and sale agreement",
+   "psa"
+  ],
+  [
+   "letter of credit",
+   "lc",
+   "loc"
+  ],
+  [
+   "debtor in possession",
+   "dip"
+  ],
+  [
+   "leveraged buyout",
+   "lbo"
+  ],
+  [
+   "net operating loss",
+   "nol"
+  ],
+  [
+   "goods and services tax",
+   "gst"
+  ],
+  [
+   "real estate investment trust",
+   "reit"
+  ],
+  [
+   "employee stock ownership plan",
+   "esop"
+  ],
+  [
+   "paid time off",
+   "pto"
+  ],
+  [
+   "performance improvement plan",
+   "pip"
+  ],
+  [
+   "request for quotation",
+   "rfq"
+  ],
+  [
+   "notice to proceed",
+   "ntp"
+  ],
+  [
+   "open source software",
+   "oss"
+  ],
+  [
+   "electronically stored information",
+   "esi"
+  ],
+  [
+   "request for admission",
+   "rfa"
+  ],
+  [
+   "statute of limitations",
+   "sol",
+   "limitation period"
+  ],
+  [
+   "annual general meeting",
+   "agm"
+  ],
+  [
+   "shareholders agreement",
+   "sha",
+   "stockholders agreement"
+  ],
+  [
+   "grantor retained annuity trust",
+   "grat"
+  ],
+  [
+   "charitable remainder trust",
+   "crt"
+  ],
+  [
+   "donor advised fund",
+   "daf"
+  ],
+  [
+   "anti-money laundering",
+   "aml"
+  ]
+ ]
+}

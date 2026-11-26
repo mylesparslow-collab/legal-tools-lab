@@ -1,0 +1,324 @@
+{
+  "filing_id": "F-2027-008",
+  "generated_at": "2027-01-12T17:00:00+00:00",
+  "policy_version": "draft-0.1",
+  "document": {
+    "path": "document.txt",
+    "title": "Opposition to motion to strike",
+    "type": "opposition",
+    "sha256": "ab8776ca75557e3904bbbc1c38fd7ce3041e6878091a033acde0d91aa1723653",
+    "verifier_text_sha256": "a01892d9102554bcd027a137bc3985a7a7722c78b236a9e1409510ab272896f9"
+  },
+  "report": {
+    "source_format": "citecheck-report",
+    "doc_sha256": "a01892d9102554bcd027a137bc3985a7a7722c78b236a9e1409510ab272896f9",
+    "matches_document": true,
+    "summary": {
+      "PASS": 1,
+      "WARN": 0,
+      "FAIL": 2,
+      "MANUAL": 0,
+      "total": 3,
+      "quotes": 1,
+      "unverified_quotes": 1
+    }
+  },
+  "items": [
+    {
+      "id": "document_scope",
+      "title": "Document type is in scope",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "'opposition' is treated as a paper filed in court. Every citation needs personal verification.",
+      "authority_keys": [
+        "ccp_128_7_b2A",
+        "sb574_enactment"
+      ],
+      "details": []
+    },
+    {
+      "id": "responsible_attorney",
+      "title": "Responsible attorney named",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "Responsible attorney: Perrin Ashgrove (fictional attorney).",
+      "authority_keys": [
+        "ccp_128_7_b2A"
+      ],
+      "details": []
+    },
+    {
+      "id": "document_present",
+      "title": "Document found and hashed",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "SHA-256 of file: ab8776ca75557e3904bbbc1c38fd7ce3041e6878091a033acde0d91aa1723653.",
+      "authority_keys": [],
+      "details": []
+    },
+    {
+      "id": "citation_report_present",
+      "title": "Citation report present",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "citecheck-report, citations listed: 3 (machine: 1 pass, 0 warn, 2 fail, 0 manual).",
+      "authority_keys": [
+        "ccp_128_7_b2A",
+        "bpc_6068_1_a3Bi"
+      ],
+      "details": []
+    },
+    {
+      "id": "report_matches_document",
+      "title": "Report matches the document",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "The report's document hash equals the hash of the document text as it is now.",
+      "authority_keys": [
+        "ccp_128_7_b2A",
+        "bpc_6068_1_a3Bi"
+      ],
+      "details": []
+    },
+    {
+      "id": "citations_attested",
+      "title": "Every citation attested by the attorney",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "All 3 citations have an attestation by Perrin Ashgrove (fictional attorney) with date and method.",
+      "authority_keys": [
+        "ccp_128_7_b2A",
+        "bpc_6068_1_a3Bi"
+      ],
+      "details": []
+    },
+    {
+      "id": "citations_resolved",
+      "title": "No unresolved or not-found citations",
+      "status": "FAIL",
+      "blocking": true,
+      "reason": "1 unresolved citation problem(s). Policy does not allow sign-off over a not-found citation: correct or remove it and run the check again.",
+      "authority_keys": [
+        "ccp_128_7_b2A",
+        "bpc_6068_1_a3Bi"
+      ],
+      "details": [
+        "Renwick v. Tallmadge Freight Systems 940 Cal.App.5th 1312, 1320: NOT FOUND. No case found at 940 Cal. App. 5th 1312 (mirror coverage for Cal. App. 5th complete as of 2026-11-25). Possible fabricated or mistyped citation."
+      ]
+    },
+    {
+      "id": "quotes_match",
+      "title": "No quote mismatches",
+      "status": "FAIL",
+      "blocking": true,
+      "reason": "1 quotation(s) do not match the source. Correct the quotation and run the check again.",
+      "authority_keys": [
+        "ccp_128_7_b2A",
+        "bpc_6068_1_a3Bi"
+      ],
+      "details": [
+        "Ostrander v. Cypress Fold Logistics 912 Cal.App.5th 455, 462: [UNVERIFIED QUOTE] Not found verbatim in the source."
+      ]
+    },
+    {
+      "id": "machine_warnings",
+      "title": "Machine warnings resolved",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "No machine warnings.",
+      "authority_keys": [
+        "ccp_128_7_b2A",
+        "bpc_6068_1_a3Bi"
+      ],
+      "details": []
+    },
+    {
+      "id": "ai_use_recorded",
+      "title": "AI-use answer recorded",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "Recorded answer: generative AI was not used.",
+      "authority_keys": [],
+      "details": []
+    },
+    {
+      "id": "ai_output_verified",
+      "title": "AI output reviewed and corrected",
+      "status": "NOT APPLICABLE",
+      "blocking": false,
+      "reason": "Generative AI was not used.",
+      "authority_keys": [],
+      "details": []
+    },
+    {
+      "id": "protected_info_check",
+      "title": "Protected information question answered",
+      "status": "NOT APPLICABLE",
+      "blocking": false,
+      "reason": "Generative AI was not used.",
+      "authority_keys": [],
+      "details": []
+    },
+    {
+      "id": "ai_disclosure_decision",
+      "title": "AI-use disclosure decision recorded",
+      "status": "NOT APPLICABLE",
+      "blocking": false,
+      "reason": "Generative AI was not used.",
+      "authority_keys": [],
+      "details": []
+    },
+    {
+      "id": "judge_order_checked",
+      "title": "Judge and court AI orders checked",
+      "status": "PASS",
+      "blocking": false,
+      "reason": "1 entry found for judge 'fict-quillon' in court 'fict-alder-ridge', checked within 30 days (most recent 6 days before 2027-01-12). No requirement was known when last checked. That is a record of a search, not a statement that no order exists.",
+      "authority_keys": [],
+      "details": []
+    },
+    {
+      "id": "judge_order_complied",
+      "title": "Judge order requirement met",
+      "status": "NOT APPLICABLE",
+      "blocking": false,
+      "reason": "No requirement is on file for this judge or court.",
+      "authority_keys": [],
+      "details": []
+    }
+  ],
+  "counts": {
+    "PASS": 9,
+    "FAIL": 2,
+    "NEEDS ATTENTION": 0,
+    "NOT APPLICABLE": 4
+  },
+  "blocking_items": [
+    "citations_resolved",
+    "quotes_match"
+  ],
+  "clear_to_file": false,
+  "result": "BLOCKED",
+  "citations": [
+    {
+      "id": "f402f4de-1",
+      "label": "Halvorsen v. Bright Harbor Staffing, Inc. 97 Cal.5th 210, 223",
+      "text": "97 Cal.5th 210",
+      "key": "case:97 Cal. 5th 210",
+      "machine_status": "PASS",
+      "not_found": [],
+      "quote_mismatches": [],
+      "other_failures": [],
+      "warnings": [],
+      "manual": [],
+      "attestation": {
+        "citation_id": "f402f4de-1",
+        "citation_text": "97 Cal.5th 210",
+        "attorney": "Perrin Ashgrove (fictional attorney)",
+        "attested_at": "2027-01-12T14:10:00+00:00",
+        "how_checked": "Read the opinion in the firm research database; confirmed the holding, the pinpoint page and the quotation.",
+        "source": "attestations file"
+      },
+      "attested": true,
+      "attestation_problems": []
+    },
+    {
+      "id": "f3012267-1",
+      "label": "Ostrander v. Cypress Fold Logistics 912 Cal.App.5th 455, 462",
+      "text": "912 Cal.App.5th 455",
+      "key": "case:912 Cal. App. 5th 455",
+      "machine_status": "FAIL",
+      "not_found": [],
+      "quote_mismatches": [
+        "[UNVERIFIED QUOTE] Not found verbatim in the source."
+      ],
+      "other_failures": [],
+      "warnings": [],
+      "manual": [],
+      "attestation": {
+        "citation_id": "f3012267-1",
+        "citation_text": "912 Cal.App.5th 455",
+        "attorney": "Perrin Ashgrove (fictional attorney)",
+        "attested_at": "2027-01-12T14:17:00+00:00",
+        "how_checked": "Opened the cited page and compared the quotation word for word; ran a citator check for later history.",
+        "resolution": "Reviewed the machine flag; I believe the citation is usable as written.",
+        "source": "attestations file"
+      },
+      "attested": true,
+      "attestation_problems": []
+    },
+    {
+      "id": "faf8abcd-1",
+      "label": "Renwick v. Tallmadge Freight Systems 940 Cal.App.5th 1312, 1320",
+      "text": "940 Cal.App.5th 1312",
+      "key": "case:940 Cal. App. 5th 1312",
+      "machine_status": "FAIL",
+      "not_found": [
+        "No case found at 940 Cal. App. 5th 1312 (mirror coverage for Cal. App. 5th complete as of 2026-11-25). Possible fabricated or mistyped citation."
+      ],
+      "quote_mismatches": [],
+      "other_failures": [],
+      "warnings": [],
+      "manual": [],
+      "attestation": {
+        "citation_id": "faf8abcd-1",
+        "citation_text": "940 Cal.App.5th 1312",
+        "attorney": "Perrin Ashgrove (fictional attorney)",
+        "attested_at": "2027-01-12T14:24:00+00:00",
+        "how_checked": "Read the full opinion; confirmed it supports the sentence it is cited for and is still citable.",
+        "resolution": "Reviewed the machine flag; I believe the citation is usable as written.",
+        "source": "attestations file"
+      },
+      "attested": true,
+      "attestation_problems": []
+    }
+  ],
+  "judge_lookup": {
+    "court_id": "fict-alder-ridge",
+    "judge_id": "fict-quillon",
+    "as_of": "2027-01-12",
+    "staleness_days": 30,
+    "status": "current",
+    "message": "1 entry found for judge 'fict-quillon' in court 'fict-alder-ridge', checked within 30 days (most recent 6 days before 2027-01-12). No requirement was known when last checked. That is a record of a search, not a statement that no order exists.",
+    "fictional_sample_data": true,
+    "entries": [
+      {
+        "entry_id": "JO-001",
+        "court_id": "fict-alder-ridge",
+        "court": "Superior Court, County of Alder Ridge (fictional)",
+        "judge_id": "fict-quillon",
+        "judge": "Hon. Thessaly Quillon (fictional judge)",
+        "order_title": "No standing order on generative AI found (fictional entry)",
+        "effective_date": null,
+        "requirement_type": "none_known",
+        "applies_when": "always",
+        "required_text": null,
+        "source_url": "https://courts.example/alder-ridge/dept-4/standing-orders",
+        "last_checked": "2027-01-06",
+        "checked_by": "Jun Tessaro (fictional paralegal)",
+        "age_days": 6,
+        "stale": false
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "key": "bpc_6068_1_a3Bi",
+      "section": "Bus. & Prof. Code § 6068.1(a)(3)(B)(i)",
+      "paraphrase": "An attorney using generative AI must take reasonable steps to verify its output, including all case and statutory citations.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "ccp_128_7_b2A",
+      "section": "Code Civ. Proc. § 128.7(b)(2)(A)",
+      "paraphrase": "A brief, pleading, motion or other paper filed in any court must not contain any citation that the responsible attorney has not personally verified. This covers any citation, not only cases and statutes.",
+      "verified_on": "2026-11-25"
+    },
+    {
+      "key": "sb574_enactment",
+      "section": "Stats. 2026, ch. 858 (SB 574)",
+      "paraphrase": "Approved Sept. 30, 2026. No urgency clause. Operative Jan. 1, 2027. Adds Bus. & Prof. Code § 6068.1, amends Code Civ. Proc. § 128.7, adds Code Civ. Proc. §§ 180 and 1282.1, and amends Bus. & Prof. Code § 6173.",
+      "verified_on": "2026-11-25"
+    }
+  ]
+}

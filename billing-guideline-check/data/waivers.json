@@ -1,0 +1,35 @@
+{
+  "note": "Fictional client-approved exceptions.",
+  "waivers": [
+    {
+      "waiver_id": "W-001",
+      "client_id": "quillfeather",
+      "matter_id": "QMI-0147",
+      "rule_id": "QMI-EVENT-01",
+      "timekeeper_id": "TK02",
+      "invoice_id": "",
+      "line_no": null,
+      "approved_by": "Claims supervisor, Quillfeather Mutual Indemnity (fictional)",
+      "approved_on": "2026-10-23",
+      "reference": "Email of 2026-10-23, subject: second attendee at motion to compel hearing",
+      "effective_from": "2026-10-27",
+      "expires_on": "2026-10-27",
+      "note": "Second attorney approved for the 27 October hearing only."
+    },
+    {
+      "waiver_id": "W-002",
+      "client_id": "ostervane",
+      "matter_id": "OIH-LIT-088",
+      "rule_id": "OIH-RESEARCH-01",
+      "timekeeper_id": "",
+      "invoice_id": "",
+      "line_no": null,
+      "approved_by": "Associate general counsel, Ostervane Industrial Holdings (fictional)",
+      "approved_on": "2026-08-04",
+      "reference": "Email of 2026-08-04, subject: research on venue motion",
+      "effective_from": "2026-08-04",
+      "expires_on": "2026-09-30",
+      "note": "Research over the limit approved through the end of September."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+name,category,role_in_rfp,confidence,check_reason,rfp_line,rfp_text
+Quillfeather Unified School District,Agency,Issuing agency,ok,,11,"Quillfeather Unified School District (the ""District"") seeks"
+Quillfeather Teachers Association,Adverse or counter-party,Employee organisation named in the RFP,ok,,11,"Quillfeather Unified School District (the ""District"") seeks proposals from law firms and qualified individuals to act as the District's chief negotiator in successor contract negotiations with its two employee organizations, the Quillfeathe"
+Quillfeather Classified Staff Union,Adverse or counter-party,Employee organisation named in the RFP,ok,,11,"Quillfeather Unified School District (the ""District"") seeks proposals from law firms and qualified individuals to act as the District's chief negotiator in successor contract negotiations with its two employee organizations, the Quillfeathe"
+Marisol Everhart,Agency staff,Superintendent,ok,,19,"District contacts for this RFP: Dr. Marisol Everhart, Superintendent Leopold Achterberg, Assistant Superintendent, Human Resources"
+Leopold Achterberg,Agency staff,Superintendent,ok,,19,"District contacts for this RFP: Dr. Marisol Everhart, Superintendent Leopold Achterberg, Assistant Superintendent, Human Resources"
+Henrietta Solano,Board or council member,President,ok,,23,"Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+Dmitri Faulkner,Board or council member,Clerk,ok,,23,"Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+Yolanda Prescott,Board or council member,Clerk,check,role taken from the name before it in a list,23,"Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+Bartholomew Nguyen,Board or council member,Clerk,check,role taken from the name before it in a list,23,"Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+Odessa Kirkland,Board or council member,Clerk,check,role taken from the name before it in a list,23,"Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."

@@ -1,0 +1,12 @@
+{
+  "doc_sha256": "2bfdeae1a59333cffc104f24d4caf18adf1eee992922f4ae1337f7d8d2ff1733",
+  "attestations": [
+    {
+      "citation_id": "b3ac3fd6-1",
+      "citation_text": "977 F.4th 1180",
+      "attorney": "Perrin Ashgrove (fictional attorney)",
+      "attested_at": "2027-01-12T14:10:00+00:00",
+      "how_checked": "Read the opinion in the firm research database; confirmed the holding, the pinpoint page and the quotation."
+    }
+  ]
+}

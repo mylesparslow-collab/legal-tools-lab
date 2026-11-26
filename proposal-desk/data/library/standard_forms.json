@@ -1,0 +1,74 @@
+[
+ {
+  "id": "SF-01",
+  "name": "Non-Collusion Declaration",
+  "aliases": [
+   "Non-Collusion Affidavit",
+   "Noncollusion Declaration"
+  ],
+  "file": "forms/non_collusion.docx",
+  "requires_signature": true,
+  "requires_notary": false,
+  "last_reviewed": "2026-02-10"
+ },
+ {
+  "id": "SF-02",
+  "name": "Proposer Information Sheet",
+  "aliases": [
+   "Proposer Information Form",
+   "Firm Information Sheet"
+  ],
+  "file": "forms/proposer_information.docx",
+  "requires_signature": false,
+  "requires_notary": false,
+  "last_reviewed": "2026-02-10"
+ },
+ {
+  "id": "SF-03",
+  "name": "Proposer Certification",
+  "aliases": [
+   "Proposal Certification",
+   "Proposal Signature Page",
+   "Signed Proposal Certification"
+  ],
+  "file": "forms/proposer_certification.docx",
+  "requires_signature": true,
+  "requires_notary": false,
+  "last_reviewed": "2026-02-10"
+ },
+ {
+  "id": "SF-04",
+  "name": "Insurance Acknowledgment",
+  "aliases": [
+   "Insurance Certification",
+   "Statement of Insurance",
+   "Certificate of Insurance"
+  ],
+  "file": "forms/insurance_acknowledgment.docx",
+  "requires_signature": true,
+  "requires_notary": false,
+  "last_reviewed": "2025-06-30"
+ },
+ {
+  "id": "SF-05",
+  "name": "Addendum Acknowledgment",
+  "aliases": [
+   "Acknowledgment of Addenda"
+  ],
+  "file": "forms/addendum_acknowledgment.docx",
+  "requires_signature": true,
+  "requires_notary": false,
+  "last_reviewed": "2026-02-10"
+ },
+ {
+  "id": "SF-06",
+  "name": "Conflict of Interest Disclosure",
+  "aliases": [
+   "Conflict of Interest Disclosure Form"
+  ],
+  "file": "forms/conflict_disclosure.docx",
+  "requires_signature": true,
+  "requires_notary": false,
+  "last_reviewed": "2026-02-10"
+ }
+]

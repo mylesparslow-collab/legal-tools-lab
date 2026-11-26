@@ -1,0 +1,65 @@
+Agency: Quillfeather Unified School District (school_district)
+Title: Labor Negotiations - Chief Negotiator and Related Legal Services   RFP number: HR-2026-07   Practice: labor
+
+Deadlines:
+  RFP issued                   2026-11-12 
+      line 28: RFP released: 11/12/2026
+  Questions due                2026-12-04 16:00
+      line 29: Last day to submit questions: 12/04/2026 (by 4 PM)
+  Submission due               2026-12-11 12:00
+      line 30: Proposals due: Fri., Dec. 11, 2026 - 12:00 noon
+  Interviews                   2027-01-11   [check: date is approximate in the RFP]
+      line 31: Finalist interviews: week of January 11, 2027
+  Award or board action        2027-01-26 
+      line 32: Board approval: 01/26/2027
+
+Submission mechanics:
+  page_limit       10
+  page_exclusions  Attach resumes (not counted toward the page limit).
+  copies           one PDF
+  format           PDF
+  delivery         email to purchasing@quillfeatherusd.example
+
+Requirements (8):
+  Q1      Firm overview                Tell us about your firm: how long it has practiced, how many attorneys
+  Q2      Team                         Who would be our chief negotiator and who would back that person up? A
+  Q3      Experience                   Describe your experience at the bargaining table for public school emp
+  Q4      Approach                     How do you prepare for and run negotiations? Describe your approach to
+  Q5      References                   List three references from school districts for which you have negotia
+  Q6      Conflicts                    Do you or your firm have any relationship with the Quillfeather Teache
+  Q7      Rates and fees               State your proposed fees. Tell us your hourly rates and whether you of
+  Q8      Other                        Is there anything else the District should consider? This question is   [check: question type not recognised]
+
+Forms and certifications (3):
+  Attachment 1   Signed Proposal Certification  [check: listed as a bullet in the proposal content section, not a forms section]
+  Attachment 2   Fingerprinting and Background Check Acknowledgment  [check: listed as a bullet in the proposal content section, not a forms section]
+                 Proof of professional liability insurance, minimum $1,000,000 per claim  [check: listed as a bullet in the proposal content section, not a forms section]
+
+Evaluation criteria (points, total 100):
+  40   Experience in school district negotiations
+  25   Proposed negotiator and team
+  15   Approach
+  20   Fees
+  ?    Interview performance (if interviews are held)
+
+Minimum qualifications (3):
+  [years_admitted] The proposed chief negotiator must have at least seven (7) years of experience as a licens
+  [not_checkable] The proposed chief negotiator must have served as chief negotiator for a school district i
+  [not_checkable] Proposers must be available for evening bargaining sessions.
+
+Insurance statements (1):
+  Proof of professional liability insurance, minimum $1,000,000 per claim
+
+Items marked check: 12
+  deadline D4: date is approximate in the RFP
+  requirement R-Q8: question type not recognised
+  form F1: listed as a bullet in the proposal content section, not a forms section
+  form F2: listed as a bullet in the proposal content section, not a forms section
+  form F3: listed as a bullet in the proposal content section, not a forms section
+  submission SUB2: exclusion stated away from the page limit; read the sentence
+  insurance INS1: insurance amount stated in a list of submittals, not an insurance section
+  evaluation EV5: criterion listed without a weight
+  party Yolanda Prescott: role taken from the name before it in a list
+  party Bartholomew Nguyen: role taken from the name before it in a list
+  party Odessa Kirkland: role taken from the name before it in a list
+  evaluation : at least one criterion has no weight

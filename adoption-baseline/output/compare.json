@@ -1,0 +1,1031 @@
+{
+  "definitions_version": "1.0",
+  "earlier_period": [
+    "2026-09-07",
+    "2026-10-18"
+  ],
+  "later_period": [
+    "2026-09-07",
+    "2026-12-06"
+  ],
+  "earlier_weeks": [
+    "2026-W39",
+    "2026-W42"
+  ],
+  "later_weeks": [
+    "2026-W46",
+    "2026-W49"
+  ],
+  "rule": {
+    "min_people": 30,
+    "min_change_points": 5.0,
+    "text": "A change is called only when both periods cover at least 30 people and the rate moves by at least 5 percentage points."
+  },
+  "headline": {
+    "weekly_active_latest": {
+      "earlier": {
+        "n": 65,
+        "d": 194,
+        "people": 194,
+        "rate": 0.33505154639175255,
+        "suppressed": null
+      },
+      "later": {
+        "n": 87,
+        "d": 193,
+        "people": 193,
+        "rate": 0.45077720207253885,
+        "suppressed": null
+      },
+      "change_points": 11.6,
+      "call": "up"
+    },
+    "weekly_active_last_4_weeks": {
+      "earlier": {
+        "n": 255,
+        "d": 743,
+        "people": 202,
+        "rate": 0.34320323014804843,
+        "suppressed": null
+      },
+      "later": {
+        "n": 337,
+        "d": 777,
+        "people": 203,
+        "rate": 0.4337194337194337,
+        "suppressed": null
+      },
+      "change_points": 9.1,
+      "call": "up"
+    },
+    "regular_use": {
+      "earlier": {
+        "n": 57,
+        "d": 187,
+        "people": 187,
+        "rate": 0.3048128342245989,
+        "suppressed": null
+      },
+      "later": {
+        "n": 77,
+        "d": 203,
+        "people": 203,
+        "rate": 0.3793103448275862,
+        "suppressed": null
+      },
+      "change_points": 7.4,
+      "call": "up"
+    }
+  },
+  "breakdowns": {
+    "practice": [
+      {
+        "group": "Banking and finance",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 33,
+              "d": 91,
+              "people": 25,
+              "rate": 0.3626373626373626,
+              "suppressed": null
+            },
+            "later": {
+              "n": 42,
+              "d": 92,
+              "people": 24,
+              "rate": 0.45652173913043476,
+              "suppressed": null
+            },
+            "change_points": 9.4,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 6,
+              "d": 22,
+              "people": 22,
+              "rate": 0.2727272727272727,
+              "suppressed": null
+            },
+            "later": {
+              "n": 8,
+              "d": 24,
+              "people": 24,
+              "rate": 0.3333333333333333,
+              "suppressed": null
+            },
+            "change_points": 6.1,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "Competition",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "later": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "change_points": null,
+            "call": "suppressed"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "later": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "change_points": null,
+            "call": "suppressed"
+          }
+        }
+      },
+      {
+        "group": "Corporate",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 51,
+              "d": 136,
+              "people": 36,
+              "rate": 0.375,
+              "suppressed": null
+            },
+            "later": {
+              "n": 70,
+              "d": 141,
+              "people": 37,
+              "rate": 0.49645390070921985,
+              "suppressed": null
+            },
+            "change_points": 12.1,
+            "call": "up"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 12,
+              "d": 33,
+              "people": 33,
+              "rate": 0.36363636363636365,
+              "suppressed": null
+            },
+            "later": {
+              "n": 16,
+              "d": 37,
+              "people": 37,
+              "rate": 0.43243243243243246,
+              "suppressed": null
+            },
+            "change_points": 6.9,
+            "call": "up"
+          }
+        }
+      },
+      {
+        "group": "Disputes",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 72,
+              "d": 110,
+              "people": 30,
+              "rate": 0.6545454545454545,
+              "suppressed": null
+            },
+            "later": {
+              "n": 90,
+              "d": 128,
+              "people": 33,
+              "rate": 0.703125,
+              "suppressed": null
+            },
+            "change_points": 4.9,
+            "call": "no clear change"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 18,
+              "d": 28,
+              "people": 28,
+              "rate": 0.6428571428571429,
+              "suppressed": null
+            },
+            "later": {
+              "n": 22,
+              "d": 33,
+              "people": 33,
+              "rate": 0.6666666666666666,
+              "suppressed": null
+            },
+            "change_points": 2.4,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "Employment",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 17,
+              "d": 71,
+              "people": 20,
+              "rate": 0.23943661971830985,
+              "suppressed": null
+            },
+            "later": {
+              "n": 37,
+              "d": 78,
+              "people": 20,
+              "rate": 0.47435897435897434,
+              "suppressed": null
+            },
+            "change_points": 23.5,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 4,
+              "d": 18,
+              "people": 18,
+              "rate": 0.2222222222222222,
+              "suppressed": null
+            },
+            "later": {
+              "n": 9,
+              "d": 20,
+              "people": 20,
+              "rate": 0.45,
+              "suppressed": null
+            },
+            "change_points": 22.8,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "Intellectual property",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 13,
+              "d": 59,
+              "people": 16,
+              "rate": 0.22033898305084745,
+              "suppressed": null
+            },
+            "later": {
+              "n": 15,
+              "d": 63,
+              "people": 16,
+              "rate": 0.23809523809523808,
+              "suppressed": null
+            },
+            "change_points": 1.8,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 2,
+              "d": 16,
+              "people": 16,
+              "rate": 0.125,
+              "suppressed": null
+            },
+            "later": {
+              "n": 2,
+              "d": 16,
+              "people": 16,
+              "rate": 0.125,
+              "suppressed": null
+            },
+            "change_points": 0.0,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "Private client",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 11,
+              "d": 58,
+              "people": 15,
+              "rate": 0.1896551724137931,
+              "suppressed": null
+            },
+            "later": {
+              "n": 11,
+              "d": 55,
+              "people": 15,
+              "rate": 0.2,
+              "suppressed": null
+            },
+            "change_points": 1.0,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 2,
+              "d": 15,
+              "people": 15,
+              "rate": 0.13333333333333333,
+              "suppressed": null
+            },
+            "later": {
+              "n": 2,
+              "d": 15,
+              "people": 15,
+              "rate": 0.13333333333333333,
+              "suppressed": null
+            },
+            "change_points": 0.0,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "Real estate",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 14,
+              "d": 94,
+              "people": 26,
+              "rate": 0.14893617021276595,
+              "suppressed": null
+            },
+            "later": {
+              "n": 16,
+              "d": 94,
+              "people": 25,
+              "rate": 0.1702127659574468,
+              "suppressed": null
+            },
+            "change_points": 2.1,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 3,
+              "d": 24,
+              "people": 24,
+              "rate": 0.125,
+              "suppressed": null
+            },
+            "later": {
+              "n": 3,
+              "d": 25,
+              "people": 25,
+              "rate": 0.12,
+              "suppressed": null
+            },
+            "change_points": -0.5,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "Regulatory",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "later": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "change_points": null,
+            "call": "suppressed"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "later": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "change_points": null,
+            "call": "suppressed"
+          }
+        }
+      },
+      {
+        "group": "Tax",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 28,
+              "d": 59,
+              "people": 16,
+              "rate": 0.4745762711864407,
+              "suppressed": null
+            },
+            "later": {
+              "n": 33,
+              "d": 59,
+              "people": 16,
+              "rate": 0.559322033898305,
+              "suppressed": null
+            },
+            "change_points": 8.5,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 7,
+              "d": 15,
+              "people": 15,
+              "rate": 0.4666666666666667,
+              "suppressed": null
+            },
+            "later": {
+              "n": 9,
+              "d": 16,
+              "people": 16,
+              "rate": 0.5625,
+              "suppressed": null
+            },
+            "change_points": 9.6,
+            "call": "too small to call"
+          }
+        }
+      }
+    ],
+    "office": [
+      {
+        "group": "Eastfield",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 42,
+              "d": 123,
+              "people": 33,
+              "rate": 0.34146341463414637,
+              "suppressed": null
+            },
+            "later": {
+              "n": 65,
+              "d": 132,
+              "people": 34,
+              "rate": 0.49242424242424243,
+              "suppressed": null
+            },
+            "change_points": 15.1,
+            "call": "up"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 9,
+              "d": 33,
+              "people": 33,
+              "rate": 0.2727272727272727,
+              "suppressed": null
+            },
+            "later": {
+              "n": 14,
+              "d": 34,
+              "people": 34,
+              "rate": 0.4117647058823529,
+              "suppressed": null
+            },
+            "change_points": 13.9,
+            "call": "up"
+          }
+        }
+      },
+      {
+        "group": "Harbour Quay",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 65,
+              "d": 157,
+              "people": 41,
+              "rate": 0.4140127388535032,
+              "suppressed": null
+            },
+            "later": {
+              "n": 78,
+              "d": 150,
+              "people": 41,
+              "rate": 0.52,
+              "suppressed": null
+            },
+            "change_points": 10.6,
+            "call": "up"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 15,
+              "d": 41,
+              "people": 41,
+              "rate": 0.36585365853658536,
+              "suppressed": null
+            },
+            "later": {
+              "n": 19,
+              "d": 41,
+              "people": 41,
+              "rate": 0.4634146341463415,
+              "suppressed": null
+            },
+            "change_points": 9.8,
+            "call": "up"
+          }
+        }
+      },
+      {
+        "group": "Lakeshore",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 2,
+              "d": 30,
+              "people": 15,
+              "rate": 0.06666666666666667,
+              "suppressed": null
+            },
+            "later": {
+              "n": 8,
+              "d": 60,
+              "people": 15,
+              "rate": 0.13333333333333333,
+              "suppressed": null
+            },
+            "change_points": 6.7,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 0,
+              "d": 0,
+              "people": 0,
+              "rate": null,
+              "suppressed": null
+            },
+            "later": {
+              "n": 2,
+              "d": 15,
+              "people": 15,
+              "rate": 0.13333333333333333,
+              "suppressed": null
+            },
+            "change_points": null,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "Midvale",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "later": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "change_points": null,
+            "call": "suppressed"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "later": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "change_points": null,
+            "call": "suppressed"
+          }
+        }
+      },
+      {
+        "group": "Northgate",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 68,
+              "d": 211,
+              "people": 54,
+              "rate": 0.3222748815165877,
+              "suppressed": null
+            },
+            "later": {
+              "n": 76,
+              "d": 200,
+              "people": 52,
+              "rate": 0.38,
+              "suppressed": null
+            },
+            "change_points": 5.8,
+            "call": "up"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 14,
+              "d": 54,
+              "people": 54,
+              "rate": 0.25925925925925924,
+              "suppressed": null
+            },
+            "later": {
+              "n": 17,
+              "d": 52,
+              "people": 52,
+              "rate": 0.3269230769230769,
+              "suppressed": null
+            },
+            "change_points": 6.8,
+            "call": "up"
+          }
+        }
+      },
+      {
+        "group": "Riverside",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "later": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "change_points": null,
+            "call": "suppressed"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "later": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "change_points": null,
+            "call": "suppressed"
+          }
+        }
+      },
+      {
+        "group": "Southmere",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 16,
+              "d": 74,
+              "people": 20,
+              "rate": 0.21621621621621623,
+              "suppressed": null
+            },
+            "later": {
+              "n": 32,
+              "d": 81,
+              "people": 21,
+              "rate": 0.3950617283950617,
+              "suppressed": null
+            },
+            "change_points": 17.9,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 3,
+              "d": 20,
+              "people": 20,
+              "rate": 0.15,
+              "suppressed": null
+            },
+            "later": {
+              "n": 7,
+              "d": 21,
+              "people": 21,
+              "rate": 0.3333333333333333,
+              "suppressed": null
+            },
+            "change_points": 18.3,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "Westbrook",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 37,
+              "d": 95,
+              "people": 25,
+              "rate": 0.3894736842105263,
+              "suppressed": null
+            },
+            "later": {
+              "n": 51,
+              "d": 100,
+              "people": 26,
+              "rate": 0.51,
+              "suppressed": null
+            },
+            "change_points": 12.1,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 10,
+              "d": 25,
+              "people": 25,
+              "rate": 0.4,
+              "suppressed": null
+            },
+            "later": {
+              "n": 12,
+              "d": 26,
+              "people": 26,
+              "rate": 0.46153846153846156,
+              "suppressed": null
+            },
+            "change_points": 6.2,
+            "call": "too small to call"
+          }
+        }
+      }
+    ],
+    "role": [
+      {
+        "group": "associate",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 178,
+              "d": 465,
+              "people": 128,
+              "rate": 0.3827956989247312,
+              "suppressed": null
+            },
+            "later": {
+              "n": 233,
+              "d": 489,
+              "people": 128,
+              "rate": 0.47648261758691207,
+              "suppressed": null
+            },
+            "change_points": 9.4,
+            "call": "up"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 41,
+              "d": 116,
+              "people": 116,
+              "rate": 0.35344827586206895,
+              "suppressed": null
+            },
+            "later": {
+              "n": 54,
+              "d": 128,
+              "people": 128,
+              "rate": 0.421875,
+              "suppressed": null
+            },
+            "change_points": 6.8,
+            "call": "up"
+          }
+        }
+      },
+      {
+        "group": "counsel",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 27,
+              "d": 107,
+              "people": 28,
+              "rate": 0.2523364485981308,
+              "suppressed": null
+            },
+            "later": {
+              "n": 38,
+              "d": 108,
+              "people": 28,
+              "rate": 0.35185185185185186,
+              "suppressed": null
+            },
+            "change_points": 10.0,
+            "call": "too small to call"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 5,
+              "d": 27,
+              "people": 27,
+              "rate": 0.18518518518518517,
+              "suppressed": null
+            },
+            "later": {
+              "n": 9,
+              "d": 28,
+              "people": 28,
+              "rate": 0.32142857142857145,
+              "suppressed": null
+            },
+            "change_points": 13.6,
+            "call": "too small to call"
+          }
+        }
+      },
+      {
+        "group": "paralegal",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 30,
+              "d": 148,
+              "people": 39,
+              "rate": 0.20270270270270271,
+              "suppressed": null
+            },
+            "later": {
+              "n": 47,
+              "d": 151,
+              "people": 40,
+              "rate": 0.31125827814569534,
+              "suppressed": null
+            },
+            "change_points": 10.9,
+            "call": "up"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 5,
+              "d": 37,
+              "people": 37,
+              "rate": 0.13513513513513514,
+              "suppressed": null
+            },
+            "later": {
+              "n": 11,
+              "d": 40,
+              "people": 40,
+              "rate": 0.275,
+              "suppressed": null
+            },
+            "change_points": 14.0,
+            "call": "up"
+          }
+        }
+      },
+      {
+        "group": "partner",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 50,
+              "d": 171,
+              "people": 46,
+              "rate": 0.29239766081871343,
+              "suppressed": null
+            },
+            "later": {
+              "n": 66,
+              "d": 180,
+              "people": 47,
+              "rate": 0.36666666666666664,
+              "suppressed": null
+            },
+            "change_points": 7.4,
+            "call": "up"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 11,
+              "d": 44,
+              "people": 44,
+              "rate": 0.25,
+              "suppressed": null
+            },
+            "later": {
+              "n": 14,
+              "d": 47,
+              "people": 47,
+              "rate": 0.2978723404255319,
+              "suppressed": null
+            },
+            "change_points": 4.8,
+            "call": "no clear change"
+          }
+        }
+      },
+      {
+        "group": "staff",
+        "measures": {
+          "weekly_active_last_4_weeks": {
+            "earlier": {
+              "n": 16,
+              "d": 253,
+              "people": 69,
+              "rate": 0.06324110671936758,
+              "suppressed": null
+            },
+            "later": {
+              "n": 22,
+              "d": 264,
+              "people": 68,
+              "rate": 0.08333333333333333,
+              "suppressed": null
+            },
+            "change_points": 2.0,
+            "call": "no clear change"
+          },
+          "regular_use": {
+            "earlier": {
+              "n": 3,
+              "d": 64,
+              "people": 64,
+              "rate": 0.046875,
+              "suppressed": null
+            },
+            "later": {
+              "n": 5,
+              "d": 68,
+              "people": 68,
+              "rate": 0.07352941176470588,
+              "suppressed": null
+            },
+            "change_points": 2.7,
+            "call": "no clear change"
+          }
+        }
+      }
+    ]
+  }
+}

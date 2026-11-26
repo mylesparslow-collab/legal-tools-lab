@@ -1,0 +1,210 @@
+{
+  "organization": "Example Firm LLP (fictional)",
+  "registry_owner": "Office of General Counsel (fictional)",
+  "as_of": "2026-11-25",
+  "review_interval_days": 180,
+  "ocg_check_max_age_days": 90,
+  "notes": "Sample data for a portfolio demo. The firm, tools, providers, owners and scores are invented.",
+  "tools": [
+    {
+      "id": "contract-review",
+      "name": "Clausewise Review (fictional)",
+      "purpose": "First-pass review of commercial contracts against the firm's clause checklist.",
+      "status": "production",
+      "business_owner": "Partner, Corporate Group (role; fictional)",
+      "technical_owner": "Practice Technology",
+      "users": "Corporate and real estate groups",
+      "data_boundary": {
+        "runs_in": "Firm cloud tenant",
+        "model_provider": "Fictional Model Provider A, hosted inside the firm tenant",
+        "data_allowed": [
+          "firm_internal",
+          "client_confidential"
+        ],
+        "retention": "30 days in the firm tenant, then deleted",
+        "used_for_training": "no",
+        "agreements": [
+          "Data protection addendum with Fictional Provider A, signed 2026-02-10"
+        ]
+      },
+      "ocg_check": {
+        "method": "automated_gate",
+        "description": "Matter intake flag blocks the tool on matters whose client terms prohibit AI.",
+        "last_checked": "2026-10-20",
+        "matters_blocked": 7
+      },
+      "golden_set": {
+        "status": "scored",
+        "corpus": "Firm test set v2 (40 synthetic documents)",
+        "run_date": "2026-09-15",
+        "high_severity_recall": 0.94,
+        "quote_grounding": 0.98,
+        "passes": true
+      },
+      "sb574_log": {
+        "court_filing_use": "no",
+        "mechanism": "Not used for court filings. Reviewer initials the checklist in the matter file.",
+        "log_location": "Matter workspace, folder 'AI review'"
+      },
+      "human_review": "The responsible attorney reviews every flagged and unflagged clause before the review is relied on.",
+      "last_review": "2026-10-28"
+    },
+    {
+      "id": "research-drafting",
+      "name": "Briefwell Research (fictional)",
+      "purpose": "Research memos and first drafts of brief sections from the firm's licensed research sources.",
+      "status": "production",
+      "business_owner": "Partner, Litigation Group (role; fictional)",
+      "technical_owner": "Practice Technology",
+      "users": "Litigation group",
+      "data_boundary": {
+        "runs_in": "Vendor cloud, dedicated firm instance",
+        "model_provider": "Fictional Model Provider B",
+        "data_allowed": [
+          "public",
+          "firm_internal",
+          "client_confidential"
+        ],
+        "retention": "No retention after the session ends",
+        "used_for_training": "no",
+        "agreements": [
+          "Master services agreement with Fictional Provider B, zero-retention schedule, signed 2026-03-04"
+        ]
+      },
+      "ocg_check": {
+        "method": "manual_lookup",
+        "description": "Attorney confirms the client's AI terms in the matter intake record before first use on a matter.",
+        "last_checked": "2026-11-03",
+        "matters_blocked": 3
+      },
+      "golden_set": {
+        "status": "scored",
+        "corpus": "Firm test set v2 (40 synthetic documents)",
+        "run_date": "2026-10-02",
+        "high_severity_recall": 0.92,
+        "quote_grounding": 0.99,
+        "passes": true
+      },
+      "sb574_log": {
+        "court_filing_use": "possible",
+        "mechanism": "Filing attorney reads each cited authority in the original source and signs the citation check form before filing.",
+        "log_location": "Matter workspace, folder 'Citation checks'",
+        "disclosure_step": "Filing attorney checks the court's standing orders for an AI disclosure requirement and records the result on the form."
+      },
+      "human_review": "The drafting attorney verifies every proposition and citation; the supervising partner reviews the final draft.",
+      "last_review": "2026-11-10"
+    },
+    {
+      "id": "transcript-summary",
+      "name": "Depo Digest (fictional)",
+      "purpose": "Summaries and issue indexes of deposition and hearing transcripts.",
+      "status": "pilot",
+      "business_owner": "Senior Counsel, Litigation Group (role; fictional)",
+      "technical_owner": "Practice Technology",
+      "users": "12 pilot attorneys",
+      "data_boundary": {
+        "runs_in": "Firm cloud tenant",
+        "model_provider": "Fictional Model Provider A, hosted inside the firm tenant",
+        "data_allowed": [
+          "firm_internal",
+          "client_confidential"
+        ],
+        "retention": "Until the matter closes, then deleted with the matter workspace",
+        "used_for_training": "no",
+        "agreements": [
+          "Data protection addendum with Fictional Provider A, signed 2026-02-10"
+        ]
+      },
+      "ocg_check": {
+        "method": "manual_lookup",
+        "description": "Attorney confirms the client's AI terms in the matter intake record before first use on a matter.",
+        "last_checked": "2026-11-03",
+        "matters_blocked": 1
+      },
+      "golden_set": {
+        "status": "scored",
+        "corpus": "Firm test set v2 (40 synthetic documents)",
+        "run_date": "2026-10-21",
+        "high_severity_recall": 0.9,
+        "quote_grounding": 0.97,
+        "passes": true
+      },
+      "sb574_log": {
+        "court_filing_use": "no",
+        "mechanism": "Summaries are work product only and are not filed. Page and line cites are spot-checked by the reviewing attorney.",
+        "log_location": "Matter workspace, folder 'Transcript summaries'"
+      },
+      "human_review": "An attorney on the matter checks each summary against the transcript before it is circulated.",
+      "last_review": "2026-11-12"
+    },
+    {
+      "id": "translation",
+      "name": "Lingua Desk (fictional)",
+      "purpose": "Working translations of public and firm-internal documents.",
+      "status": "pilot",
+      "business_owner": "Director of Knowledge Management (role; fictional)",
+      "technical_owner": "Practice Technology",
+      "users": "Knowledge management staff",
+      "data_boundary": {
+        "runs_in": "Vendor cloud",
+        "model_provider": "Fictional Model Provider C",
+        "data_allowed": [
+          "public",
+          "firm_internal"
+        ],
+        "retention": "24 hours, then deleted",
+        "used_for_training": "no",
+        "agreements": [
+          "Standard terms with Fictional Provider C, training opt-out confirmed 2026-06-18"
+        ]
+      },
+      "ocg_check": {
+        "method": "not_applicable",
+        "description": "Not approved for client information.",
+        "last_checked": null
+      },
+      "golden_set": {
+        "status": "not_applicable",
+        "notes": "Translation quality is checked by a fluent reviewer on each document; the known-answer test set does not cover translation."
+      },
+      "sb574_log": {
+        "court_filing_use": "no",
+        "mechanism": "Not used for court filings. Certified translations come from an outside translator."
+      },
+      "human_review": "A fluent reviewer at the firm checks each translation before it is used.",
+      "last_review": "2026-09-30"
+    },
+    {
+      "id": "meeting-notes",
+      "name": "Minute Taker (fictional)",
+      "purpose": "Notes and action lists from internal meetings.",
+      "status": "proposed",
+      "business_owner": "To be assigned",
+      "data_boundary": {
+        "runs_in": "Vendor cloud",
+        "model_provider": "Fictional Model Provider D",
+        "data_allowed": [
+          "public"
+        ],
+        "retention": "Vendor default retention until terms are negotiated",
+        "used_for_training": "unknown"
+      },
+      "ocg_check": {
+        "method": "none",
+        "last_checked": null
+      },
+      "golden_set": {
+        "status": "not_run"
+      },
+      "sb574_log": {
+        "court_filing_use": "no",
+        "mechanism": "None yet"
+      },
+      "last_review": "2026-08-05",
+      "open_issues": [
+        "Owner not assigned.",
+        "Training and retention terms not confirmed."
+      ]
+    }
+  ]
+}

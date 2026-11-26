@@ -1,0 +1,22 @@
+{
+ "id": "M-1003",
+ "name": "Drennick: carrier master services agreement",
+ "client_id": "drennick",
+ "matter_type": "commercial contract",
+ "responsible_attorney": "M. Okonjo (fictional)",
+ "intake_date": "2026-10-06",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "drennick-ocg-2025",
+  "drennick-el-2025"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

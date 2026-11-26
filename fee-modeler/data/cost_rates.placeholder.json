@@ -1,0 +1,10 @@
+{
+  "note": "PLACEHOLDER values for the demo only. Internal cost per hour by level is an input that finance must supply; these figures are invented and are not estimates of any firm's costs.",
+  "currency": "USD",
+  "cost_per_hour": {
+    "partner": "230.00",
+    "senior_associate": "165.00",
+    "associate": "125.00",
+    "paralegal": "70.00"
+  }
+}

@@ -1,0 +1,613 @@
+{
+ "user": "U102",
+ "query": "indemnification cap and basket agreement",
+ "filters": {},
+ "access": "ok",
+ "message": "",
+ "relaxed": false,
+ "reranked": false,
+ "total": 20,
+ "offset": 0,
+ "results": [
+  {
+   "rank": 1,
+   "doc_id": "D01072",
+   "title": "Agreement: indemnification cap and basket",
+   "doc_type": "agreement",
+   "date": "2022-12-23",
+   "matter_id": "M0221",
+   "matter_name": "Umberleigh Cross Industries: stock purchase",
+   "practice": "Corporate and M&A",
+   "matter_type": "stock purchase",
+   "jurisdiction": "City of Estermere",
+   "client_industry": "software",
+   "office": "Caldmoor",
+   "author": {
+    "person_id": "U009",
+    "name": "Amara Halvorsby",
+    "departed": false
+   },
+   "version_no": 1,
+   "is_final": true,
+   "was_filed": false,
+   "model_form": true,
+   "reuse_count": 15,
+   "score": 0.910925,
+   "share_of_query_matched": 1.0,
+   "found_by": "your words",
+   "snippet": {
+    "text": "This agreement addresses indemnification cap and basket in connection with the stock purchase matter.\n\nThe assumptions and the documents reviewed are listed in the appendix. Items relating to materiality scrape …",
+    "highlights": [
+     [
+      5,
+      14
+     ],
+     [
+      25,
+      40
+     ],
+     [
+      41,
+      44
+     ],
+     [
+      49,
+      55
+     ]
+    ]
+   },
+   "other_versions": [],
+   "near_duplicates": [],
+   "explain": {
+    "text": {
+     "bm25": 9.6946,
+     "share_of_query_matched": 1.0,
+     "best_bm25_in_your_results": 9.6946,
+     "value": 1.0,
+     "weight": 0.6,
+     "contribution": 0.6,
+     "terms": [
+      {
+       "term": "indemnification",
+       "matched_in": {
+        "title": 1,
+        "body": 3
+       },
+       "documents_you_can_see_with_term": 25,
+       "idf": 4.012,
+       "bm25": 3.2899,
+       "source": "your words",
+       "weight": 1.0
+      },
+      {
+       "term": "cap",
+       "matched_in": {
+        "title": 1,
+        "body": 3
+       },
+       "documents_you_can_see_with_term": 64,
+       "idf": 3.084,
+       "bm25": 2.5289,
+       "source": "your words",
+       "weight": 1.0
+      },
+      {
+       "term": "basket",
+       "matched_in": {
+        "title": 1,
+        "body": 2
+       },
+       "documents_you_can_see_with_term": 28,
+       "idf": 3.9007,
+       "bm25": 3.0906,
+       "source": "your words",
+       "weight": 1.0
+      },
+      {
+       "term": "agreement",
+       "matched_in": {
+        "title": 1,
+        "body": 2,
+        "metadata": 1
+       },
+       "documents_you_can_see_with_term": 549,
+       "idf": 0.9416,
+       "bm25": 0.7852,
+       "source": "your words",
+       "weight": 1.0
+      }
+     ]
+    },
+    "signals": [
+     {
+      "signal": "model_form",
+      "value": 1.0,
+      "weight": 0.14,
+      "contribution": 0.14
+     },
+     {
+      "signal": "is_final",
+      "value": 1.0,
+      "weight": 0.08,
+      "contribution": 0.08
+     },
+     {
+      "signal": "was_filed",
+      "value": 0.0,
+      "weight": 0.06,
+      "contribution": 0.0
+     },
+     {
+      "signal": "reuse",
+      "value": 0.9107,
+      "weight": 0.07,
+      "contribution": 0.0637
+     },
+     {
+      "signal": "recency",
+      "value": 0.5435,
+      "weight": 0.05,
+      "contribution": 0.0272
+     }
+    ],
+    "total": 0.910925,
+    "statistics_scope": "1408 documents you can open"
+   }
+  },
+  {
+   "rank": 2,
+   "doc_id": "D00281",
+   "title": "Indemnification cap and basket: form for City of Aldhaven",
+   "doc_type": "form",
+   "date": "2018-09-12",
+   "matter_id": "M0061",
+   "matter_name": "Rathmullen Holdings: stock purchase",
+   "practice": "Corporate and M&A",
+   "matter_type": "stock purchase",
+   "jurisdiction": "City of Aldhaven",
+   "client_industry": "financial services",
+   "office": "Port Wenrick",
+   "author": {
+    "person_id": "U010",
+    "name": "Calla Nakashiro",
+    "departed": false
+   },
+   "version_no": 1,
+   "is_final": true,
+   "was_filed": false,
+   "model_form": true,
+   "reuse_count": 9,
+   "score": 0.719149,
+   "share_of_query_matched": 0.921,
+   "found_by": "your words",
+   "snippet": {
+    "text": "… record the position on indemnification cap and basket.\n\nTiming, responsibility and sign-off for escrow holdback are allocated in the table. This does not cover disproportionate impact, which is handled …",
+    "highlights": [
+     [
+      25,
+      40
+     ],
+     [
+      41,
+      44
+     ],
+     [
+      49,
+      55
+     ]
+    ]
+   },
+   "other_versions": [],
+   "near_duplicates": [],
+   "explain": {
+    "text": {
+     "bm25": 8.2507,
+     "share_of_query_matched": 0.9211,
+     "best_bm25_in_your_results": 9.6946,
+     "value": 0.7221,
+     "weight": 0.6,
+     "contribution": 0.4333,
+     "terms": [
+      {
+       "term": "indemnification",
+       "matched_in": {
+        "title": 1,
+        "body": 2
+       },
+       "documents_you_can_see_with_term": 25,
+       "idf": 4.012,
+       "bm25": 3.1004,
+       "source": "your words",
+       "weight": 1.0
+      },
+      {
+       "term": "cap",
+       "matched_in": {
+        "title": 1,
+        "body": 2
+       },
+       "documents_you_can_see_with_term": 64,
+       "idf": 3.084,
+       "bm25": 2.3832,
+       "source": "your words",
+       "weight": 1.0
+      },
+      {
+       "term": "basket",
+       "matched_in": {
+        "title": 1,
+        "body": 1
+       },
+       "documents_you_can_see_with_term": 28,
+       "idf": 3.9007,
+       "bm25": 2.767,
+       "source": "your words",
+       "weight": 1.0
+      }
+     ]
+    },
+    "signals": [
+     {
+      "signal": "model_form",
+      "value": 1.0,
+      "weight": 0.14,
+      "contribution": 0.14
+     },
+     {
+      "signal": "is_final",
+      "value": 1.0,
+      "weight": 0.08,
+      "contribution": 0.08
+     },
+     {
+      "signal": "was_filed",
+      "value": 0.0,
+      "weight": 0.06,
+      "contribution": 0.0
+     },
+     {
+      "signal": "reuse",
+      "value": 0.7563,
+      "weight": 0.07,
+      "contribution": 0.0529
+     },
+     {
+      "signal": "recency",
+      "value": 0.2589,
+      "weight": 0.05,
+      "contribution": 0.0129
+     }
+    ],
+    "total": 0.719149,
+    "statistics_scope": "1408 documents you can open"
+   }
+  },
+  {
+   "rank": 3,
+   "doc_id": "D00919",
+   "title": "Agreement on indemnification cap and basket (minority investment)",
+   "doc_type": "agreement",
+   "date": "2017-08-17",
+   "matter_id": "M0191",
+   "matter_name": "Orrinwick Group: minority investment",
+   "practice": "Corporate and M&A",
+   "matter_type": "minority investment",
+   "jurisdiction": "City of Estermere",
+   "client_industry": "healthcare",
+   "office": "Caldmoor",
+   "author": {
+    "person_id": "U008",
+    "name": "Brigid Tindlewick",
+    "departed": false
+   },
+   "version_no": 1,
+   "is_final": true,
+   "was_filed": false,
+   "model_form": false,
+   "reuse_count": 2,
+   "score": 0.711333,
+   "share_of_query_matched": 1.0,
+   "found_by": "your words",
+   "snippet": {
+    "text": "This agreement addresses indemnification cap and basket in connection with the minority investment matter.\n\nA related point on material adverse effect is noted but not developed here. Notes from the …",
+    "highlights": [
+     [
+      5,
+      14
+     ],
+     [
+      25,
+      40
+     ],
+     [
+      41,
+      44
+     ],
+     [
+      49,
+      55
+     ]
+    ]
+   },
+   "other_versions": [],
+   "near_duplicates": [],
+   "explain": {
+    "text": {
+     "bm25": 9.6189,
+     "share_of_query_matched": 1.0,
+     "best_bm25_in_your_results": 9.6946,
+     "value": 0.9922,
+     "weight": 0.6,
+     "contribution": 0.5953,
+     "terms": [
+      {
+       "term": "indemnification",
+       "matched_in": {
+        "title": 1,
+        "body": 2
+       },
+       "documents_you_can_see_with_term": 25,
+       "idf": 4.012,
+       "bm25": 3.1164,
+       "source": "your words",
+       "weight": 1.0
+      },
+      {
+       "term": "cap",
+       "matched_in": {
+        "title": 1,
+        "body": 2
+       },
+       "documents_you_can_see_with_term": 64,
+       "idf": 3.084,
+       "bm25": 2.3956,
+       "source": "your words",
+       "weight": 1.0
+      },
+      {
+       "term": "basket",
+       "matched_in": {
+        "title": 1,
+        "body": 5
+       },
+       "documents_you_can_see_with_term": 28,
+       "idf": 3.9007,
+       "bm25": 3.3632,
+       "source": "your words",
+       "weight": 1.0
+      },
+      {
+       "term": "agreement",
+       "matched_in": {
+        "title": 1,
+        "body": 1,
+        "metadata": 1
+       },
+       "documents_you_can_see_with_term": 549,
+       "idf": 0.9416,
+       "bm25": 0.7437,
+       "source": "your words",
+       "weight": 1.0
+      }
+     ]
+    },
+    "signals": [
+     {
+      "signal": "model_form",
+      "value": 0.0,
+      "weight": 0.14,
+      "contribution": 0.0
+     },
+     {
+      "signal": "is_final",
+      "value": 1.0,
+      "weight": 0.08,
+      "contribution": 0.08
+     },
+     {
+      "signal": "was_filed",
+      "value": 0.0,
+      "weight": 0.06,
+      "contribution": 0.0
+     },
+     {
+      "signal": "reuse",
+      "value": 0.3608,
+      "weight": 0.07,
+      "contribution": 0.0253
+     },
+     {
+      "signal": "recency",
+      "value": 0.2151,
+      "weight": 0.05,
+      "contribution": 0.0108
+     }
+    ],
+    "total": 0.711333,
+    "statistics_scope": "1408 documents you can open"
+   }
+  }
+ ],
+ "facets": {
+  "doc_type": [
+   {
+    "value": "agreement",
+    "count": 9
+   },
+   {
+    "value": "checklist",
+    "count": 4
+   },
+   {
+    "value": "memo",
+    "count": 4
+   },
+   {
+    "value": "form",
+    "count": 2
+   },
+   {
+    "value": "opinion letter",
+    "count": 1
+   }
+  ],
+  "practice": [
+   {
+    "value": "Corporate and M&A",
+    "count": 20
+   }
+  ],
+  "matter_type": [
+   {
+    "value": "stock purchase",
+    "count": 10
+   },
+   {
+    "value": "merger",
+    "count": 4
+   },
+   {
+    "value": "asset purchase",
+    "count": 3
+   },
+   {
+    "value": "minority investment",
+    "count": 2
+   },
+   {
+    "value": "joint venture",
+    "count": 1
+   }
+  ],
+  "jurisdiction": [
+   {
+    "value": "City of Estermere",
+    "count": 6
+   },
+   {
+    "value": "Wenrick Court of Appeal",
+    "count": 4
+   },
+   {
+    "value": "City of Aldhaven",
+    "count": 3
+   },
+   {
+    "value": "Tavish County",
+    "count": 2
+   },
+   {
+    "value": "Aldhaven Tax Tribunal",
+    "count": 1
+   },
+   {
+    "value": "Brannock Court of Chancery",
+    "count": 1
+   },
+   {
+    "value": "Estermere County Superior Court",
+    "count": 1
+   },
+   {
+    "value": "State of Caldmoor",
+    "count": 1
+   },
+   {
+    "value": "State of Wenrick",
+    "count": 1
+   }
+  ],
+  "client_industry": [
+   {
+    "value": "healthcare",
+    "count": 6
+   },
+   {
+    "value": "software",
+    "count": 5
+   },
+   {
+    "value": "energy",
+    "count": 3
+   },
+   {
+    "value": "financial services",
+    "count": 3
+   },
+   {
+    "value": "food and beverage",
+    "count": 1
+   },
+   {
+    "value": "logistics",
+    "count": 1
+   },
+   {
+    "value": "retail",
+    "count": 1
+   }
+  ],
+  "year": [
+   {
+    "value": "2018",
+    "count": 5
+   },
+   {
+    "value": "2022",
+    "count": 5
+   },
+   {
+    "value": "2017",
+    "count": 3
+   },
+   {
+    "value": "2025",
+    "count": 3
+   },
+   {
+    "value": "2023",
+    "count": 2
+   },
+   {
+    "value": "2020",
+    "count": 1
+   },
+   {
+    "value": "2021",
+    "count": 1
+   }
+  ]
+ },
+ "expansion": {
+  "on": true,
+  "used": [
+   {
+    "for": "indemnification",
+    "also_searched": "indemnity",
+    "source": "thesaurus",
+    "weight": 0.6,
+    "why": "thesaurus: contracts, general",
+    "documents_you_can_see": 14
+   },
+   {
+    "for": "basket",
+    "also_searched": "deductible",
+    "source": "thesaurus",
+    "weight": 0.6,
+    "why": "thesaurus: corporate and transactions",
+    "documents_you_can_see": 14
+   },
+   {
+    "for": "agreement",
+    "also_searched": "contract",
+    "source": "thesaurus",
+    "weight": 0.6,
+    "why": "thesaurus: contracts, general",
+    "documents_you_can_see": 63
+   }
+  ],
+  "not_found": [],
+  "corrected": [],
+  "related_terms": []
+ }
+}

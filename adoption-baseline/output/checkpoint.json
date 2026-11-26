@@ -1,0 +1,1827 @@
+{
+  "definitions_version": "1.0",
+  "meta": {
+    "data_label": "Synthetic demo data",
+    "period_start": "2026-09-07",
+    "period_end": "2026-10-18",
+    "weeks": [
+      "2026-W37",
+      "2026-W38",
+      "2026-W39",
+      "2026-W40",
+      "2026-W41",
+      "2026-W42"
+    ],
+    "latest_week": "2026-W42",
+    "last_weeks": [
+      "2026-W39",
+      "2026-W40",
+      "2026-W41",
+      "2026-W42"
+    ],
+    "tools": [
+      "Assistant A",
+      "Assistant B"
+    ],
+    "lawyer_roles": [
+      "associate",
+      "counsel",
+      "partner"
+    ],
+    "suppression_threshold": 5,
+    "regular_use": {
+      "window_weeks": 4,
+      "min_active_weeks": 3
+    },
+    "unused_licence_days": 30,
+    "compare_rules": {
+      "min_people": 30,
+      "min_change_points": 5
+    },
+    "individual_level_output": false
+  },
+  "headline": {
+    "weekly_active_latest": {
+      "n": 65,
+      "d": 194,
+      "people": 194,
+      "rate": 0.33505154639175255,
+      "suppressed": null
+    },
+    "weekly_active_last_4_weeks": {
+      "n": 255,
+      "d": 743,
+      "people": 202,
+      "rate": 0.34320323014804843,
+      "suppressed": null
+    },
+    "regular_use": {
+      "n": 57,
+      "d": 187,
+      "people": 187,
+      "rate": 0.3048128342245989,
+      "suppressed": null
+    },
+    "activated": {
+      "n": 96,
+      "d": 206,
+      "people": 206,
+      "rate": 0.46601941747572817,
+      "suppressed": null
+    }
+  },
+  "weekly_trend": [
+    {
+      "week": "2026-W37",
+      "week_start": "2026-09-07",
+      "n": 54,
+      "d": 180,
+      "rate": 0.3,
+      "excluded": {
+        "not_started": 19,
+        "on_leave": 11,
+        "left": 0
+      }
+    },
+    {
+      "week": "2026-W38",
+      "week_start": "2026-09-14",
+      "n": 61,
+      "d": 183,
+      "rate": 0.3333333333333333,
+      "excluded": {
+        "not_started": 19,
+        "on_leave": 8,
+        "left": 0
+      }
+    },
+    {
+      "week": "2026-W39",
+      "week_start": "2026-09-21",
+      "n": 62,
+      "d": 178,
+      "rate": 0.34831460674157305,
+      "excluded": {
+        "not_started": 19,
+        "on_leave": 13,
+        "left": 0
+      }
+    },
+    {
+      "week": "2026-W40",
+      "week_start": "2026-09-28",
+      "n": 56,
+      "d": 177,
+      "rate": 0.3163841807909605,
+      "excluded": {
+        "not_started": 18,
+        "on_leave": 15,
+        "left": 0
+      }
+    },
+    {
+      "week": "2026-W41",
+      "week_start": "2026-10-05",
+      "n": 72,
+      "d": 194,
+      "rate": 0.3711340206185567,
+      "excluded": {
+        "not_started": 3,
+        "on_leave": 13,
+        "left": 0
+      }
+    },
+    {
+      "week": "2026-W42",
+      "week_start": "2026-10-12",
+      "n": 65,
+      "d": 194,
+      "rate": 0.33505154639175255,
+      "excluded": {
+        "not_started": 3,
+        "on_leave": 13,
+        "left": 0
+      }
+    }
+  ],
+  "tools": [
+    {
+      "tool": "Assistant A",
+      "licensed": 192,
+      "window_days": 30,
+      "cells": {
+        "activated": {
+          "n": 73,
+          "d": 192,
+          "people": 192,
+          "rate": 0.3802083333333333,
+          "suppressed": null
+        },
+        "weekly_active_last_4_weeks": {
+          "n": 181,
+          "d": 688,
+          "people": 188,
+          "rate": 0.26308139534883723,
+          "suppressed": null
+        },
+        "regular_use": {
+          "n": 39,
+          "d": 174,
+          "people": 174,
+          "rate": 0.22413793103448276,
+          "suppressed": null
+        },
+        "unused_licences": {
+          "n": 121,
+          "d": 192,
+          "people": 192,
+          "rate": 0.6302083333333334,
+          "suppressed": null
+        },
+        "unused_licences_absent_throughout": {
+          "n": 5,
+          "d": 121,
+          "people": 121,
+          "rate": 0.04132231404958678,
+          "suppressed": null
+        }
+      }
+    },
+    {
+      "tool": "Assistant B",
+      "licensed": 284,
+      "window_days": 30,
+      "cells": {
+        "activated": {
+          "n": 57,
+          "d": 284,
+          "people": 284,
+          "rate": 0.2007042253521127,
+          "suppressed": null
+        },
+        "weekly_active_last_4_weeks": {
+          "n": 148,
+          "d": 1030,
+          "people": 279,
+          "rate": 0.1436893203883495,
+          "suppressed": null
+        },
+        "regular_use": {
+          "n": 30,
+          "d": 259,
+          "people": 259,
+          "rate": 0.11583011583011583,
+          "suppressed": null
+        },
+        "unused_licences": {
+          "n": 227,
+          "d": 284,
+          "people": 284,
+          "rate": 0.7992957746478874,
+          "suppressed": null
+        },
+        "unused_licences_absent_throughout": {
+          "n": 6,
+          "d": 227,
+          "people": 227,
+          "rate": 0.02643171806167401,
+          "suppressed": null
+        }
+      }
+    }
+  ],
+  "breakdowns": {
+    "practice": {
+      "dimension": "practice",
+      "population": "lawyers",
+      "rows": [
+        {
+          "group": "Banking and finance",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 7,
+              "d": 25,
+              "people": 25,
+              "rate": 0.28,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 33,
+              "d": 91,
+              "people": 25,
+              "rate": 0.3626373626373626,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 6,
+              "d": 22,
+              "people": 22,
+              "rate": 0.2727272727272727,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 13,
+              "d": 26,
+              "people": 26,
+              "rate": 0.5,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 14,
+              "d": 57,
+              "people": 16,
+              "rate": 0.24561403508771928,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 20,
+              "d": 91,
+              "people": 25,
+              "rate": 0.21978021978021978,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Competition",
+          "cells": {
+            "weekly_active_latest": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "weekly_active_last_4_weeks": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "regular_use": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "activated": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            }
+          }
+        },
+        {
+          "group": "Corporate",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 14,
+              "d": 35,
+              "people": 35,
+              "rate": 0.4,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 51,
+              "d": 136,
+              "people": 36,
+              "rate": 0.375,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 12,
+              "d": 33,
+              "people": 33,
+              "rate": 0.36363636363636365,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 19,
+              "d": 37,
+              "people": 37,
+              "rate": 0.5135135135135135,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 30,
+              "d": 102,
+              "people": 26,
+              "rate": 0.29411764705882354,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 25,
+              "d": 136,
+              "people": 36,
+              "rate": 0.18382352941176472,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Disputes",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 19,
+              "d": 29,
+              "people": 29,
+              "rate": 0.6551724137931034,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 72,
+              "d": 110,
+              "people": 30,
+              "rate": 0.6545454545454545,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 18,
+              "d": 28,
+              "people": 28,
+              "rate": 0.6428571428571429,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 23,
+              "d": 32,
+              "people": 32,
+              "rate": 0.71875,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 58,
+              "d": 110,
+              "people": 30,
+              "rate": 0.5272727272727272,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 33,
+              "d": 110,
+              "people": 30,
+              "rate": 0.3,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Employment",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 3,
+              "d": 19,
+              "people": 19,
+              "rate": 0.15789473684210525,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 17,
+              "d": 71,
+              "people": 20,
+              "rate": 0.23943661971830985,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 4,
+              "d": 18,
+              "people": 18,
+              "rate": 0.2222222222222222,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 10,
+              "d": 20,
+              "people": 20,
+              "rate": 0.5,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 9,
+              "d": 51,
+              "people": 14,
+              "rate": 0.17647058823529413,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 8,
+              "d": 71,
+              "people": 20,
+              "rate": 0.11267605633802817,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Intellectual property",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 3,
+              "d": 15,
+              "people": 15,
+              "rate": 0.2,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 13,
+              "d": 59,
+              "people": 16,
+              "rate": 0.22033898305084745,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 2,
+              "d": 16,
+              "people": 16,
+              "rate": 0.125,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 5,
+              "d": 16,
+              "people": 16,
+              "rate": 0.3125,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 12,
+              "d": 59,
+              "people": 16,
+              "rate": 0.2033898305084746,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Private client",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 2,
+              "d": 15,
+              "people": 15,
+              "rate": 0.13333333333333333,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 11,
+              "d": 58,
+              "people": 15,
+              "rate": 0.1896551724137931,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 2,
+              "d": 15,
+              "people": 15,
+              "rate": 0.13333333333333333,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 4,
+              "d": 15,
+              "people": 15,
+              "rate": 0.26666666666666666,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 5,
+              "d": 38,
+              "people": 10,
+              "rate": 0.13157894736842105,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 4,
+              "d": 58,
+              "people": 15,
+              "rate": 0.06896551724137931,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Real estate",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 5,
+              "d": 25,
+              "people": 25,
+              "rate": 0.2,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 14,
+              "d": 94,
+              "people": 26,
+              "rate": 0.14893617021276595,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 3,
+              "d": 24,
+              "people": 24,
+              "rate": 0.125,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 5,
+              "d": 26,
+              "people": 26,
+              "rate": 0.19230769230769232,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 11,
+              "d": 66,
+              "people": 19,
+              "rate": 0.16666666666666666,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 6,
+              "d": 94,
+              "people": 26,
+              "rate": 0.06382978723404255,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Regulatory",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 1,
+              "d": 14,
+              "people": 14,
+              "rate": 0.07142857142857142,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "regular_use": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "activated": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 6,
+              "d": 41,
+              "people": 12,
+              "rate": 0.14634146341463414,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            }
+          }
+        },
+        {
+          "group": "Tax",
+          "cells": {
+            "weekly_active_latest": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 28,
+              "d": 59,
+              "people": 16,
+              "rate": 0.4745762711864407,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 7,
+              "d": 15,
+              "people": 15,
+              "rate": 0.4666666666666667,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 10,
+              "d": 16,
+              "people": 16,
+              "rate": 0.625,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 18,
+              "d": 44,
+              "people": 12,
+              "rate": 0.4090909090909091,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 12,
+              "d": 59,
+              "people": 16,
+              "rate": 0.2033898305084746,
+              "suppressed": null
+            }
+          }
+        }
+      ],
+      "total": {
+        "group": "All",
+        "cells": {
+          "weekly_active_latest": {
+            "n": 65,
+            "d": 194,
+            "people": 194,
+            "rate": 0.33505154639175255,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks": {
+            "n": 255,
+            "d": 743,
+            "people": 202,
+            "rate": 0.34320323014804843,
+            "suppressed": null
+          },
+          "regular_use": {
+            "n": 57,
+            "d": 187,
+            "people": 187,
+            "rate": 0.3048128342245989,
+            "suppressed": null
+          },
+          "activated": {
+            "n": 96,
+            "d": 206,
+            "people": 206,
+            "rate": 0.46601941747572817,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks:Assistant A": {
+            "n": 160,
+            "d": 550,
+            "people": 150,
+            "rate": 0.2909090909090909,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks:Assistant B": {
+            "n": 122,
+            "d": 743,
+            "people": 202,
+            "rate": 0.1641991924629879,
+            "suppressed": null
+          }
+        }
+      }
+    },
+    "office": {
+      "dimension": "office",
+      "population": "lawyers",
+      "rows": [
+        {
+          "group": "Eastfield",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 11,
+              "d": 30,
+              "people": 30,
+              "rate": 0.36666666666666664,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 42,
+              "d": 123,
+              "people": 33,
+              "rate": 0.34146341463414637,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 9,
+              "d": 33,
+              "people": 33,
+              "rate": 0.2727272727272727,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 19,
+              "d": 33,
+              "people": 33,
+              "rate": 0.5757575757575758,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 16,
+              "d": 97,
+              "people": 26,
+              "rate": 0.16494845360824742,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 26,
+              "d": 123,
+              "people": 33,
+              "rate": 0.21138211382113822,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Harbour Quay",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 19,
+              "d": 40,
+              "people": 40,
+              "rate": 0.475,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 65,
+              "d": 157,
+              "people": 41,
+              "rate": 0.4140127388535032,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 15,
+              "d": 41,
+              "people": 41,
+              "rate": 0.36585365853658536,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 23,
+              "d": 42,
+              "people": 42,
+              "rate": 0.5476190476190477,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 50,
+              "d": 127,
+              "people": 33,
+              "rate": 0.3937007874015748,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 26,
+              "d": 157,
+              "people": 41,
+              "rate": 0.16560509554140126,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Lakeshore",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 1,
+              "d": 15,
+              "people": 15,
+              "rate": 0.06666666666666667,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 2,
+              "d": 30,
+              "people": 15,
+              "rate": 0.06666666666666667,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 0,
+              "d": 0,
+              "people": 0,
+              "rate": null,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 1,
+              "d": 15,
+              "people": 15,
+              "rate": 0.06666666666666667,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 2,
+              "d": 22,
+              "people": 11,
+              "rate": 0.09090909090909091,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 2,
+              "d": 30,
+              "people": 15,
+              "rate": 0.06666666666666667,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Midvale",
+          "cells": {
+            "weekly_active_latest": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "weekly_active_last_4_weeks": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "regular_use": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "activated": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "small_group"
+            }
+          }
+        },
+        {
+          "group": "Northgate",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 15,
+              "d": 53,
+              "people": 53,
+              "rate": 0.2830188679245283,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 68,
+              "d": 211,
+              "people": 54,
+              "rate": 0.3222748815165877,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 14,
+              "d": 54,
+              "people": 54,
+              "rate": 0.25925925925925924,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 25,
+              "d": 54,
+              "people": 54,
+              "rate": 0.46296296296296297,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 41,
+              "d": 151,
+              "people": 39,
+              "rate": 0.271523178807947,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 33,
+              "d": 211,
+              "people": 54,
+              "rate": 0.15639810426540285,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Riverside",
+          "cells": {
+            "weekly_active_latest": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "weekly_active_last_4_weeks": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "regular_use": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "activated": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": null,
+              "d": null,
+              "people": null,
+              "rate": null,
+              "suppressed": "complementary"
+            }
+          }
+        },
+        {
+          "group": "Southmere",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 3,
+              "d": 18,
+              "people": 18,
+              "rate": 0.16666666666666666,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 16,
+              "d": 74,
+              "people": 20,
+              "rate": 0.21621621621621623,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 3,
+              "d": 20,
+              "people": 20,
+              "rate": 0.15,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 8,
+              "d": 21,
+              "people": 21,
+              "rate": 0.38095238095238093,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 9,
+              "d": 41,
+              "people": 11,
+              "rate": 0.21951219512195122,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 7,
+              "d": 74,
+              "people": 20,
+              "rate": 0.0945945945945946,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "Westbrook",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 11,
+              "d": 25,
+              "people": 25,
+              "rate": 0.44,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 37,
+              "d": 95,
+              "people": 25,
+              "rate": 0.3894736842105263,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 10,
+              "d": 25,
+              "people": 25,
+              "rate": 0.4,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 12,
+              "d": 26,
+              "people": 26,
+              "rate": 0.46153846153846156,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 21,
+              "d": 67,
+              "people": 18,
+              "rate": 0.31343283582089554,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 18,
+              "d": 95,
+              "people": 25,
+              "rate": 0.18947368421052632,
+              "suppressed": null
+            }
+          }
+        }
+      ],
+      "total": {
+        "group": "All",
+        "cells": {
+          "weekly_active_latest": {
+            "n": 65,
+            "d": 194,
+            "people": 194,
+            "rate": 0.33505154639175255,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks": {
+            "n": 255,
+            "d": 743,
+            "people": 202,
+            "rate": 0.34320323014804843,
+            "suppressed": null
+          },
+          "regular_use": {
+            "n": 57,
+            "d": 187,
+            "people": 187,
+            "rate": 0.3048128342245989,
+            "suppressed": null
+          },
+          "activated": {
+            "n": 96,
+            "d": 206,
+            "people": 206,
+            "rate": 0.46601941747572817,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks:Assistant A": {
+            "n": 160,
+            "d": 550,
+            "people": 150,
+            "rate": 0.2909090909090909,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks:Assistant B": {
+            "n": 122,
+            "d": 743,
+            "people": 202,
+            "rate": 0.1641991924629879,
+            "suppressed": null
+          }
+        }
+      }
+    },
+    "role": {
+      "dimension": "role",
+      "population": "all",
+      "rows": [
+        {
+          "group": "associate",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 45,
+              "d": 124,
+              "people": 124,
+              "rate": 0.3629032258064516,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 178,
+              "d": 465,
+              "people": 128,
+              "rate": 0.3827956989247312,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 41,
+              "d": 116,
+              "people": 116,
+              "rate": 0.35344827586206895,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 67,
+              "d": 128,
+              "people": 128,
+              "rate": 0.5234375,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 119,
+              "d": 342,
+              "people": 94,
+              "rate": 0.347953216374269,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 84,
+              "d": 465,
+              "people": 128,
+              "rate": 0.18064516129032257,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "counsel",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 7,
+              "d": 28,
+              "people": 28,
+              "rate": 0.25,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 27,
+              "d": 107,
+              "people": 28,
+              "rate": 0.2523364485981308,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 5,
+              "d": 27,
+              "people": 27,
+              "rate": 0.18518518518518517,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 10,
+              "d": 30,
+              "people": 30,
+              "rate": 0.3333333333333333,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 13,
+              "d": 76,
+              "people": 20,
+              "rate": 0.17105263157894737,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 15,
+              "d": 107,
+              "people": 28,
+              "rate": 0.14018691588785046,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "paralegal",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 7,
+              "d": 38,
+              "people": 38,
+              "rate": 0.18421052631578946,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 30,
+              "d": 148,
+              "people": 39,
+              "rate": 0.20270270270270271,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 5,
+              "d": 37,
+              "people": 37,
+              "rate": 0.13513513513513514,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 12,
+              "d": 39,
+              "people": 39,
+              "rate": 0.3076923076923077,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 14,
+              "d": 80,
+              "people": 22,
+              "rate": 0.175,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 17,
+              "d": 148,
+              "people": 39,
+              "rate": 0.11486486486486487,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "partner",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 13,
+              "d": 42,
+              "people": 42,
+              "rate": 0.30952380952380953,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 50,
+              "d": 171,
+              "people": 46,
+              "rate": 0.29239766081871343,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 11,
+              "d": 44,
+              "people": 44,
+              "rate": 0.25,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 19,
+              "d": 48,
+              "people": 48,
+              "rate": 0.3958333333333333,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 28,
+              "d": 132,
+              "people": 36,
+              "rate": 0.21212121212121213,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 23,
+              "d": 171,
+              "people": 46,
+              "rate": 0.13450292397660818,
+              "suppressed": null
+            }
+          }
+        },
+        {
+          "group": "staff",
+          "cells": {
+            "weekly_active_latest": {
+              "n": 6,
+              "d": 66,
+              "people": 66,
+              "rate": 0.09090909090909091,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks": {
+              "n": 16,
+              "d": 253,
+              "people": 69,
+              "rate": 0.06324110671936758,
+              "suppressed": null
+            },
+            "regular_use": {
+              "n": 3,
+              "d": 64,
+              "people": 64,
+              "rate": 0.046875,
+              "suppressed": null
+            },
+            "activated": {
+              "n": 8,
+              "d": 70,
+              "people": 70,
+              "rate": 0.11428571428571428,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant A": {
+              "n": 7,
+              "d": 58,
+              "people": 16,
+              "rate": 0.1206896551724138,
+              "suppressed": null
+            },
+            "weekly_active_last_4_weeks:Assistant B": {
+              "n": 9,
+              "d": 139,
+              "people": 38,
+              "rate": 0.06474820143884892,
+              "suppressed": null
+            }
+          }
+        }
+      ],
+      "total": {
+        "group": "All",
+        "cells": {
+          "weekly_active_latest": {
+            "n": 78,
+            "d": 298,
+            "people": 298,
+            "rate": 0.26174496644295303,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks": {
+            "n": 301,
+            "d": 1144,
+            "people": 310,
+            "rate": 0.2631118881118881,
+            "suppressed": null
+          },
+          "regular_use": {
+            "n": 65,
+            "d": 288,
+            "people": 288,
+            "rate": 0.22569444444444445,
+            "suppressed": null
+          },
+          "activated": {
+            "n": 116,
+            "d": 315,
+            "people": 315,
+            "rate": 0.3682539682539683,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks:Assistant A": {
+            "n": 181,
+            "d": 688,
+            "people": 188,
+            "rate": 0.26308139534883723,
+            "suppressed": null
+          },
+          "weekly_active_last_4_weeks:Assistant B": {
+            "n": 148,
+            "d": 1030,
+            "people": 279,
+            "rate": 0.1436893203883495,
+            "suppressed": null
+          }
+        }
+      }
+    }
+  },
+  "intensity": {
+    "window_weeks": 4,
+    "unit": "interactions per active person",
+    "population": "All roles, on the roster at period end, with at least one interaction in the window. Per-tool rows count licence holders for that tool only; the any-tool row counts everyone.",
+    "by_tool": {
+      "any approved tool": {
+        "people": 115,
+        "suppressed": null,
+        "p25": 8.0,
+        "median": 14.0,
+        "p75": 24.5,
+        "p90": 39.0,
+        "mean": 32.70434782608696,
+        "top_decile_people": 12,
+        "top_decile_share": 0.6091465035894709
+      },
+      "Assistant A": {
+        "people": 71,
+        "suppressed": null,
+        "p25": 8.0,
+        "median": 14.0,
+        "p75": 21.5,
+        "p90": 132.0,
+        "mean": 40.83098591549296,
+        "top_decile_people": 7,
+        "top_decile_share": 0.6619523973784064
+      },
+      "Assistant B": {
+        "people": 57,
+        "suppressed": null,
+        "p25": 7.0,
+        "median": 13.0,
+        "p75": 21.0,
+        "p90": 27.799999999999997,
+        "mean": 14.894736842105264,
+        "top_decile_people": 6,
+        "top_decile_share": 0.22850412249705537
+      }
+    }
+  },
+  "breadth": {
+    "window_weeks": 4,
+    "unit": "features used per active person",
+    "population": "All roles, on the roster at period end, with at least one interaction in the window. Per-tool rows count licence holders for that tool only; the any-tool row counts everyone.",
+    "by_tool": {
+      "any approved tool": {
+        "people": 115,
+        "suppressed": null,
+        "p25": 3.0,
+        "median": 4.0,
+        "p75": 4.0,
+        "p90": 6.0,
+        "mean": 3.8434782608695652,
+        "two_or_more_features": {
+          "n": 111,
+          "d": 115,
+          "people": 115,
+          "rate": 0.9652173913043478,
+          "suppressed": null
+        }
+      },
+      "Assistant A": {
+        "people": 71,
+        "suppressed": null,
+        "p25": 3.0,
+        "median": 3.0,
+        "p75": 4.0,
+        "p90": 5.0,
+        "mean": 3.408450704225352,
+        "two_or_more_features": {
+          "n": 67,
+          "d": 71,
+          "people": 71,
+          "rate": 0.9436619718309859,
+          "suppressed": null
+        }
+      },
+      "Assistant B": {
+        "people": 57,
+        "suppressed": null,
+        "p25": 3.0,
+        "median": 4.0,
+        "p75": 4.0,
+        "p90": 4.0,
+        "mean": 3.4035087719298245,
+        "two_or_more_features": {
+          "n": 56,
+          "d": 57,
+          "people": 57,
+          "rate": 0.9824561403508771,
+          "suppressed": null
+        }
+      }
+    },
+    "features": [
+      {
+        "tool": "Assistant A",
+        "feature": "chat",
+        "people": 71,
+        "suppressed": null
+      },
+      {
+        "tool": "Assistant A",
+        "feature": "document upload",
+        "people": 61,
+        "suppressed": null
+      },
+      {
+        "tool": "Assistant A",
+        "feature": "other",
+        "people": 18,
+        "suppressed": null
+      },
+      {
+        "tool": "Assistant A",
+        "feature": "project",
+        "people": 57,
+        "suppressed": null
+      },
+      {
+        "tool": "Assistant A",
+        "feature": "web search",
+        "people": 35,
+        "suppressed": null
+      },
+      {
+        "tool": "Assistant B",
+        "feature": "documents",
+        "people": 55,
+        "suppressed": null
+      },
+      {
+        "tool": "Assistant B",
+        "feature": "email",
+        "people": 53,
+        "suppressed": null
+      },
+      {
+        "tool": "Assistant B",
+        "feature": "meetings",
+        "people": 45,
+        "suppressed": null
+      },
+      {
+        "tool": "Assistant B",
+        "feature": "spreadsheets",
+        "people": 41,
+        "suppressed": null
+      }
+    ]
+  },
+  "survey": null,
+  "targets": {
+    "programme_month": 0,
+    "targets": [
+      {
+        "id": "weekly_active_lawyers_month_6",
+        "label": "Lawyers using an approved AI tool weekly, month 6",
+        "basis": "last_4_weeks",
+        "threshold": 0.5,
+        "due_month": 6,
+        "min_people": 20,
+        "n": 255,
+        "d": 743,
+        "people": 202,
+        "rate": 0.34320323014804843,
+        "status": "not yet",
+        "reason": "below the threshold"
+      },
+      {
+        "id": "weekly_active_lawyers_month_12",
+        "label": "Lawyers using an approved AI tool weekly, month 12",
+        "basis": "last_4_weeks",
+        "threshold": 0.7,
+        "due_month": 12,
+        "min_people": 20,
+        "n": 255,
+        "d": 743,
+        "people": 202,
+        "rate": 0.34320323014804843,
+        "status": "not yet",
+        "reason": "below the threshold"
+      }
+    ],
+    "gates": [
+      {
+        "id": "pilot_gate:Disputes",
+        "label": "Pilot gate: half of pilot-practice lawyers active weekly: Disputes",
+        "basis": "last_4_weeks",
+        "threshold": 0.5,
+        "due_month": null,
+        "min_people": 5,
+        "n": 72,
+        "d": 110,
+        "people": 30,
+        "rate": 0.6545454545454545,
+        "status": "pass",
+        "reason": "at or above the threshold",
+        "practice": "Disputes"
+      },
+      {
+        "id": "pilot_gate:Employment",
+        "label": "Pilot gate: half of pilot-practice lawyers active weekly: Employment",
+        "basis": "last_4_weeks",
+        "threshold": 0.5,
+        "due_month": null,
+        "min_people": 5,
+        "n": 17,
+        "d": 71,
+        "people": 20,
+        "rate": 0.23943661971830985,
+        "status": "not yet",
+        "reason": "below the threshold",
+        "practice": "Employment"
+      },
+      {
+        "id": "pilot_gate:Competition",
+        "label": "Pilot gate: half of pilot-practice lawyers active weekly: Competition",
+        "basis": "last_4_weeks",
+        "threshold": 0.5,
+        "due_month": null,
+        "min_people": 5,
+        "n": null,
+        "d": null,
+        "people": null,
+        "rate": null,
+        "status": "cannot tell",
+        "reason": "fewer than 5 people in the group",
+        "practice": "Competition"
+      }
+    ]
+  },
+  "data_quality": {
+    "ingestion": {
+      "sources": [
+        {
+          "source": "assistant_a_events",
+          "tool": "Assistant A",
+          "file": "sample_data/assistant_a_events.csv",
+          "rows_read": 9434,
+          "rows_kept": 4216,
+          "interactions_kept": 4216,
+          "dropped": {
+            "blank_row": 0,
+            "missing_user": 4,
+            "bad_date": 6,
+            "bad_count": 0,
+            "zero_count": 0,
+            "duplicate": 40,
+            "conflicting_duplicate": 0,
+            "unknown_user": 25,
+            "ambiguous_user": 0,
+            "outside_period": 5143
+          },
+          "repaired": {
+            "identifier_repaired": 466,
+            "unmapped_feature": 78
+          },
+          "flagged_but_kept": {
+            "usage_without_licence": 13,
+            "usage_before_start_date": 0,
+            "usage_after_end_date": 0
+          },
+          "unknown_user_distinct_identifiers": 3,
+          "unknown_user_interactions": 25,
+          "unmapped_feature_values": [
+            "beta_canvas"
+          ],
+          "date_formats_used": {
+            "iso8601": 4216
+          },
+          "first_date_kept": "2026-09-07",
+          "last_date_kept": "2026-10-16",
+          "rows_dropped": 5218
+        },
+        {
+          "source": "assistant_b_daily",
+          "tool": "Assistant B",
+          "file": "sample_data/assistant_b_daily.csv",
+          "rows_read": 1781,
+          "rows_kept": 677,
+          "interactions_kept": 1220,
+          "dropped": {
+            "blank_row": 0,
+            "missing_user": 0,
+            "bad_date": 5,
+            "bad_count": 3,
+            "zero_count": 30,
+            "duplicate": 10,
+            "conflicting_duplicate": 5,
+            "unknown_user": 12,
+            "ambiguous_user": 0,
+            "outside_period": 1039
+          },
+          "repaired": {
+            "identifier_repaired": 119,
+            "unmapped_feature": 0
+          },
+          "flagged_but_kept": {
+            "usage_without_licence": 0,
+            "usage_before_start_date": 0,
+            "usage_after_end_date": 0
+          },
+          "unknown_user_distinct_identifiers": 2,
+          "unknown_user_interactions": 24,
+          "unmapped_feature_values": [],
+          "date_formats_used": {
+            "%d %b %Y": 68,
+            "%d/%m/%Y": 609
+          },
+          "first_date_kept": "2026-09-07",
+          "last_date_kept": "2026-10-16",
+          "rows_dropped": 1104
+        }
+      ],
+      "totals": {
+        "rows_read": 11215,
+        "rows_kept": 4893,
+        "rows_dropped": 6322,
+        "rows_repaired": 663,
+        "unknown_user_rows": 37,
+        "unknown_user_row_share": 0.003299152920196166,
+        "interactions_kept": 5436,
+        "canonical_rows": 2687
+      },
+      "tools_with_no_rows": []
+    },
+    "roster": {
+      "people_on_roster": 320,
+      "people_on_roster_at_period_end": 315,
+      "people_with_no_usage_counted_as_zero": 203,
+      "people_who_changed_practice": 3,
+      "people_never_eligible_in_period": 10,
+      "person_weeks_total": 1920,
+      "person_weeks_excluded": {
+        "not_started": 118,
+        "on_leave": 102,
+        "left": 0
+      },
+      "person_weeks_with_usage_during_full_leave": 2,
+      "roster_file": {
+        "rows_read": 323,
+        "rows_skipped_invalid": 0,
+        "duplicate_assignment_rows": 0,
+        "invalid_examples": [],
+        "people": 320
+      },
+      "usage_people_not_on_roster_note": "see unknown_user rows per source",
+      "people_with_usage": 117
+    },
+    "survey_note": "Survey week 2026-W48 is outside this period, so the survey is not reported."
+  }
+}

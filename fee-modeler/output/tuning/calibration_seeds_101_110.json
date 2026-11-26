@@ -1,0 +1,533 @@
+{
+  "what": "Calibration study on regenerated synthetic firms, seeds 101 to 110, generator as shipped (planted step 1.7x). Each firm is back-tested walk-forward; overruns are counted against the descriptive comp quantiles, the finite-sample bands alone, and the planning bands (finite-sample plus the upward adjustment; where the change check fires, the higher of the recent-only and whole-history versions).",
+  "method_seeds": "The method (same type only, upward only, at least 12 earlier outcomes) was chosen on seeds 101 to 110. Seeds 1 to 20 were not looked at until it was fixed.",
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "min_history": 12,
+  "runs": [
+    {
+      "seed": 101,
+      "unplanted_flags": {
+        "flagged_predictions": 0,
+        "types": [],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 0,
+        "said_costs_fell": 0
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.25",
+      "descriptive": {
+        "n": 379,
+        "over_p75": 109,
+        "over_p90": 48,
+        "types_more_p75": 1,
+        "types_more_p90": 1,
+        "which_p75": [
+          "internal_investigation (14 of 30)"
+        ],
+        "which_p90": [
+          "internal_investigation (8 of 30)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 379,
+        "over_p75": 92,
+        "over_p90": 28,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      },
+      "planning": {
+        "n": 379,
+        "over_p75": 82,
+        "over_p90": 26,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      }
+    },
+    {
+      "seed": 102,
+      "unplanted_flags": {
+        "flagged_predictions": 3,
+        "types": [
+          "commercial_lease_review",
+          "public_records_litigation"
+        ],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 0,
+        "said_costs_fell": 3
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.41",
+      "descriptive": {
+        "n": 387,
+        "over_p75": 101,
+        "over_p90": 40,
+        "types_more_p75": 2,
+        "types_more_p90": 1,
+        "which_p75": [
+          "facility_change_of_ownership (17 of 46)",
+          "internal_investigation (15 of 32)"
+        ],
+        "which_p90": [
+          "internal_investigation (7 of 32)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 387,
+        "over_p75": 89,
+        "over_p90": 23,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      },
+      "planning": {
+        "n": 387,
+        "over_p75": 78,
+        "over_p90": 15,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      }
+    },
+    {
+      "seed": 103,
+      "unplanted_flags": {
+        "flagged_predictions": 0,
+        "types": [],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 0,
+        "said_costs_fell": 0
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.19",
+      "descriptive": {
+        "n": 385,
+        "over_p75": 81,
+        "over_p90": 40,
+        "types_more_p75": 0,
+        "types_more_p90": 1,
+        "which_p75": [],
+        "which_p90": [
+          "internal_investigation (7 of 28)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 385,
+        "over_p75": 67,
+        "over_p90": 24,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      },
+      "planning": {
+        "n": 385,
+        "over_p75": 67,
+        "over_p90": 22,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      }
+    },
+    {
+      "seed": 104,
+      "unplanted_flags": {
+        "flagged_predictions": 11,
+        "types": [
+          "employment_single_plaintiff_defense",
+          "ordinance_drafting"
+        ],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 1,
+        "said_costs_fell": 10
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.27",
+      "descriptive": {
+        "n": 372,
+        "over_p75": 102,
+        "over_p90": 59,
+        "types_more_p75": 1,
+        "types_more_p90": 1,
+        "which_p75": [
+          "internal_investigation (13 of 28)"
+        ],
+        "which_p90": [
+          "internal_investigation (11 of 28)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 372,
+        "over_p75": 95,
+        "over_p90": 41,
+        "types_more_p75": 1,
+        "types_more_p90": 0,
+        "which_p75": [
+          "internal_investigation (13 of 28)"
+        ],
+        "which_p90": []
+      },
+      "planning": {
+        "n": 372,
+        "over_p75": 87,
+        "over_p90": 33,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      }
+    },
+    {
+      "seed": 105,
+      "unplanted_flags": {
+        "flagged_predictions": 21,
+        "types": [
+          "employment_single_plaintiff_defense",
+          "facility_change_of_ownership",
+          "public_records_litigation"
+        ],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 2,
+        "said_costs_fell": 18
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.19",
+      "descriptive": {
+        "n": 376,
+        "over_p75": 97,
+        "over_p90": 53,
+        "types_more_p75": 0,
+        "types_more_p90": 1,
+        "which_p75": [],
+        "which_p90": [
+          "regulatory_compliance_audit (6 of 27)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 376,
+        "over_p75": 82,
+        "over_p90": 31,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      },
+      "planning": {
+        "n": 376,
+        "over_p75": 77,
+        "over_p90": 23,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      }
+    },
+    {
+      "seed": 106,
+      "unplanted_flags": {
+        "flagged_predictions": 0,
+        "types": [],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 0,
+        "said_costs_fell": 0
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.20",
+      "descriptive": {
+        "n": 374,
+        "over_p75": 93,
+        "over_p90": 46,
+        "types_more_p75": 1,
+        "types_more_p90": 1,
+        "which_p75": [
+          "internal_investigation (11 of 26)"
+        ],
+        "which_p90": [
+          "commercial_lease_review (7 of 32)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 374,
+        "over_p75": 78,
+        "over_p90": 33,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      },
+      "planning": {
+        "n": 374,
+        "over_p75": 72,
+        "over_p90": 28,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      }
+    },
+    {
+      "seed": 107,
+      "unplanted_flags": {
+        "flagged_predictions": 39,
+        "types": [
+          "commercial_lease_review",
+          "employment_single_plaintiff_defense",
+          "ordinance_drafting",
+          "public_works_bid_protest"
+        ],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 18,
+        "said_costs_fell": 11
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.27",
+      "descriptive": {
+        "n": 360,
+        "over_p75": 102,
+        "over_p90": 54,
+        "types_more_p75": 0,
+        "types_more_p90": 3,
+        "which_p75": [],
+        "which_p90": [
+          "paga_response (6 of 24)",
+          "public_records_litigation (12 of 55)",
+          "public_works_bid_protest (8 of 39)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 360,
+        "over_p75": 92,
+        "over_p90": 36,
+        "types_more_p75": 0,
+        "types_more_p90": 2,
+        "which_p75": [],
+        "which_p90": [
+          "paga_response (6 of 24)",
+          "public_records_litigation (10 of 55)"
+        ]
+      },
+      "planning": {
+        "n": 360,
+        "over_p75": 78,
+        "over_p90": 28,
+        "types_more_p75": 0,
+        "types_more_p90": 1,
+        "which_p75": [],
+        "which_p90": [
+          "paga_response (6 of 24)"
+        ]
+      }
+    },
+    {
+      "seed": 108,
+      "unplanted_flags": {
+        "flagged_predictions": 2,
+        "types": [
+          "public_records_litigation"
+        ],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 2,
+        "said_costs_fell": 2
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.26",
+      "descriptive": {
+        "n": 384,
+        "over_p75": 92,
+        "over_p90": 48,
+        "types_more_p75": 1,
+        "types_more_p90": 1,
+        "which_p75": [
+          "internal_investigation (16 of 37)"
+        ],
+        "which_p90": [
+          "internal_investigation (11 of 37)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 384,
+        "over_p75": 79,
+        "over_p90": 29,
+        "types_more_p75": 0,
+        "types_more_p90": 1,
+        "which_p75": [],
+        "which_p90": [
+          "internal_investigation (9 of 37)"
+        ]
+      },
+      "planning": {
+        "n": 384,
+        "over_p75": 76,
+        "over_p90": 23,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      }
+    },
+    {
+      "seed": 109,
+      "unplanted_flags": {
+        "flagged_predictions": 6,
+        "types": [
+          "administrative_licensing_appeal"
+        ],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 0,
+        "said_costs_fell": 0
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.24",
+      "descriptive": {
+        "n": 351,
+        "over_p75": 90,
+        "over_p90": 46,
+        "types_more_p75": 2,
+        "types_more_p90": 2,
+        "which_p75": [
+          "internal_investigation (13 of 27)",
+          "public_works_bid_protest (16 of 38)"
+        ],
+        "which_p90": [
+          "internal_investigation (9 of 27)",
+          "public_works_bid_protest (8 of 38)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 351,
+        "over_p75": 75,
+        "over_p90": 30,
+        "types_more_p75": 1,
+        "types_more_p90": 1,
+        "which_p75": [
+          "internal_investigation (13 of 27)"
+        ],
+        "which_p90": [
+          "internal_investigation (8 of 27)"
+        ]
+      },
+      "planning": {
+        "n": 351,
+        "over_p75": 66,
+        "over_p90": 26,
+        "types_more_p75": 0,
+        "types_more_p90": 1,
+        "which_p75": [],
+        "which_p90": [
+          "internal_investigation (6 of 27)"
+        ]
+      }
+    },
+    {
+      "seed": 110,
+      "unplanted_flags": {
+        "flagged_predictions": 1,
+        "types": [
+          "employment_single_plaintiff_defense"
+        ],
+        "p90_below_whole_history": 0,
+        "any_band_below_whole_history": 0,
+        "p90_raised": 1,
+        "said_costs_fell": 0
+      },
+      "types_judged": 11,
+      "median_planning_p90_over_descriptive_p90": "1.27",
+      "descriptive": {
+        "n": 369,
+        "over_p75": 113,
+        "over_p90": 50,
+        "types_more_p75": 2,
+        "types_more_p90": 3,
+        "which_p75": [
+          "administrative_licensing_appeal (10 of 23)",
+          "internal_investigation (14 of 26)"
+        ],
+        "which_p90": [
+          "internal_investigation (8 of 26)",
+          "ordinance_drafting (8 of 39)",
+          "paga_response (6 of 27)"
+        ]
+      },
+      "finite_sample_only": {
+        "n": 369,
+        "over_p75": 93,
+        "over_p90": 41,
+        "types_more_p75": 1,
+        "types_more_p90": 1,
+        "which_p75": [
+          "internal_investigation (12 of 26)"
+        ],
+        "which_p90": [
+          "paga_response (6 of 27)"
+        ]
+      },
+      "planning": {
+        "n": 369,
+        "over_p75": 87,
+        "over_p90": 30,
+        "types_more_p75": 0,
+        "types_more_p90": 0,
+        "which_p75": [],
+        "which_p90": []
+      }
+    }
+  ],
+  "total": {
+    "descriptive": {
+      "n": 3737,
+      "over_p75": 980,
+      "over_p90": 484,
+      "types_more_p75": 10,
+      "types_more_p90": 15
+    },
+    "finite_sample_only": {
+      "n": 3737,
+      "over_p75": 842,
+      "over_p90": 316,
+      "types_more_p75": 3,
+      "types_more_p90": 5
+    },
+    "planning": {
+      "n": 3737,
+      "over_p75": 770,
+      "over_p90": 254,
+      "types_more_p75": 0,
+      "types_more_p90": 2
+    }
+  },
+  "unplanted_flags": {
+    "flagged_predictions": 83,
+    "p90_below_whole_history": 0,
+    "any_band_below_whole_history": 0,
+    "p90_raised": 24,
+    "said_costs_fell": 44
+  },
+  "type_runs_judged": 110,
+  "median_planning_p90_over_descriptive_p90": "1.26"
+}

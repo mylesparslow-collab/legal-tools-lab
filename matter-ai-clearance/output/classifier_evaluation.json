@@ -1,0 +1,164 @@
+{
+ "labeled_spans": 91,
+ "positive_spans": 59,
+ "hard_negative_spans": 32,
+ "hard_negatives_wrongly_classified": 2,
+ "overall": {
+  "tp": 54,
+  "fp": 3,
+  "fn": 5,
+  "precision": 0.947,
+  "recall": 0.915
+ },
+ "per_class": {
+  "ai_permitted": {
+   "tp": 4,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "ai_prohibited": {
+   "tp": 5,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "ambiguous": {
+   "tp": 2,
+   "fp": 0,
+   "fn": 1,
+   "precision": 1.0,
+   "recall": 0.667
+  },
+  "approved_tools_only": {
+   "tp": 4,
+   "fp": 2,
+   "fn": 2,
+   "precision": 0.667,
+   "recall": 0.667
+  },
+  "billing_restriction": {
+   "tp": 9,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "consent_required": {
+   "tp": 6,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "data_residency_retention": {
+   "tp": 7,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "disclosure_required": {
+   "tp": 7,
+   "fp": 1,
+   "fn": 1,
+   "precision": 0.875,
+   "recall": 0.875
+  },
+  "human_review_required": {
+   "tp": 6,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "no_training": {
+   "tp": 4,
+   "fp": 0,
+   "fn": 1,
+   "precision": 1.0,
+   "recall": 0.8
+  }
+ },
+ "per_split": {
+  "dev": {
+   "tp": 34,
+   "fp": 2,
+   "fn": 0,
+   "precision": 0.944,
+   "recall": 1.0,
+   "documents": 12
+  },
+  "heldout": {
+   "tp": 20,
+   "fp": 1,
+   "fn": 5,
+   "precision": 0.952,
+   "recall": 0.8,
+   "documents": 8
+  }
+ },
+ "false_positives": [
+  {
+   "document_id": "tessaly-ocg-2025",
+   "class": "disclosure_required",
+   "quote": "2.2 A request for consent must identify the tool, the vendor, the categories of Bank data involved and the safeguards in place.",
+   "pattern_ids": [
+    "DIS-01"
+   ],
+   "on_hard_negative": true
+  },
+  {
+   "document_id": "tessaly-ocg-2025",
+   "class": "approved_tools_only",
+   "quote": "2.7 All attorneys working on Bank matters must complete the Firm's AI training before using an approved tool.",
+   "pattern_ids": [
+    "APP-01"
+   ],
+   "on_hard_negative": true
+  },
+  {
+   "document_id": "ironvale-ocg-2026",
+   "class": "approved_tools_only",
+   "quote": "4.2 Use of any AI platform not on that list requires advance approval from Ironvale's Chief Legal Officer.",
+   "pattern_ids": [
+    "APP-05"
+   ],
+   "on_hard_negative": false
+  }
+ ],
+ "false_negatives": [
+  {
+   "key_id": "K055",
+   "document_id": "quillfether-ocg-v2-2026",
+   "label": "approved_tools_only",
+   "quote": "Approval will list the specific tools cleared for that matter; no other tool may be used."
+  },
+  {
+   "key_id": "K057",
+   "document_id": "quillfether-ocg-v2-2026",
+   "label": "disclosure_required",
+   "quote": "Counsel must continue to identify AI-assisted tasks on each invoice."
+  },
+  {
+   "key_id": "K062",
+   "document_id": "quillfether-ocg-v2-2026",
+   "label": "ambiguous",
+   "quote": "Quillfether no longer encourages unsupervised use of AI tools for first drafts of court filings."
+  },
+  {
+   "key_id": "K077",
+   "document_id": "verdanthe-el-2026",
+   "label": "approved_tools_only",
+   "quote": "Resident records will only be placed in tools that we have confirmed are appropriate for health information."
+  },
+  {
+   "key_id": "K083",
+   "document_id": "ironvale-ocg-2026",
+   "label": "no_training",
+   "quote": "No Ironvale data may be used to develop or improve any AI vendor's products."
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+Agency: Redwood Flats Water District (special_district)
+Title: General Counsel Legal Services   RFP number: 26-GC-01   Practice: general_counsel
+
+Deadlines:
+  RFP issued                   2026-11-02 
+      line 18: Release of RFP .......................... November 2, 2026
+  Questions due                2026-11-20 15:00
+      line 19: Deadline for questions .................. November 20, 2026, 3:00 p.m.
+  Answers issued               2026-11-25 
+      line 20: District responses issued ............... November 25, 2026
+  Submission due               2026-12-17 14:00  [changed by Addendum 1; was 2026-12-10 14:00]
+      line 21: Proposal submission deadline ............ December 10, 2026, 2:00 p.m.
+  Interviews                   2027-01-07   [changed by Addendum 1; was 2026-12-17 ]
+      line 22: Interviews with Board committee ......... December 17, 2026
+  Award or board action        2027-01-14 
+      line 23: Board award (tentative) ................. January 14, 2027
+
+Submission mechanics:
+  copies           one (1) unbound original; six (6) bound copies; one (1) USB drive
+  format           PDF
+  packaging        sealed envelope
+  delivery         physical delivery
+  not_accepted     Proposals sent by email or fax will not be considered.
+  page_limit       15
+  page_exclusions  resumes, the forms in Section VI and the transmittal letter
+  font             11
+
+Requirements (10):
+  A       Cover letter                 Letter of Transmittal. A letter signed by a principal of the firm, nam
+  B       Firm overview                Firm Qualifications. Describe the firm's history, size, office locatio
+  C       Team                         Assigned Personnel. Name the lead attorney and other attorneys who wou
+  D       Experience                   Special District Experience. Describe the firm's experience as general
+  E       Approach                     Work Plan. Describe how the firm would deliver the services in Section
+  F       References                   Client References. Provide a minimum of four (4) references from publi
+  G       Conflicts                    Potential Conflicts. Identify any current or former client whose inter
+  H       Rates and fees               Compensation. Propose a fee arrangement. State hourly rates by attorne
+  I       Transition plan              Transition. Describe how the firm would take over from retiring counse
+  J       Disclosures and exceptions   Exceptions to Agreement. State any exception to the District's standar
+
+Forms and certifications (4):
+  Exhibit 1      Proposer Certification
+  Exhibit 3      Non-Collusion Affidavit
+  Exhibit 4      Conflict of Interest Disclosure Form
+                 Certificate of insurance or a letter from the proposer's broker
+
+Evaluation criteria (points, total 100):
+  30   Experience with special districts and water matters
+  25   Qualifications of assigned personnel
+  20   Work plan and responsiveness
+  15   Compensation
+  10   References
+
+Minimum qualifications (3):
+  [years_admitted] The lead attorney shall have no fewer than eight (8) years admitted to practice in the Sta
+  [attorney_count] The firm shall have at least three (3) attorneys available to serve the District.
+  [not_checkable] The firm shall have represented at least two special districts as general counsel in the l
+
+Insurance statements (3):
+  The successful proposer shall carry professional liability (errors and omissions) coverage with limi
+  general liability coverage of at least $1,000,000 per occurrence
+  automobile liability coverage of at least $500,000.
+
+Addendum 1 (issued 2026-11-18): 2 change(s) applied, 1 item(s) to read
+  submission_due: 2026-12-10 -> 2026-12-17
+  interview: 2026-12-17 -> 2027-01-07
+
+Items marked check: 3
+  party Beatrix Okonkwo: role taken from the name before it in a list
+  party Lucien Farraday: role taken from the name before it in a list
+  addendum ADD1-3: addendum item not applied automatically; read it

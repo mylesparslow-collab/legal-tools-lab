@@ -1,0 +1,850 @@
+{
+ "meta": {
+  "agency": "Redwood Flats Water District",
+  "agency_short": "District",
+  "agency_type": "special_district",
+  "agency_source": {
+   "line": 7,
+   "text": "Redwood Flats Water District (the \"District\") provides water service to about"
+  },
+  "agency_confidence": "ok",
+  "title": "General Counsel Legal Services",
+  "rfp_number": "26-GC-01",
+  "practice": "general_counsel",
+  "subjects": [
+   "water",
+   "rates and charges",
+   "open meetings",
+   "public records",
+   "public contracting",
+   "personnel",
+   "claims",
+   "real property",
+   "governance"
+  ]
+ },
+ "deadlines": [
+  {
+   "kind": "issued",
+   "label": "Release of RFP",
+   "date": "2026-11-02",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 18,
+    "text": "Release of RFP .......................... November 2, 2026"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D1"
+  },
+  {
+   "kind": "questions_due",
+   "label": "Deadline for questions",
+   "date": "2026-11-20",
+   "end_date": null,
+   "time": "15:00",
+   "source": {
+    "line": 19,
+    "text": "Deadline for questions .................. November 20, 2026, 3:00 p.m."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D2"
+  },
+  {
+   "kind": "answers_issued",
+   "label": "District responses issued",
+   "date": "2026-11-25",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 20,
+    "text": "District responses issued ............... November 25, 2026"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D3"
+  },
+  {
+   "kind": "submission_due",
+   "label": "Proposal submission deadline",
+   "date": "2026-12-17",
+   "end_date": null,
+   "time": "14:00",
+   "source": {
+    "line": 21,
+    "text": "Proposal submission deadline ............ December 10, 2026, 2:00 p.m."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": "Addendum 1",
+   "original_date": "2026-12-10",
+   "original_time": "14:00",
+   "change_source": {
+    "line": 114,
+    "text": "The proposal submission deadline in Section II is changed from December 10, 2026, 2:00 p.m. to December 17, 2026, 2:00 p.m."
+   },
+   "id": "D4"
+  },
+  {
+   "kind": "interview",
+   "label": "Interviews with Board committee",
+   "date": "2027-01-07",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 22,
+    "text": "Interviews with Board committee ......... December 17, 2026"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": "Addendum 1",
+   "original_date": "2026-12-17",
+   "original_time": null,
+   "change_source": {
+    "line": 116,
+    "text": "Interviews with the Board committee are rescheduled from December 17, 2026 to January 7, 2027."
+   },
+   "id": "D5"
+  },
+  {
+   "kind": "award",
+   "label": "Board award (tentative)",
+   "date": "2027-01-14",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 23,
+    "text": "Board award (tentative) ................. January 14, 2027"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D6"
+  }
+ ],
+ "mechanics": [
+  {
+   "kind": "copies",
+   "value": "one (1) unbound original; six (6) bound copies; one (1) USB drive",
+   "source": {
+    "line": 102,
+    "text": "Deliver one (1) unbound original, six (6) bound copies and one (1) USB drive containing a PDF copy in a sealed envelope marked \"General Counsel Proposal\" to the District Secretary, Redwood Flats Water District, 400 Cistern Road, Redwood Flats."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB1"
+  },
+  {
+   "kind": "format",
+   "value": "PDF",
+   "source": {
+    "line": 102,
+    "text": "Deliver one (1) unbound original, six (6) bound copies and one (1) USB drive containing a PDF copy in a sealed envelope marked \"General Counsel Proposal\" to the District Secretary, Redwood Flats Water District, 400 Cistern Road, Redwood Flats."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB2"
+  },
+  {
+   "kind": "packaging",
+   "value": "sealed envelope",
+   "source": {
+    "line": 102,
+    "text": "Deliver one (1) unbound original, six (6) bound copies and one (1) USB drive containing a PDF copy in a sealed envelope marked \"General Counsel Proposal\" to the District Secretary, Redwood Flats Water District, 400 Cistern Road, Redwood Flats."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB3"
+  },
+  {
+   "kind": "delivery",
+   "value": "physical delivery",
+   "source": {
+    "line": 102,
+    "text": "Deliver one (1) unbound original, six (6) bound copies and one (1) USB drive containing a PDF copy in a sealed envelope marked \"General Counsel Proposal\" to the District Secretary, Redwood Flats Water District, 400 Cistern Road, Redwood Flats."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB4"
+  },
+  {
+   "kind": "not_accepted",
+   "value": "Proposals sent by email or fax will not be considered.",
+   "source": {
+    "line": 102,
+    "text": "Proposals sent by email or fax will not be considered."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB5"
+  },
+  {
+   "kind": "page_limit",
+   "value": 15,
+   "source": {
+    "line": 102,
+    "text": "Proposals are limited to fifteen (15) pages, not counting resumes, the forms in Section VI and the transmittal letter."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB6"
+  },
+  {
+   "kind": "page_exclusions",
+   "value": "resumes, the forms in Section VI and the transmittal letter",
+   "source": {
+    "line": 102,
+    "text": "Proposals are limited to fifteen (15) pages, not counting resumes, the forms in Section VI and the transmittal letter."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB7"
+  },
+  {
+   "kind": "font",
+   "value": 11,
+   "source": {
+    "line": 102,
+    "text": "Minimum font size is 11 point."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB8"
+  }
+ ],
+ "requirements": [
+  {
+   "id": "R-A",
+   "label": "A",
+   "title": "Letter of Transmittal",
+   "text": "Letter of Transmittal. A letter signed by a principal of the firm, naming the person authorized to negotiate an agreement.",
+   "qtype": "cover_letter",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 51,
+    "text": "A. Letter of Transmittal. A letter signed by a principal of the firm, naming"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-B",
+   "label": "B",
+   "title": "Firm Qualifications",
+   "text": "Firm Qualifications. Describe the firm's history, size, office locations and its work for special districts.",
+   "qtype": "firm_overview",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 53,
+    "text": "B. Firm Qualifications. Describe the firm's history, size, office locations"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-C",
+   "label": "C",
+   "title": "Assigned Personnel",
+   "text": "Assigned Personnel. Name the lead attorney and other attorneys who would serve the District, and state each person's role. Attach resumes.",
+   "qtype": "team",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 55,
+    "text": "C. Assigned Personnel. Name the lead attorney and other attorneys who would"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-D",
+   "label": "D",
+   "title": "Special District Experience",
+   "text": "Special District Experience. Describe the firm's experience as general counsel to special districts, and in particular water agencies.",
+   "qtype": "experience",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 57,
+    "text": "D. Special District Experience. Describe the firm's experience as general"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-E",
+   "label": "E",
+   "title": "Work Plan",
+   "text": "Work Plan. Describe how the firm would deliver the services in Section III, including meeting attendance, turnaround times and how the firm keeps the Board informed.",
+   "qtype": "approach",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 59,
+    "text": "E. Work Plan. Describe how the firm would deliver the services in Section"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-F",
+   "label": "F",
+   "title": "Client References",
+   "text": "Client References. Provide a minimum of four (4) references from public agency clients.",
+   "qtype": "references",
+   "mandatory": true,
+   "references_required": 4,
+   "source": {
+    "line": 62,
+    "text": "F. Client References. Provide a minimum of four (4) references from public"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-G",
+   "label": "G",
+   "title": "Potential Conflicts",
+   "text": "Potential Conflicts. Identify any current or former client whose interests may conflict with the District's, and any relationship with a Board member or District employee.",
+   "qtype": "conflicts",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 64,
+    "text": "G. Potential Conflicts. Identify any current or former client whose interests"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-H",
+   "label": "H",
+   "title": "Compensation",
+   "text": "Compensation. Propose a fee arrangement. State hourly rates by attorney and any retainer.",
+   "qtype": "rates",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 67,
+    "text": "H. Compensation. Propose a fee arrangement. State hourly rates by attorney"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-I",
+   "label": "I",
+   "title": "Transition",
+   "text": "Transition. Describe how the firm would take over from retiring counsel.",
+   "qtype": "transition",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 69,
+    "text": "I. Transition. Describe how the firm would take over from retiring counsel."
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-J",
+   "label": "J",
+   "title": "Exceptions to Agreement",
+   "text": "Exceptions to Agreement. State any exception to the District's standard professional services agreement (Exhibit 2).",
+   "qtype": "disclosure",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 70,
+    "text": "J. Exceptions to Agreement. State any exception to the District's standard"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  }
+ ],
+ "forms": [
+  {
+   "ref": "Exhibit 1",
+   "name": "Proposer Certification",
+   "text": "Exhibit 1 - Proposer Certification (signed)",
+   "signature": true,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 78,
+    "text": "1. Exhibit 1 - Proposer Certification (signed)"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F1"
+  },
+  {
+   "ref": "Exhibit 3",
+   "name": "Non-Collusion Affidavit",
+   "text": "Exhibit 3 - Non-Collusion Affidavit (notarized)",
+   "signature": false,
+   "notarized": true,
+   "mandatory": true,
+   "source": {
+    "line": 79,
+    "text": "2. Exhibit 3 - Non-Collusion Affidavit (notarized)"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F2"
+  },
+  {
+   "ref": "Exhibit 4",
+   "name": "Conflict of Interest Disclosure Form",
+   "text": "Exhibit 4 - Conflict of Interest Disclosure Form",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 80,
+    "text": "3. Exhibit 4 - Conflict of Interest Disclosure Form"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F3"
+  },
+  {
+   "ref": "",
+   "name": "Certificate of insurance or a letter from the proposer's broker",
+   "text": "Certificate of insurance or a letter from the proposer's broker",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 81,
+    "text": "4. Certificate of insurance or a letter from the proposer's broker"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "F4"
+  }
+ ],
+ "min_quals": [
+  {
+   "label": "A",
+   "text": "The lead attorney shall have no fewer than eight (8) years admitted to practice in the State of Westmark.",
+   "check_kind": "years_admitted",
+   "value": 8,
+   "source": {
+    "line": 40,
+    "text": "A. The lead attorney shall have no fewer than eight (8) years admitted to"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-A"
+  },
+  {
+   "label": "B",
+   "text": "The firm shall have at least three (3) attorneys available to serve the District.",
+   "check_kind": "attorney_count",
+   "value": 3,
+   "source": {
+    "line": 42,
+    "text": "B. The firm shall have at least three (3) attorneys available to serve the"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-B"
+  },
+  {
+   "label": "C",
+   "text": "The firm shall have represented at least two special districts as general counsel in the last five years.",
+   "check_kind": "not_checkable",
+   "value": null,
+   "source": {
+    "line": 44,
+    "text": "C. The firm shall have represented at least two special districts as general"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-C"
+  }
+ ],
+ "insurance": [
+  {
+   "label": "",
+   "text": "The successful proposer shall carry professional liability (errors and omissions) coverage with limits of at least $1,000,000 per claim and $2,000,000 aggregate",
+   "amounts": [
+    "$1,000,000",
+    "$2,000,000"
+   ],
+   "source": {
+    "line": 95,
+    "text": "The successful proposer shall carry professional liability (errors and"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS1"
+  },
+  {
+   "label": "",
+   "text": "general liability coverage of at least $1,000,000 per occurrence",
+   "amounts": [
+    "$1,000,000"
+   ],
+   "source": {
+    "line": 95,
+    "text": "The successful proposer shall carry professional liability (errors and"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS2"
+  },
+  {
+   "label": "",
+   "text": "automobile liability coverage of at least $500,000.",
+   "amounts": [
+    "$500,000"
+   ],
+   "source": {
+    "line": 95,
+    "text": "The successful proposer shall carry professional liability (errors and"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "INS3"
+  }
+ ],
+ "scope_items": [
+  {
+   "label": "A",
+   "text": "Attend regular Board meetings (second Thursday of each month) and committee meetings on request.",
+   "source": {
+    "line": 27,
+    "text": "A. Attend regular Board meetings (second Thursday of each month) and"
+   }
+  },
+  {
+   "label": "B",
+   "text": "Advise the Board and staff on open meeting and public records questions, conflict of interest questions and Board governance.",
+   "source": {
+    "line": 29,
+    "text": "B. Advise the Board and staff on open meeting and public records questions,"
+   }
+  },
+  {
+   "label": "C",
+   "text": "Advise on water rates and charges, water supply contracts and groundwater matters.",
+   "source": {
+    "line": 31,
+    "text": "C. Advise on water rates and charges, water supply contracts and groundwater"
+   }
+  },
+  {
+   "label": "D",
+   "text": "Draft and review contracts, including public works contracts, and advise on bidding.",
+   "source": {
+    "line": 33,
+    "text": "D. Draft and review contracts, including public works contracts, and advise"
+   }
+  },
+  {
+   "label": "E",
+   "text": "Advise on personnel matters.",
+   "source": {
+    "line": 35,
+    "text": "E. Advise on personnel matters."
+   }
+  },
+  {
+   "label": "F",
+   "text": "Advise on real property matters, including easements.",
+   "source": {
+    "line": 36,
+    "text": "F. Advise on real property matters, including easements."
+   }
+  }
+ ],
+ "parties": [
+  {
+   "name": "Redwood Flats Water District",
+   "category": "agency",
+   "role": "Issuing agency",
+   "source": {
+    "line": 7,
+    "text": "Redwood Flats Water District (the \"District\") provides water service to about"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Ottoline Brannigan",
+   "category": "staff",
+   "role": "General Manager",
+   "source": {
+    "line": 7,
+    "text": "Redwood Flats Water District (the \"District\") provides water service to about 18,500 connections. The District is governed by a five-member Board of Directors. The District's General Manager is Ottoline Brannigan. The Board members are Pres"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Cassius Elmwood",
+   "category": "board",
+   "role": "President",
+   "source": {
+    "line": 7,
+    "text": "Redwood Flats Water District (the \"District\") provides water service to about 18,500 connections. The District is governed by a five-member Board of Directors. The District's General Manager is Ottoline Brannigan. The Board members are Pres"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Mireille Dunmore",
+   "category": "board",
+   "role": "Vice President",
+   "source": {
+    "line": 7,
+    "text": "Redwood Flats Water District (the \"District\") provides water service to about 18,500 connections. The District is governed by a five-member Board of Directors. The District's General Manager is Ottoline Brannigan. The Board members are Pres"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Anselm Torvald",
+   "category": "board",
+   "role": "Directors",
+   "source": {
+    "line": 7,
+    "text": "Redwood Flats Water District (the \"District\") provides water service to about 18,500 connections. The District is governed by a five-member Board of Directors. The District's General Manager is Ottoline Brannigan. The Board members are Pres"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Beatrix Okonkwo",
+   "category": "board",
+   "role": "Directors",
+   "source": {
+    "line": 7,
+    "text": "Redwood Flats Water District (the \"District\") provides water service to about 18,500 connections. The District is governed by a five-member Board of Directors. The District's General Manager is Ottoline Brannigan. The Board members are Pres"
+   },
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
+  },
+  {
+   "name": "Lucien Farraday",
+   "category": "board",
+   "role": "Directors",
+   "source": {
+    "line": 7,
+    "text": "Redwood Flats Water District (the \"District\") provides water service to about 18,500 connections. The District is governed by a five-member Board of Directors. The District's General Manager is Ottoline Brannigan. The Board members are Pres"
+   },
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
+  }
+ ],
+ "deleted_requirements": [],
+ "sections": [
+  {
+   "kind": "intro",
+   "title": "BACKGROUND",
+   "label": "SECTION I",
+   "line": 5
+  },
+  {
+   "kind": "schedule",
+   "title": "TIMELINE",
+   "label": "SECTION II",
+   "line": 16
+  },
+  {
+   "kind": "scope",
+   "title": "SERVICES REQUESTED",
+   "label": "SECTION III",
+   "line": 25
+  },
+  {
+   "kind": "minquals",
+   "title": "MINIMUM REQUIREMENTS",
+   "label": "SECTION IV",
+   "line": 38
+  },
+  {
+   "kind": "content",
+   "title": "PROPOSAL REQUIREMENTS",
+   "label": "SECTION V",
+   "line": 47
+  },
+  {
+   "kind": "forms",
+   "title": "FORMS AND CERTIFICATIONS",
+   "label": "SECTION VI",
+   "line": 73
+  },
+  {
+   "kind": "evaluation",
+   "title": "SELECTION",
+   "label": "SECTION VII",
+   "line": 83
+  },
+  {
+   "kind": "insurance",
+   "title": "INSURANCE",
+   "label": "SECTION VIII",
+   "line": 93
+  },
+  {
+   "kind": "submission",
+   "title": "SUBMITTAL",
+   "label": "SECTION IX",
+   "line": 100
+  }
+ ],
+ "evaluation": {
+  "criteria": [
+   {
+    "name": "Experience with special districts and water matters",
+    "weight": 30,
+    "source": {
+     "line": 87,
+     "text": "Experience with special districts and water matters (30 points)"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV1"
+   },
+   {
+    "name": "Qualifications of assigned personnel",
+    "weight": 25,
+    "source": {
+     "line": 88,
+     "text": "Qualifications of assigned personnel (25 points)"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV2"
+   },
+   {
+    "name": "Work plan and responsiveness",
+    "weight": 20,
+    "source": {
+     "line": 89,
+     "text": "Work plan and responsiveness (20 points)"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV3"
+   },
+   {
+    "name": "Compensation",
+    "weight": 15,
+    "source": {
+     "line": 90,
+     "text": "Compensation (15 points)"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV4"
+   },
+   {
+    "name": "References",
+    "weight": 10,
+    "source": {
+     "line": 91,
+     "text": "References (10 points)"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV5"
+   }
+  ],
+  "total_stated": null,
+  "unit": "points",
+  "total": 100,
+  "confidence": "ok",
+  "check_reason": ""
+ },
+ "addenda": [
+  {
+   "number": "1",
+   "issued": "2026-11-18",
+   "source": {
+    "line": 111,
+    "text": "ADDENDUM 1"
+   },
+   "changes": [
+    {
+     "type": "deadline",
+     "kind": "submission_due",
+     "from": "2026-12-10",
+     "to": "2026-12-17",
+     "source": {
+      "line": 114,
+      "text": "The proposal submission deadline in Section II is changed from December 10, 2026, 2:00 p.m. to December 17, 2026, 2:00 p.m."
+     },
+     "confidence": "ok",
+     "check_reason": "",
+     "from_time": "14:00",
+     "to_time": "14:00"
+    },
+    {
+     "type": "deadline",
+     "kind": "interview",
+     "from": "2026-12-17",
+     "to": "2027-01-07",
+     "source": {
+      "line": 116,
+      "text": "Interviews with the Board committee are rescheduled from December 17, 2026 to January 7, 2027."
+     },
+     "confidence": "ok",
+     "check_reason": "",
+     "from_time": null,
+     "to_time": null
+    }
+   ],
+   "notes": [
+    {
+     "id": "ADD1-3",
+     "text": "All other terms are unchanged. Proposers must acknowledge this addendum in the Letter of Transmittal.",
+     "source": {
+      "line": 118,
+      "text": "All other terms are unchanged. Proposers must acknowledge this addendum in the Letter of Transmittal."
+     },
+     "confidence": "check",
+     "check_reason": "addendum item not applied automatically; read it"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "category": "party",
+   "id": "Beatrix Okonkwo",
+   "reason": "role taken from the name before it in a list",
+   "text": "Beatrix Okonkwo"
+  },
+  {
+   "category": "party",
+   "id": "Lucien Farraday",
+   "reason": "role taken from the name before it in a list",
+   "text": "Lucien Farraday"
+  },
+  {
+   "category": "addendum",
+   "id": "ADD1-3",
+   "reason": "addendum item not applied automatically; read it",
+   "text": "All other terms are unchanged. Proposers must acknowledge this addendum in the Letter of Transmittal."
+  }
+ ]
+}

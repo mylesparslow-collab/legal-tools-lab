@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI tool use: short survey</title>
+<style>
+:root { color-scheme: light dark; --bg: #ffffff; --text: #191919; --muted: #666666; --line: #d0d0d0; --accent: #1b64be; --err: #b3261e; }
+@media (prefers-color-scheme: dark) { :root { --bg: #191919; --text: #efefef; --muted: #9c9c9c; --line: #444444; --accent: #6aabf1; --err: #f28b82; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+h1 { font-size: 1.5rem; line-height: 1.25; margin: 0 0 .5rem; }
+.note { color: var(--muted); font-size: .9rem; }
+fieldset { border: 1px solid var(--line); border-radius: 6px; margin: 1rem 0; padding: .75rem 1rem; }
+fieldset.invalid { border-color: var(--err); }
+legend { font-weight: 600; padding: 0 .25rem; }
+label { display: block; padding: .3rem 0; }
+input { accent-color: var(--accent); width: 1.1rem; height: 1.1rem; vertical-align: -2px; margin-right: .4rem; }
+textarea { width: 100%; font: inherit; color: inherit; background: transparent; border: 1px solid var(--line); border-radius: 4px; padding: .5rem; }
+.err { color: var(--err); margin: .25rem 0 0; font-size: .9rem; }
+button { font: inherit; padding: .6rem 1rem; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--bg); cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#out { width: 100%; min-height: 12rem; font: 13px/1.4 ui-monospace, monospace; margin-top: .5rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>AI tool use: short survey</h1>
+<p>This survey asks how you use the firm&#x27;s approved AI assistants. It has 14 questions and takes under five minutes. It does not ask for your name. Results are reported for groups of five or more people only. There are no right answers, and not using the tools is a useful answer.</p>
+<p class="note">Demo form with synthetic practice and office names. This page works offline and sends nothing anywhere. Saving produces a JSON file on your own device.</p>
+<form id="survey" novalidate>
+<fieldset id="q-role" data-qid="role" data-type="single" data-required="1">
+<legend>1. What is your role?</legend>
+<label><input type="radio" name="role" value="partner"> Partner</label>
+<label><input type="radio" name="role" value="counsel"> Counsel</label>
+<label><input type="radio" name="role" value="associate"> Associate</label>
+<label><input type="radio" name="role" value="paralegal"> Paralegal</label>
+<label><input type="radio" name="role" value="staff"> Business services or other staff</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-practice" data-qid="practice" data-type="single" data-required="1">
+<legend>2. Which practice do you mainly work in?</legend>
+<label><input type="radio" name="practice" value="Banking and finance"> Banking and finance</label>
+<label><input type="radio" name="practice" value="Competition"> Competition</label>
+<label><input type="radio" name="practice" value="Corporate"> Corporate</label>
+<label><input type="radio" name="practice" value="Disputes"> Disputes</label>
+<label><input type="radio" name="practice" value="Employment"> Employment</label>
+<label><input type="radio" name="practice" value="Intellectual property"> Intellectual property</label>
+<label><input type="radio" name="practice" value="Private client"> Private client</label>
+<label><input type="radio" name="practice" value="Real estate"> Real estate</label>
+<label><input type="radio" name="practice" value="Regulatory"> Regulatory</label>
+<label><input type="radio" name="practice" value="Tax"> Tax</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-office" data-qid="office" data-type="single" data-required="1">
+<legend>3. Which office are you based in?</legend>
+<label><input type="radio" name="office" value="Eastfield"> Eastfield</label>
+<label><input type="radio" name="office" value="Harbour Quay"> Harbour Quay</label>
+<label><input type="radio" name="office" value="Lakeshore"> Lakeshore</label>
+<label><input type="radio" name="office" value="Midvale"> Midvale</label>
+<label><input type="radio" name="office" value="Northgate"> Northgate</label>
+<label><input type="radio" name="office" value="Riverside"> Riverside</label>
+<label><input type="radio" name="office" value="Southmere"> Southmere</label>
+<label><input type="radio" name="office" value="Westbrook"> Westbrook</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-used_7d" data-qid="used_7d" data-type="multi" data-required="1">
+<legend>4. In the last 7 days, which of these did you use for work? Select all that apply.</legend>
+<label><input type="checkbox" name="used_7d" value="assistant_a"> Assistant A</label>
+<label><input type="checkbox" name="used_7d" value="assistant_b"> Assistant B</label>
+<label><input type="checkbox" name="used_7d" value="other_tool"> Another AI tool</label>
+<label><input type="checkbox" name="used_7d" value="none" data-exclusive="1"> None of these</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-used_30d" data-qid="used_30d" data-type="multi" data-required="1">
+<legend>5. In the last 30 days, which of these did you use for work? Select all that apply.</legend>
+<label><input type="checkbox" name="used_30d" value="assistant_a"> Assistant A</label>
+<label><input type="checkbox" name="used_30d" value="assistant_b"> Assistant B</label>
+<label><input type="checkbox" name="used_30d" value="other_tool"> Another AI tool</label>
+<label><input type="checkbox" name="used_30d" value="none" data-exclusive="1"> None of these</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-days_per_week" data-qid="days_per_week" data-type="single" data-required="1">
+<legend>6. In a typical working week, on how many days do you use an AI assistant for work?</legend>
+<label><input type="radio" name="days_per_week" value="0"> No days</label>
+<label><input type="radio" name="days_per_week" value="1"> 1 day</label>
+<label><input type="radio" name="days_per_week" value="2_3"> 2 to 3 days</label>
+<label><input type="radio" name="days_per_week" value="4_5"> 4 to 5 days</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-tasks" data-qid="tasks" data-type="multi" data-required="1">
+<legend>7. In the last 30 days, which kinds of task did you use an AI assistant for? Select all that apply.</legend>
+<label><input type="checkbox" name="tasks" value="drafting"> Drafting</label>
+<label><input type="checkbox" name="tasks" value="summarising"> Summarising</label>
+<label><input type="checkbox" name="tasks" value="research"> Research</label>
+<label><input type="checkbox" name="tasks" value="review"> Reviewing documents</label>
+<label><input type="checkbox" name="tasks" value="email"> Email</label>
+<label><input type="checkbox" name="tasks" value="chronology"> Chronologies or timelines</label>
+<label><input type="checkbox" name="tasks" value="other"> Other</label>
+<label><input type="checkbox" name="tasks" value="none" data-exclusive="1"> I did not use one</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-output_destination" data-qid="output_destination" data-type="multi" data-required="1">
+<legend>8. In the last 30 days, where did AI-assisted output go? Select all that apply.</legend>
+<label><input type="checkbox" name="output_destination" value="internal_only"> Internal use only</label>
+<label><input type="checkbox" name="output_destination" value="client_work_product"> Work product sent to a client</label>
+<label><input type="checkbox" name="output_destination" value="court_filing"> A document filed with a court or tribunal</label>
+<label><input type="checkbox" name="output_destination" value="not_applicable" data-exclusive="1"> Not applicable</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-check_frequency" data-qid="check_frequency" data-type="single" data-required="1">
+<legend>9. How often do you check AI-assisted output before relying on it?</legend>
+<label><input type="radio" name="check_frequency" value="always"> Always</label>
+<label><input type="radio" name="check_frequency" value="usually"> Usually</label>
+<label><input type="radio" name="check_frequency" value="sometimes"> Sometimes</label>
+<label><input type="radio" name="check_frequency" value="rarely"> Rarely</label>
+<label><input type="radio" name="check_frequency" value="never"> Never</label>
+<label><input type="radio" name="check_frequency" value="not_applicable"> Not applicable</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-check_methods" data-qid="check_methods" data-type="multi" data-required="1">
+<legend>10. When you check output, what do you do? Select all that apply.</legend>
+<label><input type="checkbox" name="check_methods" value="read_in_full"> Read it in full</label>
+<label><input type="checkbox" name="check_methods" value="compare_source"> Compare it with the source documents</label>
+<label><input type="checkbox" name="check_methods" value="verify_citations"> Look up each citation or reference</label>
+<label><input type="checkbox" name="check_methods" value="colleague_review"> Ask a colleague to review it</label>
+<label><input type="checkbox" name="check_methods" value="other"> Something else</label>
+<label><input type="checkbox" name="check_methods" value="do_not_check" data-exclusive="1"> I do not check it</label>
+<label><input type="checkbox" name="check_methods" value="not_applicable" data-exclusive="1"> Not applicable</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-blockers" data-qid="blockers" data-type="multi" data-required="1">
+<legend>11. Does anything limit your use of the approved AI assistants? Select all that apply.</legend>
+<label><input type="checkbox" name="blockers" value="trust"> I am not confident the output is accurate</label>
+<label><input type="checkbox" name="blockers" value="training"> I have not had training</label>
+<label><input type="checkbox" name="blockers" value="client_restrictions"> Client instructions restrict it</label>
+<label><input type="checkbox" name="blockers" value="unsure_allowed"> I am not sure what is allowed</label>
+<label><input type="checkbox" name="blockers" value="no_time"> I have not had time to try them</label>
+<label><input type="checkbox" name="blockers" value="no_relevant_tasks"> My work does not suit them</label>
+<label><input type="checkbox" name="blockers" value="other"> Something else</label>
+<label><input type="checkbox" name="blockers" value="nothing" data-exclusive="1"> Nothing limits my use</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-confidence_rules" data-qid="confidence_rules" data-type="single" data-required="1">
+<legend>12. How confident are you that you know what the firm allows you to do with these tools?</legend>
+<label><input type="radio" name="confidence_rules" value="1"> 1 - Not at all confident</label>
+<label><input type="radio" name="confidence_rules" value="2"> 2</label>
+<label><input type="radio" name="confidence_rules" value="3"> 3</label>
+<label><input type="radio" name="confidence_rules" value="4"> 4</label>
+<label><input type="radio" name="confidence_rules" value="5"> 5 - Very confident</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-confidence_skill" data-qid="confidence_skill" data-type="single" data-required="1">
+<legend>13. How confident are you in getting useful results from these tools?</legend>
+<label><input type="radio" name="confidence_skill" value="1"> 1 - Not at all confident</label>
+<label><input type="radio" name="confidence_skill" value="2"> 2</label>
+<label><input type="radio" name="confidence_skill" value="3"> 3</label>
+<label><input type="radio" name="confidence_skill" value="4"> 4</label>
+<label><input type="radio" name="confidence_skill" value="5"> 5 - Very confident</label>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<fieldset id="q-comments" data-qid="comments" data-type="text">
+<legend>14. Is there anything else you would like to say about using AI tools in your work? Please do not name clients, matters or colleagues. (optional)</legend>
+<textarea name="comments" rows="4" aria-label="Is there anything else you would like to say about using AI tools in your work? Please do not name clients, matters or colleagues."></textarea>
+<p class="err" hidden>Please answer this question.</p></fieldset>
+<button type="submit">Save response as JSON</button>
+<p id="status" role="status" class="note"></p>
+</form>
+<section id="result" hidden>
+<h2>Your response</h2>
+<p class="note">If the download did not start, copy the text below.</p>
+<textarea id="out" readonly aria-label="Response as JSON"></textarea>
+</section>
+</main>
+<script>
+(function () {
+  var META = {"survey_id": "adoption-baseline", "version": "1.0"};
+  var form = document.getElementById('survey');
+  form.addEventListener('change', function (ev) {
+    var box = ev.target;
+    if (box.type !== 'checkbox' || !box.checked) return;
+    var others = form.querySelectorAll('input[type=checkbox][name="' + box.name + '"]');
+    for (var i = 0; i < others.length; i++) {
+      var o = others[i];
+      if (o === box) continue;
+      if (box.dataset.exclusive || o.dataset.exclusive) o.checked = false;
+    }
+  });
+  function collect() {
+    var answers = {}, firstBad = null;
+    var sets = form.querySelectorAll('fieldset');
+    for (var i = 0; i < sets.length; i++) {
+      var fs = sets[i], qid = fs.dataset.qid, type = fs.dataset.type, value;
+      if (type === 'text') {
+        value = fs.querySelector('textarea').value.trim();
+      } else if (type === 'single') {
+        var r = fs.querySelector('input:checked');
+        value = r ? r.value : null;
+      } else {
+        value = [];
+        var cs = fs.querySelectorAll('input:checked');
+        for (var j = 0; j < cs.length; j++) value.push(cs[j].value);
+      }
+      var empty = value === null || value === '' || (Array.isArray(value) && !value.length);
+      var bad = !!fs.dataset.required && empty;
+      fs.classList.toggle('invalid', bad);
+      fs.querySelector('.err').hidden = !bad;
+      if (bad && !firstBad) firstBad = fs;
+      answers[qid] = value;
+    }
+    return { answers: answers, firstBad: firstBad };
+  }
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var res = collect(), status = document.getElementById('status');
+    if (res.firstBad) {
+      status.textContent = 'Some questions still need an answer.';
+      res.firstBad.scrollIntoView({ block: 'center' });
+      var first = res.firstBad.querySelector('input, textarea');
+      if (first) first.focus();
+      return;
+    }
+    var payload = { survey_id: META.survey_id, version: META.version, answers: res.answers };
+    var text = JSON.stringify(payload, null, 2);
+    document.getElementById('out').value = text;
+    document.getElementById('result').hidden = false;
+    try {
+      var blob = new Blob([text], { type: 'application/json' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'response-' + Math.random().toString(36).slice(2, 8) + '.json';
+      document.body.appendChild(a); a.click(); a.remove();
+      status.textContent = 'Saved. Thank you.';
+    } catch (e) {
+      status.textContent = 'Could not start a download. Copy the text below instead.';
+    }
+  });
+})();
+</script>
+</body>
+</html>

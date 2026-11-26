@@ -1,0 +1,419 @@
+{
+ "rfp": "general_counsel_dunmarrow_housing.txt",
+ "note": "Held-out batch B (sealed). Hand-written from the RFP text before any tool run. All values are those in force after Addendum 2. Layout: the two addenda come FIRST, newest on top, with dates as M/D/YY; the RFP as issued follows, with decimal section numbers to three levels. Addendum 1 moves the due date and the answers date, cuts the page limit and adds a form. Addendum 2 moves the due date again and changes its time, moves interviews and award, deletes requirement 4.3.6, changes the scoring and removes a form.",
+ "agency": "Housing Authority of the County of Dunmarrow",
+ "deadlines": [
+  {
+   "kind": "issued",
+   "date": "2026-12-09",
+   "time": null,
+   "source_line": "RFP issued                          December 9, 2026",
+   "source_line_no": 86
+  },
+  {
+   "kind": "conference",
+   "date": "2026-12-16",
+   "time": "13:30",
+   "source_line": "Pre-proposal conference (remote)    December 16, 2026 at 1:30 PM",
+   "source_line_no": 87
+  },
+  {
+   "kind": "questions_due",
+   "date": "2026-12-22",
+   "time": "17:00",
+   "source_line": "Deadline for questions              December 22, 2026 at 5:00 PM",
+   "source_line_no": 88
+  },
+  {
+   "kind": "answers_issued",
+   "date": "2027-01-11",
+   "time": null,
+   "source_line": "questions is changed from January 6, 2027 to 1/11/27. The deadline for",
+   "source_line_no": 38,
+   "original_source_line": "Responses to questions              January 6, 2027"
+  },
+  {
+   "kind": "submission_due",
+   "date": "2027-02-05",
+   "time": "12:00",
+   "source_line": "2/5/27 at 12:00 noon.",
+   "source_line_no": 15,
+   "original_source_line": "Deadline to submit proposals        January 20, 2027 at 3:00 PM"
+  },
+  {
+   "kind": "interview",
+   "date": "2027-02-18",
+   "time": null,
+   "source_line": "2-B.  Section 2.0 (Timetable).  Oral interviews will take place on 2/18/27.",
+   "source_line_no": 17,
+   "original_source_line": "Oral interviews                     February 3, 2027"
+  },
+  {
+   "kind": "award",
+   "date": "2027-03-10",
+   "time": null,
+   "source_line": "The Board of Commissioners is now expected to act on 3/10/27.",
+   "source_line_no": 18,
+   "original_source_line": "Board of Commissioners action       February 24, 2027"
+  }
+ ],
+ "before_addenda": {
+  "answers_issued": "2027-01-06",
+  "submission_due": "2027-01-20",
+  "submission_time": "15:00",
+  "interview": "2027-02-03",
+  "award": "2027-02-24",
+  "page_limit": 30
+ },
+ "after_addendum_1": {
+  "answers_issued": "2027-01-11",
+  "submission_due": "2027-01-29",
+  "submission_time": "15:00",
+  "page_limit": 24
+ },
+ "addendum_changes": [
+  {
+   "addendum": 1,
+   "kind": "submission_due",
+   "from": "2027-01-20",
+   "to": "2027-01-29"
+  },
+  {
+   "addendum": 1,
+   "kind": "answers_issued",
+   "from": "2027-01-06",
+   "to": "2027-01-11"
+  },
+  {
+   "addendum": 1,
+   "kind": "page_limit",
+   "from": 30,
+   "to": 24
+  },
+  {
+   "addendum": 1,
+   "kind": "form_added",
+   "from": null,
+   "to": "Acknowledgment of Addenda"
+  },
+  {
+   "addendum": 2,
+   "kind": "submission_due",
+   "from": "2027-01-29",
+   "to": "2027-02-05",
+   "time_from": "15:00",
+   "time_to": "12:00"
+  },
+  {
+   "addendum": 2,
+   "kind": "interview",
+   "from": "2027-02-03",
+   "to": "2027-02-18"
+  },
+  {
+   "addendum": 2,
+   "kind": "award",
+   "from": "2027-02-24",
+   "to": "2027-03-10"
+  },
+  {
+   "addendum": 2,
+   "kind": "requirement_deleted",
+   "from": "4.3.6",
+   "to": null
+  },
+  {
+   "addendum": 2,
+   "kind": "criterion_removed",
+   "from": "Resident services and relocation experience",
+   "to": null
+  },
+  {
+   "addendum": 2,
+   "kind": "weight_changed",
+   "criterion": "Development and finance experience",
+   "from": 25,
+   "to": 30
+  },
+  {
+   "addendum": 2,
+   "kind": "form_removed",
+   "from": "Local Hiring Certification",
+   "to": null
+  }
+ ],
+ "requirements": [
+  {
+   "label": "4.3.1",
+   "qtype": "cover_letter",
+   "section": "4.3",
+   "numbered": true,
+   "text": "Letter of transmittal. Identify the firm, state whether it proposes for general counsel, development counsel or both, and name the person authorized to commit the firm. An authorized person must sign the letter."
+  },
+  {
+   "label": "4.3.2",
+   "qtype": "firm_overview",
+   "section": "4.3",
+   "numbered": true,
+   "text": "Firm background. Describe the firm, its offices and number of attorneys, and its practice representing housing authorities."
+  },
+  {
+   "label": "4.3.3",
+   "qtype": "team",
+   "section": "4.3",
+   "numbered": true,
+   "text": "Key personnel. Name the lead general counsel, the lead development counsel and the other attorneys who would do the work. Describe the qualifications of each and attach resumes."
+  },
+  {
+   "label": "4.3.4",
+   "qtype": "experience",
+   "section": "4.3",
+   "numbered": true,
+   "text": "General counsel experience. Describe the firm's experience providing the services in Section 3.1 to housing authorities or comparable agencies."
+  },
+  {
+   "label": "4.3.5",
+   "qtype": "experience",
+   "section": "4.3",
+   "numbered": true,
+   "text": "Development and finance experience. Describe the firm's experience with the services in Section 3.2. List the affordable housing transactions closed in the last six years, giving for each the number of units, the financing sources and the firm's role."
+  },
+  {
+   "label": "4.3.7",
+   "qtype": "references",
+   "section": "4.3",
+   "numbered": true,
+   "text": "References. Provide at least three references from housing authorities or public agencies, with current contact details."
+  },
+  {
+   "label": "4.3.8",
+   "qtype": "conflicts",
+   "section": "4.3",
+   "numbered": true,
+   "text": "Conflicts of interest. Disclose any relationship with the organizations named in Section 1.4, with any Commissioner or employee of the Authority, and with any developer, lender or investor active in Dunmarrow County. Explain how the firm screens for conflicts in development work."
+  },
+  {
+   "label": "4.3.9",
+   "qtype": "rates",
+   "section": "4.3",
+   "numbered": true,
+   "text": "Fee schedule. Provide hourly rates for each attorney and paralegal. For development work, also propose a fixed fee per transaction for a typical tax credit closing and say what it includes."
+  },
+  {
+   "label": "4.3.10",
+   "qtype": "transition",
+   "section": "4.3",
+   "numbered": true,
+   "text": "Staffing plan and availability. Explain how the firm would cover Board meetings, urgent requests and simultaneous transaction closings, and describe the firm's plan to take over open matters from current counsel in the first sixty days.",
+   "alt_qtypes": [
+    "approach",
+    "team"
+   ]
+  },
+  {
+   "label": "4.4",
+   "qtype": "disclosure",
+   "section": "4.4",
+   "numbered": true,
+   "text": "Litigation history. Every proposal must also state whether the firm has been sued for professional negligence in the past five years and how each such claim was resolved.",
+   "alt_qtypes": [
+    "other"
+   ]
+  }
+ ],
+ "deleted_requirements": [
+  {
+   "label": "4.3.6",
+   "qtype": "experience",
+   "section": "4.3",
+   "numbered": true,
+   "text": "Resident services and relocation experience. Describe the firm's experience advising on relocation of residents during rehabilitation and on resident services programs.",
+   "deleted_by_addendum": 2
+  }
+ ],
+ "forms": [
+  "Proposer Profile and Certification",
+  "Non-Collusive Affidavit",
+  "Certification Regarding Debarment and Suspension",
+  "Conflict of Interest Disclosure",
+  "Acknowledgment of Addenda",
+  "certificate of professional liability insurance"
+ ],
+ "forms_as_issued": [
+  "Proposer Profile and Certification",
+  "Non-Collusive Affidavit",
+  "Certification Regarding Debarment and Suspension",
+  "Local Hiring Certification",
+  "Conflict of Interest Disclosure",
+  "certificate of professional liability insurance"
+ ],
+ "evaluation": [
+  {
+   "name": "General counsel experience",
+   "weight": 25
+  },
+  {
+   "name": "Development and finance experience",
+   "weight": 30
+  },
+  {
+   "name": "Key personnel",
+   "weight": 20
+  },
+  {
+   "name": "Fee schedule",
+   "weight": 15
+  },
+  {
+   "name": "Staffing plan and availability",
+   "weight": 10
+  }
+ ],
+ "evaluation_as_issued": [
+  {
+   "name": "General counsel experience",
+   "weight": 25
+  },
+  {
+   "name": "Development and finance experience",
+   "weight": 25
+  },
+  {
+   "name": "Key personnel",
+   "weight": 20
+  },
+  {
+   "name": "Fee schedule",
+   "weight": 15
+  },
+  {
+   "name": "Staffing plan and availability",
+   "weight": 10
+  },
+  {
+   "name": "Resident services and relocation experience",
+   "weight": 5
+  }
+ ],
+ "min_quals": [
+  {
+   "starts": "The firm's proposed lead general counsel must have at least ten",
+   "check_kind": "years_admitted",
+   "value": 10
+  },
+  {
+   "starts": "A firm proposing for development counsel must have closed",
+   "check_kind": "not_checkable",
+   "value": null
+  },
+  {
+   "starts": "The firm must be able to attend Board meetings in person",
+   "check_kind": "not_checkable",
+   "value": null
+  },
+  {
+   "starts": "The firm must not be debarred or suspended",
+   "check_kind": "not_checkable",
+   "value": null
+  }
+ ],
+ "insurance": [
+  {
+   "contains": "professional liability insurance of not less than",
+   "amount": "$2,000,000",
+   "amount_value": 2000000
+  },
+  {
+   "contains": "commercial general liability insurance of not less than",
+   "amount": "$1,000,000",
+   "amount_value": 1000000
+  },
+  {
+   "contains": "automobile liability insurance of not less than",
+   "amount": "$500,000",
+   "amount_value": 500000
+  },
+  {
+   "contains": "workers' compensation insurance",
+   "amount": null,
+   "amount_value": null
+  }
+ ],
+ "mechanics": {
+  "page_limit": 24,
+  "font_pt": 12,
+  "margin_in": 1.0,
+  "kinds": [
+   "copies",
+   "format",
+   "packaging",
+   "delivery",
+   "not_accepted",
+   "page_limit",
+   "page_exclusions",
+   "font",
+   "margins"
+  ]
+ },
+ "parties": [
+  {
+   "name": "Housing Authority of the County of Dunmarrow",
+   "category": "agency"
+  },
+  {
+   "name": "Marisol Etxeberria",
+   "category": "staff"
+  },
+  {
+   "name": "Cormac Adebayo",
+   "category": "staff"
+  },
+  {
+   "name": "Thea Lindgren",
+   "category": "staff"
+  },
+  {
+   "name": "Augustin Pereira",
+   "category": "board"
+  },
+  {
+   "name": "Noelle Hathersage",
+   "category": "board"
+  },
+  {
+   "name": "Greystone Hollow Community Builders",
+   "category": "other_organisation"
+  },
+  {
+   "name": "Fernbank Housing Partners LP",
+   "category": "other_organisation"
+  },
+  {
+   "name": "Tallis & Rook Construction Co.",
+   "category": "adverse"
+  }
+ ],
+ "dates_that_are_not_deadlines": [
+  "1/21/27 and 1/8/27 (dates the addenda were issued)",
+  "1/29/27 (due date under Addendum 1, replaced by Addendum 2)"
+ ],
+ "not_requirements": [
+  "Addendum items 2-A to 2-E and 1-A to 1-E",
+  "1.1 to 1.4, 2.1, 2.2, 3.1 to 3.3",
+  "4.1.1 to 4.1.4: minimum qualifications",
+  "4.2, 5.1, 5.2, 6.1, 6.2, 7.1 to 7.3, 8.1, 9.1 to 9.4",
+  "the 10 calendar day protest period in 9.4"
+ ],
+ "extra_fields": {
+  "source_line / source_line_no": "on each deadline: the line of the RFP file (stripped, 1-based number) that states the date in force. For a date changed by addendum it is the addendum line; original_source_line is the line in the body.",
+  "section, numbered, text": "on each requirement: the section it sits in, whether the RFP gives it a number or label, and its exact text with runs of white space collapsed to one space (the label itself is left out).",
+  "alt_labels, alt_qtypes": "other labels or question types that a scorer should also accept. Question types are the test author's judgement.",
+  "deleted_requirements": "requirements removed by addendum. They must NOT appear in the parsed requirement list.",
+  "evaluation_as_issued, forms_as_issued, before_addenda": "values before any addendum, for checking that the change is shown.",
+  "addendum (on addendum_changes)": "which addendum made the change. Kinds beyond the existing keys: requirement_deleted, criterion_removed, weight_changed, insurance_changed, form_removed; time_from and time_to are given where an addendum changes the time of day.",
+  "amount_value": "insurance amount as a whole number of dollars.",
+  "dates_that_are_not_deadlines": "dates in the text that must not be read as schedule deadlines.",
+  "not_requirements": "numbered or lettered items that are not proposal requirements (scope of services, general conditions, table of contents). Reading them as requirements is an error.",
+  "kind_not_in_existing_keys": "marks a deadline kind the existing keys do not use; score it separately."
+ }
+}

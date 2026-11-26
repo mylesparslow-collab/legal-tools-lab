@@ -1,0 +1,28 @@
+{
+  "filing_id": "F-2027-003",
+  "scenario": "Document edited after sign-off",
+  "matter": {
+    "number": "M-00502",
+    "client": "Tamsin Aldecott (fictional client)",
+    "caption": "Ferrowmere Holdings v. Aldecott (fictional)",
+    "case_number": "AR-27-000502"
+  },
+  "court_id": "fict-alder-ridge",
+  "court": "Superior Court, County of Alder Ridge (fictional)",
+  "judge_id": "fict-quillon",
+  "document": {
+    "path": "document.txt",
+    "title": "Reply in support of demurrer",
+    "type": "reply"
+  },
+  "planned_filing_date": "2027-01-15",
+  "responsible_attorney": {
+    "name": "Odalys Verhoeven (fictional attorney)",
+    "bar_number": "FICT-000202"
+  },
+  "genai": {
+    "used": false
+  },
+  "citation_report": "citation_report.json",
+  "attestations": "attestations.json"
+}

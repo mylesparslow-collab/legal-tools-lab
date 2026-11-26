@@ -1,0 +1,281 @@
+{
+ "client_id": "quillfether",
+ "client_name": "Quillfether Systems (fictional)",
+ "as_of": "2026-11-25",
+ "replaced_document": "quillfether-ocg-v1-2025",
+ "new_document": "quillfether-ocg-v2-2026",
+ "documents_before": [
+  "quillfether-ocg-v1-2025"
+ ],
+ "documents_after": [
+  "quillfether-ocg-v2-2026"
+ ],
+ "status_before": "clear",
+ "status_after": "clear",
+ "classes_before": [
+  "disclosure_required",
+  "no_training",
+  "billing_restriction",
+  "human_review_required",
+  "ai_permitted"
+ ],
+ "classes_after": [
+  "consent_required",
+  "no_training",
+  "data_residency_retention",
+  "billing_restriction"
+ ],
+ "classes_added": [
+  {
+   "class": "consent_required",
+   "spans": [
+    {
+     "document_id": "quillfether-ocg-v2-2026",
+     "start": 178,
+     "end": 343,
+     "quote": "Effective March 1, 2026, outside counsel must obtain written approval from the Quillfether Legal Operations team before using any generative AI tool on a new matter."
+    }
+   ]
+  },
+  {
+   "class": "data_residency_retention",
+   "spans": [
+    {
+     "document_id": "quillfether-ocg-v2-2026",
+     "start": 506,
+     "end": 640,
+     "quote": "Our confidential information must not be used to train or improve any model, and prompts containing it must be deleted within 14 days."
+    },
+    {
+     "document_id": "quillfether-ocg-v2-2026",
+     "start": 642,
+     "end": 710,
+     "quote": "Tools hosted outside the United States or Canada are not acceptable."
+    }
+   ]
+  }
+ ],
+ "classes_removed": [
+  {
+   "class": "disclosure_required",
+   "spans": [
+    {
+     "document_id": "quillfether-ocg-v1-2025",
+     "start": 276,
+     "end": 360,
+     "quote": "Counsel must disclose on each invoice which tasks were performed with AI assistance."
+    }
+   ]
+  },
+  {
+   "class": "human_review_required",
+   "spans": [
+    {
+     "document_id": "quillfether-ocg-v1-2025",
+     "start": 547,
+     "end": 599,
+     "quote": "Human review of AI output is required in every case."
+    }
+   ]
+  },
+  {
+   "class": "ai_permitted",
+   "spans": [
+    {
+     "document_id": "quillfether-ocg-v1-2025",
+     "start": 171,
+     "end": 274,
+     "quote": "Quillfether encourages outside counsel to use AI tools where they reduce cost without reducing quality."
+    }
+   ]
+  }
+ ],
+ "matters": [
+  {
+   "matter_id": "M-1011",
+   "matter_name": "Quillfether: reseller agreement template",
+   "banner_before": "AI: Assistant A files, Assistant A connector, Suite Assistant B (all 3 features), Research C questions, Review D allowed with notice to Quillfether, billing review, attorney review",
+   "banner_after": "AI: not allowed on this matter (consent required and not on file)",
+   "changes": [
+    {
+     "feature_id": "assistant-a.file-analysis",
+     "tool_name": "Assistant A",
+     "feature": "File upload and analysis",
+     "before": "ALLOWED_WITH_CONDITIONS",
+     "after": "NOT_ALLOWED",
+     "decision_changed": true,
+     "rules_added": [
+      "POL-CT-03"
+     ],
+     "rules_removed": [
+      "POL-CT-05",
+      "POL-CT-12",
+      "POL-CT-13"
+     ],
+     "conditions_added": [],
+     "conditions_removed": [
+      "Give notice to Quillfether Systems (fictional) before first use. Intake shows notice given: no.",
+      "Billing partner checks AI-assisted time and charges against the terms of Quillfether Systems (fictional) and discloses on the invoice where the terms say so.",
+      "An attorney reviews all AI output before it is used or sent."
+     ],
+     "reasons_after": [
+      "consent required and not on file"
+     ]
+    },
+    {
+     "feature_id": "assistant-a.dms-connector",
+     "tool_name": "Assistant A",
+     "feature": "Connector to the document management system",
+     "before": "ALLOWED_WITH_CONDITIONS",
+     "after": "NOT_ALLOWED",
+     "decision_changed": true,
+     "rules_added": [
+      "POL-CT-03"
+     ],
+     "rules_removed": [
+      "POL-CT-05",
+      "POL-CT-12",
+      "POL-CT-13"
+     ],
+     "conditions_added": [],
+     "conditions_removed": [
+      "Give notice to Quillfether Systems (fictional) before first use. Intake shows notice given: no.",
+      "Billing partner checks AI-assisted time and charges against the terms of Quillfether Systems (fictional) and discloses on the invoice where the terms say so.",
+      "An attorney reviews all AI output before it is used or sent."
+     ],
+     "reasons_after": [
+      "consent required and not on file"
+     ]
+    },
+    {
+     "feature_id": "suite-b.doc-summary",
+     "tool_name": "Suite Assistant B",
+     "feature": "Summary and drafting in the word processor",
+     "before": "ALLOWED_WITH_CONDITIONS",
+     "after": "NOT_ALLOWED",
+     "decision_changed": true,
+     "rules_added": [
+      "POL-CT-03"
+     ],
+     "rules_removed": [
+      "POL-CT-05",
+      "POL-CT-12",
+      "POL-CT-13"
+     ],
+     "conditions_added": [],
+     "conditions_removed": [
+      "Give notice to Quillfether Systems (fictional) before first use. Intake shows notice given: no.",
+      "Billing partner checks AI-assisted time and charges against the terms of Quillfether Systems (fictional) and discloses on the invoice where the terms say so.",
+      "An attorney reviews all AI output before it is used or sent."
+     ],
+     "reasons_after": [
+      "consent required and not on file"
+     ]
+    },
+    {
+     "feature_id": "suite-b.email",
+     "tool_name": "Suite Assistant B",
+     "feature": "Email drafting with mailbox access",
+     "before": "ALLOWED_WITH_CONDITIONS",
+     "after": "NOT_ALLOWED",
+     "decision_changed": true,
+     "rules_added": [
+      "POL-CT-03"
+     ],
+     "rules_removed": [
+      "POL-CT-05",
+      "POL-CT-12",
+      "POL-CT-13"
+     ],
+     "conditions_added": [],
+     "conditions_removed": [
+      "Give notice to Quillfether Systems (fictional) before first use. Intake shows notice given: no.",
+      "Billing partner checks AI-assisted time and charges against the terms of Quillfether Systems (fictional) and discloses on the invoice where the terms say so.",
+      "An attorney reviews all AI output before it is used or sent."
+     ],
+     "reasons_after": [
+      "consent required and not on file"
+     ]
+    },
+    {
+     "feature_id": "suite-b.meeting-notes",
+     "tool_name": "Suite Assistant B",
+     "feature": "Meeting transcription and notes",
+     "before": "ALLOWED_WITH_CONDITIONS",
+     "after": "NOT_ALLOWED",
+     "decision_changed": true,
+     "rules_added": [
+      "POL-CT-03"
+     ],
+     "rules_removed": [
+      "POL-CT-05",
+      "POL-CT-12",
+      "POL-CT-13"
+     ],
+     "conditions_added": [],
+     "conditions_removed": [
+      "Give notice to Quillfether Systems (fictional) before first use. Intake shows notice given: no.",
+      "Billing partner checks AI-assisted time and charges against the terms of Quillfether Systems (fictional) and discloses on the invoice where the terms say so.",
+      "An attorney reviews all AI output before it is used or sent."
+     ],
+     "reasons_after": [
+      "consent required and not on file"
+     ]
+    },
+    {
+     "feature_id": "research-c.qa",
+     "tool_name": "Research C",
+     "feature": "Research questions over the vendor's library",
+     "before": "ALLOWED_WITH_CONDITIONS",
+     "after": "NOT_ALLOWED",
+     "decision_changed": true,
+     "rules_added": [
+      "POL-CT-03"
+     ],
+     "rules_removed": [
+      "POL-CT-05",
+      "POL-CT-12",
+      "POL-CT-13"
+     ],
+     "conditions_added": [],
+     "conditions_removed": [
+      "Give notice to Quillfether Systems (fictional) before first use. Intake shows notice given: no.",
+      "Billing partner checks AI-assisted time and charges against the terms of Quillfether Systems (fictional) and discloses on the invoice where the terms say so.",
+      "An attorney reviews all AI output before it is used or sent."
+     ],
+     "reasons_after": [
+      "consent required and not on file"
+     ]
+    },
+    {
+     "feature_id": "review-d.review",
+     "tool_name": "Review D",
+     "feature": "Review coding and summaries",
+     "before": "ALLOWED_WITH_CONDITIONS",
+     "after": "NOT_ALLOWED",
+     "decision_changed": true,
+     "rules_added": [
+      "POL-CT-03"
+     ],
+     "rules_removed": [
+      "POL-CT-05",
+      "POL-CT-12",
+      "POL-CT-13"
+     ],
+     "conditions_added": [],
+     "conditions_removed": [
+      "Give notice to Quillfether Systems (fictional) before first use. Intake shows notice given: no.",
+      "Billing partner checks AI-assisted time and charges against the terms of Quillfether Systems (fictional) and discloses on the invoice where the terms say so.",
+      "An attorney reviews all AI output before it is used or sent."
+     ],
+     "reasons_after": [
+      "consent required and not on file"
+     ]
+    }
+   ],
+   "unchanged_features": 3
+  }
+ ],
+ "decisions_flipped": 7,
+ "disclaimer": "Personal portfolio demo with fictional data. Every rule shown is a configurable firm policy default, not a statement of law. Not legal advice. Not reviewed by an attorney."
+}

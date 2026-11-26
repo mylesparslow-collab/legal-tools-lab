@@ -1,0 +1,185 @@
+{
+ "import_report": {
+  "source_format": "governance-eval-kit registry",
+  "organization": "The firm (fictional)",
+  "tools_read": 3,
+  "mapped_tool_fields": {
+   "id": "id and tool_id",
+   "name": "tool_name and short_name",
+   "purpose": "feature",
+   "status": "status",
+   "business_owner": "business_owner",
+   "human_review": "human_review",
+   "last_review": "last_review"
+  },
+  "mapped_data_boundary_fields": {
+   "runs_in": "runs_in",
+   "model_provider": "model_provider",
+   "data_allowed": "data_allowed",
+   "retention": "retention",
+   "used_for_training": "used_for_training",
+   "agreements": "agreements"
+  },
+  "mapped_data_values": {
+   "public": "public",
+   "firm_internal": "firm_internal",
+   "client_confidential": "client_confidential",
+   "health_information": "phi"
+  },
+  "set_to_unknown": [
+   "baa_covers_feature",
+   "retention_class",
+   "retention_days",
+   "connectors_enabled",
+   "web_access_enabled",
+   "hosting",
+   "data_region"
+  ],
+  "unmapped_top_level_fields": [
+   "notes",
+   "registry_owner",
+   "review_interval_days"
+  ],
+  "unmapped_tool_fields": [
+   "golden_set",
+   "ocg_check",
+   "sb574_log"
+  ],
+  "unmapped_values": [
+   {
+    "tool": "contract-compare",
+    "field": "data_boundary.data_allowed",
+    "value": "personal_data",
+    "effect": "dropped; no matching data class in the lanes"
+   }
+  ],
+  "notes": [
+   "The registry has one entry per tool, so each tool becomes one feature.",
+   "The registry has no field for business associate agreement coverage, connectors, web access, hosting or structured retention. These are set to unknown, so no imported tool is cleared for PHI or protective-order material until the lanes file is completed by hand.",
+   "The registry has no value for protective-order material or sealed material, so neither is ever allowed."
+  ]
+ },
+ "matter": "M-1001",
+ "banner": "AI: not allowed on this matter (consent required and not on file; tool not on the approved list; retention longer than the terms allow and 4 more); no PHI in any tool",
+ "decisions": [
+  {
+   "feature_id": "intake-summarizer",
+   "decision": "NOT_ALLOWED",
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-08",
+    "POL-CT-10",
+    "POL-CT-11",
+    "POL-PHI-02",
+    "POL-PHI-03",
+    "POL-PHI-04"
+   ],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-08",
+      "POL-CT-10",
+      "POL-CT-11"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-08",
+      "POL-CT-10",
+      "POL-CT-11",
+      "POL-PHI-02",
+      "POL-PHI-03",
+      "POL-PHI-04"
+     ]
+    }
+   }
+  },
+  {
+   "feature_id": "contract-compare",
+   "decision": "NOT_ALLOWED",
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-08",
+    "POL-CT-10",
+    "POL-CT-11",
+    "POL-LANE-01",
+    "POL-PHI-02",
+    "POL-PHI-03",
+    "POL-PHI-04"
+   ],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-08",
+      "POL-CT-10",
+      "POL-CT-11"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-08",
+      "POL-CT-10",
+      "POL-CT-11",
+      "POL-LANE-01",
+      "POL-PHI-02",
+      "POL-PHI-03",
+      "POL-PHI-04"
+     ]
+    }
+   }
+  },
+  {
+   "feature_id": "idea-board",
+   "decision": "NOT_ALLOWED",
+   "rule_ids": [
+    "POL-CT-03",
+    "POL-CT-06",
+    "POL-CT-08",
+    "POL-CT-10",
+    "POL-CT-11",
+    "POL-LANE-01",
+    "POL-LANE-02",
+    "POL-LANE-03",
+    "POL-PHI-02",
+    "POL-PHI-03",
+    "POL-PHI-04"
+   ],
+   "by_data_class": {
+    "client_confidential": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-06",
+      "POL-CT-08",
+      "POL-CT-10",
+      "POL-CT-11",
+      "POL-LANE-01",
+      "POL-LANE-02",
+      "POL-LANE-03"
+     ]
+    },
+    "phi": {
+     "decision": "NOT_ALLOWED",
+     "rule_ids": [
+      "POL-CT-03",
+      "POL-CT-06",
+      "POL-CT-08",
+      "POL-CT-10",
+      "POL-CT-11",
+      "POL-LANE-01",
+      "POL-LANE-02",
+      "POL-LANE-03",
+      "POL-PHI-02",
+      "POL-PHI-03",
+      "POL-PHI-04"
+     ]
+    }
+   }
+  }
+ ]
+}

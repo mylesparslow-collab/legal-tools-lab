@@ -1,0 +1,39 @@
+{
+ "note": "Owners and lead times used to build the compliance matrix. Lead time is business days before the submission deadline.",
+ "owners": {
+  "cover_letter": "Responsible partner",
+  "firm_overview": "Proposal lead",
+  "approach": "Practice lead",
+  "team": "Practice lead",
+  "experience": "Proposal coordinator",
+  "references": "Responsible partner",
+  "conflicts": "Conflicts team",
+  "rates": "Pricing partner",
+  "diversity_local": "Proposal lead",
+  "transition": "Practice lead",
+  "disclosure": "General counsel of the firm",
+  "other": "Proposal lead",
+  "form": "Proposal coordinator",
+  "min_qual": "Practice lead",
+  "insurance": "Risk manager",
+  "submission": "Proposal coordinator",
+  "addendum": "Proposal lead"
+ },
+ "lead_days": {
+  "conflicts": 10,
+  "references": 7,
+  "content": 6,
+  "min_qual": 6,
+  "rates": 4,
+  "disclosure": 4,
+  "insurance": 4,
+  "form": 3,
+  "cover_letter": 2,
+  "addendum": 2,
+  "submission": 1
+ },
+ "words_per_page": 450,
+ "review_months_after_harvest": 18,
+ "reference_reconfirm_days": 365,
+ "firm_facts_max_age_days": 180
+}

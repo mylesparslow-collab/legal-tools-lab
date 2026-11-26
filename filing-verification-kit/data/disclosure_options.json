@@ -1,0 +1,35 @@
+{
+  "_about": "DRAFT wordings for a court disclosure of generative AI use. Every option is a draft that needs attorney approval before any use. None has been reviewed by an attorney. Bracketed text is a placeholder the attorney must replace.",
+  "status": "DRAFT - NOT APPROVED",
+  "authority_keys": ["bpc_6068_1_a3C"],
+  "options": [
+    {
+      "id": "A",
+      "label": "Short notice",
+      "status": "DRAFT - needs attorney approval",
+      "text": "Generative artificial intelligence was used in preparing this document.",
+      "notes": "Shortest form. Says nothing about how the tool was used or what was checked."
+    },
+    {
+      "id": "B",
+      "label": "Notice with description of use",
+      "status": "DRAFT - needs attorney approval",
+      "text": "Counsel used generative artificial intelligence to assist in preparing this document, specifically for [describe use]. Counsel reviewed all AI-assisted content.",
+      "notes": "Describes the use. The bracketed description must be filled in for each filing."
+    },
+    {
+      "id": "C",
+      "label": "Notice with verification statement",
+      "status": "DRAFT - needs attorney approval",
+      "text": "Counsel used generative artificial intelligence to assist in preparing this document, specifically for [describe use]. The undersigned attorney personally verified every citation in this document and reviewed and corrected all AI-assisted content before filing.",
+      "notes": "Adds a factual statement about verification. Use only if the statement is true for the filing; the verification record should support it."
+    },
+    {
+      "id": "D",
+      "label": "Footnote form",
+      "status": "DRAFT - needs attorney approval",
+      "text": "Disclosure of generative AI use: portions of this document were prepared with the assistance of generative artificial intelligence. The undersigned attorney reviewed the document in full and is responsible for its contents.",
+      "notes": "Written to sit in a footnote or after the signature block. Placement is a choice for the General Counsel; see OPEN_QUESTIONS.md."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "ok": false,
+  "entries": 22,
+  "head": "739ee516cb3991f7b1cc66037e2167f4a75645f4efb53d2ec5f0403e4083ff1f",
+  "problems": [
+    {
+      "line": 3,
+      "seq": 3,
+      "problem": "entry content does not match its hash (edited)"
+    }
+  ]
+}

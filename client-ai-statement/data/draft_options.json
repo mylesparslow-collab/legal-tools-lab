@@ -1,0 +1,101 @@
+{
+  "_about": "DRAFT wording options for points that need a lawyer's decision. None of this text has been approved. The statement inputs must choose one option id per topic. Any statement that contains this wording is watermarked DRAFT until the approval record in the statement inputs is complete. A null text means 'say nothing on this point'. An option may carry an evidence rule; if the registry does not support it, the build stops.",
+  "topics": {
+    "billing": {
+      "label": "How we bill for AI-assisted work",
+      "required_for": ["firm", "client"],
+      "allow_omit": false,
+      "options": [
+        {
+          "id": "B1",
+          "name": "Time spent, no tool charge",
+          "text": "We bill for the time our lawyers and staff spend, including time spent reviewing and correcting tool output. We do not bill for time a tool saved, and we do not add a separate charge for the tools described here.",
+          "short": "We bill for the time our people spend, not for time a tool saved, and add no separate charge for the tools."
+        },
+        {
+          "id": "B2",
+          "name": "Time spent, per-use costs only with written approval",
+          "text": "We bill for the time our lawyers and staff spend, including time spent reviewing and correcting tool output. We do not bill for time a tool saved. If a matter needs a tool with a per-use cost, we ask for your written approval first and bill that cost without markup.",
+          "short": "We bill for the time our people spend, not for time a tool saved. Per-use tool costs are billed without markup and only with your written approval."
+        },
+        {
+          "id": "B3",
+          "name": "Refer to the engagement letter",
+          "text": "How we bill for AI-assisted work on your matters is set out in your engagement letter. We do not add a charge for the tools described here unless that letter says so.",
+          "short": "Billing for AI-assisted work is set out in your engagement letter."
+        }
+      ]
+    },
+    "confidentiality": {
+      "label": "Confidentiality commitment",
+      "required_for": ["firm", "client"],
+      "allow_omit": true,
+      "options": [
+        {"id": "C0", "name": "Say nothing beyond the registry facts", "text": null},
+        {
+          "id": "C1",
+          "name": "Registry-approved tools only",
+          "text": "We enter your confidential information only into tools that our registry approves for client confidential information."
+        },
+        {
+          "id": "C2",
+          "name": "Registry-approved tools only, with provider agreement",
+          "text": "We enter your confidential information only into tools that our registry approves for client confidential information. Each of those tools is covered by a written agreement with its provider.",
+          "rule": {"scope": ["in_use", "client_conf"], "quantifier": "all", "require": [
+            {"field": "data_boundary.agreements", "op": "non_empty"}
+          ]}
+        }
+      ]
+    },
+    "court_disclosure": {
+      "label": "Court filings and disclosure",
+      "required_for": ["firm", "client"],
+      "allow_omit": true,
+      "options": [
+        {"id": "D0", "name": "Say nothing on disclosure to courts", "text": null},
+        {
+          "id": "D1",
+          "name": "Tell the client first",
+          "text": "We tell you before we use one of these tools to draft part of a court filing in your matter."
+        },
+        {
+          "id": "D2",
+          "name": "Signing attorney handles court disclosure",
+          "text": "Where a court asks filers to disclose AI use, the attorney who signs the filing makes that disclosure and tells you."
+        }
+      ]
+    },
+    "opt_out": {
+      "label": "Setting your own terms or opting out",
+      "required_for": ["firm", "client"],
+      "allow_omit": false,
+      "options": [
+        {
+          "id": "O1",
+          "name": "Opt out or set conditions, recorded at intake",
+          "text": "You can tell us not to use these tools on your matters, or set conditions on their use. Write to {opt_out_role}. We record your instruction in the matter intake record and apply it to work done after we confirm receipt.",
+          "short": "You can restrict or refuse these tools on your matters by writing to {opt_out_role}."
+        },
+        {
+          "id": "O2",
+          "name": "Short form",
+          "text": "You can set your own terms for AI use on your matters, including no use. Write to {opt_out_role}.",
+          "short": "You can set your own terms for AI use on your matters, including no use."
+        }
+      ]
+    },
+    "client_precedence": {
+      "label": "Client terms and this statement",
+      "required_for": ["client"],
+      "allow_omit": true,
+      "options": [
+        {"id": "P0", "name": "Say nothing on precedence", "text": null},
+        {
+          "id": "P1",
+          "name": "Stricter client terms govern",
+          "text": "Where your terms are stricter than the rest of this statement, we follow your terms."
+        }
+      ]
+    }
+  }
+}

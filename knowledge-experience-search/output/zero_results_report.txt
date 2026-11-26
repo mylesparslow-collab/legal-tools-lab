@@ -1,0 +1,7 @@
+Queries that found nothing or only partial matches (most frequent first)
+A to-do list for the knowledge lawyer. A miss can mean the firm has no such document or that the user may not open it; the log does not say which.
+
+3x by 2 user(s)  search partial matches only 'escheat unclaimed property memo'  last 2026-06-30T09:11:00+00:00
+1x by 1 user(s)  search nothing              '"franchise disclosure" checklist'  last 2026-06-30T09:06:00+00:00
+1x by 1 user(s)  who    nothing              'maritime salvage'  last 2026-06-30T09:09:00+00:00
+1x by 1 user(s)  search partial matches only 'project halcyon'  last 2026-06-30T09:02:00+00:00

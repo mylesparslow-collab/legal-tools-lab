@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Client billing guideline",
+  "description": "One client's billing rules as structured data. Each rule is a contract term between the client and its outside counsel. Only rules with status 'confirmed' are enforced. Parameters per rule type are listed in billcheck/guidelines.py (RULE_TYPES) and in the README. Numbers that are not whole are written as strings, for example \"0.1\", so they are read as decimals.",
+  "type": "object",
+  "required": [
+    "client_id",
+    "client_name",
+    "document",
+    "rules"
+  ],
+  "properties": {
+    "client_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "client_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document": {
+      "type": "string",
+      "description": "Path or title of the client's guideline document"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rule_id",
+          "type",
+          "status",
+          "severity",
+          "params",
+          "source_quote",
+          "source_ref"
+        ],
+        "properties": {
+          "rule_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "block_billing",
+              "minimum_increment",
+              "rounding_pattern",
+              "daily_hour_cap",
+              "staffing_matter_limit",
+              "staffing_event_limit",
+              "unapproved_timekeeper",
+              "rate_above_card",
+              "rate_increase_notice",
+              "non_billable_task",
+              "internal_conference_limit",
+              "research_approval",
+              "travel_time",
+              "expense_overhead",
+              "expense_receipt_threshold",
+              "expense_per_diem",
+              "expense_markup",
+              "vague_description",
+              "required_codes",
+              "late_time",
+              "budget_cap",
+              "phase_cap",
+              "duplicate_entries",
+              "ai_disclosure_required",
+              "ai_nonpayable_task"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "confirmed",
+              "proposed"
+            ]
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "reject",
+              "reduce",
+              "review"
+            ],
+            "description": "reject = will likely be rejected; reduce = likely reduced; review = a person should look"
+          },
+          "params": {
+            "type": "object"
+          },
+          "source_quote": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The sentence from the client's document, quoted exactly"
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Section and page of the quoted sentence"
+          },
+          "confidence": {
+            "type": "string"
+          },
+          "confirmed_by": {
+            "type": "string"
+          },
+          "confirmed_on": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

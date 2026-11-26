@@ -1,0 +1,76 @@
+{
+  "note": "Recorded once, before any change to the parser prompted by this document. Do not regenerate.",
+  "overall": {
+    "tp": 6,
+    "fp": 3,
+    "fn": 38,
+    "precision": 0.667,
+    "recall": 0.136
+  },
+  "by_category": {
+    "deadlines": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "precision": 1.0,
+      "recall": 0.0
+    },
+    "addendum_changes": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "requirements": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 9,
+      "precision": 1.0,
+      "recall": 0.0
+    },
+    "forms": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.0
+    },
+    "evaluation": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "precision": 1.0,
+      "recall": 0.0
+    },
+    "min_quals": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.0
+    },
+    "insurance": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.0
+    },
+    "mechanics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 9,
+      "precision": 1.0,
+      "recall": 0.0
+    },
+    "parties": {
+      "tp": 6,
+      "fp": 3,
+      "fn": 2,
+      "precision": 0.667,
+      "recall": 0.75
+    }
+  },
+  "cause": "The parser did not recognise the 'Article 1.  Title' headings (mixed case), so it found no sections. It reported 7 items for a person to check, including 'no submission deadline found' and 'no numbered proposal requirements found'."
+}

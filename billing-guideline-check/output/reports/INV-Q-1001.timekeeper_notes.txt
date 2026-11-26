@@ -1,0 +1,139 @@
+To: Odalys Brightwater (TK01)
+Re: draft invoice INV-Q-1001, Quillfeather Mutual Indemnity, matter QMI-0147
+
+Before this bill goes out, please look at the 5 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $790.50. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 1, 2026-08-18, $217.00 [Late time, will likely be rejected]
+  Your entry: "Telephone conference with adjuster regarding initial case assessment" (0.7 h x $310.00 = $217.00)
+  What the check saw: The work is dated 2026-08-18, 79 days before the invoice date. The limit is 60 days.
+  Suggested fix: Ask the client whether it will accept the late time, or write it off.
+  Client rule (QMI-LATE-01, 3.3 Limits on time, page 2): "Time entries more than 60 days old on the invoice date will not be paid."
+
+- Line 4, 2026-10-02, $77.50 [Minimum time increment, will likely be rejected]
+  Your entry: "Telephone conference with adjuster regarding mediation dates" (0.25 h x $310.00 = $77.50)
+  What the check saw: 0.25 hours is not a multiple of the 0.1 hour increment.
+  Suggested fix: Ask the timekeeper to restate the time in 0.1 hour increments from their own records.
+  Client rule (QMI-INCR-01, 3.1 Time increments, page 2): "Time must be recorded in increments of 0.1 hour."
+
+- Line 12, 2026-10-12, $248.00 [Internal conference limit, likely reduced]
+  Your entry: "Office conference with associate regarding deposition outline" (0.8 h x $310.00 = $248.00)
+  What the check saw: Internal conference of 0.8 hours (read from "Office conference"). The limit is 0.3 hours per entry.
+  Suggested fix: Reduce the entry to the limit, or ask the client to approve the longer conference.
+  Client rule (QMI-CONF-01, 2.3 Intra-office conferences, page 1): "No more than 0.3 hour may be billed for any single intra-office conference."
+
+- Line 26, 2026-10-20, $434.00 [Travel time, likely reduced]
+  Your entry: "Travel to deposition of plaintiff's treating physician" (1.4 h x $310.00 = $434.00)
+  What the check saw: Travel time billed at $310.00 an hour. The client pays travel at 50% of the approved rate ($155.00).
+  Suggested fix: Bill the travel time at the reduced rate.
+  Client rule (QMI-TRAVEL-01, 5. Work the Company does not pay for, page 3): "Travel time is billed at 50% of the approved hourly rate."
+
+- Line 42, 2026-10-29, $124.00 [Non-billable task categories, will likely be rejected]
+  Your entry: "Respond to billing inquiry from adjuster on prior invoice" (0.4 h x $310.00 = $124.00)
+  What the check saw: The narrative contains "billing inquiry", which is on this client's list of non-billable invoice prep work.
+  Suggested fix: Move the entry off the bill, or ask the timekeeper whether the description is accurate.
+  Client rule (QMI-NONBILL-01, 5. Work the Company does not pay for, page 3): "The Company does not pay for clerical work, training, conflicts checks or the preparation of invoices."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Idris Vantongeren (TK02)
+Re: draft invoice INV-Q-1001, Quillfeather Mutual Indemnity, matter QMI-0147
+
+Before this bill goes out, please look at the 7 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $2,725.50. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 9, 2026-10-08, $405.00 [Research needs approval above a limit, likely reduced]
+  Your entry: "Research admissibility of prior incident reports" (1.8 h x $225.00 = $405.00)
+  What the check saw: Research on this invoice reaches 4.2 hours with this entry (read as research from activity code A102). The limit without approval is 3 hours; 1.2 hours of this entry fall over it.
+  Suggested fix: Ask the client to approve the research, or hold the excess time. Research billed on earlier invoices is not counted here.
+  Client rule (QMI-RESEARCH-01, 5. Work the Company does not pay for, page 3): "Legal research exceeding 3 hours on a file requires prior approval from the claims professional."
+
+- Line 14, 2026-10-13, $765.00 [Block billing prohibited, likely reduced]
+  Your entry: "Review deposition transcript of store manager; draft summary for adjuster; telephone conference with adjuster regarding reserves" (3.4 h x $225.00 = $765.00)
+  What the check saw: The narrative appears to describe 3 tasks under one time total of 3.4 hours.
+  Suggested fix: Ask the timekeeper to enter each task on its own line with its own time. Tasks the check detected: (1) Review deposition transcript of store manager. (2) draft summary for adjuster. (3) telephone conference with adjuster regarding reserves. The tool does not know how the time divides between them and does not rewrite the narrative.
+  Client rule (QMI-BLOCK-01, 3.2 Task descriptions, page 2): "Block billing is not permitted and each task must be entered separately with its own time."
+
+- Line 18, 2026-10-14, $630.00 [Daily hour cap per timekeeper, likely reduced]
+  Your entry: "Draft separate statement of undisputed facts" (2.8 h x $225.00 = $630.00)
+  What the check saw: This timekeeper has 10.9 hours on 2026-10-14. The limit is 10 hours in a day; 0.9 hours of this entry fall over it.
+  Suggested fix: Confirm the day's entries with the timekeeper. If the time is right, add the explanation the client asks for or seek approval.
+  Client rule (QMI-DAYCAP-01, 3.3 Limits on time, page 2): "The Company will not pay for more than 10 hours billed by one timekeeper in a single day without an explanation."
+
+- Line 22, 2026-10-16, $135.00 [Vague descriptions, likely reduced]
+  Your entry: "Attention to file" (0.6 h x $225.00 = $135.00)
+  What the check saw: The description does not say what was done. It contains "Attention to file", a phrase on the client's list of vague descriptions.
+  Suggested fix: Ask the timekeeper to say what was reviewed or done and for what purpose. Do not fill this in for them.
+  Client rule (QMI-VAGUE-01, 3.2 Task descriptions, page 2): "Vague entries such as "attention to file" or "review documents" will not be paid."
+
+- Line 25, 2026-10-20, $1,170.00 [Staffing limit per event, likely reduced]
+  Your entry: "Attend deposition of plaintiff's treating physician" (5.2 h x $225.00 = $1,170.00)
+  What the check saw: 2 timekeepers billed for attending a deposition on 2026-10-20. The limit is 1. The check keeps the highest-rate attendee(s) and flags the rest; that choice is an assumption.
+  Suggested fix: Decide which attendance to bill, or record the client's approval of the additional attendee.
+  Client rule (QMI-EVENT-01, 2.2 Depositions and hearings, page 1): "The Company will pay for only 1 attorney to attend a deposition, hearing or mediation unless the claims professional approves a second attendee in advance."
+
+- Line 29, 2026-10-21, $157.50 [Required task and activity codes, will likely be rejected]
+  Your entry: "Draft notice of deposition for store manager" (0.7 h x $225.00 = $157.50)
+  What the check saw: The entry has no activity code.
+  Suggested fix: Add the missing code. The timekeeper or billing staff should choose it; the check does not guess.
+  Client rule (QMI-CODES-01, 3.2 Task descriptions, page 2): "Every fee entry must carry a UTBMS task code and activity code, and every expense entry must carry an expense code."
+
+- Line 31, 2026-10-23, $408.00 [Rate above approved rate card, likely reduced]
+  Your entry: "Draft supplemental responses to requests for production" (1.7 h x $240.00 = $408.00)
+  What the check saw: Billed at $240.00 an hour. The approved rate for this timekeeper is $225.00.
+  Suggested fix: Correct the rate to the approved rate card, or attach the client's approval of the higher rate.
+  Client rule (QMI-RATE-01, 4. Rates, page 3): "Counsel may not bill at rates above the approved rate schedule for the file."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Rowan Achterberg (TK03)
+Re: draft invoice INV-Q-1001, Quillfeather Mutual Indemnity, matter QMI-0147
+
+Before this bill goes out, please look at the 4 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $406.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 6, 2026-10-05, $143.00 [Non-billable task categories, will likely be rejected]
+  Your entry: "Scanning and bates stamping of medical records" (1.3 h x $110.00 = $143.00)
+  What the check saw: The narrative contains "Scanning", which is on this client's list of non-billable clerical work.
+  Suggested fix: Move the entry off the bill, or ask the timekeeper whether the description is accurate.
+  Client rule (QMI-NONBILL-01, 5. Work the Company does not pay for, page 3): "The Company does not pay for clerical work, training, conflicts checks or the preparation of invoices."
+
+- Line 11, 2026-10-09, $121.00 [Duplicate entries, will likely be rejected]
+  Your entry: "Draft index of medical records received from providers" (1.1 h x $110.00 = $121.00)
+  What the check saw: Same timekeeper, date, quantity and description as line 10.
+  Suggested fix: Confirm with the timekeeper whether the work was done twice. If not, remove one entry.
+  Client rule (QMI-DUP-01, 3.3 Limits on time, page 2): "Duplicate entries will be rejected."
+
+- Line 23, 2026-10-19, $132.00 [Vague descriptions, likely reduced]
+  Your entry: "Review documents" (1.2 h x $110.00 = $132.00)
+  What the check saw: The description does not say what was done. It is only "Review documents", with no subject or purpose.
+  Suggested fix: Ask the timekeeper to say what was reviewed or done and for what purpose. Do not fill this in for them.
+  Client rule (QMI-VAGUE-01, 3.2 Task descriptions, page 2): "Vague entries such as "attention to file" or "review documents" will not be paid."
+
+- Line 35, 2026-10-26, $109.00 [Arithmetic, will likely be rejected]
+  Your entry: "Draft subpoena for security camera vendor records" (0.9 h x $110.00 = $109.00)
+  What the check saw: 0.9 x $110.00 is $99.00, but the line amount is $109.00 (difference $10.00).
+  Suggested fix: Correct the line in the billing system. An e-billing system is likely to reject a file that does not add up.
+  Client rule (ARITH-LINE, built-in file check, not a client rule): "Units times rate, plus any adjustment, must equal the line amount within one cent."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Jun Castellanos-Wray (TK09)
+Re: draft invoice INV-Q-1001, Quillfeather Mutual Indemnity, matter QMI-0147
+
+Before this bill goes out, please look at the 1 item below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $360.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 30, 2026-10-22, $360.00 [Unapproved timekeeper, will likely be rejected]
+  Your entry: "Review incident report and witness statements for coverage analysis" (1.6 h x $225.00 = $360.00)
+  What the check saw: Timekeeper TK09 (Jun Castellanos-Wray) is not on the approved list for this matter.
+  Suggested fix: Ask the client to approve the timekeeper before the bill goes out, or move the time off the bill.
+  Client rule (QMI-TK-01, 2.1 Assigned timekeepers, page 1): "Only timekeepers approved in writing by the claims professional may bill time to a file."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.

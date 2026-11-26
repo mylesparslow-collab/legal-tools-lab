@@ -1,0 +1,27 @@
+TESSALY HARBOR BANK (fictional)
+Outside Counsel Guidelines
+Version 4, September 2025
+
+1. Conflicts
+
+Outside counsel must run a conflicts check before accepting each new matter.
+
+2. Technology and artificial intelligence
+
+2.1 Outside counsel shall not use any generative artificial intelligence or large language model tool in connection with Bank matters without first obtaining the express written consent of the Bank's Office of the General Counsel.
+
+2.2 A request for consent must identify the tool, the vendor, the categories of Bank data involved and the safeguards in place.
+
+2.3 Consent given for one matter does not extend to any other matter.
+
+2.4 Bank data may not be stored outside the United States, and no AI vendor may retain Bank data after the session ends.
+
+2.5 The Bank's information may not be used for model training under any circumstances.
+
+2.6 Nothing in this section prohibits the use of spell-check, document comparison or e-discovery review tools already in routine use, even where those tools include machine learning features.
+
+2.7 All attorneys working on Bank matters must complete the Firm's AI training before using an approved tool.
+
+3. Billing
+
+The Bank pays for first-class work at agreed rates and does not pay for clerical tasks.

@@ -1,0 +1,37 @@
+{
+  "programme_month": 0,
+  "min_people": 20,
+  "max_unknown_user_row_share": 0.10,
+  "targets": [
+    {
+      "id": "weekly_active_lawyers_month_6",
+      "label": "Lawyers using an approved AI tool weekly, month 6",
+      "measure": "weekly_active",
+      "basis": "last_4_weeks",
+      "population": "lawyers",
+      "threshold": 0.50,
+      "due_month": 6
+    },
+    {
+      "id": "weekly_active_lawyers_month_12",
+      "label": "Lawyers using an approved AI tool weekly, month 12",
+      "measure": "weekly_active",
+      "basis": "last_4_weeks",
+      "population": "lawyers",
+      "threshold": 0.70,
+      "due_month": 12
+    }
+  ],
+  "gates": [
+    {
+      "id": "pilot_gate",
+      "label": "Pilot gate: half of pilot-practice lawyers active weekly",
+      "measure": "weekly_active",
+      "basis": "last_4_weeks",
+      "population": "lawyers",
+      "threshold": 0.50,
+      "each_practice": ["Disputes", "Employment", "Competition"],
+      "min_people": 5
+    }
+  ]
+}

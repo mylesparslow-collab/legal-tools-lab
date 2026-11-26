@@ -1,0 +1,154 @@
+{
+ "samples": {
+  "city_attorney_marlow_ridge.txt": {
+   "tp": 53,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "general_counsel_redwood_flats.txt": {
+   "tp": 50,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "labor_negotiator_quillfeather_usd.txt": {
+   "tp": 41,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "special_counsel_tannery_creek_transit.txt": {
+   "tp": 55,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  }
+ },
+ "holdout_first_run": {
+  "tp": 6,
+  "fp": 3,
+  "fn": 38,
+  "precision": 0.667,
+  "recall": 0.136
+ },
+ "holdout_round1_after_fixes": {
+  "tp": 33,
+  "fp": 7,
+  "fn": 11,
+  "precision": 0.825,
+  "recall": 0.75
+ },
+ "holdout_today": {
+  "tp": 44,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0
+ },
+ "heldout_batches": {
+  "batch_a_first_run": {
+   "requirements": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 36,
+    "precision": 1.0,
+    "recall": 0.0
+   },
+   "overall": {
+    "tp": 23,
+    "fp": 24,
+    "fn": 151,
+    "precision": 0.489,
+    "recall": 0.132
+   },
+   "submission_deadline": {
+    "correct": 0,
+    "of": 3
+   },
+   "page_limit": {
+    "correct": 0,
+    "of": 3
+   },
+   "addendum_handling": {
+    "passed": 2,
+    "of": 11
+   },
+   "question_type": {
+    "correct": 0,
+    "of_found": 0,
+    "of": 36
+   }
+  },
+  "batch_a_after_fixes": {
+   "requirements": {
+    "tp": 36,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "overall": {
+    "tp": 174,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.994,
+    "recall": 1.0
+   },
+   "submission_deadline": {
+    "correct": 3,
+    "of": 3
+   },
+   "page_limit": {
+    "correct": 3,
+    "of": 3
+   },
+   "addendum_handling": {
+    "passed": 14,
+    "of": 14
+   },
+   "question_type": {
+    "correct": 36,
+    "of_found": 36,
+    "of": 36
+   }
+  },
+  "batch_b_final": {
+   "requirements": {
+    "tp": 20,
+    "fp": 6,
+    "fn": 15,
+    "precision": 0.769,
+    "recall": 0.571
+   },
+   "overall": {
+    "tp": 87,
+    "fp": 22,
+    "fn": 83,
+    "precision": 0.798,
+    "recall": 0.512
+   },
+   "submission_deadline": {
+    "correct": 1,
+    "of": 3
+   },
+   "page_limit": {
+    "correct": 2,
+    "of": 3
+   },
+   "addendum_handling": {
+    "passed": 5,
+    "of": 11
+   },
+   "question_type": {
+    "correct": 20,
+    "of_found": 20,
+    "of": 35
+   }
+  }
+ }
+}

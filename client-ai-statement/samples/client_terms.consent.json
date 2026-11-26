@@ -1,0 +1,17 @@
+{
+  "client_ref": "Client A (fictional)",
+  "terms_source": "Outside Counsel Guidelines, section 9",
+  "terms_date": "2026-08-01",
+  "ai_use": "permitted_with_consent",
+  "consent_on_file": {
+    "date": "2026-09-14",
+    "note": "Email from Client A's Deputy General Counsel (role) covering contract review and research."
+  },
+  "disclosure_required": true,
+  "disclosure_method": "invoice_narrative",
+  "tools_prohibited": [
+    "transcript-summary"
+  ],
+  "data_restrictions": [],
+  "notes": "Fictional client-terms record."
+}

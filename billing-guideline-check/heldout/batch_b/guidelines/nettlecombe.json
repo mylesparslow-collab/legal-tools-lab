@@ -1,0 +1,259 @@
+{
+  "client_id": "nettlecombe",
+  "client_name": "Nettlecombe Home Lending",
+  "document": "heldout/batch_b/guideline_docs/nettlecombe.txt",
+  "rules": [
+    {
+      "rule_id": "NHL-INCR-01",
+      "type": "minimum_increment",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "Keep time in six-minute blocks, so 0.1 of an hour.",
+      "source_ref": "paragraph 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-BLOCK-01",
+      "type": "block_billing",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_tasks": 1,
+        "min_hours": "0.3"
+      },
+      "source_quote": "Anything over 18 minutes (0.3) that covers more than one task comes back to you.",
+      "source_ref": "paragraph 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-VAGUE-01",
+      "type": "vague_description",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "always_phrases": [
+          "attention to file",
+          "attention to matter",
+          "various tasks",
+          "work on case",
+          "work on matter"
+        ],
+        "bare_phrases": [
+          "draft correspondence",
+          "legal research",
+          "prepare for hearing",
+          "review documents",
+          "review file",
+          "telephone call",
+          "trial preparation",
+          "work on discovery"
+        ],
+        "min_words": 3
+      },
+      "source_quote": "Same for entries that don't say anything: \"attention to matter\", \"draft correspondence\" and the like.",
+      "source_ref": "paragraph 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-RATE-01",
+      "type": "rate_above_card",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Stick to the rates in the engagement letter.",
+      "source_ref": "paragraph 3",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-DUP-01",
+      "type": "duplicate_entries",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Double entries get paid once.",
+      "source_ref": "paragraph 3",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-DAYCAP-01",
+      "type": "daily_hour_cap",
+      "status": "confirmed",
+      "severity": "review",
+      "params": {
+        "max_hours": 11
+      },
+      "source_quote": "Eleven hours is the most I'll accept from one person in a day without a call first.",
+      "source_ref": "paragraph 4",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-EVENT-01",
+      "type": "staffing_event_limit",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_attendees": 2,
+        "events": [
+          "deposition",
+          "hearing",
+          "mediation"
+        ]
+      },
+      "source_quote": "No more than two of your people at any deposition, hearing or mediation.",
+      "source_ref": "paragraph 4",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-CONF-01",
+      "type": "internal_conference_limit",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours_per_entry": "0.3"
+      },
+      "source_quote": "Lawyers talking to each other inside your firm: 0.3 max per entry.",
+      "source_ref": "paragraph 4",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-RESEARCH-01",
+      "type": "research_approval",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": 5
+      },
+      "source_quote": "Ask me before legal research on a file goes past 5 hours.",
+      "source_ref": "paragraph 4",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-TRAVEL-01",
+      "type": "travel_time",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "billable_percent": 50,
+        "requires_approval": false
+      },
+      "source_quote": "Travel time gets billed at half your normal rate.",
+      "source_ref": "paragraph 5",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-PERDIEM-01",
+      "type": "expense_per_diem",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "caps": {
+          "meal": "75.00",
+          "lodging": "250.00"
+        }
+      },
+      "source_quote": "On the road, meals are $75 a head per day and hotels $250 a night, tops.",
+      "source_ref": "paragraph 5",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-NONBILL-01",
+      "type": "non_billable_task",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "categories": {
+          "clerical": [
+            "scanning",
+            "scan documents",
+            "photocopying",
+            "bates stamping",
+            "organizing files",
+            "organize files",
+            "data entry",
+            "updating file index",
+            "saving documents to"
+          ],
+          "conflicts": [
+            "conflicts check",
+            "conflict check",
+            "new matter intake"
+          ],
+          "training": [
+            "training",
+            "orientation",
+            "getting up to speed"
+          ]
+        }
+      },
+      "source_quote": "Don't bill us for clerical work, conflict checks or training your own people.",
+      "source_ref": "paragraph 6",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-OVERHEAD-01",
+      "type": "expense_overhead",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "codes": [
+          "E103",
+          "E104",
+          "E105",
+          "E108"
+        ],
+        "phrases": [
+          "local telephone",
+          "office supplies",
+          "online research",
+          "overtime",
+          "phone charges",
+          "postage",
+          "subscription",
+          "word processing"
+        ]
+      },
+      "source_quote": "No overhead on the bill either: postage, word processing, phone charges, office supplies, online research fees.",
+      "source_ref": "paragraph 6",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-MARKUP-01",
+      "type": "expense_markup",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Outside vendor charges come through at cost.",
+      "source_ref": "paragraph 6",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "NHL-LATE-01",
+      "type": "late_time",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 60
+      },
+      "source_quote": "Try to get time to us within 60 days.",
+      "source_ref": "paragraph 8",
+      "notes": "Not confirmed. The email says older time will not be bounced yet, so this is a wish and is not enforced."
+    }
+  ]
+}

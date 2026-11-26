@@ -1,0 +1,34 @@
+{
+ "as_of": "2026-10-01",
+ "firm_name": "Example Firm LLP",
+ "founded_year": 1987,
+ "attorney_count": 46,
+ "partner_count": 17,
+ "offices": [
+  {
+   "city": "Alder Bay",
+   "county": "Larkspur County"
+  },
+  {
+   "city": "Stonemill",
+   "county": "Hadley County"
+  },
+  {
+   "city": "Port Verity",
+   "county": "Corrin County"
+  }
+ ],
+ "bar_admissions": [
+  "State of Westmark",
+  "State of Ardenia"
+ ],
+ "public_agency_clients": 85,
+ "matter_counts": {
+  "negotiations": 140,
+  "capital_projects": 60
+ },
+ "approved_by": "Margit Solberg",
+ "departed_attorneys": [
+  "Corwin Halloway"
+ ]
+}

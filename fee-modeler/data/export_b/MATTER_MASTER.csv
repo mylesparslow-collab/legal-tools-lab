@@ -1,0 +1,641 @@
+Matter No;Client No;Practice Category;Stat;Opened;Closed;Disposition;Venue;Party Ct;Exposure Band;Unit Ct;Hrg;Hrg Dt
+M-0640;C-020;Regulatory Compliance Audit;O;12/01/2025;;;State Agency;2;Tier 1;1;N;
+M-0639;C-005;Employment Single Plaintiff Defense;O;11/18/2025;;;State Agency;2;Tier 2;1;N;
+M-0638;C-022;Public Works Bid Protest;C;10/29/2025;12/18/2025;COMP;Local Agency;2;Tier 2;1;Y;12/10/2025
+M-0637;C-008;Administrative Licensing Appeal;O;10/29/2025;;;State Agency;2;Tier 4;1;N;
+M-0636;C-058;Internal Investigation;O;10/27/2025;;;None;4;Tier 3;1;N;
+M-0635;C-030;Ordinance Drafting;O;10/26/2025;;;Local Agency;2;Tier 3;1;N;
+M-0634;C-024;Ordinance Drafting;O;10/24/2025;;;Local Agency;4;Tier 2;1;N;
+M-0633;C-055;Commercial Lease Review;C;10/20/2025;11/10/2025;SETL;None;3;Tier 2;1;N;
+M-0632;C-013;Regulatory Compliance Audit;O;10/12/2025;;;None;2;Tier 3;1;N;
+M-0631;C-014;Public Records Litigation;O;10/08/2025;;;Superior Court;2;Tier 2;1;N;
+M-0630;C-025;Regulatory Compliance Audit;O;10/04/2025;;;None;4;Tier 3;1;N;
+M-0629;C-043;Paga Response;O;09/23/2025;;;Superior Court;3;Tier 3;1;N;
+M-0628;C-034;Ordinance Drafting;O;09/20/2025;;;Local Agency;2;Tier 3;1;N;
+M-0627;C-038;Commercial Lease Review;C;09/20/2025;11/17/2025;COMP;None;2;Tier 1;2;N;
+M-0626;C-053;Internal Investigation;C;09/15/2025;12/09/2025;COMP;None;2;Tier 1;1;N;
+M-0625;C-029;Employment Single Plaintiff Defense;O;09/12/2025;;;State Agency;3;Tier 2;1;N;
+M-0624;C-026;Regulatory Compliance Audit;O;09/11/2025;;;State Agency;3;Tier 2;1;N;
+M-0623;C-001;Ordinance Drafting;O;09/07/2025;;;Local Agency;3;Tier 2;1;N;
+M-0622;C-053;Commercial Lease Review;C;09/01/2025;11/10/2025;COMP;None;2;Tier 2;1;N;
+M-0621;C-060;Contract Dispute Arbitration;O;08/29/2025;;;Arbitration;2;Tier 4;1;N;
+M-0620;C-027;Internal Investigation;O;08/22/2025;;;None;2;Tier 4;1;N;
+M-0619;C-007;Ordinance Drafting;O;08/16/2025;;;Local Agency;2;Tier 2;1;N;
+M-0618;C-017;Regulatory Compliance Audit;C;08/15/2025;11/21/2025;OTH;State Agency;2;Tier 1;1;N;
+M-0617;C-055;Public Records Litigation;O;08/15/2025;;;Superior Court;2;Tier 2;1;N;
+M-0616;C-003;Commercial Lease Review;O;08/15/2025;;;None;4;Tier 3;1;N;
+M-0615;C-058;Regulatory Compliance Audit;O;08/05/2025;;;None;2;Tier 1;1;N;
+M-0614;C-009;Administrative Licensing Appeal;O;07/28/2025;;;State Agency;3;Tier 1;1;N;
+M-0613;C-053;Public Records Litigation;O;07/27/2025;;;Appellate Court;2;Tier 4;1;N;
+M-0612;C-014;Public Works Bid Protest;C;07/25/2025;10/17/2025;COMP;Superior Court;2;Tier 2;1;N;
+M-0611;C-010;Facility Change Of Ownership;O;07/13/2025;;;State Agency;2;Tier 2;5;N;
+M-0610;C-021;Facility Change Of Ownership;O;07/09/2025;;;State Agency;2;Tier 1;1;N;
+M-0609;C-007;Contract Dispute Arbitration;O;07/03/2025;;;Arbitration;2;Tier 1;1;N;
+M-0608;C-034;Public Records Litigation;O;06/30/2025;;;Superior Court;3;Tier 1;1;N;
+M-0607;C-002;Regulatory Compliance Audit;O;06/28/2025;;;None;2;Tier 1;1;N;
+M-0606;C-019;Commercial Lease Review;C;06/28/2025;09/04/2025;COMP;None;2;Tier 1;6;N;
+M-0605;C-015;Regulatory Compliance Audit;C;06/27/2025;11/12/2025;COMP;State Agency;2;Tier 1;1;N;
+M-0604;C-049;Ordinance Drafting;C;06/23/2025;11/04/2025;COMP;Local Agency;2;Tier 3;1;N;
+M-0603;C-007;Facility Change Of Ownership;C;06/14/2025;10/25/2025;SETL;State Agency;2;Tier 3;3;N;
+M-0602;C-006;Administrative Licensing Appeal;O;06/14/2025;;;State Agency;2;Tier 1;1;N;
+M-0601;C-024;Public Works Bid Protest;C;06/07/2025;09/10/2025;COMP;Local Agency;2;Tier 2;1;N;
+M-0600;C-049;Paga Response;C;06/04/2025;09/29/2025;COMP;Arbitration;4;Tier 3;1;N;
+M-0599;C-005;Commercial Lease Review;C;06/03/2025;07/26/2025;COMP;None;2;Tier 1;6;N;
+M-0598;C-012;Regulatory Compliance Audit;C;05/31/2025;11/17/2025;COMP;State Agency;2;Tier 1;1;N;
+M-0597;C-031;Employment Single Plaintiff Defense;O;05/30/2025;;;Superior Court;2;Tier 3;1;N;
+M-0596;C-015;Public Records Litigation;C;05/28/2025;11/15/2025;SETL;Superior Court;2;Tier 2;1;N;
+M-0595;C-045;Public Records Litigation;C;05/22/2025;12/03/2025;COMP;Superior Court;2;Tier 4;1;N;
+M-0594;C-022;Internal Investigation;O;05/18/2025;;;None;3;Tier 2;1;N;
+M-0593;C-033;Public Records Litigation;C;05/16/2025;11/16/2025;COMP;Superior Court;4;Tier 2;1;Y;10/30/2025
+M-0592;C-016;Regulatory Compliance Audit;C;05/13/2025;10/29/2025;COMP;State Agency;2;Tier 1;1;N;
+M-0591;C-050;Internal Investigation;C;05/12/2025;09/13/2025;COMP;None;3;Tier 4;1;N;
+M-0590;C-039;Employment Single Plaintiff Defense;C;05/09/2025;11/12/2025;XFER;Superior Court;2;Tier 2;1;N;
+M-0589;C-049;Administrative Licensing Appeal;O;05/06/2025;;;State Agency;3;Tier 2;1;N;
+M-0588;C-038;Public Records Litigation;C;05/04/2025;09/29/2025;SETL;Superior Court;2;Tier 3;1;N;
+M-0587;C-016;Paga Response;O;05/01/2025;;;Superior Court;3;Tier 3;1;N;
+M-0586;C-011;Paga Response;C;04/26/2025;12/01/2025;COMP;Superior Court;3;Tier 2;1;N;
+M-0585;C-031;Administrative Licensing Appeal;O;04/25/2025;;;State Agency;2;Tier 2;1;N;
+M-0584;C-007;Ordinance Drafting;C;04/23/2025;10/29/2025;COMP;Local Agency;2;Tier 2;1;N;
+M-0583;C-044;Administrative Licensing Appeal;C;04/21/2025;11/14/2025;COMP;State Agency;3;Tier 2;1;Y;10/11/2025
+M-0582;C-001;Election Law Advisory;C;04/17/2025;05/19/2025;COMP;Local Agency;2;Tier 4;1;N;
+M-0581;C-019;Employment Single Plaintiff Defense;O;04/16/2025;;;State Agency;2;Tier 3;1;N;
+M-0580;C-058;Commercial Lease Review;C;04/13/2025;05/02/2025;XFER;None;4;Tier 1;1;N;
+M-0579;C-013;Internal Investigation;O;04/11/2025;;;None;3;Tier 1;1;N;
+M-0578;C-039;Regulatory Compliance Audit;C;04/08/2025;10/28/2025;COMP;None;3;Tier 3;1;N;
+M-0577;C-042;Internal Investigation;C;04/06/2025;08/26/2025;COMP;None;2;Tier 2;1;N;
+M-0576;C-048;Paga Response;O;04/05/2025;;;Arbitration;2;Tier 2;1;N;
+M-0575;C-004;Administrative Licensing Appeal;C;04/05/2025;07/06/2025;COMP;State Agency;2;Tier 1;1;Y;06/21/2025
+M-0574;C-055;Contract Dispute Arbitration;C;03/29/2025;08/23/2025;XFER;Arbitration;4;Tier 2;1;N;
+M-0573;C-029;Administrative Licensing Appeal;O;03/23/2025;;;State Agency;3;Tier 3;1;N;
+M-0572;C-017;Contract Dispute Arbitration;O;03/22/2025;;;Arbitration;2;Tier 4;1;N;
+M-0571;C-060;Public Works Bid Protest;C;03/20/2025;06/11/2025;COMP;Superior Court;2;Tier 1;1;N;
+M-0570;C-031;Public Records Litigation;C;03/14/2025;11/02/2025;COMP;Superior Court;3;Tier 1;1;N;
+M-0569;C-022;Public Records Litigation;C;03/13/2025;11/16/2025;COMP;Superior Court;3;Tier 2;1;N;
+M-0568;C-023;Public Records Litigation;O;03/13/2025;;;Appellate Court;2;Tier 1;1;N;
+M-0567;C-042;Internal Investigation;O;03/13/2025;;;None;2;Tier 2;1;N;
+M-0566;C-050;Ordinance Drafting;C;03/10/2025;07/03/2025;COMP;Local Agency;2;Tier 2;1;N;
+M-0565;C-043;Commercial Lease Review;C;03/03/2025;04/06/2025;COMP;None;3;Tier 1;2;N;
+M-0564;C-043;Regulatory Compliance Audit;C;02/25/2025;07/24/2025;COMP;State Agency;2;Tier 2;1;N;
+M-0563;C-034;Commercial Lease Review;C;02/11/2025;03/29/2025;COMP;None;2;Tier 2;2;N;
+M-0562;C-006;Employment Single Plaintiff Defense;C;02/10/2025;09/02/2025;XFER;State Agency;2;Tier 2;1;N;
+M-0561;C-037;Employment Single Plaintiff Defense;C;02/03/2025;08/13/2025;COMP;Arbitration;2;Tier 4;1;Y;07/27/2025
+M-0560;C-054;Paga Response;C;02/02/2025;07/11/2025;COMP;Arbitration;3;Tier 4;1;N;
+M-0559;C-034;Public Records Litigation;C;02/01/2025;06/14/2025;COMP;Superior Court;4;Tier 2;1;Y;05/28/2025
+M-0558;C-020;Facility Change Of Ownership;C;01/30/2025;07/18/2025;COMP;State Agency;2;Tier 2;4;N;
+M-0557;C-051;Internal Investigation;C;01/27/2025;11/28/2025;COMP;None;2;Tier 3;1;N;
+M-0556;C-031;Public Works Bid Protest;C;01/26/2025;02/21/2025;XFER;Superior Court;3;Tier 2;1;N;
+M-0555;C-033;Public Records Litigation;C;01/22/2025;07/19/2025;COMP;Superior Court;2;Tier 2;1;N;
+M-0554;C-001;Paga Response;C;01/22/2025;09/21/2025;COMP;Arbitration;3;Tier 2;1;N;
+M-0553;C-037;Public Works Bid Protest;C;01/08/2025;05/24/2025;COMP;Superior Court;2;Tier 4;1;Y;05/07/2025
+M-0552;C-032;Ordinance Drafting;C;01/08/2025;04/02/2025;COMP;Local Agency;3;Tier 3;1;Y;03/23/2025
+M-0551;C-018;Commercial Lease Review;C;01/04/2025;02/05/2025;COMP;None;5;Tier 2;3;N;
+M-0550;C-031;Internal Investigation;C;12/25/2024;05/21/2025;COMP;None;2;Tier 1;1;N;
+M-0549;C-013;Commercial Lease Review;C;12/17/2024;01/17/2025;COMP;None;2;Tier 2;2;N;
+M-0548;C-045;Internal Investigation;C;12/10/2024;03/17/2025;COMP;None;3;Tier 2;1;N;
+M-0547;C-050;Internal Investigation;C;12/08/2024;03/19/2025;COMP;None;2;Tier 1;1;N;
+M-0546;C-010;Contract Dispute Arbitration;C;12/08/2024;05/29/2025;SETL;Arbitration;2;Tier 4;1;N;
+M-0545;C-043;Public Records Litigation;C;11/25/2024;11/10/2025;COMP;Superior Court;2;Tier 2;1;Y;10/09/2025
+M-0544;C-036;Public Records Litigation;C;11/22/2024;05/31/2025;COMP;Appellate Court;2;Tier 2;1;N;
+M-0543;C-034;Ordinance Drafting;C;11/16/2024;02/18/2025;COMP;Local Agency;2;Tier 4;1;N;
+M-0542;C-044;Paga Response;C;11/14/2024;05/13/2025;COMP;Superior Court;2;Tier 2;1;N;
+M-0541;C-034;Public Records Litigation;C;11/11/2024;05/04/2025;COMP;Appellate Court;2;Tier 4;1;N;
+M-0540;C-018;Public Records Litigation;C;11/10/2024;10/16/2025;COMP;Superior Court;3;Tier 1;1;Y;09/13/2025
+M-0539;C-018;Ordinance Drafting;C;11/01/2024;03/07/2025;COMP;Local Agency;4;Tier 3;1;Y;02/19/2025
+M-0538;C-029;Public Works Bid Protest;C;10/23/2024;02/03/2025;COMP;Superior Court;2;Tier 1;1;N;
+M-0537;C-012;Employment Single Plaintiff Defense;C;10/23/2024;08/31/2025;COMP;Arbitration;2;Tier 2;1;N;
+M-0536;C-060;Public Records Litigation;C;10/22/2024;03/07/2025;XFER;Superior Court;2;Tier 1;1;N;
+M-0535;C-021;Employment Single Plaintiff Defense;C;10/20/2024;06/26/2025;SETL;Arbitration;4;Tier 2;1;N;
+M-0534;C-035;Ordinance Drafting;C;10/11/2024;02/20/2025;COMP;Local Agency;3;Tier 1;1;N;
+M-0533;C-021;Commercial Lease Review;C;10/07/2024;11/06/2024;COMP;None;2;Tier 4;5;N;
+M-0532;C-048;Commercial Lease Review;C;09/30/2024;10/31/2024;COMP;None;3;Tier 1;3;N;
+M-0531;C-020;Administrative Licensing Appeal;C;09/23/2024;02/03/2025;COMP;State Agency;2;Tier 3;1;Y;01/20/2025
+M-0530;C-016;Contract Dispute Arbitration;C;09/14/2024;05/25/2025;COMP;Arbitration;2;Tier 3;1;N;
+M-0529;C-001;Public Records Litigation;C;09/13/2024;06/01/2025;COMP;Superior Court;2;Tier 1;1;N;
+M-0528;C-003;Public Works Bid Protest;C;09/11/2024;10/27/2024;COMP;Local Agency;2;Tier 4;1;Y;10/23/2024
+M-0527;C-037;Public Records Litigation;C;09/10/2024;12/09/2024;XFER;Superior Court;2;Tier 2;1;N;
+M-0526;C-028;Public Works Bid Protest;C;09/09/2024;12/04/2024;COMP;Superior Court;2;Tier 1;1;N;
+M-0525;C-047;Employment Single Plaintiff Defense;C;09/05/2024;10/25/2025;COMP;State Agency;2;Tier 2;1;N;
+M-0524;C-016;Facility Change Of Ownership;C;09/03/2024;03/27/2025;COMP;State Agency;2;Tier 4;2;N;
+M-0523;C-012;Commercial Lease Review;C;09/03/2024;09/25/2024;XFER;None;4;Tier 2;4;N;
+M-0522;C-013;Contract Dispute Arbitration;C;09/01/2024;08/25/2025;COMP;Arbitration;3;Tier 3;1;Y;06/29/2025
+M-0521;C-046;Ordinance Drafting;C;08/23/2024;01/10/2025;COMP;Local Agency;2;Tier 2;1;Y;12/25/2024
+M-0520;C-059;Internal Investigation;C;08/23/2024;01/14/2025;COMP;None;3;Tier 1;1;N;
+M-0519;C-035;Paga Response;C;08/21/2024;07/19/2025;COMP;Arbitration;2;Tier 2;1;N;
+M-0518;C-011;Administrative Licensing Appeal;C;08/21/2024;12/07/2024;COMP;State Agency;3;Tier 2;1;Y;11/26/2024
+M-0517;C-023;Contract Dispute Arbitration;C;08/14/2024;06/10/2025;COMP;Arbitration;2;Tier 4;1;N;
+M-0516;C-009;Administrative Licensing Appeal;C;08/13/2024;02/20/2025;COMP;State Agency;2;Tier 1;1;Y;01/25/2025
+M-0515;C-050;Public Records Litigation;C;08/08/2024;05/31/2025;COMP;Superior Court;2;Tier 1;1;N;
+M-0514;C-038;Paga Response;C;07/26/2024;01/05/2025;SETL;Superior Court;2;Tier 2;1;N;
+M-0513;C-054;Employment Single Plaintiff Defense;C;07/21/2024;10/18/2025;COMP;State Agency;2;Tier 1;1;N;
+M-0512;C-040;Public Works Bid Protest;C;07/20/2024;10/04/2024;COMP;Local Agency;2;Tier 1;1;N;
+M-0511;C-044;Ordinance Drafting;C;07/14/2024;12/02/2024;COMP;Local Agency;2;Tier 3;1;N;
+M-0510;C-030;Employment Single Plaintiff Defense;C;07/12/2024;08/17/2025;COMP;Arbitration;4;Tier 3;1;N;
+M-0509;C-035;Commercial Lease Review;C;07/10/2024;08/18/2024;COMP;None;2;Tier 1;1;N;
+M-0508;C-034;Ordinance Drafting;C;06/29/2024;12/12/2024;COMP;Local Agency;3;Tier 4;1;N;
+M-0507;C-050;Internal Investigation;C;06/27/2024;03/07/2025;COMP;None;3;Tier 2;1;N;
+M-0506;C-032;Employment Single Plaintiff Defense;C;06/23/2024;02/19/2025;COMP;Superior Court;4;Tier 3;1;N;
+M-0505;C-054;Administrative Licensing Appeal;C;06/22/2024;01/03/2025;XFER;State Agency;2;Tier 2;1;N;
+M-0504;C-057;Employment Single Plaintiff Defense;C;06/18/2024;01/10/2025;OTH;Arbitration;2;Tier 2;1;N;
+M-0503;C-013;Election Law Advisory;C;06/16/2024;08/21/2024;COMP;Local Agency;2;Tier 1;1;N;
+M-0502;C-028;Facility Change Of Ownership;C;06/13/2024;12/31/2024;COMP;State Agency;2;Tier 2;1;N;
+M-0501;C-008;Facility Change Of Ownership;C;06/11/2024;10/11/2024;COMP;State Agency;2;Tier 1;6;N;
+M-0500;C-060;Ordinance Drafting;C;06/08/2024;09/27/2024;COMP;Local Agency;2;Tier 4;1;Y;09/14/2024
+M-0499;C-025;Public Records Litigation;C;06/04/2024;01/30/2025;COMP;Superior Court;3;Tier 2;1;Y;12/26/2024
+M-0498;C-037;Administrative Licensing Appeal;C;06/04/2024;12/25/2024;COMP;State Agency;2;Tier 3;1;Y;11/24/2024
+M-0497;C-044;Public Records Litigation;C;06/02/2024;12/13/2024;COMP;Superior Court;2;Tier 4;1;Y;11/15/2024
+M-0496;C-002;Paga Response;C;05/27/2024;08/09/2025;COMP;Arbitration;2;Tier 1;1;N;
+M-0495;C-043;Contract Dispute Arbitration;C;05/23/2024;07/19/2025;COMP;Arbitration;2;Tier 1;1;Y;06/08/2025
+M-0494;C-040;Public Records Litigation;C;05/18/2024;11/18/2024;SETL;Superior Court;2;Tier 3;1;N;
+M-0493;C-046;Administrative Licensing Appeal;C;05/16/2024;10/01/2024;COMP;State Agency;2;Tier 2;1;Y;09/12/2024
+M-0492;C-037;Commercial Lease Review;C;05/12/2024;06/30/2024;COMP;None;3;Tier 3;1;N;
+M-0491;C-041;Internal Investigation;C;05/11/2024;07/24/2024;SETL;None;3;Tier 2;1;N;
+M-0490;C-059;Paga Response;C;05/10/2024;01/30/2025;COMP;Arbitration;2;Tier 1;1;N;
+M-0489;C-010;Internal Investigation;C;05/03/2024;10/15/2024;COMP;None;4;Tier 4;1;N;
+M-0488;C-029;Public Records Litigation;C;05/02/2024;06/10/2025;COMP;Superior Court;2;Tier 1;1;N;
+M-0487;C-039;Employment Single Plaintiff Defense;C;04/30/2024;06/27/2025;COMP;Arbitration;2;Tier 2;1;N;
+M-0486;C-048;Commercial Lease Review;C;04/30/2024;05/21/2024;XFER;None;2;Tier 1;1;N;
+M-0485;C-050;Facility Change Of Ownership;C;04/23/2024;10/04/2024;COMP;State Agency;2;Tier 2;4;N;
+M-0484;C-041;Facility Change Of Ownership;C;04/20/2024;12/02/2024;COMP;State Agency;2;Tier 1;1;N;
+M-0483;C-046;Paga Response;C;04/17/2024;09/23/2025;COMP;Superior Court;2;Tier 3;1;N;
+M-0482;C-021;Contract Dispute Arbitration;C;04/14/2024;06/26/2025;COMP;Arbitration;2;Tier 1;1;Y;04/18/2025
+M-0481;C-046;Employment Single Plaintiff Defense;C;03/29/2024;05/28/2025;COMP;State Agency;3;Tier 1;1;N;
+M-0480;C-037;Public Works Bid Protest;C;03/25/2024;08/03/2024;COMP;Superior Court;2;Tier 1;1;N;
+M-0479;C-026;Public Works Bid Protest;C;03/24/2024;06/18/2024;COMP;Superior Court;3;Tier 2;1;Y;06/07/2024
+M-0478;C-029;Employment Single Plaintiff Defense;C;03/24/2024;06/10/2025;COMP;Arbitration;2;Tier 1;1;N;
+M-0477;C-016;Regulatory Compliance Audit;C;03/21/2024;09/08/2024;COMP;State Agency;2;Tier 1;1;N;
+M-0476;C-044;Public Works Bid Protest;C;03/21/2024;06/13/2024;COMP;Superior Court;2;Tier 3;1;N;
+M-0475;C-002;Public Works Bid Protest;C;03/13/2024;07/25/2024;COMP;Superior Court;2;Tier 1;1;Y;07/09/2024
+M-0474;C-032;Administrative Licensing Appeal;C;03/12/2024;11/03/2024;COMP;State Agency;2;Tier 1;1;Y;09/27/2024
+M-0473;C-009;Public Works Bid Protest;C;03/06/2024;07/11/2024;COMP;Local Agency;2;Tier 4;1;Y;06/24/2024
+M-0472;C-016;Public Records Litigation;C;02/29/2024;10/29/2024;COMP;Superior Court;3;Tier 2;1;Y;10/05/2024
+M-0471;C-056;Regulatory Compliance Audit;C;02/28/2024;05/09/2024;OTH;None;2;Tier 3;1;N;
+M-0470;C-018;Facility Change Of Ownership;C;02/25/2024;10/25/2024;COMP;State Agency;2;Tier 1;1;N;
+M-0469;C-030;Paga Response;C;02/18/2024;10/24/2024;COMP;Arbitration;2;Tier 2;1;N;
+M-0468;C-059;Internal Investigation;C;02/17/2024;07/03/2024;SETL;None;3;Tier 1;1;N;
+M-0467;C-017;Internal Investigation;C;02/07/2024;10/08/2024;COMP;None;2;Tier 3;1;N;
+M-0466;C-022;Ordinance Drafting;C;02/05/2024;09/07/2024;COMP;Local Agency;2;Tier 3;1;N;
+M-0465;C-041;Public Works Bid Protest;C;02/03/2024;04/16/2024;COMP;Local Agency;3;Tier 4;1;N;
+M-0464;C-026;Facility Change Of Ownership;C;01/28/2024;06/11/2024;COMP;State Agency;2;Tier 2;1;N;
+M-0463;C-052;Employment Single Plaintiff Defense;C;01/27/2024;10/27/2025;COMP;Superior Court;2;Tier 2;1;N;
+M-0462;C-039;Public Records Litigation;C;01/22/2024;12/23/2024;COMP;Superior Court;2;Tier 3;1;N;
+M-0461;C-010;Public Works Bid Protest;C;01/18/2024;05/05/2024;COMP;Local Agency;2;Tier 2;1;N;
+M-0460;C-004;Ordinance Drafting;C;01/17/2024;07/03/2024;COMP;Local Agency;2;Tier 3;1;N;
+M-0459;C-044;Contract Dispute Arbitration;C;01/16/2024;10/29/2024;COMP;Arbitration;2;Tier 2;1;Y;10/03/2024
+M-0458;C-042;Facility Change Of Ownership;C;01/15/2024;10/15/2024;COMP;State Agency;3;Tier 4;2;N;
+M-0457;C-052;Contract Dispute Arbitration;C;01/14/2024;12/20/2024;COMP;Arbitration;2;Tier 2;1;Y;11/13/2024
+M-0456;C-005;Employment Single Plaintiff Defense;C;01/11/2024;06/20/2025;COMP;Arbitration;2;Tier 1;1;N;
+M-0455;C-055;Commercial Lease Review;C;01/09/2024;02/19/2024;COMP;None;2;Tier 2;3;N;
+M-0454;C-016;Regulatory Compliance Audit;C;01/05/2024;09/03/2024;COMP;State Agency;2;Tier 1;1;N;
+M-0453;C-006;Regulatory Compliance Audit;C;01/04/2024;06/30/2024;COMP;State Agency;2;Tier 4;1;N;
+M-0452;C-056;Paga Response;C;12/30/2023;08/21/2024;COMP;Arbitration;2;Tier 1;1;Y;07/28/2024
+M-0451;C-037;Internal Investigation;C;12/27/2023;04/29/2024;COMP;None;4;Tier 3;1;N;
+M-0450;C-017;Commercial Lease Review;C;12/27/2023;02/21/2024;COMP;None;2;Tier 2;1;N;
+M-0449;C-021;Paga Response;C;12/26/2023;12/05/2024;COMP;Superior Court;3;Tier 2;1;N;
+M-0448;C-037;Ordinance Drafting;C;12/25/2023;02/08/2024;COMP;Local Agency;2;Tier 2;1;N;
+M-0447;C-041;Ordinance Drafting;C;12/15/2023;06/04/2024;COMP;Local Agency;2;Tier 3;1;N;
+M-0446;C-027;Facility Change Of Ownership;C;12/09/2023;04/19/2024;COMP;State Agency;5;Tier 1;2;N;
+M-0445;C-041;Public Works Bid Protest;C;12/08/2023;03/16/2024;COMP;Superior Court;2;Tier 1;1;Y;03/01/2024
+M-0444;C-042;Internal Investigation;C;12/05/2023;04/11/2024;COMP;None;2;Tier 2;1;N;
+M-0443;C-019;Administrative Licensing Appeal;C;12/05/2023;04/20/2024;COMP;State Agency;2;Tier 1;1;N;
+M-0442;C-045;Ordinance Drafting;C;11/28/2023;07/02/2024;COMP;Local Agency;2;Tier 1;1;N;
+M-0441;C-019;Public Works Bid Protest;C;11/26/2023;01/17/2024;COMP;Local Agency;2;Tier 3;1;Y;01/12/2024
+M-0440;C-027;Public Works Bid Protest;C;11/22/2023;01/18/2024;COMP;Local Agency;2;Tier 1;1;N;
+M-0439;C-009;Ordinance Drafting;C;11/22/2023;03/08/2024;COMP;Local Agency;2;Tier 1;1;Y;02/26/2024
+M-0438;C-019;Administrative Licensing Appeal;C;11/21/2023;07/23/2025;COMP;State Agency;3;Tier 4;1;N;
+M-0437;C-020;Public Records Litigation;C;11/09/2023;08/02/2024;COMP;Appellate Court;5;Tier 2;1;N;
+M-0436;C-060;Facility Change Of Ownership;C;11/06/2023;03/10/2024;COMP;State Agency;2;Tier 2;1;N;
+M-0435;C-047;Regulatory Compliance Audit;C;11/04/2023;03/11/2024;COMP;None;2;Tier 3;1;N;
+M-0434;C-038;Employment Single Plaintiff Defense;C;11/04/2023;07/18/2025;COMP;Superior Court;2;Tier 3;1;N;
+M-0433;C-034;Facility Change Of Ownership;C;11/02/2023;01/23/2024;SETL;State Agency;2;Tier 3;1;N;
+M-0432;C-059;Ordinance Drafting;C;11/01/2023;07/14/2024;COMP;Local Agency;2;Tier 4;1;N;
+M-0431;C-044;Public Records Litigation;C;10/30/2023;02/26/2024;SETL;Superior Court;4;Tier 1;1;N;
+M-0430;C-023;Public Records Litigation;C;10/23/2023;08/23/2024;COMP;Superior Court;2;Tier 1;1;Y;07/19/2024
+M-0429;C-045;Facility Change Of Ownership;C;10/19/2023;03/18/2024;COMP;State Agency;2;Tier 4;1;N;
+M-0428;C-031;Commercial Lease Review;C;10/18/2023;11/19/2023;COMP;None;2;Tier 2;1;N;
+M-0427;C-020;Internal Investigation;C;10/17/2023;04/08/2024;COMP;None;2;Tier 2;1;N;
+M-0426;C-007;Ordinance Drafting;C;10/16/2023;02/20/2024;XFER;Local Agency;3;Tier 2;1;N;
+M-0425;C-052;Ordinance Drafting;C;10/08/2023;01/10/2024;COMP;Local Agency;2;Tier 2;1;N;
+M-0424;C-048;Facility Change Of Ownership;C;10/07/2023;02/09/2024;COMP;State Agency;2;Tier 2;2;N;
+M-0423;C-054;Public Records Litigation;C;09/28/2023;05/05/2024;COMP;Appellate Court;2;Tier 1;1;Y;04/09/2024
+M-0422;C-056;Commercial Lease Review;C;09/28/2023;11/06/2023;COMP;None;2;Tier 2;2;N;
+M-0421;C-041;Public Records Litigation;C;09/25/2023;05/07/2025;COMP;Superior Court;3;Tier 2;1;Y;02/14/2025
+M-0420;C-028;Administrative Licensing Appeal;C;09/25/2023;07/05/2024;COMP;State Agency;2;Tier 3;1;N;
+M-0419;C-003;Paga Response;C;09/22/2023;07/15/2024;COMP;Superior Court;3;Tier 4;1;Y;06/14/2024
+M-0418;C-023;Internal Investigation;C;09/20/2023;04/09/2024;COMP;None;2;Tier 2;1;N;
+M-0417;C-029;Public Works Bid Protest;C;09/17/2023;12/02/2023;COMP;Local Agency;2;Tier 2;1;N;
+M-0416;C-034;Facility Change Of Ownership;C;09/17/2023;01/31/2024;COMP;State Agency;3;Tier 1;1;N;
+M-0415;C-009;Administrative Licensing Appeal;C;09/17/2023;03/27/2024;COMP;State Agency;3;Tier 2;1;Y;03/03/2024
+M-0414;C-059;Administrative Licensing Appeal;C;09/16/2023;03/16/2024;COMP;State Agency;2;Tier 2;1;Y;02/19/2024
+M-0413;C-047;Public Records Litigation;C;09/14/2023;06/29/2024;COMP;Superior Court;2;Tier 1;1;N;
+M-0412;C-035;Paga Response;C;09/14/2023;02/12/2024;COMP;Arbitration;2;Tier 1;1;Y;01/23/2024
+M-0411;C-019;Facility Change Of Ownership;C;09/11/2023;01/18/2024;COMP;State Agency;2;Tier 3;2;N;
+M-0410;C-013;Employment Single Plaintiff Defense;C;09/04/2023;12/24/2025;COMP;Arbitration;3;Tier 2;1;N;
+M-0409;C-041;Administrative Licensing Appeal;C;09/01/2023;12/30/2023;COMP;State Agency;2;Tier 1;1;Y;12/15/2023
+M-0408;C-047;Public Records Litigation;C;08/27/2023;01/08/2024;COMP;Superior Court;3;Tier 2;1;Y;12/23/2023
+M-0407;C-006;Ordinance Drafting;C;08/26/2023;10/26/2023;COMP;Local Agency;3;Tier 3;1;N;
+M-0406;C-039;Public Works Bid Protest;C;08/24/2023;11/16/2023;COMP;Superior Court;2;Tier 1;1;N;
+M-0405;C-046;Public Records Litigation;C;08/23/2023;05/04/2024;COMP;Superior Court;2;Tier 3;1;N;
+M-0404;C-042;Facility Change Of Ownership;C;08/22/2023;12/02/2023;COMP;State Agency;3;Tier 1;1;N;
+M-0403;C-031;Paga Response;C;08/20/2023;11/26/2024;COMP;Superior Court;2;Tier 1;1;Y;10/17/2024
+M-0402;C-052;Election Law Advisory;C;08/10/2023;09/29/2023;COMP;Local Agency;2;Tier 2;1;N;
+M-0401;C-024;Paga Response;C;08/09/2023;07/12/2024;COMP;Superior Court;2;Tier 3;1;N;
+M-0400;C-055;Facility Change Of Ownership;C;08/04/2023;09/21/2023;SETL;State Agency;2;Tier 2;1;N;
+M-0399;C-014;Ordinance Drafting;C;07/29/2023;10/11/2023;COMP;Local Agency;2;Tier 1;1;N;
+M-0398;C-056;Public Records Litigation;C;07/23/2023;02/12/2024;COMP;Superior Court;2;Tier 1;1;Y;01/17/2024
+M-0397;C-027;Facility Change Of Ownership;C;07/23/2023;09/04/2023;XFER;State Agency;2;Tier 4;2;N;
+M-0396;C-013;Ordinance Drafting;C;07/17/2023;09/07/2023;COMP;Local Agency;3;Tier 3;1;Y;09/02/2023
+M-0395;C-015;Administrative Licensing Appeal;C;07/09/2023;02/10/2024;COMP;State Agency;2;Tier 2;1;N;
+M-0394;C-054;Internal Investigation;C;07/05/2023;09/28/2023;COMP;None;4;Tier 2;1;N;
+M-0393;C-052;Contract Dispute Arbitration;C;07/01/2023;04/26/2024;COMP;Arbitration;2;Tier 2;1;N;
+M-0392;C-020;Facility Change Of Ownership;C;06/25/2023;11/12/2023;COMP;State Agency;2;Tier 3;1;N;
+M-0391;C-037;Public Records Litigation;C;06/24/2023;06/16/2024;COMP;Appellate Court;2;Tier 4;1;N;
+M-0390;C-017;Public Records Litigation;C;06/22/2023;06/09/2024;COMP;Superior Court;2;Tier 1;1;N;
+M-0389;C-022;Facility Change Of Ownership;C;06/20/2023;12/03/2023;COMP;State Agency;3;Tier 1;2;N;
+M-0388;C-042;Regulatory Compliance Audit;C;06/12/2023;08/13/2023;OTH;None;2;Tier 2;1;N;
+M-0387;C-017;Public Records Litigation;C;06/11/2023;05/25/2024;COMP;Appellate Court;2;Tier 1;1;Y;04/15/2024
+M-0386;C-032;Public Records Litigation;C;06/08/2023;02/27/2024;COMP;Superior Court;2;Tier 3;1;Y;01/16/2024
+M-0385;C-032;Paga Response;C;06/07/2023;07/17/2024;COMP;Superior Court;2;Tier 2;1;N;
+M-0384;C-019;Public Works Bid Protest;C;06/03/2023;07/12/2023;COMP;Superior Court;3;Tier 2;1;N;
+M-0383;C-051;Employment Single Plaintiff Defense;C;06/02/2023;04/26/2024;COMP;Superior Court;2;Tier 1;1;Y;03/05/2024
+M-0382;C-048;Regulatory Compliance Audit;C;05/30/2023;10/01/2023;COMP;None;2;Tier 1;1;N;
+M-0381;C-003;Ordinance Drafting;C;05/30/2023;07/27/2023;SETL;Local Agency;4;Tier 1;1;N;
+M-0380;C-059;Internal Investigation;C;05/23/2023;09/03/2023;COMP;None;2;Tier 2;1;N;
+M-0379;C-022;Ordinance Drafting;C;05/21/2023;09/23/2023;COMP;Local Agency;3;Tier 3;1;N;
+M-0378;C-012;Facility Change Of Ownership;C;05/21/2023;10/16/2023;COMP;State Agency;2;Tier 2;1;N;
+M-0377;C-051;Public Works Bid Protest;C;05/14/2023;08/07/2023;COMP;Superior Court;2;Tier 2;1;N;
+M-0376;C-049;Regulatory Compliance Audit;C;05/05/2023;12/03/2023;COMP;None;2;Tier 2;1;N;
+M-0375;C-002;Public Works Bid Protest;C;04/27/2023;07/02/2023;COMP;Superior Court;3;Tier 4;1;N;
+M-0374;C-055;Commercial Lease Review;C;04/24/2023;05/30/2023;COMP;None;2;Tier 4;1;N;
+M-0373;C-039;Employment Single Plaintiff Defense;C;04/15/2023;04/06/2024;SETL;Superior Court;2;Tier 2;1;N;
+M-0372;C-013;Public Records Litigation;C;04/14/2023;05/08/2024;COMP;Superior Court;3;Tier 1;1;Y;04/05/2024
+M-0371;C-024;Employment Single Plaintiff Defense;C;04/11/2023;04/27/2024;COMP;State Agency;3;Tier 3;1;N;
+M-0370;C-034;Public Records Litigation;C;04/09/2023;03/15/2024;COMP;Superior Court;4;Tier 1;1;Y;02/16/2024
+M-0369;C-026;Commercial Lease Review;C;04/09/2023;05/20/2023;COMP;None;3;Tier 3;1;N;
+M-0368;C-052;Employment Single Plaintiff Defense;C;04/07/2023;01/09/2024;OTH;Arbitration;2;Tier 4;1;N;
+M-0367;C-060;Employment Single Plaintiff Defense;C;03/29/2023;11/30/2024;COMP;State Agency;4;Tier 2;1;Y;09/15/2024
+M-0366;C-010;Administrative Licensing Appeal;C;03/27/2023;08/09/2023;COMP;State Agency;2;Tier 2;1;Y;07/21/2023
+M-0365;C-029;Public Records Litigation;C;03/26/2023;07/20/2023;SETL;Superior Court;2;Tier 2;1;N;
+M-0364;C-008;Ordinance Drafting;C;03/25/2023;08/28/2023;COMP;Local Agency;2;Tier 4;1;N;
+M-0363;C-052;Administrative Licensing Appeal;C;03/25/2023;07/19/2023;COMP;State Agency;2;Tier 1;1;Y;07/03/2023
+M-0362;C-020;Regulatory Compliance Audit;C;03/18/2023;09/06/2023;COMP;State Agency;4;Tier 1;1;N;
+M-0361;C-056;Internal Investigation;C;03/18/2023;05/13/2023;COMP;None;2;Tier 2;1;N;
+M-0360;C-032;Employment Single Plaintiff Defense;C;03/13/2023;01/15/2024;COMP;Superior Court;2;Tier 2;1;Y;11/30/2023
+M-0359;C-046;Employment Single Plaintiff Defense;C;03/08/2023;09/17/2024;COMP;State Agency;2;Tier 1;1;N;
+M-0358;C-047;Contract Dispute Arbitration;C;03/07/2023;08/31/2023;COMP;Arbitration;2;Tier 3;1;Y;08/06/2023
+M-0357;C-008;Public Records Litigation;C;03/03/2023;08/03/2023;COMP;Superior Court;2;Tier 2;1;N;
+M-0356;C-017;Facility Change Of Ownership;C;02/28/2023;06/24/2023;COMP;State Agency;4;Tier 3;4;N;
+M-0355;C-034;Administrative Licensing Appeal;C;02/26/2023;08/01/2023;COMP;State Agency;4;Tier 1;1;Y;07/14/2023
+M-0354;C-031;Contract Dispute Arbitration;C;02/21/2023;05/11/2024;COMP;Arbitration;2;Tier 2;1;Y;03/21/2024
+M-0353;C-031;Employment Single Plaintiff Defense;C;02/18/2023;02/06/2024;COMP;Superior Court;2;Tier 2;1;N;
+M-0352;C-008;Public Records Litigation;C;02/13/2023;06/07/2024;COMP;Superior Court;4;Tier 4;1;Y;04/23/2024
+M-0351;C-025;Facility Change Of Ownership;C;02/12/2023;08/08/2023;COMP;State Agency;2;Tier 2;2;N;
+M-0350;C-022;Commercial Lease Review;C;02/05/2023;04/10/2023;COMP;None;2;Tier 1;2;N;
+M-0349;C-018;Facility Change Of Ownership;C;02/04/2023;06/08/2023;COMP;State Agency;3;Tier 1;5;N;
+M-0348;C-036;Contract Dispute Arbitration;C;02/04/2023;08/29/2024;COMP;Arbitration;2;Tier 2;1;N;
+M-0347;C-002;Public Works Bid Protest;C;02/03/2023;04/26/2023;COMP;Superior Court;3;Tier 2;1;N;
+M-0346;C-008;Public Records Litigation;C;02/01/2023;08/17/2023;COMP;Superior Court;2;Tier 2;1;N;
+M-0345;C-025;Public Records Litigation;C;01/22/2023;09/27/2023;COMP;Superior Court;2;Tier 2;1;Y;09/02/2023
+M-0344;C-020;Regulatory Compliance Audit;C;01/21/2023;05/15/2023;COMP;None;2;Tier 2;1;N;
+M-0343;C-003;Administrative Licensing Appeal;C;01/21/2023;09/07/2023;COMP;State Agency;4;Tier 2;1;Y;08/11/2023
+M-0342;C-031;Ordinance Drafting;C;01/20/2023;04/04/2023;SETL;Local Agency;2;Tier 2;1;N;
+M-0341;C-048;Regulatory Compliance Audit;C;01/13/2023;04/07/2023;SETL;State Agency;2;Tier 2;1;N;
+M-0340;C-050;Regulatory Compliance Audit;C;01/09/2023;08/27/2023;COMP;None;3;Tier 1;1;N;
+M-0339;C-024;Ordinance Drafting;C;01/09/2023;08/23/2023;COMP;Local Agency;2;Tier 1;1;N;
+M-0338;C-002;Internal Investigation;C;01/07/2023;03/29/2023;COMP;None;2;Tier 2;1;N;
+M-0337;C-029;Facility Change Of Ownership;C;12/24/2022;06/21/2023;COMP;State Agency;2;Tier 2;3;N;
+M-0336;C-016;Commercial Lease Review;C;12/17/2022;05/30/2023;COMP;None;4;Tier 2;4;N;
+M-0335;C-017;Administrative Licensing Appeal;C;12/12/2022;04/08/2024;COMP;State Agency;4;Tier 4;1;Y;01/29/2024
+M-0334;C-011;Contract Dispute Arbitration;C;12/10/2022;03/07/2024;COMP;Arbitration;3;Tier 3;1;N;
+M-0333;C-036;Contract Dispute Arbitration;C;12/10/2022;11/21/2023;COMP;Arbitration;2;Tier 4;1;N;
+M-0332;C-037;Internal Investigation;C;12/09/2022;03/27/2023;COMP;None;2;Tier 2;1;N;
+M-0331;C-027;Employment Single Plaintiff Defense;C;12/07/2022;08/15/2023;SETL;Superior Court;2;Tier 1;1;N;
+M-0330;C-003;Employment Single Plaintiff Defense;C;12/05/2022;11/09/2024;COMP;State Agency;2;Tier 3;1;Y;08/05/2024
+M-0329;C-051;Facility Change Of Ownership;C;12/02/2022;03/22/2023;COMP;State Agency;2;Tier 1;2;N;
+M-0328;C-010;Employment Single Plaintiff Defense;C;11/29/2022;03/10/2025;COMP;State Agency;2;Tier 2;1;N;
+M-0327;C-020;Contract Dispute Arbitration;C;11/28/2022;09/04/2023;COMP;Arbitration;2;Tier 3;1;Y;08/03/2023
+M-0326;C-006;Internal Investigation;C;11/19/2022;04/19/2023;COMP;None;3;Tier 1;1;N;
+M-0325;C-033;Regulatory Compliance Audit;C;11/16/2022;04/12/2023;COMP;State Agency;4;Tier 4;1;N;
+M-0324;C-046;Commercial Lease Review;C;11/13/2022;01/11/2023;COMP;None;2;Tier 2;1;N;
+M-0323;C-004;Paga Response;C;11/07/2022;04/30/2024;COMP;Superior Court;2;Tier 1;1;N;
+M-0322;C-030;Administrative Licensing Appeal;C;11/06/2022;04/27/2023;COMP;State Agency;3;Tier 1;1;N;
+M-0321;C-050;Regulatory Compliance Audit;C;10/26/2022;05/10/2023;COMP;None;2;Tier 1;1;N;
+M-0320;C-047;Employment Single Plaintiff Defense;C;10/26/2022;06/04/2023;COMP;Superior Court;2;Tier 4;1;Y;05/14/2023
+M-0319;C-010;Contract Dispute Arbitration;C;10/21/2022;05/19/2023;COMP;Arbitration;2;Tier 3;1;N;
+M-0318;C-049;Public Records Litigation;C;10/18/2022;01/01/2023;SETL;Superior Court;3;Tier 1;1;N;
+M-0317;C-033;Contract Dispute Arbitration;C;10/17/2022;06/30/2023;COMP;Arbitration;2;Tier 2;1;N;
+M-0316;C-034;Facility Change Of Ownership;C;10/16/2022;04/17/2023;COMP;State Agency;2;Tier 2;2;N;
+M-0315;C-046;Facility Change Of Ownership;C;10/10/2022;02/27/2023;COMP;State Agency;3;Tier 4;3;N;
+M-0314;C-029;Facility Change Of Ownership;C;09/26/2022;03/07/2023;COMP;State Agency;2;Tier 2;1;N;
+M-0313;C-036;Regulatory Compliance Audit;C;09/23/2022;03/30/2023;COMP;None;2;Tier 4;1;N;
+M-0312;C-010;Ordinance Drafting;C;09/16/2022;02/11/2023;COMP;Local Agency;2;Tier 3;1;Y;01/19/2023
+M-0311;C-001;Ordinance Drafting;C;09/15/2022;06/15/2023;COMP;Local Agency;2;Tier 1;1;N;
+M-0310;C-007;Ordinance Drafting;C;09/14/2022;01/30/2023;COMP;Local Agency;2;Tier 1;1;N;
+M-0309;C-003;Internal Investigation;C;09/11/2022;01/21/2023;COMP;None;2;Tier 2;1;N;
+M-0308;C-023;Public Works Bid Protest;C;09/10/2022;10/25/2022;XFER;Local Agency;2;Tier 4;1;N;
+M-0307;C-002;Paga Response;C;09/09/2022;02/21/2023;SETL;Superior Court;2;Tier 2;1;N;
+M-0306;C-039;Employment Single Plaintiff Defense;C;09/08/2022;03/15/2023;COMP;Arbitration;2;Tier 3;1;Y;02/13/2023
+M-0305;C-036;Regulatory Compliance Audit;C;08/28/2022;03/08/2023;COMP;State Agency;2;Tier 2;1;N;
+M-0304;C-011;Commercial Lease Review;C;08/23/2022;09/29/2022;COMP;None;3;Tier 1;1;N;
+M-0303;C-006;Ordinance Drafting;C;08/13/2022;10/14/2022;SETL;Local Agency;2;Tier 2;1;N;
+M-0302;C-033;Employment Single Plaintiff Defense;C;08/09/2022;05/04/2023;COMP;Arbitration;2;Tier 2;1;N;
+M-0301;C-012;Facility Change Of Ownership;C;07/28/2022;10/31/2022;COMP;State Agency;3;Tier 3;1;N;
+M-0300;C-012;Commercial Lease Review;C;07/26/2022;09/05/2022;COMP;None;2;Tier 2;3;N;
+M-0299;C-022;Administrative Licensing Appeal;C;07/22/2022;10/27/2022;XFER;State Agency;2;Tier 2;1;N;
+M-0298;C-041;Public Works Bid Protest;C;07/21/2022;10/19/2022;COMP;Local Agency;2;Tier 3;1;Y;10/09/2022
+M-0297;C-009;Employment Single Plaintiff Defense;C;07/18/2022;08/25/2023;COMP;Superior Court;2;Tier 2;1;N;
+M-0296;C-050;Facility Change Of Ownership;C;07/15/2022;01/17/2023;COMP;State Agency;2;Tier 3;6;N;
+M-0295;C-052;Administrative Licensing Appeal;C;07/04/2022;01/03/2023;COMP;State Agency;2;Tier 3;1;Y;12/08/2022
+M-0294;C-019;Employment Single Plaintiff Defense;C;06/29/2022;12/20/2022;SETL;State Agency;2;Tier 3;1;N;
+M-0293;C-016;Employment Single Plaintiff Defense;C;06/28/2022;05/18/2024;COMP;Arbitration;2;Tier 1;1;N;
+M-0292;C-011;Regulatory Compliance Audit;C;06/25/2022;12/16/2022;COMP;None;2;Tier 1;1;N;
+M-0291;C-041;Internal Investigation;C;06/23/2022;12/14/2022;COMP;None;2;Tier 4;1;N;
+M-0290;C-034;Public Works Bid Protest;C;06/22/2022;09/18/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0289;C-043;Administrative Licensing Appeal;C;06/22/2022;12/26/2022;COMP;State Agency;3;Tier 1;1;Y;12/05/2022
+M-0288;C-045;Public Records Litigation;C;06/16/2022;10/01/2022;SETL;Superior Court;4;Tier 1;1;N;
+M-0287;C-019;Internal Investigation;C;06/16/2022;12/15/2022;COMP;None;3;Tier 1;1;N;
+M-0286;C-055;Public Works Bid Protest;C;06/14/2022;08/24/2022;COMP;Superior Court;3;Tier 2;1;Y;08/15/2022
+M-0285;C-038;Employment Single Plaintiff Defense;C;06/11/2022;01/24/2024;COMP;Arbitration;2;Tier 2;1;Y;11/16/2023
+M-0284;C-004;Public Records Litigation;C;06/06/2022;01/13/2023;COMP;Appellate Court;2;Tier 1;1;N;
+M-0283;C-048;Commercial Lease Review;C;06/05/2022;07/03/2022;COMP;None;3;Tier 2;1;N;
+M-0282;C-003;Paga Response;C;06/02/2022;12/18/2022;COMP;Arbitration;2;Tier 1;1;N;
+M-0281;C-040;Facility Change Of Ownership;C;05/28/2022;09/02/2022;COMP;State Agency;2;Tier 2;1;N;
+M-0280;C-037;Commercial Lease Review;C;05/24/2022;07/10/2022;COMP;None;5;Tier 1;1;N;
+M-0279;C-049;Employment Single Plaintiff Defense;C;05/23/2022;04/27/2023;COMP;State Agency;2;Tier 4;1;N;
+M-0278;C-006;Public Records Litigation;C;05/17/2022;02/22/2023;COMP;Appellate Court;2;Tier 3;1;Y;01/17/2023
+M-0277;C-003;Employment Single Plaintiff Defense;C;05/17/2022;04/06/2023;SETL;State Agency;2;Tier 3;1;N;
+M-0276;C-053;Commercial Lease Review;C;05/15/2022;06/16/2022;COMP;None;2;Tier 2;4;N;
+M-0275;C-012;Facility Change Of Ownership;C;05/14/2022;08/15/2022;SETL;State Agency;2;Tier 3;3;N;
+M-0274;C-029;Paga Response;C;05/10/2022;11/22/2022;COMP;Arbitration;2;Tier 3;1;N;
+M-0273;C-047;Facility Change Of Ownership;C;05/10/2022;12/13/2022;COMP;State Agency;3;Tier 1;4;N;
+M-0272;C-023;Commercial Lease Review;C;05/05/2022;08/17/2022;COMP;None;2;Tier 2;5;N;
+M-0271;C-043;Contract Dispute Arbitration;C;05/04/2022;08/19/2023;COMP;Arbitration;2;Tier 1;1;N;
+M-0270;C-057;Paga Response;C;05/02/2022;03/31/2023;COMP;Arbitration;2;Tier 2;1;Y;02/27/2023
+M-0269;C-042;Commercial Lease Review;C;04/28/2022;06/12/2022;COMP;None;2;Tier 3;2;N;
+M-0268;C-033;Employment Single Plaintiff Defense;C;04/26/2022;10/01/2023;COMP;State Agency;2;Tier 1;1;N;
+M-0267;C-047;Paga Response;C;04/22/2022;03/14/2023;COMP;Arbitration;2;Tier 1;1;N;
+M-0266;C-048;Paga Response;C;04/21/2022;12/10/2022;COMP;Arbitration;2;Tier 1;1;N;
+M-0265;C-060;Public Works Bid Protest;C;04/20/2022;07/07/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0264;C-018;Administrative Licensing Appeal;C;04/19/2022;10/25/2022;COMP;State Agency;2;Tier 3;1;N;
+M-0263;C-054;Employment Single Plaintiff Defense;C;04/16/2022;01/24/2023;COMP;State Agency;3;Tier 2;1;N;
+M-0262;C-016;Internal Investigation;C;04/14/2022;11/20/2022;COMP;None;2;Tier 4;1;N;
+M-0261;C-029;Internal Investigation;C;04/12/2022;10/30/2022;COMP;None;2;Tier 1;1;N;
+M-0260;C-003;Employment Single Plaintiff Defense;C;04/11/2022;06/20/2024;COMP;Superior Court;3;Tier 3;1;N;
+M-0259;C-055;Ordinance Drafting;C;04/09/2022;10/10/2022;COMP;Local Agency;2;Tier 2;1;Y;09/21/2022
+M-0258;C-054;Paga Response;C;04/06/2022;11/23/2022;COMP;Arbitration;3;Tier 2;1;N;
+M-0257;C-034;Public Works Bid Protest;C;04/03/2022;05/25/2022;COMP;Superior Court;2;Tier 1;1;N;
+M-0256;C-059;Ordinance Drafting;C;04/03/2022;04/29/2022;XFER;Local Agency;2;Tier 4;1;N;
+M-0255;C-010;Public Works Bid Protest;C;04/01/2022;06/03/2022;COMP;Superior Court;4;Tier 4;1;N;
+M-0254;C-034;Public Works Bid Protest;C;03/28/2022;07/15/2022;COMP;Superior Court;2;Tier 1;1;Y;07/05/2022
+M-0253;C-011;Commercial Lease Review;C;03/28/2022;04/27/2022;COMP;None;2;Tier 3;8;N;
+M-0252;C-020;Internal Investigation;C;03/19/2022;08/11/2022;COMP;None;2;Tier 2;1;N;
+M-0251;C-001;Commercial Lease Review;C;03/19/2022;04/28/2022;COMP;None;2;Tier 1;1;N;
+M-0250;C-028;Facility Change Of Ownership;C;03/17/2022;09/11/2022;COMP;State Agency;2;Tier 2;1;N;
+M-0249;C-008;Administrative Licensing Appeal;C;03/17/2022;01/29/2023;COMP;State Agency;2;Tier 2;1;N;
+M-0248;C-057;Commercial Lease Review;C;03/10/2022;05/28/2022;COMP;None;2;Tier 1;1;N;
+M-0247;C-008;Employment Single Plaintiff Defense;C;03/02/2022;01/15/2023;COMP;Arbitration;2;Tier 1;1;N;
+M-0246;C-007;Public Works Bid Protest;C;03/01/2022;05/12/2022;COMP;Superior Court;2;Tier 2;1;Y;05/05/2022
+M-0245;C-034;Regulatory Compliance Audit;C;02/28/2022;09/17/2022;COMP;State Agency;3;Tier 2;1;N;
+M-0244;C-023;Ordinance Drafting;C;02/27/2022;08/03/2022;COMP;Local Agency;3;Tier 2;1;N;
+M-0243;C-027;Ordinance Drafting;C;02/27/2022;06/24/2022;COMP;Local Agency;2;Tier 1;1;Y;06/05/2022
+M-0242;C-052;Contract Dispute Arbitration;C;02/27/2022;01/03/2023;COMP;Arbitration;2;Tier 3;1;Y;11/17/2022
+M-0241;C-003;Public Works Bid Protest;C;02/18/2022;05/06/2022;COMP;Local Agency;2;Tier 2;1;N;
+M-0240;C-007;Employment Single Plaintiff Defense;C;02/15/2022;07/24/2023;COMP;Superior Court;2;Tier 2;1;Y;05/11/2023
+M-0239;C-046;Facility Change Of Ownership;C;02/14/2022;09/09/2022;COMP;State Agency;2;Tier 1;1;N;
+M-0238;C-004;Paga Response;C;02/05/2022;08/14/2022;COMP;Arbitration;2;Tier 2;1;N;
+M-0237;C-037;Regulatory Compliance Audit;C;01/29/2022;06/03/2022;COMP;State Agency;2;Tier 4;1;N;
+M-0236;C-020;Paga Response;C;01/27/2022;08/26/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0235;C-004;Ordinance Drafting;C;01/21/2022;04/16/2022;COMP;Local Agency;2;Tier 3;1;Y;04/06/2022
+M-0234;C-056;Employment Single Plaintiff Defense;C;01/21/2022;03/18/2023;COMP;Arbitration;2;Tier 1;1;Y;02/05/2023
+M-0233;C-035;Regulatory Compliance Audit;C;01/19/2022;07/12/2022;COMP;None;3;Tier 2;1;N;
+M-0232;C-052;Public Records Litigation;C;01/16/2022;05/07/2022;COMP;Appellate Court;4;Tier 2;1;N;
+M-0231;C-005;Ordinance Drafting;C;01/16/2022;06/20/2022;COMP;Local Agency;2;Tier 3;1;N;
+M-0230;C-020;Facility Change Of Ownership;C;01/14/2022;10/25/2022;COMP;State Agency;2;Tier 2;2;N;
+M-0229;C-052;Regulatory Compliance Audit;C;01/05/2022;05/16/2022;COMP;None;2;Tier 2;1;N;
+M-0228;C-048;Public Works Bid Protest;C;01/04/2022;02/27/2022;COMP;Superior Court;2;Tier 1;1;N;
+M-0227;C-033;Administrative Licensing Appeal;C;12/30/2021;05/01/2022;COMP;State Agency;2;Tier 2;1;N;
+M-0226;C-034;Ordinance Drafting;C;12/24/2021;03/23/2022;COMP;Local Agency;2;Tier 3;1;N;
+M-0225;C-055;Public Records Litigation;C;12/23/2021;04/18/2022;COMP;Superior Court;2;Tier 1;1;Y;03/31/2022
+M-0224;C-002;Contract Dispute Arbitration;C;12/21/2021;09/02/2022;COMP;Arbitration;2;Tier 2;1;N;
+M-0223;C-054;Paga Response;C;12/19/2021;11/05/2022;COMP;Superior Court;3;Tier 2;1;Y;09/15/2022
+M-0222;C-055;Paga Response;C;12/19/2021;07/25/2022;COMP;Arbitration;2;Tier 2;1;N;
+M-0221;C-029;Internal Investigation;C;12/13/2021;04/29/2022;COMP;None;2;Tier 3;1;N;
+M-0220;C-027;Paga Response;C;12/11/2021;10/13/2022;COMP;Arbitration;2;Tier 2;1;Y;09/14/2022
+M-0219;C-013;Internal Investigation;C;12/11/2021;05/08/2022;COMP;None;2;Tier 2;1;N;
+M-0218;C-049;Internal Investigation;C;12/10/2021;05/29/2022;COMP;None;2;Tier 2;1;N;
+M-0217;C-052;Facility Change Of Ownership;C;12/10/2021;04/30/2022;COMP;State Agency;2;Tier 2;1;N;
+M-0216;C-011;Paga Response;C;12/09/2021;08/01/2022;COMP;Arbitration;5;Tier 1;1;N;
+M-0215;C-010;Administrative Licensing Appeal;C;12/07/2021;05/14/2022;COMP;State Agency;2;Tier 2;1;N;
+M-0214;C-036;Paga Response;C;11/26/2021;05/19/2023;COMP;Superior Court;2;Tier 2;1;N;
+M-0213;C-049;Employment Single Plaintiff Defense;C;11/26/2021;04/05/2023;COMP;State Agency;2;Tier 2;1;N;
+M-0212;C-013;Administrative Licensing Appeal;C;11/25/2021;07/21/2022;SETL;State Agency;2;Tier 3;1;N;
+M-0211;C-001;Employment Single Plaintiff Defense;C;11/18/2021;12/04/2022;COMP;State Agency;2;Tier 1;1;N;
+M-0210;C-052;Public Records Litigation;C;11/15/2021;07/14/2022;COMP;Appellate Court;3;Tier 1;1;N;
+M-0209;C-013;Public Records Litigation;C;11/08/2021;06/09/2022;COMP;Superior Court;4;Tier 1;1;Y;05/09/2022
+M-0208;C-039;Paga Response;C;11/02/2021;04/14/2022;SETL;Superior Court;3;Tier 2;1;N;
+M-0207;C-054;Public Works Bid Protest;C;10/29/2021;12/29/2021;COMP;Local Agency;3;Tier 3;1;Y;12/20/2021
+M-0206;C-051;Public Records Litigation;C;10/23/2021;06/22/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0205;C-035;Paga Response;C;10/11/2021;11/05/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0204;C-049;Paga Response;C;10/09/2021;07/20/2022;COMP;Superior Court;3;Tier 2;1;Y;06/07/2022
+M-0203;C-040;Commercial Lease Review;C;10/09/2021;11/22/2021;COMP;None;2;Tier 1;1;N;
+M-0202;C-032;Employment Single Plaintiff Defense;C;10/06/2021;07/27/2023;COMP;Arbitration;2;Tier 1;1;N;
+M-0201;C-049;Facility Change Of Ownership;C;09/28/2021;12/18/2021;COMP;State Agency;3;Tier 3;2;N;
+M-0200;C-020;Public Works Bid Protest;C;09/27/2021;12/30/2021;COMP;Local Agency;2;Tier 3;1;N;
+M-0199;C-046;Paga Response;C;09/27/2021;10/07/2022;COMP;Arbitration;2;Tier 2;1;N;
+M-0198;C-049;Administrative Licensing Appeal;C;09/20/2021;05/01/2022;COMP;State Agency;2;Tier 2;1;N;
+M-0197;C-015;Public Records Litigation;C;09/18/2021;12/06/2021;SETL;Superior Court;2;Tier 3;1;N;
+M-0196;C-027;Public Records Litigation;C;09/10/2021;04/02/2022;COMP;Appellate Court;2;Tier 2;1;Y;03/05/2022
+M-0195;C-013;Internal Investigation;C;09/06/2021;12/31/2021;COMP;None;2;Tier 2;1;N;
+M-0194;C-001;Regulatory Compliance Audit;C;09/02/2021;01/08/2022;COMP;None;3;Tier 2;1;N;
+M-0193;C-058;Public Works Bid Protest;C;09/02/2021;11/17/2021;COMP;Superior Court;2;Tier 3;1;Y;11/06/2021
+M-0192;C-011;Employment Single Plaintiff Defense;C;09/02/2021;06/10/2022;COMP;State Agency;2;Tier 3;1;N;
+M-0191;C-006;Administrative Licensing Appeal;C;09/01/2021;05/07/2022;COMP;State Agency;2;Tier 2;1;Y;04/12/2022
+M-0190;C-052;Employment Single Plaintiff Defense;C;08/23/2021;07/25/2022;COMP;State Agency;3;Tier 1;1;Y;06/11/2022
+M-0189;C-014;Regulatory Compliance Audit;C;08/22/2021;01/03/2022;COMP;State Agency;3;Tier 3;1;N;
+M-0188;C-039;Public Records Litigation;C;08/22/2021;03/22/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0187;C-054;Paga Response;C;08/22/2021;11/28/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0186;C-042;Employment Single Plaintiff Defense;C;08/13/2021;08/07/2022;COMP;State Agency;2;Tier 2;1;Y;07/02/2022
+M-0185;C-035;Administrative Licensing Appeal;C;08/04/2021;10/01/2022;COMP;State Agency;3;Tier 4;1;Y;08/26/2022
+M-0184;C-030;Administrative Licensing Appeal;C;08/04/2021;07/28/2022;COMP;State Agency;2;Tier 2;1;Y;06/18/2022
+M-0183;C-020;Administrative Licensing Appeal;C;08/04/2021;06/21/2022;COMP;State Agency;2;Tier 2;1;Y;05/23/2022
+M-0182;C-024;Commercial Lease Review;C;08/03/2021;08/25/2021;COMP;None;2;Tier 3;1;N;
+M-0181;C-057;Employment Single Plaintiff Defense;C;07/30/2021;11/13/2022;COMP;State Agency;2;Tier 3;1;N;
+M-0180;C-005;Contract Dispute Arbitration;C;07/28/2021;09/02/2022;COMP;Arbitration;2;Tier 2;1;N;
+M-0179;C-034;Public Records Litigation;C;07/24/2021;01/10/2022;COMP;Superior Court;3;Tier 3;1;N;
+M-0178;C-012;Ordinance Drafting;C;07/24/2021;10/16/2021;COMP;Local Agency;2;Tier 2;1;N;
+M-0177;C-033;Paga Response;C;07/20/2021;11/21/2021;COMP;Superior Court;2;Tier 2;1;N;
+M-0176;C-030;Employment Single Plaintiff Defense;C;07/19/2021;12/18/2022;COMP;Superior Court;3;Tier 3;1;N;
+M-0175;C-028;Employment Single Plaintiff Defense;C;07/16/2021;04/27/2022;COMP;State Agency;2;Tier 4;1;N;
+M-0174;C-033;Contract Dispute Arbitration;C;07/11/2021;05/02/2022;COMP;Arbitration;2;Tier 1;1;Y;03/28/2022
+M-0173;C-021;Ordinance Drafting;C;07/10/2021;10/17/2021;COMP;Local Agency;2;Tier 2;1;N;
+M-0172;C-051;Public Works Bid Protest;C;07/09/2021;09/15/2021;COMP;Superior Court;4;Tier 2;1;Y;09/06/2021
+M-0171;C-051;Public Records Litigation;C;07/05/2021;10/19/2021;SETL;Superior Court;5;Tier 2;1;N;
+M-0170;C-018;Internal Investigation;C;07/02/2021;02/01/2022;COMP;None;2;Tier 4;1;N;
+M-0169;C-027;Ordinance Drafting;C;07/01/2021;10/04/2021;COMP;Local Agency;2;Tier 2;1;N;
+M-0168;C-008;Public Works Bid Protest;C;06/30/2021;09/21/2021;COMP;Local Agency;2;Tier 3;1;Y;09/08/2021
+M-0167;C-059;Public Works Bid Protest;C;06/27/2021;10/07/2021;COMP;Superior Court;2;Tier 1;1;Y;09/28/2021
+M-0166;C-013;Regulatory Compliance Audit;C;06/22/2021;11/15/2021;COMP;State Agency;2;Tier 1;1;N;
+M-0165;C-039;Ordinance Drafting;C;06/22/2021;11/08/2021;COMP;Local Agency;3;Tier 1;1;N;
+M-0164;C-044;Commercial Lease Review;C;06/12/2021;08/04/2021;COMP;None;2;Tier 1;3;N;
+M-0163;C-004;Public Records Litigation;C;06/08/2021;12/20/2021;COMP;Superior Court;5;Tier 2;1;N;
+M-0162;C-053;Administrative Licensing Appeal;C;06/05/2021;11/20/2021;COMP;State Agency;2;Tier 2;1;Y;10/31/2021
+M-0161;C-060;Public Records Litigation;C;06/03/2021;01/19/2022;COMP;Appellate Court;3;Tier 3;1;N;
+M-0160;C-044;Facility Change Of Ownership;C;06/03/2021;10/20/2021;SETL;State Agency;2;Tier 4;1;N;
+M-0159;C-018;Facility Change Of Ownership;C;05/30/2021;11/06/2021;COMP;State Agency;3;Tier 1;1;N;
+M-0158;C-033;Internal Investigation;C;05/21/2021;08/28/2021;COMP;None;3;Tier 1;1;N;
+M-0157;C-047;Regulatory Compliance Audit;C;05/15/2021;09/08/2021;XFER;State Agency;3;Tier 3;1;N;
+M-0156;C-024;Employment Single Plaintiff Defense;C;05/15/2021;07/18/2023;COMP;Superior Court;2;Tier 4;1;Y;04/07/2023
+M-0155;C-003;Administrative Licensing Appeal;C;05/15/2021;08/11/2021;COMP;State Agency;2;Tier 1;1;Y;07/31/2021
+M-0154;C-028;Ordinance Drafting;C;05/14/2021;10/05/2021;COMP;Local Agency;2;Tier 2;1;N;
+M-0153;C-019;Facility Change Of Ownership;C;05/06/2021;01/21/2022;COMP;State Agency;2;Tier 4;1;N;
+M-0152;C-006;Administrative Licensing Appeal;C;04/25/2021;09/21/2021;COMP;State Agency;2;Tier 3;1;N;
+M-0151;C-021;Facility Change Of Ownership;C;04/24/2021;12/24/2021;COMP;State Agency;6;Tier 3;1;N;
+M-0150;C-027;Ordinance Drafting;C;04/20/2021;07/17/2021;COMP;Local Agency;2;Tier 1;1;N;
+M-0149;C-004;Paga Response;C;04/14/2021;01/10/2022;COMP;Superior Court;2;Tier 4;1;N;
+M-0148;C-006;Public Records Litigation;C;04/13/2021;10/27/2021;COMP;Superior Court;5;Tier 1;1;Y;10/01/2021
+M-0147;C-033;Election Law Advisory;C;04/07/2021;06/01/2021;COMP;Local Agency;4;Tier 3;1;N;
+M-0146;C-012;Ordinance Drafting;C;04/01/2021;07/13/2021;COMP;Local Agency;3;Tier 2;1;Y;07/01/2021
+M-0145;C-050;Public Records Litigation;C;03/26/2021;07/20/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0144;C-020;Election Law Advisory;C;03/20/2021;06/05/2021;COMP;Local Agency;5;Tier 4;1;N;
+M-0143;C-042;Employment Single Plaintiff Defense;C;03/19/2021;11/26/2021;COMP;Arbitration;2;Tier 2;1;N;
+M-0142;C-060;Paga Response;C;03/18/2021;09/28/2021;SETL;Arbitration;2;Tier 1;1;N;
+M-0141;C-040;Facility Change Of Ownership;C;03/15/2021;08/24/2021;COMP;State Agency;4;Tier 2;1;N;
+M-0140;C-005;Facility Change Of Ownership;C;03/14/2021;06/23/2021;COMP;State Agency;2;Tier 1;1;N;
+M-0139;C-029;Facility Change Of Ownership;C;03/13/2021;09/04/2021;COMP;State Agency;3;Tier 4;1;N;
+M-0138;C-045;Internal Investigation;C;03/11/2021;08/09/2021;COMP;None;2;Tier 3;1;N;
+M-0137;C-003;Contract Dispute Arbitration;C;02/28/2021;02/23/2022;COMP;Arbitration;2;Tier 3;1;Y;01/23/2022
+M-0136;C-040;Paga Response;C;02/25/2021;03/28/2022;COMP;Superior Court;3;Tier 1;1;Y;01/25/2022
+M-0135;C-055;Employment Single Plaintiff Defense;C;02/25/2021;02/26/2022;COMP;Arbitration;2;Tier 2;1;N;
+M-0134;C-004;Commercial Lease Review;C;02/21/2021;03/30/2021;COMP;None;2;Tier 2;4;N;
+M-0133;C-012;Public Records Litigation;C;02/17/2021;09/11/2021;COMP;Superior Court;4;Tier 1;1;Y;08/22/2021
+M-0132;C-050;Public Records Litigation;C;02/15/2021;11/16/2021;COMP;Superior Court;6;Tier 2;1;N;
+M-0131;C-041;Commercial Lease Review;C;02/15/2021;03/30/2021;COMP;None;2;Tier 3;2;N;
+M-0130;C-028;Regulatory Compliance Audit;C;02/14/2021;11/01/2021;COMP;State Agency;2;Tier 3;1;N;
+M-0129;C-036;Contract Dispute Arbitration;C;02/11/2021;11/28/2021;COMP;Arbitration;2;Tier 4;1;N;
+M-0128;C-027;Public Records Litigation;C;02/02/2021;02/15/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0127;C-048;Internal Investigation;C;02/01/2021;05/22/2021;COMP;None;2;Tier 2;1;N;
+M-0126;C-017;Public Records Litigation;C;01/30/2021;09/10/2021;COMP;Superior Court;2;Tier 3;1;Y;08/13/2021
+M-0125;C-012;Administrative Licensing Appeal;C;01/28/2021;10/11/2021;COMP;State Agency;2;Tier 2;1;Y;09/14/2021
+M-0124;C-032;Employment Single Plaintiff Defense;C;01/27/2021;04/10/2023;COMP;Superior Court;2;Tier 3;1;N;
+M-0123;C-031;Regulatory Compliance Audit;C;01/24/2021;05/20/2022;COMP;State Agency;2;Tier 1;1;N;
+M-0122;C-002;Internal Investigation;C;01/24/2021;04/29/2021;XFER;None;2;Tier 2;1;N;
+M-0121;C-047;Internal Investigation;C;01/21/2021;05/24/2021;COMP;None;2;Tier 2;1;N;
+M-0120;C-013;Regulatory Compliance Audit;C;01/18/2021;04/12/2021;SETL;None;2;Tier 2;1;N;
+M-0119;C-036;Ordinance Drafting;C;01/02/2021;06/11/2021;COMP;Local Agency;3;Tier 2;1;N;
+M-0118;C-020;Public Records Litigation;C;01/01/2021;10/19/2021;COMP;Superior Court;3;Tier 2;1;Y;09/05/2021
+M-0117;C-020;Public Records Litigation;C;01/01/2021;08/23/2021;COMP;Superior Court;2;Tier 2;1;Y;07/16/2021
+M-0116;C-009;Employment Single Plaintiff Defense;C;12/30/2020;05/26/2022;COMP;Superior Court;3;Tier 4;1;Y;04/12/2022
+M-0115;C-043;Contract Dispute Arbitration;C;12/27/2020;07/14/2021;COMP;Arbitration;3;Tier 3;1;N;
+M-0114;C-016;Regulatory Compliance Audit;C;12/26/2020;03/18/2021;XFER;None;2;Tier 2;1;N;
+M-0113;C-020;Facility Change Of Ownership;C;12/24/2020;05/15/2021;COMP;State Agency;4;Tier 1;1;N;
+M-0112;C-039;Public Records Litigation;C;12/22/2020;07/17/2021;COMP;Superior Court;4;Tier 1;1;N;
+M-0111;C-033;Contract Dispute Arbitration;C;12/19/2020;02/07/2022;COMP;Arbitration;2;Tier 2;1;Y;12/24/2021
+M-0110;C-020;Public Works Bid Protest;C;12/17/2020;04/19/2021;COMP;Local Agency;2;Tier 1;1;N;
+M-0109;C-026;Facility Change Of Ownership;C;12/15/2020;06/16/2021;COMP;State Agency;4;Tier 2;1;N;
+M-0108;C-026;Commercial Lease Review;C;12/11/2020;03/07/2021;COMP;None;3;Tier 4;1;N;
+M-0107;C-012;Public Works Bid Protest;C;12/08/2020;04/17/2021;COMP;Local Agency;4;Tier 2;1;Y;03/30/2021
+M-0106;C-030;Public Works Bid Protest;C;12/07/2020;01/20/2021;COMP;Superior Court;2;Tier 3;1;Y;01/16/2021
+M-0105;C-031;Internal Investigation;C;12/05/2020;03/12/2021;COMP;None;6;Tier 1;1;N;
+M-0104;C-011;Ordinance Drafting;C;12/01/2020;02/06/2021;OTH;Local Agency;2;Tier 1;1;N;
+M-0103;C-059;Public Works Bid Protest;C;11/28/2020;02/22/2021;COMP;Superior Court;4;Tier 4;1;N;
+M-0102;C-008;Administrative Licensing Appeal;C;11/26/2020;07/26/2021;COMP;State Agency;2;Tier 2;1;N;
+M-0101;C-018;Commercial Lease Review;C;11/23/2020;12/19/2020;COMP;None;3;Tier 2;1;N;
+M-0100;C-041;Public Records Litigation;C;11/21/2020;04/13/2022;COMP;Appellate Court;2;Tier 1;1;N;
+M-0099;C-015;Ordinance Drafting;C;11/14/2020;02/04/2021;SETL;Local Agency;2;Tier 2;1;N;
+M-0098;C-023;Internal Investigation;C;11/14/2020;05/15/2021;COMP;None;3;Tier 1;1;N;
+M-0097;C-019;Facility Change Of Ownership;C;11/12/2020;05/07/2021;COMP;State Agency;2;Tier 3;3;N;
+M-0096;C-049;Employment Single Plaintiff Defense;C;11/12/2020;10/24/2021;COMP;State Agency;2;Tier 3;1;N;
+M-0095;C-038;Regulatory Compliance Audit;C;11/09/2020;06/26/2021;COMP;None;2;Tier 2;1;N;
+M-0094;C-003;Ordinance Drafting;C;11/07/2020;03/15/2021;COMP;Local Agency;2;Tier 1;1;N;
+M-0093;C-023;Public Works Bid Protest;C;10/31/2020;02/18/2021;COMP;Local Agency;3;Tier 1;1;Y;02/04/2021
+M-0092;C-056;Ordinance Drafting;C;10/30/2020;03/29/2021;COMP;Local Agency;2;Tier 3;1;Y;03/10/2021
+M-0091;C-047;Employment Single Plaintiff Defense;C;10/26/2020;12/10/2021;COMP;Arbitration;4;Tier 4;1;N;
+M-0090;C-035;Ordinance Drafting;C;10/10/2020;12/28/2020;COMP;Local Agency;3;Tier 1;1;N;
+M-0089;C-018;Public Records Litigation;C;10/05/2020;12/10/2021;COMP;Appellate Court;2;Tier 2;1;N;
+M-0088;C-037;Paga Response;C;10/05/2020;08/12/2021;COMP;Arbitration;3;Tier 1;1;N;
+M-0087;C-023;Commercial Lease Review;C;09/30/2020;11/19/2020;COMP;None;2;Tier 3;1;N;
+M-0086;C-029;Facility Change Of Ownership;C;09/27/2020;12/03/2020;SETL;State Agency;2;Tier 1;2;N;
+M-0085;C-004;Ordinance Drafting;C;09/26/2020;11/08/2020;SETL;Local Agency;2;Tier 2;1;N;
+M-0084;C-022;Employment Single Plaintiff Defense;C;09/21/2020;10/21/2021;COMP;Superior Court;2;Tier 1;1;N;
+M-0083;C-012;Facility Change Of Ownership;C;09/14/2020;05/31/2021;COMP;State Agency;2;Tier 4;1;N;
+M-0082;C-012;Facility Change Of Ownership;C;09/09/2020;02/04/2021;COMP;State Agency;2;Tier 2;1;N;
+M-0081;C-003;Internal Investigation;C;09/08/2020;12/28/2020;COMP;None;2;Tier 3;1;N;
+M-0080;C-051;Administrative Licensing Appeal;C;08/31/2020;01/21/2021;SETL;State Agency;2;Tier 1;1;N;
+M-0079;C-009;Regulatory Compliance Audit;C;08/26/2020;11/05/2020;SETL;State Agency;3;Tier 2;1;N;
+M-0078;C-043;Internal Investigation;C;08/24/2020;02/02/2021;COMP;None;2;Tier 1;1;N;
+M-0077;C-048;Employment Single Plaintiff Defense;C;08/23/2020;03/24/2022;COMP;Superior Court;2;Tier 1;1;N;
+M-0076;C-020;Contract Dispute Arbitration;C;08/19/2020;01/13/2022;COMP;Arbitration;2;Tier 2;1;N;
+M-0075;C-037;Employment Single Plaintiff Defense;C;08/16/2020;07/17/2022;COMP;Arbitration;3;Tier 2;1;Y;03/29/2022
+M-0074;C-025;Public Records Litigation;C;08/11/2020;03/01/2021;COMP;Appellate Court;2;Tier 3;1;N;
+M-0073;C-055;Public Records Litigation;C;08/03/2020;05/21/2021;COMP;Superior Court;2;Tier 1;1;Y;04/27/2021
+M-0072;C-036;Ordinance Drafting;C;08/01/2020;01/29/2021;COMP;Local Agency;2;Tier 3;1;N;
+M-0071;C-011;Facility Change Of Ownership;C;07/29/2020;11/13/2020;COMP;State Agency;2;Tier 2;5;N;
+M-0070;C-042;Paga Response;C;07/27/2020;08/20/2021;COMP;Arbitration;4;Tier 2;1;N;
+M-0069;C-042;Paga Response;C;07/27/2020;05/20/2021;COMP;Arbitration;3;Tier 4;1;N;
+M-0068;C-053;Public Works Bid Protest;C;07/22/2020;10/22/2020;COMP;Local Agency;3;Tier 2;1;N;
+M-0067;C-032;Public Works Bid Protest;C;07/17/2020;08/19/2020;SETL;Superior Court;2;Tier 2;1;N;
+M-0066;C-036;Ordinance Drafting;C;07/10/2020;10/20/2020;COMP;Local Agency;4;Tier 1;1;N;
+M-0065;C-010;Internal Investigation;C;07/07/2020;10/14/2020;COMP;None;2;Tier 1;1;N;
+M-0064;C-059;Public Works Bid Protest;C;07/04/2020;08/16/2020;COMP;Superior Court;2;Tier 3;1;Y;08/10/2020
+M-0063;C-017;Public Records Litigation;C;07/03/2020;02/19/2021;COMP;Superior Court;2;Tier 3;1;Y;01/28/2021
+M-0062;C-056;Public Records Litigation;C;07/02/2020;11/12/2020;COMP;Appellate Court;3;Tier 2;1;Y;10/25/2020
+M-0061;C-040;Paga Response;C;07/01/2020;03/03/2021;COMP;Arbitration;2;Tier 3;1;N;
+M-0060;C-030;Commercial Lease Review;C;06/29/2020;08/28/2020;COMP;None;2;Tier 2;2;N;
+M-0059;C-060;Paga Response;C;06/19/2020;08/10/2021;COMP;Arbitration;2;Tier 1;1;N;
+M-0058;C-005;Employment Single Plaintiff Defense;C;06/17/2020;06/05/2021;COMP;Arbitration;2;Tier 3;1;N;
+M-0057;C-036;Administrative Licensing Appeal;C;06/14/2020;10/23/2020;COMP;State Agency;4;Tier 3;1;Y;10/06/2020
+M-0056;C-055;Administrative Licensing Appeal;C;06/14/2020;06/09/2021;COMP;State Agency;3;Tier 4;1;Y;04/25/2021
+M-0055;C-015;Administrative Licensing Appeal;C;06/14/2020;08/11/2020;XFER;State Agency;2;Tier 1;1;N;
+M-0054;C-055;Employment Single Plaintiff Defense;C;06/13/2020;08/16/2021;COMP;State Agency;2;Tier 2;1;N;
+M-0053;C-010;Employment Single Plaintiff Defense;C;06/11/2020;08/30/2022;COMP;State Agency;2;Tier 2;1;N;
+M-0052;C-001;Administrative Licensing Appeal;C;06/09/2020;01/14/2021;COMP;State Agency;2;Tier 2;1;N;
+M-0051;C-020;Commercial Lease Review;C;06/07/2020;07/21/2020;COMP;None;2;Tier 2;5;N;
+M-0050;C-013;Employment Single Plaintiff Defense;C;06/01/2020;02/26/2023;COMP;Arbitration;2;Tier 2;1;N;
+M-0049;C-030;Public Works Bid Protest;C;05/31/2020;08/10/2020;COMP;Local Agency;2;Tier 3;1;N;
+M-0048;C-008;Employment Single Plaintiff Defense;C;05/30/2020;04/05/2021;COMP;Arbitration;2;Tier 2;1;N;
+M-0047;C-020;Facility Change Of Ownership;C;05/29/2020;09/16/2020;COMP;State Agency;2;Tier 2;1;N;
+M-0046;C-002;Paga Response;C;05/24/2020;01/06/2021;COMP;Superior Court;3;Tier 2;1;N;
+M-0045;C-046;Regulatory Compliance Audit;C;05/23/2020;09/11/2021;COMP;None;2;Tier 1;1;N;
+M-0044;C-055;Employment Single Plaintiff Defense;C;05/23/2020;07/29/2021;COMP;Arbitration;2;Tier 2;1;N;
+M-0043;C-008;Public Works Bid Protest;C;05/22/2020;07/25/2020;COMP;Local Agency;2;Tier 1;1;Y;07/17/2020
+M-0042;C-043;Contract Dispute Arbitration;C;05/12/2020;02/20/2021;COMP;Arbitration;2;Tier 2;1;N;
+M-0041;C-007;Facility Change Of Ownership;C;05/10/2020;09/18/2020;COMP;State Agency;3;Tier 1;4;N;
+M-0040;C-006;Facility Change Of Ownership;C;05/09/2020;02/27/2021;COMP;State Agency;2;Tier 1;4;N;
+M-0039;C-054;Ordinance Drafting;C;05/07/2020;08/02/2020;COMP;Local Agency;2;Tier 2;1;Y;07/24/2020
+M-0038;C-041;Employment Single Plaintiff Defense;C;05/06/2020;10/18/2021;COMP;Arbitration;2;Tier 1;1;N;
+M-0037;C-023;Commercial Lease Review;C;05/05/2020;06/18/2020;COMP;None;2;Tier 3;1;N;
+M-0036;C-003;Public Works Bid Protest;C;04/28/2020;08/31/2020;COMP;Local Agency;4;Tier 1;1;Y;08/18/2020
+M-0035;C-007;Public Works Bid Protest;C;04/27/2020;08/01/2020;COMP;Superior Court;2;Tier 1;1;Y;07/23/2020
+M-0034;C-055;Contract Dispute Arbitration;C;04/24/2020;12/04/2020;COMP;Arbitration;2;Tier 2;1;N;
+M-0033;C-044;Public Records Litigation;C;04/19/2020;10/02/2020;COMP;Superior Court;2;Tier 1;1;Y;09/15/2020
+M-0032;C-040;Regulatory Compliance Audit;C;04/10/2020;09/28/2020;COMP;None;2;Tier 3;1;N;
+M-0031;C-051;Commercial Lease Review;C;04/06/2020;05/13/2020;COMP;None;3;Tier 2;3;N;
+M-0030;C-043;Contract Dispute Arbitration;C;04/04/2020;04/28/2021;COMP;Arbitration;2;Tier 2;1;Y;02/28/2021
+M-0029;C-018;Ordinance Drafting;C;04/02/2020;09/09/2020;COMP;Local Agency;2;Tier 4;1;Y;08/20/2020
+M-0028;C-029;Regulatory Compliance Audit;C;03/25/2020;09/07/2020;COMP;State Agency;3;Tier 1;1;N;
+M-0027;C-048;Employment Single Plaintiff Defense;C;03/22/2020;04/13/2021;COMP;Superior Court;2;Tier 4;1;N;
+M-0026;C-009;Public Records Litigation;C;03/18/2020;01/23/2021;COMP;Appellate Court;3;Tier 1;1;Y;12/21/2020
+M-0025;C-043;Public Records Litigation;C;03/16/2020;11/16/2020;COMP;Superior Court;2;Tier 1;1;Y;10/26/2020
+M-0024;C-039;Internal Investigation;C;03/14/2020;07/14/2020;SETL;None;2;Tier 1;1;N;
+M-0023;C-038;Public Records Litigation;C;03/11/2020;01/27/2021;COMP;Appellate Court;2;Tier 4;1;N;
+M-0022;C-013;Facility Change Of Ownership;C;03/03/2020;06/13/2020;COMP;State Agency;2;Tier 4;1;N;
+M-0021;C-025;Ordinance Drafting;C;02/25/2020;06/21/2020;COMP;Local Agency;3;Tier 3;1;N;
+M-0020;C-050;Public Records Litigation;C;02/23/2020;06/22/2020;COMP;Superior Court;3;Tier 1;1;N;
+M-0019;C-031;Commercial Lease Review;C;02/22/2020;03/13/2020;COMP;None;2;Tier 1;8;N;
+M-0018;C-045;Paga Response;C;02/20/2020;02/01/2021;COMP;Superior Court;2;Tier 1;1;N;
+M-0017;C-032;Contract Dispute Arbitration;C;02/18/2020;06/17/2021;COMP;Arbitration;3;Tier 1;1;N;
+M-0016;C-057;Public Records Litigation;C;02/13/2020;08/21/2020;COMP;Superior Court;3;Tier 4;1;Y;08/03/2020
+M-0015;C-045;Ordinance Drafting;C;02/11/2020;07/28/2020;COMP;Local Agency;3;Tier 3;1;N;
+M-0014;C-050;Employment Single Plaintiff Defense;C;02/11/2020;12/20/2020;COMP;State Agency;2;Tier 3;1;Y;11/10/2020
+M-0013;C-035;Commercial Lease Review;C;02/07/2020;03/15/2020;COMP;None;2;Tier 3;1;N;
+M-0012;C-044;Employment Single Plaintiff Defense;C;01/29/2020;02/12/2021;COMP;Superior Court;2;Tier 1;1;N;
+M-0011;C-022;Public Records Litigation;C;01/27/2020;12/26/2020;COMP;Appellate Court;2;Tier 2;1;N;
+M-0010;C-028;Employment Single Plaintiff Defense;C;01/27/2020;01/06/2022;COMP;Superior Court;2;Tier 2;1;N;
+M-0009;C-005;Facility Change Of Ownership;C;01/15/2020;06/03/2020;COMP;State Agency;2;Tier 1;1;N;
+M-0008;C-025;Ordinance Drafting;C;01/13/2020;07/09/2020;COMP;Local Agency;2;Tier 1;1;Y;06/23/2020
+M-0007;C-013;Commercial Lease Review;C;01/11/2020;02/25/2020;COMP;None;2;Tier 2;1;N;
+M-0006;C-021;Employment Single Plaintiff Defense;C;01/10/2020;08/02/2020;COMP;Arbitration;2;Tier 2;1;N;
+M-0005;C-024;Contract Dispute Arbitration;C;01/06/2020;11/04/2020;COMP;Arbitration;2;Tier 3;1;Y;10/09/2020
+M-0004;C-019;Paga Response;C;01/04/2020;02/21/2021;COMP;Arbitration;2;Tier 3;1;N;
+M-0003;C-051;Employment Single Plaintiff Defense;C;01/04/2020;06/29/2021;COMP;Arbitration;2;Tier 1;1;N;
+M-0002;C-028;Contract Dispute Arbitration;C;01/02/2020;10/14/2020;COMP;Arbitration;3;Tier 3;1;N;
+M-0001;C-018;Contract Dispute Arbitration;C;01/02/2020;07/29/2021;COMP;Arbitration;2;Tier 1;1;Y;06/04/2021

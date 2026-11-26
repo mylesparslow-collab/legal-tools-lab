@@ -1,0 +1,286 @@
+{
+  "doc_sha256": "d95098ed31707546e7eb7afaa1a63115192a2edf872b4cba65fcfdcf18a6a5ab",
+  "filing_date": "2027-01-15",
+  "citations": [
+    {
+      "kind": "case",
+      "text": "977 F.4th 1180",
+      "start": 446,
+      "end": 460,
+      "key": "case:977 F.4th 1180",
+      "form": "full",
+      "pin": "1187",
+      "volume": "977",
+      "reporter": "F.4th",
+      "page": "1180",
+      "case_name": "Quillfeather Mfg. Co. v. Dunmore",
+      "year": "2025",
+      "law_code": null,
+      "section": null,
+      "title": null,
+      "antecedent_id": null,
+      "quotes": [
+        {
+          "text": "[C]ourts should not presume that a timekeeping system is accurate merely because it is automated . . . .",
+          "start": 305,
+          "end": 411
+        }
+      ],
+      "id": "b3ac3fd6-1",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Quillfeather Manufacturing Co. v. Dunmore (2025) ca9 (SYNTHETIC test record)"
+        },
+        {
+          "name": "case_name",
+          "status": "pass",
+          "detail": "Case name matches source."
+        },
+        {
+          "name": "year",
+          "status": "pass",
+          "detail": "Year matches source."
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 1187 is within pages 1180-1195."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim on page 1187.",
+          "quote_start": 305
+        }
+      ],
+      "quote_results": [
+        {
+          "text": "[C]ourts should not presume that a timekeeping system is accurate merely because it is automated . . . .",
+          "start": 305,
+          "end": 411,
+          "status": "QUOTE_VERIFIED",
+          "offset": 2618,
+          "matched": "om three of the defendant's locations. Courts should not presume that a timekeeping system is accurate merely because it is automated",
+          "segments": 1,
+          "page": 1187,
+          "detail": "Found verbatim on page 1187."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900003",
+        "synthetic": true
+      },
+      "machine_status": "PASS",
+      "requires_attorney": true
+    },
+    {
+      "kind": "case",
+      "text": "97 Cal.5th 210",
+      "start": 710,
+      "end": 724,
+      "key": "case:97 Cal. 5th 210",
+      "form": "full",
+      "pin": "223",
+      "volume": "97",
+      "reporter": "Cal. 5th",
+      "page": "210",
+      "case_name": "Halvorsen v. Bright Harbor Staffing, Inc.",
+      "year": "2024",
+      "law_code": null,
+      "section": null,
+      "title": null,
+      "antecedent_id": null,
+      "quotes": [
+        {
+          "text": "A staffing agency that controls the work schedule shares responsibility for recording the start and end of each rest interval.",
+          "start": 531,
+          "end": 659
+        }
+      ],
+      "id": "f402f4de-1",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Halvorsen v. Bright Harbor Staffing, Inc. (2024) cal (SYNTHETIC test record)"
+        },
+        {
+          "name": "case_name",
+          "status": "pass",
+          "detail": "Case name matches source."
+        },
+        {
+          "name": "year",
+          "status": "pass",
+          "detail": "Year matches source."
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 223 is within pages 210-241."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim on page 223.",
+          "quote_start": 531
+        }
+      ],
+      "quote_results": [
+        {
+          "text": "A staffing agency that controls the work schedule shares responsibility for recording the start and end of each rest interval.",
+          "start": 531,
+          "end": 659,
+          "status": "QUOTE_VERIFIED",
+          "offset": 4656,
+          "matched": "A staffing agency that controls the work schedule shares responsibility for recording the start and end of each rest interval",
+          "segments": 1,
+          "page": 223,
+          "detail": "Found verbatim on page 223."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900001",
+        "synthetic": true
+      },
+      "machine_status": "PASS",
+      "requires_attorney": true
+    },
+    {
+      "kind": "case",
+      "text": "Id. at 230",
+      "start": 879,
+      "end": 889,
+      "key": "case:97 Cal. 5th 210",
+      "form": "id",
+      "pin": "230",
+      "volume": "97",
+      "reporter": "Cal. 5th",
+      "page": "210",
+      "case_name": "Halvorsen v. Bright Harbor Staffing, Inc.",
+      "year": null,
+      "law_code": null,
+      "section": null,
+      "title": null,
+      "antecedent_id": "case:97 Cal. 5th 210",
+      "quotes": [
+        {
+          "text": "[w]here the employer's own records are silent, a factfinder may draw a reasonable inference from the pattern of omissions.",
+          "start": 753,
+          "end": 877
+        }
+      ],
+      "id": "f402f4de-2",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Halvorsen v. Bright Harbor Staffing, Inc. (2024) cal (SYNTHETIC test record)"
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 230 is within pages 210-241."
+        },
+        {
+          "name": "quote",
+          "status": "pass",
+          "detail": "Found verbatim on page 230.",
+          "quote_start": 753
+        }
+      ],
+      "quote_results": [
+        {
+          "text": "[w]here the employer's own records are silent, a factfinder may draw a reasonable inference from the pattern of omissions.",
+          "start": 753,
+          "end": 877,
+          "status": "QUOTE_VERIFIED",
+          "offset": 7328,
+          "matched": "ns do not require extended discussion. Where the employer's own records are silent, a factfinder may draw a reasonable inference from the pattern of omissions",
+          "segments": 1,
+          "page": 230,
+          "detail": "Found verbatim on page 230."
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900001",
+        "synthetic": true
+      },
+      "machine_status": "PASS",
+      "requires_attorney": true
+    }
+  ],
+  "summary": {
+    "PASS": 3,
+    "WARN": 0,
+    "FAIL": 0,
+    "MANUAL": 0,
+    "total": 3,
+    "quotes": 3,
+    "unverified_quotes": 0
+  },
+  "notice": "Mechanical checks only. This tool does not determine whether an authority is still good law (overruled, depublished, review granted, superseded, amended). Run KeyCite or Shepard's and read the authority before you mark it verified.",
+  "mirror": {
+    "meta": {
+      "snapshot": "2026-11-25",
+      "notes": "Demo mirror. Cases are synthetic. Statute and CFR text is real, copied from official sources on 2026-11-25.",
+      "demo": "yes"
+    },
+    "coverage": [
+      {
+        "source": "courtlistener",
+        "scope": "cal5th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "courtlistener",
+        "scope": "calapp5th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "courtlistener",
+        "scope": "f4th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "ecfr",
+        "scope": "29:541",
+        "complete": 0,
+        "as_of": "2026-11-01",
+        "note": "partial: 541.100 only"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "BPC",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "CCP",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "LAB",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial: demo sections only"
+      }
+    ]
+  }
+}

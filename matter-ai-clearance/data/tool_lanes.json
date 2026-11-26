@@ -1,0 +1,318 @@
+{
+ "description": "Tool lanes: which data classes each tool feature may receive. Fictional tools and fictional contract terms. Field names follow the governance-eval-kit registry where one exists (id, name, status, business_owner, last_review, and data_boundary.runs_in, model_provider, data_allowed, retention, used_for_training, agreements).",
+ "organization": "The firm (fictional)",
+ "as_of": "2026-11-25",
+ "field_notes": {
+  "data_allowed": "Data classes the feature may receive: public, firm_internal, client_confidential, phi, protective_order_material, sealed. Anything not listed is off.",
+  "baa_covers_feature": "true, false or unknown. Whether a signed business associate agreement is confirmed to cover this feature. What the agreement must cover is an attorney decision.",
+  "used_for_training": "no, yes or unknown.",
+  "retention_class": "zero, fixed_days, tenant_policy, matter_controlled, vendor_default or unknown.",
+  "retention_days": "Days the vendor keeps inputs or outputs outside firm control. A number or unknown.",
+  "connectors_enabled": "true, false or unknown.",
+  "web_access_enabled": "true, false or unknown.",
+  "hosting": "local (firm-hosted), firm_tenant, vendor_cloud or unknown."
+ },
+ "features": [
+  {
+   "id": "assistant-a.chat-web",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "category": "general assistant",
+   "feature": "Chat with web search",
+   "short_name": "Assistant A web chat",
+   "status": "production",
+   "business_owner": "Director of Practice Technology",
+   "last_review": "2026-10-15",
+   "data_allowed": [
+    "public",
+    "firm_internal"
+   ],
+   "baa_covers_feature": false,
+   "used_for_training": "no",
+   "retention": "Vendor keeps chats 30 days",
+   "retention_class": "fixed_days",
+   "retention_days": 30,
+   "connectors_enabled": false,
+   "web_access_enabled": true,
+   "hosting": "vendor_cloud",
+   "data_region": "US",
+   "runs_in": "Vendor cloud",
+   "model_provider": "Third-party model vendor",
+   "agreements": [
+    "Enterprise terms with no-training clause"
+   ]
+  },
+  {
+   "id": "assistant-a.file-analysis",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "category": "general assistant",
+   "feature": "File upload and analysis",
+   "short_name": "Assistant A files",
+   "status": "production",
+   "business_owner": "Director of Practice Technology",
+   "last_review": "2026-10-15",
+   "data_allowed": [
+    "public",
+    "firm_internal",
+    "client_confidential"
+   ],
+   "baa_covers_feature": false,
+   "used_for_training": "no",
+   "retention": "Vendor keeps files and chats 30 days",
+   "retention_class": "fixed_days",
+   "retention_days": 30,
+   "connectors_enabled": false,
+   "web_access_enabled": false,
+   "hosting": "vendor_cloud",
+   "data_region": "US",
+   "runs_in": "Vendor cloud",
+   "model_provider": "Third-party model vendor",
+   "agreements": [
+    "Enterprise terms with no-training clause"
+   ]
+  },
+  {
+   "id": "assistant-a.dms-connector",
+   "tool_id": "assistant-a",
+   "tool_name": "Assistant A",
+   "category": "general assistant",
+   "feature": "Connector to the document management system",
+   "short_name": "Assistant A connector",
+   "status": "pilot",
+   "business_owner": "Director of Practice Technology",
+   "last_review": "2026-10-15",
+   "data_allowed": [
+    "public",
+    "firm_internal",
+    "client_confidential"
+   ],
+   "baa_covers_feature": false,
+   "used_for_training": "no",
+   "retention": "Vendor keeps retrieved passages 30 days",
+   "retention_class": "fixed_days",
+   "retention_days": 30,
+   "connectors_enabled": true,
+   "web_access_enabled": false,
+   "hosting": "vendor_cloud",
+   "data_region": "US",
+   "runs_in": "Vendor cloud",
+   "model_provider": "Third-party model vendor",
+   "agreements": [
+    "Enterprise terms with no-training clause"
+   ]
+  },
+  {
+   "id": "suite-b.doc-summary",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "category": "productivity suite assistant",
+   "feature": "Summary and drafting in the word processor",
+   "short_name": "Suite B documents",
+   "status": "production",
+   "business_owner": "Chief Information Officer",
+   "last_review": "2026-11-03",
+   "data_allowed": [
+    "public",
+    "firm_internal",
+    "client_confidential",
+    "phi",
+    "protective_order_material"
+   ],
+   "baa_covers_feature": true,
+   "used_for_training": "no",
+   "retention": "Stays in the firm tenant under the tenant retention policy; no vendor copy",
+   "retention_class": "tenant_policy",
+   "retention_days": 0,
+   "connectors_enabled": false,
+   "web_access_enabled": false,
+   "hosting": "firm_tenant",
+   "data_region": "US",
+   "runs_in": "Firm productivity-suite tenant",
+   "model_provider": "Vendor-hosted model inside the tenant boundary",
+   "agreements": [
+    "Enterprise data protection addendum",
+    "Business associate agreement (fictional), feature schedule lists this feature"
+   ]
+  },
+  {
+   "id": "suite-b.email",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "category": "productivity suite assistant",
+   "feature": "Email drafting with mailbox access",
+   "short_name": "Suite B email",
+   "status": "production",
+   "business_owner": "Chief Information Officer",
+   "last_review": "2026-11-03",
+   "data_allowed": [
+    "public",
+    "firm_internal",
+    "client_confidential"
+   ],
+   "baa_covers_feature": true,
+   "used_for_training": "no",
+   "retention": "Stays in the firm tenant under the tenant retention policy",
+   "retention_class": "tenant_policy",
+   "retention_days": 0,
+   "connectors_enabled": true,
+   "web_access_enabled": false,
+   "hosting": "firm_tenant",
+   "data_region": "US",
+   "runs_in": "Firm productivity-suite tenant",
+   "model_provider": "Vendor-hosted model inside the tenant boundary",
+   "agreements": [
+    "Enterprise data protection addendum",
+    "Business associate agreement (fictional), feature schedule lists this feature"
+   ]
+  },
+  {
+   "id": "suite-b.meeting-notes",
+   "tool_id": "suite-b",
+   "tool_name": "Suite Assistant B",
+   "category": "productivity suite assistant",
+   "feature": "Meeting transcription and notes",
+   "short_name": "Suite B meeting notes",
+   "status": "pilot",
+   "business_owner": "Chief Information Officer",
+   "last_review": "2026-08-20",
+   "data_allowed": [
+    "public",
+    "firm_internal",
+    "client_confidential",
+    "phi"
+   ],
+   "baa_covers_feature": "unknown",
+   "used_for_training": "no",
+   "retention": "Not confirmed for this feature",
+   "retention_class": "unknown",
+   "retention_days": "unknown",
+   "connectors_enabled": false,
+   "web_access_enabled": false,
+   "hosting": "firm_tenant",
+   "data_region": "US",
+   "runs_in": "Firm productivity-suite tenant",
+   "model_provider": "Vendor-hosted model inside the tenant boundary",
+   "agreements": [
+    "Enterprise data protection addendum"
+   ]
+  },
+  {
+   "id": "research-c.qa",
+   "tool_id": "research-c",
+   "tool_name": "Research C",
+   "category": "legal research AI",
+   "feature": "Research questions over the vendor's library",
+   "short_name": "Research C questions",
+   "status": "production",
+   "business_owner": "Director of Library Services",
+   "last_review": "2026-09-12",
+   "data_allowed": [
+    "public",
+    "firm_internal",
+    "client_confidential"
+   ],
+   "baa_covers_feature": false,
+   "used_for_training": "no",
+   "retention": "Vendor keeps query history 90 days",
+   "retention_class": "fixed_days",
+   "retention_days": 90,
+   "connectors_enabled": false,
+   "web_access_enabled": false,
+   "hosting": "vendor_cloud",
+   "data_region": "US",
+   "runs_in": "Vendor cloud",
+   "model_provider": "Legal research vendor",
+   "agreements": [
+    "Subscription agreement with confidentiality terms"
+   ]
+  },
+  {
+   "id": "research-c.brief-upload",
+   "tool_id": "research-c",
+   "tool_name": "Research C",
+   "category": "legal research AI",
+   "feature": "Brief upload and analysis",
+   "short_name": "Research C brief upload",
+   "status": "pilot",
+   "business_owner": "Director of Library Services",
+   "last_review": "2026-05-30",
+   "data_allowed": [
+    "public",
+    "firm_internal",
+    "client_confidential"
+   ],
+   "baa_covers_feature": false,
+   "used_for_training": "unknown",
+   "retention": "Vendor default; terms for uploads not confirmed",
+   "retention_class": "unknown",
+   "retention_days": "unknown",
+   "connectors_enabled": false,
+   "web_access_enabled": false,
+   "hosting": "vendor_cloud",
+   "data_region": "unknown",
+   "runs_in": "Vendor cloud",
+   "model_provider": "Legal research vendor",
+   "agreements": []
+  },
+  {
+   "id": "review-d.review",
+   "tool_id": "review-d",
+   "tool_name": "Review D",
+   "category": "document review AI",
+   "feature": "Review coding and summaries",
+   "short_name": "Review D",
+   "status": "production",
+   "business_owner": "Litigation Support Manager",
+   "last_review": "2026-10-28",
+   "data_allowed": [
+    "public",
+    "firm_internal",
+    "client_confidential",
+    "phi",
+    "protective_order_material"
+   ],
+   "baa_covers_feature": true,
+   "used_for_training": "no",
+   "retention": "Kept in the firm-hosted review workspace; deleted when the matter workspace is closed",
+   "retention_class": "matter_controlled",
+   "retention_days": 0,
+   "connectors_enabled": false,
+   "web_access_enabled": false,
+   "hosting": "local",
+   "data_region": "US",
+   "runs_in": "Firm data center",
+   "model_provider": "Model runs inside the firm-hosted review platform",
+   "agreements": [
+    "Software license",
+    "Business associate agreement (fictional), covers the hosted platform"
+   ]
+  },
+  {
+   "id": "transcribe-e.dictation",
+   "tool_id": "transcribe-e",
+   "tool_name": "Transcribe E",
+   "category": "dictation and transcription",
+   "feature": "Dictation",
+   "short_name": "Transcribe E",
+   "status": "proposed",
+   "business_owner": "To be assigned",
+   "last_review": "2026-03-02",
+   "data_allowed": [
+    "public"
+   ],
+   "baa_covers_feature": "unknown",
+   "used_for_training": "unknown",
+   "retention": "Not reviewed",
+   "retention_class": "unknown",
+   "retention_days": "unknown",
+   "connectors_enabled": "unknown",
+   "web_access_enabled": "unknown",
+   "hosting": "unknown",
+   "data_region": "unknown",
+   "runs_in": "Vendor cloud",
+   "model_provider": "Not confirmed",
+   "agreements": []
+  }
+ ]
+}

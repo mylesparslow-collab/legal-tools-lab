@@ -1,0 +1,389 @@
+Matter banners as of 2026-11-25
+
+M-1001  Quenby Vale: payer contract compliance review
+  AI: Suite B documents, Review D allowed with notice to Quenby, billing review, attorney review, PHI use logged, consent on file; no PHI in any tool except Suite B documents, Review D
+  assistant-a.chat-web         NOT ALLOWED              consent required and not on file; tool not on the approved list; feature not approved for this data class; no confirmed business associate agreement; connectors or web access on
+                               rules: POL-CT-03, POL-CT-08, POL-LANE-01, POL-PHI-02, POL-PHI-03
+  assistant-a.file-analysis    NOT ALLOWED              consent required and not on file; tool not on the approved list; feature not approved for this data class; no confirmed business associate agreement
+                               rules: POL-CT-03, POL-CT-08, POL-LANE-01, POL-PHI-02
+  assistant-a.dms-connector    NOT ALLOWED              consent required and not on file; tool not on the approved list; feature not approved for this data class; no confirmed business associate agreement; connectors or web access on
+                               rules: POL-CT-03, POL-CT-08, POL-LANE-01, POL-PHI-02, POL-PHI-03
+  suite-b.doc-summary          ALLOWED WITH CONDITIONS  notice to Quenby; billing review; attorney review; PHI use logged; consent on file
+                               rules: POL-CT-04, POL-CT-05, POL-CT-12, POL-CT-13, POL-PHI-05
+  suite-b.email                NOT ALLOWED              consent required and not on file; feature not approved for this data class; connectors or web access on
+                               rules: POL-CT-03, POL-CT-05, POL-CT-12, POL-CT-13, POL-LANE-01, POL-PHI-03
+  suite-b.meeting-notes        NOT ALLOWED              consent required and not on file; retention longer than the terms allow; no confirmed business associate agreement; retention not confirmed
+                               rules: POL-CT-03, POL-CT-10, POL-PHI-02, POL-PHI-04
+  research-c.qa                NOT ALLOWED              consent required and not on file; tool not on the approved list; retention longer than the terms allow; feature not approved for this data class; no confirmed business associate agreement
+                               rules: POL-CT-03, POL-CT-08, POL-CT-10, POL-LANE-01, POL-PHI-02
+  research-c.brief-upload      NOT ALLOWED              consent required and not on file; terms bar training on client data; tool not on the approved list; retention longer than the terms allow; hosting region outside the terms; feature not approved for this data class; training terms not confirmed; no confirmed business associate agreement; retention not confirmed
+                               rules: POL-CT-03, POL-CT-06, POL-CT-08, POL-CT-10, POL-CT-11, POL-LANE-01, POL-LANE-03, POL-PHI-02, POL-PHI-04
+  review-d.review              ALLOWED WITH CONDITIONS  notice to Quenby; billing review; attorney review; PHI use logged; consent on file
+                               rules: POL-CT-04, POL-CT-05, POL-CT-12, POL-CT-13, POL-PHI-05
+  transcribe-e.dictation       NOT ALLOWED              consent required and not on file; terms bar training on client data; tool not on the approved list; retention longer than the terms allow; hosting region outside the terms; feature not approved for this data class; feature not in service; training terms not confirmed; no confirmed business associate agreement; connectors or web access on; retention not confirmed
+                               rules: POL-CT-03, POL-CT-06, POL-CT-08, POL-CT-10, POL-CT-11, POL-LANE-01, POL-LANE-02, POL-LANE-03, POL-PHI-02, POL-PHI-03, POL-PHI-04
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1002  Quenby Vale: workplace investigation
+  AI: on hold for review (PHI status unknown); no PHI in any tool
+  assistant-a.chat-web         NOT ALLOWED              consent required and not on file; tool not on the approved list; feature not approved for this data class; no confirmed business associate agreement; connectors or web access on
+                               rules: POL-CT-03, POL-CT-08, POL-LANE-01, POL-PHI-02, POL-PHI-03
+  assistant-a.file-analysis    NOT ALLOWED              consent required and not on file; tool not on the approved list; feature not approved for this data class; no confirmed business associate agreement
+                               rules: POL-CT-03, POL-CT-08, POL-LANE-01, POL-PHI-02
+  assistant-a.dms-connector    NOT ALLOWED              consent required and not on file; tool not on the approved list; feature not approved for this data class; no confirmed business associate agreement; connectors or web access on
+                               rules: POL-CT-03, POL-CT-08, POL-LANE-01, POL-PHI-02, POL-PHI-03
+  suite-b.doc-summary          HOLD FOR REVIEW          PHI status unknown
+                               rules: POL-CT-03, POL-CT-05, POL-CT-12, POL-CT-13, POL-PHI-01
+  suite-b.email                HOLD FOR REVIEW          PHI status unknown
+                               rules: POL-CT-03, POL-CT-05, POL-CT-12, POL-CT-13, POL-LANE-01, POL-PHI-01, POL-PHI-03
+  suite-b.meeting-notes        NOT ALLOWED              consent required and not on file; retention longer than the terms allow; no confirmed business associate agreement; retention not confirmed
+                               rules: POL-CT-03, POL-CT-10, POL-PHI-02, POL-PHI-04
+  research-c.qa                NOT ALLOWED              consent required and not on file; tool not on the approved list; retention longer than the terms allow; feature not approved for this data class; no confirmed business associate agreement
+                               rules: POL-CT-03, POL-CT-08, POL-CT-10, POL-LANE-01, POL-PHI-02
+  research-c.brief-upload      NOT ALLOWED              consent required and not on file; terms bar training on client data; tool not on the approved list; retention longer than the terms allow; hosting region outside the terms; feature not approved for this data class; training terms not confirmed; no confirmed business associate agreement; retention not confirmed
+                               rules: POL-CT-03, POL-CT-06, POL-CT-08, POL-CT-10, POL-CT-11, POL-LANE-01, POL-LANE-03, POL-PHI-02, POL-PHI-04
+  review-d.review              HOLD FOR REVIEW          PHI status unknown
+                               rules: POL-CT-03, POL-CT-05, POL-CT-12, POL-CT-13, POL-PHI-01
+  transcribe-e.dictation       NOT ALLOWED              consent required and not on file; terms bar training on client data; tool not on the approved list; retention longer than the terms allow; hosting region outside the terms; feature not approved for this data class; feature not in service; training terms not confirmed; no confirmed business associate agreement; connectors or web access on; retention not confirmed
+                               rules: POL-CT-03, POL-CT-06, POL-CT-08, POL-CT-10, POL-CT-11, POL-LANE-01, POL-LANE-02, POL-LANE-03, POL-PHI-02, POL-PHI-03, POL-PHI-04
+  intake incomplete: data_flags.phi
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1003  Drennick: carrier master services agreement
+  AI: Assistant A files, Assistant A connector, Suite Assistant B (all 3 features), Research C questions, Review D allowed
+  assistant-a.chat-web         NOT ALLOWED              feature not approved for this data class
+                               rules: POL-LANE-01
+  assistant-a.file-analysis    ALLOWED                  
+                               rules: POL-CT-16
+  assistant-a.dms-connector    ALLOWED                  
+                               rules: POL-CT-16
+  suite-b.doc-summary          ALLOWED                  
+                               rules: POL-CT-16
+  suite-b.email                ALLOWED                  
+                               rules: POL-CT-16
+  suite-b.meeting-notes        ALLOWED                  
+                               rules: POL-CT-16
+  research-c.qa                ALLOWED                  
+                               rules: POL-CT-16
+  research-c.brief-upload      NOT ALLOWED              training terms not confirmed
+                               rules: POL-LANE-03
+  review-d.review              ALLOWED                  
+                               rules: POL-CT-16
+  transcribe-e.dictation       NOT ALLOWED              feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-LANE-01, POL-LANE-02, POL-LANE-03
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1004  Drennick v. Castellane Cold Storage (fictional): warehouse loss
+  AI: on hold for review (protective order silent or not yet read for AI terms); no protective-order material in any tool
+  assistant-a.chat-web         NOT ALLOWED              feature not approved for this data class; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-LANE-01, POL-PO-05, POL-PO-07
+  assistant-a.file-analysis    NOT ALLOWED              feature not approved for this data class; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-16, POL-LANE-01, POL-PO-05, POL-PO-07
+  assistant-a.dms-connector    NOT ALLOWED              feature not approved for this data class; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-16, POL-LANE-01, POL-PO-05, POL-PO-07
+  suite-b.doc-summary          NOT ALLOWED              vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-16, POL-PO-05, POL-PO-07
+  suite-b.email                NOT ALLOWED              feature not approved for this data class; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-16, POL-LANE-01, POL-PO-05, POL-PO-07
+  suite-b.meeting-notes        NOT ALLOWED              feature not approved for this data class; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-16, POL-LANE-01, POL-PO-05, POL-PO-07
+  research-c.qa                NOT ALLOWED              feature not approved for this data class; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-16, POL-LANE-01, POL-PO-05, POL-PO-07
+  research-c.brief-upload      NOT ALLOWED              feature not approved for this data class; training terms not confirmed; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-LANE-01, POL-LANE-03, POL-PO-05, POL-PO-07
+  review-d.review              HOLD FOR REVIEW          protective order silent or not yet read for AI terms
+                               rules: POL-CT-16, POL-PO-03
+  transcribe-e.dictation       NOT ALLOWED              feature not approved for this data class; feature not in service; training terms not confirmed; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-LANE-01, POL-LANE-02, POL-LANE-03, POL-PO-05, POL-PO-07
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1005  Ostrava Row: slip and fall defense (insured)
+  AI: not allowed on this matter (consent required and not on file)
+  assistant-a.chat-web         NOT ALLOWED              consent required and not on file; feature not approved for this data class
+                               rules: POL-CT-03, POL-LANE-01
+  assistant-a.file-analysis    NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  assistant-a.dms-connector    NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  suite-b.doc-summary          NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  suite-b.email                NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  suite-b.meeting-notes        NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  research-c.qa                NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  research-c.brief-upload      NOT ALLOWED              consent required and not on file; training terms not confirmed
+                               rules: POL-CT-03, POL-LANE-03
+  review-d.review              NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  transcribe-e.dictation       NOT ALLOWED              consent required and not on file; feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-CT-03, POL-LANE-01, POL-LANE-02, POL-LANE-03
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1006  Ostrava Row: retail lease renewal
+  AI: Assistant A files, Assistant A connector, Suite Assistant B (all 3 features), Research C questions, Review D allowed with billing review
+  assistant-a.chat-web         NOT ALLOWED              feature not approved for this data class
+                               rules: POL-LANE-01
+  assistant-a.file-analysis    ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  assistant-a.dms-connector    ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  suite-b.doc-summary          ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  suite-b.email                ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  suite-b.meeting-notes        ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  research-c.qa                ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  research-c.brief-upload      NOT ALLOWED              training terms not confirmed
+                               rules: POL-LANE-03
+  review-d.review              ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  transcribe-e.dictation       NOT ALLOWED              feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-LANE-01, POL-LANE-02, POL-LANE-03
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1007  Orrinthe: collaboration and license agreement
+  AI: not allowed on this matter (terms prohibit AI)
+  assistant-a.chat-web         NOT ALLOWED              terms prohibit AI; feature not approved for this data class
+                               rules: POL-CT-02, POL-LANE-01
+  assistant-a.file-analysis    NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  assistant-a.dms-connector    NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  suite-b.doc-summary          NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  suite-b.email                NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  suite-b.meeting-notes        NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  research-c.qa                NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  research-c.brief-upload      NOT ALLOWED              terms prohibit AI; training terms not confirmed
+                               rules: POL-CT-02, POL-LANE-03
+  review-d.review              NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  transcribe-e.dictation       NOT ALLOWED              terms prohibit AI; feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-CT-02, POL-LANE-01, POL-LANE-02, POL-LANE-03
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1008  Tessaly Harbor v. Bexmoor Holdings (fictional): loan enforcement
+  AI: Review D allowed with consent on file, order conditions confirmed; no protective-order material in any tool except Review D
+  assistant-a.chat-web         NOT ALLOWED              consent required and not on file; retention longer than the terms allow; feature not approved for this data class; order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-03, POL-CT-10, POL-LANE-01, POL-PO-04, POL-PO-07
+  assistant-a.file-analysis    NOT ALLOWED              consent required and not on file; retention longer than the terms allow; feature not approved for this data class; order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-03, POL-CT-10, POL-LANE-01, POL-PO-04, POL-PO-07
+  assistant-a.dms-connector    NOT ALLOWED              consent required and not on file; retention longer than the terms allow; feature not approved for this data class; order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-03, POL-CT-10, POL-LANE-01, POL-PO-04, POL-PO-07
+  suite-b.doc-summary          NOT ALLOWED              order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-04, POL-PO-04, POL-PO-07
+  suite-b.email                NOT ALLOWED              consent required and not on file; feature not approved for this data class; order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-03, POL-LANE-01, POL-PO-04, POL-PO-07
+  suite-b.meeting-notes        NOT ALLOWED              consent required and not on file; retention longer than the terms allow; feature not approved for this data class; order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-03, POL-CT-10, POL-LANE-01, POL-PO-04, POL-PO-07
+  research-c.qa                NOT ALLOWED              consent required and not on file; retention longer than the terms allow; feature not approved for this data class; order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-03, POL-CT-10, POL-LANE-01, POL-PO-04, POL-PO-07
+  research-c.brief-upload      NOT ALLOWED              consent required and not on file; terms bar training on client data; retention longer than the terms allow; hosting region outside the terms; feature not approved for this data class; training terms not confirmed; order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-03, POL-CT-06, POL-CT-10, POL-CT-11, POL-LANE-01, POL-LANE-03, POL-PO-04, POL-PO-07
+  review-d.review              ALLOWED WITH CONDITIONS  consent on file; order conditions confirmed
+                               rules: POL-CT-04, POL-PO-09
+  transcribe-e.dictation       NOT ALLOWED              consent required and not on file; terms bar training on client data; retention longer than the terms allow; hosting region outside the terms; feature not approved for this data class; feature not in service; training terms not confirmed; order bars vendor processing; retention does not fit the order
+                               rules: POL-CT-03, POL-CT-06, POL-CT-10, POL-CT-11, POL-LANE-01, POL-LANE-02, POL-LANE-03, POL-PO-04, POL-PO-07
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1009  Tessaly Harbor: syndicated credit facility
+  AI: not allowed on this matter (consent required and not on file)
+  assistant-a.chat-web         NOT ALLOWED              consent required and not on file; retention longer than the terms allow; feature not approved for this data class
+                               rules: POL-CT-03, POL-CT-10, POL-LANE-01
+  assistant-a.file-analysis    NOT ALLOWED              consent required and not on file; retention longer than the terms allow
+                               rules: POL-CT-03, POL-CT-10
+  assistant-a.dms-connector    NOT ALLOWED              consent required and not on file; retention longer than the terms allow
+                               rules: POL-CT-03, POL-CT-10
+  suite-b.doc-summary          NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  suite-b.email                NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  suite-b.meeting-notes        NOT ALLOWED              consent required and not on file; retention longer than the terms allow
+                               rules: POL-CT-03, POL-CT-10
+  research-c.qa                NOT ALLOWED              consent required and not on file; retention longer than the terms allow
+                               rules: POL-CT-03, POL-CT-10
+  research-c.brief-upload      NOT ALLOWED              consent required and not on file; terms bar training on client data; retention longer than the terms allow; hosting region outside the terms; training terms not confirmed
+                               rules: POL-CT-03, POL-CT-06, POL-CT-10, POL-CT-11, POL-LANE-03
+  review-d.review              NOT ALLOWED              consent required and not on file
+                               rules: POL-CT-03
+  transcribe-e.dictation       NOT ALLOWED              consent required and not on file; terms bar training on client data; retention longer than the terms allow; hosting region outside the terms; feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-CT-03, POL-CT-06, POL-CT-10, POL-CT-11, POL-LANE-01, POL-LANE-02, POL-LANE-03
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1010  Marrowfinch: distributor termination
+  AI: not allowed on this matter (terms prohibit AI); terms need analyst review
+  assistant-a.chat-web         NOT ALLOWED              terms prohibit AI; feature not approved for this data class
+                               rules: POL-CT-02, POL-LANE-01
+  assistant-a.file-analysis    NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  assistant-a.dms-connector    NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  suite-b.doc-summary          NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  suite-b.email                NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  suite-b.meeting-notes        NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  research-c.qa                NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  research-c.brief-upload      NOT ALLOWED              terms prohibit AI; training terms not confirmed
+                               rules: POL-CT-02, POL-LANE-03
+  review-d.review              NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  transcribe-e.dictation       NOT ALLOWED              terms prohibit AI; feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-CT-02, POL-LANE-01, POL-LANE-02, POL-LANE-03
+  NEEDS ANALYST REVIEW: terms conflict or are ambiguous
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1011  Quillfether: reseller agreement template
+  AI: Assistant A files, Assistant A connector, Suite Assistant B (all 3 features), Research C questions, Review D allowed with notice to Quillfether, billing review, attorney review
+  assistant-a.chat-web         NOT ALLOWED              feature not approved for this data class
+                               rules: POL-LANE-01
+  assistant-a.file-analysis    ALLOWED WITH CONDITIONS  notice to Quillfether; billing review; attorney review
+                               rules: POL-CT-05, POL-CT-12, POL-CT-13
+  assistant-a.dms-connector    ALLOWED WITH CONDITIONS  notice to Quillfether; billing review; attorney review
+                               rules: POL-CT-05, POL-CT-12, POL-CT-13
+  suite-b.doc-summary          ALLOWED WITH CONDITIONS  notice to Quillfether; billing review; attorney review
+                               rules: POL-CT-05, POL-CT-12, POL-CT-13
+  suite-b.email                ALLOWED WITH CONDITIONS  notice to Quillfether; billing review; attorney review
+                               rules: POL-CT-05, POL-CT-12, POL-CT-13
+  suite-b.meeting-notes        ALLOWED WITH CONDITIONS  notice to Quillfether; billing review; attorney review
+                               rules: POL-CT-05, POL-CT-12, POL-CT-13
+  research-c.qa                ALLOWED WITH CONDITIONS  notice to Quillfether; billing review; attorney review
+                               rules: POL-CT-05, POL-CT-12, POL-CT-13
+  research-c.brief-upload      NOT ALLOWED              terms bar training on client data; training terms not confirmed
+                               rules: POL-CT-06, POL-LANE-03
+  review-d.review              ALLOWED WITH CONDITIONS  notice to Quillfether; billing review; attorney review
+                               rules: POL-CT-05, POL-CT-12, POL-CT-13
+  transcribe-e.dictation       NOT ALLOWED              terms bar training on client data; feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-CT-06, POL-LANE-01, POL-LANE-02, POL-LANE-03
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1012  Sablemere: rate study challenge
+  AI: on hold for review (residency or retention terms not yet recorded; ambiguous terms: needs analyst review); terms need analyst review
+  assistant-a.chat-web         NOT ALLOWED              feature not approved for this data class
+                               rules: POL-LANE-01
+  assistant-a.file-analysis    HOLD FOR REVIEW          residency or retention terms not yet recorded; ambiguous terms: needs analyst review
+                               rules: POL-CT-09, POL-CT-15
+  assistant-a.dms-connector    HOLD FOR REVIEW          residency or retention terms not yet recorded; ambiguous terms: needs analyst review
+                               rules: POL-CT-09, POL-CT-15
+  suite-b.doc-summary          HOLD FOR REVIEW          residency or retention terms not yet recorded; ambiguous terms: needs analyst review
+                               rules: POL-CT-09, POL-CT-15
+  suite-b.email                HOLD FOR REVIEW          residency or retention terms not yet recorded; ambiguous terms: needs analyst review
+                               rules: POL-CT-09, POL-CT-15
+  suite-b.meeting-notes        HOLD FOR REVIEW          residency or retention terms not yet recorded; ambiguous terms: needs analyst review
+                               rules: POL-CT-09, POL-CT-15
+  research-c.qa                HOLD FOR REVIEW          residency or retention terms not yet recorded; ambiguous terms: needs analyst review
+                               rules: POL-CT-09, POL-CT-15
+  research-c.brief-upload      NOT ALLOWED              training terms not confirmed
+                               rules: POL-LANE-03
+  review-d.review              HOLD FOR REVIEW          residency or retention terms not yet recorded; ambiguous terms: needs analyst review
+                               rules: POL-CT-09, POL-CT-15
+  transcribe-e.dictation       NOT ALLOWED              feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-LANE-01, POL-LANE-02, POL-LANE-03
+  NEEDS ANALYST REVIEW: terms conflict or are ambiguous
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1013  Verdanthe: resident care claim
+  AI: Review D allowed with billing review, attorney review, PHI use logged, order conditions confirmed; no PHI in any tool except Review D; no protective-order material in any tool except Review D
+  assistant-a.chat-web         NOT ALLOWED              feature not approved for this data class; no confirmed business associate agreement; connectors or web access on; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-LANE-01, POL-PHI-02, POL-PHI-03, POL-PO-05, POL-PO-07
+  assistant-a.file-analysis    NOT ALLOWED              feature not approved for this data class; no confirmed business associate agreement; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-12, POL-CT-13, POL-LANE-01, POL-PHI-02, POL-PO-05, POL-PO-07
+  assistant-a.dms-connector    NOT ALLOWED              feature not approved for this data class; no confirmed business associate agreement; connectors or web access on; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-12, POL-CT-13, POL-LANE-01, POL-PHI-02, POL-PHI-03, POL-PO-05, POL-PO-07
+  suite-b.doc-summary          NOT ALLOWED              vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-12, POL-CT-13, POL-PHI-05, POL-PO-05, POL-PO-07
+  suite-b.email                NOT ALLOWED              feature not approved for this data class; connectors or web access on; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-12, POL-CT-13, POL-LANE-01, POL-PHI-03, POL-PO-05, POL-PO-07
+  suite-b.meeting-notes        NOT ALLOWED              feature not approved for this data class; no confirmed business associate agreement; retention not confirmed; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-12, POL-CT-13, POL-LANE-01, POL-PHI-02, POL-PHI-04, POL-PO-05, POL-PO-07
+  research-c.qa                NOT ALLOWED              feature not approved for this data class; no confirmed business associate agreement; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-CT-12, POL-CT-13, POL-LANE-01, POL-PHI-02, POL-PO-05, POL-PO-07
+  research-c.brief-upload      NOT ALLOWED              feature not approved for this data class; training terms not confirmed; no confirmed business associate agreement; retention not confirmed; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-LANE-01, POL-LANE-03, POL-PHI-02, POL-PHI-04, POL-PO-05, POL-PO-07
+  review-d.review              ALLOWED WITH CONDITIONS  billing review; attorney review; PHI use logged; order conditions confirmed
+                               rules: POL-CT-12, POL-CT-13, POL-PHI-05, POL-PO-09
+  transcribe-e.dictation       NOT ALLOWED              feature not approved for this data class; feature not in service; training terms not confirmed; no confirmed business associate agreement; connectors or web access on; retention not confirmed; vendor undertaking not on file; retention does not fit the order
+                               rules: POL-LANE-01, POL-LANE-02, POL-LANE-03, POL-PHI-02, POL-PHI-03, POL-PHI-04, POL-PO-05, POL-PO-07
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1014  Ironvale: acquisition of Hollisbrook Dental Supply (fictional)
+  AI: Suite B documents, Suite B email allowed with billing review
+  assistant-a.chat-web         NOT ALLOWED              consent required and not on file; tool not on the approved list; retention longer than the terms allow; feature not approved for this data class
+                               rules: POL-CT-03, POL-CT-08, POL-CT-10, POL-LANE-01
+  assistant-a.file-analysis    NOT ALLOWED              consent required and not on file; tool not on the approved list; retention longer than the terms allow
+                               rules: POL-CT-03, POL-CT-08, POL-CT-10
+  assistant-a.dms-connector    NOT ALLOWED              consent required and not on file; tool not on the approved list; retention longer than the terms allow
+                               rules: POL-CT-03, POL-CT-08, POL-CT-10
+  suite-b.doc-summary          ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  suite-b.email                ALLOWED WITH CONDITIONS  billing review
+                               rules: POL-CT-12
+  suite-b.meeting-notes        NOT ALLOWED              retention longer than the terms allow
+                               rules: POL-CT-10
+  research-c.qa                NOT ALLOWED              retention longer than the terms allow
+                               rules: POL-CT-10
+  research-c.brief-upload      NOT ALLOWED              retention longer than the terms allow; hosting region outside the terms; training terms not confirmed
+                               rules: POL-CT-10, POL-CT-11, POL-LANE-03
+  review-d.review              NOT ALLOWED              consent required and not on file; tool not on the approved list
+                               rules: POL-CT-03, POL-CT-08
+  transcribe-e.dictation       NOT ALLOWED              consent required and not on file; tool not on the approved list; retention longer than the terms allow; hosting region outside the terms; feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-CT-03, POL-CT-08, POL-CT-10, POL-CT-11, POL-LANE-01, POL-LANE-02, POL-LANE-03
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1015  Drennick: joint defense in cargo antitrust inquiry
+  AI: not allowed on this matter (terms prohibit AI); terms need analyst review
+  assistant-a.chat-web         NOT ALLOWED              terms prohibit AI; tool not on the approved list; feature not approved for this data class
+                               rules: POL-CT-02, POL-CT-08, POL-LANE-01
+  assistant-a.file-analysis    NOT ALLOWED              terms prohibit AI; tool not on the approved list
+                               rules: POL-CT-02, POL-CT-08
+  assistant-a.dms-connector    NOT ALLOWED              terms prohibit AI; tool not on the approved list
+                               rules: POL-CT-02, POL-CT-08
+  suite-b.doc-summary          NOT ALLOWED              terms prohibit AI; tool not on the approved list
+                               rules: POL-CT-02, POL-CT-08
+  suite-b.email                NOT ALLOWED              terms prohibit AI; tool not on the approved list
+                               rules: POL-CT-02, POL-CT-08
+  suite-b.meeting-notes        NOT ALLOWED              terms prohibit AI; tool not on the approved list
+                               rules: POL-CT-02, POL-CT-08
+  research-c.qa                NOT ALLOWED              terms prohibit AI; tool not on the approved list
+                               rules: POL-CT-02, POL-CT-08
+  research-c.brief-upload      NOT ALLOWED              terms prohibit AI; tool not on the approved list; training terms not confirmed
+                               rules: POL-CT-02, POL-CT-08, POL-LANE-03
+  review-d.review              NOT ALLOWED              terms prohibit AI
+                               rules: POL-CT-02
+  transcribe-e.dictation       NOT ALLOWED              terms prohibit AI; tool not on the approved list; feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-CT-02, POL-CT-08, POL-LANE-01, POL-LANE-02, POL-LANE-03
+  NEEDS ANALYST REVIEW: terms conflict or are ambiguous
+  rules past review date: POL-PO-03, POL-CT-12
+
+M-1016  Pallister Grove: supplier dispute
+  AI: on hold for review (client terms not on file)
+  assistant-a.chat-web         NOT ALLOWED              feature not approved for this data class
+                               rules: POL-LANE-01
+  assistant-a.file-analysis    HOLD FOR REVIEW          client terms not on file
+                               rules: POL-CT-01
+  assistant-a.dms-connector    HOLD FOR REVIEW          client terms not on file
+                               rules: POL-CT-01
+  suite-b.doc-summary          HOLD FOR REVIEW          client terms not on file
+                               rules: POL-CT-01
+  suite-b.email                HOLD FOR REVIEW          client terms not on file
+                               rules: POL-CT-01
+  suite-b.meeting-notes        HOLD FOR REVIEW          client terms not on file
+                               rules: POL-CT-01
+  research-c.qa                HOLD FOR REVIEW          client terms not on file
+                               rules: POL-CT-01
+  research-c.brief-upload      NOT ALLOWED              training terms not confirmed
+                               rules: POL-LANE-03
+  review-d.review              HOLD FOR REVIEW          client terms not on file
+                               rules: POL-CT-01
+  transcribe-e.dictation       NOT ALLOWED              feature not approved for this data class; feature not in service; training terms not confirmed
+                               rules: POL-LANE-01, POL-LANE-02, POL-LANE-03
+  rules past review date: POL-PO-03, POL-CT-12

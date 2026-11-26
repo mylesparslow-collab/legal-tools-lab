@@ -1,0 +1,684 @@
+{
+ "batch": "a",
+ "run": "first_run",
+ "combined": {
+  "deadlines": {
+   "tp": 0,
+   "fp": 2,
+   "fn": 19,
+   "precision": 0.0,
+   "recall": 0.0
+  },
+  "requirements": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 36,
+   "precision": 1.0,
+   "recall": 0.0
+  },
+  "forms": {
+   "tp": 0,
+   "fp": 2,
+   "fn": 15,
+   "precision": 0.0,
+   "recall": 0.0
+  },
+  "evaluation": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 15,
+   "precision": 1.0,
+   "recall": 0.0
+  },
+  "min_quals": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 12,
+   "precision": 1.0,
+   "recall": 0.0
+  },
+  "insurance": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 12,
+   "precision": 1.0,
+   "recall": 0.0
+  },
+  "mechanics": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 32,
+   "precision": 1.0,
+   "recall": 0.0
+  },
+  "parties": {
+   "tp": 23,
+   "fp": 20,
+   "fn": 10,
+   "precision": 0.535,
+   "recall": 0.697
+  },
+  "overall": {
+   "tp": 23,
+   "fp": 24,
+   "fn": 151,
+   "precision": 0.489,
+   "recall": 0.132
+  },
+  "question_type": {
+   "correct": 0,
+   "of_found": 0,
+   "of": 36
+  },
+  "addendum_handling": {
+   "passed": 2,
+   "of": 11
+  },
+  "page_limit": {
+   "correct": 0,
+   "of": 3
+  },
+  "submission_deadline": {
+   "correct": 0,
+   "of": 3
+  }
+ },
+ "per_rfp": {
+  "coverage_counsel_kestrel_ridge_jpia": {
+   "deadlines": {
+    "tp": 0,
+    "fp": 2,
+    "fn": 6,
+    "precision": 0.0,
+    "recall": 0.0,
+    "extra": [
+     "answers_issued 2027-01-15 12:00",
+     "submission_due 2027-02-03 16:00"
+    ],
+    "missed": [
+     "issued 2026-12-14 None",
+     "questions_due 2027-01-11 12:00",
+     "answers_issued 2027-01-15 None",
+     "submission_due 2027-02-10 14:00",
+     "interview 2027-02-25 None",
+     "award 2027-03-11 None"
+    ],
+    "date_right_time_or_kind_wrong": 1
+   },
+   "deadline_kinds_outside_existing_keys": [],
+   "submission_deadline": {
+    "key": "2027-02-10 14:00",
+    "parsed": [
+     "2027-02-03 16:00"
+    ],
+    "correct": false
+   },
+   "requirements": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 9,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "3.1 | Letter of Interest. A signed letter stating the firm's interest, the n",
+     "3.2 | The Firm. The firm's size, structure and offices, the number of attorn",
+     "3.3 | Personnel. The names and qualifications of the lead coverage counsel a",
+     "3.4 | Coverage Experience. A description of the firm's work in the last five",
+     "3.5 | Method of Service. How the firm would deliver coverage opinions within",
+     "3.6 | Client References. Three references from risk pools or insurers, with ",
+     "3.8 | Conflicts. A list of every member of the Authority that the firm has r",
+     "3.9 | Pricing. Hourly rates by attorney and paralegal; a proposed flat fee p",
+     "3.10 | Additional Information. Anything else the firm wishes the Authority to"
+    ],
+    "numbered_found": "0 of 9",
+    "unnumbered_found": "0 of 0"
+   },
+   "question_type": {
+    "correct": 0,
+    "of_found": 0,
+    "of": 9,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 0,
+    "fp": 2,
+    "fn": 5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "extra": [
+     "Appendix A (named in section PART THREE)",
+     "Appendix B (named in section PART FIVE)"
+    ],
+    "missed": [
+     "Proposal Cover Sheet",
+     "Certification of Non-Collusion",
+     "Conflict of Interest Questionnaire",
+     "Certificate of Insurance (or broker's letter)",
+     "Addenda Acknowledgment Form"
+    ]
+   },
+   "evaluation": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 5,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Coverage experience 45",
+     "Personnel 20",
+     "Method of service 15",
+     "Pricing 15",
+     "Client references 5"
+    ],
+    "weights_parsed_sum": 0
+   },
+   "min_quals": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Lead coverage counsel has been licensed to practice law for  | years_admitted 12",
+     "Lead coverage counsel has given coverage advice | not_checkable None",
+     "The firm has three (3) or more attorneys | attorney_count 3",
+     "Neither the firm nor any proposed attorney is defending | not_checkable None"
+    ]
+   },
+   "insurance": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Professional liability $2,000,000",
+     "Commercial general liability $1,000,000",
+     "Workers' compensation None",
+     "Cyber liability $2,000,000"
+    ]
+   },
+   "mechanics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 12,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "('kind', 'copies')",
+     "('kind', 'format')",
+     "('kind', 'packaging')",
+     "('kind', 'delivery')",
+     "('kind', 'not_accepted')",
+     "('kind', 'page_limit')",
+     "('kind', 'page_exclusions')",
+     "('kind', 'font')",
+     "('kind', 'margins')",
+     "('page_limit', 30)",
+     "('font', 11)",
+     "('margins', 1.0)"
+    ]
+   },
+   "page_limit": {
+    "key": 30,
+    "parsed": [],
+    "correct": false
+   },
+   "parties": {
+    "tp": 4,
+    "fp": 5,
+    "fn": 4,
+    "precision": 0.444,
+    "recall": 0.5,
+    "extra": [
+     "Its Claims (board)",
+     "Tobias Ferreira (board)",
+     "Treasurer Lucius Pemberton (board)",
+     "Stonebridge Claims (board)",
+     "Marlin Reach Reinsurance Company (adverse)"
+    ],
+    "missed": [
+     "Tobias Ferreira (staff)",
+     "Lucius Pemberton (board)",
+     "Stonebridge Claims Services, Inc. (other_organisation)",
+     "Marlin Reach Reinsurance Company (other_organisation)"
+    ]
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": []
+   },
+   "addendum_handling": {
+    "passed": 2,
+    "of": 11,
+    "checks": [
+     {
+      "check": "questions_due in force 2027-01-11",
+      "ok": false
+     },
+     {
+      "check": "answers_issued: date as issued (2027-01-12) still shown",
+      "ok": false
+     },
+     {
+      "check": "answers_issued in force 2027-01-15",
+      "ok": true
+     },
+     {
+      "check": "submission_due in force 2027-02-10 14:00",
+      "ok": false
+     },
+     {
+      "check": "page limit in force 30",
+      "ok": false
+     },
+     {
+      "check": "form added: Addenda Acknowledgment Form",
+      "ok": false
+     },
+     {
+      "check": "requirement 3.7 deleted",
+      "ok": true
+     },
+     {
+      "check": "criterion removed: Training program",
+      "ok": false
+     },
+     {
+      "check": "weight of Coverage experience now 45",
+      "ok": false
+     },
+     {
+      "check": "interview in force 2027-02-25",
+      "ok": false
+     },
+     {
+      "check": "insurance Cyber liability now $2,000,000",
+      "ok": false
+     }
+    ],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 4,
+    "fp": 9,
+    "fn": 49,
+    "precision": 0.308,
+    "recall": 0.075
+   },
+   "agency_correct": true
+  },
+  "general_counsel_ashdown_valley_ccd": {
+   "deadlines": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 7,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "issued 2026-12-07 None",
+     "conference 2026-12-15 10:30",
+     "questions_due 2026-12-18 17:00",
+     "answers_issued 2027-01-06 None",
+     "submission_due 2027-01-21 15:00",
+     "interview 2027-02-08 None",
+     "award 2027-03-09 None"
+    ],
+    "date_right_time_or_kind_wrong": 0
+   },
+   "deadline_kinds_outside_existing_keys": [
+    {
+     "kind": "start_of_services",
+     "date": "2027-04-01",
+     "found": false
+    }
+   ],
+   "submission_deadline": {
+    "key": "2027-01-21 15:00",
+    "parsed": [],
+    "correct": false
+   },
+   "requirements": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 13,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "E(i) | Transmittal Letter. Provide a letter of no more than two pages, signed",
+     "E(ii) | Firm Description. Describe the firm's history, ownership, size and off",
+     "E(iii) | Proposed Attorneys. Identify the lead counsel, the backup counsel and ",
+     "E(iv) | Education Law Experience. Describe the firm's experience over the last",
+     "E(v) | Service Approach. Explain how the firm would handle day-to-day request",
+     "E(vi) | How would the firm staff two urgent matters arising in the same week, ",
+     "E(vii) | References. Give the name, title, telephone number and email address o",
+     "E(viii) | Conflicts of Interest. Disclose any present or past representation of ",
+     "E(ix) | Fee Proposal. State the hourly rate for each attorney and paralegal, a",
+     "E(x) | Transition Plan. Describe the steps the firm would take in its first n",
+     "E(xi) | Claims and Discipline. Has the firm, or any attorney named in the prop",
+     "E-unnumbered-1 | In addition to the numbered items, every proposal must include a one-p",
+     "E-unnumbered-2 | A proposer that takes exception to any term of the District's standard"
+    ],
+    "numbered_found": "0 of 11",
+    "unnumbered_found": "0 of 2"
+   },
+   "question_type": {
+    "correct": 0,
+    "of_found": 0,
+    "of": 13,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 6,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Proposal Certification and Signature Page",
+     "Non-Collusion Declaration",
+     "Disclosure of Relationships with District Officials",
+     "Acknowledgment of Addenda",
+     "taxpayer identification form (Form W-9)",
+     "evidence of insurance"
+    ]
+   },
+   "evaluation": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 5,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "demonstrated experience in community college and education law 40",
+     "qualifications and availability of the proposed attorneys 25",
+     "service approach and responsiveness 15",
+     "fees 15",
+     "references 5"
+    ],
+    "weights_parsed_sum": 0
+   },
+   "min_quals": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "The attorney proposed as lead counsel shall have been a memb | years_admitted 10",
+     "The firm shall employ at least five | attorney_count 5",
+     "The firm shall have served as general counsel to at least th | not_checkable None",
+     "The firm shall maintain a staffed office within Calloway Cou | office_location Calloway County"
+    ]
+   },
+   "insurance": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "professional liability insurance $3,000,000",
+     "commercial general liability insurance $1,000,000",
+     "workers' compensation insurance None",
+     "automobile liability insurance $1,000,000"
+    ]
+   },
+   "mechanics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 12,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "('kind', 'copies')",
+     "('kind', 'format')",
+     "('kind', 'packaging')",
+     "('kind', 'delivery')",
+     "('kind', 'not_accepted')",
+     "('kind', 'page_limit')",
+     "('kind', 'page_exclusions')",
+     "('kind', 'font')",
+     "('kind', 'margins')",
+     "('page_limit', 20)",
+     "('font', 12)",
+     "('margins', 1.0)"
+    ]
+   },
+   "page_limit": {
+    "key": 20,
+    "parsed": [],
+    "correct": false
+   },
+   "parties": {
+    "tp": 10,
+    "fp": 10,
+    "fn": 2,
+    "precision": 0.5,
+    "recall": 0.833,
+    "extra": [
+     "Sorrel Canyon (board)",
+     "Alaric Fenwick (board)",
+     "Marguerite Solberg (board)",
+     "Firm Description (staff)",
+     "Proposed Attorneys (staff)",
+     "Education Law Experience (staff)",
+     "Service Approach (staff)",
+     "Faculty Association (staff)",
+     "Classified Employees Union (staff)",
+     "Transition Plan (staff)"
+    ],
+    "missed": [
+     "Alaric Fenwick (staff)",
+     "Marguerite Solberg (staff)"
+    ]
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": []
+   },
+   "addendum_handling": {
+    "passed": 0,
+    "of": 0,
+    "checks": [],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 10,
+    "fp": 10,
+    "fn": 53,
+    "precision": 0.5,
+    "recall": 0.159
+   },
+   "agency_correct": true
+  },
+  "litigation_counsel_lantern_bay_port": {
+   "deadlines": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 6,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "issued 2026-12-01 None",
+     "questions_due 2026-12-15 16:00",
+     "answers_issued 2026-12-22 None",
+     "submission_due 2027-01-15 16:30",
+     "interview 2027-02-02 None",
+     "award 2027-02-23 None"
+    ],
+    "date_right_time_or_kind_wrong": 0
+   },
+   "deadline_kinds_outside_existing_keys": [],
+   "submission_deadline": {
+    "key": "2027-01-15 16:30",
+    "parsed": [],
+    "correct": false
+   },
+   "requirements": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 14,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "6-unnumbered-1 | The cover letter must be signed by a partner, must identify the attorn",
+     "6-unnumbered-2 | Separately from the questionnaire answers, provide one writing sample:",
+     "B-1 | Describe the firm: when it was founded, how many attorneys it has, whe",
+     "B-2 | Who would lead the trial team, and who else would be on it? For each p",
+     "B-3 | Describe up to six construction disputes the firm has litigated or arb",
+     "B-4 | Describe the firm's experience in environmental litigation, including ",
+     "B-5 | How would the firm approach the first ninety days of the three matters",
+     "B-6 | How does the firm control litigation cost? Describe the firm's budgeti",
+     "B-7 | Provide four references from public agency clients for litigation hand",
+     "B-8 | Identify every matter in the last five years in which the firm represe",
+     "B-9 | State the hourly rate of each person named in B-2, the rates of parale",
+     "B-10 | If the firm is chosen, how would it take over the Carrowmore matter fr",
+     "B-unnumbered-1 | whether any attorney named in B-2 has been sanctioned by a court in th",
+     "B-unnumbered-2 | whether the firm is a certified small business or is owned by a reside"
+    ],
+    "numbered_found": "0 of 10",
+    "unnumbered_found": "0 of 4"
+   },
+   "question_type": {
+    "correct": 0,
+    "of_found": 0,
+    "of": 14,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Proposer's Declaration",
+     "Declaration of Non-Collusion",
+     "Statement of Economic Interests and Campaign Contributions",
+     "Insurance Acknowledgment"
+    ]
+   },
+   "evaluation": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 5,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Experience in comparable litigation 35",
+     "the proposed trial team 30",
+     "approach and case management 15",
+     "cost 15",
+     "the writing sample 5"
+    ],
+    "weights_parsed_sum": 0
+   },
+   "min_quals": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "the attorney who will lead the trial team must have been adm | years_admitted 15",
+     "that attorney must have tried at least five civil cases | not_checkable None",
+     "the firm must have no fewer than eight | attorney_count 8",
+     "the firm must not currently represent any party named in par | not_checkable None"
+    ]
+   },
+   "insurance": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "professional liability insurance $5,000,000",
+     "commercial general liability insurance $2,000,000",
+     "automobile liability insurance $1,000,000",
+     "workers' compensation insurance None"
+    ]
+   },
+   "mechanics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 8,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "('kind', 'format')",
+     "('kind', 'delivery')",
+     "('kind', 'not_accepted')",
+     "('kind', 'page_limit')",
+     "('kind', 'page_exclusions')",
+     "('kind', 'font')",
+     "('page_limit', 18)",
+     "('font', 11)"
+    ]
+   },
+   "page_limit": {
+    "key": 18,
+    "parsed": [],
+    "correct": false
+   },
+   "parties": {
+    "tp": 9,
+    "fp": 5,
+    "fn": 4,
+    "precision": 0.643,
+    "recall": 0.692,
+    "extra": [
+     "Seren Oyelowo (staff)",
+     "Beatrix Halloran (staff)",
+     "Carrowmore Marine Constructors (staff)",
+     "North Channel (staff)",
+     "Seagrass Coalition (staff)"
+    ],
+    "missed": [
+     "Hollis Trevanion (staff)",
+     "Seren Oyelowo (board)",
+     "Beatrix Halloran (board)",
+     "Seagrass Coalition of Lantern Bay (adverse)"
+    ]
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": []
+   },
+   "addendum_handling": {
+    "passed": 0,
+    "of": 0,
+    "checks": [],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 9,
+    "fp": 5,
+    "fn": 49,
+    "precision": 0.643,
+    "recall": 0.155
+   },
+   "agency_correct": true
+  }
+ }
+}

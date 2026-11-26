@@ -1,0 +1,53 @@
+{
+  "rfp": "labor_negotiator_quillfeather_usd.txt",
+  "note": "Hand-written from the RFP text. The interview date is stated only as 'week of'.",
+  "agency": "Quillfeather Unified School District",
+  "deadlines": [
+    {"kind": "issued", "date": "2026-11-12", "time": null},
+    {"kind": "questions_due", "date": "2026-12-04", "time": "16:00"},
+    {"kind": "submission_due", "date": "2026-12-11", "time": "12:00"},
+    {"kind": "interview", "date": "2027-01-11", "time": null},
+    {"kind": "award", "date": "2027-01-26", "time": null}
+  ],
+  "addendum_changes": [],
+  "requirements": [
+    {"label": "Q1", "qtype": "firm_overview"},
+    {"label": "Q2", "qtype": "team"},
+    {"label": "Q3", "qtype": "experience"},
+    {"label": "Q4", "qtype": "approach"},
+    {"label": "Q5", "qtype": "references"},
+    {"label": "Q6", "qtype": "conflicts"},
+    {"label": "Q7", "qtype": "rates"},
+    {"label": "Q8", "qtype": "other"}
+  ],
+  "forms": ["Signed Proposal Certification", "Fingerprinting and Background Check Acknowledgment", "Proof of professional liability insurance"],
+  "evaluation": [
+    {"name": "Experience in school district negotiations", "weight": 40},
+    {"name": "Proposed negotiator and team", "weight": 25},
+    {"name": "Approach", "weight": 15},
+    {"name": "Fees", "weight": 20},
+    {"name": "Interview performance (if interviews are held)", "weight": null}
+  ],
+  "min_quals": [
+    {"starts": "The proposed chief negotiator must have at least seven", "check_kind": "years_admitted", "value": 7},
+    {"starts": "The proposed chief negotiator must have served as chief", "check_kind": "not_checkable", "value": null},
+    {"starts": "Proposers must be available for evening", "check_kind": "not_checkable", "value": null}
+  ],
+  "insurance": [
+    {"contains": "professional liability insurance", "amount": "$1,000,000"}
+  ],
+  "mechanics": {"page_limit": 10, "font_pt": null, "margin_in": null,
+    "kinds": ["copies", "format", "delivery", "page_limit", "page_exclusions"]},
+  "parties": [
+    {"name": "Quillfeather Unified School District", "category": "agency"},
+    {"name": "Marisol Everhart", "category": "staff"},
+    {"name": "Leopold Achterberg", "category": "staff"},
+    {"name": "Henrietta Solano", "category": "board"},
+    {"name": "Dmitri Faulkner", "category": "board"},
+    {"name": "Yolanda Prescott", "category": "board"},
+    {"name": "Bartholomew Nguyen", "category": "board"},
+    {"name": "Odessa Kirkland", "category": "board"},
+    {"name": "Quillfeather Teachers Association", "category": "adverse"},
+    {"name": "Quillfeather Classified Staff Union", "category": "adverse"}
+  ]
+}

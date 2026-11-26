@@ -1,0 +1,75 @@
+To: Caspian Molyneux-Reyes (TK11)
+Re: draft invoice INV-B-2001, Brackenmoor Regional Water Agency, matter BRW-2026-03
+
+Before this bill goes out, please look at the 2 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $1,027.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 1, 2026-07-28, $316.00 [Late time, will likely be rejected]
+  Your entry: "Telephone conference with general counsel regarding protest timeline" (0.8 h x $395.00 = $316.00)
+  What the check saw: The work is dated 2026-07-28, 100 days before the invoice date. The limit is 90 days.
+  Suggested fix: Ask the client whether it will accept the late time, or write it off.
+  Client rule (BRW-LATE-01, Section 2.1 Time records, page 2): "Time submitted more than 90 days after the date of service shall not be paid."
+
+- Line 10, 2026-10-13, $711.00 [Travel time, will likely be rejected]
+  Your entry: "Travel to pump station site inspection" (1.8 h x $395.00 = $711.00)
+  What the check saw: Travel time with no client approval on record for this matter.
+  Suggested fix: Obtain and record the client's approval, or move the travel time off the bill.
+  Client rule (BRW-TRAVEL-01, Section 2.2 Non-compensable time, page 2): "Travel time shall not be compensated unless the General Counsel has approved the travel in writing in advance."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Yusra Lindqvist-Amadi (TK12)
+Re: draft invoice INV-B-2001, Brackenmoor Regional Water Agency, matter BRW-2026-03
+
+Before this bill goes out, please look at the 3 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $985.50. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 7, 2026-10-06, $616.00 [Block billing prohibited, will likely be rejected]
+  Your entry: "Review agency procurement file; draft chronology of bid protest events; email to agency counsel regarding gaps" (2.2 h x $280.00 = $616.00)
+  What the check saw: The narrative appears to describe 3 tasks under one time total of 2.2 hours.
+  Suggested fix: Ask the timekeeper to enter each task on its own line with its own time. Tasks the check detected: (1) Review agency procurement file. (2) draft chronology of bid protest events. (3) email to agency counsel regarding gaps. The tool does not know how the time divides between them and does not rewrite the narrative.
+  Client rule (BRW-BLOCK-01, Section 2.1 Time records, page 2): "Any entry of more than 0.5 hour that combines two or more tasks shall be returned unpaid."
+
+- Line 13, 2026-10-15, $383.50 [Rate above approved rate card, likely reduced]
+  Your entry: "Draft response to bid protest letter from unsuccessful bidder" (1.3 h x $295.00 = $383.50)
+  What the check saw: Billed at $295.00 an hour. The approved rate for this timekeeper is $280.00.
+  Suggested fix: Correct the rate to the approved rate card, or attach the client's approval of the higher rate.
+  Client rule (BRW-RATE-01, Section 1.2 Rates and personnel, page 1): "Counsel shall bill only at the hourly rates listed in Exhibit B."
+
+- Line 24, 2026-10-27, $350.00 [Minimum time increment, will likely be rejected]
+  Your entry: "Draft written discovery to protesting bidder" (1.25 h x $280.00 = $350.00)
+  What the check saw: 1.25 hours is not a multiple of the 0.1 hour increment.
+  Suggested fix: Ask the timekeeper to restate the time in 0.1 hour increments from their own records.
+  Client rule (BRW-INCR-01, Section 2.1 Time records, page 2): "Time shall be recorded in increments of one-tenth of an hour."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Marek Dunleavy-Osei (TK13)
+Re: draft invoice INV-B-2001, Brackenmoor Regional Water Agency, matter BRW-2026-03
+
+Before this bill goes out, please look at the 3 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $308.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 15, 2026-10-19, $126.00 [Non-billable task categories, will likely be rejected]
+  Your entry: "Organizing files for off-site storage" (0.9 h x $140.00 = $126.00)
+  What the check saw: The narrative contains "Organizing files", which is on this client's list of non-billable clerical work.
+  Suggested fix: Move the entry off the bill, or ask the timekeeper whether the description is accurate.
+  Client rule (BRW-NONBILL-01, Section 2.2 Non-compensable time, page 2): "Secretarial, clerical and file-management tasks are included in the hourly rates and shall not be billed separately."
+
+- Line 19, 2026-10-21, $84.00 [Required task and activity codes, will likely be rejected]
+  Your entry: "Draft exhibit list for protest hearing" (0.6 h x $140.00 = $84.00)
+  What the check saw: The entry has no task code.
+  Suggested fix: Add the missing code. The timekeeper or billing staff should choose it; the check does not guess.
+  Client rule (BRW-CODES-01, Section 2.1 Time records, page 2): "Each time entry shall identify the phase of the approved budget by task code."
+
+- Line 21, 2026-10-22, $98.00 [Duplicate entries, will likely be rejected]
+  Your entry: "Draft table of bid submission dates from procurement file" (0.7 h x $140.00 = $98.00)
+  What the check saw: Same timekeeper, date, quantity and description as line 20.
+  Suggested fix: Confirm with the timekeeper whether the work was done twice. If not, remove one entry.
+  Client rule (BRW-DUP-01, Section 2.1 Time records, page 2): "The Agency shall not pay twice for the same service, and duplicate entries shall be struck."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.

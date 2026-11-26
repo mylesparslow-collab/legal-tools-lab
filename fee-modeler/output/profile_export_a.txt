@@ -1,0 +1,46 @@
+Export profile: data/export_a
+Mapping: Synthetic export, shape A (four tidy files)
+
+Loaded 640 matters (600 closed), 17557 time entries, 4255 invoices.
+
+[ok  ] table matters: 640 rows read, 640 loaded.
+[ok  ] table timekeepers: 25 rows read, 25 loaded.
+[ok  ] table time_entries: 17557 rows read, 17557 loaded.
+[ok  ] table invoices: 4255 rows read, 4255 loaded.
+[ok  ] history span: Time entries run from 2020-01-02 to 2025-12-30 (6.0 years). A walk-forward back-test needs several years so that later matters have earlier closed matters to be modeled from.
+[ok  ] closed matters with no time entries: 0 of 600 closed matters have no time. They would look free.
+[WARN] time dated outside the matter's open-to-close dates: 0 entries before open, 6 after close (on 6 matters). Late time is included in a matter's cost but hidden from the back-test until its date has passed.
+         e.g. M-0045
+         e.g. M-0054
+         e.g. M-0180
+[ok  ] billed hours above worked hours: 0 entries. Check for write-ups or swapped columns.
+[ok  ] zero-rate entries: 0 entries. Hours still count toward normalized value; raw value will look low.
+[ok  ] task code coverage: 86% of hours carry a task code that maps to a phase. The rest use the date-window fallback.
+[WARN] task codes not in the phase map: 1 distinct codes on 153 entries: ZZ99. Add them to the task code map.
+[ok  ] levels covered by rate card: All 4 levels found in the data have a rate.
+[ok  ] levels covered by cost rates: All 4 levels found in the data have a rate.
+[ok  ] timekeepers who changed level: 1 timekeepers have time at more than one level: TK-12. Each entry is valued at the level held on its work date.
+[ok  ] close reasons: 0 of 600 closed matters have no close reason; 65 closed abnormally and are excluded from comps by default.
+[WARN] closed matters with an unpaid balance: 3 closed matters have fees neither collected nor written off. Collected figures for them are not final.
+         e.g. M-0035
+         e.g. M-0073
+         e.g. M-0471
+[ok  ] invoices reconcile to billed time: 0 closed matters where invoiced fees differ from billed time by more than 1%. Ask whether invoices include costs, flat fees or discounts.
+[WARN] matter types with enough clean closed history: 11 of 12 matter types have at least 8 clean closed matters. Too few: election_law_advisory.
+
+Matter types (clean closed = closed normally, usable as comps):
+  administrative_licensing_appeal          clean closed   40  abnormal   5  open   6  enough
+  commercial_lease_review                  clean closed   46  abnormal   4  open   1  enough
+  contract_dispute_arbitration             clean closed   33  abnormal   2  open   3  enough
+  election_law_advisory                    clean closed    5  abnormal   0  open   0  TOO FEW
+  employment_single_plaintiff_defense      clean closed   66  abnormal   9  open   4  enough
+  facility_change_of_ownership             clean closed   53  abnormal   7  open   2  enough
+  internal_investigation                   clean closed   41  abnormal   4  open   5  enough
+  ordinance_drafting                       clean closed   52  abnormal   8  open   5  enough
+  paga_response                            clean closed   46  abnormal   4  open   3  enough
+  public_records_litigation                clean closed   69  abnormal  11  open   5  enough
+  public_works_bid_protest                 clean closed   52  abnormal   3  open   0  enough
+  regulatory_compliance_audit              clean closed   32  abnormal   8  open   6  enough
+
+Result: ready to back-test (0 failed, 4 warnings).
+Run the back-test next: python -m feemodel backtest

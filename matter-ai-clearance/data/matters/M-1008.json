@@ -1,0 +1,50 @@
+{
+ "id": "M-1008",
+ "name": "Tessaly Harbor v. Bexmoor Holdings (fictional): loan enforcement",
+ "client_id": "tessaly",
+ "matter_type": "commercial litigation",
+ "responsible_attorney": "D. Castellane (fictional)",
+ "intake_date": "2026-10-01",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "yes",
+  "document_id": "PO-M1008 (fictional protective order)",
+  "restrictions": {
+   "ai_use": "permitted_with_conditions",
+   "vendor_processing": "barred",
+   "no_retention_after_matter": "yes",
+   "attorneys_eyes_only_tier": "no"
+  },
+  "undertakings_signed_tool_ids": [],
+  "quoted_terms": [
+   {
+    "field": "ai_use",
+    "quote": "Confidential Material may be processed with automated tools only on systems operated by counsel of record and closed to the public."
+   },
+   {
+    "field": "vendor_processing",
+    "quote": "Confidential Material shall not be disclosed to any person other than those listed in paragraph 7, and no outside vendor is listed."
+   }
+  ]
+ },
+ "terms_document_ids": [
+  "tessaly-ocg-2025",
+  "tessaly-el-2025"
+ ],
+ "additional_terms": [],
+ "consents": [
+  {
+   "from": "tessaly",
+   "feature_ids": [
+    "suite-b.doc-summary",
+    "review-d.review"
+   ],
+   "date": "2026-10-14",
+   "reference": "Written consent from the Office of the General Counsel, 2026-10-14 (fictional)"
+  }
+ ],
+ "notices": []
+}

@@ -1,0 +1,16 @@
+{
+  "source": "assistant_b_daily",
+  "description": "Example mapping for the synthetic Assistant B export in sample_data. One row per user per day, with a count column per feature. This layout is invented for the demo and is not any vendor's real export.",
+  "tool": "Assistant B",
+  "shape": "wide",
+  "delimiter": ";",
+  "user": {"column": "User", "match_on": "name"},
+  "date": {"column": "Report date", "formats": ["%d/%m/%Y", "%d %b %Y"], "timezone": "as_given"},
+  "feature_columns": {
+    "Docs prompts": "documents",
+    "Mail prompts": "email",
+    "Meetings prompts": "meetings",
+    "Sheets prompts": "spreadsheets"
+  },
+  "dedupe_key": ["User", "Report date"]
+}

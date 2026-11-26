@@ -1,0 +1,6 @@
+id,label,basis,threshold,numerator,denominator,people,rate,status,reason
+weekly_active_lawyers_month_6,"Lawyers using an approved AI tool weekly, month 6",last_4_weeks,0.5,337,777,203,0.4337,not yet,below the threshold
+weekly_active_lawyers_month_12,"Lawyers using an approved AI tool weekly, month 12",last_4_weeks,0.7,337,777,203,0.4337,not yet,below the threshold
+pilot_gate:Disputes,Pilot gate: half of pilot-practice lawyers active weekly: Disputes,last_4_weeks,0.5,90,128,33,0.7031,pass,at or above the threshold
+pilot_gate:Employment,Pilot gate: half of pilot-practice lawyers active weekly: Employment,last_4_weeks,0.5,37,78,20,0.4744,not yet,below the threshold
+pilot_gate:Competition,Pilot gate: half of pilot-practice lawyers active weekly: Competition,last_4_weeks,0.5,,,,,cannot tell,fewer than 5 people in the group

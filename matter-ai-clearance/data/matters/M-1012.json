@@ -1,0 +1,22 @@
+{
+ "id": "M-1012",
+ "name": "Sablemere: rate study challenge",
+ "client_id": "sablemere",
+ "matter_type": "public agency advice",
+ "responsible_attorney": "T. Imre (fictional)",
+ "intake_date": "2026-10-30",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "sablemere-ocg-2025",
+  "sablemere-el-2025"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

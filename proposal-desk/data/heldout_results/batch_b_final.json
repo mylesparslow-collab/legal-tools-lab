@@ -1,0 +1,620 @@
+{
+ "batch": "b",
+ "run": "final",
+ "combined": {
+  "deadlines": {
+   "tp": 9,
+   "fp": 3,
+   "fn": 10,
+   "precision": 0.75,
+   "recall": 0.474
+  },
+  "requirements": {
+   "tp": 20,
+   "fp": 6,
+   "fn": 15,
+   "precision": 0.769,
+   "recall": 0.571
+  },
+  "forms": {
+   "tp": 3,
+   "fp": 0,
+   "fn": 12,
+   "precision": 1.0,
+   "recall": 0.2
+  },
+  "evaluation": {
+   "tp": 10,
+   "fp": 4,
+   "fn": 6,
+   "precision": 0.714,
+   "recall": 0.625
+  },
+  "min_quals": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 13,
+   "precision": 1.0,
+   "recall": 0.0
+  },
+  "insurance": {
+   "tp": 5,
+   "fp": 3,
+   "fn": 6,
+   "precision": 0.625,
+   "recall": 0.455
+  },
+  "mechanics": {
+   "tp": 17,
+   "fp": 1,
+   "fn": 14,
+   "precision": 0.944,
+   "recall": 0.548
+  },
+  "parties": {
+   "tp": 23,
+   "fp": 5,
+   "fn": 7,
+   "precision": 0.821,
+   "recall": 0.767
+  },
+  "overall": {
+   "tp": 87,
+   "fp": 22,
+   "fn": 83,
+   "precision": 0.798,
+   "recall": 0.512
+  },
+  "question_type": {
+   "correct": 20,
+   "of_found": 20,
+   "of": 35
+  },
+  "addendum_handling": {
+   "passed": 5,
+   "of": 11
+  },
+  "page_limit": {
+   "correct": 2,
+   "of": 3
+  },
+  "submission_deadline": {
+   "correct": 1,
+   "of": 3
+  }
+ },
+ "per_rfp": {
+  "general_counsel_dunmarrow_housing": {
+   "deadlines": {
+    "tp": 4,
+    "fp": 3,
+    "fn": 3,
+    "precision": 0.571,
+    "recall": 0.571,
+    "extra": [
+     "answers_issued 2027-01-29 None",
+     "interview 2027-03-10 None",
+     "award 2027-02-24 None"
+    ],
+    "missed": [
+     "answers_issued 2027-01-11 None",
+     "interview 2027-02-18 None",
+     "award 2027-03-10 None"
+    ],
+    "date_right_time_or_kind_wrong": 1
+   },
+   "deadline_kinds_outside_existing_keys": [],
+   "submission_deadline": {
+    "key": "2027-02-05 12:00",
+    "parsed": [
+     "2027-02-05 12:00"
+    ],
+    "correct": true
+   },
+   "requirements": {
+    "tp": 10,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.625,
+    "recall": 1.0,
+    "extra": [
+     "4.1.1 | The firm's proposed lead general counsel must have at least ten (10) y",
+     "4.1.2 | A firm proposing for development counsel must have closed, as counsel ",
+     "4.1.3 | The firm must be able to attend Board meetings in person in the City o",
+     "4.1.4 | The firm must not be debarred or suspended from contracting with any p",
+     "4.2 | Organization. Proposals must follow the order of Section 4.3 and use i",
+     "4.3 | Narrative."
+    ],
+    "missed": [],
+    "numbered_found": "10 of 10",
+    "unnumbered_found": "0 of 0"
+   },
+   "question_type": {
+    "correct": 10,
+    "of_found": 10,
+    "of": 10,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 5,
+    "precision": 1.0,
+    "recall": 0.167,
+    "extra": [],
+    "missed": [
+     "Proposer Profile and Certification",
+     "Non-Collusive Affidavit",
+     "Certification Regarding Debarment and Suspension",
+     "Conflict of Interest Disclosure",
+     "Acknowledgment of Addenda"
+    ]
+   },
+   "evaluation": {
+    "tp": 4,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.8,
+    "recall": 0.8,
+    "extra": [
+     "Resident services and relocation experience 5"
+    ],
+    "missed": [
+     "Development and finance experience 30"
+    ],
+    "weights_parsed_sum": 75
+   },
+   "min_quals": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "The firm's proposed lead general counsel must have at least  | years_admitted 10",
+     "A firm proposing for development counsel must have closed | not_checkable None",
+     "The firm must be able to attend Board meetings in person | not_checkable None",
+     "The firm must not be debarred or suspended | not_checkable None"
+    ]
+   },
+   "insurance": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "mechanics": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 2,
+    "precision": 1.0,
+    "recall": 0.833,
+    "extra": [],
+    "missed": [
+     "('kind', 'format')",
+     "('kind', 'not_accepted')"
+    ]
+   },
+   "page_limit": {
+    "key": 24,
+    "parsed": [
+     24
+    ],
+    "correct": true
+   },
+   "parties": {
+    "tp": 6,
+    "fp": 2,
+    "fn": 3,
+    "precision": 0.75,
+    "recall": 0.667,
+    "extra": [
+     "County of Dunmarrow (agency)",
+     "Rook Construction Co. (adverse)"
+    ],
+    "missed": [
+     "Housing Authority of the County of Dunmarrow (agency)",
+     "Cormac Adebayo (staff)",
+     "Tallis & Rook Construction Co. (adverse)"
+    ]
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": [
+     "4.1.1 | The firm's proposed lead general counsel must have at least ten (10) y",
+     "4.1.2 | A firm proposing for development counsel must have closed, as counsel ",
+     "4.1.3 | The firm must be able to attend Board meetings in person in the City o",
+     "4.1.4 | The firm must not be debarred or suspended from contracting with any p",
+     "4.2 | Organization. Proposals must follow the order of Section 4.3 and use i",
+     "4.3 | Narrative."
+    ]
+   },
+   "addendum_handling": {
+    "passed": 5,
+    "of": 11,
+    "checks": [
+     {
+      "check": "submission_due: date as issued (2027-01-20) still shown",
+      "ok": true
+     },
+     {
+      "check": "submission_due in force 2027-02-05 12:00",
+      "ok": true
+     },
+     {
+      "check": "answers_issued in force 2027-01-11",
+      "ok": false
+     },
+     {
+      "check": "page limit in force 24",
+      "ok": true
+     },
+     {
+      "check": "form added: Acknowledgment of Addenda",
+      "ok": false
+     },
+     {
+      "check": "interview in force 2027-02-18",
+      "ok": false
+     },
+     {
+      "check": "award in force 2027-03-10",
+      "ok": false
+     },
+     {
+      "check": "requirement 4.3.6 deleted",
+      "ok": true
+     },
+     {
+      "check": "criterion removed: Resident services and relocation experience",
+      "ok": false
+     },
+     {
+      "check": "weight of Development and finance experience now 30",
+      "ok": false
+     },
+     {
+      "check": "form removed: Local Hiring Certification",
+      "ok": true
+     }
+    ],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 39,
+    "fp": 12,
+    "fn": 18,
+    "precision": 0.765,
+    "recall": 0.684
+   },
+   "agency_correct": false
+  },
+  "labor_counsel_wexcombe_library": {
+   "deadlines": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 6,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "issued 2026-12-10 None",
+     "questions_due 2027-01-04 17:00",
+     "answers_issued 2027-01-08 None",
+     "submission_due 2027-01-14 14:00",
+     "interview 2027-01-26 None",
+     "award 2027-02-17 None"
+    ],
+    "date_right_time_or_kind_wrong": 0
+   },
+   "deadline_kinds_outside_existing_keys": [],
+   "submission_deadline": {
+    "key": "2027-01-14 14:00",
+    "parsed": [],
+    "correct": false
+   },
+   "requirements": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 12,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "#1 | Introduction letter. Tell us who you are and who will sign the contrac",
+     "#2 | About your firm. How big is it, where are its offices, how long has it",
+     "#3 | Your people. Who will be chief negotiator? Who will back that person u",
+     "#4 | Bargaining record. List the public sector negotiations your proposed c",
+     "#5 | How you would run our negotiations. Describe how you would prepare, ho",
+     "#6 | Hearings and advice. Describe your experience in grievance arbitration",
+     "#7 | References. Give us four public employer references. At least two must",
+     "#8 | Conflicts. Have you or anyone at your firm ever represented the Wexcom",
+     "#9 | Price. Give hourly rates for every person named in #3. Offer a fixed m",
+     "#10 | Taking over. Our current counsel is retiring. How would you get up to ",
+     "5-unnumbered-1 | A statement, signed by the proposed chief negotiator, that he or she w",
+     "5-unnumbered-2 | A list of every lawsuit or labor board charge filed against your firm "
+    ],
+    "numbered_found": "0 of 10",
+    "unnumbered_found": "0 of 2"
+   },
+   "question_type": {
+    "correct": 0,
+    "of_found": 0,
+    "of": 12,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Proposal Signature Form",
+     "Non-Collusion Statement",
+     "Disclosure of Gifts and Relationships",
+     "proof of your professional liability insurance"
+    ]
+   },
+   "evaluation": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 5,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Bargaining experience and record 35",
+     "The chief negotiator and team 25",
+     "Plan for our negotiations 20",
+     "Price 15",
+     "References 5"
+    ],
+    "weights_parsed_sum": 0
+   },
+   "min_quals": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 5,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Your proposed chief negotiator has practiced law for at leas | years_admitted 8",
+     "Your proposed chief negotiator has been chief negotiator for | not_checkable None",
+     "Your firm has at least four (4) attorneys | attorney_count 4",
+     "Your firm does not represent any labor union | not_checkable None",
+     "Your chief negotiator can attend bargaining sessions in pers | not_checkable None"
+    ]
+   },
+   "insurance": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "professional liability insurance of at least $2,000,000",
+     "general liability insurance of at least $1,000,000",
+     "workers' compensation insurance None"
+    ]
+   },
+   "mechanics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 9,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "('kind', 'copies')",
+     "('kind', 'format')",
+     "('kind', 'delivery')",
+     "('kind', 'not_accepted')",
+     "('kind', 'page_limit')",
+     "('kind', 'page_exclusions')",
+     "('kind', 'font')",
+     "('page_limit', 15)",
+     "('font', 11)"
+    ]
+   },
+   "page_limit": {
+    "key": 15,
+    "parsed": [],
+    "correct": false
+   },
+   "parties": {
+    "tp": 7,
+    "fp": 2,
+    "fn": 3,
+    "precision": 0.778,
+    "recall": 0.7,
+    "extra": [
+     "Wexcombe Library Workers Guild (other_organisation)",
+     "Calder Whitlock (board)"
+    ],
+    "missed": [
+     "Calder Whitlock (staff)",
+     "Wexcombe Library Workers Guild (adverse)",
+     "Service Employees Local 4410 (adverse)"
+    ]
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": []
+   },
+   "addendum_handling": {
+    "passed": 0,
+    "of": 0,
+    "checks": [],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 7,
+    "fp": 2,
+    "fn": 47,
+    "precision": 0.778,
+    "recall": 0.13
+   },
+   "agency_correct": true
+  },
+  "water_rights_counsel_saltbrook_muc": {
+   "deadlines": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.833,
+    "extra": [],
+    "missed": [
+     "submission_due 2027-01-19 14:00"
+    ],
+    "date_right_time_or_kind_wrong": 0
+   },
+   "deadline_kinds_outside_existing_keys": [],
+   "submission_deadline": {
+    "key": "2027-01-19 14:00",
+    "parsed": [],
+    "correct": false
+   },
+   "requirements": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.769,
+    "extra": [],
+    "missed": [
+     "S4-unnumbered-1 | What is the firm's view of the main risks to the Commission's 1954 rig",
+     "S4-unnumbered-2 | If the lead attorney became unavailable for a month during the hearing",
+     "S4-unnumbered-3 | Describe one matter in which the firm negotiated a long-term water pur"
+    ],
+    "numbered_found": "10 of 10",
+    "unnumbered_found": "0 of 3"
+   },
+   "question_type": {
+    "correct": 10,
+    "of_found": 10,
+    "of": 13,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.4,
+    "extra": [],
+    "missed": [
+     "Non-Collusion Affidavit",
+     "Campaign Contribution Disclosure",
+     "Insurance Commitment Letter"
+    ]
+   },
+   "evaluation": {
+    "tp": 6,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.667,
+    "recall": 1.0,
+    "extra": [
+     " None",
+     " None",
+     "1.00 None"
+    ],
+    "missed": [],
+    "weights_parsed_sum": 100
+   },
+   "min_quals": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.0,
+    "extra": [],
+    "missed": [
+     "Lead attorney: admitted to practice 12 years or longer | years_admitted 12",
+     "Lead attorney: has appeared as counsel of record | not_checkable None",
+     "Firm: at least 2 attorneys other than the lead attorney | not_checkable None",
+     "Firm: no current client relationship with either adverse par | not_checkable None"
+    ]
+   },
+   "insurance": {
+    "tp": 1,
+    "fp": 3,
+    "fn": 3,
+    "precision": 0.25,
+    "recall": 0.25,
+    "extra": [
+     "Professional liability: USD 5,000,000 per claim",
+     "Commercial general liability: USD 2,000,000 per occurrence",
+     "Automobile liability: USD 1,000,000 combined single limit"
+    ],
+    "missed": [
+     "Professional liability USD 5,000,000",
+     "Commercial general liability USD 2,000,000",
+     "Automobile liability USD 1,000,000"
+    ]
+   },
+   "mechanics": {
+    "tp": 7,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.875,
+    "recall": 0.7,
+    "extra": [
+     "('kind', 'copies')"
+    ],
+    "missed": [
+     "('kind', 'delivery')",
+     "('kind', 'not_accepted')",
+     "('kind', 'page_exclusions')"
+    ]
+   },
+   "page_limit": {
+    "key": 20,
+    "parsed": [
+     20
+    ],
+    "correct": true
+   },
+   "parties": {
+    "tp": 10,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.909,
+    "recall": 0.909,
+    "extra": [
+     "Senior Contracts (staff)"
+    ],
+    "missed": [
+     "Upper Tamsel Irrigation District (adverse)"
+    ]
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": []
+   },
+   "addendum_handling": {
+    "passed": 0,
+    "of": 0,
+    "checks": [],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 41,
+    "fp": 8,
+    "fn": 18,
+    "precision": 0.837,
+    "recall": 0.695
+   },
+   "agency_correct": true
+  }
+ }
+}

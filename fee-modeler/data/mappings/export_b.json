@@ -1,0 +1,117 @@
+{
+  "name": "Synthetic export, shape B (semicolon files, coded values, minutes)",
+  "notes": "Example mapping for the synthetic shape B export. Shows delimiter, date_format, value_maps, scale and yes/no handling. Not based on any real product's export format.",
+  "tables": {
+    "matters": {
+      "file": "MATTER_MASTER.csv",
+      "delimiter": ";",
+      "date_format": "%m/%d/%Y",
+      "columns": {
+        "matter_id": "Matter No",
+        "client_id": "Client No",
+        "matter_type": "Practice Category",
+        "status": "Stat",
+        "open_date": "Opened",
+        "close_date": "Closed",
+        "close_reason": "Disposition",
+        "forum": "Venue",
+        "num_parties": "Party Ct",
+        "amount_band": "Exposure Band",
+        "num_units": "Unit Ct",
+        "hearing_occurred": "Hrg",
+        "hearing_date": "Hrg Dt"
+      },
+      "value_maps": {
+        "matter_type": {
+          "Public Records Litigation": "public_records_litigation",
+          "Employment Single Plaintiff Defense": "employment_single_plaintiff_defense",
+          "Facility Change Of Ownership": "facility_change_of_ownership",
+          "Public Works Bid Protest": "public_works_bid_protest",
+          "Ordinance Drafting": "ordinance_drafting",
+          "Paga Response": "paga_response",
+          "Administrative Licensing Appeal": "administrative_licensing_appeal",
+          "Commercial Lease Review": "commercial_lease_review",
+          "Internal Investigation": "internal_investigation",
+          "Regulatory Compliance Audit": "regulatory_compliance_audit",
+          "Contract Dispute Arbitration": "contract_dispute_arbitration",
+          "Election Law Advisory": "election_law_advisory"
+        },
+        "status": {
+          "O": "open",
+          "C": "closed"
+        },
+        "close_reason": {
+          "COMP": "completed",
+          "SETL": "settled_early",
+          "XFER": "transferred",
+          "OTH": "other"
+        },
+        "forum": {
+          "Appellate Court": "appellate_court",
+          "Arbitration": "arbitration",
+          "Local Agency": "local_agency",
+          "None": "none",
+          "State Agency": "state_agency",
+          "Superior Court": "superior_court"
+        },
+        "amount_band": {
+          "Tier 1": "A",
+          "Tier 2": "B",
+          "Tier 3": "C",
+          "Tier 4": "D"
+        }
+      },
+      "true_values": [
+        "Y"
+      ],
+      "false_values": [
+        "N"
+      ]
+    },
+    "time_entries": {
+      "file": "WIP_DETAIL.csv",
+      "delimiter": ";",
+      "date_format": "%m/%d/%Y",
+      "columns": {
+        "entry_id": "Tran ID",
+        "matter_id": "Matter No",
+        "timekeeper_id": "TK Init",
+        "level": "TK Title",
+        "work_date": "Tran Date",
+        "hours_worked": "Base Mins",
+        "hours_billed": "Bill Mins",
+        "rate": "Std Rate",
+        "task_code": "Activity"
+      },
+      "value_maps": {
+        "level": {
+          "Partner": "partner",
+          "Sr Associate": "senior_associate",
+          "Associate": "associate",
+          "Paralegal": "paralegal"
+        }
+      },
+      "scale": {
+        "hours_worked": {
+          "divide_by": "60"
+        },
+        "hours_billed": {
+          "divide_by": "60"
+        }
+      }
+    },
+    "invoices": {
+      "file": "AR_SUMMARY.csv",
+      "delimiter": ";",
+      "date_format": "%m/%d/%Y",
+      "columns": {
+        "invoice_id": "Inv No",
+        "matter_id": "Matter No",
+        "invoice_date": "Inv Date",
+        "amount_billed": "Fees Billed",
+        "amount_collected": "Cash Applied",
+        "amount_written_off": "Adjustments"
+      }
+    }
+  }
+}

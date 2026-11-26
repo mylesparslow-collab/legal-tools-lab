@@ -1,0 +1,82 @@
+{
+  "_about": "SAMPLE DATA. Every court, judge, order and URL in this file is fictional and exists only to demonstrate the lookup. Do not rely on it for any real court.",
+  "schema_version": 1,
+  "fictional": true,
+  "entries": [
+    {
+      "entry_id": "JO-001",
+      "court_id": "fict-alder-ridge",
+      "court": "Superior Court, County of Alder Ridge (fictional)",
+      "judge_id": "fict-quillon",
+      "judge": "Hon. Thessaly Quillon (fictional judge)",
+      "order_title": "No standing order on generative AI found (fictional entry)",
+      "effective_date": null,
+      "requirement_type": "none_known",
+      "applies_when": "always",
+      "required_text": null,
+      "source_url": "https://courts.example/alder-ridge/dept-4/standing-orders",
+      "last_checked": "2027-01-06",
+      "checked_by": "Jun Tessaro (fictional paralegal)"
+    },
+    {
+      "entry_id": "JO-002",
+      "court_id": "fict-alder-ridge",
+      "court": "Superior Court, County of Alder Ridge (fictional)",
+      "judge_id": "fict-ostergaard",
+      "judge": "Hon. Bram Ostergaard-Vale (fictional judge)",
+      "order_title": "Standing order re certification of citations (fictional order)",
+      "effective_date": "2026-09-01",
+      "requirement_type": "certification",
+      "applies_when": "always",
+      "required_text": "I certify that I have personally read and verified every authority cited in this paper. (Fictional order text for demonstration.)",
+      "source_url": "https://courts.example/alder-ridge/dept-9/standing-order-citations",
+      "last_checked": "2027-01-08",
+      "checked_by": "Jun Tessaro (fictional paralegal)"
+    },
+    {
+      "entry_id": "JO-003",
+      "court_id": "fict-port-selwyn",
+      "court": "Superior Court, County of Port Selwyn (fictional)",
+      "judge_id": "fict-marrowby",
+      "judge": "Hon. Ilse Marrowby (fictional judge)",
+      "order_title": "Courtroom rule re disclosure of AI drafting tools (fictional order)",
+      "effective_date": "2026-06-15",
+      "requirement_type": "disclosure",
+      "applies_when": "genai_used",
+      "required_text": "Any paper prepared with a generative AI tool must say so on its first page. (Fictional order text for demonstration.)",
+      "source_url": "https://courts.example/port-selwyn/dept-2/courtroom-rules",
+      "last_checked": "2026-11-02",
+      "checked_by": "Jun Tessaro (fictional paralegal)"
+    },
+    {
+      "entry_id": "JO-004",
+      "court_id": "fict-port-selwyn",
+      "court": "Superior Court, County of Port Selwyn (fictional)",
+      "judge_id": "fict-haldane",
+      "judge": "Hon. Corwin Haldane-Pryce (fictional judge)",
+      "order_title": "Order prohibiting AI-drafted papers in Department 7 (fictional order)",
+      "effective_date": "2026-10-01",
+      "requirement_type": "prohibition",
+      "applies_when": "genai_used",
+      "required_text": "No paper drafted in whole or in part by a generative AI tool may be filed in this department. (Fictional order text for demonstration.)",
+      "source_url": "https://courts.example/port-selwyn/dept-7/order-ai",
+      "last_checked": "2027-01-05",
+      "checked_by": "Jun Tessaro (fictional paralegal)"
+    },
+    {
+      "entry_id": "JO-005",
+      "court_id": "fict-port-selwyn",
+      "court": "Superior Court, County of Port Selwyn (fictional)",
+      "judge_id": null,
+      "judge": null,
+      "order_title": "Court-wide notice: no general order on generative AI found (fictional entry)",
+      "effective_date": null,
+      "requirement_type": "none_known",
+      "applies_when": "always",
+      "required_text": null,
+      "source_url": "https://courts.example/port-selwyn/general-orders",
+      "last_checked": "2027-01-05",
+      "checked_by": "Jun Tessaro (fictional paralegal)"
+    }
+  ]
+}

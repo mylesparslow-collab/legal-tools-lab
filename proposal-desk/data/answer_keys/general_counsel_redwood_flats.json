@@ -1,0 +1,58 @@
+{
+  "rfp": "general_counsel_redwood_flats.txt",
+  "note": "Hand-written from the RFP text. Dates are the dates in force after Addendum No. 1.",
+  "agency": "Redwood Flats Water District",
+  "deadlines": [
+    {"kind": "issued", "date": "2026-11-02", "time": null},
+    {"kind": "questions_due", "date": "2026-11-20", "time": "15:00"},
+    {"kind": "answers_issued", "date": "2026-11-25", "time": null},
+    {"kind": "submission_due", "date": "2026-12-17", "time": "14:00"},
+    {"kind": "interview", "date": "2027-01-07", "time": null},
+    {"kind": "award", "date": "2027-01-14", "time": null}
+  ],
+  "addendum_changes": [
+    {"kind": "submission_due", "from": "2026-12-10", "to": "2026-12-17"},
+    {"kind": "interview", "from": "2026-12-17", "to": "2027-01-07"}
+  ],
+  "requirements": [
+    {"label": "A", "qtype": "cover_letter"},
+    {"label": "B", "qtype": "firm_overview"},
+    {"label": "C", "qtype": "team"},
+    {"label": "D", "qtype": "experience"},
+    {"label": "E", "qtype": "approach"},
+    {"label": "F", "qtype": "references"},
+    {"label": "G", "qtype": "conflicts"},
+    {"label": "H", "qtype": "rates"},
+    {"label": "I", "qtype": "transition"},
+    {"label": "J", "qtype": "disclosure"}
+  ],
+  "forms": ["Proposer Certification", "Non-Collusion Affidavit", "Conflict of Interest Disclosure Form", "Certificate of insurance or a letter from the proposer's broker"],
+  "evaluation": [
+    {"name": "Experience with special districts and water matters", "weight": 30},
+    {"name": "Qualifications of assigned personnel", "weight": 25},
+    {"name": "Work plan and responsiveness", "weight": 20},
+    {"name": "Compensation", "weight": 15},
+    {"name": "References", "weight": 10}
+  ],
+  "min_quals": [
+    {"starts": "The lead attorney shall have no fewer than eight", "check_kind": "years_admitted", "value": 8},
+    {"starts": "The firm shall have at least three", "check_kind": "attorney_count", "value": 3},
+    {"starts": "The firm shall have represented at least two special districts", "check_kind": "not_checkable", "value": null}
+  ],
+  "insurance": [
+    {"contains": "professional liability", "amount": "$1,000,000"},
+    {"contains": "general liability coverage", "amount": "$1,000,000"},
+    {"contains": "automobile liability", "amount": "$500,000"}
+  ],
+  "mechanics": {"page_limit": 15, "font_pt": 11, "margin_in": null,
+    "kinds": ["copies", "format", "packaging", "delivery", "not_accepted", "page_limit", "page_exclusions", "font"]},
+  "parties": [
+    {"name": "Redwood Flats Water District", "category": "agency"},
+    {"name": "Ottoline Brannigan", "category": "staff"},
+    {"name": "Cassius Elmwood", "category": "board"},
+    {"name": "Mireille Dunmore", "category": "board"},
+    {"name": "Anselm Torvald", "category": "board"},
+    {"name": "Beatrix Okonkwo", "category": "board"},
+    {"name": "Lucien Farraday", "category": "board"}
+  ]
+}

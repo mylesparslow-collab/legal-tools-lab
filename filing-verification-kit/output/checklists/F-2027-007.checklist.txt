@@ -1,0 +1,36 @@
+Filing F-2027-007  (brief)  checked 2027-01-12T17:00:00+00:00
+
+  PASS            Document type is in scope
+                  'brief' is treated as a paper filed in court. Every citation needs personal verification.
+  PASS            Responsible attorney named
+                  Responsible attorney: Odalys Verhoeven (fictional attorney).
+  PASS            Document found and hashed
+                  SHA-256 of file: f03580c099cdcb434d3b35a5c9dcebe3cfa0a150ad966af652bb3a976697f1ab.
+  PASS            Citation report present
+                  citecheck-report, citations listed: 3 (machine: 3 pass, 0 warn, 0 fail, 0 manual).
+  PASS            Report matches the document
+                  The report's document hash equals the hash of the document text as it is now.
+  PASS            Every citation attested by the attorney
+                  All 3 citations have an attestation by Odalys Verhoeven (fictional attorney) with date and method.
+  PASS            No unresolved or not-found citations
+                  No citation is unresolved or not found.
+  PASS            No quote mismatches
+                  No quotation was reported as a mismatch.
+  PASS            Machine warnings resolved
+                  No machine warnings.
+  PASS            AI-use answer recorded
+                  Generative AI used. Tools: Drafting assistant (fictional product). Purposes: first draft of the argument section; summary of deposition excerpts.
+  PASS            AI output reviewed and corrected
+                  Odalys Verhoeven (fictional attorney) on 2027-01-12T15:40:00+00:00: Read every AI-drafted paragraph against the record and the cited authorities; rewrote two sentences that overstated a holding.
+  PASS            Protected information question answered
+                  Recorded answer: no information in the listed categories was entered into an AI tool.
+  PASS            AI-use disclosure decision recorded
+                  Decision: disclose, using draft option C, decided by Odalys Verhoeven (fictional attorney). The wording is a draft until the General Counsel approves it.
+  NEEDS ATTENTION Judge and court AI orders checked [blocks]
+                  Recheck before relying: JO-003 was last checked 2026-11-02 (71 days before 2027-01-12). Staleness window is 30 days.
+  PASS            Judge order requirement met
+                  Each order requirement on file has a recorded response.
+                  - JO-003 (disclosure): Courtroom rule re disclosure of AI drafting tools (fictional order). Response recorded: Disclosure placed on the first page.
+
+Result: BLOCKED
+Blocking items: judge_order_checked

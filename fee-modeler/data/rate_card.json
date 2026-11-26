@@ -1,0 +1,49 @@
+{
+  "note": "Synthetic rate card. Rates rise 4% a year from invented 2020 figures. 'current' is what historical hours are normalized to.",
+  "currency": "USD",
+  "current_label": "2026",
+  "current": {
+    "partner": "658",
+    "senior_associate": "519",
+    "associate": "405",
+    "paralegal": "215"
+  },
+  "history": {
+    "2020": {
+      "partner": "520",
+      "senior_associate": "410",
+      "associate": "320",
+      "paralegal": "170"
+    },
+    "2021": {
+      "partner": "541",
+      "senior_associate": "426",
+      "associate": "333",
+      "paralegal": "177"
+    },
+    "2022": {
+      "partner": "562",
+      "senior_associate": "443",
+      "associate": "346",
+      "paralegal": "184"
+    },
+    "2023": {
+      "partner": "585",
+      "senior_associate": "461",
+      "associate": "360",
+      "paralegal": "191"
+    },
+    "2024": {
+      "partner": "608",
+      "senior_associate": "480",
+      "associate": "374",
+      "paralegal": "199"
+    },
+    "2025": {
+      "partner": "633",
+      "senior_associate": "499",
+      "associate": "389",
+      "paralegal": "207"
+    }
+  }
+}

@@ -1,0 +1,643 @@
+{
+  "note": "Every violation planted in the synthetic invoices by generate_data.py. Fictional data.",
+  "seed": 20261105,
+  "invoice_line_counts": {
+    "INV-Q-1001": 42,
+    "INV-Q-1002": 24,
+    "INV-B-2001": 28,
+    "INV-O-3001": 31,
+    "INV-O-3002": 14,
+    "INV-L-4001": 25,
+    "INV-P-5001": 13
+  },
+  "planted": [
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 1,
+      "timekeeper_id": "TK01",
+      "rule_type": "late_time",
+      "rule_id": "QMI-LATE-01",
+      "expected_status": "open",
+      "note": "79 days old on the invoice date; limit 60"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 4,
+      "timekeeper_id": "TK01",
+      "rule_type": "minimum_increment",
+      "rule_id": "QMI-INCR-01",
+      "expected_status": "open",
+      "note": "0.25 hour is not a multiple of 0.1"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 6,
+      "timekeeper_id": "TK03",
+      "rule_type": "non_billable_task",
+      "rule_id": "QMI-NONBILL-01",
+      "expected_status": "open",
+      "note": "clerical work"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 8,
+      "timekeeper_id": "",
+      "rule_type": "expense_overhead",
+      "rule_id": "QMI-OVERHEAD-01",
+      "expected_status": "open",
+      "note": "postage is overhead"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 9,
+      "timekeeper_id": "TK02",
+      "rule_type": "research_approval",
+      "rule_id": "QMI-RESEARCH-01",
+      "expected_status": "open",
+      "note": "research reaches 4.2 hours against a 3 hour limit, no approval"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 11,
+      "timekeeper_id": "TK03",
+      "rule_type": "duplicate_entries",
+      "rule_id": "QMI-DUP-01",
+      "expected_status": "open",
+      "note": "same as the entry before it"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 12,
+      "timekeeper_id": "TK01",
+      "rule_type": "internal_conference_limit",
+      "rule_id": "QMI-CONF-01",
+      "expected_status": "open",
+      "note": "0.8 hour against a 0.3 hour limit"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 14,
+      "timekeeper_id": "TK02",
+      "rule_type": "block_billing",
+      "rule_id": "QMI-BLOCK-01",
+      "expected_status": "open",
+      "note": "three tasks in one entry"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 18,
+      "timekeeper_id": "TK02",
+      "rule_type": "daily_hour_cap",
+      "rule_id": "QMI-DAYCAP-01",
+      "expected_status": "open",
+      "note": "day total 10.9 hours against a 10 hour limit; 0.9 hour of this entry is over"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 22,
+      "timekeeper_id": "TK02",
+      "rule_type": "vague_description",
+      "rule_id": "QMI-VAGUE-01",
+      "expected_status": "open",
+      "note": "listed vague phrase"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 23,
+      "timekeeper_id": "TK03",
+      "rule_type": "vague_description",
+      "rule_id": "QMI-VAGUE-01",
+      "expected_status": "open",
+      "note": "no object"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 25,
+      "timekeeper_id": "TK02",
+      "rule_type": "staffing_event_limit",
+      "rule_id": "QMI-EVENT-01",
+      "expected_status": "open",
+      "note": "second attorney at a deposition, no approval"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 26,
+      "timekeeper_id": "TK01",
+      "rule_type": "travel_time",
+      "rule_id": "QMI-TRAVEL-01",
+      "expected_status": "open",
+      "note": "travel billed at full rate; client pays 50%"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 27,
+      "timekeeper_id": "",
+      "rule_type": "expense_per_diem",
+      "rule_id": "QMI-PERDIEM-01",
+      "expected_status": "open",
+      "note": "84.00 against a 50.00 meal cap"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 29,
+      "timekeeper_id": "TK02",
+      "rule_type": "required_codes",
+      "rule_id": "QMI-CODES-01",
+      "expected_status": "open",
+      "note": "activity code missing"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 30,
+      "timekeeper_id": "TK09",
+      "rule_type": "unapproved_timekeeper",
+      "rule_id": "QMI-TK-01",
+      "expected_status": "open",
+      "note": "TK09 is not on the approved list"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 31,
+      "timekeeper_id": "TK02",
+      "rule_type": "rate_above_card",
+      "rule_id": "QMI-RATE-01",
+      "expected_status": "open",
+      "note": "billed at 240 against an approved 225"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 35,
+      "timekeeper_id": "TK03",
+      "rule_type": "ARITH-LINE",
+      "rule_id": "ARITH-LINE",
+      "expected_status": "open",
+      "note": "0.9 x 110 is 99.00, line says 109.00"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 39,
+      "timekeeper_id": "TK02",
+      "rule_type": "staffing_event_limit",
+      "rule_id": "QMI-EVENT-01",
+      "expected_status": "waived",
+      "note": "second attorney at a hearing; client approved it, see waiver W-001"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": 42,
+      "timekeeper_id": "TK01",
+      "rule_type": "non_billable_task",
+      "rule_id": "QMI-NONBILL-01",
+      "expected_status": "open",
+      "note": "invoice preparation"
+    },
+    {
+      "invoice_id": "INV-Q-1001",
+      "line_no": null,
+      "timekeeper_id": "",
+      "rule_type": "staffing_matter_limit",
+      "rule_id": "QMI-STAFF-01",
+      "expected_status": "open",
+      "note": "four timekeepers on the invoice against a limit of three"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 2,
+      "timekeeper_id": "TK05",
+      "rule_type": "rate_increase_notice",
+      "rule_id": "QMI-RATEUP-01",
+      "expected_status": "open",
+      "note": "115 billed, last billed 105, no notice on record"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 8,
+      "timekeeper_id": "TK05",
+      "rule_type": "non_billable_task",
+      "rule_id": "QMI-NONBILL-01",
+      "expected_status": "open",
+      "note": "conflicts check"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 8,
+      "timekeeper_id": "TK05",
+      "rule_type": "rate_increase_notice",
+      "rule_id": "QMI-RATEUP-01",
+      "expected_status": "open",
+      "note": "115 billed, last billed 105, no notice on record"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 10,
+      "timekeeper_id": "TK01",
+      "rule_type": "non_billable_task",
+      "rule_id": "QMI-NONBILL-01",
+      "expected_status": "open",
+      "note": "training"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 11,
+      "timekeeper_id": "",
+      "rule_type": "expense_receipt_threshold",
+      "rule_id": "QMI-RECEIPT-01",
+      "expected_status": "open",
+      "note": "180.00 with no receipt; threshold 25.00"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 17,
+      "timekeeper_id": "",
+      "rule_type": "expense_markup",
+      "rule_id": "QMI-MARKUP-01",
+      "expected_status": "open",
+      "note": "billed 96.00 against a cost of 80.00"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": null,
+      "timekeeper_id": "TK04",
+      "rule_type": "rounding_pattern",
+      "rule_id": "QMI-ROUND-01",
+      "expected_status": "open",
+      "note": "all six TK04 entries are multiples of 0.5 hour"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": null,
+      "timekeeper_id": "",
+      "rule_type": "ARITH-TOTAL",
+      "rule_id": "ARITH-TOTAL",
+      "expected_status": "open",
+      "note": "declared total is 100.00 more than the lines"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 1,
+      "timekeeper_id": "TK11",
+      "rule_type": "late_time",
+      "rule_id": "BRW-LATE-01",
+      "expected_status": "open",
+      "note": "100 days old on the invoice date; limit 90"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 7,
+      "timekeeper_id": "TK12",
+      "rule_type": "block_billing",
+      "rule_id": "BRW-BLOCK-01",
+      "expected_status": "open",
+      "note": "three tasks in one entry over 0.5 hour"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 10,
+      "timekeeper_id": "TK11",
+      "rule_type": "travel_time",
+      "rule_id": "BRW-TRAVEL-01",
+      "expected_status": "open",
+      "note": "travel time with no approval on record"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 11,
+      "timekeeper_id": "",
+      "rule_type": "expense_per_diem",
+      "rule_id": "BRW-PERDIEM-01",
+      "expected_status": "open",
+      "note": "189.00 a night against a 160.00 cap"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 13,
+      "timekeeper_id": "TK12",
+      "rule_type": "rate_above_card",
+      "rule_id": "BRW-RATE-01",
+      "expected_status": "open",
+      "note": "billed at 295 against an approved 280"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 15,
+      "timekeeper_id": "TK13",
+      "rule_type": "non_billable_task",
+      "rule_id": "BRW-NONBILL-01",
+      "expected_status": "open",
+      "note": "clerical work"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 19,
+      "timekeeper_id": "TK13",
+      "rule_type": "required_codes",
+      "rule_id": "BRW-CODES-01",
+      "expected_status": "open",
+      "note": "task code missing"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 21,
+      "timekeeper_id": "TK13",
+      "rule_type": "duplicate_entries",
+      "rule_id": "BRW-DUP-01",
+      "expected_status": "open",
+      "note": "same as the entry before it"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 24,
+      "timekeeper_id": "TK12",
+      "rule_type": "minimum_increment",
+      "rule_id": "BRW-INCR-01",
+      "expected_status": "open",
+      "note": "1.25 hours is not a multiple of 0.1"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": null,
+      "timekeeper_id": "",
+      "rule_type": "budget_cap",
+      "rule_id": "BRW-BUDGET-01",
+      "expected_status": "open",
+      "note": "invoice takes the matter 1,850.00 over the not-to-exceed amount"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": null,
+      "timekeeper_id": "",
+      "rule_type": "phase_cap",
+      "rule_id": "BRW-PHASE-01",
+      "expected_status": "open",
+      "note": "phase L300 goes 640.00 over its allotted amount"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 4,
+      "timekeeper_id": "TK22",
+      "rule_type": "block_billing",
+      "rule_id": "OIH-BLOCK-01",
+      "expected_status": "open",
+      "note": "three tasks in one entry over 1.0 hour"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 6,
+      "timekeeper_id": "TK23",
+      "rule_type": "rate_increase_notice",
+      "rule_id": "OIH-RATEUP-01",
+      "expected_status": "open",
+      "note": "new rate billed before the 60 day notice period ended on 2026-10-19"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 10,
+      "timekeeper_id": "TK22",
+      "rule_type": "vague_description",
+      "rule_id": "OIH-VAGUE-01",
+      "expected_status": "open",
+      "note": "generic phrase, no object"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 11,
+      "timekeeper_id": "TK24",
+      "rule_type": "rate_above_card",
+      "rule_id": "OIH-RATE-01",
+      "expected_status": "open",
+      "note": "billed at 255 against an approved 240"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 12,
+      "timekeeper_id": "",
+      "rule_type": "expense_markup",
+      "rule_id": "OIH-MARKUP-01",
+      "expected_status": "open",
+      "note": "billed 230.00 against a cost of 200.00"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 15,
+      "timekeeper_id": "TK23",
+      "rule_type": "staffing_event_limit",
+      "rule_id": "OIH-EVENT-01",
+      "expected_status": "open",
+      "note": "third lawyer at a hearing; limit is two"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 15,
+      "timekeeper_id": "TK23",
+      "rule_type": "rate_increase_notice",
+      "rule_id": "OIH-RATEUP-01",
+      "expected_status": "open",
+      "note": "new rate billed before the 60 day notice period ended on 2026-10-19"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 16,
+      "timekeeper_id": "",
+      "rule_type": "expense_overhead",
+      "rule_id": "OIH-OVERHEAD-01",
+      "expected_status": "open",
+      "note": "word processing is overhead"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 17,
+      "timekeeper_id": "TK21",
+      "rule_type": "minimum_increment",
+      "rule_id": "OIH-INCR-01",
+      "expected_status": "open",
+      "note": "0.75 hour is not a multiple of 0.1"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 20,
+      "timekeeper_id": "TK22",
+      "rule_type": "required_codes",
+      "rule_id": "OIH-CODES-01",
+      "expected_status": "open",
+      "note": "task code missing"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 22,
+      "timekeeper_id": "TK23",
+      "rule_type": "research_approval",
+      "rule_id": "OIH-RESEARCH-01",
+      "expected_status": "open",
+      "note": "research reaches 5.7 hours against a 5 hour limit; waiver W-002 expired 2026-09-30"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 28,
+      "timekeeper_id": "TK24",
+      "rule_type": "non_billable_task",
+      "rule_id": "OIH-NONBILL-01",
+      "expected_status": "open",
+      "note": "invoice preparation"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 1,
+      "timekeeper_id": "TK31",
+      "rule_type": "late_time",
+      "rule_id": "LDS-LATE-01",
+      "expected_status": "open",
+      "note": "56 days old on the invoice date; limit 45"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 5,
+      "timekeeper_id": "TK32",
+      "rule_type": "ai_disclosure_required",
+      "rule_id": "LDS-AIDISC-01",
+      "expected_status": "open",
+      "note": "flagged AI-assisted in the time system, no marker on the entry"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 9,
+      "timekeeper_id": "",
+      "rule_type": "expense_overhead",
+      "rule_id": "LDS-OVERHEAD-01",
+      "expected_status": "open",
+      "note": "subscription is overhead"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 11,
+      "timekeeper_id": "TK33",
+      "rule_type": "ai_nonpayable_task",
+      "rule_id": "LDS-AINOPAY-01",
+      "expected_status": "open",
+      "note": "AI-assisted transcript summary"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 13,
+      "timekeeper_id": "TK33",
+      "rule_type": "ai_disclosure_required",
+      "rule_id": "LDS-AIDISC-01",
+      "expected_status": "open",
+      "note": "narrative mentions an AI tool, no marker on the entry"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 14,
+      "timekeeper_id": "TK31",
+      "rule_type": "internal_conference_limit",
+      "rule_id": "LDS-CONF-01",
+      "expected_status": "open",
+      "note": "1.1 hours against a 0.5 hour limit"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 16,
+      "timekeeper_id": "TK33",
+      "rule_type": "vague_description",
+      "rule_id": "LDS-VAGUE-01",
+      "expected_status": "open",
+      "note": "no object"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 18,
+      "timekeeper_id": "TK32",
+      "rule_type": "block_billing",
+      "rule_id": "LDS-BLOCK-01",
+      "expected_status": "open",
+      "note": "three tasks joined by commas"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 23,
+      "timekeeper_id": "TK33",
+      "rule_type": "rate_above_card",
+      "rule_id": "LDS-RATE-01",
+      "expected_status": "open",
+      "note": "billed at 440 against an approved 420"
+    },
+    {
+      "invoice_id": "INV-P-5001",
+      "line_no": 4,
+      "timekeeper_id": "TK42",
+      "rule_type": "duplicate_entries",
+      "rule_id": "PBS-DUP-01",
+      "expected_status": "open",
+      "note": "same as the entry before it"
+    },
+    {
+      "invoice_id": "INV-P-5001",
+      "line_no": 6,
+      "timekeeper_id": "TK41",
+      "rule_type": "minimum_increment",
+      "rule_id": "PBS-INCR-01",
+      "expected_status": "open",
+      "note": "0.15 hour is not a multiple of 0.1"
+    },
+    {
+      "invoice_id": "INV-P-5001",
+      "line_no": 10,
+      "timekeeper_id": "TK42",
+      "rule_type": "rate_above_card",
+      "rule_id": "PBS-RATE-01",
+      "expected_status": "open",
+      "note": "billed at 325 against an approved 300"
+    }
+  ],
+  "not_enforced": [
+    {
+      "invoice_id": "INV-P-5001",
+      "line_no": 1,
+      "rule_id": "PBS-LATE-01",
+      "note": "50 days old. The 30 day rule is only proposed, so it must not produce a finding."
+    }
+  ],
+  "hard_cases_clean": [
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 6,
+      "note": "one task described with semicolons",
+      "narrative": "Draft motion to compel; sections on relevance; proportionality; and meet-and-confer history"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 16,
+      "note": "list of documents after a colon",
+      "narrative": "Review plaintiff's production: invoices, purchase orders, and shipping records"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 18,
+      "note": "\"and\" inside one task",
+      "narrative": "Review and revise draft protective order"
+    },
+    {
+      "invoice_id": "INV-Q-1002",
+      "line_no": 22,
+      "note": "\"and\" joining two people, one task",
+      "narrative": "Telephone conference with client and adjuster regarding settlement authority"
+    },
+    {
+      "invoice_id": "INV-B-2001",
+      "line_no": 8,
+      "note": "two tasks but at 0.4 hour it is under this client's 0.5 hour threshold",
+      "narrative": "Email to agency counsel regarding site access; review reply"
+    },
+    {
+      "invoice_id": "INV-O-3001",
+      "line_no": 9,
+      "note": "two tasks but at 0.8 hour it is under this client's 1.0 hour threshold",
+      "narrative": "Email to opposing counsel regarding extension; review stipulation"
+    },
+    {
+      "invoice_id": "INV-L-4001",
+      "line_no": 6,
+      "note": "AI-assisted and disclosed; not a task the client refuses to pay for",
+      "narrative": "Draft responses to invalidity contentions [AI-assisted]"
+    }
+  ]
+}

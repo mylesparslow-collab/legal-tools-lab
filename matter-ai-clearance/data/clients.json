@@ -1,0 +1,316 @@
+{
+ "description": "Fictional clients and the terms documents on file for each. Document text is in data/terms/<id>.txt.",
+ "clients": [
+  {
+   "id": "quenby",
+   "name": "Quenby Vale Health System (fictional)",
+   "short_name": "Quenby",
+   "industry": "health care",
+   "documents": [
+    {
+     "id": "quenby-ocg-2026",
+     "type": "outside_counsel_guidelines",
+     "date": "2026-01-01",
+     "eval_split": "dev"
+    },
+    {
+     "id": "quenby-el-2026",
+     "type": "engagement_letter",
+     "date": "2026-01-12",
+     "eval_split": "dev"
+    }
+   ],
+   "approved_tools": [
+    "suite-b",
+    "review-d"
+   ],
+   "analyst_findings": {
+    "recorded": true,
+    "retention_max_days": 30,
+    "allowed_regions": [
+     "US"
+    ],
+    "by": "Knowledge analyst",
+    "date": "2026-02-10",
+    "note": "From clause 3.4 of the guidelines."
+   },
+   "analyst_scopes": [
+    {
+     "document_id": "quenby-ocg-2026",
+     "class": "consent_required",
+     "quote_starts": "3.6 Patient information",
+     "data_classes": [
+      "phi"
+     ],
+     "by": "Knowledge analyst",
+     "date": "2026-02-10",
+     "reason": "Clause 3.6 is about patient information only. Confirmed with the responsible attorney."
+    }
+   ]
+  },
+  {
+   "id": "drennick",
+   "name": "Drennick Freight Lines (fictional)",
+   "short_name": "Drennick",
+   "industry": "logistics",
+   "documents": [
+    {
+     "id": "drennick-ocg-2025",
+     "type": "outside_counsel_guidelines",
+     "date": "2025-06-01",
+     "eval_split": "dev"
+    },
+    {
+     "id": "drennick-el-2025",
+     "type": "engagement_letter",
+     "date": "2025-06-20",
+     "eval_split": "dev"
+    }
+   ]
+  },
+  {
+   "id": "ostrava",
+   "name": "Ostrava Row Property Management (fictional)",
+   "short_name": "Ostrava Row",
+   "industry": "real estate",
+   "documents": [
+    {
+     "id": "ostrava-el-2026",
+     "type": "engagement_letter",
+     "date": "2026-02-03",
+     "eval_split": "dev"
+    }
+   ]
+  },
+  {
+   "id": "orrinthe",
+   "name": "Orrinthe Biologics (fictional)",
+   "short_name": "Orrinthe",
+   "industry": "life sciences",
+   "documents": [
+    {
+     "id": "orrinthe-ocg-2026",
+     "type": "outside_counsel_guidelines",
+     "date": "2026-01-15",
+     "eval_split": "heldout"
+    },
+    {
+     "id": "orrinthe-el-2026",
+     "type": "engagement_letter",
+     "date": "2026-01-30",
+     "eval_split": "heldout"
+    }
+   ]
+  },
+  {
+   "id": "tessaly",
+   "name": "Tessaly Harbor Bank (fictional)",
+   "short_name": "Tessaly",
+   "industry": "banking",
+   "documents": [
+    {
+     "id": "tessaly-ocg-2025",
+     "type": "outside_counsel_guidelines",
+     "date": "2025-09-01",
+     "eval_split": "dev"
+    },
+    {
+     "id": "tessaly-el-2025",
+     "type": "engagement_letter",
+     "date": "2025-09-18",
+     "eval_split": "dev"
+    }
+   ],
+   "analyst_findings": {
+    "recorded": true,
+    "retention_max_days": 0,
+    "allowed_regions": [
+     "US"
+    ],
+    "by": "Knowledge analyst",
+    "date": "2025-10-02",
+    "note": "From clause 2.4 of the guidelines."
+   },
+   "analyst_dismissals": [
+    {
+     "document_id": "tessaly-ocg-2025",
+     "class": "disclosure_required",
+     "quote_starts": "2.2 A request for consent must identify",
+     "by": "Knowledge analyst",
+     "date": "2025-10-02",
+     "reason": "Describes what a consent request contains. Not a separate notice duty."
+    },
+    {
+     "document_id": "tessaly-ocg-2025",
+     "class": "approved_tools_only",
+     "quote_starts": "2.7 All attorneys working on Bank matters",
+     "by": "Knowledge analyst",
+     "date": "2025-10-02",
+     "reason": "Staff training clause. The words 'approved tool' refer back to consent under 2.1."
+    }
+   ]
+  },
+  {
+   "id": "marrowfinch",
+   "name": "Marrowfinch Outfitters (fictional)",
+   "short_name": "Marrowfinch",
+   "industry": "retail",
+   "documents": [
+    {
+     "id": "marrowfinch-ocg-2024",
+     "type": "outside_counsel_guidelines",
+     "date": "2024-03-01",
+     "eval_split": "dev"
+    },
+    {
+     "id": "marrowfinch-el-2025",
+     "type": "engagement_letter",
+     "date": "2025-05-06",
+     "eval_split": "dev"
+    }
+   ]
+  },
+  {
+   "id": "quillfether",
+   "name": "Quillfether Systems (fictional)",
+   "short_name": "Quillfether",
+   "industry": "software",
+   "documents": [
+    {
+     "id": "quillfether-ocg-v1-2025",
+     "type": "outside_counsel_guidelines",
+     "date": "2025-02-01",
+     "eval_split": "dev"
+    }
+   ],
+   "pending_documents": [
+    {
+     "id": "quillfether-ocg-v2-2026",
+     "type": "outside_counsel_guidelines",
+     "date": "2026-03-01",
+     "eval_split": "heldout",
+     "supersedes": "quillfether-ocg-v1-2025"
+    }
+   ]
+  },
+  {
+   "id": "sablemere",
+   "name": "Sablemere Water District (fictional)",
+   "short_name": "Sablemere",
+   "industry": "public agency",
+   "documents": [
+    {
+     "id": "sablemere-ocg-2025",
+     "type": "outside_counsel_guidelines",
+     "date": "2025-10-01",
+     "eval_split": "heldout"
+    },
+    {
+     "id": "sablemere-el-2025",
+     "type": "engagement_letter",
+     "date": "2025-10-20",
+     "eval_split": "heldout"
+    }
+   ]
+  },
+  {
+   "id": "verdanthe",
+   "name": "Verdanthe Senior Living (fictional)",
+   "short_name": "Verdanthe",
+   "industry": "senior living",
+   "documents": [
+    {
+     "id": "verdanthe-el-2026",
+     "type": "engagement_letter",
+     "date": "2026-04-08",
+     "eval_split": "heldout"
+    }
+   ]
+  },
+  {
+   "id": "ironvale",
+   "name": "Ironvale Bridge Capital (fictional)",
+   "short_name": "Ironvale",
+   "industry": "private equity",
+   "documents": [
+    {
+     "id": "ironvale-ocg-2026",
+     "type": "outside_counsel_guidelines",
+     "date": "2026-02-01",
+     "eval_split": "heldout"
+    },
+    {
+     "id": "ironvale-el-2026",
+     "type": "engagement_letter",
+     "date": "2026-02-14",
+     "eval_split": "heldout"
+    }
+   ],
+   "approved_tools": [
+    "suite-b",
+    "research-c"
+   ],
+   "analyst_findings": {
+    "recorded": true,
+    "retention_max_days": 7,
+    "allowed_regions": [
+     "US"
+    ],
+    "by": "Knowledge analyst",
+    "date": "2026-03-01",
+    "note": "From clauses 4.3 and 4.4. Appendix C list entered by hand."
+   },
+   "analyst_scopes": [
+    {
+     "document_id": "ironvale-ocg-2026",
+     "class": "consent_required",
+     "quote_starts": "4.2 Use of any AI platform not on that list",
+     "only_tools_off_approved_list": true,
+     "by": "Knowledge analyst",
+     "date": "2026-03-01",
+     "reason": "Clause 4.2 asks for approval only for platforms that are not in Appendix C."
+    }
+   ]
+  },
+  {
+   "id": "pallister",
+   "name": "Pallister Grove Foods (fictional)",
+   "short_name": "Pallister Grove",
+   "industry": "food",
+   "documents": []
+  }
+ ],
+ "other_parties": [
+  {
+   "id": "marlowetind",
+   "name": "Marlowe-Tind Mutual Indemnity (fictional)",
+   "short_name": "Marlowe-Tind",
+   "role": "insurer",
+   "documents": [
+    {
+     "id": "marlowetind-guidelines-2026",
+     "type": "insurer_guidelines",
+     "date": "2026-01-01",
+     "eval_split": "dev"
+    }
+   ]
+  },
+  {
+   "id": "hesperwick",
+   "name": "Hesperwick Joint Defense Group (fictional)",
+   "short_name": "Hesperwick group",
+   "role": "co_counsel",
+   "documents": [
+    {
+     "id": "hesperwick-protocol-2026",
+     "type": "co_counsel_protocol",
+     "date": "2026-04-01",
+     "eval_split": "dev"
+    }
+   ],
+   "approved_tools": [
+    "review-d"
+   ]
+  }
+ ]
+}

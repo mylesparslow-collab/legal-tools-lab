@@ -1,0 +1,29 @@
+{
+ "id": "M-1005",
+ "name": "Ostrava Row: slip and fall defense (insured)",
+ "client_id": "ostrava",
+ "matter_type": "insurance defense litigation",
+ "responsible_attorney": "A. Vantongeren (fictional)",
+ "intake_date": "2026-10-20",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "ostrava-el-2026"
+ ],
+ "additional_terms": [
+  {
+   "party_id": "marlowetind",
+   "role": "insurer",
+   "document_ids": [
+    "marlowetind-guidelines-2026"
+   ]
+  }
+ ],
+ "consents": [],
+ "notices": []
+}

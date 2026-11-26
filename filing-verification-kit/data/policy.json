@@ -1,0 +1,22 @@
+{
+  "_about": "Firm policy choices used by the checklist engine. These are configurable defaults for a General Counsel to set. None of them is a statement of what the law requires.",
+  "policy_version": "draft-0.1",
+  "judge_entry_staleness_days": 30,
+  "filing_document_types": ["brief", "pleading", "motion", "opposition", "reply", "memorandum", "declaration", "discovery_motion", "other_court_paper"],
+  "discovery_document_types": ["discovery_request", "discovery_response", "discovery_objection"],
+  "discovery_mode": "advisory",
+  "discovery_mode_options": {
+    "advisory": "Citation items are reported for discovery papers but do not block.",
+    "same_as_filings": "Discovery papers get the same blocking citation items as court filings."
+  },
+  "attestor_must_be_responsible_attorney": true,
+  "signer_must_be_responsible_attorney": true,
+  "min_how_checked_chars": 10,
+  "min_resolution_chars": 20,
+  "allow_attorney_override_not_found": false,
+  "allow_attorney_override_quote_mismatch": false,
+  "judge_check_blocks_when_not_checked": true,
+  "judge_check_blocks_when_stale": true,
+  "non_disclosure_needs_approval": true,
+  "non_human_attestors": ["sb574-citecheck", "citecheck", "system", "automated", "auto", "ai"]
+}

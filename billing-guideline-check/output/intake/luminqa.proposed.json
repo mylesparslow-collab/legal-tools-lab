@@ -1,0 +1,180 @@
+{
+  "client_id": "luminqa",
+  "client_name": "Luminqa Data Systems",
+  "document": "data/guideline_docs/luminqa.txt",
+  "rules": [
+    {
+      "rule_id": "LUMINQ-P-MINIMUM-INCREMENT-01",
+      "type": "minimum_increment",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "Time is to be kept in tenths of an hour.",
+      "source_ref": "Schedule A: Billing, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "LUMINQ-P-BLOCK-BILLING-01",
+      "type": "block_billing",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "max_tasks": 1,
+        "min_hours": 0
+      },
+      "source_quote": "Entries that lump several tasks together under one time total will be sent back.",
+      "source_ref": "Schedule A: Billing, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "LUMINQ-P-VAGUE-DESCRIPTION-01",
+      "type": "vague_description",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "always_phrases": [
+          "attention to file",
+          "attention to matter",
+          "various tasks",
+          "work on case",
+          "work on matter"
+        ],
+        "bare_phrases": [
+          "draft correspondence",
+          "legal research",
+          "prepare for hearing",
+          "review documents",
+          "review file",
+          "telephone call",
+          "trial preparation",
+          "work on discovery"
+        ],
+        "min_words": 3
+      },
+      "source_quote": "Narratives must say what was done and for what purpose; entries like \"review documents\" or \"attention to file\" are not enough.",
+      "source_ref": "Schedule A: Billing, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "LUMINQ-P-RATE-ABOVE-CARD-01",
+      "type": "rate_above_card",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Rates are fixed by the engagement rate card for the calendar year and may not be exceeded.",
+      "source_ref": "Schedule A: Billing, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "LUMINQ-P-INTERNAL-CONFERENCE-LIMIT-01",
+      "type": "internal_conference_limit",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_hours_per_entry": "0.5"
+      },
+      "source_quote": "Internal conferences among your team are capped at 0.5 hour per entry.",
+      "source_ref": "Schedule A: Billing, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "LUMINQ-P-LATE-TIME-01",
+      "type": "late_time",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 45
+      },
+      "source_quote": "Submit time within 45 days of the work; older time is written off.",
+      "source_ref": "Schedule A: Billing, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "LUMINQ-P-EXPENSE-OVERHEAD-01",
+      "type": "expense_overhead",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "codes": [
+          "E103",
+          "E104",
+          "E105",
+          "E108"
+        ],
+        "phrases": [
+          "postage",
+          "word processing",
+          "local telephone",
+          "office supplies",
+          "overtime",
+          "subscription",
+          "research database subscriptions",
+          "is not chargeable"
+        ]
+      },
+      "source_quote": "General overhead, including research database subscriptions and word processing, is not chargeable.",
+      "source_ref": "Schedule A: Billing, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "LUMINQ-P-AI-DISCLOSURE-REQUIRED-01",
+      "type": "ai_disclosure_required",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "disclosure_marker": "[AI-assisted]",
+        "ai_terms": [
+          "generative ai",
+          "artificial intelligence",
+          "ai tool",
+          "ai-assisted",
+          "ai assisted",
+          "large language model",
+          "machine-generated"
+        ]
+      },
+      "source_quote": "If any work billed to us was performed with the assistance of a generative artificial intelligence tool, the time entry must be marked \"[AI-assisted]\" on the invoice.",
+      "source_ref": "Schedule B: Use of artificial intelligence tools, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "LUMINQ-P-AI-NONPAYABLE-TASK-01",
+      "type": "ai_nonpayable_task",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "disclosure_marker": "[AI-assisted]",
+        "ai_terms": [
+          "generative ai",
+          "artificial intelligence",
+          "ai tool",
+          "ai-assisted",
+          "ai assisted",
+          "large language model",
+          "machine-generated"
+        ],
+        "task_phrases": [
+          "summarize",
+          "summary of",
+          "summaries of",
+          "first-pass document review",
+          "first pass document review"
+        ]
+      },
+      "source_quote": "We will not pay for AI-assisted summaries of transcripts or documents, or for AI-assisted first-pass document review.",
+      "source_ref": "Schedule B: Use of artificial intelligence tools, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    }
+  ]
+}

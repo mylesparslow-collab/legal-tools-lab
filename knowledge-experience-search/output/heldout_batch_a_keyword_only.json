@@ -1,0 +1,809 @@
+{
+ "batch": "batch_a",
+ "expansion": "off",
+ "scoring": "strict = listed as relevant; lenient = listed or marked same topic; other results are unjudged; no recall",
+ "tool_state": {
+  "ranking_config_sha256": "703d98497e3568fb",
+  "thesaurus_sha256": "3f0290b15ecaeb06"
+ },
+ "document_queries": {
+  "all": {
+   "queries": 30,
+   "strict_precision_at_5": 0.307,
+   "lenient_precision_at_5": 0.367,
+   "share_with_a_listed_document_in_top_10": 0.533,
+   "queries_with_a_listed_document_in_top_10": 16
+  },
+  "different words": {
+   "queries": 20,
+   "strict_precision_at_5": 0.11,
+   "lenient_precision_at_5": 0.13,
+   "share_with_a_listed_document_in_top_10": 0.3,
+   "queries_with_a_listed_document_in_top_10": 6
+  },
+  "documents' own words": {
+   "queries": 10,
+   "strict_precision_at_5": 0.7,
+   "lenient_precision_at_5": 0.84,
+   "share_with_a_listed_document_in_top_10": 1.0,
+   "queries_with_a_listed_document_in_top_10": 10
+  }
+ },
+ "who_has_done_this": {
+  "queries": 6,
+  "queries_with_every_strongest_person_in_top_3": 3,
+  "expected_people_in_top_5": 9,
+  "expected_people": 18
+ },
+ "per_query": [
+  {
+   "id": "HA01",
+   "kind": "documents' own words",
+   "category": "topic and document type",
+   "variation": "own words",
+   "query": "borrowing base certificate checklist",
+   "returned": 3,
+   "strict_precision_at_5": 0.4,
+   "lenient_precision_at_5": 0.4,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00947",
+    "D00453",
+    "D00744"
+   ]
+  },
+  {
+   "id": "HA02",
+   "kind": "documents' own words",
+   "category": "topic and document type",
+   "variation": "own words",
+   "query": "trust decanting agreement",
+   "returned": 3,
+   "strict_precision_at_5": 0.6,
+   "lenient_precision_at_5": 0.6,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00966",
+    "D00422",
+    "D00712"
+   ]
+  },
+  {
+   "id": "HA03",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "takedown notice counter-notice",
+   "returned": 12,
+   "strict_precision_at_5": 0.6,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D01230",
+    "D01145",
+    "D00215",
+    "D01143",
+    "D01103"
+   ]
+  },
+  {
+   "id": "HA04",
+   "kind": "documents' own words",
+   "category": "topic and document type",
+   "variation": "own words",
+   "query": "sales tax nexus opinion letter",
+   "returned": 4,
+   "strict_precision_at_5": 0.8,
+   "lenient_precision_at_5": 0.8,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00272",
+    "D01004",
+    "D00363",
+    "D00601"
+   ]
+  },
+  {
+   "id": "HA05",
+   "kind": "documents' own words",
+   "category": "exact phrase",
+   "variation": "own words",
+   "query": "\"interactive process\" reasonable accommodation",
+   "returned": 24,
+   "strict_precision_at_5": 0.4,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 4,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00019",
+    "D00297",
+    "D00447",
+    "D00261",
+    "D00992"
+   ]
+  },
+  {
+   "id": "HA06",
+   "kind": "documents' own words",
+   "category": "topic and document type",
+   "variation": "own words",
+   "query": "summary judgment brief",
+   "returned": 4,
+   "strict_precision_at_5": 0.6,
+   "lenient_precision_at_5": 0.6,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00972",
+    "D01076",
+    "D01078",
+    "D00480"
+   ]
+  },
+  {
+   "id": "HA07",
+   "kind": "documents' own words",
+   "category": "topic and document type",
+   "variation": "own words",
+   "query": "subdivision map staff report",
+   "returned": 5,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00390",
+    "D00575",
+    "D00574",
+    "D00256",
+    "D00062"
+   ]
+  },
+  {
+   "id": "HA08",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "severance agreement release of claims",
+   "returned": 16,
+   "strict_precision_at_5": 0.6,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00738",
+    "D00737",
+    "D00584",
+    "D01043",
+    "D00067"
+   ]
+  },
+  {
+   "id": "HA09",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "intercreditor arrangements standstill period",
+   "returned": 6,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00504",
+    "D01150",
+    "D01195",
+    "D00801",
+    "D00499"
+   ]
+  },
+  {
+   "id": "HA10",
+   "kind": "documents' own words",
+   "category": "topic with a type filter",
+   "variation": "own words",
+   "query": "vendor security assessment type:\"agreement\"",
+   "returned": 6,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D01013",
+    "D00235",
+    "D00660",
+    "D00367",
+    "D00043"
+   ]
+  },
+  {
+   "id": "HA11",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "synonym",
+   "query": "living trust",
+   "returned": 116,
+   "strict_precision_at_5": 0.2,
+   "lenient_precision_at_5": 0.2,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [
+    "living"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00184",
+    "D00371",
+    "D00666",
+    "D00049",
+    "D00964"
+   ]
+  },
+  {
+   "id": "HA12",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "synonym, one word",
+   "query": "cybersquatting",
+   "returned": 0,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "cybersquatting"
+   ],
+   "corrected": [],
+   "top_5": []
+  },
+  {
+   "id": "HA13",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "how long to keep old files before shredding them",
+   "returned": 210,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "long",
+    "keep",
+    "shredding"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00844",
+    "D00691",
+    "D01065",
+    "D00987",
+    "D00154"
+   ]
+  },
+  {
+   "id": "HA14",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "British lay phrasing",
+   "query": "holiday let rules",
+   "returned": 37,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "let"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00691",
+    "D00401",
+    "D01111",
+    "D01008",
+    "D00169"
+   ]
+  },
+  {
+   "id": "HA15",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "British synonym",
+   "query": "tendering for council contracts",
+   "returned": 57,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "tendering",
+    "council"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00889",
+    "D01081",
+    "D01078",
+    "D00480",
+    "D00479"
+   ]
+  },
+  {
+   "id": "HA16",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing, British spelling",
+   "query": "right of way across a neighbour's land",
+   "returned": 12,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "way",
+    "across",
+    "neighbour"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00931",
+    "D00632",
+    "D00930",
+    "D00928",
+    "D00205"
+   ]
+  },
+  {
+   "id": "HA17",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "abbreviation",
+   "query": "UBIT",
+   "returned": 0,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "ubit"
+   ],
+   "corrected": [],
+   "top_5": []
+  },
+  {
+   "id": "HA18",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "abbreviation",
+   "query": "MAE clause",
+   "returned": 118,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "mae"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00196",
+    "D01077",
+    "D00198",
+    "D00378",
+    "D00197"
+   ]
+  },
+  {
+   "id": "HA19",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "typo",
+   "query": "preliminery injuction",
+   "returned": 0,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "preliminery",
+    "injuction"
+   ],
+   "corrected": [],
+   "top_5": []
+  },
+  {
+   "id": "HA20",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "American spelling (documents use defence)",
+   "query": "audit defense strategy",
+   "returned": 116,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "strategy"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00210",
+    "D00538",
+    "D00737",
+    "D00835",
+    "D00209"
+   ]
+  },
+  {
+   "id": "HA21",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "spelling variant and synonym",
+   "query": "parent company guarantee",
+   "returned": 0,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "parent",
+    "company",
+    "guarantee"
+   ],
+   "corrected": [],
+   "top_5": []
+  },
+  {
+   "id": "HA22",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "laying off staff and choosing who goes",
+   "returned": 7,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "laying",
+    "choosing",
+    "goes"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00112",
+    "D00575",
+    "D00634",
+    "D01089",
+    "D00016"
+   ]
+  },
+  {
+   "id": "HA23",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "are salaried employees owed time and a half",
+   "returned": 51,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "salaried",
+    "owed",
+    "time",
+    "half"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00489",
+    "D00844",
+    "D00537",
+    "D00538",
+    "D00074"
+   ]
+  },
+  {
+   "id": "HA24",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing, narrower",
+   "query": "who owns inventions made with a research partner",
+   "returned": 6,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "owns",
+    "made",
+    "research"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00844",
+    "D00396",
+    "D00123",
+    "D00122",
+    "D00073"
+   ]
+  },
+  {
+   "id": "HA25",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "sending customer data to servers abroad",
+   "returned": 138,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "sending",
+    "servers",
+    "abroad"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00501",
+    "D00168",
+    "D00404",
+    "D00403",
+    "D00167"
+   ]
+  },
+  {
+   "id": "HA26",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "British synonym",
+   "query": "landlord contribution to fit-out works",
+   "returned": 4,
+   "strict_precision_at_5": 0.4,
+   "lenient_precision_at_5": 0.4,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [
+    "contribution",
+    "fit"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00825",
+    "D01037",
+    "D01086",
+    "D00628"
+   ]
+  },
+  {
+   "id": "HA27",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "word order and inflection",
+   "query": "certifying the class motion",
+   "returned": 6,
+   "strict_precision_at_5": 0.8,
+   "lenient_precision_at_5": 0.8,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [
+    "certifying"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00623",
+    "D00619",
+    "D00432",
+    "D00430",
+    "D00923"
+   ]
+  },
+  {
+   "id": "HA28",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "pricing of dealings between group companies",
+   "returned": 2,
+   "strict_precision_at_5": 0.4,
+   "lenient_precision_at_5": 0.4,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [
+    "dealings",
+    "between",
+    "companies"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00698",
+    "D00176"
+   ]
+  },
+  {
+   "id": "HA29",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing, narrower",
+   "query": "minority shareholder forced to sell with the majority",
+   "returned": 3,
+   "strict_precision_at_5": 0.2,
+   "lenient_precision_at_5": 0.6,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 2,
+   "expansions_used": [],
+   "not_found": [
+    "forced",
+    "sell",
+    "majority"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00097",
+    "D00096",
+    "D00099"
+   ]
+  },
+  {
+   "id": "HA30",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing, British term",
+   "query": "loan documents needed before first drawdown",
+   "returned": 2,
+   "strict_precision_at_5": 0.2,
+   "lenient_precision_at_5": 0.2,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [
+    "drawdown"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00506",
+    "D00803"
+   ]
+  }
+ ],
+ "per_who_query": [
+  {
+   "id": "WA1",
+   "query": "trust administration",
+   "variation": "own words",
+   "matters_matched": 9,
+   "message": "one matter only",
+   "every_strongest_in_top_3": true,
+   "expected_in_top_5": 3,
+   "expected": 3,
+   "top_5": [
+    "U109",
+    "U111",
+    "U113",
+    "U110",
+    "U117"
+   ]
+  },
+  {
+   "id": "WA2",
+   "query": "wage claim defense",
+   "variation": "own words",
+   "matters_matched": 6,
+   "message": "one matter only",
+   "every_strongest_in_top_3": true,
+   "expected_in_top_5": 3,
+   "expected": 3,
+   "top_5": [
+    "U051",
+    "U050",
+    "U049",
+    "U053",
+    "U054"
+   ]
+  },
+  {
+   "id": "WA3",
+   "query": "cybersquatting",
+   "variation": "different vocabulary: synonym",
+   "matters_matched": 0,
+   "message": "Nothing you can open mentions: cybersquatting. No matching matters among those you can open.",
+   "every_strongest_in_top_3": false,
+   "expected_in_top_5": 0,
+   "expected": 3,
+   "top_5": []
+  },
+  {
+   "id": "WA4",
+   "query": "holiday let regulation",
+   "variation": "different vocabulary: British lay phrasing",
+   "matters_matched": 1,
+   "message": "one matter only Only 1 matching matter you can open. Too little to rank: the people below are listed by name as leads to ask, not as a ranking.",
+   "every_strongest_in_top_3": false,
+   "expected_in_top_5": 0,
+   "expected": 3,
+   "top_5": []
+  },
+  {
+   "id": "WA5",
+   "query": "subdivision map",
+   "variation": "own words",
+   "matters_matched": 6,
+   "message": "one matter only",
+   "every_strongest_in_top_3": true,
+   "expected_in_top_5": 3,
+   "expected": 3,
+   "top_5": [
+    "U038",
+    "U037",
+    "U044",
+    "U045",
+    "U046"
+   ]
+  },
+  {
+   "id": "WA6",
+   "query": "lending against receivables and inventory",
+   "variation": "different vocabulary: lay phrasing",
+   "matters_matched": 2,
+   "message": "one matter only Only 2 matching matters you can open. Too little to rank: the people below are listed by name as leads to ask, not as a ranking.",
+   "every_strongest_in_top_3": false,
+   "expected_in_top_5": 0,
+   "expected": 3,
+   "top_5": []
+  }
+ ]
+}

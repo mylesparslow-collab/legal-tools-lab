@@ -1,0 +1,296 @@
+{
+  "note": "Fictional matter records for held-out batch B: approved timekeepers, rate cards, approvals and budgets.",
+  "matters": [
+    {
+      "client_id": "bramblewick",
+      "name": "Cargo loss claim: refrigerated trailer",
+      "timekeepers": {
+        "D31": {
+          "name": "Thaddeus Ilves-Moreau",
+          "classification": "PT",
+          "approved_rate": "540.00",
+          "last_billed_rate": "540.00",
+          "rate_notice_date": null
+        },
+        "D32": {
+          "name": "Calliope Ndiaye-Hart",
+          "classification": "AS",
+          "approved_rate": "385.00",
+          "last_billed_rate": "385.00",
+          "rate_notice_date": null
+        },
+        "D33": {
+          "name": "Bertrand Yilmaz-Coyle",
+          "classification": "AS",
+          "approved_rate": "360.00",
+          "last_billed_rate": "340.00",
+          "rate_notice_date": "2026-07-20"
+        },
+        "D34": {
+          "name": "Marguerite Osei-Lund",
+          "classification": "LA",
+          "approved_rate": "195.00",
+          "last_billed_rate": "195.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "BFC-LIT-301",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "bramblewick",
+      "name": "Terminal lease holdover dispute",
+      "timekeepers": {
+        "D31": {
+          "name": "Thaddeus Ilves-Moreau",
+          "classification": "PT",
+          "approved_rate": "540.00",
+          "last_billed_rate": "540.00",
+          "rate_notice_date": null
+        },
+        "D32": {
+          "name": "Calliope Ndiaye-Hart",
+          "classification": "AS",
+          "approved_rate": "385.00",
+          "last_billed_rate": "385.00",
+          "rate_notice_date": null
+        },
+        "D33": {
+          "name": "Bertrand Yilmaz-Coyle",
+          "classification": "AS",
+          "approved_rate": "360.00",
+          "last_billed_rate": "360.00",
+          "rate_notice_date": null
+        },
+        "D34": {
+          "name": "Marguerite Osei-Lund",
+          "classification": "LA",
+          "approved_rate": "195.00",
+          "last_billed_rate": "195.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "BFC-LIT-318",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": true
+      }
+    },
+    {
+      "client_id": "bramblewick",
+      "name": "Hours-of-service audit response",
+      "timekeepers": {
+        "D31": {
+          "name": "Thaddeus Ilves-Moreau",
+          "classification": "PT",
+          "approved_rate": "540.00",
+          "last_billed_rate": "540.00",
+          "rate_notice_date": null
+        },
+        "D32": {
+          "name": "Calliope Ndiaye-Hart",
+          "classification": "AS",
+          "approved_rate": "385.00",
+          "last_billed_rate": "385.00",
+          "rate_notice_date": null
+        },
+        "D34": {
+          "name": "Marguerite Osei-Lund",
+          "classification": "LA",
+          "approved_rate": "195.00",
+          "last_billed_rate": "195.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "BFC-REG-044",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "coldwaterfen",
+      "name": "Imaging equipment vendor dispute",
+      "timekeepers": {
+        "E41": {
+          "name": "Rosalind Achterhof-Mensah",
+          "classification": "PT",
+          "approved_rate": "495.00",
+          "last_billed_rate": "495.00",
+          "rate_notice_date": null
+        },
+        "E42": {
+          "name": "Julius Karlsson-Obeng",
+          "classification": "AS",
+          "approved_rate": "350.00",
+          "last_billed_rate": "350.00",
+          "rate_notice_date": null
+        },
+        "E43": {
+          "name": "Imogen Tavares-Wolde",
+          "classification": "AS",
+          "approved_rate": "320.00",
+          "last_billed_rate": "320.00",
+          "rate_notice_date": null
+        },
+        "E44": {
+          "name": "Cyprian Lowell-Adjei",
+          "classification": "LA",
+          "approved_rate": "165.00",
+          "last_billed_rate": "165.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "CFH-2026-A4",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      },
+      "budget": {
+        "cap": "120000.00",
+        "billed_to_date": "104000.00",
+        "phases": {
+          "L100": {
+            "cap": "30000.00",
+            "billed_to_date": "22500.00"
+          },
+          "L300": {
+            "cap": "45000.00",
+            "billed_to_date": "20000.00"
+          }
+        }
+      }
+    },
+    {
+      "client_id": "coldwaterfen",
+      "name": "Physician group contract arbitration",
+      "timekeepers": {
+        "E41": {
+          "name": "Rosalind Achterhof-Mensah",
+          "classification": "PT",
+          "approved_rate": "495.00",
+          "last_billed_rate": "495.00",
+          "rate_notice_date": null
+        },
+        "E42": {
+          "name": "Julius Karlsson-Obeng",
+          "classification": "AS",
+          "approved_rate": "350.00",
+          "last_billed_rate": "350.00",
+          "rate_notice_date": null
+        },
+        "E43": {
+          "name": "Imogen Tavares-Wolde",
+          "classification": "AS",
+          "approved_rate": "320.00",
+          "last_billed_rate": "320.00",
+          "rate_notice_date": null
+        },
+        "E44": {
+          "name": "Cyprian Lowell-Adjei",
+          "classification": "LA",
+          "approved_rate": "165.00",
+          "last_billed_rate": "165.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "CFH-2026-B2",
+      "approvals": {
+        "research": true,
+        "travel": true,
+        "staffing": false
+      },
+      "budget": {
+        "cap": "150000.00",
+        "billed_to_date": "41000.00"
+      }
+    },
+    {
+      "client_id": "nettlecombe",
+      "name": "Contested foreclosure: Ashgrove Lane property",
+      "timekeepers": {
+        "G51": {
+          "name": "Evander Mistry-Halloran",
+          "classification": "PT",
+          "approved_rate": "430.00",
+          "last_billed_rate": "430.00",
+          "rate_notice_date": null
+        },
+        "G52": {
+          "name": "Philippa Zubiri-Kane",
+          "classification": "AS",
+          "approved_rate": "300.00",
+          "last_billed_rate": "300.00",
+          "rate_notice_date": null
+        },
+        "G53": {
+          "name": "Tobiah Lindahl-Eze",
+          "classification": "AS",
+          "approved_rate": "275.00",
+          "last_billed_rate": "275.00",
+          "rate_notice_date": null
+        },
+        "G54": {
+          "name": "Greer Nakamura-Boyle",
+          "classification": "LA",
+          "approved_rate": "140.00",
+          "last_billed_rate": "140.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "NHL-FC-77",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "nettlecombe",
+      "name": "Servicing complaint examination",
+      "timekeepers": {
+        "G51": {
+          "name": "Evander Mistry-Halloran",
+          "classification": "PT",
+          "approved_rate": "430.00",
+          "last_billed_rate": "430.00",
+          "rate_notice_date": null
+        },
+        "G52": {
+          "name": "Philippa Zubiri-Kane",
+          "classification": "AS",
+          "approved_rate": "300.00",
+          "last_billed_rate": "300.00",
+          "rate_notice_date": null
+        },
+        "G53": {
+          "name": "Tobiah Lindahl-Eze",
+          "classification": "AS",
+          "approved_rate": "275.00",
+          "last_billed_rate": "275.00",
+          "rate_notice_date": null
+        },
+        "G54": {
+          "name": "Greer Nakamura-Boyle",
+          "classification": "LA",
+          "approved_rate": "140.00",
+          "last_billed_rate": "140.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "NHL-REG-12",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "client_id": "quillfeather",
+  "client_name": "Quillfeather Mutual Indemnity",
+  "document": "data/guideline_docs/quillfeather.txt",
+  "rules": [
+    {
+      "rule_id": "QUILLF-P-UNAPPROVED-TIMEKEEPER-01",
+      "type": "unapproved_timekeeper",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Only timekeepers approved in writing by the claims professional may bill time to a file.",
+      "source_ref": "2.1 Assigned timekeepers, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-STAFFING-MATTER-LIMIT-01",
+      "type": "staffing_matter_limit",
+      "status": "proposed",
+      "severity": "review",
+      "params": {
+        "max_timekeepers": 3
+      },
+      "source_quote": "No more than 3 timekeepers may bill to a file in any invoice period without prior approval.",
+      "source_ref": "2.1 Assigned timekeepers, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-STAFFING-EVENT-LIMIT-01",
+      "type": "staffing_event_limit",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_attendees": 1,
+        "events": [
+          "deposition",
+          "hearing",
+          "mediation"
+        ]
+      },
+      "source_quote": "The Company will pay for only 1 attorney to attend a deposition, hearing or mediation unless the claims professional approves a second attendee in advance.",
+      "source_ref": "2.2 Depositions and hearings, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-INTERNAL-CONFERENCE-LIMIT-01",
+      "type": "internal_conference_limit",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_hours_per_entry": "0.3"
+      },
+      "source_quote": "No more than 0.3 hour may be billed for any single intra-office conference.",
+      "source_ref": "2.3 Intra-office conferences, page 1",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-MINIMUM-INCREMENT-01",
+      "type": "minimum_increment",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "Time must be recorded in increments of 0.1 hour.",
+      "source_ref": "3.1 Time increments, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-ROUNDING-PATTERN-01",
+      "type": "rounding_pattern",
+      "status": "proposed",
+      "severity": "review",
+      "params": {
+        "block": "0.5",
+        "min_entries": 5,
+        "threshold_percent": 80
+      },
+      "source_quote": "Entries that are routinely rounded up to the half hour or hour will be questioned.",
+      "source_ref": "3.1 Time increments, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-BLOCK-BILLING-01",
+      "type": "block_billing",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_tasks": 1,
+        "min_hours": 0
+      },
+      "source_quote": "Block billing is not permitted and each task must be entered separately with its own time.",
+      "source_ref": "3.2 Task descriptions, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-VAGUE-DESCRIPTION-01",
+      "type": "vague_description",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "always_phrases": [
+          "attention to file",
+          "attention to matter",
+          "various tasks",
+          "work on case",
+          "work on matter"
+        ],
+        "bare_phrases": [
+          "draft correspondence",
+          "legal research",
+          "prepare for hearing",
+          "review documents",
+          "review file",
+          "telephone call",
+          "trial preparation",
+          "work on discovery"
+        ],
+        "min_words": 3
+      },
+      "source_quote": "Vague entries such as \"attention to file\" or \"review documents\" will not be paid.",
+      "source_ref": "3.2 Task descriptions, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-REQUIRED-CODES-01",
+      "type": "required_codes",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "require_task": true,
+        "require_activity": true,
+        "require_expense": true
+      },
+      "source_quote": "Every fee entry must carry a UTBMS task code and activity code, and every expense entry must carry an expense code.",
+      "source_ref": "3.2 Task descriptions, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-DAILY-HOUR-CAP-01",
+      "type": "daily_hour_cap",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": "10"
+      },
+      "source_quote": "The Company will not pay for more than 10 hours billed by one timekeeper in a single day without an explanation.",
+      "source_ref": "3.3 Limits on time, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-LATE-TIME-01",
+      "type": "late_time",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 60
+      },
+      "source_quote": "Time entries more than 60 days old on the invoice date will not be paid.",
+      "source_ref": "3.3 Limits on time, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-DUPLICATE-ENTRIES-01",
+      "type": "duplicate_entries",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Duplicate entries will be rejected.",
+      "source_ref": "3.3 Limits on time, page 2",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-RATE-ABOVE-CARD-01",
+      "type": "rate_above_card",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Counsel may not bill at rates above the approved rate schedule for the file.",
+      "source_ref": "4. Rates, page 3",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-RATE-INCREASE-NOTICE-01",
+      "type": "rate_increase_notice",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "notice_days": 30
+      },
+      "source_quote": "A rate increase takes effect only after 30 days written notice to the Company.",
+      "source_ref": "4. Rates, page 3",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-NON-BILLABLE-TASK-01",
+      "type": "non_billable_task",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "categories": {
+          "clerical": [
+            "scanning",
+            "scan documents",
+            "photocopying",
+            "bates stamping",
+            "organizing files",
+            "organize files",
+            "data entry",
+            "updating file index",
+            "saving documents to"
+          ],
+          "training": [
+            "training",
+            "orientation",
+            "getting up to speed"
+          ],
+          "conflicts": [
+            "conflicts check",
+            "conflict check",
+            "new matter intake"
+          ],
+          "invoice_prep": [
+            "prepare invoice",
+            "preparing invoice",
+            "prebill",
+            "pre-bill",
+            "billing inquiry",
+            "invoice backup",
+            "correct invoice"
+          ]
+        }
+      },
+      "source_quote": "The Company does not pay for clerical work, training, conflicts checks or the preparation of invoices.",
+      "source_ref": "5. Work the Company does not pay for, page 3",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-RESEARCH-APPROVAL-01",
+      "type": "research_approval",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": "3"
+      },
+      "source_quote": "Legal research exceeding 3 hours on a file requires prior approval from the claims professional.",
+      "source_ref": "5. Work the Company does not pay for, page 3",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-TRAVEL-TIME-01",
+      "type": "travel_time",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "billable_percent": 50,
+        "requires_approval": false
+      },
+      "source_quote": "Travel time is billed at 50% of the approved hourly rate.",
+      "source_ref": "5. Work the Company does not pay for, page 3",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-EXPENSE-OVERHEAD-01",
+      "type": "expense_overhead",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "codes": [
+          "E103",
+          "E104",
+          "E105",
+          "E108"
+        ],
+        "phrases": [
+          "postage",
+          "word processing",
+          "local telephone",
+          "office supplies",
+          "overtime",
+          "subscription"
+        ]
+      },
+      "source_quote": "Overhead items such as postage, word processing, local telephone and office supplies are not reimbursable.",
+      "source_ref": "6. Expenses, page 4",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-EXPENSE-RECEIPT-THRESHOLD-01",
+      "type": "expense_receipt_threshold",
+      "status": "proposed",
+      "severity": "reject",
+      "params": {
+        "threshold": "25.00",
+        "inclusive": true
+      },
+      "source_quote": "A receipt must accompany any single expense of $25.00 or more.",
+      "source_ref": "6. Expenses, page 4",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-EXPENSE-PER-DIEM-01",
+      "type": "expense_per_diem",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "caps": {
+          "meal": "50.00",
+          "lodging": "175.00"
+        }
+      },
+      "source_quote": "Meals while traveling are reimbursed up to $50.00 per person per day and lodging up to $175.00 per night.",
+      "source_ref": "6. Expenses, page 4",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    },
+    {
+      "rule_id": "QUILLF-P-EXPENSE-MARKUP-01",
+      "type": "expense_markup",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Expenses must be billed at actual cost with no mark-up.",
+      "source_ref": "6. Expenses, page 4",
+      "confidence": "proposed, needs confirmation",
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
+    }
+  ]
+}

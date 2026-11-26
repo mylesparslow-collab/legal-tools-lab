@@ -1,0 +1,121 @@
+UserId,FullName,Office,Dept,Title,Status
+U001,Dmitri Halvorsby,Senna Bay,Corporate and M&A,Partner,A
+U002,Amara Quistrel,Port Wenrick,Corporate and M&A,Partner,A
+U003,Quinn Pennwarden,Caldmoor,Corporate and M&A,Partner,A
+U004,Greta Nakashiro,Estermere,Corporate and M&A,Counsel,A
+U005,Bastien Zielinskov,Senna Bay,Corporate and M&A,Knowledge lawyer,A
+U006,Ugo Ellingsworth,Marlowe Heights,Corporate and M&A,Associate,A
+U007,Zelda Hadjipetrou,Tavish Falls,Corporate and M&A,Associate,A
+U008,Brigid Tindlewick,Senna Bay,Corporate and M&A,Associate,A
+U009,Amara Halvorsby,Senna Bay,Corporate and M&A,Associate,A
+U010,Calla Nakashiro,Senna Bay,Corporate and M&A,Associate,A
+U011,Quinn Whitlocke,Tavish Falls,Corporate and M&A,Associate,A
+U012,Nikhil Zielinskov,Estermere,Corporate and M&A,Paralegal,A
+U013,Cormac Oyelaranmi,Estermere,Commercial litigation,Partner,A
+U014,Hollis Pradhanam,Senna Bay,Commercial litigation,Partner,A
+U015,Nikhil Halvorsby,Port Wenrick,Commercial litigation,Partner,A
+U016,Ugo Ostergaarde,Port Wenrick,Commercial litigation,Counsel,A
+U017,Yusuf Zielinskov,Marlowe Heights,Commercial litigation,Knowledge lawyer,A
+U018,Ugo Varrowby,Aldhaven,Commercial litigation,Associate,A
+U019,Bastien Strathmoor,Senna Bay,Commercial litigation,Associate,A
+U020,Anselm Underhaye,Estermere,Commercial litigation,Associate,D
+U021,Imani Vasquelin,Tavish Falls,Commercial litigation,Associate,A
+U022,Lorcan Zielinskov,Senna Bay,Commercial litigation,Associate,D
+U023,Farid Marchetto,Tavish Falls,Commercial litigation,Associate,A
+U024,Odette Bexleyford,Port Wenrick,Commercial litigation,Paralegal,A
+U025,Imani Ostergaarde,Tavish Falls,Real estate,Partner,A
+U026,Hollis Rasmundsen,Senna Bay,Real estate,Partner,A
+U027,Hollis Bexleyford,Tavish Falls,Real estate,Partner,A
+U028,Farid Drummondale,Marlowe Heights,Real estate,Counsel,A
+U029,Anselm Rasmundsen,Marlowe Heights,Real estate,Knowledge lawyer,A
+U030,Amara Pradhanam,Estermere,Real estate,Associate,A
+U031,Yusuf Szymborsk,Marlowe Heights,Real estate,Associate,A
+U032,Hollis Dellamoor,Tavish Falls,Real estate,Associate,A
+U033,Wendell Ashcombe,Marlowe Heights,Real estate,Associate,A
+U034,Valentina Bexleyford,Marlowe Heights,Real estate,Associate,A
+U035,Cormac Varrowby,Tavish Falls,Real estate,Associate,A
+U036,Dmitri Brandvold,Caldmoor,Real estate,Paralegal,A
+U037,Eleni Szymborsk,Senna Bay,Public agency and land use,Partner,A
+U038,Ugo Abernathey,Senna Bay,Public agency and land use,Partner,A
+U039,Valentina Ellingsworth,Port Wenrick,Public agency and land use,Partner,D
+U040,Nikhil Vasquelin,Estermere,Public agency and land use,Counsel,A
+U041,Valentina Fairweatherby,Port Wenrick,Public agency and land use,Counsel,A
+U042,Greta Bexleyford,Aldhaven,Public agency and land use,Associate,A
+U043,Keiko Kowalczynsk,Port Wenrick,Public agency and land use,Associate,A
+U044,Hollis Whitlocke,Aldhaven,Public agency and land use,Associate,A
+U045,Zelda Wrenfold,Senna Bay,Public agency and land use,Associate,A
+U046,Quinn Thorvaldsby,Senna Bay,Public agency and land use,Associate,A
+U047,Valentina Guillaumet,Senna Bay,Public agency and land use,Associate,A
+U048,Bastien Okonmere,Brannock,Public agency and land use,Paralegal,A
+U049,Eleni Varrowby,Port Wenrick,Employment,Partner,A
+U050,Calla Corriveaux,Aldhaven,Employment,Partner,A
+U051,Valentina Brandvold,Marlowe Heights,Employment,Partner,A
+U052,Joaquin Okonmere,Marlowe Heights,Employment,Counsel,A
+U053,Calla Strathmoor,Aldhaven,Employment,Counsel,A
+U054,Calla Yamadera,Senna Bay,Employment,Associate,A
+U055,Dalia Wrenfold,Brannock,Employment,Associate,A
+U056,Yusuf Drummondale,Estermere,Employment,Associate,A
+U057,Joaquin Szymborsk,Marlowe Heights,Employment,Associate,A
+U058,Ugo Castellane,Marlowe Heights,Employment,Associate,A
+U059,Imani Quistrel,Senna Bay,Employment,Associate,A
+U060,Piotr Strathmoor,Brannock,Employment,Paralegal,A
+U061,Soren Yamadera,Estermere,Intellectual property,Partner,A
+U062,Piotr Drummondale,Marlowe Heights,Intellectual property,Partner,A
+U063,Wendell Jorvikson,Brannock,Intellectual property,Partner,A
+U064,Zelda Abernathey,Senna Bay,Intellectual property,Counsel,A
+U065,Greta Quistrel,Brannock,Intellectual property,Counsel,A
+U066,Ugo Rasmundsen,Port Wenrick,Intellectual property,Associate,A
+U067,Yusuf Ibekwell,Port Wenrick,Intellectual property,Associate,A
+U068,Amara Tindlewick,Estermere,Intellectual property,Associate,D
+U069,Hollis Lindenmeyr,Tavish Falls,Intellectual property,Associate,A
+U070,Yusuf Bexleyford,Marlowe Heights,Intellectual property,Associate,A
+U071,Farid Rasmundsen,Marlowe Heights,Intellectual property,Associate,D
+U072,Joaquin Pennwarden,Aldhaven,Intellectual property,Paralegal,A
+U073,Valentina Novakovitch,Aldhaven,Banking and finance,Partner,A
+U074,Calla Marchetto,Senna Bay,Banking and finance,Partner,A
+U075,Rosalind Ibekwell,Aldhaven,Banking and finance,Partner,A
+U076,Farid Wrenfold,Estermere,Banking and finance,Counsel,A
+U077,Amara Ostergaarde,Tavish Falls,Banking and finance,Counsel,A
+U078,Rosalind Nakashiro,Aldhaven,Banking and finance,Associate,A
+U079,Lorcan Castellane,Brannock,Banking and finance,Associate,A
+U080,Ugo Oyelaranmi,Tavish Falls,Banking and finance,Associate,A
+U081,Ugo Novakovitch,Marlowe Heights,Banking and finance,Associate,A
+U082,Hollis Strathmoor,Senna Bay,Banking and finance,Associate,A
+U083,Yusuf Dellamoor,Tavish Falls,Banking and finance,Associate,A
+U084,Greta Thorvaldsby,Marlowe Heights,Banking and finance,Paralegal,A
+U085,Nikhil Rasmundsen,Aldhaven,Tax,Partner,A
+U086,Quinn Corriveaux,Caldmoor,Tax,Partner,A
+U087,Ugo Drummondale,Estermere,Tax,Partner,A
+U088,Eleni Kowalczynsk,Senna Bay,Tax,Counsel,A
+U089,Rosalind Castellane,Tavish Falls,Tax,Counsel,A
+U090,Cormac Kowalczynsk,Caldmoor,Tax,Associate,A
+U091,Joaquin Marchetto,Aldhaven,Tax,Associate,A
+U092,Eleni Ostergaarde,Estermere,Tax,Associate,A
+U093,Eleni Rasmundsen,Marlowe Heights,Tax,Associate,A
+U094,Keiko Vasquelin,Tavish Falls,Tax,Associate,A
+U095,Dalia Pradhanam,Marlowe Heights,Tax,Associate,A
+U096,Soren Quistrel,Senna Bay,Tax,Paralegal,A
+U097,Tamsin Varrowby,Marlowe Heights,Privacy and data,Partner,A
+U098,Odette Pennwarden,Aldhaven,Privacy and data,Partner,A
+U099,Joaquin Tindlewick,Caldmoor,Privacy and data,Partner,A
+U100,Xiomara Abernathey,Aldhaven,Privacy and data,Counsel,A
+U101,Joaquin Castellane,Port Wenrick,Privacy and data,Counsel,A
+U102,Mirela Halvorsby,Senna Bay,Privacy and data,Associate,A
+U103,Rosalind Hadjipetrou,Caldmoor,Privacy and data,Associate,A
+U104,Quinn Marchetto,Tavish Falls,Privacy and data,Associate,A
+U105,Wendell Vasquelin,Marlowe Heights,Privacy and data,Associate,D
+U106,Keiko Whitlocke,Tavish Falls,Privacy and data,Associate,A
+U107,Quinn Hadjipetrou,Senna Bay,Privacy and data,Associate,A
+U108,Dalia Kowalczynsk,Port Wenrick,Privacy and data,Paralegal,A
+U109,Imani Tindlewick,Estermere,Trusts and estates,Partner,A
+U110,Quinn Yamadera,Port Wenrick,Trusts and estates,Partner,A
+U111,Imani Novakovitch,Estermere,Trusts and estates,Partner,A
+U112,Lorcan Okonmere,Aldhaven,Trusts and estates,Counsel,A
+U113,Greta Tindlewick,Port Wenrick,Trusts and estates,Counsel,A
+U114,Nikhil Tindlewick,Estermere,Trusts and estates,Associate,A
+U115,Zelda Szymborsk,Caldmoor,Trusts and estates,Associate,A
+U116,Tamsin Thorvaldsby,Tavish Falls,Trusts and estates,Associate,A
+U117,Zelda Brandvold,Marlowe Heights,Trusts and estates,Associate,A
+U118,Keiko Pradhanam,Senna Bay,Trusts and estates,Associate,A
+U119,Wendell Corriveaux,Tavish Falls,Trusts and estates,Associate,A
+U120,Ugo Underhaye,Tavish Falls,Trusts and estates,Paralegal,A

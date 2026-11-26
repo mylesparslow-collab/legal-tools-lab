@@ -1,0 +1,323 @@
+{
+ "rfp": "water_rights_counsel_saltbrook_muc.txt",
+ "note": "Held-out batch B (sealed). Hand-written from the RFP text before any tool run. No addendum. Layout: a solicitation data sheet of 'label ....: value' lines carrying the dates in ISO and DD-MON-YYYY form, then numbered schedules. Requirements are a tick-box checklist R1 to R10 in Schedule 3 plus three unnumbered questions in Schedule 4. Weights are printed as fractions of 1.00; the key gives them as percentages.",
+ "agency": "Saltbrook Municipal Utilities Commission",
+ "deadlines": [
+  {
+   "kind": "issued",
+   "date": "2026-12-03",
+   "time": null,
+   "source_line": "Date issued .............: 2026-12-03",
+   "source_line_no": 12
+  },
+  {
+   "kind": "questions_due",
+   "date": "2026-12-17",
+   "time": "16:00",
+   "source_line": "Questions close .........: 2026-12-17 16:00",
+   "source_line_no": 14
+  },
+  {
+   "kind": "answers_issued",
+   "date": "2026-12-23",
+   "time": null,
+   "source_line": "Answers published .......: 2026-12-23",
+   "source_line_no": 15
+  },
+  {
+   "kind": "submission_due",
+   "date": "2027-01-19",
+   "time": "14:00",
+   "source_line": "PROPOSALS CLOSE .........: 19-JAN-2027 14:00",
+   "source_line_no": 16
+  },
+  {
+   "kind": "interview",
+   "date": "2027-02-04",
+   "time": null,
+   "source_line": "Shortlist interviews ....: 2027-02-04",
+   "source_line_no": 17
+  },
+  {
+   "kind": "award",
+   "date": "2027-02-24",
+   "time": null,
+   "source_line": "Commission award ........: 2027-02-24",
+   "source_line_no": 18
+  }
+ ],
+ "addendum_changes": [],
+ "requirements": [
+  {
+   "label": "R1",
+   "qtype": "cover_letter",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Cover letter signed by an owner or officer of the firm."
+  },
+  {
+   "label": "R2",
+   "qtype": "firm_overview",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Firm profile: history, number of attorneys, offices, and the size of the water law practice."
+  },
+  {
+   "label": "R3",
+   "qtype": "team",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Team: the lead attorney and all supporting attorneys, each person's role, and resumes."
+  },
+  {
+   "label": "R4",
+   "qtype": "experience",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Water rights experience: contested proceedings, water transfers and purchase contracts handled in the last ten years, with outcomes."
+  },
+  {
+   "label": "R5",
+   "qtype": "experience",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Regulatory experience: work before state and federal water regulators, groundwater sustainability agencies and drought proceedings."
+  },
+  {
+   "label": "R6",
+   "qtype": "approach",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Proposed approach to the pending water board proceeding and to the contract renegotiation, with a proposed work plan for the first six months."
+  },
+  {
+   "label": "R7",
+   "qtype": "references",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "References: three public water supplier clients."
+  },
+  {
+   "label": "R8",
+   "qtype": "conflicts",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Conflicts of interest: all current and former clients with interests in the Tamsel River watershed, and how any conflict would be managed."
+  },
+  {
+   "label": "R9",
+   "qtype": "rates",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Fees: hourly rates, a budget estimate for the water board proceeding through hearing, and any alternative fee offer."
+  },
+  {
+   "label": "R10",
+   "qtype": "diversity_local",
+   "section": "Schedule 3",
+   "numbered": true,
+   "text": "Statement on local presence and use of local or small firms as subconsultants, if any."
+  },
+  {
+   "label": "S4-unnumbered-1",
+   "qtype": "approach",
+   "section": "Schedule 4",
+   "numbered": false,
+   "text": "What is the firm's view of the main risks to the Commission's 1954 right, based only on the public record of the water board proceeding?",
+   "is_question": true,
+   "alt_qtypes": [
+    "experience",
+    "other"
+   ]
+  },
+  {
+   "label": "S4-unnumbered-2",
+   "qtype": "team",
+   "section": "Schedule 4",
+   "numbered": false,
+   "text": "If the lead attorney became unavailable for a month during the hearing, who would take over, and what has that person done that is comparable?",
+   "is_question": true,
+   "alt_qtypes": [
+    "approach",
+    "other"
+   ]
+  },
+  {
+   "label": "S4-unnumbered-3",
+   "qtype": "experience",
+   "section": "Schedule 4",
+   "numbered": false,
+   "text": "Describe one matter in which the firm negotiated a long-term water purchase or transfer agreement for a public supplier. What terms did the firm obtain on price adjustment and shortage sharing?",
+   "is_question": true
+  }
+ ],
+ "forms": [
+  "Offer and Signature",
+  "Non-Collusion Affidavit",
+  "Campaign Contribution Disclosure",
+  "Insurance Commitment Letter",
+  "The ticked copy of the Schedule 3 checklist"
+ ],
+ "evaluation": [
+  {
+   "name": "Water rights and regulatory experience",
+   "weight": 30,
+   "printed_as": "0.30"
+  },
+  {
+   "name": "Lead attorney and team",
+   "weight": 25,
+   "printed_as": "0.25"
+  },
+  {
+   "name": "Approach and work plan",
+   "weight": 20,
+   "printed_as": "0.20"
+  },
+  {
+   "name": "Fees",
+   "weight": 15,
+   "printed_as": "0.15"
+  },
+  {
+   "name": "References",
+   "weight": 5,
+   "printed_as": "0.05"
+  },
+  {
+   "name": "Local presence",
+   "weight": 5,
+   "printed_as": "0.05"
+  }
+ ],
+ "min_quals": [
+  {
+   "starts": "Lead attorney: admitted to practice 12 years or longer",
+   "check_kind": "years_admitted",
+   "value": 12
+  },
+  {
+   "starts": "Lead attorney: has appeared as counsel of record",
+   "check_kind": "not_checkable",
+   "value": null
+  },
+  {
+   "starts": "Firm: at least 2 attorneys other than the lead attorney",
+   "check_kind": "not_checkable",
+   "value": null,
+   "alt_check_kind": "attorney_count",
+   "alt_value": 3
+  },
+  {
+   "starts": "Firm: no current client relationship with either adverse party",
+   "check_kind": "not_checkable",
+   "value": null
+  }
+ ],
+ "min_qual_notes": "T3 asks for two attorneys besides the lead, each with five or more years of water law practice. A plain head count cannot check the experience part, so it is marked not_checkable; attorney_count with value 3 (or 2) should not be scored as wrong.",
+ "insurance": [
+  {
+   "contains": "Professional liability",
+   "amount": "USD 5,000,000",
+   "amount_value": 5000000
+  },
+  {
+   "contains": "Commercial general liability",
+   "amount": "USD 2,000,000",
+   "amount_value": 2000000
+  },
+  {
+   "contains": "Automobile liability",
+   "amount": "USD 1,000,000",
+   "amount_value": 1000000
+  },
+  {
+   "contains": "Workers' compensation",
+   "amount": null,
+   "amount_value": null
+  }
+ ],
+ "mechanics": {
+  "page_limit": 20,
+  "font_pt": 11,
+  "margin_in": 0.75,
+  "kinds": [
+   "format",
+   "delivery",
+   "not_accepted",
+   "page_limit",
+   "page_exclusions",
+   "font",
+   "margins"
+  ]
+ },
+ "parties": [
+  {
+   "name": "Saltbrook Municipal Utilities Commission",
+   "category": "agency"
+  },
+  {
+   "name": "Evadne Thornbury",
+   "category": "board"
+  },
+  {
+   "name": "Silas Okoro",
+   "category": "board"
+  },
+  {
+   "name": "Maren Castellanos",
+   "category": "board"
+  },
+  {
+   "name": "Dorian Whitfield",
+   "category": "board"
+  },
+  {
+   "name": "Josephine Nakamura",
+   "category": "board"
+  },
+  {
+   "name": "Anselm Corrigan",
+   "category": "staff"
+  },
+  {
+   "name": "Lorcan Asante",
+   "category": "staff"
+  },
+  {
+   "name": "Petra Vandermeer",
+   "category": "staff"
+  },
+  {
+   "name": "Lower Tamsel Growers Association",
+   "category": "adverse"
+  },
+  {
+   "name": "Upper Tamsel Irrigation District",
+   "category": "adverse"
+  }
+ ],
+ "party_notes": "'City of Saltbrook' is the service area, not the agency and not a party to check.",
+ "dates_that_are_not_deadlines": [
+  "1911, 1954 and 2029 (years in the background)",
+  "'Site visit / conference .: none' means there is no conference deadline"
+ ],
+ "not_requirements": [
+  "T1 to T4: threshold requirements (these are the minimum qualifications)",
+  "the tick-box form lines in Schedule 5",
+  "F1 to F6: evaluation factors",
+  "8.1 to 8.6: conditions, including 150 day validity and a 5 working day protest period"
+ ],
+ "extra_fields": {
+  "source_line / source_line_no": "on each deadline: the line of the RFP file (stripped, 1-based number) that states the date in force. For a date changed by addendum it is the addendum line; original_source_line is the line in the body.",
+  "section, numbered, text": "on each requirement: the section it sits in, whether the RFP gives it a number or label, and its exact text with runs of white space collapsed to one space (the label itself is left out).",
+  "alt_labels, alt_qtypes": "other labels or question types that a scorer should also accept. Question types are the test author's judgement.",
+  "deleted_requirements": "requirements removed by addendum. They must NOT appear in the parsed requirement list.",
+  "evaluation_as_issued, forms_as_issued, before_addenda": "values before any addendum, for checking that the change is shown.",
+  "addendum (on addendum_changes)": "which addendum made the change. Kinds beyond the existing keys: requirement_deleted, criterion_removed, weight_changed, insurance_changed, form_removed; time_from and time_to are given where an addendum changes the time of day.",
+  "amount_value": "insurance amount as a whole number of dollars.",
+  "dates_that_are_not_deadlines": "dates in the text that must not be read as schedule deadlines.",
+  "not_requirements": "numbered or lettered items that are not proposal requirements (scope of services, general conditions, table of contents). Reading them as requirements is an error.",
+  "kind_not_in_existing_keys": "marks a deadline kind the existing keys do not use; score it separately."
+ }
+}

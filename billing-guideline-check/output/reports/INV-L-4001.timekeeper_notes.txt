@@ -1,0 +1,75 @@
+To: Anneliese Okafor-Brandt (TK31)
+Re: draft invoice INV-L-4001, Luminqa Data Systems, matter LDS-IP-014
+
+Before this bill goes out, please look at the 2 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $1,020.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 1, 2026-09-10, $612.00 [Late time, will likely be rejected]
+  Your entry: "Telephone conference with general counsel regarding litigation budget" (0.9 h x $680.00 = $612.00)
+  What the check saw: The work is dated 2026-09-10, 56 days before the invoice date. The limit is 45 days.
+  Suggested fix: Ask the client whether it will accept the late time, or write it off.
+  Client rule (LDS-LATE-01, Schedule A: Billing, page 1): "Submit time within 45 days of the work; older time is written off."
+
+- Line 14, 2026-10-19, $748.00 [Internal conference limit, likely reduced]
+  Your entry: "Internal conference with team regarding claim construction strategy" (1.1 h x $680.00 = $748.00)
+  What the check saw: Internal conference of 1.1 hours (read from "Internal conference"). The limit is 0.5 hours per entry.
+  Suggested fix: Reduce the entry to the limit, or ask the client to approve the longer conference.
+  Client rule (LDS-CONF-01, Schedule A: Billing, page 1): "Internal conferences among your team are capped at 0.5 hour per entry."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Tobias Nakagawa-Reed (TK32)
+Re: draft invoice INV-L-4001, Luminqa Data Systems, matter LDS-IP-014
+
+Before this bill goes out, please look at the 2 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $2,457.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 5, 2026-10-06, $1,046.50 [AI-assisted work must be disclosed on the invoice, will likely be rejected]
+  Your entry: "Draft claim chart for the 412 patent family" (2.3 h x $455.00 = $1,046.50)
+  What the check saw: The entry is flagged as AI-assisted in the time system but the narrative does not carry the client's disclosure marker "[AI-assisted]".
+  Suggested fix: Confirm with the timekeeper whether AI assistance was used. If so, add "[AI-assisted]" to the entry.
+  Client rule (LDS-AIDISC-01, Schedule B: Use of artificial intelligence tools, page 2): "If any work billed to us was performed with the assistance of a generative artificial intelligence tool, the time entry must be marked "[AI-assisted]" on the invoice."
+
+- Line 18, 2026-10-22, $1,410.50 [Block billing prohibited, likely reduced]
+  Your entry: "Review prior art references cited by examiner, draft claim amendments, and telephone conference with inventor regarding embodiments" (3.1 h x $455.00 = $1,410.50)
+  What the check saw: The narrative appears to describe 3 tasks under one time total of 3.1 hours.
+  Suggested fix: Ask the timekeeper to enter each task on its own line with its own time. Tasks the check detected: (1) Review prior art references cited by examiner. (2) draft claim amendments. (3) telephone conference with inventor regarding embodiments. The tool does not know how the time divides between them and does not rewrite the narrative.
+  Client rule (LDS-BLOCK-01, Schedule A: Billing, page 1): "Entries that lump several tasks together under one time total will be sent back."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Priya Halvorsen-Mbeki (TK33)
+Re: draft invoice INV-L-4001, Luminqa Data Systems, matter LDS-IP-014
+
+Before this bill goes out, please look at the 4 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $1,250.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 11, 2026-10-13, $504.00 [Client will not pay for certain AI-assisted tasks, will likely be rejected]
+  Your entry: "Summarize deposition transcript of lead engineer [AI-assisted]" (1.2 h x $420.00 = $504.00)
+  What the check saw: The entry is AI-assisted and describes a task ("Summarize") that this client's terms say it will not pay for when AI-assisted.
+  Suggested fix: Move the entry off the bill, or raise it with the client before billing.
+  Client rule (LDS-AINOPAY-01, Schedule B: Use of artificial intelligence tools, page 2): "We will not pay for AI-assisted summaries of transcripts or documents, or for AI-assisted first-pass document review."
+
+- Line 13, 2026-10-15, $336.00 [AI-assisted work must be disclosed on the invoice, will likely be rejected]
+  Your entry: "Review output of generative AI tool for prior art search" (0.8 h x $420.00 = $336.00)
+  What the check saw: The entry mentions an AI tool but the narrative does not carry the client's disclosure marker "[AI-assisted]".
+  Suggested fix: Confirm with the timekeeper whether AI assistance was used. If so, add "[AI-assisted]" to the entry.
+  Client rule (LDS-AIDISC-01, Schedule B: Use of artificial intelligence tools, page 2): "If any work billed to us was performed with the assistance of a generative artificial intelligence tool, the time entry must be marked "[AI-assisted]" on the invoice."
+
+- Line 16, 2026-10-20, $378.00 [Vague descriptions, likely reduced]
+  Your entry: "Review documents" (0.9 h x $420.00 = $378.00)
+  What the check saw: The description does not say what was done. It is only "Review documents", with no subject or purpose.
+  Suggested fix: Ask the timekeeper to say what was reviewed or done and for what purpose. Do not fill this in for them.
+  Client rule (LDS-VAGUE-01, Schedule A: Billing, page 1): "Narratives must say what was done and for what purpose; entries like "review documents" or "attention to file" are not enough."
+
+- Line 23, 2026-10-27, $704.00 [Rate above approved rate card, likely reduced]
+  Your entry: "Draft proposed claim constructions for disputed terms" (1.6 h x $440.00 = $704.00)
+  What the check saw: Billed at $440.00 an hour. The approved rate for this timekeeper is $420.00.
+  Suggested fix: Correct the rate to the approved rate card, or attach the client's approval of the higher rate.
+  Client rule (LDS-RATE-01, Schedule A: Billing, page 1): "Rates are fixed by the engagement rate card for the calendar year and may not be exceeded."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.

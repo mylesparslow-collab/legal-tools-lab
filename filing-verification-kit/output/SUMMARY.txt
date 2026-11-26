@@ -1,0 +1,16 @@
+Filing verification kit demo run (fixed clock, fictional data, not legal advice)
+
+F-2027-001  CLEAR TO FILE  signed            Clean pass
+F-2027-002  BLOCKED        sign-off refused  Unverified citation (blocked)
+F-2027-003  CLEAR TO FILE  signed            Document edited after sign-off
+F-2027-004  CLEAR TO FILE  signed            Discovery document
+F-2027-005  BLOCKED        sign-off refused  AI used, disclosure decision missing (blocked)
+F-2027-006  CLEAR TO FILE  signed            Judge with a certification order
+F-2027-007  BLOCKED        sign-off refused  Judge entry is stale (blocked)
+F-2027-008  BLOCKED        sign-off refused  Not-found citation and quote mismatch (blocked)
+
+F-2027-003 record against signed document: VALID
+F-2027-003 record against edited document: INVALID
+F-2027-003 checklist on edited document: BLOCKED
+Ledger: chain intact, 22 entries
+Tampered ledger copy: detected

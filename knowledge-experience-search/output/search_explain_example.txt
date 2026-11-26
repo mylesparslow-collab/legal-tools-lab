@@ -1,0 +1,60 @@
+Query: 'indemnification cap and basket agreement' as U102
+20 results among documents this user can open
+  also searched 'indemnity' for 'indemnification' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'deductible' for 'basket' (thesaurus, weight 0.6; thesaurus: corporate and transactions)
+  also searched 'contract' for 'agreement' (thesaurus, weight 0.6; thesaurus: contracts, general)
+
+ 1. Agreement: indemnification cap and basket  [D01072]  score 0.911
+    agreement | Corporate and M&A | stock purchase | City of Estermere | 2022-12-23
+    matter M0221 Umberleigh Cross Industries: stock purchase | author Amara Halvorsby
+    model form, final, reused 15x
+    This agreement addresses indemnification cap and basket in connection with the stock purchase matter. The assumptions and the documents reviewed are listed in the appendix. Items relating to materiality scrape …
+    why: text 0.600 (bm25 9.6946 / best 9.6946, weight 0.6; statistics over 1408 documents you can open)
+         term 'indemnification': title x1, body x3; in 25 visible documents; bm25 3.2899
+         term 'cap': title x1, body x3; in 64 visible documents; bm25 2.5289
+         term 'basket': title x1, body x2; in 28 visible documents; bm25 3.0906
+         term 'agreement': title x1, body x2, metadata x1; in 549 visible documents; bm25 0.7852
+         model_form: value 1.0 x weight 0.14 = 0.14
+         is_final: value 1.0 x weight 0.08 = 0.08
+         was_filed: value 0.0 x weight 0.06 = 0.0
+         reuse: value 0.9107 x weight 0.07 = 0.0637
+         recency: value 0.5435 x weight 0.05 = 0.0272
+
+ 2. Indemnification cap and basket: form for City of Aldhaven  [D00281]  score 0.719  (matches part of the query)
+    form | Corporate and M&A | stock purchase | City of Aldhaven | 2018-09-12
+    matter M0061 Rathmullen Holdings: stock purchase | author Calla Nakashiro
+    model form, final, reused 9x
+    … record the position on indemnification cap and basket. Timing, responsibility and sign-off for escrow holdback are allocated in the table. This does not cover disproportionate impact, which is handled …
+    why: text 0.433 (bm25 8.2507 / best 9.6946, weight 0.6; statistics over 1408 documents you can open)
+         term 'indemnification': title x1, body x2; in 25 visible documents; bm25 3.1004
+         term 'cap': title x1, body x2; in 64 visible documents; bm25 2.3832
+         term 'basket': title x1, body x1; in 28 visible documents; bm25 2.767
+         model_form: value 1.0 x weight 0.14 = 0.14
+         is_final: value 1.0 x weight 0.08 = 0.08
+         was_filed: value 0.0 x weight 0.06 = 0.0
+         reuse: value 0.7563 x weight 0.07 = 0.0529
+         recency: value 0.2589 x weight 0.05 = 0.0129
+
+ 3. Agreement on indemnification cap and basket (minority investment)  [D00919]  score 0.711
+    agreement | Corporate and M&A | minority investment | City of Estermere | 2017-08-17
+    matter M0191 Orrinwick Group: minority investment | author Brigid Tindlewick
+    final, reused 2x
+    This agreement addresses indemnification cap and basket in connection with the minority investment matter. A related point on material adverse effect is noted but not developed here. Notes from the …
+    why: text 0.595 (bm25 9.6189 / best 9.6946, weight 0.6; statistics over 1408 documents you can open)
+         term 'indemnification': title x1, body x2; in 25 visible documents; bm25 3.1164
+         term 'cap': title x1, body x2; in 64 visible documents; bm25 2.3956
+         term 'basket': title x1, body x5; in 28 visible documents; bm25 3.3632
+         term 'agreement': title x1, body x1, metadata x1; in 549 visible documents; bm25 0.7437
+         model_form: value 0.0 x weight 0.14 = 0.0
+         is_final: value 1.0 x weight 0.08 = 0.08
+         was_filed: value 0.0 x weight 0.06 = 0.0
+         reuse: value 0.3608 x weight 0.07 = 0.0253
+         recency: value 0.2151 x weight 0.05 = 0.0108
+
+Filters available in these results:
+  doc_type: agreement (9), checklist (4), memo (4), form (2), opinion letter (1)
+  practice: Corporate and M&A (20)
+  matter_type: stock purchase (10), merger (4), asset purchase (3), minority investment (2), joint venture (1)
+  jurisdiction: City of Estermere (6), Wenrick Court of Appeal (4), City of Aldhaven (3), Tavish County (2), Aldhaven Tax Tribunal (1), Brannock Court of Chancery (1)
+  client_industry: healthcare (6), software (5), energy (3), financial services (3), food and beverage (1), logistics (1)
+  year: 2018 (5), 2022 (5), 2017 (3), 2025 (3), 2023 (2), 2020 (1)

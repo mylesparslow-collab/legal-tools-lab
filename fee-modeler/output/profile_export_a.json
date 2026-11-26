@@ -1,0 +1,261 @@
+{
+  "export_dir": "data/export_a",
+  "mapping": "Synthetic export, shape A (four tidy files)",
+  "ready": true,
+  "summary": {
+    "matters": 640,
+    "closed_matters": 600,
+    "time_entries": 17557,
+    "invoices": 4255,
+    "first_work_date": "2020-01-02",
+    "last_work_date": "2025-12-30"
+  },
+  "tables": {
+    "matters": {
+      "file": "matters.csv",
+      "rows_read": 640,
+      "rows_loaded": 640,
+      "missing_required": [],
+      "missing_optional": [],
+      "present": true
+    },
+    "timekeepers": {
+      "file": "timekeepers.csv",
+      "rows_read": 25,
+      "rows_loaded": 25,
+      "missing_required": [],
+      "missing_optional": [],
+      "present": true
+    },
+    "time_entries": {
+      "file": "time_entries.csv",
+      "rows_read": 17557,
+      "rows_loaded": 17557,
+      "missing_required": [],
+      "missing_optional": [
+        "level"
+      ],
+      "present": true
+    },
+    "invoices": {
+      "file": "invoices.csv",
+      "rows_read": 4255,
+      "rows_loaded": 4255,
+      "missing_required": [],
+      "missing_optional": [],
+      "present": true
+    }
+  },
+  "checks": [
+    {
+      "name": "table matters",
+      "status": "ok",
+      "detail": "640 rows read, 640 loaded."
+    },
+    {
+      "name": "table timekeepers",
+      "status": "ok",
+      "detail": "25 rows read, 25 loaded."
+    },
+    {
+      "name": "table time_entries",
+      "status": "ok",
+      "detail": "17557 rows read, 17557 loaded."
+    },
+    {
+      "name": "table invoices",
+      "status": "ok",
+      "detail": "4255 rows read, 4255 loaded."
+    },
+    {
+      "name": "history span",
+      "status": "ok",
+      "detail": "Time entries run from 2020-01-02 to 2025-12-30 (6.0 years). A walk-forward back-test needs several years so that later matters have earlier closed matters to be modeled from."
+    },
+    {
+      "name": "closed matters with no time entries",
+      "status": "ok",
+      "detail": "0 of 600 closed matters have no time. They would look free.",
+      "examples": []
+    },
+    {
+      "name": "time dated outside the matter's open-to-close dates",
+      "status": "warn",
+      "detail": "0 entries before open, 6 after close (on 6 matters). Late time is included in a matter's cost but hidden from the back-test until its date has passed.",
+      "examples": [
+        "M-0045",
+        "M-0054",
+        "M-0180",
+        "M-0195",
+        "M-0479"
+      ]
+    },
+    {
+      "name": "billed hours above worked hours",
+      "status": "ok",
+      "detail": "0 entries. Check for write-ups or swapped columns."
+    },
+    {
+      "name": "zero-rate entries",
+      "status": "ok",
+      "detail": "0 entries. Hours still count toward normalized value; raw value will look low."
+    },
+    {
+      "name": "task code coverage",
+      "status": "ok",
+      "detail": "86% of hours carry a task code that maps to a phase. The rest use the date-window fallback.",
+      "coded_hours_pct": "86",
+      "unmapped_codes": {
+        "ZZ99": 153
+      }
+    },
+    {
+      "name": "task codes not in the phase map",
+      "status": "warn",
+      "detail": "1 distinct codes on 153 entries: ZZ99. Add them to the task code map."
+    },
+    {
+      "name": "levels covered by rate card",
+      "status": "ok",
+      "detail": "All 4 levels found in the data have a rate."
+    },
+    {
+      "name": "levels covered by cost rates",
+      "status": "ok",
+      "detail": "All 4 levels found in the data have a rate."
+    },
+    {
+      "name": "timekeepers who changed level",
+      "status": "ok",
+      "detail": "1 timekeepers have time at more than one level: TK-12. Each entry is valued at the level held on its work date.",
+      "timekeepers": [
+        "TK-12"
+      ]
+    },
+    {
+      "name": "close reasons",
+      "status": "ok",
+      "detail": "0 of 600 closed matters have no close reason; 65 closed abnormally and are excluded from comps by default."
+    },
+    {
+      "name": "closed matters with an unpaid balance",
+      "status": "warn",
+      "detail": "3 closed matters have fees neither collected nor written off. Collected figures for them are not final.",
+      "examples": [
+        "M-0035",
+        "M-0073",
+        "M-0471"
+      ]
+    },
+    {
+      "name": "invoices reconcile to billed time",
+      "status": "ok",
+      "detail": "0 closed matters where invoiced fees differ from billed time by more than 1%. Ask whether invoices include costs, flat fees or discounts.",
+      "examples": []
+    },
+    {
+      "name": "matter types with enough clean closed history",
+      "status": "warn",
+      "detail": "11 of 12 matter types have at least 8 clean closed matters. Too few: election_law_advisory."
+    }
+  ],
+  "matter_types": [
+    {
+      "matter_type": "administrative_licensing_appeal",
+      "n_matters": 51,
+      "n_open": 6,
+      "n_abnormal": 5,
+      "n_clean_closed": 40,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "commercial_lease_review",
+      "n_matters": 51,
+      "n_open": 1,
+      "n_abnormal": 4,
+      "n_clean_closed": 46,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "contract_dispute_arbitration",
+      "n_matters": 38,
+      "n_open": 3,
+      "n_abnormal": 2,
+      "n_clean_closed": 33,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "election_law_advisory",
+      "n_matters": 5,
+      "n_open": 0,
+      "n_abnormal": 0,
+      "n_clean_closed": 5,
+      "enough_to_model": false
+    },
+    {
+      "matter_type": "employment_single_plaintiff_defense",
+      "n_matters": 79,
+      "n_open": 4,
+      "n_abnormal": 9,
+      "n_clean_closed": 66,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "facility_change_of_ownership",
+      "n_matters": 62,
+      "n_open": 2,
+      "n_abnormal": 7,
+      "n_clean_closed": 53,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "internal_investigation",
+      "n_matters": 50,
+      "n_open": 5,
+      "n_abnormal": 4,
+      "n_clean_closed": 41,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "ordinance_drafting",
+      "n_matters": 65,
+      "n_open": 5,
+      "n_abnormal": 8,
+      "n_clean_closed": 52,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "paga_response",
+      "n_matters": 53,
+      "n_open": 3,
+      "n_abnormal": 4,
+      "n_clean_closed": 46,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "public_records_litigation",
+      "n_matters": 85,
+      "n_open": 5,
+      "n_abnormal": 11,
+      "n_clean_closed": 69,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "public_works_bid_protest",
+      "n_matters": 55,
+      "n_open": 0,
+      "n_abnormal": 3,
+      "n_clean_closed": 52,
+      "enough_to_model": true
+    },
+    {
+      "matter_type": "regulatory_compliance_audit",
+      "n_matters": 46,
+      "n_open": 6,
+      "n_abnormal": 8,
+      "n_clean_closed": 32,
+      "enough_to_model": true
+    }
+  ],
+  "next_step": "Run the back-test next: python -m feemodel backtest"
+}

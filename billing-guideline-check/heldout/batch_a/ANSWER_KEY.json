@@ -1,0 +1,1370 @@
+{
+ "note": "Held-out batch A for the billing-guideline check. Every planted violation in the seven invoices, written by hand by an independent test author who did not read the detector code. Fictional data.",
+ "batch": "batch_a",
+ "written": "By hand, before any tool run. The builder script only did the arithmetic and wrote the files from annotations typed next to each invoice line.",
+ "extra_fields": {
+  "difficulty": "easy = the narrative or data uses the obvious word or value; medium = ordinary wording a keyword list may or may not hold; hard = described as what was done, without the usual keyword, or a boundary value",
+  "alternate_lines": "for staffing_event_limit the document does not say which attendee is cut; a finding of that rule on any listed line counts as the planted one and is not a false positive, even though the line is also in must_not_flag for every other rule",
+  "must_not_flag": "every line with no planted violation, by invoice. A finding of any rule on these lines is a false positive, except invoice-level findings listed in planted with line_no null",
+  "invoice_files": "file name and layout of each invoice"
+ },
+ "invoice_files": {
+  "INV-HCE-7001": "invoices/INV-HCE-7001.csv",
+  "INV-HCE-7002": "invoices/INV-HCE-7002.csv",
+  "INV-MSD-3101": "invoices/INV-MSD-3101.csv",
+  "INV-MSD-3102": "invoices/INV-MSD-3102.csv",
+  "INV-MSD-3103": "invoices/INV-MSD-3103.ledes.txt",
+  "INV-PCR-9001": "invoices/INV-PCR-9001.csv",
+  "INV-PCR-9002": "invoices/INV-PCR-9002.csv"
+ },
+ "invoice_guidelines": {
+  "INV-HCE-7001": "guidelines/harrowgate.json",
+  "INV-HCE-7002": "guidelines/harrowgate.json",
+  "INV-MSD-3101": "guidelines/marrowfen.json",
+  "INV-MSD-3102": "guidelines/marrowfen.json",
+  "INV-MSD-3103": "guidelines/marrowfen.json",
+  "INV-PCR-9001": "guidelines/pindlecroft.json",
+  "INV-PCR-9002": "guidelines/pindlecroft.json"
+ },
+ "invoice_line_counts": {
+  "INV-HCE-7001": 36,
+  "INV-HCE-7002": 28,
+  "INV-MSD-3101": 30,
+  "INV-MSD-3102": 27,
+  "INV-MSD-3103": 24,
+  "INV-PCR-9001": 34,
+  "INV-PCR-9002": 27
+ },
+ "planted": [
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 1,
+   "timekeeper_id": "A01",
+   "rule_type": "late_time",
+   "rule_id": "HCE-LATE-01",
+   "expected_status": "open",
+   "note": "81 days old on the invoice date; limit 75",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 4,
+   "timekeeper_id": "A04",
+   "rule_type": "non_billable_task",
+   "rule_id": "HCE-NONBILL-01",
+   "expected_status": "open",
+   "note": "clerical work (page numbering of a production) described as what was done",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 6,
+   "timekeeper_id": "A01",
+   "rule_type": "internal_conference_limit",
+   "rule_id": "HCE-CONF-01",
+   "expected_status": "open",
+   "note": "0.3 hour in-firm discussion against a 0.2 hour limit; the word conference is not used",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 8,
+   "timekeeper_id": "A02",
+   "rule_type": "staffing_event_limit",
+   "rule_id": "HCE-EVENT-01",
+   "expected_status": "open",
+   "note": "second attorney at a deposition, no approval; either attendee line is acceptable as the flagged line",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 9,
+   "timekeeper_id": "A01",
+   "rule_type": "travel_time",
+   "rule_id": "HCE-TRAVEL-01",
+   "expected_status": "open",
+   "note": "travel billed at the full 325 rate; client pays 50%. The word travel is not used",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 12,
+   "timekeeper_id": "A02",
+   "rule_type": "research_approval",
+   "rule_id": "HCE-RESEARCH-01",
+   "expected_status": "open",
+   "note": "legal research reaches 2.8 hours (lines 11 and 12) against a 2.5 hour limit, no approval; neither line uses the word research and this one is coded A104",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 15,
+   "timekeeper_id": "A02",
+   "rule_type": "block_billing",
+   "rule_id": "HCE-BLOCK-01",
+   "expected_status": "open",
+   "note": "three tasks in one entry, joined by commas and and",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 16,
+   "timekeeper_id": "A03",
+   "rule_type": "rate_increase_notice",
+   "rule_id": "HCE-RATEUP-01",
+   "expected_status": "open",
+   "note": "215 billed, last billed 200; notice given 2026-09-01, so the 45 day period ran to 2026-10-16",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 17,
+   "timekeeper_id": "A02",
+   "rule_type": "minimum_increment",
+   "rule_id": "HCE-INCR-01",
+   "expected_status": "open",
+   "note": "0.25 hour is not a multiple of 0.1",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 18,
+   "timekeeper_id": "A01",
+   "rule_type": "vague_description",
+   "rule_id": "HCE-VAGUE-01",
+   "expected_status": "open",
+   "note": "generic phrase the document itself quotes",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 19,
+   "timekeeper_id": "A04",
+   "rule_type": "vague_description",
+   "rule_id": "HCE-VAGUE-01",
+   "expected_status": "open",
+   "note": "two words, no object",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 22,
+   "timekeeper_id": "A02",
+   "rule_type": "daily_hour_cap",
+   "rule_id": "HCE-DAYCAP-01",
+   "expected_status": "open",
+   "note": "A02 day total 9.6 hours on 2026-10-19 against a 9 hour limit; 0.6 hour of this entry is over",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 25,
+   "timekeeper_id": "A09",
+   "rule_type": "unapproved_timekeeper",
+   "rule_id": "HCE-TK-01",
+   "expected_status": "open",
+   "note": "A09 is not on the approved list for the claim",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 26,
+   "timekeeper_id": "A02",
+   "rule_type": "required_codes",
+   "rule_id": "HCE-CODES-01",
+   "expected_status": "open",
+   "note": "activity code missing",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 27,
+   "timekeeper_id": "A04",
+   "rule_type": "non_billable_task",
+   "rule_id": "HCE-NONBILL-01",
+   "expected_status": "open",
+   "note": "training",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 29,
+   "timekeeper_id": "A02",
+   "rule_type": "duplicate_entries",
+   "rule_id": "HCE-DUP-01",
+   "expected_status": "open",
+   "note": "same as the entry before it",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 30,
+   "timekeeper_id": "A04",
+   "rule_type": "ARITH-LINE",
+   "rule_id": "ARITH-LINE",
+   "expected_status": "open",
+   "note": "1.5 x 120 is 180.00, line says 190.00",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 32,
+   "timekeeper_id": "",
+   "rule_type": "expense_receipt_threshold",
+   "rule_id": "HCE-RECEIPT-01",
+   "expected_status": "open",
+   "note": "38.50 with no receipt; receipts needed from 35.00",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 33,
+   "timekeeper_id": "",
+   "rule_type": "expense_per_diem",
+   "rule_id": "HCE-PERDIEM-01",
+   "expected_status": "open",
+   "note": "68.00 for one person against a 55.00 daily food cap; the word meal is not used",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 34,
+   "timekeeper_id": "",
+   "rule_type": "expense_overhead",
+   "rule_id": "HCE-OVERHEAD-01",
+   "expected_status": "open",
+   "note": "postage, described as certified mail (expense code E108)",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 36,
+   "timekeeper_id": "",
+   "rule_type": "expense_markup",
+   "rule_id": "HCE-MARKUP-01",
+   "expected_status": "open",
+   "note": "billed 240.00 against a cost of 200.00",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 5,
+   "timekeeper_id": "A02",
+   "rule_type": "internal_conference_limit",
+   "rule_id": "HCE-CONF-01",
+   "expected_status": "open",
+   "note": "0.4 hour against a 0.2 hour limit",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 8,
+   "timekeeper_id": "A04",
+   "rule_type": "non_billable_task",
+   "rule_id": "HCE-NONBILL-01",
+   "expected_status": "open",
+   "note": "clerical work (scanning)",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 11,
+   "timekeeper_id": "A02",
+   "rule_type": "vague_description",
+   "rule_id": "HCE-VAGUE-01",
+   "expected_status": "open",
+   "note": "one word",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 13,
+   "timekeeper_id": "A01",
+   "rule_type": "vague_description",
+   "rule_id": "HCE-VAGUE-01",
+   "expected_status": "open",
+   "note": "no object: who was called and about what",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 15,
+   "timekeeper_id": "A04",
+   "rule_type": "non_billable_task",
+   "rule_id": "HCE-NONBILL-01",
+   "expected_status": "open",
+   "note": "conflicts check, worded as conflicts search",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 20,
+   "timekeeper_id": "A02",
+   "rule_type": "staffing_event_limit",
+   "rule_id": "HCE-EVENT-01",
+   "expected_status": "waived",
+   "note": "second attorney at a mediation; client approved it, see waiver W-A01",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 22,
+   "timekeeper_id": "A04",
+   "rule_type": "non_billable_task",
+   "rule_id": "HCE-NONBILL-01",
+   "expected_status": "open",
+   "note": "invoice preparation and correction",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 26,
+   "timekeeper_id": "",
+   "rule_type": "expense_receipt_threshold",
+   "rule_id": "HCE-RECEIPT-01",
+   "expected_status": "open",
+   "note": "35.00 with no receipt; the document requires receipts for charges of 35.00 or more, so the threshold itself is caught",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 27,
+   "timekeeper_id": "",
+   "rule_type": "required_codes",
+   "rule_id": "HCE-CODES-01",
+   "expected_status": "open",
+   "note": "expense code missing",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 28,
+   "timekeeper_id": "",
+   "rule_type": "expense_overhead",
+   "rule_id": "HCE-OVERHEAD-01",
+   "expected_status": "open",
+   "note": "office supplies, described by the items bought",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": null,
+   "timekeeper_id": "A05",
+   "rule_type": "rounding_pattern",
+   "rule_id": "HCE-ROUND-01",
+   "expected_status": "open",
+   "note": "six of the seven A05 entries (86%) are multiples of 0.5 hour",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 1,
+   "timekeeper_id": "B11",
+   "rule_type": "late_time",
+   "rule_id": "MSD-LATE-01",
+   "expected_status": "open",
+   "note": "125 days old on the invoice date; limit 120",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 5,
+   "timekeeper_id": "B12",
+   "rule_type": "block_billing",
+   "rule_id": "MSD-BLOCK-01",
+   "expected_status": "open",
+   "note": "three tasks in one 2.9 hour entry; threshold 1.5 hours",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 7,
+   "timekeeper_id": "B11",
+   "rule_type": "travel_time",
+   "rule_id": "MSD-TRAVEL-01",
+   "expected_status": "open",
+   "note": "travel time with no approval on record for this matter; the word travel is not used",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 8,
+   "timekeeper_id": "B14",
+   "rule_type": "non_billable_task",
+   "rule_id": "MSD-NONBILL-01",
+   "expected_status": "open",
+   "note": "clerical work (copying and delivery) described as what was done",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 9,
+   "timekeeper_id": "B12",
+   "rule_type": "minimum_increment",
+   "rule_id": "MSD-INCR-01",
+   "expected_status": "open",
+   "note": "1.25 hours is not a multiple of 0.1",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 10,
+   "timekeeper_id": "B13",
+   "rule_type": "required_codes",
+   "rule_id": "MSD-CODES-01",
+   "expected_status": "open",
+   "note": "task code missing",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 11,
+   "timekeeper_id": "B12",
+   "rule_type": "rate_above_card",
+   "rule_id": "MSD-RATE-01",
+   "expected_status": "open",
+   "note": "billed at 310 against an approved 295",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 12,
+   "timekeeper_id": "B19",
+   "rule_type": "unapproved_timekeeper",
+   "rule_id": "MSD-TK-01",
+   "expected_status": "open",
+   "note": "B19 is not listed in the fee schedule for this matter",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 16,
+   "timekeeper_id": "B14",
+   "rule_type": "duplicate_entries",
+   "rule_id": "MSD-DUP-01",
+   "expected_status": "open",
+   "note": "same as the entry before it",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 26,
+   "timekeeper_id": "",
+   "rule_type": "expense_per_diem",
+   "rule_id": "MSD-PERDIEM-01",
+   "expected_status": "open",
+   "note": "172.00 a night against a 150.00 lodging cap",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": null,
+   "timekeeper_id": "",
+   "rule_type": "staffing_matter_limit",
+   "rule_id": "MSD-STAFF-01",
+   "expected_status": "open",
+   "note": "five timekeepers (B11, B12, B13, B14, B19) on the invoice against a limit of four, no approval",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": null,
+   "timekeeper_id": "",
+   "rule_type": "budget_cap",
+   "rule_id": "MSD-BUDGET-01",
+   "expected_status": "open",
+   "note": "cap 85,000.00, billed to date 68,000.00, this invoice 18,205.65: the matter goes 1,205.65 over the not-to-exceed amount",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": null,
+   "timekeeper_id": "",
+   "rule_type": "phase_cap",
+   "rule_id": "MSD-PHASE-01",
+   "expected_status": "open",
+   "note": "phase L300 cap 30,000.00, billed to date 18,000.00, L3xx fee lines on this invoice 12,426.25: 426.25 over the phase allotment",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 9,
+   "timekeeper_id": "B13",
+   "rule_type": "block_billing",
+   "rule_id": "MSD-BLOCK-01",
+   "expected_status": "open",
+   "note": "three tasks in one 1.9 hour entry, joined by then; threshold 1.5 hours",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 10,
+   "timekeeper_id": "B14",
+   "rule_type": "non_billable_task",
+   "rule_id": "MSD-NONBILL-01",
+   "expected_status": "open",
+   "note": "clerical filing work described as what was done",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 23,
+   "timekeeper_id": "",
+   "rule_type": "expense_per_diem",
+   "rule_id": "MSD-PERDIEM-01",
+   "expected_status": "open",
+   "note": "47.25 for one person against a 40.00 meal cap",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 24,
+   "timekeeper_id": "",
+   "rule_type": "expense_receipt_threshold",
+   "rule_id": "MSD-RECEIPT-01",
+   "expected_status": "open",
+   "note": "45.00 with no receipt; receipts needed above 20.00",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 26,
+   "timekeeper_id": "",
+   "rule_type": "expense_markup",
+   "rule_id": "MSD-MARKUP-01",
+   "expected_status": "open",
+   "note": "billed 88.00 against a cost of 80.00",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": null,
+   "timekeeper_id": "",
+   "rule_type": "ARITH-TOTAL",
+   "rule_id": "ARITH-TOTAL",
+   "expected_status": "open",
+   "note": "declared total is 50.00 more than the lines",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 5,
+   "timekeeper_id": "B12",
+   "rule_type": "minimum_increment",
+   "rule_id": "MSD-INCR-01",
+   "expected_status": "open",
+   "note": "0.75 hour is not a multiple of 0.1",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 7,
+   "timekeeper_id": "B13",
+   "rule_type": "block_billing",
+   "rule_id": "MSD-BLOCK-01",
+   "expected_status": "open",
+   "note": "three tasks in one 2.6 hour entry; threshold 1.5 hours",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 8,
+   "timekeeper_id": "B11",
+   "rule_type": "travel_time",
+   "rule_id": "MSD-TRAVEL-01",
+   "expected_status": "open",
+   "note": "travel time (driving) with no approval on record for this matter; described as windshield time",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 12,
+   "timekeeper_id": "B12",
+   "rule_type": "duplicate_entries",
+   "rule_id": "MSD-DUP-01",
+   "expected_status": "open",
+   "note": "same as the entry before it",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 13,
+   "timekeeper_id": "B19",
+   "rule_type": "unapproved_timekeeper",
+   "rule_id": "MSD-TK-01",
+   "expected_status": "open",
+   "note": "B19 is not listed in the fee schedule for this matter",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 14,
+   "timekeeper_id": "B13",
+   "rule_type": "rate_above_card",
+   "rule_id": "MSD-RATE-01",
+   "expected_status": "open",
+   "note": "billed at 285 against an approved 270",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 15,
+   "timekeeper_id": "B11",
+   "rule_type": "late_time",
+   "rule_id": "MSD-LATE-01",
+   "expected_status": "open",
+   "note": "129 days old on the invoice date; limit 120. The entry is out of date order on the invoice",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 16,
+   "timekeeper_id": "B12",
+   "rule_type": "required_codes",
+   "rule_id": "MSD-CODES-01",
+   "expected_status": "open",
+   "note": "task code missing",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 22,
+   "timekeeper_id": "",
+   "rule_type": "expense_per_diem",
+   "rule_id": "MSD-PERDIEM-01",
+   "expected_status": "open",
+   "note": "165.00 a night against a 150.00 lodging cap; neither hotel nor lodging is used",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": null,
+   "timekeeper_id": "",
+   "rule_type": "staffing_matter_limit",
+   "rule_id": "MSD-STAFF-01",
+   "expected_status": "open",
+   "note": "five timekeepers (B11, B12, B13, B14, B19) on the invoice against a limit of four, no approval",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 1,
+   "timekeeper_id": "C21",
+   "rule_type": "late_time",
+   "rule_id": "PCR-LATE-01",
+   "expected_status": "open",
+   "note": "63 days old on the invoice date; limit 60",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 4,
+   "timekeeper_id": "C23",
+   "rule_type": "ai_nonpayable_task",
+   "rule_id": "PCR-AINOPAY-01",
+   "expected_status": "open",
+   "note": "AI-produced deposition summaries, which the client will not pay for; worded as digest. Disclosure marker is present, so no disclosure finding",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 5,
+   "timekeeper_id": "C24",
+   "rule_type": "ai_disclosure_required",
+   "rule_id": "PCR-AIDISC-01",
+   "expected_status": "open",
+   "note": "time system flags the entry as AI-assisted and the narrative has no (GenAI) marker",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 6,
+   "timekeeper_id": "C22",
+   "rule_type": "ai_disclosure_required",
+   "rule_id": "PCR-AIDISC-01",
+   "expected_status": "open",
+   "note": "narrative says an AI tool was used; no (GenAI) marker; time-system flag blank",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 7,
+   "timekeeper_id": "C21",
+   "rule_type": "internal_conference_limit",
+   "rule_id": "PCR-CONF-01",
+   "expected_status": "open",
+   "note": "0.75 hour internal meeting against a 0.5 hour limit",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 8,
+   "timekeeper_id": "C22",
+   "rule_type": "internal_conference_limit",
+   "rule_id": "PCR-CONF-01",
+   "expected_status": "open",
+   "note": "0.75 hour internal meeting against a 0.5 hour limit; called a huddle and coded A101",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 11,
+   "timekeeper_id": "C23",
+   "rule_type": "research_approval",
+   "rule_id": "PCR-RESEARCH-01",
+   "expected_status": "open",
+   "note": "legal research reaches 6.5 hours (lines 9, 10 and 11) against a 6 hour limit, no approval; this line does not use the word research and is coded A104",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 14,
+   "timekeeper_id": "C24",
+   "rule_type": "block_billing",
+   "rule_id": "PCR-BLOCK-01",
+   "expected_status": "open",
+   "note": "three tasks in one 1.75 hour entry; client allows two",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 15,
+   "timekeeper_id": "C21",
+   "rule_type": "minimum_increment",
+   "rule_id": "PCR-INCR-01",
+   "expected_status": "open",
+   "note": "0.4 hour is not a multiple of 0.25",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 16,
+   "timekeeper_id": "C22",
+   "rule_type": "vague_description",
+   "rule_id": "PCR-VAGUE-01",
+   "expected_status": "open",
+   "note": "generic phrase with no object",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 17,
+   "timekeeper_id": "C24",
+   "rule_type": "vague_description",
+   "rule_id": "PCR-VAGUE-01",
+   "expected_status": "open",
+   "note": "one word",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 20,
+   "timekeeper_id": "C23",
+   "rule_type": "staffing_event_limit",
+   "rule_id": "PCR-EVENT-01",
+   "expected_status": "open",
+   "note": "third lawyer at a hearing; client pays for two. The word attend is not used. Any one of lines 18 to 20 is acceptable as the flagged line",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 24,
+   "timekeeper_id": "C22",
+   "rule_type": "daily_hour_cap",
+   "rule_id": "PCR-DAYCAP-01",
+   "expected_status": "open",
+   "note": "C22 day total 10.5 hours on 2026-10-21 against a 10 hour limit; 0.5 hour of this entry is over",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 25,
+   "timekeeper_id": "C21",
+   "rule_type": "rate_above_card",
+   "rule_id": "PCR-RATE-01",
+   "expected_status": "open",
+   "note": "billed at 790 against an approved 760",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 27,
+   "timekeeper_id": "C24",
+   "rule_type": "duplicate_entries",
+   "rule_id": "PCR-DUP-01",
+   "expected_status": "open",
+   "note": "same as the entry before it",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 31,
+   "timekeeper_id": "",
+   "rule_type": "expense_overhead",
+   "rule_id": "PCR-OVERHEAD-01",
+   "expected_status": "open",
+   "note": "online research subscription passed through; the word subscription is not used",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 32,
+   "timekeeper_id": "",
+   "rule_type": "expense_markup",
+   "rule_id": "PCR-MARKUP-01",
+   "expected_status": "open",
+   "note": "billed 1210.00 against a cost of 1100.00",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 4,
+   "timekeeper_id": "C23",
+   "rule_type": "ai_disclosure_required",
+   "rule_id": "PCR-AIDISC-01",
+   "expected_status": "open",
+   "note": "narrative says the first draft came from an AI chatbot; no (GenAI) marker; time-system flag blank",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 6,
+   "timekeeper_id": "C24",
+   "rule_type": "ai_nonpayable_task",
+   "rule_id": "PCR-AINOPAY-01",
+   "expected_status": "open",
+   "note": "AI first-level document review, which the client will not pay for; worded as first-cut responsiveness review. Marker is present",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 9,
+   "timekeeper_id": "C22",
+   "rule_type": "internal_conference_limit",
+   "rule_id": "PCR-CONF-01",
+   "expected_status": "open",
+   "note": "1.0 hour internal discussion against a 0.5 hour limit",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 14,
+   "timekeeper_id": "C24",
+   "rule_type": "vague_description",
+   "rule_id": "PCR-VAGUE-01",
+   "expected_status": "open",
+   "note": "generic phrase, no object",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 15,
+   "timekeeper_id": "C23",
+   "rule_type": "block_billing",
+   "rule_id": "PCR-BLOCK-01",
+   "expected_status": "open",
+   "note": "three tasks in one 1.5 hour entry; client allows two",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 16,
+   "timekeeper_id": "C22",
+   "rule_type": "minimum_increment",
+   "rule_id": "PCR-INCR-01",
+   "expected_status": "open",
+   "note": "0.9 hour is not a multiple of 0.25",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 20,
+   "timekeeper_id": "C24",
+   "rule_type": "rate_above_card",
+   "rule_id": "PCR-RATE-01",
+   "expected_status": "open",
+   "note": "billed at 280 against an approved 260",
+   "difficulty": "easy"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 22,
+   "timekeeper_id": "C21",
+   "rule_type": "late_time",
+   "rule_id": "PCR-LATE-01",
+   "expected_status": "open",
+   "note": "70 days old on the invoice date; limit 60. Out of date order on the invoice",
+   "difficulty": "medium"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 25,
+   "timekeeper_id": "",
+   "rule_type": "expense_overhead",
+   "rule_id": "PCR-OVERHEAD-01",
+   "expected_status": "open",
+   "note": "staff overtime, described without the word overtime",
+   "difficulty": "hard"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 27,
+   "timekeeper_id": "",
+   "rule_type": "expense_markup",
+   "rule_id": "PCR-MARKUP-01",
+   "expected_status": "open",
+   "note": "billed 84.00 against a cost of 70.00",
+   "difficulty": "easy"
+  }
+ ],
+ "alternate_lines": [
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 8,
+   "also_acceptable_lines": [
+    7
+   ]
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 20,
+   "also_acceptable_lines": [
+    18,
+    19
+   ]
+  }
+ ],
+ "not_enforced": [
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 30,
+   "rule_id": "PCR-TRAVEL-01",
+   "note": "travel time at full rate. The memo's travel wish is only proposed (not confirmed), so it must not produce a finding"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 23,
+   "rule_id": "PCR-TRAVEL-01",
+   "note": "travel time at full rate. The travel rule is only proposed, so it must not produce a finding"
+  }
+ ],
+ "hard_cases_clean": [
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 2,
+   "note": "exactly 75 days old on the invoice date; the document refuses work 'more than 75 days old', so this is inside the limit",
+   "narrative": "Call with claims examiner on litigation plan and reserve recommendation"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 5,
+   "note": "one drafting task described in parts with semicolons",
+   "narrative": "Draft motion for partial summary judgment; argument on comparative fault; argument on statutory employer defense"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 14,
+   "note": "list of documents after a colon; one task",
+   "narrative": "Prepare privilege log: adjuster notes, counsel emails, and reserve worksheets"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 20,
+   "note": "the word training describes the insured's files, not law firm training; must not be flagged as non-billable",
+   "narrative": "Prepare corporate designee for deposition on driver hiring and training files"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 23,
+   "note": "A03's new rate billed after the 45 day notice period ended on 2026-10-16; allowed",
+   "narrative": "Revise motion to quash after meet-and-confer with vendor's counsel"
+  },
+  {
+   "invoice_id": "INV-HCE-7001",
+   "line_no": 35,
+   "note": "no receipt, but 23.00 is under the 35.00 receipt threshold",
+   "narrative": "Parking near courthouse for motion hearing"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 3,
+   "note": "one review task; the second verb (log) is part of the same review",
+   "narrative": "Review store surveillance footage and log timestamps of the fall and the last floor inspection"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 6,
+   "note": "in-firm discussion of exactly 0.2 hour, which is the limit",
+   "narrative": "Brief check-in with associate on sweep log gaps"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 14,
+   "note": "research, but 1.4 hours in total is under the 2.5 hour limit",
+   "narrative": "Research notice requirements for transitory spills"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 17,
+   "note": "travel billed at 120.00, which is 50% of the 240.00 approved rate",
+   "narrative": "Travel to plaintiff's deposition (billed at half rate)"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 21,
+   "note": "and is part of the document's name; one task",
+   "narrative": "Draft settlement agreement and release"
+  },
+  {
+   "invoice_id": "INV-HCE-7002",
+   "line_no": 25,
+   "note": "no receipt, 34.00 is under the 35.00 threshold",
+   "narrative": "Parking garage, plaintiff's deposition"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 3,
+   "note": "list of document categories after a colon; one task over the 1.5 hour threshold",
+   "narrative": "Draft requests for production directed to contractor: daily logs, schedule updates, and subcontractor pay applications"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 4,
+   "note": "one review task with its parts separated by semicolons, over the 1.5 hour threshold",
+   "narrative": "Review contractor's schedule updates for float consumption; critical path entries for June through August; weather day claims"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 6,
+   "note": "more than one task, but 0.4 hour is under this client's 1.5 hour threshold",
+   "narrative": "Email District clerk for board minutes; read the reply and calendar follow-up"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 13,
+   "note": "12.4 hours for B13 on 2026-10-15 across two entries; this client's document sets no daily limit",
+   "narrative": "Defend deposition of District's construction manager"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 14,
+   "note": "second entry of a 12.4 hour day; no daily limit for this client",
+   "narrative": "Draft summary of construction manager's deposition testimony for the District's board"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 17,
+   "note": "and joins two people on one call",
+   "narrative": "Settlement call with contractor's counsel and surety representative"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 27,
+   "note": "36.40 is under the 40.00 meal cap",
+   "narrative": "Dinner, I. Corbel-Asante, Marrowfen"
+  },
+  {
+   "invoice_id": "INV-MSD-3101",
+   "line_no": 28,
+   "note": "no receipt; the document requires one only for a cost 'in excess of' 20.00, and this is exactly 20.00",
+   "narrative": "Bridge toll and parking, site meeting"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 1,
+   "note": "exactly 120 days old on the invoice date; the document refuses time submitted 'more than' 120 days after the work",
+   "narrative": "Review hauler's notice of price escalation and contract index clause"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 3,
+   "note": "one drafting task with a semicolon and a list",
+   "narrative": "Draft complaint for breach of hauling contract; causes of action for breach, declaratory relief, and account stated"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 6,
+   "note": "travel time; travel is approved on the matter record",
+   "narrative": "Travel to Marrowfen for case management conference (approved by General Counsel 9/28)"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 11,
+   "note": "arguably two tasks, but exactly 1.5 hours; the rule applies to entries 'exceeding' 1.5 hours",
+   "narrative": "Review hauler's document production; note missing manifests"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 12,
+   "note": "one-word narrative, but this client's document has no rule on vague descriptions",
+   "narrative": "Status"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 18,
+   "note": "approved travel, one task over 1.5 hours",
+   "narrative": "Travel to and from courthouse for demurrer hearing"
+  },
+  {
+   "invoice_id": "INV-MSD-3102",
+   "line_no": 25,
+   "note": "149.00 is under the 150.00 lodging cap",
+   "narrative": "Lodging, one night, demurrer hearing"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 17,
+   "note": "11.7 hours for B12 on 2026-10-20 across two entries; no daily limit for this client",
+   "narrative": "Draft memorandum of points and authorities for possession motion"
+  },
+  {
+   "invoice_id": "INV-MSD-3103",
+   "line_no": 18,
+   "note": "second entry of an 11.7 hour day; no daily limit for this client",
+   "narrative": "Draft supporting declarations of appraiser and right-of-way agent"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 2,
+   "note": "exactly 60 days old on the invoice date; the memo refuses time 'older than 60 days'",
+   "narrative": "Draft claim chart for the asserted claims of the '114 patent"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 3,
+   "note": "AI-assisted, disclosed with the client's marker, and not a task the client refuses to pay for",
+   "narrative": "Draft invalidity contentions for the '114 patent (GenAI)"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 12,
+   "note": "one drafting task described in parts with semicolons",
+   "narrative": "Draft opening claim construction brief; section on 'compliant member'; section on 'actuation signal'"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 13,
+   "note": "two tasks; this client allows up to two in one entry",
+   "narrative": "Revise claim construction brief and circulate to client"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 21,
+   "note": "first entry of a 9.75 hour day, under the 10 hour limit",
+   "narrative": "Prepare H. Solano-Brandt's cross outline for inventor deposition"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 22,
+   "note": "second entry of a 9.75 hour day, under the 10 hour limit",
+   "narrative": "Review source code production for actuation firmware modules"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 28,
+   "note": "starts with a generic phrase but names what was reviewed",
+   "narrative": "Review documents produced by Tessaly Motion in response to subpoena"
+  },
+  {
+   "invoice_id": "INV-PCR-9001",
+   "line_no": 29,
+   "note": "starts with a generic phrase but names who and what",
+   "narrative": "Telephone call with general counsel regarding mediation timing"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 3,
+   "note": "list after a colon; one task",
+   "narrative": "Review forensic image report of former engineer's laptop: USB history, cloud uploads, and deleted folders"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 5,
+   "note": "AI-assisted, disclosed, and a payable task",
+   "narrative": "Draft application for temporary restraining order (GenAI)"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 8,
+   "note": "internal conference of exactly 0.5 hour, which is the limit",
+   "narrative": "Internal conference with O. Tran-Whitcombe on TRO evidence"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 10,
+   "note": "research, but 3.5 hours in total is under the 6 hour limit",
+   "narrative": "Research standard for inevitable disclosure injunctions"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 11,
+   "note": "two tasks; this client allows up to two in one entry",
+   "narrative": "Finalize TRO papers and coordinate filing with local counsel"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 13,
+   "note": "second lawyer at a hearing; this client pays for two",
+   "narrative": "Attend TRO hearing in support of H. Solano-Brandt"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 18,
+   "note": "first entry of a day totalling exactly 10.0 hours; the memo questions 'more than 10'",
+   "narrative": "Take deposition of former engineer"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 19,
+   "note": "second entry of a day totalling exactly 10.0 hours",
+   "narrative": "Review engineer's personal email production ahead of afternoon session"
+  },
+  {
+   "invoice_id": "INV-PCR-9002",
+   "line_no": 21,
+   "note": "sounds vague but names its object; not the listed phrase",
+   "narrative": "Attention to preliminary injunction reply evidence"
+  }
+ ],
+ "must_not_flag": {
+  "INV-HCE-7001": [
+   2,
+   3,
+   5,
+   7,
+   10,
+   11,
+   13,
+   14,
+   20,
+   21,
+   23,
+   24,
+   28,
+   31,
+   35
+  ],
+  "INV-HCE-7002": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   9,
+   10,
+   12,
+   14,
+   16,
+   17,
+   18,
+   19,
+   21,
+   23,
+   24,
+   25
+  ],
+  "INV-MSD-3101": [
+   2,
+   3,
+   4,
+   6,
+   13,
+   14,
+   15,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   27,
+   28,
+   29,
+   30
+  ],
+  "INV-MSD-3102": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   25,
+   27
+  ],
+  "INV-MSD-3103": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   9,
+   10,
+   11,
+   17,
+   18,
+   19,
+   20,
+   21,
+   23,
+   24
+  ],
+  "INV-PCR-9001": [
+   2,
+   3,
+   9,
+   10,
+   12,
+   13,
+   18,
+   19,
+   21,
+   22,
+   23,
+   26,
+   28,
+   29,
+   30,
+   33,
+   34
+  ],
+  "INV-PCR-9002": [
+   1,
+   2,
+   3,
+   5,
+   7,
+   8,
+   10,
+   11,
+   12,
+   13,
+   17,
+   18,
+   19,
+   21,
+   23,
+   24,
+   26
+  ]
+ },
+ "not_checkable_in_ledes": "INV-MSD-3103 is in the LEDES-style layout, which has no receipt, cost or AI flag. Receipt and mark-up rules cannot be checked on it; a 'not checked' notice for those rules is expected and is not a finding."
+}

@@ -1,0 +1,3 @@
+Helper scripts the test author used to list candidate documents and matters for hand judgement.
+They read only data/synthetic/*.csv and documents.jsonl. They do not import or run the search tool.
+Run prep.py first (writes prep.pkl in the current folder). Kept for audit; not needed for scoring.

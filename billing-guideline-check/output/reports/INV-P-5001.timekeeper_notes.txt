@@ -1,0 +1,35 @@
+To: Wendeline Abernathy-Cruz (TK41)
+Re: draft invoice INV-P-5001, Pellwick Bakery Supply, matter PBS-001
+
+Before this bill goes out, please look at the 1 item below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $67.50. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 6, 2026-10-14, $67.50 [Minimum time increment, will likely be rejected]
+  Your entry: "Email to client regarding lessor's response" (0.15 h x $450.00 = $67.50)
+  What the check saw: 0.15 hours is not a multiple of the 0.1 hour increment.
+  Suggested fix: Ask the timekeeper to restate the time in 0.1 hour increments from their own records.
+  Client rule (PBS-INCR-01, page 1, paragraph 2): "Please bill in 0.1 hour increments at the rates in your engagement letter and not above them."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.
+
+------------------------------------------------------------------------
+
+To: Hollis Fairweather-Nkemelu (TK42)
+Re: draft invoice INV-P-5001, Pellwick Bakery Supply, matter PBS-001
+
+Before this bill goes out, please look at the 2 items below. Each one cites the client's own billing rule.
+Amount at risk on your entries: $395.00. Please correct entries from your own records; nothing has been changed for you.
+
+- Line 4, 2026-10-07, $360.00 [Duplicate entries, will likely be rejected]
+  Your entry: "Draft demand letter to equipment lessor" (1.2 h x $300.00 = $360.00)
+  What the check saw: Same timekeeper, date, quantity and description as line 3.
+  Suggested fix: Confirm with the timekeeper whether the work was done twice. If not, remove one entry.
+  Client rule (PBS-DUP-01, page 1, paragraph 3): "We do not want to be charged twice for the same work."
+
+- Line 10, 2026-10-21, $455.00 [Rate above approved rate card, likely reduced]
+  Your entry: "Draft complaint for breach of equipment lease" (1.4 h x $325.00 = $455.00)
+  What the check saw: Billed at $325.00 an hour. The approved rate for this timekeeper is $300.00.
+  Suggested fix: Correct the rate to the approved rate card, or attach the client's approval of the higher rate.
+  Client rule (PBS-RATE-01, page 1, paragraph 2): "Please bill in 0.1 hour increments at the rates in your engagement letter and not above them."
+
+Personal portfolio demo. Fictional data. Not legal or billing advice.

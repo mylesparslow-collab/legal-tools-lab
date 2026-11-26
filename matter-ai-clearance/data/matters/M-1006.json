@@ -1,0 +1,21 @@
+{
+ "id": "M-1006",
+ "name": "Ostrava Row: retail lease renewal",
+ "client_id": "ostrava",
+ "matter_type": "commercial lease",
+ "responsible_attorney": "A. Vantongeren (fictional)",
+ "intake_date": "2026-08-11",
+ "data_flags": {
+  "phi": "no",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "ostrava-el-2026"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

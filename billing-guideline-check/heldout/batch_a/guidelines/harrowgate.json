@@ -1,0 +1,341 @@
+{
+  "client_id": "harrowgate",
+  "client_name": "Harrowgate Casualty Exchange",
+  "document": "heldout/batch_a/guideline_docs/harrowgate.txt",
+  "rules": [
+    {
+      "rule_id": "HCE-TK-01",
+      "type": "unapproved_timekeeper",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Only people the claims examiner has cleared in writing for the claim.",
+      "source_ref": "Who may bill, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-EVENT-01",
+      "type": "staffing_event_limit",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_attendees": 1,
+        "events": [
+          "deposition",
+          "mediation",
+          "arbitration",
+          "hearing"
+        ]
+      },
+      "source_quote": "One attorney paid per deposition, mediation, arbitration session or court hearing; a second needs the examiner's OK beforehand.",
+      "source_ref": "Depositions etc., sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-CONF-01",
+      "type": "internal_conference_limit",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours_per_entry": "0.2"
+      },
+      "source_quote": "Capped at 0.2 hr per entry, per person.",
+      "source_ref": "In-firm discussions, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-INCR-01",
+      "type": "minimum_increment",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "Six-minute units (0.1 hr); no quarter hours.",
+      "source_ref": "Time units, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-ROUND-01",
+      "type": "rounding_pattern",
+      "status": "confirmed",
+      "severity": "review",
+      "params": {
+        "block": "0.5",
+        "min_entries": 6,
+        "threshold_percent": 80
+      },
+      "source_quote": "A timekeeper with 80% or more of entries (6 entries minimum) landing on the half hour or the hour gets audited.",
+      "source_ref": "Half-hour habits, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-BLOCK-01",
+      "type": "block_billing",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_tasks": 1,
+        "min_hours": 0
+      },
+      "source_quote": "Each entry covers a single task with its own time; lumped entries are cut.",
+      "source_ref": "One entry, one task, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-VAGUE-01",
+      "type": "vague_description",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "always_phrases": [
+          "attention to file",
+          "attention to matter",
+          "various tasks",
+          "work on case",
+          "work on matter"
+        ],
+        "bare_phrases": [
+          "draft correspondence",
+          "follow up",
+          "legal research",
+          "prepare for hearing",
+          "review documents",
+          "review file",
+          "telephone call",
+          "trial preparation",
+          "work on discovery"
+        ],
+        "min_words": 3
+      },
+      "source_quote": "Say what was done and to what; \"attention to file\", \"follow up\" and similar get zero.",
+      "source_ref": "Descriptions, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-CODES-01",
+      "type": "required_codes",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "require_task": true,
+        "require_activity": true,
+        "require_expense": true
+      },
+      "source_quote": "Task code and activity code on fee lines, expense code on cost lines; all mandatory.",
+      "source_ref": "Codes, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-DAYCAP-01",
+      "type": "daily_hour_cap",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": 9
+      },
+      "source_quote": "Over 9.0 hrs by one person in one day is not paid without a written reason.",
+      "source_ref": "Long days, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-LATE-01",
+      "type": "late_time",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 75
+      },
+      "source_quote": "Work more than 75 days old at invoice date is not paid.",
+      "source_ref": "Stale time, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-DUP-01",
+      "type": "duplicate_entries",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Same entry twice: the second one is struck.",
+      "source_ref": "Repeats, sheet 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-RATE-01",
+      "type": "rate_above_card",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "The approved rate sheet for the claim is the ceiling.",
+      "source_ref": "Rates, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-RATEUP-01",
+      "type": "rate_increase_notice",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "notice_days": 45
+      },
+      "source_quote": "45 days' written notice to the examiner before a new rate may be billed.",
+      "source_ref": "Rate changes, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-NONBILL-01",
+      "type": "non_billable_task",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "categories": {
+          "clerical": [
+            "scanning",
+            "scan documents",
+            "photocopying",
+            "bates stamping",
+            "organizing files",
+            "organize files",
+            "data entry",
+            "updating file index",
+            "saving documents to",
+            "secretarial",
+            "file-room"
+          ],
+          "training": [
+            "training",
+            "orientation",
+            "getting up to speed",
+            "onboarding"
+          ],
+          "conflicts": [
+            "conflicts check",
+            "conflict check",
+            "new matter intake",
+            "conflicts clearance"
+          ],
+          "invoice_prep": [
+            "prepare invoice",
+            "preparing invoice",
+            "prebill",
+            "pre-bill",
+            "billing inquiry",
+            "invoice backup",
+            "correct invoice"
+          ]
+        }
+      },
+      "source_quote": "Secretarial and file-room work; training and onboarding; conflicts clearance; preparing or fixing bills.",
+      "source_ref": "Not billable, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-RESEARCH-01",
+      "type": "research_approval",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": "2.5"
+      },
+      "source_quote": "Up to 2.5 hrs per claim without asking; beyond that, examiner pre-approval.",
+      "source_ref": "Legal research, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-TRAVEL-01",
+      "type": "travel_time",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "billable_percent": 50,
+        "requires_approval": false
+      },
+      "source_quote": "Paid at half the approved rate.",
+      "source_ref": "Travel, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-OVERHEAD-01",
+      "type": "expense_overhead",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "codes": [
+          "E103",
+          "E104",
+          "E105",
+          "E108"
+        ],
+        "phrases": [
+          "postage",
+          "word processing",
+          "local telephone",
+          "office supplies",
+          "overtime",
+          "subscription"
+        ]
+      },
+      "source_quote": "Not reimbursed: postage, word processing, local telephone, office supplies.",
+      "source_ref": "Overhead, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-RECEIPT-01",
+      "type": "expense_receipt_threshold",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "threshold": "35.00",
+        "inclusive": true
+      },
+      "source_quote": "Required for any single charge of $35.00 or more.",
+      "source_ref": "Receipts, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-PERDIEM-01",
+      "type": "expense_per_diem",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "caps": {
+          "meal": "55.00",
+          "lodging": "190.00"
+        }
+      },
+      "source_quote": "Meals max $55.00 per person per day; hotel max $190.00 per night.",
+      "source_ref": "Food and lodging, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "HCE-MARKUP-01",
+      "type": "expense_markup",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "At cost, no uplift.",
+      "source_ref": "Third-party costs, sheet 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    }
+  ]
+}

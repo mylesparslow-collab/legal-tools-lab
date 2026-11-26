@@ -1,0 +1,72 @@
+{
+  "_about": "Maps the synthetic export's column names to the canonical schema in kx/schema.py. Copy this file and edit it for another source; do not edit code.",
+  "people": {
+    "file": "people.csv",
+    "format": "csv",
+    "fields": {"person_id": "UserId", "name": "FullName", "office": "Office", "practice": "Dept", "title": "Title", "status": "Status"},
+    "value_maps": {"status": {"A": "active", "D": "departed"}},
+    "required": ["person_id", "name"]
+  },
+  "group_members": {
+    "file": "group_members.csv",
+    "format": "csv",
+    "fields": {"group_id": "GroupCode", "person_id": "UserId"},
+    "required": ["group_id", "person_id"]
+  },
+  "matters": {
+    "file": "matters.csv",
+    "format": "csv",
+    "fields": {"matter_id": "MatterNo", "name": "MatterName", "client_id": "ClientNo", "client_industry": "Industry", "practice": "PracticeArea", "matter_type": "MatterType", "jurisdiction": "Forum", "office": "Office", "opened": "OpenDate", "closed": "CloseDate", "description": "Description", "security": "SecurityCode"},
+    "value_maps": {"security": {"P": "public", "R": "restricted"}},
+    "required": ["matter_id"]
+  },
+  "grants": {
+    "file": "matter_access.csv",
+    "format": "csv",
+    "fields": {"matter_id": "MatterNo", "principal_type": "GranteeKind", "principal_id": "Grantee"},
+    "value_maps": {"principal_type": {"U": "user", "G": "group"}},
+    "required": ["matter_id", "principal_type", "principal_id"]
+  },
+  "walls": {
+    "file": "walls.csv",
+    "format": "csv",
+    "fields": {"wall_id": "WallId", "matter_id": "MatterNo"},
+    "required": ["wall_id", "matter_id"]
+  },
+  "wall_members": {
+    "file": "wall_members.csv",
+    "format": "csv",
+    "fields": {"wall_id": "WallId", "person_id": "ExcludedUserId"},
+    "required": ["wall_id", "person_id"]
+  },
+  "team": {
+    "file": "matter_team.csv",
+    "format": "csv",
+    "fields": {"matter_id": "MatterNo", "person_id": "UserId", "role": "Role"},
+    "value_maps": {"role": {"L": "lead", "S": "support"}},
+    "value_map_defaults": {"role": "support"},
+    "required": ["matter_id", "person_id"]
+  },
+  "time_entries": {
+    "file": "time_entries.csv",
+    "format": "csv",
+    "fields": {"entry_id": "EntryId", "matter_id": "MatterNo", "person_id": "UserId", "work_date": "WorkDate", "hours": "Hours"},
+    "types": {"hours": "float"},
+    "required": ["entry_id", "matter_id", "person_id"]
+  },
+  "documents": {
+    "file": "documents.jsonl",
+    "format": "jsonl",
+    "fields": {"doc_id": "DocId", "matter_id": "MatterNo", "title": "DocName", "body": "Text", "doc_type": "Class", "author_id": "Author", "doc_date": "EditDate", "family_id": "FamilyNum", "version_no": "Version", "is_final": "Final", "was_filed": "Filed", "model_form": "ModelForm", "reuse_count": "ReuseCount", "modified": "Modified", "security_override": "DocSecurity"},
+    "value_maps": {"doc_type": {"BRF": "brief", "MOT": "motion", "AGR": "agreement", "MEM": "memo", "RPT": "staff report", "OPN": "opinion letter", "CHK": "checklist", "FRM": "form"}},
+    "value_map_defaults": {"doc_type": "other"},
+    "types": {"version_no": "int", "reuse_count": "int", "is_final": "bool", "was_filed": "bool", "model_form": "bool"},
+    "required": ["doc_id", "matter_id", "title"]
+  },
+  "deletions": {
+    "file": "deletions.jsonl",
+    "format": "jsonl",
+    "fields": {"doc_id": "DocId", "deleted_at": "DeletedAt"},
+    "required": ["doc_id"]
+  }
+}

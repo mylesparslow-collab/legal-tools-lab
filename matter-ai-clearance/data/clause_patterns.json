@@ -1,0 +1,414 @@
+{
+ "description": "Patterns for the clause tracker. Data only. All regexes are case-insensitive and are applied to one sentence at a time. A sentence is only classified when it is in AI context: it names AI, or its paragraph or section heading does.",
+ "version": "1.4",
+ "classes": [
+  {
+   "id": "ai_prohibited",
+   "label": "AI prohibited"
+  },
+  {
+   "id": "consent_required",
+   "label": "Prior written consent required"
+  },
+  {
+   "id": "disclosure_required",
+   "label": "Disclosure or notice required"
+  },
+  {
+   "id": "no_training",
+   "label": "No training on client data"
+  },
+  {
+   "id": "approved_tools_only",
+   "label": "Approved tools only"
+  },
+  {
+   "id": "data_residency_retention",
+   "label": "Data residency or retention"
+  },
+  {
+   "id": "billing_restriction",
+   "label": "Billing restriction for AI-assisted work"
+  },
+  {
+   "id": "human_review_required",
+   "label": "Human review required"
+  },
+  {
+   "id": "ai_permitted",
+   "label": "AI expressly permitted"
+  },
+  {
+   "id": "ambiguous",
+   "label": "Ambiguous: needs analyst review"
+  },
+  {
+   "id": "silent",
+   "label": "Silent"
+  }
+ ],
+ "ai_terms": "artificial\\s+intelligence|\\bAI\\b|\\bA\\.I\\.|generative|\\bgen-?AI\\b|large\\s+language\\s+models?|\\bLLMs?\\b|language\\s+models?|machine\\s+learning|chatbots?",
+ "abbreviations": [
+  "Mr",
+  "Ms",
+  "Mrs",
+  "Dr",
+  "No",
+  "Inc",
+  "Co",
+  "Corp",
+  "Ltd",
+  "e.g",
+  "i.e",
+  "U.S",
+  "vs",
+  "v",
+  "Sec",
+  "Art",
+  "St"
+ ],
+ "heading_max_words": 12,
+ "conflict_pairs": [
+  [
+   "ai_prohibited",
+   "ai_permitted"
+  ],
+  [
+   "ai_prohibited",
+   "consent_required"
+  ],
+  [
+   "ai_prohibited",
+   "approved_tools_only"
+  ]
+ ],
+ "review_classes": [
+  "ambiguous"
+ ],
+ "suppressors": {
+  "exception": "\\bunless\\b|\\bexcept\\b|\\bother\\s+than\\b|\\bwithout\\s+(?:\\w+\\s+){0,8}?(?:consent|approval|authori[sz]ation|permission|sign-?off)",
+  "training_purpose": "\\bto\\s+(?:train|fine-?tune|retrain)\\b|\\bfor\\s+(?:\\w+\\s+){0,2}?training\\b|\\bto\\s+(?:develop|improve)\\b",
+  "public_scope": "(?<!including\\s)(?<!such\\sas\\s)\\b(?:public(?:ly)?(?:\\s+available)?|consumer(?:-grade)?|free|open)\\s+(?:\\w+\\s+){0,2}?(?:tools?|chatbots?|versions?|AI|platforms?|services?|models?)\\b",
+  "not_approved_scope": "\\bnot\\s+(?:been\\s+)?(?:on\\s+(?:the|that)\\s+(?:approved\\s+)?list|approved|authori[sz]ed|listed|cleared|vetted)\\b",
+  "staff_training": "\\btraining\\s+(?:of|for|to)\\s+(?:\\w+\\s+){0,2}?(?:attorneys|personnel|staff|lawyers|employees|timekeepers)|\\b(?:complete|attend|receive|provide|undergo)\\w*\\s+(?:[\\w'-]+\\s+){0,5}?training\\b|\\blearning\\s+to\\b",
+  "responsibility_retained": "\\bretains?\\s+(?:full\\s+|sole\\s+|ultimate\\s+)?(?:responsib\\w+|control|ownership|the\\s+right|discretion)",
+  "policy_review": "\\breview\\w*\\s+(?:this|these|the)\\s+(?:policy|policies|guidelines|section|terms|requirements)\\b",
+  "may_not": "\\bmay\\s+not\\b",
+  "negated_permission": "\\b(?:not|never|no\\s+longer)\\s+(?:permit|allow|authori[sz]e|encourage|support|welcome)",
+  "only": "\\bonly\\b"
+ },
+ "guards": [
+  {
+   "id": "G-NEG-01",
+   "kind": "negation",
+   "applies_to": [
+    "*"
+   ],
+   "regex": "\\bnothing\\s+(?:in|herein|contained)\\b.*\\b(?:prohibit|prevent|restrict|preclude|limit|require|obligate)s?\\b"
+  },
+  {
+   "id": "G-NEG-02",
+   "kind": "negation",
+   "applies_to": [
+    "*"
+   ],
+   "regex": "\\b(?:does|do|shall|will|is|are)\\s+not\\s+(?:intended\\s+to\\s+|meant\\s+to\\s+)?(?:prohibit|prevent|preclude|restrict|limit)\\b"
+  },
+  {
+   "id": "G-NEG-03",
+   "kind": "negation",
+   "applies_to": [
+    "ai_prohibited",
+    "approved_tools_only"
+   ],
+   "regex": "\\b(?:is|are)\\s+not\\s+(?:prohibited|forbidden|barred|restricted)\\b|\\bno\\s+(?:prohibition|restriction)\\s+on\\b"
+  },
+  {
+   "id": "G-NEG-04",
+   "kind": "negation",
+   "applies_to": [
+    "*"
+   ],
+   "regex": "\\bshall\\s+not\\s+be\\s+(?:construed|read|interpreted)\\b"
+  },
+  {
+   "id": "G-NEG-05",
+   "kind": "negation",
+   "applies_to": [
+    "consent_required",
+    "disclosure_required",
+    "human_review_required",
+    "approved_tools_only"
+   ],
+   "regex": "\\b(?:is|are)\\s+not\\s+(?:required|obliged|obligated)\\s+to\\b|\\bneed\\s+not\\b|\\bno\\s+(?:consent|approval|notice|disclosure|review)\\s+is\\s+(?:required|needed|necessary)\\b"
+  },
+  {
+   "id": "G-NEG-06",
+   "kind": "negation",
+   "applies_to": [
+    "*"
+   ],
+   "regex": "\\b(?:does|do)\\s+not\\s+apply\\s+to\\b"
+  },
+  {
+   "id": "G-SCOPE-01",
+   "kind": "scope",
+   "applies_to": [
+    "*"
+   ],
+   "regex": "\\b(?:company|client|bank|district|customer)(?:'s)?\\s+(?:own\\s+)?(?:employees|personnel|staff|engineers|business\\s+units)\\s+(?:are|is|shall|must|may|should|will)\\b"
+  },
+  {
+   "id": "G-SCOPE-02",
+   "kind": "scope",
+   "applies_to": [
+    "*"
+   ],
+   "regex": "^\\W*\\\"[^\\\"]+\\\"\\s+(?:means|includes|refers\\s+to)\\b"
+  }
+ ],
+ "patterns": [
+  {
+   "id": "PRO-01",
+   "class": "ai_prohibited",
+   "regex": "(?:(?:shall|must|may|will|should|can|do|does)\\s+(?:not|never)|cannot|agrees?\\s+not\\s+to|not\\s+to)\\s+(?:\\w+\\s+){0,3}?(?:use|utili[sz]e|employ|input|upload|enter|submit|process|rely|deploy|paste|feed)\\w*\\b",
+   "suppress_if": [
+    "exception",
+    "training_purpose",
+    "public_scope",
+    "not_approved_scope"
+   ],
+   "on_suppressed_emit": {
+    "exception": "ambiguous"
+   }
+  },
+  {
+   "id": "PRO-02",
+   "class": "ai_prohibited",
+   "regex": "\\b(?:is|are)\\s+(?:strictly\\s+|expressly\\s+)?(?:prohibited|forbidden|banned|not\\s+(?:permitted|allowed|authori[sz]ed))\\b",
+   "suppress_if": [
+    "exception",
+    "training_purpose",
+    "public_scope",
+    "not_approved_scope"
+   ],
+   "on_suppressed_emit": {
+    "exception": "ambiguous"
+   }
+  },
+  {
+   "id": "PRO-03",
+   "class": "ai_prohibited",
+   "regex": "\\b(?:do|does)\\s+not\\s+(?:permit|allow|authori[sz]e)\\b|\\bprohibits?\\s+(?:the\\s+)?(?:use|firm|counsel|outside)\\b|\\brefrain\\s+from\\s+us(?:e|ing)\\b",
+   "suppress_if": [
+    "exception",
+    "training_purpose",
+    "public_scope",
+    "not_approved_scope"
+   ],
+   "on_suppressed_emit": {
+    "exception": "ambiguous"
+   }
+  },
+  {
+   "id": "PRO-04",
+   "class": "ai_prohibited",
+   "regex": "\\bno\\s+(?:generative\\s+)?(?:AI|artificial\\s+intelligence)\\b.*\\b(?:may|shall|is\\s+to|can)\\s+be\\s+used\\b|\\bmay\\s+not\\s+be\\s+used\\b",
+   "suppress_if": [
+    "exception",
+    "training_purpose",
+    "public_scope",
+    "not_approved_scope"
+   ],
+   "on_suppressed_emit": {
+    "exception": "ambiguous"
+   }
+  },
+  {
+   "id": "PRO-05",
+   "class": "ai_prohibited",
+   "regex": "(?:(?:shall|must|may|will|should|can|do|does)\\s+(?:not|never)|cannot|agrees?\\s+not\\s+to|not\\s+to)\\s+be\\s+(?:generated|prepared|drafted|created|produced|written)\\s+(?:by|with|using)\\b",
+   "suppress_if": [
+    "exception",
+    "public_scope",
+    "not_approved_scope"
+   ],
+   "on_suppressed_emit": {
+    "exception": "ambiguous"
+   }
+  },
+  {
+   "id": "CON-01",
+   "class": "consent_required",
+   "regex": "\\b(?:prior|advance|express|written|explicit)\\s+(?:\\w+\\s+)?(?:consent|approval|authori[sz]ation|permission|sign-?off)\\b"
+  },
+  {
+   "id": "CON-02",
+   "class": "consent_required",
+   "regex": "\\bwithout\\s+(?:first\\s+)?(?:obtaining|receiving|securing|getting)\\b.*\\b(?:consent|approval|authori[sz]ation|permission)\\b"
+  },
+  {
+   "id": "CON-03",
+   "class": "consent_required",
+   "regex": "\\b(?:must|shall|will|should)\\s+(?:first\\s+)?(?:obtain|seek|request|secure|get)\\b.*\\b(?:consent|approval|authori[sz]ation|permission|sign-?off)\\b"
+  },
+  {
+   "id": "CON-04",
+   "class": "consent_required",
+   "regex": "\\bunless\\b.*\\b(?:approved|authori[sz]ed|consented|agreed|confirmed|permitted)\\b.*\\bin\\s+(?:writing|advance)\\b"
+  },
+  {
+   "id": "CON-05",
+   "class": "consent_required",
+   "regex": "\\brequires?\\s+(?:the\\s+)?(?:\\w+\\s+){0,2}?(?:consent|approval|authori[sz]ation|permission)\\b"
+  },
+  {
+   "id": "DIS-01",
+   "class": "disclosure_required",
+   "regex": "\\b(?:shall|must|will|should|agrees?\\s+to|required\\s+to)\\s+(?:promptly\\s+|also\\s+)?(?:disclose|notify|inform|advise|identify|tell|report|let\\s+\\w+\\s+know)\\b"
+  },
+  {
+   "id": "DIS-02",
+   "class": "disclosure_required",
+   "regex": "\\b(?:written\\s+|prior\\s+|advance\\s+)?(?:notice|notification)\\s+(?:to|of)\\b"
+  },
+  {
+   "id": "DIS-03",
+   "class": "disclosure_required",
+   "regex": "\\b(?:disclosure|disclose[ds]?)\\s+(?:to|of)\\s+(?:the\\s+)?(?:client|company|bank|district|court)\\b"
+  },
+  {
+   "id": "TRN-01",
+   "class": "no_training",
+   "regex": "\\b(?:train|trained|training|fine-?tun\\w*|retrain\\w*)\\b",
+   "requires": [
+    "\\b(?:not|no|never|nor|neither|without|prohibit\\w*|forbid\\w*|bar(?:s|red)?|preclud\\w*|restrict\\w*)\\b"
+   ],
+   "suppress_if": [
+    "staff_training"
+   ]
+  },
+  {
+   "id": "TRN-02",
+   "class": "no_training",
+   "regex": "\\b(?:improve|enhance|develop)\\w*\\s+(?:\\w+\\s+){0,5}?(?:models?|algorithms?|services?|products?)\\b",
+   "requires": [
+    "\\b(?:not|no|never|nor|neither|without|prohibit\\w*|forbid\\w*|bar(?:s|red)?|preclud\\w*|restrict\\w*)\\b"
+   ],
+   "suppress_if": [
+    "staff_training"
+   ]
+  },
+  {
+   "id": "APP-01",
+   "class": "approved_tools_only",
+   "regex": "\\b(?:approved|authori[sz]ed|permitted|sanctioned|vetted|pre-?approved)\\s+(?:list|tools?|vendors?|platforms?|products?|providers?|applications?|solutions?|technolog\\w+)\\b"
+  },
+  {
+   "id": "APP-02",
+   "class": "approved_tools_only",
+   "regex": "\\b(?:list|schedule|appendix|exhibit)\\s+of\\s+(?:approved|authori[sz]ed|permitted)\\b"
+  },
+  {
+   "id": "APP-03",
+   "class": "approved_tools_only",
+   "regex": "\\bonly\\b.*\\b(?:tools?|platforms?|products?|systems?|services?)\\b.*\\b(?:approved|listed|identified|set\\s+out|specified)\\b"
+  },
+  {
+   "id": "APP-04",
+   "class": "approved_tools_only",
+   "regex": "(?:(?:shall|must|may|will|should|can|do|does)\\s+(?:not|never)|cannot|agrees?\\s+not\\s+to|not\\s+to)\\b.*\\b(?:public(?:ly)?(?:\\s+available)?|consumer(?:-grade)?|free|open)\\s+(?:\\w+\\s+){0,2}?(?:tools?|chatbots?|versions?|AI|platforms?|services?|models?)\\b"
+  },
+  {
+   "id": "APP-05",
+   "class": "approved_tools_only",
+   "regex": "\\bnot\\s+(?:been\\s+)?(?:approved|authori[sz]ed|listed|cleared|vetted)\\s+by\\b|\\bnot\\s+on\\s+(?:the|that)\\s+(?:approved\\s+)?list\\b"
+  },
+  {
+   "id": "RES-01",
+   "class": "data_residency_retention",
+   "regex": "\\b(?:stored|hosted|processed|located|maintained|remain|reside[sd]?|kept)\\b.*\\b(?:within|in|inside|outside)\\s+(?:the\\s+)?(?:united\\s+states|u\\.s\\.|canada|european\\s+union|\\bEU\\b|country|jurisdiction)"
+  },
+  {
+   "id": "RES-02",
+   "class": "data_residency_retention",
+   "regex": "\\bdata\\s+(?:residency|locali[sz]ation|sovereignty)\\b|\\boffshor\\w+\\b"
+  },
+  {
+   "id": "RES-03",
+   "class": "data_residency_retention",
+   "regex": "\\b(?:retain(?:s|ed)?|retention|store[ds]?|kept|keep|persist\\w*|delet\\w+|purg\\w+|destroy\\w*|destruction|eras\\w+)\\b",
+   "requires": [
+    "\\b(?:data|information|inputs?|prompts?|outputs?|content|materials?|documents?|records?|logs?)\\b"
+   ],
+   "suppress_if": [
+    "responsibility_retained"
+   ]
+  },
+  {
+   "id": "RES-04",
+   "class": "data_residency_retention",
+   "regex": "\\bzero[-\\s](?:data[-\\s])?retention\\b"
+  },
+  {
+   "id": "BIL-01",
+   "class": "billing_restriction",
+   "regex": "\\b(?:bill(?:s|ed|ing)?|invoic\\w+|charg\\w+|fees?|time\\s*entr(?:y|ies)|reimburs\\w+|pass(?:ed)?\\s+through|write[-\\s]?offs?)\\b",
+   "requires": [
+    "\\b(?:not|no|only|must|shall|should|will|reduc\\w+|discount\\w*|reflect\\w*|identif\\w+|separately|efficienc\\w+|savings?|actual|lower)\\b"
+   ]
+  },
+  {
+   "id": "HUM-01",
+   "class": "human_review_required",
+   "regex": "\\b(?:review(?:s|ed)?|verif(?:y|ies|ied|ication)|check(?:s|ed)?|validat\\w+|supervis\\w+|oversight|confirm(?:s|ed)?)\\b",
+   "requires": [
+    "\\b(?:attorneys?|lawyers?|human|licensed|qualified|partners?|counsel|timekeepers?|professionals?|person)\\b",
+    "\\b(?:must|shall|required|responsible|will|ensure|subject\\s+to)\\b"
+   ],
+   "suppress_if": [
+    "policy_review"
+   ]
+  },
+  {
+   "id": "PER-01",
+   "class": "ai_permitted",
+   "regex": "\\b(?:may|can|is\\s+permitted\\s+to|are\\s+permitted\\s+to|is\\s+authori[sz]ed\\s+to|are\\s+authori[sz]ed\\s+to|is\\s+free\\s+to|are\\s+free\\s+to)\\s+use\\b",
+   "suppress_if": [
+    "only",
+    "may_not",
+    "negated_permission"
+   ]
+  },
+  {
+   "id": "PER-02",
+   "class": "ai_permitted",
+   "regex": "\\b(?:permits?|allows?|authori[sz]es?|encourages?|welcomes?|supports?)\\s+(?:the\\s+)?(?:firm(?:'s)?\\s+|outside\\s+counsel\\s+|counsel\\s+)?(?:to\\s+use|responsible\\s+use|use|adoption)\\b",
+   "suppress_if": [
+    "only",
+    "may_not",
+    "negated_permission"
+   ]
+  },
+  {
+   "id": "PER-03",
+   "class": "ai_permitted",
+   "regex": "\\bconsents?\\s+to\\s+(?:the\\s+)?(?:firm's\\s+)?use\\b",
+   "suppress_if": [
+    "only",
+    "may_not",
+    "negated_permission"
+   ]
+  },
+  {
+   "id": "AMB-01",
+   "class": "ambiguous",
+   "regex": "\\bdiscourag\\w+\\b|\\b(?:use|exercise)\\s+(?:caution|care|judgment|discretion)\\b|\\bwhere\\s+appropriate\\b|\\bcase[-\\s]by[-\\s]case\\b"
+  },
+  {
+   "id": "AMB-02",
+   "class": "ambiguous",
+   "regex": "\\bshould\\s+(?:consider|be\\s+mindful|carefully)\\b|\\breserves?\\s+the\\s+right\\b|\\bto\\s+be\\s+(?:determined|agreed|discussed)\\b"
+  }
+ ]
+}

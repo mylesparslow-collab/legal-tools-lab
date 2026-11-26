@@ -1,0 +1,208 @@
+{
+  "client_id": "coldwaterfen",
+  "client_name": "Coldwater Fen Hospital Authority",
+  "document": "heldout/batch_b/guideline_docs/coldwaterfen.txt",
+  "rules": [
+    {
+      "rule_id": "CFH-BUDGET-01",
+      "type": "budget_cap",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "The Authority's obligation to pay Counsel on any assignment is limited to the ceiling amount fixed in the assignment order, and Counsel proceeds at its own risk as to any fees or costs that would carry total billings past that ceiling.",
+      "source_ref": "clause (a) Ceiling, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-PHASE-01",
+      "type": "phase_cap",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Where an assignment order apportions the ceiling amount among stages, billings attributable to a stage shall be held within the sum apportioned to it.",
+      "source_ref": "clause (a) Ceiling, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-RATE-01",
+      "type": "rate_above_card",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Services shall be charged at the rates enumerated in the assignment order and not otherwise.",
+      "source_ref": "clause (b) Persons and rates, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-TK-01",
+      "type": "unapproved_timekeeper",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Charges for the services of any individual not named in the assignment order will be refused.",
+      "source_ref": "clause (b) Persons and rates, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-INCR-01",
+      "type": "minimum_increment",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "Time is to be reported in tenths of an hour (six-minute units).",
+      "source_ref": "clause (c) Recording of time, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-ROUND-01",
+      "type": "rounding_pattern",
+      "status": "confirmed",
+      "severity": "review",
+      "params": {
+        "block": "1.0",
+        "min_entries": 8,
+        "threshold_percent": 75
+      },
+      "source_quote": "The Authority's auditors will inquire into the records of any timekeeper three-quarters or more of whose entries (eight entries being the minimum examined) are stated in whole hours.",
+      "source_ref": "clause (c) Recording of time, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-BLOCK-01",
+      "type": "block_billing",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "max_tasks": 1,
+        "min_hours": 0
+      },
+      "source_quote": "A time entry shall describe a single service, and the Authority declines to pay for composite entries in which two or more services share one time figure.",
+      "source_ref": "clause (c) Recording of time, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-CODES-01",
+      "type": "required_codes",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "require_task": true,
+        "require_activity": false,
+        "require_expense": false
+      },
+      "source_quote": "Each time entry shall carry the task code of the stage of work it belongs to.",
+      "source_ref": "clause (c) Recording of time, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-LATE-01",
+      "type": "late_time",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 60
+      },
+      "source_quote": "Charges presented later than sixty (60) days after the service was rendered are barred.",
+      "source_ref": "clause (d) Timeliness and repetition, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-DUP-01",
+      "type": "duplicate_entries",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "No service shall be charged more than once, and any charge found to be repeated shall be deducted.",
+      "source_ref": "clause (d) Timeliness and repetition, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-RESEARCH-01",
+      "type": "research_approval",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": 4
+      },
+      "source_quote": "Counsel shall obtain the written concurrence of the Chief Legal Officer before devoting in excess of four (4) hours to legal research on an assignment.",
+      "source_ref": "clause (e) Research and attendance, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-EVENT-01",
+      "type": "staffing_event_limit",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_attendees": 1,
+        "events": [
+          "deposition",
+          "hearing",
+          "mediation",
+          "arbitration"
+        ]
+      },
+      "source_quote": "The Authority will compensate the attendance of not more than one (1) attorney at any deposition, hearing, mediation or arbitration session.",
+      "source_ref": "clause (e) Research and attendance, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-TRAVEL-01",
+      "type": "travel_time",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "billable_percent": 50,
+        "requires_approval": true
+      },
+      "source_quote": "Travel time, where the Chief Legal Officer has approved the travel in advance, is compensated at one-half of the timekeeper's rate; unapproved travel time is not compensated.",
+      "source_ref": "clause (f) Travel, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-PERDIEM-01",
+      "type": "expense_per_diem",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "caps": {
+          "meal": "65.00",
+          "lodging": "225.00"
+        }
+      },
+      "source_quote": "Meals taken while travelling for the Authority are reimbursed to a limit of $65.00 per person per day, and overnight accommodation to a limit of $225.00 per night.",
+      "source_ref": "clause (g) Disbursements, page 3",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "CFH-RECEIPT-01",
+      "type": "expense_receipt_threshold",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "threshold": "25.00",
+        "inclusive": false
+      },
+      "source_quote": "A receipt shall accompany every disbursement exceeding $25.00.",
+      "source_ref": "clause (g) Disbursements, page 3",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    }
+  ]
+}

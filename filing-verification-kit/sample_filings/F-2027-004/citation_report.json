@@ -1,0 +1,124 @@
+{
+  "doc_sha256": "8bc1fa095cd96831f343e2d3eca0b096c811bbf023be0f6a219d162483cf5975",
+  "filing_date": "2027-01-15",
+  "citations": [
+    {
+      "kind": "case",
+      "text": "97 Cal.5th 210",
+      "start": 349,
+      "end": 363,
+      "key": "case:97 Cal. 5th 210",
+      "form": "full",
+      "pin": "223",
+      "volume": "97",
+      "reporter": "Cal. 5th",
+      "page": "210",
+      "case_name": "Halvorsen v. Bright Harbor Staffing, Inc.",
+      "year": "2024",
+      "law_code": null,
+      "section": null,
+      "title": null,
+      "antecedent_id": null,
+      "quotes": [],
+      "id": "f402f4de-1",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Halvorsen v. Bright Harbor Staffing, Inc. (2024) cal (SYNTHETIC test record)"
+        },
+        {
+          "name": "case_name",
+          "status": "pass",
+          "detail": "Case name matches source."
+        },
+        {
+          "name": "year",
+          "status": "pass",
+          "detail": "Year matches source."
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 223 is within pages 210-241."
+        }
+      ],
+      "quote_results": [],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900001",
+        "synthetic": true
+      },
+      "machine_status": "PASS",
+      "requires_attorney": true
+    }
+  ],
+  "summary": {
+    "PASS": 1,
+    "WARN": 0,
+    "FAIL": 0,
+    "MANUAL": 0,
+    "total": 1,
+    "quotes": 0,
+    "unverified_quotes": 0
+  },
+  "notice": "Mechanical checks only. This tool does not determine whether an authority is still good law (overruled, depublished, review granted, superseded, amended). Run KeyCite or Shepard's and read the authority before you mark it verified.",
+  "mirror": {
+    "meta": {
+      "snapshot": "2026-11-25",
+      "notes": "Demo mirror. Cases are synthetic. Statute and CFR text is real, copied from official sources on 2026-11-25.",
+      "demo": "yes"
+    },
+    "coverage": [
+      {
+        "source": "courtlistener",
+        "scope": "cal5th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "courtlistener",
+        "scope": "calapp5th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "courtlistener",
+        "scope": "f4th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "ecfr",
+        "scope": "29:541",
+        "complete": 0,
+        "as_of": "2026-11-01",
+        "note": "partial: 541.100 only"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "BPC",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "CCP",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "LAB",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial: demo sections only"
+      }
+    ]
+  }
+}

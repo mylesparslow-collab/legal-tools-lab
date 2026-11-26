@@ -1,0 +1,41 @@
+{
+ "id": "M-1013",
+ "name": "Verdanthe: resident care claim",
+ "client_id": "verdanthe",
+ "matter_type": "health care litigation",
+ "responsible_attorney": "R. Tollefsen (fictional)",
+ "intake_date": "2026-11-12",
+ "data_flags": {
+  "phi": "yes",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "yes",
+  "document_id": "PO-M1013 (fictional protective order)",
+  "restrictions": {
+   "ai_use": "permitted_with_conditions",
+   "vendor_processing": "permitted_with_undertaking",
+   "no_retention_after_matter": "yes",
+   "attorneys_eyes_only_tier": "no"
+  },
+  "undertakings_signed_tool_ids": [
+   "review-d"
+  ],
+  "quoted_terms": [
+   {
+    "field": "ai_use",
+    "quote": "A party may use automated review tools on Protected Material only within a system that does not use the material to train any model and that is closed to the public."
+   },
+   {
+    "field": "vendor_processing",
+    "quote": "Vendors may receive Protected Material after signing the Acknowledgment in Exhibit A."
+   }
+  ]
+ },
+ "terms_document_ids": [
+  "verdanthe-el-2026"
+ ],
+ "additional_terms": [],
+ "consents": [],
+ "notices": []
+}

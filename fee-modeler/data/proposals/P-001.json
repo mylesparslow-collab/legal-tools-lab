@@ -1,0 +1,47 @@
+{
+  "proposal_id": "P-001",
+  "title": "Public records litigation, superior court, hearing expected",
+  "matter_type": "public_records_litigation",
+  "attributes": {
+    "forum": "superior_court",
+    "num_parties": 2,
+    "amount_band": "B",
+    "hearing_expected": true
+  },
+  "selection_rules": {
+    "forum": "same",
+    "num_parties_tolerance": 2,
+    "amount_band": "adjacent",
+    "hearing": "any",
+    "min_comps": 8
+  },
+  "ai_assumptions": {},
+  "scenarios": [
+    {
+      "type": "fixed",
+      "fee": "90000"
+    },
+    {
+      "type": "capped",
+      "cap": "120000"
+    },
+    {
+      "type": "phased",
+      "phase_fees": {
+        "assessment": "12000",
+        "drafting": "20000",
+        "discovery": "25000",
+        "hearing": "60000",
+        "closing": "10000"
+      }
+    },
+    {
+      "type": "collar",
+      "fee": "90000",
+      "band_pct": "15",
+      "share_pct": "50"
+    }
+  ],
+  "as_of": "2026-01-01",
+  "target_probability": "0.80"
+}

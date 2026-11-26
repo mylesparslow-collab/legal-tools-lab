@@ -1,0 +1,94 @@
+{
+  "sources": [
+    {
+      "source": "assistant_a_events",
+      "tool": "Assistant A",
+      "file": "sample_data/assistant_a_events.csv",
+      "rows_read": 9434,
+      "rows_kept": 9347,
+      "interactions_kept": 9347,
+      "dropped": {
+        "blank_row": 0,
+        "missing_user": 4,
+        "bad_date": 6,
+        "bad_count": 0,
+        "zero_count": 0,
+        "duplicate": 40,
+        "conflicting_duplicate": 0,
+        "unknown_user": 25,
+        "ambiguous_user": 0,
+        "outside_period": 12
+      },
+      "repaired": {
+        "identifier_repaired": 1108,
+        "unmapped_feature": 187
+      },
+      "flagged_but_kept": {
+        "usage_without_licence": 39,
+        "usage_before_start_date": 0,
+        "usage_after_end_date": 0
+      },
+      "unknown_user_distinct_identifiers": 3,
+      "unknown_user_interactions": 25,
+      "unmapped_feature_values": [
+        "beta_canvas"
+      ],
+      "date_formats_used": {
+        "iso8601": 9347
+      },
+      "first_date_kept": "2026-09-07",
+      "last_date_kept": "2026-12-04",
+      "rows_dropped": 87
+    },
+    {
+      "source": "assistant_b_daily",
+      "tool": "Assistant B",
+      "file": "sample_data/assistant_b_daily.csv",
+      "rows_read": 1781,
+      "rows_kept": 1716,
+      "interactions_kept": 3098,
+      "dropped": {
+        "blank_row": 0,
+        "missing_user": 0,
+        "bad_date": 5,
+        "bad_count": 3,
+        "zero_count": 30,
+        "duplicate": 10,
+        "conflicting_duplicate": 5,
+        "unknown_user": 12,
+        "ambiguous_user": 0,
+        "outside_period": 0
+      },
+      "repaired": {
+        "identifier_repaired": 330,
+        "unmapped_feature": 0
+      },
+      "flagged_but_kept": {
+        "usage_without_licence": 0,
+        "usage_before_start_date": 0,
+        "usage_after_end_date": 0
+      },
+      "unknown_user_distinct_identifiers": 2,
+      "unknown_user_interactions": 24,
+      "unmapped_feature_values": [],
+      "date_formats_used": {
+        "%d %b %Y": 180,
+        "%d/%m/%Y": 1536
+      },
+      "first_date_kept": "2026-09-07",
+      "last_date_kept": "2026-12-04",
+      "rows_dropped": 65
+    }
+  ],
+  "totals": {
+    "rows_read": 11215,
+    "rows_kept": 11063,
+    "rows_dropped": 152,
+    "rows_repaired": 1625,
+    "unknown_user_rows": 37,
+    "unknown_user_row_share": 0.003299152920196166,
+    "interactions_kept": 12445,
+    "canonical_rows": 6514
+  },
+  "tools_with_no_rows": []
+}

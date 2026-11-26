@@ -1,0 +1,22 @@
+SYNTHETIC TEST DOCUMENT. Fictional parties, fictional cases, planted citation errors. Not legal advice.
+SUPERIOR COURT OF CALIFORNIA, COUNTY OF SIERRA VISTA (FICTIONAL)
+MARISOL DELGADO, Plaintiff, v. NORTHWIND ORCHARD SERVICES, INC., Defendant.  Case No. SV-27-000123
+PLAINTIFF'S MEMORANDUM OF POINTS AND AUTHORITIES IN OPPOSITION TO DEFENDANT'S MOTION FOR SUMMARY ADJUDICATION
+Date: February 1, 2027
+
+I. INTRODUCTION
+Defendant asks the Court to hold, as a matter of law, that it bears no responsibility for the rest-period records of workers it scheduled through a staffing vendor. The law is otherwise.
+II. ARGUMENT
+A. Defendant shares responsibility for rest-period records.
+The Supreme Court has made the point directly: “A staffing agency that controls the work schedule shares responsibility for recording the start and end of each rest interval.” (Halvorsen v. Bright Harbor Staffing, Inc. (2024) 97 Cal.5th 210, 223.) The court added that “[w]here the employer's own records are silent, a factfinder may draw a reasonable inference from the pattern of omissions.” (Id. at 230.) Defendant's reliance on its vendor contract is therefore misplaced. (Id. at 251.)
+Nor can Defendant avoid the issue by pointing to its vendor. “Shared responsibility does not mean shared ignorance; each entity must be able to produce the records it relied on.” (Halvorsen, supra, 97 Cal.5th at p. 224.)
+B. A written policy does not establish compliance.
+Defendant's motion rests almost entirely on its handbook. But “[t]he written policy alone does not establish that the policy was followed on the floor.” (Ostrander v. Cypress Ford Logistics (2023) 912 Cal.App.5th 455, 462.) Appellate courts have repeatedly rejected handbook-only showings. (Renwick v. Tallmadge Freight Systems (2022) 940 Cal.App.5th 1312, 1320.)
+The Ninth Circuit agrees that automated records deserve no presumption of accuracy: “[C]ourts should not presume that a timekeeping system is accurate merely because it is automated . . . .” Quillfeather Mfg. Co. v. Dunmore, 977 F.4th 1180, 1187 (9th Cir. 2025).
+C. The statutory remedies are cumulative.
+Waiting-time penalties run until paid, “but the wages shall not continue for more than 30 days.” (Lab. Code, § 203, subd. (a).) An employee who is underpaid may recover “the unpaid balance of the full amount of this minimum wage or overtime compensation, including interest thereon, reasonable attorney fees and costs.” (Lab. Code, § 1194, subd. (a).) Premium pay for missed rest periods is separately available. (Lab. Code, § 226.7.) Plaintiff also seeks enhanced penalties under Labor Code section 2699.9.
+D. Defendant's exemption defense fails.
+The executive exemption requires, among other things, an employee “[w]hose primary duty is management of the enterprise in which the employee is employed.” (29 C.F.R. § 541.100(a)(2).) Defendant's crew leads did not meet that test, and the federal regulations on which Defendant relies say nothing different. (See 29 C.F.R. § 541.199; 29 U.S.C. § 213(a)(1).)
+III. CERTIFICATION OF CITATIONS
+Counsel notes that a paper filed in any court “shall not contain any citations that an attorney responsible for submitting the pleading has not personally verified, including any citation provided by generative artificial intelligence.” (Code Civ. Proc., § 128.7, subd. (b)(2)(A).) Counsel has also taken the reasonable steps required by Business and Professions Code section 6068.1, subdivision (a)(3)(B). The same obligation appears in Code Civ. Proc., § 128.7, subd. (b)(2)(C).
+Respectfully submitted, [Fictional Counsel], Attorneys for Plaintiff

@@ -1,0 +1,682 @@
+{
+ "meta": {
+  "agency": "Quillfeather Unified School District",
+  "agency_short": "District",
+  "agency_type": "school_district",
+  "agency_source": {
+   "line": 11,
+   "text": "Quillfeather Unified School District (the \"District\") seeks"
+  },
+  "agency_confidence": "ok",
+  "title": "Labor Negotiations - Chief Negotiator and Related Legal Services",
+  "rfp_number": "HR-2026-07",
+  "practice": "labor",
+  "subjects": [
+   "open meetings",
+   "personnel",
+   "collective bargaining",
+   "claims",
+   "schools"
+  ]
+ },
+ "deadlines": [
+  {
+   "kind": "issued",
+   "label": "RFP released",
+   "date": "2026-11-12",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 28,
+    "text": "RFP released: 11/12/2026"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D1"
+  },
+  {
+   "kind": "questions_due",
+   "label": "Last day to submit questions",
+   "date": "2026-12-04",
+   "end_date": null,
+   "time": "16:00",
+   "source": {
+    "line": 29,
+    "text": "Last day to submit questions: 12/04/2026 (by 4 PM)"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D2"
+  },
+  {
+   "kind": "submission_due",
+   "label": "Proposals due",
+   "date": "2026-12-11",
+   "end_date": null,
+   "time": "12:00",
+   "source": {
+    "line": 30,
+    "text": "Proposals due: Fri., Dec. 11, 2026 - 12:00 noon"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D3"
+  },
+  {
+   "kind": "interview",
+   "label": "Finalist interviews",
+   "date": "2027-01-11",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 31,
+    "text": "Finalist interviews: week of January 11, 2027"
+   },
+   "confidence": "check",
+   "check_reason": "date is approximate in the RFP",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D4"
+  },
+  {
+   "kind": "award",
+   "label": "Board approval",
+   "date": "2027-01-26",
+   "end_date": null,
+   "time": null,
+   "source": {
+    "line": 32,
+    "text": "Board approval: 01/26/2027"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "changed_by": null,
+   "original_date": null,
+   "original_time": null,
+   "id": "D5"
+  }
+ ],
+ "mechanics": [
+  {
+   "kind": "page_limit",
+   "value": 10,
+   "source": {
+    "line": 47,
+    "text": "Answers to Q1 through Q8 together shall not exceed 10 pages."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB1"
+  },
+  {
+   "kind": "page_exclusions",
+   "value": "Attach resumes (not counted toward the page limit).",
+   "source": {
+    "line": 55,
+    "text": "Attach resumes (not counted toward the page limit)."
+   },
+   "confidence": "check",
+   "check_reason": "exclusion stated away from the page limit; read the sentence",
+   "id": "SUB2"
+  },
+  {
+   "kind": "copies",
+   "value": "one PDF",
+   "source": {
+    "line": 102,
+    "text": "Email one PDF to purchasing@quillfeatherusd.example no later than the due date and time above."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB3"
+  },
+  {
+   "kind": "format",
+   "value": "PDF",
+   "source": {
+    "line": 102,
+    "text": "Email one PDF to purchasing@quillfeatherusd.example no later than the due date and time above."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB4"
+  },
+  {
+   "kind": "delivery",
+   "value": "email to purchasing@quillfeatherusd.example",
+   "source": {
+    "line": 102,
+    "text": "Email one PDF to purchasing@quillfeatherusd.example no later than the due date and time above."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "SUB5"
+  }
+ ],
+ "requirements": [
+  {
+   "id": "R-Q1",
+   "label": "Q1",
+   "title": "Tell us about your firm",
+   "text": "Tell us about your firm: how long it has practiced, how many attorneys it has, where its offices are, and how much of its work is for school districts and other public employers.",
+   "qtype": "firm_overview",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 50,
+    "text": "Q1) Tell us about your firm: how long it has practiced, how"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-Q2",
+   "label": "Q2",
+   "title": "Team",
+   "text": "Who would be our chief negotiator and who would back that person up? Attach resumes (not counted toward the page limit).",
+   "qtype": "team",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 55,
+    "text": "Q2) Who would be our chief negotiator and who would back that"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-Q3",
+   "label": "Q3",
+   "title": "Experience",
+   "text": "Describe your experience at the bargaining table for public school employers in the last five years, including any negotiations that went to impasse or factfinding.",
+   "qtype": "experience",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 59,
+    "text": "Q3) Describe your experience at the bargaining table for public"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-Q4",
+   "label": "Q4",
+   "title": "Approach",
+   "text": "How do you prepare for and run negotiations? Describe your approach to costing proposals, keeping the Board informed in closed session, and communicating with employees during bargaining.",
+   "qtype": "approach",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 63,
+    "text": "Q4) How do you prepare for and run negotiations? Describe your"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-Q5",
+   "label": "Q5",
+   "title": "References",
+   "text": "List three references from school districts for which you have negotiated in the last five years.",
+   "qtype": "references",
+   "mandatory": true,
+   "references_required": 3,
+   "source": {
+    "line": 68,
+    "text": "Q5) List three references from school districts for which you"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-Q6",
+   "label": "Q6",
+   "title": "Conflicts",
+   "text": "Do you or your firm have any relationship with the Quillfeather Teachers Association, the Quillfeather Classified Staff Union, or their parent organizations, or any other conflict of interest? If so, describe it.",
+   "qtype": "conflicts",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 71,
+    "text": "Q6) Do you or your firm have any relationship with the"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-Q7",
+   "label": "Q7",
+   "title": "State your proposed fees",
+   "text": "State your proposed fees. Tell us your hourly rates and whether you offer a flat fee per negotiation.",
+   "qtype": "rates",
+   "mandatory": true,
+   "references_required": null,
+   "source": {
+    "line": 76,
+    "text": "Q7) State your proposed fees. Tell us your hourly rates and"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "id": "R-Q8",
+   "label": "Q8",
+   "title": "Other",
+   "text": "Is there anything else the District should consider? This question is optional.",
+   "qtype": "other",
+   "mandatory": false,
+   "references_required": null,
+   "source": {
+    "line": 79,
+    "text": "Q8) Is there anything else the District should consider? This"
+   },
+   "confidence": "check",
+   "check_reason": "question type not recognised"
+  }
+ ],
+ "forms": [
+  {
+   "ref": "Attachment 1",
+   "name": "Signed Proposal Certification",
+   "text": "Signed Proposal Certification (Attachment 1)",
+   "signature": true,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 84,
+    "text": "* Signed Proposal Certification (Attachment 1)"
+   },
+   "confidence": "check",
+   "check_reason": "listed as a bullet in the proposal content section, not a forms section",
+   "id": "F1"
+  },
+  {
+   "ref": "Attachment 2",
+   "name": "Fingerprinting and Background Check Acknowledgment",
+   "text": "Fingerprinting and Background Check Acknowledgment (Attachment 2)",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 85,
+    "text": "* Fingerprinting and Background Check Acknowledgment"
+   },
+   "confidence": "check",
+   "check_reason": "listed as a bullet in the proposal content section, not a forms section",
+   "id": "F2"
+  },
+  {
+   "ref": "",
+   "name": "Proof of professional liability insurance, minimum $1,000,000 per claim",
+   "text": "Proof of professional liability insurance, minimum $1,000,000 per claim",
+   "signature": false,
+   "notarized": false,
+   "mandatory": true,
+   "source": {
+    "line": 87,
+    "text": "* Proof of professional liability insurance, minimum $1,000,000"
+   },
+   "confidence": "check",
+   "check_reason": "listed as a bullet in the proposal content section, not a forms section",
+   "id": "F3"
+  }
+ ],
+ "min_quals": [
+  {
+   "label": "",
+   "text": "The proposed chief negotiator must have at least seven (7) years of experience as a licensed attorney.",
+   "check_kind": "years_admitted",
+   "value": 7,
+   "source": {
+    "line": 38,
+    "text": "- The proposed chief negotiator must have at least seven (7)"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-1"
+  },
+  {
+   "label": "",
+   "text": "The proposed chief negotiator must have served as chief negotiator for a school district in at least three completed negotiations.",
+   "check_kind": "not_checkable",
+   "value": null,
+   "source": {
+    "line": 40,
+    "text": "- The proposed chief negotiator must have served as chief"
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-2"
+  },
+  {
+   "label": "",
+   "text": "Proposers must be available for evening bargaining sessions.",
+   "check_kind": "not_checkable",
+   "value": null,
+   "source": {
+    "line": 43,
+    "text": "- Proposers must be available for evening bargaining sessions."
+   },
+   "confidence": "ok",
+   "check_reason": "",
+   "id": "MQ-3"
+  }
+ ],
+ "insurance": [
+  {
+   "label": "",
+   "text": "Proof of professional liability insurance, minimum $1,000,000 per claim",
+   "amounts": [
+    "$1,000,000"
+   ],
+   "source": {
+    "line": 87,
+    "text": "* Proof of professional liability insurance, minimum $1,000,000"
+   },
+   "confidence": "check",
+   "check_reason": "insurance amount stated in a list of submittals, not an insurance section",
+   "id": "INS1"
+  }
+ ],
+ "scope_items": [],
+ "parties": [
+  {
+   "name": "Quillfeather Unified School District",
+   "category": "agency",
+   "role": "Issuing agency",
+   "source": {
+    "line": 11,
+    "text": "Quillfeather Unified School District (the \"District\") seeks"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Quillfeather Teachers Association",
+   "category": "adverse",
+   "role": "Employee organisation named in the RFP",
+   "source": {
+    "line": 11,
+    "text": "Quillfeather Unified School District (the \"District\") seeks proposals from law firms and qualified individuals to act as the District's chief negotiator in successor contract negotiations with its two employee organizations, the Quillfeathe"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Quillfeather Classified Staff Union",
+   "category": "adverse",
+   "role": "Employee organisation named in the RFP",
+   "source": {
+    "line": 11,
+    "text": "Quillfeather Unified School District (the \"District\") seeks proposals from law firms and qualified individuals to act as the District's chief negotiator in successor contract negotiations with its two employee organizations, the Quillfeathe"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Marisol Everhart",
+   "category": "staff",
+   "role": "Superintendent",
+   "source": {
+    "line": 19,
+    "text": "District contacts for this RFP: Dr. Marisol Everhart, Superintendent Leopold Achterberg, Assistant Superintendent, Human Resources"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Leopold Achterberg",
+   "category": "staff",
+   "role": "Superintendent",
+   "source": {
+    "line": 19,
+    "text": "District contacts for this RFP: Dr. Marisol Everhart, Superintendent Leopold Achterberg, Assistant Superintendent, Human Resources"
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Henrietta Solano",
+   "category": "board",
+   "role": "President",
+   "source": {
+    "line": 23,
+    "text": "Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Dmitri Faulkner",
+   "category": "board",
+   "role": "Clerk",
+   "source": {
+    "line": 23,
+    "text": "Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+   },
+   "confidence": "ok",
+   "check_reason": ""
+  },
+  {
+   "name": "Yolanda Prescott",
+   "category": "board",
+   "role": "Clerk",
+   "source": {
+    "line": 23,
+    "text": "Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+   },
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
+  },
+  {
+   "name": "Bartholomew Nguyen",
+   "category": "board",
+   "role": "Clerk",
+   "source": {
+    "line": 23,
+    "text": "Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+   },
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
+  },
+  {
+   "name": "Odessa Kirkland",
+   "category": "board",
+   "role": "Clerk",
+   "source": {
+    "line": 23,
+    "text": "Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
+   },
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
+  }
+ ],
+ "deleted_requirements": [],
+ "sections": [
+  {
+   "kind": "intro",
+   "title": "OVERVIEW",
+   "label": "",
+   "line": 9
+  },
+  {
+   "kind": "schedule",
+   "title": "IMPORTANT DATES",
+   "label": "",
+   "line": 26
+  },
+  {
+   "kind": "minquals",
+   "title": "WHO MAY PROPOSE",
+   "label": "",
+   "line": 36
+  },
+  {
+   "kind": "content",
+   "title": "WHAT TO SUBMIT",
+   "label": "",
+   "line": 45
+  },
+  {
+   "kind": "evaluation",
+   "title": "HOW WE WILL CHOOSE",
+   "label": "",
+   "line": 90
+  },
+  {
+   "kind": "submission",
+   "title": "HOW TO SUBMIT",
+   "label": "",
+   "line": 100
+  }
+ ],
+ "evaluation": {
+  "criteria": [
+   {
+    "name": "Experience in school district negotiations",
+    "weight": 40,
+    "source": {
+     "line": 94,
+     "text": "Experience in school district negotiations - 40"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV1"
+   },
+   {
+    "name": "Proposed negotiator and team",
+    "weight": 25,
+    "source": {
+     "line": 95,
+     "text": "Proposed negotiator and team - 25"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV2"
+   },
+   {
+    "name": "Approach",
+    "weight": 15,
+    "source": {
+     "line": 96,
+     "text": "Approach - 15"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV3"
+   },
+   {
+    "name": "Fees",
+    "weight": 20,
+    "source": {
+     "line": 97,
+     "text": "Fees - 20"
+    },
+    "confidence": "ok",
+    "check_reason": "",
+    "id": "EV4"
+   },
+   {
+    "name": "Interview performance (if interviews are held)",
+    "weight": null,
+    "source": {
+     "line": 98,
+     "text": "Interview performance (if interviews are held)"
+    },
+    "confidence": "check",
+    "check_reason": "criterion listed without a weight",
+    "id": "EV5"
+   }
+  ],
+  "total_stated": null,
+  "unit": "points",
+  "total": 100,
+  "confidence": "check",
+  "check_reason": "at least one criterion has no weight"
+ },
+ "addenda": [],
+ "checks": [
+  {
+   "category": "deadline",
+   "id": "D4",
+   "reason": "date is approximate in the RFP",
+   "text": "Finalist interviews"
+  },
+  {
+   "category": "requirement",
+   "id": "R-Q8",
+   "reason": "question type not recognised",
+   "text": "Is there anything else the District should consider? This question is optional."
+  },
+  {
+   "category": "form",
+   "id": "F1",
+   "reason": "listed as a bullet in the proposal content section, not a forms section",
+   "text": "Signed Proposal Certification (Attachment 1)"
+  },
+  {
+   "category": "form",
+   "id": "F2",
+   "reason": "listed as a bullet in the proposal content section, not a forms section",
+   "text": "Fingerprinting and Background Check Acknowledgment (Attachment 2)"
+  },
+  {
+   "category": "form",
+   "id": "F3",
+   "reason": "listed as a bullet in the proposal content section, not a forms section",
+   "text": "Proof of professional liability insurance, minimum $1,000,000 per claim"
+  },
+  {
+   "category": "submission",
+   "id": "SUB2",
+   "reason": "exclusion stated away from the page limit; read the sentence",
+   "text": ""
+  },
+  {
+   "category": "insurance",
+   "id": "INS1",
+   "reason": "insurance amount stated in a list of submittals, not an insurance section",
+   "text": "Proof of professional liability insurance, minimum $1,000,000 per claim"
+  },
+  {
+   "category": "evaluation",
+   "id": "EV5",
+   "reason": "criterion listed without a weight",
+   "text": "Interview performance (if interviews are held)"
+  },
+  {
+   "category": "party",
+   "id": "Yolanda Prescott",
+   "reason": "role taken from the name before it in a list",
+   "text": "Yolanda Prescott"
+  },
+  {
+   "category": "party",
+   "id": "Bartholomew Nguyen",
+   "reason": "role taken from the name before it in a list",
+   "text": "Bartholomew Nguyen"
+  },
+  {
+   "category": "party",
+   "id": "Odessa Kirkland",
+   "reason": "role taken from the name before it in a list",
+   "text": "Odessa Kirkland"
+  },
+  {
+   "category": "evaluation",
+   "id": "",
+   "reason": "at least one criterion has no weight"
+  }
+ ]
+}

@@ -1,0 +1,537 @@
+{
+ "note": "Ground truth for the intake helper, batch_a. Written by hand from the guideline documents, before any tool run. expected_rules lists the rules a person reading the document would confirm (or, where marked proposed, would leave unconfirmed). key_params are the values stated in the document. Keyword lists (vague phrases, clerical phrases, overhead phrases and codes, AI terms) are NOT ground truth and are left out of key_params: see README. sentences_that_are_not_rules are sentences an intake pass must not turn into a rule of the type named.",
+ "scoring_suggestion": "A proposed rule matches when its type matches and its source sentence overlaps the source_quote. Score type recall and precision first, then key_params equality on matched rules. Severity is the test author's judgement and should be reported separately, not counted as wrong.",
+ "clients": [
+  {
+   "client_id": "harrowgate",
+   "document": "guideline_docs/harrowgate.txt",
+   "expected_rules": [
+    {
+     "rule_id": "HCE-TK-01",
+     "type": "unapproved_timekeeper",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Only people the claims examiner has cleared in writing for the claim."
+    },
+    {
+     "rule_id": "HCE-EVENT-01",
+     "type": "staffing_event_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_attendees": 1,
+      "events": [
+       "deposition",
+       "mediation",
+       "arbitration",
+       "hearing"
+      ]
+     },
+     "source_quote": "One attorney paid per deposition, mediation, arbitration session or court hearing; a second needs the examiner's OK beforehand."
+    },
+    {
+     "rule_id": "HCE-CONF-01",
+     "type": "internal_conference_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours_per_entry": "0.2"
+     },
+     "source_quote": "Capped at 0.2 hr per entry, per person."
+    },
+    {
+     "rule_id": "HCE-INCR-01",
+     "type": "minimum_increment",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "increment": "0.1"
+     },
+     "source_quote": "Six-minute units (0.1 hr); no quarter hours."
+    },
+    {
+     "rule_id": "HCE-ROUND-01",
+     "type": "rounding_pattern",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "block": "0.5",
+      "min_entries": 6,
+      "threshold_percent": 80
+     },
+     "source_quote": "A timekeeper with 80% or more of entries (6 entries minimum) landing on the half hour or the hour gets audited."
+    },
+    {
+     "rule_id": "HCE-BLOCK-01",
+     "type": "block_billing",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_tasks": 1,
+      "min_hours": 0
+     },
+     "source_quote": "Each entry covers a single task with its own time; lumped entries are cut."
+    },
+    {
+     "rule_id": "HCE-VAGUE-01",
+     "type": "vague_description",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "min_words": 3
+     },
+     "source_quote": "Say what was done and to what; \"attention to file\", \"follow up\" and similar get zero.",
+     "terms_added_from_document": [
+      "follow up"
+     ]
+    },
+    {
+     "rule_id": "HCE-CODES-01",
+     "type": "required_codes",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "require_task": true,
+      "require_activity": true,
+      "require_expense": true
+     },
+     "source_quote": "Task code and activity code on fee lines, expense code on cost lines; all mandatory."
+    },
+    {
+     "rule_id": "HCE-DAYCAP-01",
+     "type": "daily_hour_cap",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours": 9
+     },
+     "source_quote": "Over 9.0 hrs by one person in one day is not paid without a written reason."
+    },
+    {
+     "rule_id": "HCE-LATE-01",
+     "type": "late_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_age_days": 75
+     },
+     "source_quote": "Work more than 75 days old at invoice date is not paid."
+    },
+    {
+     "rule_id": "HCE-DUP-01",
+     "type": "duplicate_entries",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Same entry twice: the second one is struck."
+    },
+    {
+     "rule_id": "HCE-RATE-01",
+     "type": "rate_above_card",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "The approved rate sheet for the claim is the ceiling."
+    },
+    {
+     "rule_id": "HCE-RATEUP-01",
+     "type": "rate_increase_notice",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "notice_days": 45
+     },
+     "source_quote": "45 days' written notice to the examiner before a new rate may be billed."
+    },
+    {
+     "rule_id": "HCE-NONBILL-01",
+     "type": "non_billable_task",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "categories": [
+       "clerical",
+       "conflicts",
+       "invoice_prep",
+       "training"
+      ]
+     },
+     "source_quote": "Secretarial and file-room work; training and onboarding; conflicts clearance; preparing or fixing bills.",
+     "terms_added_from_document": [
+      "secretarial",
+      "file-room",
+      "onboarding",
+      "conflicts clearance"
+     ]
+    },
+    {
+     "rule_id": "HCE-RESEARCH-01",
+     "type": "research_approval",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours": "2.5"
+     },
+     "source_quote": "Up to 2.5 hrs per claim without asking; beyond that, examiner pre-approval."
+    },
+    {
+     "rule_id": "HCE-TRAVEL-01",
+     "type": "travel_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "billable_percent": 50,
+      "requires_approval": false
+     },
+     "source_quote": "Paid at half the approved rate."
+    },
+    {
+     "rule_id": "HCE-OVERHEAD-01",
+     "type": "expense_overhead",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Not reimbursed: postage, word processing, local telephone, office supplies."
+    },
+    {
+     "rule_id": "HCE-RECEIPT-01",
+     "type": "expense_receipt_threshold",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "threshold": "35.00",
+      "inclusive": true
+     },
+     "source_quote": "Required for any single charge of $35.00 or more."
+    },
+    {
+     "rule_id": "HCE-PERDIEM-01",
+     "type": "expense_per_diem",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "caps": {
+       "meal": "55.00",
+       "lodging": "190.00"
+      }
+     },
+     "source_quote": "Meals max $55.00 per person per day; hotel max $190.00 per night."
+    },
+    {
+     "rule_id": "HCE-MARKUP-01",
+     "type": "expense_markup",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "At cost, no uplift."
+    }
+   ],
+   "sentences_that_are_not_rules": [
+    {
+     "text": "Quarterly, or at $5,000 of unbilled time, whichever comes first.",
+     "why": "invoice frequency; no rule type covers it"
+    },
+    {
+     "text": "No more than $0.10 a page.",
+     "why": "a per-page copy rate; no rule type covers it. It must not be read as a per diem cap or a receipt threshold"
+    },
+    {
+     "text": "Status report to the examiner every 90 days.",
+     "why": "a reporting duty; the 90 days must not be read as a late-time limit or a rate notice period"
+    }
+   ]
+  },
+  {
+   "client_id": "marrowfen",
+   "document": "guideline_docs/marrowfen.txt",
+   "expected_rules": [
+    {
+     "rule_id": "MSD-BUDGET-01",
+     "type": "budget_cap",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "the aggregate of all fees and costs invoiced on a matter shall at no time surpass the maximum compensation set out in the applicable engagement letter unless and until the Board has approved an increase by written amendment."
+    },
+    {
+     "rule_id": "MSD-PHASE-01",
+     "type": "phase_cap",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Where the engagement letter divides the maximum compensation among phases of work, Counsel shall not invoice against any phase a sum greater than the portion assigned to that phase, it being understood that savings in one phase do not carry over to another without the General Manager's written consent."
+    },
+    {
+     "rule_id": "MSD-RATE-01",
+     "type": "rate_above_card",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Hourly rates are those appearing in the fee schedule attached to the engagement letter, and no timekeeper shall be billed at a rate higher than the rate there shown for that timekeeper."
+    },
+    {
+     "rule_id": "MSD-TK-01",
+     "type": "unapproved_timekeeper",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "The District will not pay for the time of any person who does not appear by name in the fee schedule."
+    },
+    {
+     "rule_id": "MSD-STAFF-01",
+     "type": "staffing_matter_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_timekeepers": 4
+     },
+     "source_quote": "Absent the General Manager's prior written consent, not more than four (4) timekeepers shall record time to a single matter in any one billing month."
+    },
+    {
+     "rule_id": "MSD-INCR-01",
+     "type": "minimum_increment",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "increment": "0.1"
+     },
+     "source_quote": "All time shall be kept contemporaneously and stated in units of one-tenth (0.1) of an hour."
+    },
+    {
+     "rule_id": "MSD-BLOCK-01",
+     "type": "block_billing",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_tasks": 1,
+      "min_hours": "1.5"
+     },
+     "source_quote": "Each entry shall be confined to one activity; an entry exceeding one and one-half (1.5) hours that aggregates distinct activities under a single time figure will be disallowed in its entirety, the District being unable to assess the reasonableness of the time devoted to each."
+    },
+    {
+     "rule_id": "MSD-CODES-01",
+     "type": "required_codes",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "require_task": true,
+      "require_activity": false,
+      "require_expense": false
+     },
+     "source_quote": "Every time entry shall bear the task code corresponding to the phase of work to which it relates."
+    },
+    {
+     "rule_id": "MSD-LATE-01",
+     "type": "late_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_age_days": 120
+     },
+     "source_quote": "Time submitted more than one hundred twenty (120) days after the date on which the work was performed is deemed waived."
+    },
+    {
+     "rule_id": "MSD-DUP-01",
+     "type": "duplicate_entries",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Counsel shall review each invoice before submission to ensure that no service appears on it more than once; any repeated entry will be deducted."
+    },
+    {
+     "rule_id": "MSD-TRAVEL-01",
+     "type": "travel_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "billable_percent": 100,
+      "requires_approval": true
+     },
+     "source_quote": "Time spent in transit is compensable only where the General Counsel has authorized the trip in writing before it is taken; authorized transit time is paid at the timekeeper's ordinary rate."
+    },
+    {
+     "rule_id": "MSD-NONBILL-01",
+     "type": "non_billable_task",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "categories": [
+       "clerical"
+      ]
+     },
+     "source_quote": "The hourly rates are understood to absorb the cost of secretarial support, filing, photocopying, calendaring and similar administrative functions, none of which shall appear as a time charge.",
+     "terms_added_from_document": [
+      "secretarial",
+      "filing",
+      "calendaring"
+     ]
+    },
+    {
+     "rule_id": "MSD-PERDIEM-01",
+     "type": "expense_per_diem",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "caps": {
+       "meal": "40.00",
+       "lodging": "150.00"
+      }
+     },
+     "source_quote": "Subsistence while away overnight on District business is reimbursable up to forty dollars ($40.00) per person per day for meals and one hundred fifty dollars ($150.00) per night for lodging."
+    },
+    {
+     "rule_id": "MSD-RECEIPT-01",
+     "type": "expense_receipt_threshold",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "threshold": "20.00",
+      "inclusive": false
+     },
+     "source_quote": "Counsel shall furnish a receipt for every cost item in excess of $20.00."
+    },
+    {
+     "rule_id": "MSD-MARKUP-01",
+     "type": "expense_markup",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Costs advanced to third parties on the District's behalf shall be invoiced in the amount actually paid, without surcharge or handling fee."
+    }
+   ],
+   "sentences_that_are_not_rules": [
+    {
+     "text": "The District does not impose a ceiling on the number of hours a timekeeper may record in a single day, but Counsel should expect questions where the hours recorded appear disproportionate to the task.",
+     "why": "says there is NO daily limit; a daily_hour_cap rule must not be proposed from it"
+    },
+    {
+     "text": "Invoices shall be rendered monthly and addressed to the General Manager, and shall be paid within forty-five (45) days of receipt.",
+     "why": "payment terms; the 45 days is not a late-time limit or a rate notice period"
+    },
+    {
+     "text": "Counsel shall maintain professional liability coverage of not less than $2,000,000 throughout the engagement.",
+     "why": "insurance; not a billing rule"
+    }
+   ]
+  },
+  {
+   "client_id": "pindlecroft",
+   "document": "guideline_docs/pindlecroft.txt",
+   "expected_rules": [
+    {
+     "rule_id": "PCR-INCR-01",
+     "type": "minimum_increment",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "increment": "0.25"
+     },
+     "source_quote": "Quarter-hour increments (0.25) are fine with us, just be consistent about it."
+    },
+    {
+     "rule_id": "PCR-BLOCK-01",
+     "type": "block_billing",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_tasks": 2,
+      "min_hours": "1.0"
+     },
+     "source_quote": "Please don't cram a whole afternoon into one line: two related tasks in an entry is OK, but if an entry of more than an hour lists three or more things I'll send it back to be split."
+    },
+    {
+     "rule_id": "PCR-VAGUE-01",
+     "type": "vague_description",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "min_words": 3
+     },
+     "source_quote": "Tell me what you actually did, because \"work on matter\" or \"review file\" tells me nothing and I can't approve it."
+    },
+    {
+     "rule_id": "PCR-DAYCAP-01",
+     "type": "daily_hour_cap",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours": 10
+     },
+     "source_quote": "If any one person bills more than 10 hours in a day I'm going to ask why, so give me a heads-up."
+    },
+    {
+     "rule_id": "PCR-EVENT-01",
+     "type": "staffing_event_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_attendees": 2,
+      "events": [
+       "hearing",
+       "deposition"
+      ]
+     },
+     "source_quote": "For hearings and depositions, two of your lawyers at most on our dime."
+    },
+    {
+     "rule_id": "PCR-CONF-01",
+     "type": "internal_conference_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours_per_entry": "0.5"
+     },
+     "source_quote": "Internal meetings among your own team: bill up to half an hour (0.5) per entry and no more."
+    },
+    {
+     "rule_id": "PCR-RESEARCH-01",
+     "type": "research_approval",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours": 6
+     },
+     "source_quote": "Clear it with me before the team spends more than 6 hours on legal research on a matter."
+    },
+    {
+     "rule_id": "PCR-RATE-01",
+     "type": "rate_above_card",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Whatever is on the rate schedule we signed in January is the rate, and nothing above it."
+    },
+    {
+     "rule_id": "PCR-LATE-01",
+     "type": "late_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_age_days": 60
+     },
+     "source_quote": "Anything older than 60 days when the bill goes out, we won't pay."
+    },
+    {
+     "rule_id": "PCR-DUP-01",
+     "type": "duplicate_entries",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "If a line shows up twice, we pay it once."
+    },
+    {
+     "rule_id": "PCR-OVERHEAD-01",
+     "type": "expense_overhead",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Please don't pass through overhead: online research subscriptions, phones, postage, staff overtime, word processing.",
+     "terms_added_from_document": [
+      "phones"
+     ]
+    },
+    {
+     "rule_id": "PCR-MARKUP-01",
+     "type": "expense_markup",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Vendor costs come through at what you paid, with no markup."
+    },
+    {
+     "rule_id": "PCR-AIDISC-01",
+     "type": "ai_disclosure_required",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "disclosure_marker": "(GenAI)"
+     },
+     "source_quote": "put \"(GenAI)\" in the narrative of any time entry where one was used."
+    },
+    {
+     "rule_id": "PCR-AINOPAY-01",
+     "type": "ai_nonpayable_task",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "disclosure_marker": "(GenAI)"
+     },
+     "source_quote": "We won't pay lawyer rates for AI-written summaries or digests of depositions and documents, or for AI doing the first-level document review.",
+     "terms_added_from_document": [
+      "digest",
+      "first-level document review",
+      "first level document review"
+     ]
+    },
+    {
+     "rule_id": "PCR-TRAVEL-01",
+     "type": "travel_time",
+     "status_a_person_would_give": "proposed",
+     "key_params": {
+      "billable_percent": 0,
+      "requires_approval": false
+     },
+     "source_quote": "Honestly we'd rather not pay for travel time at all, but I haven't settled that with our CFO yet, so treat it as a preference for now and let's talk before any big trip."
+    }
+   ],
+   "sentences_that_are_not_rules": [
+    {
+     "text": "Last thing: please get bills to me by the 5th of the month and copy accounts payable.",
+     "why": "bill timing; no rule type covers it"
+    }
+   ]
+  }
+ ]
+}

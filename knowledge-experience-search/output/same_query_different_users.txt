@@ -1,0 +1,262 @@
+Same query, different users
+===========================
+The matter behind wall W1 is Project Halcyon. The second user is excluded by that wall.
+Nothing in that user's output mentions the matter: no result, no count, no filter value.
+
+--- New associate, no special access (Mirela Halvorsby, U102) ---
+Query: 'project halcyon' as U102
+8 results among documents this user can open
+
+ 1. Project Halcyon - Memo on earn-out provisions (stock purchase)  [D01022]  score 0.723
+    memo | Corporate and M&A | stock purchase | Tavish County | 2023-02-04
+    matter M0211 Project Halcyon | author Quinn Pennwarden
+    final, reused 3x
+    … out provisions. Internal reference: Project Halcyon. This version supersedes drafts circulated earlier. Notes from the call on buyer covenant are attached for the file. A related point on funds flow …
+
+ 2. Project Halcyon - Memo: earn-out provisions  [D01020]  score 0.721
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-06-18
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    … out provisions. Internal reference: Project Halcyon. Timing, responsibility and sign-off for milestone payment are allocated in the table. Comments are requested by the end of the week. For right …
+
+ 3. Project Halcyon - Memo: indemnification cap and basket  [D01021]  score 0.706
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-08-13
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    … Tavish County. Internal reference: Project Halcyon. For shareholder agreement, see the separate document on that subject. Background facts relevant to losses definition are summarised in the first part. Nothing in …
+
+Filters available in these results:
+  doc_type: memo (4), agreement (3), form (1)
+  practice: Corporate and M&A (8)
+  matter_type: stock purchase (8)
+  jurisdiction: Tavish County (8)
+  client_industry: healthcare (8)
+  year: 2022 (5), 2023 (3)
+
+--- Excluded by an ethical wall (Amara Quistrel, U002) ---
+Query: 'project halcyon' as U002
+No document you can open contains: halcyon. These results match only: project. Try other words for the rest.
+24 results among documents this user can open
+
+ 1. Project Cinderford - Brief: arbitration clause enforcement  [D01172]  score 0.779
+    brief | Commercial litigation | business tort | Wenrick Court of Appeal | 2023-07-19
+    matter M0242 Project Cinderford | author Bastien Strathmoor
+    final, filed, reused 3x
+    … of Appeal. Internal reference: Project Cinderford. The reviewing partner's comments on arbitration clause have been incorporated. This does not cover class representative, which is handled elsewhere in the file …
+
+ 2. Project Cinderford - Motion: arbitration clause and arbitral seat  [D01173]  score 0.757
+    motion | Commercial litigation | business tort | Wenrick Court of Appeal | 2023-08-20
+    matter M0242 Project Cinderford | author Bastien Strathmoor
+    final, filed, reused 2x
+    … clause enforcement. Internal reference: Project Cinderford. A comparison table tracks how motion to compel arbitration and stay of proceedings were handled in earlier rounds. Earlier drafts treated waiver of arbitration …
+
+ 3. Project Cinderford - Motion: arbitration clause enforcement  [D01175]  score 0.746
+    motion | Commercial litigation | business tort | Wenrick Court of Appeal | 2023-01-15
+    matter M0242 Project Cinderford | author Ugo Varrowby
+    final, filed
+    … tort matter. Internal reference: Project Cinderford. Open points on waiver of arbitration are listed at the end with proposed next steps. Background facts relevant to arbitral seat are summarised in …
+
+Filters available in these results:
+  doc_type: agreement (6), memo (5), motion (5), brief (3), checklist (3), opinion letter (2)
+  practice: Banking and finance (13), Commercial litigation (8), Corporate and M&A (3)
+  matter_type: business tort (8), syndicated loan (8), project finance (5), merger (3)
+  jurisdiction: Aldhaven Tax Tribunal (8), Wenrick Court of Appeal (8), Marlowe Planning Commission (5), Tavish County (3)
+  client_industry: hospitality (13), energy (8), logistics (3)
+  year: 2025 (9), 2023 (7), 2021 (4), 2022 (2), 2024 (2)
+
+--- Leads the matter behind that wall (Quinn Pennwarden, U003) ---
+Query: 'project halcyon' as U003
+8 results among documents this user can open
+
+ 1. Project Halcyon - Memo on earn-out provisions (stock purchase)  [D01022]  score 0.723
+    memo | Corporate and M&A | stock purchase | Tavish County | 2023-02-04
+    matter M0211 Project Halcyon | author Quinn Pennwarden
+    final, reused 3x
+    … out provisions. Internal reference: Project Halcyon. This version supersedes drafts circulated earlier. Notes from the call on buyer covenant are attached for the file. A related point on funds flow …
+
+ 2. Project Halcyon - Memo: earn-out provisions  [D01020]  score 0.721
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-06-18
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    … out provisions. Internal reference: Project Halcyon. Timing, responsibility and sign-off for milestone payment are allocated in the table. Comments are requested by the end of the week. For right …
+
+ 3. Project Halcyon - Memo: indemnification cap and basket  [D01021]  score 0.706
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-08-13
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    … Tavish County. Internal reference: Project Halcyon. For shareholder agreement, see the separate document on that subject. Background facts relevant to losses definition are summarised in the first part. Nothing in …
+
+Filters available in these results:
+  doc_type: memo (4), agreement (3), form (1)
+  practice: Corporate and M&A (8)
+  matter_type: stock purchase (8)
+  jurisdiction: Tavish County (8)
+  client_industry: healthcare (8)
+  year: 2022 (5), 2023 (3)
+
+--- Excluded by a second wall (Ugo Ostergaarde, U016) ---
+Query: 'project halcyon' as U016
+8 results among documents this user can open
+
+ 1. Project Halcyon - Memo on earn-out provisions (stock purchase)  [D01022]  score 0.723
+    memo | Corporate and M&A | stock purchase | Tavish County | 2023-02-04
+    matter M0211 Project Halcyon | author Quinn Pennwarden
+    final, reused 3x
+    … out provisions. Internal reference: Project Halcyon. This version supersedes drafts circulated earlier. Notes from the call on buyer covenant are attached for the file. A related point on funds flow …
+
+ 2. Project Halcyon - Memo: earn-out provisions  [D01020]  score 0.721
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-06-18
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    … out provisions. Internal reference: Project Halcyon. Timing, responsibility and sign-off for milestone payment are allocated in the table. Comments are requested by the end of the week. For right …
+
+ 3. Project Halcyon - Memo: indemnification cap and basket  [D01021]  score 0.706
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-08-13
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    … Tavish County. Internal reference: Project Halcyon. For shareholder agreement, see the separate document on that subject. Background facts relevant to losses definition are summarised in the first part. Nothing in …
+
+Filters available in these results:
+  doc_type: memo (4), agreement (3), form (1)
+  practice: Corporate and M&A (8)
+  matter_type: stock purchase (8)
+  jurisdiction: Tavish County (8)
+  client_industry: healthcare (8)
+  year: 2022 (5), 2023 (3)
+
+--- Has left the firm (Anselm Underhaye, U020) ---
+Query: 'project halcyon' as U020
+This user is not an active person in the permission data.
+
+--- New associate, no special access (Mirela Halvorsby, U102) ---
+Query: 'earn-out provisions memo' as U102
+26 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
+
+ 1. Memo: earn-out provisions  [D00869]  score 0.750
+    memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-11-15
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Amara Quistrel
+    final, reused 2x
+    This memo addresses earn-out provisions in connection with the stock purchase matter. Dates and amounts remain to be confirmed with the client. A defined term for earn-out was …
+
+ 2. Project Halcyon - Memo: earn-out provisions  [D01020]  score 0.691
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-06-18
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    The purpose of this memo is to record the position on earn-out provisions. Internal reference: Project Halcyon. Timing, responsibility and sign-off for milestone payment are allocated in the …
+
+ 3. Memo: earn-out provisions  [D00618]  score 0.679
+    memo | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-04-17
+    matter M0131 Wexcombe Ventures: asset purchase | author Greta Nakashiro
+    final
+    Subject: earn-out provisions. Prepared in the course of the asset purchase matter in Estermere County Superior Court. The team considered whether milestone payment should be dealt with separately from …
+
+Filters available in these results:
+  doc_type: agreement (9), memo (8), form (6), checklist (3)
+  practice: Corporate and M&A (26)
+  matter_type: stock purchase (13), asset purchase (8), merger (2), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Brannock Court of Chancery (6), Tavish County (5), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), healthcare (5), logistics (2), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2025 (3), 2019 (2), 2026 (2)
+
+--- Excluded by an ethical wall (Amara Quistrel, U002) ---
+Query: 'earn-out provisions memo' as U002
+24 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
+
+ 1. Memo: earn-out provisions  [D00869]  score 0.750
+    memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-11-15
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Amara Quistrel
+    final, reused 2x
+    This memo addresses earn-out provisions in connection with the stock purchase matter. Dates and amounts remain to be confirmed with the client. A defined term for earn-out was …
+
+ 2. Memo: earn-out provisions  [D00618]  score 0.679
+    memo | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-04-17
+    matter M0131 Wexcombe Ventures: asset purchase | author Greta Nakashiro
+    final
+    Subject: earn-out provisions. Prepared in the course of the asset purchase matter in Estermere County Superior Court. The team considered whether milestone payment should be dealt with separately from …
+
+ 3. Project Quillon - Memo: earn-out provisions  [D00563]  score 0.673
+    memo | Corporate and M&A | merger | Tavish County | 2024-08-11
+    matter M0121 Project Quillon | author Calla Nakashiro
+    final
+    1 earlier or other version(s) folded in: D01379
+    The purpose of this memo is to record the position on earn-out provisions. Internal reference: Project Quillon. The document is subject to partner review before it is sent out …
+
+Filters available in these results:
+  doc_type: agreement (9), memo (7), form (5), checklist (3)
+  practice: Corporate and M&A (24)
+  matter_type: asset purchase (8), stock purchase (8), merger (5), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Brannock Court of Chancery (6), State of Caldmoor (3), Tavish County (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), logistics (5), life sciences (1), property (1), retail (1)
+  year: 2022 (8), 2018 (4), 2025 (4), 2024 (3), 2019 (2), 2026 (2)
+
+--- Leads the matter behind that wall (Quinn Pennwarden, U003) ---
+Query: 'earn-out provisions memo' as U003
+29 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
+
+ 1. Memo: earn-out provisions  [D00869]  score 0.750
+    memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-11-15
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Amara Quistrel
+    final, reused 2x
+    This memo addresses earn-out provisions in connection with the stock purchase matter. Dates and amounts remain to be confirmed with the client. A defined term for earn-out was …
+
+ 2. Project Halcyon - Memo: earn-out provisions  [D01020]  score 0.691
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-06-18
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    The purpose of this memo is to record the position on earn-out provisions. Internal reference: Project Halcyon. Timing, responsibility and sign-off for milestone payment are allocated in the …
+
+ 3. Memo: earn-out provisions  [D00618]  score 0.679
+    memo | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-04-17
+    matter M0131 Wexcombe Ventures: asset purchase | author Greta Nakashiro
+    final
+    Subject: earn-out provisions. Prepared in the course of the asset purchase matter in Estermere County Superior Court. The team considered whether milestone payment should be dealt with separately from …
+
+Filters available in these results:
+  doc_type: agreement (10), memo (10), form (6), checklist (3)
+  practice: Corporate and M&A (29)
+  matter_type: stock purchase (13), asset purchase (8), merger (5), minority investment (2), joint venture (1)
+  jurisdiction: Tavish County (8), Estermere County Superior Court (7), Brannock Court of Chancery (6), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), healthcare (5), logistics (5), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2025 (4), 2024 (3), 2019 (2)
+
+--- Excluded by a second wall (Ugo Ostergaarde, U016) ---
+Query: 'earn-out provisions memo' as U016
+26 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
+
+ 1. Memo: earn-out provisions  [D00869]  score 0.750
+    memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-11-15
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Amara Quistrel
+    final, reused 2x
+    This memo addresses earn-out provisions in connection with the stock purchase matter. Dates and amounts remain to be confirmed with the client. A defined term for earn-out was …
+
+ 2. Project Halcyon - Memo: earn-out provisions  [D01020]  score 0.691
+    memo | Corporate and M&A | stock purchase | Tavish County | 2022-06-18
+    matter M0211 Project Halcyon | author Brigid Tindlewick
+    final, reused 1x
+    The purpose of this memo is to record the position on earn-out provisions. Internal reference: Project Halcyon. Timing, responsibility and sign-off for milestone payment are allocated in the …
+
+ 3. Memo: earn-out provisions  [D00618]  score 0.679
+    memo | Corporate and M&A | asset purchase | Estermere County Superior Court | 2022-04-17
+    matter M0131 Wexcombe Ventures: asset purchase | author Greta Nakashiro
+    final
+    Subject: earn-out provisions. Prepared in the course of the asset purchase matter in Estermere County Superior Court. The team considered whether milestone payment should be dealt with separately from …
+
+Filters available in these results:
+  doc_type: agreement (9), memo (8), form (6), checklist (3)
+  practice: Corporate and M&A (26)
+  matter_type: stock purchase (13), asset purchase (8), merger (2), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Brannock Court of Chancery (6), Tavish County (5), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), healthcare (5), logistics (2), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2025 (3), 2019 (2), 2026 (2)
+
+--- Has left the firm (Anselm Underhaye, U020) ---
+Query: 'earn-out provisions memo' as U020
+This user is not an active person in the permission data.

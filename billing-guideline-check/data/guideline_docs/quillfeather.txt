@@ -1,0 +1,53 @@
+QUILLFEATHER MUTUAL INDEMNITY
+
+Litigation management and billing guidelines for panel counsel
+
+Fictional document written for a software demo
+
+[Page 1]
+
+1. Purpose
+
+These guidelines apply to every claim file assigned to panel counsel. Invoices that do not comply will be returned or reduced by the bill review unit.
+
+2.1 Assigned timekeepers
+
+Only timekeepers approved in writing by the claims professional may bill time to a file. No more than 3 timekeepers may bill to a file in any invoice period without prior approval.
+
+2.2 Depositions and hearings
+
+The Company will pay for only 1 attorney to attend a deposition, hearing or mediation unless the claims professional approves a second attendee in advance.
+
+2.3 Intra-office conferences
+
+Counsel should keep conferences among firm personnel short. No more than 0.3 hour may be billed for any single intra-office conference.
+
+[Page 2]
+
+3.1 Time increments
+
+Time must be recorded in increments of 0.1 hour. Entries that are routinely rounded up to the half hour or hour will be questioned.
+
+3.2 Task descriptions
+
+Block billing is not permitted and each task must be entered separately with its own time. Vague entries such as "attention to file" or "review documents" will not be paid. Every fee entry must carry a UTBMS task code and activity code, and every expense entry must carry an expense code.
+
+3.3 Limits on time
+
+The Company will not pay for more than 10 hours billed by one timekeeper in a single day without an explanation. Time entries more than 60 days old on the invoice date will not be paid. Duplicate entries will be rejected.
+
+[Page 3]
+
+4. Rates
+
+Counsel may not bill at rates above the approved rate schedule for the file. A rate increase takes effect only after 30 days written notice to the Company.
+
+5. Work the Company does not pay for
+
+The Company does not pay for clerical work, training, conflicts checks or the preparation of invoices. Legal research exceeding 3 hours on a file requires prior approval from the claims professional. Travel time is billed at 50% of the approved hourly rate.
+
+[Page 4]
+
+6. Expenses
+
+Overhead items such as postage, word processing, local telephone and office supplies are not reimbursable. A receipt must accompany any single expense of $25.00 or more. Meals while traveling are reimbursed up to $50.00 per person per day and lodging up to $175.00 per night. Expenses must be billed at actual cost with no mark-up.

@@ -1,0 +1,233 @@
+{
+  "doc_sha256": "a01892d9102554bcd027a137bc3985a7a7722c78b236a9e1409510ab272896f9",
+  "filing_date": "2027-01-15",
+  "citations": [
+    {
+      "kind": "case",
+      "text": "97 Cal.5th 210",
+      "start": 329,
+      "end": 343,
+      "key": "case:97 Cal. 5th 210",
+      "form": "full",
+      "pin": "223",
+      "volume": "97",
+      "reporter": "Cal. 5th",
+      "page": "210",
+      "case_name": "Halvorsen v. Bright Harbor Staffing, Inc.",
+      "year": "2024",
+      "law_code": null,
+      "section": null,
+      "title": null,
+      "antecedent_id": null,
+      "quotes": [],
+      "id": "f402f4de-1",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Halvorsen v. Bright Harbor Staffing, Inc. (2024) cal (SYNTHETIC test record)"
+        },
+        {
+          "name": "case_name",
+          "status": "pass",
+          "detail": "Case name matches source."
+        },
+        {
+          "name": "year",
+          "status": "pass",
+          "detail": "Year matches source."
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 223 is within pages 210-241."
+        }
+      ],
+      "quote_results": [],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900001",
+        "synthetic": true
+      },
+      "machine_status": "PASS",
+      "requires_attorney": true
+    },
+    {
+      "kind": "case",
+      "text": "912 Cal.App.5th 455",
+      "start": 523,
+      "end": 542,
+      "key": "case:912 Cal. App. 5th 455",
+      "form": "full",
+      "pin": "462",
+      "volume": "912",
+      "reporter": "Cal. App. 5th",
+      "page": "455",
+      "case_name": "Ostrander v. Cypress Fold Logistics",
+      "year": "2023",
+      "law_code": null,
+      "section": null,
+      "title": null,
+      "antecedent_id": null,
+      "quotes": [
+        {
+          "text": "[t]he written policy alone does not establish that the policy was followed on the floor.",
+          "start": 388,
+          "end": 478
+        }
+      ],
+      "id": "f3012267-1",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "pass",
+          "detail": "Found: Ostrander v. Cypress Fold Logistics (2023) calctapp (SYNTHETIC test record)"
+        },
+        {
+          "name": "case_name",
+          "status": "pass",
+          "detail": "Case name matches source."
+        },
+        {
+          "name": "year",
+          "status": "pass",
+          "detail": "Year matches source."
+        },
+        {
+          "name": "pinpoint",
+          "status": "pass",
+          "detail": "Pinpoint 462 is within pages 455-470."
+        },
+        {
+          "name": "quote",
+          "status": "fail",
+          "detail": "[UNVERIFIED QUOTE] Not found verbatim in the source.",
+          "quote_start": 388
+        }
+      ],
+      "quote_results": [
+        {
+          "text": "[t]he written policy alone does not establish that the policy was followed on the floor.",
+          "start": 388,
+          "end": 478,
+          "status": "QUOTE_NOT_FOUND",
+          "closest": "The written policy alone does not prove that the policy was followed on the floor.",
+          "similarity": 0.933,
+          "diff": [
+            {
+              "op": "replace",
+              "brief": "establish",
+              "source": "prove"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "label": "CourtListener mirror",
+        "url": "courtlistener-cluster:900002",
+        "synthetic": true
+      },
+      "machine_status": "FAIL",
+      "requires_attorney": true
+    },
+    {
+      "kind": "case",
+      "text": "940 Cal.App.5th 1312",
+      "start": 661,
+      "end": 681,
+      "key": "case:940 Cal. App. 5th 1312",
+      "form": "full",
+      "pin": "1320",
+      "volume": "940",
+      "reporter": "Cal. App. 5th",
+      "page": "1312",
+      "case_name": "Renwick v. Tallmadge Freight Systems",
+      "year": "2022",
+      "law_code": null,
+      "section": null,
+      "title": null,
+      "antecedent_id": null,
+      "quotes": [],
+      "id": "faf8abcd-1",
+      "checks": [
+        {
+          "name": "existence",
+          "status": "fail",
+          "detail": "No case found at 940 Cal. App. 5th 1312 (mirror coverage for Cal. App. 5th complete as of 2026-11-25). Possible fabricated or mistyped citation."
+        }
+      ],
+      "quote_results": [],
+      "source": null,
+      "machine_status": "FAIL",
+      "requires_attorney": true
+    }
+  ],
+  "summary": {
+    "PASS": 1,
+    "WARN": 0,
+    "FAIL": 2,
+    "MANUAL": 0,
+    "total": 3,
+    "quotes": 1,
+    "unverified_quotes": 1
+  },
+  "notice": "Mechanical checks only. This tool does not determine whether an authority is still good law (overruled, depublished, review granted, superseded, amended). Run KeyCite or Shepard's and read the authority before you mark it verified.",
+  "mirror": {
+    "meta": {
+      "snapshot": "2026-11-25",
+      "notes": "Demo mirror. Cases are synthetic. Statute and CFR text is real, copied from official sources on 2026-11-25.",
+      "demo": "yes"
+    },
+    "coverage": [
+      {
+        "source": "courtlistener",
+        "scope": "cal5th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "courtlistener",
+        "scope": "calapp5th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "courtlistener",
+        "scope": "f4th",
+        "complete": 1,
+        "as_of": "2026-11-25",
+        "note": "SYNTHETIC demo corpus treated as complete"
+      },
+      {
+        "source": "ecfr",
+        "scope": "29:541",
+        "complete": 0,
+        "as_of": "2026-11-01",
+        "note": "partial: 541.100 only"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "BPC",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "CCP",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial"
+      },
+      {
+        "source": "pubinfo",
+        "scope": "LAB",
+        "complete": 0,
+        "as_of": "2026-11-25",
+        "note": "partial: demo sections only"
+      }
+    ]
+  }
+}

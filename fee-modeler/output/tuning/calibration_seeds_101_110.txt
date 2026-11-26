@@ -1,0 +1,28 @@
+Calibration study on regenerated synthetic firms, seeds 101 to 110, generator as shipped (planted step 1.7x). Each firm is back-tested walk-forward; overruns are counted against the descriptive comp quantiles, the finite-sample bands alone, and the planning bands (finite-sample plus the upward adjustment; where the change check fires, the higher of the recent-only and whole-history versions).
+The method (same type only, upward only, at least 12 earlier outcomes) was chosen on seeds 101 to 110. Seeds 1 to 20 were not looked at until it was fixed.
+
+Share of back-tested matters that cost more than the band. Implied: 25% over P75, 10% over P90.
+       comp quantiles (descriptive)      finite-sample bands alone         planning bands                   
+seed   over P75         over P90         over P75         over P90         over P75         over P90        
+101     109/379  28.8%    48/379  12.7%    92/379  24.3%    28/379   7.4%    82/379  21.6%    26/379   6.9% 
+102     101/387  26.1%    40/387  10.3%    89/387  23.0%    23/387   5.9%    78/387  20.2%    15/387   3.9% 
+103      81/385  21.0%    40/385  10.4%    67/385  17.4%    24/385   6.2%    67/385  17.4%    22/385   5.7% 
+104     102/372  27.4%    59/372  15.9%    95/372  25.5%    41/372  11.0%    87/372  23.4%    33/372   8.9% 
+105      97/376  25.8%    53/376  14.1%    82/376  21.8%    31/376   8.2%    77/376  20.5%    23/376   6.1% 
+106      93/374  24.9%    46/374  12.3%    78/374  20.9%    33/374   8.8%    72/374  19.3%    28/374   7.5% 
+107     102/360  28.3%    54/360  15.0%    92/360  25.6%    36/360  10.0%    78/360  21.7%    28/360   7.8% 
+108      92/384  24.0%    48/384  12.5%    79/384  20.6%    29/384   7.6%    76/384  19.8%    23/384   6.0% 
+109      90/351  25.6%    46/351  13.1%    75/351  21.4%    30/351   8.5%    66/351  18.8%    26/351   7.4% 
+110     113/369  30.6%    50/369  13.6%    93/369  25.2%    41/369  11.1%    87/369  23.6%    30/369   8.1% 
+all     980/3737 26.2%   484/3737 13.0%   842/3737 22.5%   316/3737  8.5%   770/3737 20.6%   254/3737  6.8% 
+
+Matter types judged to understate overruns (one-sided binomial, 1 in 20), of 110 type-runs with at least 10 back-tested matters:
+  comp quantiles (descriptive)   at P75: 10   at P90: 15
+  finite-sample bands alone      at P75: 3   at P90: 5
+  planning bands                 at P75: 0   at P90: 2
+
+Where the planning bands still understate: seed 107, P90: paga_response (6 of 24); seed 109, P90: internal_investigation (6 of 27).
+
+A flag never lowers a figure. Across these seeds the change check was flagging an unplanted matter type at the moment of 83 back-test predictions (44 of them saying costs had fallen). The planning P90 was below the whole-history planning P90 in 0 of them, and any band was below in 0. It was raised above the whole-history P90 in 24.
+
+Cost of the fix: the planning P90 is 1.26x the descriptive P90 for the median back-tested matter (median of the per-seed medians).

@@ -1,0 +1,38 @@
+{
+ "id": "M-1001",
+ "name": "Quenby Vale: payer contract compliance review",
+ "client_id": "quenby",
+ "matter_type": "health care regulatory",
+ "responsible_attorney": "J. Halvorsen-Pike (fictional)",
+ "intake_date": "2026-11-02",
+ "data_flags": {
+  "phi": "yes",
+  "sealed": "no"
+ },
+ "protective_order": {
+  "present": "no"
+ },
+ "terms_document_ids": [
+  "quenby-ocg-2026",
+  "quenby-el-2026"
+ ],
+ "additional_terms": [],
+ "consents": [
+  {
+   "from": "quenby",
+   "feature_ids": [
+    "suite-b.doc-summary",
+    "review-d.review"
+   ],
+   "date": "2026-11-04",
+   "reference": "Written confirmation from the Legal Department under clause 3.6, 2026-11-04 (fictional)"
+  }
+ ],
+ "notices": [
+  {
+   "to": "quenby",
+   "date": "2026-11-03",
+   "reference": "Notice email to the Legal Department, 2026-11-03 (fictional)"
+  }
+ ]
+}

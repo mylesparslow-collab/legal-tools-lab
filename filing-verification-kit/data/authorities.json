@@ -1,0 +1,54 @@
+{
+  "_about": "Single source for every statutory statement used in this kit. Docs and code refer to entries by key. Paraphrases only; no statutory text is quoted. Correct an entry here and it is corrected everywhere it is displayed. Not legal advice; not reviewed by an attorney.",
+  "source": "Chaptered text of SB 574 (Stats. 2026, ch. 858), read 2026-11-25.",
+  "authorities": {
+    "sb574_enactment": {
+      "section": "Stats. 2026, ch. 858 (SB 574)",
+      "paraphrase": "Approved Sept. 30, 2026. No urgency clause. Operative Jan. 1, 2027. Adds Bus. & Prof. Code § 6068.1, amends Code Civ. Proc. § 128.7, adds Code Civ. Proc. §§ 180 and 1282.1, and amends Bus. & Prof. Code § 6173.",
+      "operative_date": "2027-01-01",
+      "verified_on": "2026-11-25"
+    },
+    "bpc_6068_1_a3Bi": {
+      "section": "Bus. & Prof. Code § 6068.1(a)(3)(B)(i)",
+      "paraphrase": "An attorney using generative AI must take reasonable steps to verify its output, including all case and statutory citations.",
+      "verified_on": "2026-11-25"
+    },
+    "bpc_6068_1_a3Bii": {
+      "section": "Bus. & Prof. Code § 6068.1(a)(3)(B)(ii)",
+      "paraphrase": "The attorney must also correct hallucinated output.",
+      "verified_on": "2026-11-25"
+    },
+    "bpc_6068_1_a3C": {
+      "section": "Bus. & Prof. Code § 6068.1(a)(3)(C)",
+      "paraphrase": "Disclose generative AI use to the court for documents submitted to the court.",
+      "verified_on": "2026-11-25",
+      "open_question": "Exact scope of this duty is not settled in this kit. See OPEN_QUESTIONS.md, question 3."
+    },
+    "bpc_6068_1_b2": {
+      "section": "Bus. & Prof. Code § 6068.1(b)(2)(A)-(I)",
+      "paraphrase": "A list of personal identifying information categories relevant to what may be entered into AI tools. Item (I) covers sealed or confidential content.",
+      "verified_on": "2026-11-25",
+      "note": "The individual list items are not reproduced here. Their text was not available when this file was written."
+    },
+    "ccp_128_7_b2A": {
+      "section": "Code Civ. Proc. § 128.7(b)(2)(A)",
+      "paraphrase": "A brief, pleading, motion or other paper filed in any court must not contain any citation that the responsible attorney has not personally verified. This covers any citation, not only cases and statutes.",
+      "verified_on": "2026-11-25"
+    },
+    "ccp_128_7_d1": {
+      "section": "Code Civ. Proc. § 128.7(d)(1)",
+      "paraphrase": "Monetary sanctions may not be imposed on a represented party for a violation of subdivision (b)(2).",
+      "verified_on": "2026-11-25"
+    },
+    "ccp_128_7_g": {
+      "section": "Code Civ. Proc. § 128.7(g)",
+      "paraphrase": "The section still does not apply to discovery papers.",
+      "verified_on": "2026-11-25"
+    },
+    "no_citator_product": {
+      "section": "Stats. 2026, ch. 858 (SB 574), as a whole",
+      "paraphrase": "The statute does not require any particular citator product.",
+      "verified_on": "2026-11-25"
+    }
+  }
+}

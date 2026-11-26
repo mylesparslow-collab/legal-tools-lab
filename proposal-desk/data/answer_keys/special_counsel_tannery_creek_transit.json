@@ -1,0 +1,60 @@
+{
+  "rfp": "special_counsel_tannery_creek_transit.txt",
+  "note": "Hand-written from the RFP text. Dates, page limit and forms are as changed by Addendum 1.",
+  "agency": "Tannery Creek Transit Authority",
+  "deadlines": [
+    {"kind": "issued", "date": "2026-11-02", "time": null},
+    {"kind": "conference", "date": "2026-11-12", "time": "10:00"},
+    {"kind": "questions_due", "date": "2026-12-11", "time": "17:00"},
+    {"kind": "submission_due", "date": "2027-01-08", "time": "15:00"},
+    {"kind": "interview", "date": "2027-01-26", "time": null},
+    {"kind": "award", "date": "2027-02-18", "time": null}
+  ],
+  "addendum_changes": [
+    {"kind": "questions_due", "from": "2026-12-08", "to": "2026-12-11"},
+    {"kind": "page_limit", "from": 30, "to": 25},
+    {"kind": "form_added", "from": null, "to": "Addendum Acknowledgment"}
+  ],
+  "requirements": [
+    {"label": "C.2.1", "qtype": "firm_overview"},
+    {"label": "C.2.2", "qtype": "team"},
+    {"label": "C.2.3", "qtype": "experience"},
+    {"label": "C.2.4", "qtype": "approach"},
+    {"label": "C.2.5", "qtype": "references"},
+    {"label": "C.2.6", "qtype": "conflicts"},
+    {"label": "C.2.7", "qtype": "diversity_local"},
+    {"label": "C.2.8", "qtype": "rates"},
+    {"label": "C.2.9", "qtype": "transition"}
+  ],
+  "forms": ["Proposal Signature Page", "Non-Collusion Declaration", "Conflict of Interest Disclosure", "Campaign Contribution Disclosure", "Small and Local Business Participation Form", "Insurance Certification", "Addendum Acknowledgment"],
+  "evaluation": [
+    {"name": "Relevant experience on capital projects", "weight": 30},
+    {"name": "Project team", "weight": 25},
+    {"name": "Project approach", "weight": 20},
+    {"name": "Cost", "weight": 15},
+    {"name": "Small and local business participation", "weight": 10}
+  ],
+  "min_quals": [
+    {"starts": "The proposed lead attorney shall have not less than twelve", "check_kind": "years_admitted", "value": 12},
+    {"starts": "The proposed lead attorney shall have served as lead counsel", "check_kind": "not_checkable", "value": null},
+    {"starts": "The firm shall have an office in the Authority's service area", "check_kind": "not_checkable", "value": null}
+  ],
+  "insurance": [
+    {"contains": "Professional liability", "amount": "$5,000,000"},
+    {"contains": "Commercial general liability", "amount": "$2,000,000"},
+    {"contains": "Cyber liability", "amount": "$1,000,000"},
+    {"contains": "Automobile liability", "amount": "$1,000,000"}
+  ],
+  "mechanics": {"page_limit": 25, "font_pt": 11, "margin_in": 1.0,
+    "kinds": ["format", "delivery", "not_accepted", "page_limit", "page_exclusions", "font", "margins"]},
+  "parties": [
+    {"name": "Tannery Creek Transit Authority", "category": "agency"},
+    {"name": "Cornelius Abernathy", "category": "staff"},
+    {"name": "Philippa Ostrander", "category": "staff"},
+    {"name": "Reginald Montefiore", "category": "staff"},
+    {"name": "Saoirse Delacroix-Tan", "category": "staff"},
+    {"name": "Granite Spur Constructors, Inc.", "category": "adverse"},
+    {"name": "Bellweather Signal Systems LLC", "category": "adverse"},
+    {"name": "Hollis Yard Properties LP", "category": "adverse"}
+  ]
+}

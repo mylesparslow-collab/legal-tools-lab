@@ -1,0 +1,323 @@
+{
+  "client_id": "bramblewick",
+  "client_name": "Bramblewick Freight Cooperative",
+  "document": "heldout/batch_b/guideline_docs/bramblewick.txt",
+  "rules": [
+    {
+      "rule_id": "BFC-TK-01",
+      "type": "unapproved_timekeeper",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Named on the matter staffing list only.",
+      "source_ref": "row 1, Timekeepers",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-STAFF-01",
+      "type": "staffing_matter_limit",
+      "status": "confirmed",
+      "severity": "review",
+      "params": {
+        "max_timekeepers": 3
+      },
+      "source_quote": "Max 3 timekeepers per matter per bill unless Legal Ops agrees a bigger team.",
+      "source_ref": "row 2, Team size",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-RATE-01",
+      "type": "rate_above_card",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "The matter rate card governs; nothing higher.",
+      "source_ref": "row 3, Rates",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-RATEUP-01",
+      "type": "rate_increase_notice",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "notice_days": 90
+      },
+      "source_quote": "90 days written notice before a rise applies.",
+      "source_ref": "row 4, Rate rises",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-INCR-01",
+      "type": "minimum_increment",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "Tenths of an hour.",
+      "source_ref": "row 5, Units",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-BLOCK-01",
+      "type": "block_billing",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_tasks": 1,
+        "min_hours": "0.5"
+      },
+      "source_quote": "One task per line once a line is over 0.5 h.",
+      "source_ref": "row 6, Task detail",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-VAGUE-01",
+      "type": "vague_description",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "always_phrases": [
+          "attention to file",
+          "attention to matter",
+          "various tasks",
+          "work on case",
+          "work on matter"
+        ],
+        "bare_phrases": [
+          "draft correspondence",
+          "emails",
+          "legal research",
+          "prepare for hearing",
+          "review documents",
+          "review file",
+          "telephone call",
+          "trial preparation",
+          "work on discovery"
+        ],
+        "min_words": 3
+      },
+      "source_quote": "Must name the work product or the person dealt with; \"review documents\" or \"emails\" will not do.",
+      "source_ref": "row 7, Narrative",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-CODES-01",
+      "type": "required_codes",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "require_task": true,
+        "require_activity": true,
+        "require_expense": false
+      },
+      "source_quote": "Task code and activity code on every fee line.",
+      "source_ref": "row 8, Codes",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-DAYCAP-01",
+      "type": "daily_hour_cap",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": 8
+      },
+      "source_quote": "8.0 h per person per day; more needs a note from the partner.",
+      "source_ref": "row 9, Daily hours",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-LATE-01",
+      "type": "late_time",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 90
+      },
+      "source_quote": "Nothing over 90 days old at bill date.",
+      "source_ref": "row 10, Age of time",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-DUP-01",
+      "type": "duplicate_entries",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Paid once.",
+      "source_ref": "row 11, Duplicates",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-NONBILL-01",
+      "type": "non_billable_task",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "categories": {
+          "clerical": [
+            "scanning",
+            "scan documents",
+            "photocopying",
+            "bates stamping",
+            "organizing files",
+            "organize files",
+            "data entry",
+            "updating file index",
+            "saving documents to",
+            "copying",
+            "filing",
+            "bates"
+          ],
+          "training": [
+            "training",
+            "orientation",
+            "getting up to speed"
+          ],
+          "invoice_prep": [
+            "prepare invoice",
+            "preparing invoice",
+            "prebill",
+            "pre-bill",
+            "billing inquiry",
+            "invoice backup",
+            "correct invoice"
+          ]
+        }
+      },
+      "source_quote": "No charge for copying, filing, Bates work, staff training, or preparing or explaining a bill.",
+      "source_ref": "row 12, Admin work",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-CONF-01",
+      "type": "internal_conference_limit",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours_per_entry": "0.4"
+      },
+      "source_quote": "0.4 h cap per line.",
+      "source_ref": "row 13, Internal meetings",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-OVERHEAD-01",
+      "type": "expense_overhead",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "codes": [
+          "E103",
+          "E104",
+          "E105",
+          "E108"
+        ],
+        "phrases": [
+          "local telephone",
+          "office supplies",
+          "overtime",
+          "phone",
+          "postage",
+          "subscription",
+          "word processing"
+        ]
+      },
+      "source_quote": "No postage, phone, in-house word processing, staff overtime or database subscriptions.",
+      "source_ref": "row 14, Overhead",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-RECEIPT-01",
+      "type": "expense_receipt_threshold",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "threshold": "50.00",
+        "inclusive": true
+      },
+      "source_quote": "Needed for any cost of $50.00 and up.",
+      "source_ref": "row 15, Receipts",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-MARKUP-01",
+      "type": "expense_markup",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Actual cost only.",
+      "source_ref": "row 16, Third-party costs",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-AIDISC-01",
+      "type": "ai_disclosure_required",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "disclosure_marker": "[GAI]",
+        "ai_terms": [
+          "generative ai",
+          "artificial intelligence",
+          "ai tool",
+          "ai-assisted",
+          "ai assisted",
+          "large language model",
+          "machine-generated"
+        ]
+      },
+      "source_quote": "A line done with a generative AI tool must carry the tag [GAI].",
+      "source_ref": "row 17, AI tools",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "BFC-AINOPAY-01",
+      "type": "ai_nonpayable_task",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "disclosure_marker": "[GAI]",
+        "ai_terms": [
+          "generative ai",
+          "artificial intelligence",
+          "ai tool",
+          "ai-assisted",
+          "ai assisted",
+          "large language model",
+          "machine-generated"
+        ],
+        "task_phrases": [
+          "summarize",
+          "summary of",
+          "summaries of",
+          "first-pass document review",
+          "first pass document review"
+        ]
+      },
+      "source_quote": "No payment for AI-made summaries of transcripts or documents, or AI first-pass document review.",
+      "source_ref": "row 18, AI output",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    }
+  ]
+}

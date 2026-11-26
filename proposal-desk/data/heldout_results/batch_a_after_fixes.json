@@ -1,0 +1,504 @@
+{
+ "batch": "a",
+ "run": "after_fixes",
+ "combined": {
+  "deadlines": {
+   "tp": 19,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "requirements": {
+   "tp": 36,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "forms": {
+   "tp": 15,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "evaluation": {
+   "tp": 15,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "min_quals": {
+   "tp": 12,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "insurance": {
+   "tp": 12,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "mechanics": {
+   "tp": 32,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.97,
+   "recall": 1.0
+  },
+  "parties": {
+   "tp": 33,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "overall": {
+   "tp": 174,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.994,
+   "recall": 1.0
+  },
+  "question_type": {
+   "correct": 36,
+   "of_found": 36,
+   "of": 36
+  },
+  "addendum_handling": {
+   "passed": 14,
+   "of": 14
+  },
+  "page_limit": {
+   "correct": 3,
+   "of": 3
+  },
+  "submission_deadline": {
+   "correct": 3,
+   "of": 3
+  }
+ },
+ "per_rfp": {
+  "coverage_counsel_kestrel_ridge_jpia": {
+   "deadlines": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "date_right_time_or_kind_wrong": 0
+   },
+   "deadline_kinds_outside_existing_keys": [],
+   "submission_deadline": {
+    "key": "2027-02-10 14:00",
+    "parsed": [
+     "2027-02-10 14:00"
+    ],
+    "correct": true
+   },
+   "requirements": {
+    "tp": 9,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "numbered_found": "9 of 9",
+    "unnumbered_found": "0 of 0"
+   },
+   "question_type": {
+    "correct": 9,
+    "of_found": 9,
+    "of": 9,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "evaluation": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "weights_parsed_sum": 100
+   },
+   "min_quals": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "insurance": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "mechanics": {
+    "tp": 12,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "page_limit": {
+    "key": 30,
+    "parsed": [
+     30
+    ],
+    "correct": true
+   },
+   "parties": {
+    "tp": 8,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": []
+   },
+   "addendum_handling": {
+    "passed": 14,
+    "of": 14,
+    "checks": [
+     {
+      "check": "questions_due: date as issued (2027-01-07) still shown",
+      "ok": true
+     },
+     {
+      "check": "questions_due in force 2027-01-11",
+      "ok": true
+     },
+     {
+      "check": "answers_issued: date as issued (2027-01-12) still shown",
+      "ok": true
+     },
+     {
+      "check": "answers_issued in force 2027-01-15",
+      "ok": true
+     },
+     {
+      "check": "submission_due: date as issued (2027-01-27) still shown",
+      "ok": true
+     },
+     {
+      "check": "submission_due in force 2027-02-10 14:00",
+      "ok": true
+     },
+     {
+      "check": "page limit in force 30",
+      "ok": true
+     },
+     {
+      "check": "form added: Addenda Acknowledgment Form",
+      "ok": true
+     },
+     {
+      "check": "requirement 3.7 deleted",
+      "ok": true
+     },
+     {
+      "check": "criterion removed: Training program",
+      "ok": true
+     },
+     {
+      "check": "weight of Coverage experience now 45",
+      "ok": true
+     },
+     {
+      "check": "interview: date as issued (2027-02-18) still shown",
+      "ok": true
+     },
+     {
+      "check": "interview in force 2027-02-25",
+      "ok": true
+     },
+     {
+      "check": "insurance Cyber liability now $2,000,000",
+      "ok": true
+     }
+    ],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 53,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "agency_correct": true
+  },
+  "general_counsel_ashdown_valley_ccd": {
+   "deadlines": {
+    "tp": 7,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "date_right_time_or_kind_wrong": 0
+   },
+   "deadline_kinds_outside_existing_keys": [
+    {
+     "kind": "start_of_services",
+     "date": "2027-04-01",
+     "found": true
+    }
+   ],
+   "submission_deadline": {
+    "key": "2027-01-21 15:00",
+    "parsed": [
+     "2027-01-21 15:00"
+    ],
+    "correct": true
+   },
+   "requirements": {
+    "tp": 13,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "numbered_found": "11 of 11",
+    "unnumbered_found": "2 of 2"
+   },
+   "question_type": {
+    "correct": 13,
+    "of_found": 13,
+    "of": 13,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "evaluation": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "weights_parsed_sum": 100
+   },
+   "min_quals": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "insurance": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "mechanics": {
+    "tp": 12,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "page_limit": {
+    "key": 20,
+    "parsed": [
+     20
+    ],
+    "correct": true
+   },
+   "parties": {
+    "tp": 12,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": []
+   },
+   "addendum_handling": {
+    "passed": 0,
+    "of": 0,
+    "checks": [],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 63,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "agency_correct": true
+  },
+  "litigation_counsel_lantern_bay_port": {
+   "deadlines": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "date_right_time_or_kind_wrong": 0
+   },
+   "deadline_kinds_outside_existing_keys": [],
+   "submission_deadline": {
+    "key": "2027-01-15 16:30",
+    "parsed": [
+     "2027-01-15 16:30"
+    ],
+    "correct": true
+   },
+   "requirements": {
+    "tp": 14,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "numbered_found": "10 of 10",
+    "unnumbered_found": "4 of 4"
+   },
+   "question_type": {
+    "correct": 14,
+    "of_found": 14,
+    "of": 14,
+    "wrong": []
+   },
+   "forms": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "evaluation": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": [],
+    "weights_parsed_sum": 100
+   },
+   "min_quals": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "insurance": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "mechanics": {
+    "tp": 8,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.889,
+    "recall": 1.0,
+    "extra": [
+     "('kind', 'copies')"
+    ],
+    "missed": []
+   },
+   "page_limit": {
+    "key": 18,
+    "parsed": [
+     18
+    ],
+    "correct": true
+   },
+   "parties": {
+    "tp": 13,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "extra": [],
+    "missed": []
+   },
+   "negatives_hit": {
+    "deadlines": [],
+    "requirements": []
+   },
+   "addendum_handling": {
+    "passed": 0,
+    "of": 0,
+    "checks": [],
+    "deleted_requirements_still_parsed": []
+   },
+   "overall": {
+    "tp": 58,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.983,
+    "recall": 1.0
+   },
+   "agency_correct": true
+  }
+ }
+}

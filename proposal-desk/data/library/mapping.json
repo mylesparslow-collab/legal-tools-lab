@@ -1,0 +1,27 @@
+{
+ "note": "Maps the firm's own files and column names onto the canonical schemas in desk/schemas.py. Here the demo files already use canonical names, so only file names are given.",
+ "past_answers": {
+  "file": "past_answers.json"
+ },
+ "experience": {
+  "file": "experience.json"
+ },
+ "bios": {
+  "file": "bios.json"
+ },
+ "rate_schedules": {
+  "file": "rate_schedules.json"
+ },
+ "references": {
+  "file": "references.json"
+ },
+ "standard_forms": {
+  "file": "standard_forms.json"
+ },
+ "firm_facts": {
+  "file": "firm_facts.json"
+ },
+ "workplan": {
+  "file": "workplan.json"
+ }
+}

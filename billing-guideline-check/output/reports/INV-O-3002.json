@@ -1,0 +1,49 @@
+{
+  "notice": "Personal portfolio demo. Fictional data. Not legal or billing advice.",
+  "invoice": {
+    "invoice_id": "INV-O-3002",
+    "client_id": "ostervane",
+    "client_name": "Ostervane Industrial Holdings",
+    "matter_id": "OIH-COR-031",
+    "invoice_date": "2026-11-05",
+    "declared_total": "6991.00",
+    "line_total": "6991.00",
+    "line_count": 14,
+    "source_format": "ledes1998b"
+  },
+  "totals": {
+    "open_findings": 0,
+    "waived_findings": 0,
+    "by_severity": {
+      "reject": 0,
+      "reduce": 0,
+      "review": 0
+    },
+    "entry_risk_total": "0.00",
+    "invoice_level_risk": "0.00",
+    "total_at_risk": "0.00",
+    "at_risk_rule": "Per entry: largest single reduction among open findings, capped at the entry amount. Invoice: the larger of the per-entry sum and the largest invoice-level amount, capped at the sum of the lines."
+  },
+  "entry_at_risk": {},
+  "rules_run": [
+    "OIH-EVENT-01",
+    "OIH-DAYCAP-01",
+    "OIH-RESEARCH-01",
+    "OIH-INCR-01",
+    "OIH-BLOCK-01",
+    "OIH-VAGUE-01",
+    "OIH-CODES-01",
+    "OIH-DUP-01",
+    "OIH-RATE-01",
+    "OIH-RATEUP-01",
+    "OIH-NONBILL-01",
+    "OIH-OVERHEAD-01",
+    "OIH-MARKUP-01"
+  ],
+  "rules_not_enforced": [],
+  "not_checked": [
+    "OIH-MARKUP-01 (Expense mark-up prohibited): 1 expense line(s) could not be checked for mark-up because the file has no cost for them"
+  ],
+  "findings": [],
+  "summary": "Draft invoice INV-O-3002 for Ostervane Industrial Holdings (matter OIH-COR-031) totals $6,991.00 across 14 lines. The check ran 13 confirmed client rules plus the arithmetic checks. It found no open findings. 1 check could not be completed from the file; see the report. Every finding is a prompt for review; nothing on the bill has been changed."
+}

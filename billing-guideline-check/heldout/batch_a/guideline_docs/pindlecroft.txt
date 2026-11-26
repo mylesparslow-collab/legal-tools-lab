@@ -1,0 +1,28 @@
+From: Wren Castellane, Associate General Counsel, Pindlecroft Robotics
+To: Outside counsel team, Example Firm LLP
+Subject: how we'd like bills done going forward
+
+(Fictional document written for a software test)
+
+Hi all,
+
+Thanks for the work on the gripper case. A few of you have asked what we expect on invoices, so here it is in one place. None of this is meant as a trap. If something doesn't fit a particular matter, call me.
+
+1) Time. Quarter-hour increments (0.25) are fine with us, just be consistent about it. Please don't cram a whole afternoon into one line: two related tasks in an entry is OK, but if an entry of more than an hour lists three or more things I'll send it back to be split. Tell me what you actually did, because "work on matter" or "review file" tells me nothing and I can't approve it.
+
+2) People and hours. If any one person bills more than 10 hours in a day I'm going to ask why, so give me a heads-up. For hearings and depositions, two of your lawyers at most on our dime. Internal meetings among your own team: bill up to half an hour (0.5) per entry and no more. Clear it with me before the team spends more than 6 hours on legal research on a matter.
+
+3) Rates. Whatever is on the rate schedule we signed in January is the rate, and nothing above it.
+
+4) Old time and repeats. Anything older than 60 days when the bill goes out, we won't pay. If a line shows up twice, we pay it once.
+
+5) Costs. Please don't pass through overhead: online research subscriptions, phones, postage, staff overtime, word processing. Vendor costs come through at what you paid, with no markup.
+
+6) AI. We're fine with you using generative AI tools where it saves us money, but I need to see it: put "(GenAI)" in the narrative of any time entry where one was used. We won't pay lawyer rates for AI-written summaries or digests of depositions and documents, or for AI doing the first-level document review.
+
+7) Travel. Honestly we'd rather not pay for travel time at all, but I haven't settled that with our CFO yet, so treat it as a preference for now and let's talk before any big trip.
+
+Last thing: please get bills to me by the 5th of the month and copy accounts payable.
+
+Thanks,
+Wren
