@@ -1,0 +1,133 @@
+Different wording
+=================
+No document uses the words "deferred price". With bridging on, the thesaurus reads them
+as "deferred consideration" and searches its listed equivalents at a lower weight.
+Every alternative shown is one that occurs in a document this user can open.
+
+--- bridging on (default) ---
+Query: 'deferred price contingent on future performance agreement' as U102
+No document you can open contains: future, performance.
+26 results among documents this user can open
+  also searched 'earn-out' for 'deferred' (thesaurus, weight 0.5; thesaurus: read 'deferred ... price' as 'deferred consideration')
+  also searched 'consideration' for 'price' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'earn-out' for 'price' (thesaurus, weight 0.5; thesaurus: read 'price ... contingent' as 'contingent consideration')
+  also searched 'pricing' for 'price' (word form, weight 0.8; another form of 'price')
+  also searched 'earn-out' for 'contingent' (thesaurus, weight 0.5; thesaurus: read 'price ... contingent' as 'contingent consideration')
+  also searched 'contract' for 'agreement' (thesaurus, weight 0.6; thesaurus: contracts, general)
+
+ 1. Agreement on earn-out provisions (stock purchase)  [D00872]  score 0.726  (found by equivalent terms)
+    agreement | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-12-26
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Ugo Ellingsworth
+    final
+    The purpose of this agreement is to record the position on earn-out provisions. The drafting team reworked the language on revenue target after comments from the other side. A …
+    why: text 0.600 (bm25 5.4147 / best 5.4147, weight 0.6; statistics over 1408 documents you can open)
+         term 'earn out' [thesaurus for 'deferred', weight 0.5: thesaurus: read 'deferred ... price' as 'deferred consideration']: title x1, body x6; in 39 visible documents; bm25 1.5569
+         term 'earn out' [thesaurus for 'price', weight 0.5: thesaurus: read 'price ... contingent' as 'contingent consideration']: title x1, body x6; in 39 visible documents; bm25 1.5569
+         term 'earn out' [thesaurus for 'contingent', weight 0.5: thesaurus: read 'price ... contingent' as 'contingent consideration']: title x1, body x6; in 39 visible documents; bm25 1.5569
+         term 'agreement': title x1, body x1, metadata x1; in 549 visible documents; bm25 0.7439
+         model_form: value 0.0 x weight 0.14 = 0.0
+         is_final: value 1.0 x weight 0.08 = 0.08
+         was_filed: value 0.0 x weight 0.06 = 0.0
+         reuse: value 0.0 x weight 0.07 = 0.0
+         recency: value 0.9155 x weight 0.05 = 0.0458
+
+ 2. Form: milestone payment and earn-out  [D00766]  score 0.725  (found by equivalent terms)  (matches part of the query)
+    form | Corporate and M&A | merger | Wenrick Court of Appeal | 2023-11-27
+    matter M0161 Grindelow Works: merger | author Ugo Ellingsworth
+    model form, final, reused 17x
+    1 earlier or other version(s) folded in: D01290
+    … before it is sent out. The section on earn-out cross-refers to the discussion of acceleration event. A defined term for milestone payment was added to avoid inconsistency with …
+    why: text 0.406 (bm25 4.3109 / best 5.4147, weight 0.6; statistics over 1408 documents you can open)
+         term 'earn out' [thesaurus for 'deferred', weight 0.5: thesaurus: read 'deferred ... price' as 'deferred consideration']: title x1, body x2; in 39 visible documents; bm25 1.437
+         term 'earn out' [thesaurus for 'price', weight 0.5: thesaurus: read 'price ... contingent' as 'contingent consideration']: title x1, body x2; in 39 visible documents; bm25 1.437
+         term 'earn out' [thesaurus for 'contingent', weight 0.5: thesaurus: read 'price ... contingent' as 'contingent consideration']: title x1, body x2; in 39 visible documents; bm25 1.437
+         model_form: value 1.0 x weight 0.14 = 0.14
+         is_final: value 1.0 x weight 0.08 = 0.08
+         was_filed: value 0.0 x weight 0.06 = 0.0
+         reuse: value 0.9494 x weight 0.07 = 0.0665
+         recency: value 0.6384 x weight 0.05 = 0.0319
+
+ 3. Agreement: earn-out provisions  [D00873]  score 0.723  (found by equivalent terms)
+    agreement | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-10-09
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Dmitri Halvorsby
+    final
+    … Background facts relevant to earn-out period are summarised in the first part. Where buyer covenant interacts with acceleration event, the agreement follows the structure used in the firm's …
+    why: text 0.599 (bm25 5.4081 / best 5.4147, weight 0.6; statistics over 1408 documents you can open)
+         term 'earn out' [thesaurus for 'deferred', weight 0.5: thesaurus: read 'deferred ... price' as 'deferred consideration']: title x1, body x6; in 39 visible documents; bm25 1.5462
+         term 'earn out' [thesaurus for 'price', weight 0.5: thesaurus: read 'price ... contingent' as 'contingent consideration']: title x1, body x6; in 39 visible documents; bm25 1.5462
+         term 'earn out' [thesaurus for 'contingent', weight 0.5: thesaurus: read 'price ... contingent' as 'contingent consideration']: title x1, body x6; in 39 visible documents; bm25 1.5462
+         term 'agreement': title x1, body x1, metadata x1; in 549 visible documents; bm25 0.7694
+         model_form: value 0.0 x weight 0.14 = 0.0
+         is_final: value 1.0 x weight 0.08 = 0.08
+         was_filed: value 0.0 x weight 0.06 = 0.0
+         reuse: value 0.0 x weight 0.07 = 0.0
+         recency: value 0.8823 x weight 0.05 = 0.0441
+
+Filters available in these results:
+  doc_type: agreement (9), memo (8), form (6), checklist (3)
+  practice: Corporate and M&A (26)
+  matter_type: stock purchase (13), asset purchase (8), merger (2), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Brannock Court of Chancery (6), Tavish County (5), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), healthcare (5), logistics (2), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2025 (3), 2019 (2), 2026 (2)
+
+--- bridging off (python -m kx search --no-expand, or the tick box in the page) ---
+Query: 'deferred price contingent on future performance agreement' as U102
+No document you can open contains: deferred, contingent, future, performance. These results match only: price, agreement. Try other words for the rest.
+21 results among documents this user can open
+  expansion off: your exact words only
+
+ 1. Agreement: option to purchase  [D00626]  score 0.727
+    agreement | Real estate | construction | Wenrick Court of Appeal | 2017-11-08
+    matter M0133 Skellane Cooperative: construction | author Imani Ostergaarde
+    model form, final, reused 12x
+    … the discussion of option price. A related point on closing extension is noted but not developed here. The drafting team reworked the language on memorandum of option after comments from …
+
+ 2. Agreement: option to purchase  [D00335]  score 0.708
+    agreement | Real estate | construction | Brannock Court of Chancery | 2026-05-16
+    matter M0073 Thessaby Group: construction | author Dmitri Brandvold
+    final
+    The purpose of this agreement is to record the position on option to purchase. Alternatives to the current approach on right of first offer are described, including a simpler version …
+
+ 3. Agreement: option to purchase  [D00628]  score 0.707
+    agreement | Real estate | construction | Wenrick Court of Appeal | 2017-12-16
+    matter M0133 Skellane Cooperative: construction | author Valentina Bexleyford
+    final, reused 1x
+    The purpose of this agreement is to record the position on option to purchase. Annex 9 reproduces the agreed wording for purchase option. Particular attention was given to option price …
+
+Filters available in these results:
+  doc_type: agreement (9), form (5), memo (4), checklist (2), opinion letter (1)
+  practice: Real estate (21)
+  matter_type: commercial lease (10), construction (8), purchase and sale (2), property financing (1)
+  jurisdiction: Brannock Court of Chancery (6), Tavish County (4), Wenrick Court of Appeal (4), Marlowe Planning Commission (3), Estermere County Superior Court (2), City of Estermere (1)
+  client_industry: life sciences (7), logistics (6), food and beverage (3), manufacturing (3), financial services (1), retail (1)
+  year: 2024 (7), 2017 (5), 2021 (4), 2026 (4), 2025 (1)
+
+--- a misspelling ---
+Query: 'indemnifcation basket memo' as U102
+Read 'indemnifcation' as 'indemnification'.
+20 results among documents this user can open
+  also searched 'indemnification' for 'indemnifcation' (typo, weight 0.7; 'indemnifcation' is in no document you can open; 'indemnification' is 1 letter change away)
+  also searched 'deductible' for 'basket' (thesaurus, weight 0.6; thesaurus: corporate and transactions)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
+
+ 1. Memo: indemnification cap and basket  [D00240]  score 0.754  (found by equivalent terms)
+    memo | Corporate and M&A | asset purchase | Wenrick Court of Appeal | 2025-07-02
+    matter M0051 Ostrander Vale Ventures: asset purchase | author Dmitri Halvorsby
+    final, reused 3x
+    This memo addresses indemnification cap and basket in connection with the asset purchase matter. Notes from the call on escrow holdback are attached for the file. The principal issue is …
+
+ 2. Memo: indemnification cap and basket (adapted)  [D01218]  score 0.688  (found by equivalent terms)
+    memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-12-12
+    matter M0181 Umberleigh Cross Cooperative: stock purchase | author Ugo Ellingsworth
+    final
+    1 near-duplicate(s) folded in: D01021
+    Subject: indemnification cap and basket. Prepared in the course of the amended purchase matter in Tavish County. For shareholder agreement, see the separate document on that subject. Background facts relevant …
+
+Filters available in these results:
+  doc_type: agreement (8), memo (5), checklist (4), form (2), opinion letter (1)
+  practice: Corporate and M&A (20)
+  matter_type: stock purchase (10), asset purchase (4), merger (3), minority investment (2), joint venture (1)
+  jurisdiction: City of Estermere (6), Wenrick Court of Appeal (4), City of Aldhaven (3), Tavish County (2), Aldhaven Tax Tribunal (1), Brannock Court of Chancery (1)
+  client_industry: healthcare (6), financial services (4), software (4), energy (3), food and beverage (1), logistics (1)
+  year: 2022 (6), 2018 (5), 2017 (3), 2025 (3), 2023 (2), 2021 (1)

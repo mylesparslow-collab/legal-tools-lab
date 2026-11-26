@@ -1,0 +1,307 @@
+{
+  "note": "Fictional matter records for held-out batch A: approved timekeepers, rate cards, approvals and budgets.",
+  "matters": [
+    {
+      "client_id": "harrowgate",
+      "name": "Claim 5521, tractor-trailer collision, defense of insured carrier",
+      "timekeepers": {
+        "A01": {
+          "name": "Marisela Draycott-Obi",
+          "classification": "PT",
+          "approved_rate": "325.00",
+          "last_billed_rate": "325.00",
+          "rate_notice_date": null
+        },
+        "A02": {
+          "name": "Linus Achebe-Ferrand",
+          "classification": "AS",
+          "approved_rate": "240.00",
+          "last_billed_rate": "240.00",
+          "rate_notice_date": null
+        },
+        "A03": {
+          "name": "Petronella Vasquez-Holm",
+          "classification": "AS",
+          "approved_rate": "215.00",
+          "last_billed_rate": "200.00",
+          "rate_notice_date": "2026-09-01"
+        },
+        "A04": {
+          "name": "Dov Lindgren-Okoro",
+          "classification": "LA",
+          "approved_rate": "120.00",
+          "last_billed_rate": "120.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "HCE-5521",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "harrowgate",
+      "name": "Claim 5604, grocery store fall, defense of insured retailer",
+      "timekeepers": {
+        "A01": {
+          "name": "Marisela Draycott-Obi",
+          "classification": "PT",
+          "approved_rate": "325.00",
+          "last_billed_rate": "325.00",
+          "rate_notice_date": null
+        },
+        "A02": {
+          "name": "Linus Achebe-Ferrand",
+          "classification": "AS",
+          "approved_rate": "240.00",
+          "last_billed_rate": "240.00",
+          "rate_notice_date": null
+        },
+        "A04": {
+          "name": "Dov Lindgren-Okoro",
+          "classification": "LA",
+          "approved_rate": "120.00",
+          "last_billed_rate": "120.00",
+          "rate_notice_date": null
+        },
+        "A05": {
+          "name": "Wilhelmina Okpara-Stein",
+          "classification": "AS",
+          "approved_rate": "230.00",
+          "last_billed_rate": "230.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "HCE-5604",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "marrowfen",
+      "name": "Outfall replacement: contractor delay claim",
+      "timekeepers": {
+        "B11": {
+          "name": "Ignatius Corbel-Asante",
+          "classification": "PT",
+          "approved_rate": "410.00",
+          "last_billed_rate": "410.00",
+          "rate_notice_date": null
+        },
+        "B12": {
+          "name": "Solveig Marchetti-Dube",
+          "classification": "AS",
+          "approved_rate": "295.00",
+          "last_billed_rate": "295.00",
+          "rate_notice_date": null
+        },
+        "B13": {
+          "name": "Tamsin Okereke-Vance",
+          "classification": "AS",
+          "approved_rate": "270.00",
+          "last_billed_rate": "270.00",
+          "rate_notice_date": null
+        },
+        "B14": {
+          "name": "Rufus Delacroix-Imai",
+          "classification": "LA",
+          "approved_rate": "150.00",
+          "last_billed_rate": "150.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "MSD-2026-07",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      },
+      "budget": {
+        "cap": "85000.00",
+        "billed_to_date": "68000.00",
+        "phases": {
+          "L200": {
+            "cap": "20000.00",
+            "billed_to_date": "12000.00"
+          },
+          "L300": {
+            "cap": "30000.00",
+            "billed_to_date": "18000.00"
+          }
+        }
+      }
+    },
+    {
+      "client_id": "marrowfen",
+      "name": "Biosolids hauling contract dispute",
+      "timekeepers": {
+        "B11": {
+          "name": "Ignatius Corbel-Asante",
+          "classification": "PT",
+          "approved_rate": "410.00",
+          "last_billed_rate": "410.00",
+          "rate_notice_date": null
+        },
+        "B12": {
+          "name": "Solveig Marchetti-Dube",
+          "classification": "AS",
+          "approved_rate": "295.00",
+          "last_billed_rate": "295.00",
+          "rate_notice_date": null
+        },
+        "B13": {
+          "name": "Tamsin Okereke-Vance",
+          "classification": "AS",
+          "approved_rate": "270.00",
+          "last_billed_rate": "270.00",
+          "rate_notice_date": null
+        },
+        "B14": {
+          "name": "Rufus Delacroix-Imai",
+          "classification": "LA",
+          "approved_rate": "150.00",
+          "last_billed_rate": "150.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "MSD-2026-11",
+      "approvals": {
+        "research": false,
+        "travel": true,
+        "staffing": false
+      },
+      "budget": {
+        "cap": "40000.00",
+        "billed_to_date": "9800.00"
+      }
+    },
+    {
+      "client_id": "marrowfen",
+      "name": "Force main easement acquisition",
+      "timekeepers": {
+        "B11": {
+          "name": "Ignatius Corbel-Asante",
+          "classification": "PT",
+          "approved_rate": "410.00",
+          "last_billed_rate": "410.00",
+          "rate_notice_date": null
+        },
+        "B12": {
+          "name": "Solveig Marchetti-Dube",
+          "classification": "AS",
+          "approved_rate": "295.00",
+          "last_billed_rate": "295.00",
+          "rate_notice_date": null
+        },
+        "B13": {
+          "name": "Tamsin Okereke-Vance",
+          "classification": "AS",
+          "approved_rate": "270.00",
+          "last_billed_rate": "270.00",
+          "rate_notice_date": null
+        },
+        "B14": {
+          "name": "Rufus Delacroix-Imai",
+          "classification": "LA",
+          "approved_rate": "150.00",
+          "last_billed_rate": "150.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "MSD-2026-15",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      },
+      "budget": {
+        "cap": "25000.00",
+        "billed_to_date": "6000.00"
+      }
+    },
+    {
+      "client_id": "pindlecroft",
+      "name": "Gripper patent infringement suit",
+      "timekeepers": {
+        "C21": {
+          "name": "Henrike Solano-Brandt",
+          "classification": "PT",
+          "approved_rate": "760.00",
+          "last_billed_rate": "760.00",
+          "rate_notice_date": null
+        },
+        "C22": {
+          "name": "Obadiah Tran-Whitcombe",
+          "classification": "AS",
+          "approved_rate": "520.00",
+          "last_billed_rate": "520.00",
+          "rate_notice_date": null
+        },
+        "C23": {
+          "name": "Lucinda Mbatha-Rourke",
+          "classification": "AS",
+          "approved_rate": "480.00",
+          "last_billed_rate": "480.00",
+          "rate_notice_date": null
+        },
+        "C24": {
+          "name": "Ansel Petrov-Nwosu",
+          "classification": "LA",
+          "approved_rate": "260.00",
+          "last_billed_rate": "260.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "PCR-IP-22",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    },
+    {
+      "client_id": "pindlecroft",
+      "name": "Former controls engineer: trade secret claim",
+      "timekeepers": {
+        "C21": {
+          "name": "Henrike Solano-Brandt",
+          "classification": "PT",
+          "approved_rate": "760.00",
+          "last_billed_rate": "760.00",
+          "rate_notice_date": null
+        },
+        "C22": {
+          "name": "Obadiah Tran-Whitcombe",
+          "classification": "AS",
+          "approved_rate": "520.00",
+          "last_billed_rate": "520.00",
+          "rate_notice_date": null
+        },
+        "C23": {
+          "name": "Lucinda Mbatha-Rourke",
+          "classification": "AS",
+          "approved_rate": "480.00",
+          "last_billed_rate": "480.00",
+          "rate_notice_date": null
+        },
+        "C24": {
+          "name": "Ansel Petrov-Nwosu",
+          "classification": "LA",
+          "approved_rate": "260.00",
+          "last_billed_rate": "260.00",
+          "rate_notice_date": null
+        }
+      },
+      "matter_id": "PCR-EMP-09",
+      "approvals": {
+        "research": false,
+        "travel": false,
+        "staffing": false
+      }
+    }
+  ]
+}

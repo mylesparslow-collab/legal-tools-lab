@@ -11,5 +11,5 @@ related entities. The tool does not run a conflicts check and does not write the
 | Cassius Elmwood | Board or council member | President | ok | 7 |
 | Mireille Dunmore | Board or council member | Vice President | ok | 7 |
 | Anselm Torvald | Board or council member | Directors | ok | 7 |
-| Beatrix Okonkwo | Board or council member | Named in the RFP | ok | 7 |
-| Lucien Farraday | Board or council member | Named in the RFP | ok | 7 |
+| Beatrix Okonkwo | Board or council member | Directors | check: role taken from the name before it in a list | 7 |
+| Lucien Farraday | Board or council member | Directors | check: role taken from the name before it in a list | 7 |

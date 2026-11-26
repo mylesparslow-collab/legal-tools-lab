@@ -1,0 +1,26 @@
+BRAMBLEWICK FREIGHT COOPERATIVE
+Legal bill rules: one-page grid, issued by Legal Operations
+Fictional document written for a software test
+
+No. | Topic             | What we require                                                                                   | If not followed
+----+-------------------+---------------------------------------------------------------------------------------------------+------------------------
+1   | Timekeepers       | Named on the matter staffing list only.                                                           | Unlisted time unpaid
+2   | Team size         | Max 3 timekeepers per matter per bill unless Legal Ops agrees a bigger team.                      | Queried
+3   | Rates             | The matter rate card governs; nothing higher.                                                     | Excess cut
+4   | Rate rises        | 90 days written notice before a rise applies.                                                     | Rise ignored until then
+5   | Units             | Tenths of an hour.                                                                                | Line rejected
+6   | Task detail       | One task per line once a line is over 0.5 h.                                                      | Line cut
+7   | Narrative         | Must name the work product or the person dealt with; "review documents" or "emails" will not do.  | Line rejected
+8   | Codes             | Task code and activity code on every fee line.                                                    | Line rejected
+9   | Daily hours       | 8.0 h per person per day; more needs a note from the partner.                                     | Excess cut
+10  | Age of time       | Nothing over 90 days old at bill date.                                                            | Unpaid
+11  | Duplicates        | Paid once.                                                                                        | Second line struck
+12  | Admin work        | No charge for copying, filing, Bates work, staff training, or preparing or explaining a bill.     | Unpaid
+13  | Internal meetings | 0.4 h cap per line.                                                                               | Excess cut
+14  | Overhead          | No postage, phone, in-house word processing, staff overtime or database subscriptions.            | Unpaid
+15  | Receipts          | Needed for any cost of $50.00 and up.                                                             | Unpaid without one
+16  | Third-party costs | Actual cost only.                                                                                 | Mark-up cut
+17  | AI tools          | A line done with a generative AI tool must carry the tag [GAI].                                   | Line rejected
+18  | AI output         | No payment for AI-made summaries of transcripts or documents, or AI first-pass document review.   | Unpaid
+19  | Bill timing       | Monthly, by the 15th.                                                                             | Returned
+20  | Estimates         | Send a fee estimate at matter opening; update it if it moves by 20%.                              | Queried

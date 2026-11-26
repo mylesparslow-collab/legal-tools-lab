@@ -21,23 +21,23 @@ Agency type: transit. Practice: capital projects. Subjects found in the RFP: ope
 
 ## Experience records chosen
 
-- E-047 | score 13 | client NOT named (no consent)  
+- E-047 | score 13 | client NOT named (no consent to name the client)  
   Printed as: A regional transit agency in the north coast (special counsel, 2015 to present). Subjects: claims, construction, transit.  
   Why: same agency type (transit); same practice (capital projects); shared subjects: claims, construction, transit; ongoing; same role (special counsel).
-- E-050 | score 13 | client named (consent on file)  
+- E-050 | score 13 | client named (consent to name the client on file)  
   Printed as: Lantern Rock Regional Transit Authority (special counsel, 2021 to 2026). Served as special counsel on a public capital project. Work included construction, public contracting and real property.  
   Why: same agency type (transit); same practice (capital projects); shared subjects: construction, public contracting, real property; ended 2026 (within three years); same role (special counsel).
-- E-056 | score 13 | client NOT named (no consent)  
+- E-056 | score 13 | client NOT named (no consent to name the client)  
   Printed as: A regional transit agency in the south coast (special counsel, 2012 to present). Subjects: construction, public contracting, real property, transit.  
   Why: same agency type (transit); same practice (capital projects); shared subjects: construction, public contracting, real property, transit; ongoing; same role (special counsel).
-- E-049 | score 12 | client named (consent on file)  
+- E-049 | score 12 | client named (consent to name the client on file)  
   Printed as: Lantern Rock Transit District (special counsel, 2015 to 2022). Served as special counsel on a public capital project. Work included claims, construction and transit.  
   Why: same agency type (transit); same practice (capital projects); shared subjects: claims, construction, transit; ended 2022 (within six years); same role (special counsel).
-- E-051 | score 12 | client named (consent on file)  
+- E-051 | score 12 | client named (consent to name the client on file)  
   Printed as: Sorrel Canyon Transit District (special counsel, 2023 to 2024). Served as special counsel on a public capital project. Work included claims and transit.  
   Why: same agency type (transit); same practice (capital projects); shared subjects: claims, transit; ended 2024 (within three years); same role (special counsel).
 
 ## Relevant records that cannot be printed
 
-- E-055 | score 13 | no consent and no approved anonymized description. Ask the client, or approve a description.
-- E-048 | score 12 | no consent and no approved anonymized description. Ask the client, or approve a description.
+- E-055 | score 13 | no consent to name the client and no approved anonymized description. Ask the client, or approve a description.
+- E-048 | score 12 | no consent to name the client and no approved anonymized description. Ask the client, or approve a description.

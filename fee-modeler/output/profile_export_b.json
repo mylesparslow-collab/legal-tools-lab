@@ -5,8 +5,8 @@
   "summary": {
     "matters": 640,
     "closed_matters": 600,
-    "time_entries": 17741,
-    "invoices": 4256,
+    "time_entries": 17557,
+    "invoices": 4255,
     "first_work_date": "2020-01-02",
     "last_work_date": "2025-12-30"
   },
@@ -29,16 +29,16 @@
     },
     "time_entries": {
       "file": "WIP_DETAIL.csv",
-      "rows_read": 17741,
-      "rows_loaded": 17741,
+      "rows_read": 17557,
+      "rows_loaded": 17557,
       "missing_required": [],
       "missing_optional": [],
       "present": true
     },
     "invoices": {
       "file": "AR_SUMMARY.csv",
-      "rows_read": 4256,
-      "rows_loaded": 4256,
+      "rows_read": 4255,
+      "rows_loaded": 4255,
       "missing_required": [],
       "missing_optional": [],
       "present": true
@@ -58,12 +58,12 @@
     {
       "name": "table time_entries",
       "status": "ok",
-      "detail": "17741 rows read, 17741 loaded."
+      "detail": "17557 rows read, 17557 loaded."
     },
     {
       "name": "table invoices",
       "status": "ok",
-      "detail": "4256 rows read, 4256 loaded."
+      "detail": "4255 rows read, 4255 loaded."
     },
     {
       "name": "history span",
@@ -81,11 +81,11 @@
       "status": "warn",
       "detail": "0 entries before open, 6 after close (on 6 matters). Late time is included in a matter's cost but hidden from the back-test until its date has passed.",
       "examples": [
-        "M-0061",
-        "M-0093",
-        "M-0132",
-        "M-0163",
-        "M-0363"
+        "M-0045",
+        "M-0054",
+        "M-0180",
+        "M-0195",
+        "M-0479"
       ]
     },
     {
@@ -104,13 +104,13 @@
       "detail": "86% of hours carry a task code that maps to a phase. The rest use the date-window fallback.",
       "coded_hours_pct": "86",
       "unmapped_codes": {
-        "ZZ99": 157
+        "ZZ99": 153
       }
     },
     {
       "name": "task codes not in the phase map",
       "status": "warn",
-      "detail": "1 distinct codes on 157 entries: ZZ99. Add them to the task code map."
+      "detail": "1 distinct codes on 153 entries: ZZ99. Add them to the task code map."
     },
     {
       "name": "levels covered by rate card",
@@ -140,9 +140,9 @@
       "status": "warn",
       "detail": "3 closed matters have fees neither collected nor written off. Collected figures for them are not final.",
       "examples": [
-        "M-0478",
-        "M-0455",
-        "M-0226"
+        "M-0471",
+        "M-0073",
+        "M-0035"
       ]
     },
     {

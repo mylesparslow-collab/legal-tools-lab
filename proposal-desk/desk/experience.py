@@ -1,7 +1,9 @@
 """Experience matcher, team selection, minimum qualification checks, references.
 
-Client consent rule: a client is named only if the record has
-client_consent true. Without consent the approved anonymized description is
+Consent rules. Two separate permissions, never inferred from each other:
+consent_to_name_client (experience records) and consent_to_list_contact
+(reference records). A client is named only if its experience record has
+consent_to_name_client true. Without consent the approved anonymized description is
 printed instead. With neither, the record is left out and listed for the
 proposal lead so consent can be sought.
 """
@@ -25,7 +27,7 @@ def display_experience(rec):
     only when the client may be named, because summaries can identify a client.
     """
     role = rec.get("role") or "counsel"
-    if rec.get("client_consent") is True:
+    if rec.get("consent_to_name_client") is True:
         text = "%s (%s, %s)." % (rec["client_name"], role, _years_text(rec))
         if rec.get("summary"):
             text += " " + rec["summary"]
@@ -174,8 +176,21 @@ def check_min_quals(min_quals, team, facts, as_of):
     return out
 
 
-def select_references(rfp_meta, references, as_of, needed=3, reconfirm_days=365):
-    """References that may be listed. Only records with consent are returned as usable."""
+def client_may_be_named(reference, experience):
+    """True only if the reference is linked to an experience record whose client has agreed to be named."""
+    rec = next((e for e in experience if e.get("id") and e["id"] == reference.get("experience_id")), None)
+    return bool(rec) and rec.get("consent_to_name_client") is True \
+        and rec.get("client_name", "").casefold() == reference.get("client_name", "").casefold()
+
+
+def select_references(rfp_meta, references, experience, as_of, needed=3, reconfirm_days=365):
+    """References that may be listed.
+
+    A reference line prints the contact and the client, so it needs both
+    permissions: consent_to_list_contact on the reference record, and
+    consent_to_name_client on the experience record it is linked to. If either
+    is missing, false, or the link cannot be followed, the reference is withheld.
+    """
     as_of = parse_iso(as_of)
     usable, withheld = [], []
     for r in references:
@@ -191,8 +206,19 @@ def select_references(rfp_meta, references, as_of, needed=3, reconfirm_days=365)
             item["stale"] = (as_of - parse_iso(r["last_confirmed"])).days > reconfirm_days
         else:
             item["stale"] = True
-        (usable if r.get("client_consent") is True else withheld).append(item)
+        missing = []
+        if r.get("consent_to_list_contact") is not True:
+            missing.append("contact has not agreed to be listed")
+        if not client_may_be_named(r, experience):
+            missing.append("no linked experience record with consent to name the client")
+        if missing:
+            item["withheld_reason"] = "; ".join(missing)
+            withheld.append(item)
+        else:
+            usable.append(item)
     usable.sort(key=lambda x: (-x["score"], x["stale"], x["record"]["id"]))
     withheld.sort(key=lambda x: (-x["score"], x["record"]["id"]))
     return {"selected": usable[:needed], "needed": needed, "withheld_count": len(withheld),
-            "withheld_ids": [w["record"]["id"] for w in withheld[:10]]}
+            "withheld_ids": [w["record"]["id"] for w in withheld[:10]],
+            "withheld_contact": sum(1 for w in withheld if "contact" in w["withheld_reason"]),
+            "withheld_client": sum(1 for w in withheld if "client" in w["withheld_reason"])}

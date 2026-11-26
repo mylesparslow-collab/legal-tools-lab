@@ -1,0 +1,20 @@
+{
+  "note": "Fictional client-approved exceptions for held-out batch B.",
+  "waivers": [
+    {
+      "waiver_id": "W-B01",
+      "client_id": "bramblewick",
+      "matter_id": "BFC-LIT-301",
+      "rule_id": "BFC-DAYCAP-01",
+      "timekeeper_id": "D32",
+      "invoice_id": "",
+      "line_no": null,
+      "approved_by": "Claims manager, Bramblewick Freight Cooperative (fictional)",
+      "approved_on": "2026-10-09",
+      "reference": "Email of 2026-10-09, subject: long day for driver deposition",
+      "effective_from": "2026-10-13",
+      "expires_on": "2026-10-13",
+      "note": "Day over the daily limit approved for the 13 October driver deposition only."
+    }
+  ]
+}

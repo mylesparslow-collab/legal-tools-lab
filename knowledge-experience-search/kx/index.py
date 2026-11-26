@@ -23,7 +23,7 @@ import struct
 from collections import Counter
 
 from kx.schema import Document, PermissionSnapshot
-from kx.text import tokenize
+from kx.text import root, tokenize
 
 FIELD_TITLE, FIELD_BODY, FIELD_META = 0, 1, 2
 FIELD_NAMES = {FIELD_TITLE: "title", FIELD_BODY: "body", FIELD_META: "metadata"}
@@ -64,7 +64,9 @@ CREATE TABLE IF NOT EXISTS docs(
   reuse_count INTEGER, len_title INTEGER, len_body INTEGER, len_meta INTEGER,
   content_hash TEXT, sketch BLOB, modified TEXT);
 CREATE INDEX IF NOT EXISTS docs_matter ON docs(matter_id);
-CREATE TABLE IF NOT EXISTS terms(term_id INTEGER PRIMARY KEY, term TEXT UNIQUE NOT NULL);
+CREATE TABLE IF NOT EXISTS terms(
+  term_id INTEGER PRIMARY KEY, term TEXT UNIQUE NOT NULL, root TEXT);
+CREATE INDEX IF NOT EXISTS terms_root ON terms(root);
 CREATE TABLE IF NOT EXISTS postings(
   term_id INTEGER NOT NULL, doc_pk INTEGER NOT NULL, field INTEGER NOT NULL,
   tf INTEGER NOT NULL, positions TEXT NOT NULL,
@@ -165,7 +167,8 @@ class Indexer:
             self._terms = dict(self.conn.execute("SELECT term, term_id FROM terms"))
         tid = self._terms.get(term)
         if tid is None:
-            tid = self.conn.execute("INSERT INTO terms(term) VALUES (?)", (term,)).lastrowid
+            tid = self.conn.execute("INSERT INTO terms(term, root) VALUES (?, ?)",
+                                    (term, root(term))).lastrowid
             self._terms[term] = tid
         return tid
 

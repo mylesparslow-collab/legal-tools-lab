@@ -1,0 +1,1513 @@
+{
+ "about": "Held-out batch_b for the knowledge and experience search. Relevance judged by hand by an independent test author who did not read the search code or the corpus generator and did not run the tool. Lists are NOT exhaustive: see heldout/README.md. Fictional data.",
+ "as_of": "2026-11-26",
+ "eval_user": "U102",
+ "scoring": "Score precision at 5 and whether any listed document is in the top 10. A result that is not in 'relevant' is unjudged, not wrong; if it is in 'same_topic_not_listed' it is very likely relevant. Drafts and adapted copies count as their final or original, using the 'equivalents' map in data/synthetic/ANSWER_KEY.json.",
+ "extra_fields": {
+  "variation": "how the query differs from the documents' own words",
+  "focus_terms": "the narrower point the query is about, in the documents' words",
+  "same_topic_not_listed": "other documents U102 can open whose main topic is the same but which are not in 'relevant': either the list was capped at 10, or the document is a different type from the one asked for, or it mentions the focus point only in passing. Treat as unjudged.",
+  "judged_by": "the test the author applied when reading",
+  "experience_queries": "'who has done this' queries: the matters that justify the answer and the people the author judges should rank near the top"
+ },
+ "queries": [
+  {
+   "id": "HB01",
+   "category": "topic and sub-topic",
+   "query": "financial covenants compliance certificate",
+   "as_user": "U102",
+   "topic": "financial covenants",
+   "doc_type": null,
+   "relevant": [
+    "D00027",
+    "D00169",
+    "D00170",
+    "D00401",
+    "D00405",
+    "D00691",
+    "D00693",
+    "D01354",
+    "D01355",
+    "D01356"
+   ],
+   "variation": "own words",
+   "focus_terms": [
+    "compliance certificate"
+   ],
+   "same_topic_not_listed": [
+    "D00125",
+    "D00127",
+    "D00402",
+    "D00596",
+    "D00692",
+    "D00694",
+    "D00695",
+    "D00696",
+    "D01217",
+    "D01237",
+    "D01402",
+    "D01403",
+    "D01404"
+   ],
+   "judged_by": "main topic is 'financial covenants'; listed documents discuss compliance certificate as more than a passing mention"
+  },
+  {
+   "id": "HB02",
+   "category": "topic and sub-topic",
+   "query": "probate petition letters testamentary",
+   "as_user": "U102",
+   "topic": "probate petition",
+   "doc_type": null,
+   "relevant": [
+    "D00317",
+    "D00318",
+    "D00371",
+    "D00423",
+    "D00466",
+    "D00468",
+    "D00471",
+    "D00761",
+    "D01163",
+    "D01293"
+   ],
+   "variation": "own words",
+   "focus_terms": [
+    "letters testamentary"
+   ],
+   "same_topic_not_listed": [
+    "D00093",
+    "D00236",
+    "D00316",
+    "D00319",
+    "D00320",
+    "D00321",
+    "D00369",
+    "D00419",
+    "D00470",
+    "D01159",
+    "D01161",
+    "D01270",
+    "D01271"
+   ],
+   "judged_by": "main topic is 'probate petition'; listed documents discuss letters testamentary as more than a passing mention"
+  },
+  {
+   "id": "HB03",
+   "category": "topic and document type",
+   "query": "trademark opposition agreement",
+   "as_user": "U102",
+   "topic": "trademark opposition",
+   "doc_type": "agreement",
+   "relevant": [
+    "D00496",
+    "D00497",
+    "D00498",
+    "D00540",
+    "D01053"
+   ],
+   "variation": "own words",
+   "same_topic_not_listed": [
+    "D00495",
+    "D00543",
+    "D01049",
+    "D01050",
+    "D01051",
+    "D01054",
+    "D01055",
+    "D01188",
+    "D01191",
+    "D01192",
+    "D01267",
+    "D01268",
+    "D01315",
+    "D01316",
+    "D01317"
+   ],
+   "judged_by": "main topic is 'trademark opposition', document type is agreement"
+  },
+  {
+   "id": "HB04",
+   "category": "topic and sub-topic",
+   "query": "data processing agreement subprocessor",
+   "as_user": "U102",
+   "topic": "data processing agreement",
+   "doc_type": null,
+   "relevant": [
+    "D00555",
+    "D00809",
+    "D01010",
+    "D01204",
+    "D01205",
+    "D01209"
+   ],
+   "variation": "own words",
+   "focus_terms": [
+    "subprocessor"
+   ],
+   "same_topic_not_listed": [
+    "D00366",
+    "D00368",
+    "D00514",
+    "D00515",
+    "D01064",
+    "D01065",
+    "D01206",
+    "D01358"
+   ],
+   "judged_by": "main topic is 'data processing agreement'; listed documents discuss subprocessor as more than a passing mention"
+  },
+  {
+   "id": "HB05",
+   "category": "exact phrase",
+   "query": "\"leasehold mortgage\" ground lease",
+   "as_user": "U102",
+   "topic": "ground lease financing",
+   "doc_type": null,
+   "relevant": [
+    "D00107",
+    "D00151",
+    "D00152",
+    "D00336",
+    "D00382",
+    "D00383",
+    "D00624",
+    "D00629",
+    "D00980",
+    "D01226"
+   ],
+   "variation": "own words",
+   "focus_terms": [
+    "leasehold mortgage"
+   ],
+   "same_topic_not_listed": [
+    "D00010",
+    "D00109",
+    "D00149",
+    "D00385",
+    "D00529",
+    "D00625",
+    "D00976",
+    "D01309",
+    "D01416",
+    "D01417",
+    "D01418",
+    "D01432",
+    "D01433"
+   ],
+   "judged_by": "main topic is 'ground lease financing'; listed documents discuss leasehold mortgage as more than a passing mention"
+  },
+  {
+   "id": "HB06",
+   "category": "topic and sub-topic",
+   "query": "environmental review negative declaration",
+   "as_user": "U102",
+   "topic": "environmental review",
+   "doc_type": null,
+   "relevant": [
+    "D00155",
+    "D00156",
+    "D00437",
+    "D00732",
+    "D00887",
+    "D00889",
+    "D01294",
+    "D01295",
+    "D01296"
+   ],
+   "variation": "own words",
+   "focus_terms": [
+    "negative declaration"
+   ],
+   "same_topic_not_listed": [
+    "D00153",
+    "D00154",
+    "D00158",
+    "D00441",
+    "D00534",
+    "D00535",
+    "D00730",
+    "D00731",
+    "D00733",
+    "D00782",
+    "D00785",
+    "D00786",
+    "D00885",
+    "D00886",
+    "D00888",
+    "D01224",
+    "D01225",
+    "D01240",
+    "D01262",
+    "D01263",
+    "D01276",
+    "D01277",
+    "D01278",
+    "D01282",
+    "D01326",
+    "D01327"
+   ],
+   "judged_by": "main topic is 'environmental review'; listed documents discuss negative declaration as more than a passing mention"
+  },
+  {
+   "id": "HB07",
+   "category": "topic and document type",
+   "query": "partnership allocations memo",
+   "as_user": "U102",
+   "topic": "partnership allocations",
+   "doc_type": "memo",
+   "relevant": [
+    "D00032",
+    "D00033",
+    "D00411",
+    "D00412",
+    "D00456",
+    "D00458",
+    "D00905",
+    "D01444"
+   ],
+   "variation": "own words",
+   "same_topic_not_listed": [
+    "D00034",
+    "D00035",
+    "D00036",
+    "D00407",
+    "D00408",
+    "D00409",
+    "D00457",
+    "D00459",
+    "D00460",
+    "D00462",
+    "D01232",
+    "D01310",
+    "D01311",
+    "D01312",
+    "D01405",
+    "D01406",
+    "D01407"
+   ],
+   "judged_by": "main topic is 'partnership allocations', document type is memo"
+  },
+  {
+   "id": "HB08",
+   "category": "topic and sub-topic",
+   "query": "personal jurisdiction minimum contacts",
+   "as_user": "U102",
+   "topic": "personal jurisdiction",
+   "doc_type": null,
+   "relevant": [
+    "D00194",
+    "D00245",
+    "D00675",
+    "D00723",
+    "D00725",
+    "D01171",
+    "D01174",
+    "D01269",
+    "D01494",
+    "D01495"
+   ],
+   "variation": "own words",
+   "focus_terms": [
+    "minimum contacts"
+   ],
+   "same_topic_not_listed": [
+    "D00246",
+    "D00248",
+    "D00672",
+    "D00673",
+    "D00674",
+    "D00724",
+    "D00821",
+    "D00822",
+    "D01169",
+    "D01493"
+   ],
+   "judged_by": "main topic is 'personal jurisdiction'; listed documents discuss minimum contacts as more than a passing mention"
+  },
+  {
+   "id": "HB09",
+   "category": "topic and sub-topic",
+   "query": "change in control equity acceleration",
+   "as_user": "U102",
+   "topic": "executive employment agreement",
+   "doc_type": null,
+   "relevant": [
+    "D00212",
+    "D00214",
+    "D00395",
+    "D00580",
+    "D00585",
+    "D00933",
+    "D00935",
+    "D00936",
+    "D01139",
+    "D01229"
+   ],
+   "variation": "own words",
+   "focus_terms": [
+    "change in control",
+    "equity acceleration"
+   ],
+   "same_topic_not_listed": [
+    "D00160",
+    "D00162",
+    "D00208",
+    "D00209",
+    "D00210",
+    "D00211",
+    "D00394",
+    "D00581",
+    "D00582",
+    "D00583",
+    "D00684",
+    "D00686",
+    "D01141",
+    "D01332",
+    "D01333",
+    "D01334",
+    "D01472",
+    "D01473"
+   ],
+   "judged_by": "main topic is 'executive employment agreement'; listed documents discuss change in control / equity acceleration as more than a passing mention"
+  },
+  {
+   "id": "HB10",
+   "category": "topic with a type filter",
+   "query": "transition services type:\"checklist\"",
+   "as_user": "U102",
+   "topic": "transition services",
+   "doc_type": "checklist",
+   "relevant": [
+    "D00374",
+    "D00523",
+    "D00763",
+    "D00764"
+   ],
+   "variation": "own words",
+   "same_topic_not_listed": [
+    "D00325",
+    "D00520",
+    "D00521",
+    "D00522",
+    "D00765",
+    "D00767",
+    "D00769",
+    "D01123",
+    "D01216",
+    "D01313",
+    "D01314",
+    "D01453"
+   ],
+   "judged_by": "main topic is 'transition services', document type is checklist"
+  },
+  {
+   "id": "HB11",
+   "category": "different vocabulary",
+   "query": "DSAR",
+   "as_user": "U102",
+   "topic": "data subject requests",
+   "doc_type": null,
+   "relevant": [
+    "D00273",
+    "D00274",
+    "D00277",
+    "D00857",
+    "D00858",
+    "D00859",
+    "D00860",
+    "D00906",
+    "D00963"
+   ],
+   "variation": "abbreviation",
+   "same_topic_not_listed": [],
+   "judged_by": "main topic is 'data subject requests'"
+  },
+  {
+   "id": "HB12",
+   "category": "different vocabulary",
+   "query": "FLP gifting",
+   "as_user": "U102",
+   "topic": "family limited partnership",
+   "doc_type": null,
+   "relevant": [
+    "D00183",
+    "D00185",
+    "D00189",
+    "D00557",
+    "D00559",
+    "D00560",
+    "D00608",
+    "D00609",
+    "D00610",
+    "D00611"
+   ],
+   "variation": "abbreviation",
+   "same_topic_not_listed": [
+    "D01120",
+    "D01415"
+   ],
+   "judged_by": "main topic is 'family limited partnership'"
+  },
+  {
+   "id": "HB13",
+   "category": "different vocabulary",
+   "query": "software licence compliance audit",
+   "as_user": "U102",
+   "topic": "software license",
+   "doc_type": null,
+   "relevant": [
+    "D00121",
+    "D00124",
+    "D00216",
+    "D00217",
+    "D00689",
+    "D01187",
+    "D01189",
+    "D01190"
+   ],
+   "variation": "British spelling (documents use license)",
+   "same_topic_not_listed": [],
+   "judged_by": "main topic is 'software license'"
+  },
+  {
+   "id": "HB14",
+   "category": "different vocabulary",
+   "query": "sacking a trustee",
+   "as_user": "U102",
+   "topic": "trustee removal",
+   "doc_type": null,
+   "relevant": [
+    "D00048",
+    "D00142",
+    "D00558",
+    "D00561",
+    "D00862",
+    "D00865",
+    "D00866",
+    "D00867",
+    "D00964",
+    "D01119"
+   ],
+   "variation": "British informal",
+   "same_topic_not_listed": [
+    "D00045",
+    "D00046",
+    "D00140",
+    "D00141",
+    "D00861",
+    "D00863",
+    "D00864",
+    "D01121",
+    "D01440"
+   ],
+   "judged_by": "main topic is 'trustee removal'"
+  },
+  {
+   "id": "HB15",
+   "category": "different vocabulary",
+   "query": "tax on payments to a foreign parent company",
+   "as_user": "U102",
+   "topic": "cross-border withholding",
+   "doc_type": null,
+   "relevant": [
+    "D00130",
+    "D00132",
+    "D00228",
+    "D00229",
+    "D00461",
+    "D00509",
+    "D00511",
+    "D00512",
+    "D00513",
+    "D00702"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [
+    "D00507",
+    "D00508",
+    "D00651",
+    "D00655",
+    "D00697",
+    "D00700",
+    "D00852",
+    "D00854",
+    "D01223"
+   ],
+   "judged_by": "main topic is 'cross-border withholding'"
+  },
+  {
+   "id": "HB16",
+   "category": "different vocabulary",
+   "query": "pop-up asking visitors to accept tracking",
+   "as_user": "U102",
+   "topic": "cookie consent",
+   "doc_type": null,
+   "relevant": [
+    "D00087",
+    "D00231",
+    "D00232",
+    "D00234",
+    "D00957",
+    "D00958",
+    "D00959",
+    "D00960",
+    "D00961",
+    "D00962"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [],
+   "judged_by": "main topic is 'cookie consent'"
+  },
+  {
+   "id": "HB17",
+   "category": "different vocabulary",
+   "query": "builder's fixed price and penalties for finishing late",
+   "as_user": "U102",
+   "topic": "construction contract",
+   "doc_type": null,
+   "relevant": [
+    "D00200",
+    "D00201",
+    "D00202",
+    "D00482",
+    "D00484",
+    "D01085",
+    "D01086"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [],
+   "judged_by": "main topic is 'construction contract'"
+  },
+  {
+   "id": "HB18",
+   "category": "different vocabulary",
+   "query": "permission to build closer to the boundary than the rules allow",
+   "as_user": "U102",
+   "topic": "zoning variance",
+   "doc_type": null,
+   "relevant": [
+    "D00016",
+    "D00017",
+    "D00293",
+    "D00294",
+    "D00295",
+    "D00296",
+    "D00389",
+    "D00392",
+    "D00829",
+    "D00831"
+   ],
+   "variation": "lay phrasing, British term",
+   "same_topic_not_listed": [
+    "D01182",
+    "D01338",
+    "D01339",
+    "D01340",
+    "D01341",
+    "D01378"
+   ],
+   "judged_by": "main topic is 'zoning variance'"
+  },
+  {
+   "id": "HB19",
+   "category": "different vocabulary",
+   "query": "internal probe into a harassment complaint",
+   "as_user": "U102",
+   "topic": "workplace investigation",
+   "doc_type": null,
+   "relevant": [
+    "D00020",
+    "D00021",
+    "D00022",
+    "D00641",
+    "D00685",
+    "D01427",
+    "D01428"
+   ],
+   "variation": "synonym",
+   "same_topic_not_listed": [],
+   "judged_by": "main topic is 'workplace investigation'"
+  },
+  {
+   "id": "HB20",
+   "category": "different vocabulary",
+   "query": "forcing the case out of court to a private arbitrator",
+   "as_user": "U102",
+   "topic": "arbitration clause enforcement",
+   "doc_type": null,
+   "relevant": [
+    "D00004",
+    "D00008",
+    "D00285",
+    "D00379",
+    "D00428",
+    "D01077",
+    "D01079",
+    "D01081",
+    "D01172",
+    "D01176"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [
+    "D00006",
+    "D00009",
+    "D00286",
+    "D00287",
+    "D00380",
+    "D00429",
+    "D00431",
+    "D01170",
+    "D01173",
+    "D01175",
+    "D01231"
+   ],
+   "judged_by": "main topic is 'arbitration clause enforcement'"
+  },
+  {
+   "id": "HB21",
+   "category": "different vocabulary",
+   "query": "trust paying income for life with the rest going to charity",
+   "as_user": "U102",
+   "topic": "charitable remainder trust",
+   "doc_type": null,
+   "relevant": [
+    "D00047",
+    "D00049",
+    "D00050",
+    "D00094",
+    "D00518",
+    "D00519",
+    "D00911",
+    "D00913",
+    "D00917",
+    "D01069"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [
+    "D00044",
+    "D00095",
+    "D00914",
+    "D01070",
+    "D01071",
+    "D01245",
+    "D01246",
+    "D01247"
+   ],
+   "judged_by": "main topic is 'charitable remainder trust'"
+  },
+  {
+   "id": "HB22",
+   "category": "different vocabulary",
+   "query": "service charge reconciliation dispute",
+   "as_user": "U102",
+   "topic": "operating expense passthrough",
+   "doc_type": null,
+   "relevant": [
+    "D00108",
+    "D00111",
+    "D00776",
+    "D00778",
+    "D00779",
+    "D00781",
+    "D00826",
+    "D00880",
+    "D00884",
+    "D01084"
+   ],
+   "variation": "British synonym",
+   "same_topic_not_listed": [
+    "D00106",
+    "D00110",
+    "D00436",
+    "D00780",
+    "D00824",
+    "D00878",
+    "D00882",
+    "D00883",
+    "D01083",
+    "D01129",
+    "D01130",
+    "D01346",
+    "D01347"
+   ],
+   "judged_by": "main topic is 'operating expense passthrough'"
+  },
+  {
+   "id": "HB23",
+   "category": "different vocabulary",
+   "query": "making sure the bank's lien is properly registered",
+   "as_user": "U102",
+   "topic": "security interest perfection",
+   "doc_type": null,
+   "relevant": [
+    "D00076",
+    "D00077",
+    "D00078",
+    "D00901",
+    "D00902",
+    "D00946",
+    "D01242",
+    "D01306",
+    "D01307",
+    "D01308"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [
+    "D01462"
+   ],
+   "judged_by": "main topic is 'security interest perfection'"
+  },
+  {
+   "id": "HB24",
+   "category": "different vocabulary",
+   "query": "royalty terms for using patented technology",
+   "as_user": "U102",
+   "topic": "patent license",
+   "doc_type": null,
+   "relevant": [
+    "D00023",
+    "D00263",
+    "D00264",
+    "D00265",
+    "D00541",
+    "D00895",
+    "D00896",
+    "D00898",
+    "D00996",
+    "D00998"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [
+    "D00494",
+    "D00542",
+    "D00796",
+    "D00997",
+    "D01365",
+    "D01368",
+    "D01369",
+    "D01370",
+    "D01496",
+    "D01497",
+    "D01500"
+   ],
+   "judged_by": "main topic is 'patent license'"
+  },
+  {
+   "id": "HB25",
+   "category": "different vocabulary",
+   "query": "checking who really owns the IP before the acquisition",
+   "as_user": "U102",
+   "topic": "chain of title review",
+   "doc_type": null,
+   "relevant": [
+    "D00119",
+    "D00120",
+    "D00122",
+    "D00123",
+    "D00166",
+    "D00396",
+    "D00397",
+    "D00841",
+    "D00843",
+    "D00937"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [
+    "D00842",
+    "D00844",
+    "D00845",
+    "D00939",
+    "D00940",
+    "D00941",
+    "D00942",
+    "D01101",
+    "D01105",
+    "D01274",
+    "D01275",
+    "D01288",
+    "D01471"
+   ],
+   "judged_by": "main topic is 'chain of title review'"
+  },
+  {
+   "id": "HB26",
+   "category": "different vocabulary",
+   "query": "price true-up after completion for stock and debtors",
+   "as_user": "U102",
+   "topic": "working capital adjustment",
+   "doc_type": null,
+   "relevant": [
+    "D00239",
+    "D00241",
+    "D00242",
+    "D00322",
+    "D00323",
+    "D00324",
+    "D00326",
+    "D00473",
+    "D00668",
+    "D00671"
+   ],
+   "variation": "British lay phrasing",
+   "same_topic_not_listed": [
+    "D01429",
+    "D01430",
+    "D01485",
+    "D01486",
+    "D01487"
+   ],
+   "judged_by": "main topic is 'working capital adjustment'"
+  },
+  {
+   "id": "HB27",
+   "category": "different vocabulary",
+   "query": "limit on what the seller pays for breach of warranty",
+   "as_user": "U102",
+   "topic": "indemnification cap and basket",
+   "doc_type": null,
+   "relevant": [
+    "D00052",
+    "D00240",
+    "D00243",
+    "D00281",
+    "D00918",
+    "D00919",
+    "D01021",
+    "D01024",
+    "D01072",
+    "D01075"
+   ],
+   "variation": "British synonym",
+   "same_topic_not_listed": [
+    "D00054",
+    "D00192",
+    "D00282",
+    "D00284",
+    "D01026",
+    "D01073",
+    "D01074",
+    "D01214",
+    "D01218",
+    "D01425",
+    "D01426",
+    "D01431"
+   ],
+   "judged_by": "main topic is 'indemnification cap and basket'"
+  },
+  {
+   "id": "HB28",
+   "category": "different vocabulary",
+   "query": "someone to manage my affairs if I lose capacity",
+   "as_user": "U102",
+   "topic": "durable power of attorney",
+   "doc_type": null,
+   "relevant": [
+    "D00237",
+    "D00238",
+    "D00517",
+    "D00713",
+    "D00715",
+    "D01213",
+    "D01233"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [],
+   "judged_by": "main topic is 'durable power of attorney'"
+  },
+  {
+   "id": "HB29",
+   "category": "different vocabulary",
+   "query": "councillors meeting in private session",
+   "as_user": "U102",
+   "topic": "open meeting procedures",
+   "doc_type": null,
+   "relevant": [
+    "D00340",
+    "D00342",
+    "D00345",
+    "D00438",
+    "D00439",
+    "D00440",
+    "D00536"
+   ],
+   "variation": "lay phrasing",
+   "same_topic_not_listed": [],
+   "judged_by": "main topic is 'open meeting procedures'"
+  },
+  {
+   "id": "HB30",
+   "category": "different vocabulary",
+   "query": "forum selecton clause enforcability",
+   "as_user": "U102",
+   "topic": "forum selection clause",
+   "doc_type": null,
+   "relevant": [
+    "D00005",
+    "D00007",
+    "D00056",
+    "D00196",
+    "D00197",
+    "D00198",
+    "D00526",
+    "D01030",
+    "D01125",
+    "D01128"
+   ],
+   "variation": "typo",
+   "same_topic_not_listed": [
+    "D00193",
+    "D00195",
+    "D00378",
+    "D00381",
+    "D00524",
+    "D00525",
+    "D00877",
+    "D01028",
+    "D01029",
+    "D01127",
+    "D01220",
+    "D01434",
+    "D01435"
+   ],
+   "judged_by": "main topic is 'forum selection clause'"
+  }
+ ],
+ "experience_queries": [
+  {
+   "id": "WB1",
+   "query": "syndicated loan",
+   "as_user": "U102",
+   "variation": "own words",
+   "matter_rule": "matter type is syndicated loan",
+   "matters": [
+    "M0017",
+    "M0047",
+    "M0067",
+    "M0087",
+    "M0097",
+    "M0107",
+    "M0157",
+    "M0167",
+    "M0217",
+    "M0247"
+   ],
+   "strongest": [
+    {
+     "user_id": "U075",
+     "name": "Rosalind Ibekwell",
+     "title": "Partner",
+     "lead_on": [
+      "M0017",
+      "M0047",
+      "M0097",
+      "M0107",
+      "M0157",
+      "M0217"
+     ],
+     "support_on": [
+      "M0087"
+     ],
+     "hours_recorded": 221.4
+    }
+   ],
+   "should_rank_near_top": [
+    {
+     "user_id": "U076",
+     "name": "Farid Wrenfold",
+     "title": "Counsel",
+     "lead_on": [],
+     "support_on": [
+      "M0017",
+      "M0047",
+      "M0067",
+      "M0087",
+      "M0157",
+      "M0167"
+     ],
+     "hours_recorded": 206.1
+    },
+    {
+     "user_id": "U078",
+     "name": "Rosalind Nakashiro",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0017",
+      "M0067",
+      "M0097",
+      "M0107",
+      "M0157",
+      "M0247"
+     ],
+     "hours_recorded": 181.9
+    }
+   ],
+   "also_reasonable": [
+    {
+     "user_id": "U080",
+     "name": "Ugo Oyelaranmi",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0017",
+      "M0047",
+      "M0097",
+      "M0107",
+      "M0167"
+     ],
+     "hours_recorded": 129.0
+    },
+    {
+     "user_id": "U073",
+     "name": "Valentina Novakovitch",
+     "title": "Partner",
+     "lead_on": [
+      "M0067",
+      "M0087"
+     ],
+     "support_on": [],
+     "hours_recorded": 95.6
+    },
+    {
+     "user_id": "U074",
+     "name": "Calla Marchetto",
+     "title": "Partner",
+     "lead_on": [
+      "M0167",
+      "M0247"
+     ],
+     "support_on": [],
+     "hours_recorded": 74.4
+    }
+   ]
+  },
+  {
+   "id": "WB2",
+   "query": "trade secret dispute",
+   "as_user": "U102",
+   "variation": "own words",
+   "matter_rule": "matter type is trade secret dispute",
+   "matters": [
+    "M0116",
+    "M0126",
+    "M0156",
+    "M0226",
+    "M0236"
+   ],
+   "strongest": [
+    {
+     "user_id": "U063",
+     "name": "Wendell Jorvikson",
+     "title": "Partner",
+     "lead_on": [
+      "M0126",
+      "M0226",
+      "M0236"
+     ],
+     "support_on": [],
+     "hours_recorded": 86.1
+    }
+   ],
+   "should_rank_near_top": [
+    {
+     "user_id": "U072",
+     "name": "Joaquin Pennwarden",
+     "title": "Paralegal",
+     "lead_on": [],
+     "support_on": [
+      "M0116",
+      "M0126",
+      "M0156",
+      "M0226"
+     ],
+     "hours_recorded": 148.1
+    },
+    {
+     "user_id": "U064",
+     "name": "Zelda Abernathey",
+     "title": "Counsel",
+     "lead_on": [],
+     "support_on": [
+      "M0116",
+      "M0126",
+      "M0156",
+      "M0236"
+     ],
+     "hours_recorded": 98.0
+    }
+   ],
+   "also_reasonable": [
+    {
+     "user_id": "U062",
+     "name": "Piotr Drummondale",
+     "title": "Partner",
+     "lead_on": [
+      "M0116",
+      "M0156"
+     ],
+     "support_on": [],
+     "hours_recorded": 47.7
+    },
+    {
+     "user_id": "U066",
+     "name": "Ugo Rasmundsen",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0126",
+      "M0236"
+     ],
+     "hours_recorded": 53.4
+    }
+   ]
+  },
+  {
+   "id": "WB3",
+   "query": "tax controversy",
+   "as_user": "U102",
+   "variation": "own words",
+   "matter_rule": "matter type is tax controversy",
+   "matters": [
+    "M0038",
+    "M0058",
+    "M0088",
+    "M0118",
+    "M0158",
+    "M0178",
+    "M0198",
+    "M0218",
+    "M0248"
+   ],
+   "strongest": [
+    {
+     "user_id": "U086",
+     "name": "Quinn Corriveaux",
+     "title": "Partner",
+     "lead_on": [
+      "M0088",
+      "M0198",
+      "M0248"
+     ],
+     "support_on": [
+      "M0118",
+      "M0158",
+      "M0178"
+     ],
+     "hours_recorded": 148.1
+    },
+    {
+     "user_id": "U087",
+     "name": "Ugo Drummondale",
+     "title": "Partner",
+     "lead_on": [
+      "M0038",
+      "M0118",
+      "M0158",
+      "M0178"
+     ],
+     "support_on": [
+      "M0088"
+     ],
+     "hours_recorded": 131.0
+    }
+   ],
+   "should_rank_near_top": [
+    {
+     "user_id": "U085",
+     "name": "Nikhil Rasmundsen",
+     "title": "Partner",
+     "lead_on": [
+      "M0058",
+      "M0218"
+     ],
+     "support_on": [
+      "M0038"
+     ],
+     "hours_recorded": 115.9
+    }
+   ],
+   "also_reasonable": [
+    {
+     "user_id": "U093",
+     "name": "Eleni Rasmundsen",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0058",
+      "M0088",
+      "M0118",
+      "M0158"
+     ],
+     "hours_recorded": 95.9
+    },
+    {
+     "user_id": "U092",
+     "name": "Eleni Ostergaarde",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0038",
+      "M0088",
+      "M0198",
+      "M0218"
+     ],
+     "hours_recorded": 85.2
+    },
+    {
+     "user_id": "U090",
+     "name": "Cormac Kowalczynsk",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0058",
+      "M0158",
+      "M0248"
+     ],
+     "hours_recorded": 114.6
+    }
+   ]
+  },
+  {
+   "id": "WB4",
+   "query": "financing a building on leased land",
+   "as_user": "U102",
+   "variation": "different vocabulary: lay phrasing",
+   "matter_rule": "matter description is centred on ground lease financing",
+   "matters": [
+    "M0033",
+    "M0083",
+    "M0133"
+   ],
+   "strongest": [
+    {
+     "user_id": "U027",
+     "name": "Hollis Bexleyford",
+     "title": "Partner",
+     "lead_on": [
+      "M0083"
+     ],
+     "support_on": [
+      "M0033",
+      "M0133"
+     ],
+     "hours_recorded": 80.5
+    }
+   ],
+   "should_rank_near_top": [
+    {
+     "user_id": "U033",
+     "name": "Wendell Ashcombe",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0033",
+      "M0083"
+     ],
+     "hours_recorded": 74.4
+    },
+    {
+     "user_id": "U035",
+     "name": "Cormac Varrowby",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0083",
+      "M0133"
+     ],
+     "hours_recorded": 63.9
+    }
+   ],
+   "also_reasonable": [
+    {
+     "user_id": "U025",
+     "name": "Imani Ostergaarde",
+     "title": "Partner",
+     "lead_on": [
+      "M0133"
+     ],
+     "support_on": [],
+     "hours_recorded": 49.6
+    },
+    {
+     "user_id": "U026",
+     "name": "Hollis Rasmundsen",
+     "title": "Partner",
+     "lead_on": [
+      "M0033"
+     ],
+     "support_on": [],
+     "hours_recorded": 33.7
+    }
+   ]
+  },
+  {
+   "id": "WB5",
+   "query": "taxing a charity's side business income",
+   "as_user": "U102",
+   "variation": "different vocabulary: lay phrasing",
+   "matter_rule": "matter description is centred on unrelated business income",
+   "matters": [
+    "M0018",
+    "M0028",
+    "M0048",
+    "M0158",
+    "M0178",
+    "M0218",
+    "M0228"
+   ],
+   "strongest": [
+    {
+     "user_id": "U085",
+     "name": "Nikhil Rasmundsen",
+     "title": "Partner",
+     "lead_on": [
+      "M0018",
+      "M0028",
+      "M0048",
+      "M0218"
+     ],
+     "support_on": [],
+     "hours_recorded": 158.1
+    }
+   ],
+   "should_rank_near_top": [
+    {
+     "user_id": "U087",
+     "name": "Ugo Drummondale",
+     "title": "Partner",
+     "lead_on": [
+      "M0158",
+      "M0178",
+      "M0228"
+     ],
+     "support_on": [
+      "M0028"
+     ],
+     "hours_recorded": 114.6
+    },
+    {
+     "user_id": "U092",
+     "name": "Eleni Ostergaarde",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0028",
+      "M0048",
+      "M0218"
+     ],
+     "hours_recorded": 123.9
+    }
+   ],
+   "also_reasonable": [
+    {
+     "user_id": "U089",
+     "name": "Rosalind Castellane",
+     "title": "Counsel",
+     "lead_on": [],
+     "support_on": [
+      "M0018",
+      "M0048",
+      "M0218"
+     ],
+     "hours_recorded": 74.3
+    },
+    {
+     "user_id": "U086",
+     "name": "Quinn Corriveaux",
+     "title": "Partner",
+     "lead_on": [],
+     "support_on": [
+      "M0048",
+      "M0158",
+      "M0178"
+     ],
+     "hours_recorded": 71.1
+    }
+   ]
+  },
+  {
+   "id": "WB6",
+   "query": "adjusting duties for staff with disabilities",
+   "as_user": "U102",
+   "variation": "different vocabulary: lay phrasing",
+   "matter_rule": "matter description is centred on reasonable accommodation",
+   "matters": [
+    "M0055",
+    "M0075",
+    "M0095",
+    "M0115",
+    "M0185",
+    "M0205"
+   ],
+   "strongest": [
+    {
+     "user_id": "U050",
+     "name": "Calla Corriveaux",
+     "title": "Partner",
+     "lead_on": [
+      "M0055",
+      "M0075",
+      "M0095",
+      "M0185",
+      "M0205"
+     ],
+     "support_on": [
+      "M0115"
+     ],
+     "hours_recorded": 242.4
+    }
+   ],
+   "should_rank_near_top": [
+    {
+     "user_id": "U051",
+     "name": "Valentina Brandvold",
+     "title": "Partner",
+     "lead_on": [
+      "M0115"
+     ],
+     "support_on": [
+      "M0095"
+     ],
+     "hours_recorded": 73.8
+    },
+    {
+     "user_id": "U054",
+     "name": "Calla Yamadera",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0055",
+      "M0075",
+      "M0115",
+      "M0205"
+     ],
+     "hours_recorded": 66.2
+    }
+   ],
+   "also_reasonable": [
+    {
+     "user_id": "U057",
+     "name": "Joaquin Szymborsk",
+     "title": "Associate",
+     "lead_on": [],
+     "support_on": [
+      "M0075",
+      "M0185"
+     ],
+     "hours_recorded": 69.0
+    },
+    {
+     "user_id": "U060",
+     "name": "Piotr Strathmoor",
+     "title": "Paralegal",
+     "lead_on": [],
+     "support_on": [
+      "M0185",
+      "M0205"
+     ],
+     "hours_recorded": 59.7
+    }
+   ]
+  }
+ ]
+}

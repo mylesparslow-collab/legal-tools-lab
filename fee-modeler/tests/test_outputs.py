@@ -115,9 +115,10 @@ def test_refusal_memo_shows_no_fee_figures(ws, root):
 def test_price_cli_writes_memo_and_json(tmp_path, root, capsys):
     code = main(["price", "--proposal", os.path.join(root, "data", "proposals", "P-003.json"), "--out", str(tmp_path)])
     assert code == 0
-    assert "n=41 comps" in capsys.readouterr().out
+    out = capsys.readouterr().out
+    assert "n=41 comps" in out and "planning" in out and "of the comps (descriptive)" in out
     data = no_json_floats(os.path.join(tmp_path, "memo_P-003.json"))
-    assert data["status"] == "modeled" and data["selection"]["n"] == 41
+    assert data["status"] == "modeled" and data["selection"]["n"] == 41 and data["drift"]["action"] == "higher_of_two"
     assert os.path.getsize(os.path.join(tmp_path, "memo_P-003.html")) > 5000
     code = main(["price", "--proposal", os.path.join(root, "data", "proposals", "P-004.json"), "--out", str(tmp_path)])
     assert code == 3                                       # refused, and says so through the exit code
@@ -160,7 +161,7 @@ def test_index_page_is_static_and_matches_python_figures(ws, bt, root):
     assert html.count("http://") == 1 and "http://www.w3.org/2000/svg" in html     # the SVG namespace string only
     assert "Not financial, pricing or legal advice" in html and "synthetic" in html
     data = json.loads(re.search(r'id="explorer-data">(.*?)</script>', html, re.S).group(1))
-    assert [p["id"] for p in data] == ["P-001", "P-002", "P-003", "P-003b"]        # the refused one has no explorer
+    assert [p["id"] for p in data] == ["P-001", "P-002", "P-003", "P-003b", "P-003c", "P-005"]        # the refused one has no explorer
     r = price_proposal(ws, load_json(os.path.join(root, "data", "proposals", "P-001.json")))
     fixed = r["scenarios"][0]
     comps = data[0]["comps"]

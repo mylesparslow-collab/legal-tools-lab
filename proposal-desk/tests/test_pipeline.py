@@ -176,6 +176,12 @@ def test_too_few_references_with_consent_is_a_visible_gap(built):
     assert any("the RFP asks for 3" in n for n in sec["notes"])
 
 
+def test_reference_note_separates_the_two_kinds_of_missing_consent(built):
+    sec = next(s for s in built["general_counsel_redwood_flats"]["sections"] if s["qtype"] == "references")
+    note = next(n for n in sec["notes"] if "were not listed" in n)
+    assert "without the contact's consent to be listed" in note and "without the client's consent to be named" in note
+
+
 def test_references_required_count_comes_from_the_rfp(built):
     sec = next(s for s in built["general_counsel_redwood_flats"]["sections"] if s["qtype"] == "references")
     assert next(p for p in sec["parts"] if p["type"] == "references")["needed"] == 4

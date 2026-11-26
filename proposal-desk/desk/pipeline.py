@@ -236,24 +236,26 @@ def build(rfp_text, data, as_of, holidays=frozenset(), status=None):
                 if len(part["items"]) < 3:
                     downgrade.append("fewer than three printable experience records")
                 if part["omitted"]:
-                    sec["notes"].append("%d relevant record(s) left out for lack of client consent and of an approved "
-                                        "anonymized description: %s." % (len(part["omitted"]), ", ".join(
+                    sec["notes"].append("%d relevant record(s) left out for lack of consent to name the client and of an approved "
+                                        "anonymized description: %s" % (len(part["omitted"]), ", ".join(
                                             o["record_id"] for o in part["omitted"])))
             if qtype == "references":
                 needed = req.get("references_required") or 3
-                refs = select_references(meta, data.references, as_of, needed, wp.get("reference_reconfirm_days", 365))
+                refs = select_references(meta, data.references, data.experience, as_of, needed,
+                                         wp.get("reference_reconfirm_days", 365))
                 part = _references_part(refs)
                 sec["parts"].append(part)
                 if len(part["items"]) < needed:
-                    downgrade.append("%d reference(s) with consent on file; the RFP asks for %d"
+                    downgrade.append("%d reference(s) with both consents on file; the RFP asks for %d"
                                      % (len(part["items"]), needed))
                 old = [x["record_id"] for x in part["items"] if x["stale"]]
                 if old:
                     downgrade.append("reference(s) not confirmed in the last %d days: %s"
                                      % (wp.get("reference_reconfirm_days", 365), ", ".join(old)))
                 if part["withheld_count"]:
-                    sec["notes"].append("%d matching reference record(s) have no consent and were not listed."
-                                        % part["withheld_count"])
+                    sec["notes"].append("%d matching reference record(s) were not listed: %d without the contact's "
+                                        "consent to be listed, %d without the client's consent to be named"
+                                        % (part["withheld_count"], refs["withheld_contact"], refs["withheld_client"]))
             if chosen is not None:
                 sec["status"] = PARTIAL if downgrade else ANSWERED
             sec["notes"] = downgrade + sec["notes"]

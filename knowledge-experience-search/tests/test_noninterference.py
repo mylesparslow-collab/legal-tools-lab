@@ -114,8 +114,8 @@ def test_canary_terms_find_nothing_and_look_like_nonexistent_words(full, key, co
             walled = search.search(full, user, t["canary_term"], config=config, as_of=key["as_of"])
             absent = search.search(full, user, "qqxyzzy", config=config, as_of=key["as_of"])
             assert walled["total"] == 0
-            strip = lambda r: {k: v for k, v in r.items() if k != "query"}
-            assert strip(walled) == strip(absent)
+            text = lambda r, word: json.dumps(r, sort_keys=True).replace(word, "WORD")
+            assert text(walled, t["canary_term"]) == text(absent, "qqxyzzy")
 
 
 def test_experience_finder_lists_no_walled_matter_for_denied_users(full, key, manifest, config):

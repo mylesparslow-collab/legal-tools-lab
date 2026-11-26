@@ -142,9 +142,9 @@ def demo_html(res, parser_eval=None, rfp_file=""):
         named = s["display"]["mode"] == "named"
         b.append('<tr><td>%s</td><td>%s</td><td><span class="pill s-%s">%s</span></td><td>%s</td></tr>' % (
             esc(s["record"]["id"]), esc(s["display"]["text"]), "answered" if named else "person",
-            "yes, consent on file" if named else "no consent: anonymized", esc("; ".join(s["reasons"]))))
+            "yes, consent to name on file" if named else "no consent to name: anonymized", esc("; ".join(s["reasons"]))))
     for s in res["experience"]["omitted"]:
-        b.append('<tr><td>%s</td><td><em>not printed</em></td><td><span class="pill s-failed">no consent, no approved description</span></td><td>%s</td></tr>' % (
+        b.append('<tr><td>%s</td><td><em>not printed</em></td><td><span class="pill s-failed">no consent to name, no approved description</span></td><td>%s</td></tr>' % (
             esc(s["record"]["id"]), esc("; ".join(s["reasons"]))))
     b.append("</table></section>")
 
@@ -171,7 +171,7 @@ def demo_html(res, parser_eval=None, rfp_file=""):
         o = parser_eval["overall"]
         b.append('<p class="meta">Against the hand-written answer key for this RFP: %d items correct, %d extra, %d missed '
                  '(precision %.3f, recall %.3f). The key and the parser were written for the same document, so this is an '
-                 'in-sample figure. See output/parser_evaluation.md for the held-out document.</p>' % (
+                 'in-sample figure. On unseen RFPs the parser found about half of what the keys list; see output/parser_evaluation.md.</p>' % (
                      o["tp"], o["fp"], o["fn"], o["precision"], o["recall"]))
     b.append("</section>")
     page = render._html_page("Proposal desk demo: %s" % g["agency"], "\n".join(b), EXTRA_CSS + render._page_css(rfp))

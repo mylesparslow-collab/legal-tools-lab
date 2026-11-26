@@ -12,7 +12,7 @@
       "source_quote": "Total compensation under this Agreement shall not exceed the not-to-exceed amount stated in the task order, and Counsel shall not be paid for any amount above it without a written amendment.",
       "source_ref": "Section 1.1 Not-to-exceed amount, page 1",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-PHASE-CAP-01",
@@ -23,7 +23,7 @@
       "source_quote": "Fees billed to any phase of the approved budget shall not exceed the amount allotted to that phase.",
       "source_ref": "Section 1.1 Not-to-exceed amount, page 1",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-RATE-ABOVE-CARD-01",
@@ -34,7 +34,7 @@
       "source_quote": "Counsel shall bill only at the hourly rates listed in Exhibit B.",
       "source_ref": "Section 1.2 Rates and personnel, page 1",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-UNAPPROVED-TIMEKEEPER-01",
@@ -45,7 +45,7 @@
       "source_quote": "Services performed by personnel not listed in Exhibit B shall not be compensated.",
       "source_ref": "Section 1.2 Rates and personnel, page 1",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-MINIMUM-INCREMENT-01",
@@ -58,13 +58,13 @@
       "source_quote": "Time shall be recorded in increments of one-tenth of an hour.",
       "source_ref": "Section 2.1 Time records, page 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-BLOCK-BILLING-01",
       "type": "block_billing",
       "status": "proposed",
-      "severity": "reduce",
+      "severity": "reject",
       "params": {
         "max_tasks": 1,
         "min_hours": "0.5"
@@ -72,7 +72,7 @@
       "source_quote": "Any entry of more than 0.5 hour that combines two or more tasks shall be returned unpaid.",
       "source_ref": "Section 2.1 Time records, page 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-REQUIRED-CODES-01",
@@ -87,7 +87,7 @@
       "source_quote": "Each time entry shall identify the phase of the approved budget by task code.",
       "source_ref": "Section 2.1 Time records, page 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-LATE-TIME-01",
@@ -100,7 +100,7 @@
       "source_quote": "Time submitted more than 90 days after the date of service shall not be paid.",
       "source_ref": "Section 2.1 Time records, page 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-DUPLICATE-ENTRIES-01",
@@ -111,7 +111,7 @@
       "source_quote": "The Agency shall not pay twice for the same service, and duplicate entries shall be struck.",
       "source_ref": "Section 2.1 Time records, page 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-TRAVEL-TIME-01",
@@ -125,7 +125,7 @@
       "source_quote": "Travel time shall not be compensated unless the General Counsel has approved the travel in writing in advance.",
       "source_ref": "Section 2.2 Non-compensable time, page 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-NON-BILLABLE-TASK-01",
@@ -143,14 +143,15 @@
             "organize files",
             "data entry",
             "updating file index",
-            "saving documents to"
+            "saving documents to",
+            "secretarial"
           ]
         }
       },
       "source_quote": "Secretarial, clerical and file-management tasks are included in the hourly rates and shall not be billed separately.",
       "source_ref": "Section 2.2 Non-compensable time, page 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-EXPENSE-PER-DIEM-01",
@@ -166,7 +167,7 @@
       "source_quote": "Meals shall be reimbursed at no more than $45.00 per person per day and lodging at no more than $160.00 per night.",
       "source_ref": "Article III. Reimbursable costs, page 3",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "BRACKE-P-EXPENSE-RECEIPT-THRESHOLD-01",
@@ -180,7 +181,7 @@
       "source_quote": "Each cost item of $10.00 or more shall be supported by a receipt.",
       "source_ref": "Article III. Reimbursable costs, page 3",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     }
   ]
 }

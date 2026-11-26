@@ -192,7 +192,7 @@
       "severity_label": "likely reduced",
       "source_quote": "Internal conferences among your team are capped at 0.5 hour per entry.",
       "source_ref": "Schedule A: Billing, page 1",
-      "explanation": "Internal conference of 1.1 hours. The limit is 0.5 hours per entry.",
+      "explanation": "Internal conference of 1.1 hours (read from \"Internal conference\"). The limit is 0.5 hours per entry.",
       "suggested_fix": "Reduce the entry to the limit, or ask the client to approve the longer conference.",
       "amount_at_risk": "408.00",
       "status": "open",

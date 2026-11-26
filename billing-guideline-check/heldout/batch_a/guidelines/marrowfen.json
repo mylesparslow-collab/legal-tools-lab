@@ -1,0 +1,213 @@
+{
+  "client_id": "marrowfen",
+  "client_name": "Marrowfen Sanitary District",
+  "document": "heldout/batch_a/guideline_docs/marrowfen.txt",
+  "rules": [
+    {
+      "rule_id": "MSD-BUDGET-01",
+      "type": "budget_cap",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "the aggregate of all fees and costs invoiced on a matter shall at no time surpass the maximum compensation set out in the applicable engagement letter unless and until the Board has approved an increase by written amendment.",
+      "source_ref": "Section 1.01, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-PHASE-01",
+      "type": "phase_cap",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Where the engagement letter divides the maximum compensation among phases of work, Counsel shall not invoice against any phase a sum greater than the portion assigned to that phase, it being understood that savings in one phase do not carry over to another without the General Manager's written consent.",
+      "source_ref": "Section 1.02, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-RATE-01",
+      "type": "rate_above_card",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Hourly rates are those appearing in the fee schedule attached to the engagement letter, and no timekeeper shall be billed at a rate higher than the rate there shown for that timekeeper.",
+      "source_ref": "Section 1.03, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-TK-01",
+      "type": "unapproved_timekeeper",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "The District will not pay for the time of any person who does not appear by name in the fee schedule.",
+      "source_ref": "Section 1.04, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-STAFF-01",
+      "type": "staffing_matter_limit",
+      "status": "confirmed",
+      "severity": "review",
+      "params": {
+        "max_timekeepers": 4
+      },
+      "source_quote": "Absent the General Manager's prior written consent, not more than four (4) timekeepers shall record time to a single matter in any one billing month.",
+      "source_ref": "Section 1.05, page 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-INCR-01",
+      "type": "minimum_increment",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.1"
+      },
+      "source_quote": "All time shall be kept contemporaneously and stated in units of one-tenth (0.1) of an hour.",
+      "source_ref": "Section 2.01, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-BLOCK-01",
+      "type": "block_billing",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "max_tasks": 1,
+        "min_hours": "1.5"
+      },
+      "source_quote": "Each entry shall be confined to one activity; an entry exceeding one and one-half (1.5) hours that aggregates distinct activities under a single time figure will be disallowed in its entirety, the District being unable to assess the reasonableness of the time devoted to each.",
+      "source_ref": "Section 2.02, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-CODES-01",
+      "type": "required_codes",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "require_task": true,
+        "require_activity": false,
+        "require_expense": false
+      },
+      "source_quote": "Every time entry shall bear the task code corresponding to the phase of work to which it relates.",
+      "source_ref": "Section 2.03, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-LATE-01",
+      "type": "late_time",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 120
+      },
+      "source_quote": "Time submitted more than one hundred twenty (120) days after the date on which the work was performed is deemed waived.",
+      "source_ref": "Section 2.04, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-DUP-01",
+      "type": "duplicate_entries",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "Counsel shall review each invoice before submission to ensure that no service appears on it more than once; any repeated entry will be deducted.",
+      "source_ref": "Section 2.05, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-TRAVEL-01",
+      "type": "travel_time",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "billable_percent": 100,
+        "requires_approval": true
+      },
+      "source_quote": "Time spent in transit is compensable only where the General Counsel has authorized the trip in writing before it is taken; authorized transit time is paid at the timekeeper's ordinary rate.",
+      "source_ref": "Section 3.01, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-NONBILL-01",
+      "type": "non_billable_task",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "categories": {
+          "clerical": [
+            "scanning",
+            "scan documents",
+            "photocopying",
+            "bates stamping",
+            "organizing files",
+            "organize files",
+            "data entry",
+            "updating file index",
+            "saving documents to",
+            "secretarial",
+            "filing",
+            "calendaring"
+          ]
+        }
+      },
+      "source_quote": "The hourly rates are understood to absorb the cost of secretarial support, filing, photocopying, calendaring and similar administrative functions, none of which shall appear as a time charge.",
+      "source_ref": "Section 3.02, page 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-PERDIEM-01",
+      "type": "expense_per_diem",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "caps": {
+          "meal": "40.00",
+          "lodging": "150.00"
+        }
+      },
+      "source_quote": "Subsistence while away overnight on District business is reimbursable up to forty dollars ($40.00) per person per day for meals and one hundred fifty dollars ($150.00) per night for lodging.",
+      "source_ref": "Section 4.01, page 3",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-RECEIPT-01",
+      "type": "expense_receipt_threshold",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "threshold": "20.00",
+        "inclusive": false
+      },
+      "source_quote": "Counsel shall furnish a receipt for every cost item in excess of $20.00.",
+      "source_ref": "Section 4.02, page 3",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "MSD-MARKUP-01",
+      "type": "expense_markup",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Costs advanced to third parties on the District's behalf shall be invoiced in the amount actually paid, without surcharge or handling fee.",
+      "source_ref": "Section 4.03, page 3",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    }
+  ]
+}

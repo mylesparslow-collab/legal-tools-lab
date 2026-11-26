@@ -4,7 +4,7 @@ A mapping file names, for each canonical record type, the source file and how
 its columns map onto the canonical field names:
 
     {"experience": {"file": "matters_export.csv",
-                    "fields": {"client_name": "Client", "client_consent": "OK to name?"},
+                    "fields": {"client_name": "Client", "consent_to_name_client": "OK to name?"},
                     "date_format": "%m/%d/%Y", "list_separator": ";",
                     "defaults": {"practice": "general_counsel"}}}
 
@@ -16,7 +16,7 @@ import datetime as dt
 import json
 import os
 
-from .schemas import SCHEMAS, TRUE_WORDS
+from .schemas import CONSENT_FIELDS, LEGACY_CONSENT_FIELD, SCHEMAS, TRUE_WORDS
 
 
 class LoadError(Exception):
@@ -93,6 +93,26 @@ def map_records(rows, schema_name, spec=None):
     return records, errors
 
 
+def consent_warnings(rows, schema_name, spec=None):
+    """Warn when a consent column is absent or still uses the old ambiguous name.
+
+    Nothing is guessed: in both cases the consent field loads as False.
+    """
+    field = CONSENT_FIELDS.get(schema_name)
+    if not field or not rows:
+        return []
+    src = (spec or {}).get("fields", {}).get(field, field)
+    out = []
+    has_src = any(src in r for r in rows)
+    if not has_src:
+        msg = "%s: no column for %s; every record is treated as having no consent" % (schema_name, field)
+        if any(LEGACY_CONSENT_FIELD in r for r in rows):
+            msg += (". The file has a '%s' column, which is no longer read because it does not say which "
+                    "permission it records. Map it to %s only if that is what it means" % (LEGACY_CONSENT_FIELD, field))
+        out.append(msg)
+    return out
+
+
 def read_rows(path):
     if path.lower().endswith(".csv"):
         with open(path, newline="", encoding="utf-8-sig") as f:
@@ -112,6 +132,7 @@ class Data:
         self.rate_schedules, self.references, self.forms = [], [], []
         self.facts, self.workplan = {}, {}
         self.errors = []
+        self.warnings = []
         self.data_dir = ""
 
     def bio(self, bio_id):
@@ -135,6 +156,7 @@ def load_data(data_dir, mapping_path=None):
         recs, errs = map_records(rows, schema_name, spec)
         setattr(d, attr, recs)
         d.errors += errs
+        d.warnings += consent_warnings(rows, schema_name, spec)
     # answers filed by the harvest command are kept in canonical form next to the library
     harvested = os.path.join(data_dir, "harvested_answers.json")
     if os.path.exists(harvested):

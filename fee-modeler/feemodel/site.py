@@ -7,7 +7,7 @@ the figures of record; the explorer is a way to see how the shares move with the
 import json
 from decimal import Decimal, ROUND_HALF_UP
 
-from .memo import CSS, e, frac, page, verdict_row
+from .memo import CSS, backtest_table, e, frac, page
 from .money import display_money
 
 EXTRA_CSS = """
@@ -44,7 +44,7 @@ function draw(){
   if (!p.bands.length){ oos.textContent = 'none'; note.textContent = p.oos_none; }
   else { var best = p.bands[0]; p.bands.forEach(function(b){ if (Math.abs(b.v-fee) < Math.abs(best.v-fee)) best = b; });
     oos.textContent = best.count + ' of ' + best.n + ' (' + Math.round(best.count*100/best.n) + '%)';
-    note.textContent = 'back-tested matters at or under their predicted ' + best.name + ' (' + money(best.v) + ' here); the band implies ' + best.nominal + '%'; }
+    note.textContent = 'back-tested matters at or under their planning ' + best.name + ' (' + money(best.v) + ' here); the band implies ' + best.nominal + '%'; }
   var svg = document.getElementById('ex-chart'); while (svg.firstChild) svg.removeChild(svg.firstChild);
   var W = 760, L = 14, R = 14, pw = W-L-R, nb = 44, r = 5, bins = {}, tallest = 1;
   p.comps.slice().sort(function(a,b){return a.v-b.v;}).forEach(function(c){
@@ -85,15 +85,15 @@ def explorer_data(results):
             continue
         comps = [{"id": c["matter_id"], "v": _cents(c["normalized_value_after_assumptions"]), "c": _cents(c["internal_cost"])}
                  for c in r["selection"]["comps"]]
-        top_cents = max(c["v"] for c in comps)
+        q = r["planning"]["bands"]
+        top_cents = max([c["v"] for c in comps] + [_cents(q["p90"])])
         quarter = Decimal(top_cents) / 400                       # dollars per axis tick, four ticks
         mag = Decimal(10) ** quarter.adjusted()
         tick = next(mag * Decimal(m) for m in ("1", "1.5", "2", "2.5", "3", "4", "5", "7.5", "10") if mag * Decimal(m) > quarter)
         top = int(tick * 4 * 100)
         step_dollars = 1000 if top >= 10000000 else 500
         fixed = [s for s in r["scenarios"] if s["type"] == "fixed"]
-        start = _cents(fixed[0]["params"]["fee"]) if fixed else _cents(r["distribution"]["normalized"]["quantiles"]["p75"])
-        q = r["distribution"]["normalized"]["quantiles"]
+        start = _cents(fixed[0]["params"]["fee"]) if fixed else _cents(q["p75"])
         b = r["backtest"]
         out.append({"id": r["proposal"]["proposal_id"], "title": r["proposal"]["title"], "comps": comps, "max": top,
                     "step": step_dollars * 100, "start": start,
@@ -114,26 +114,16 @@ def render_index(results, summary, table):
             "shows the spread of what they cost, and tests fee structures against that spread. It refuses to give a figure "
             "when there are too few comps, and the back-test below says how well its bands have held up.</p>"]
 
-    o = summary["overall"]
     body.append("<h2>1. Does it work on this data? Walk-forward back-test</h2>")
-    body.append('<p class="small">%s</p>' % e(summary["method"]))
-    rows = []
-    for r in summary["by_type"]:
-        c = r["coverage"]
-        rows.append("<tr><td>%s</td><td class=num>%d</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td></tr>%s"
-                    % (e(r["matter_type"]), r["n_tested"], frac(c["inside_p25_p75"]), frac(c["at_or_under_p75"]),
-                       frac(c["at_or_under_p90"]), verdict_row(r["verdict_headline"], r["verdict"], 5)))
-    rows.append("<tr><td><strong>All types</strong></td><td class=num>%d</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td></tr>%s"
-                % (summary["n_tested"], frac(o["inside_p25_p75"]), frac(o["at_or_under_p75"]), frac(o["at_or_under_p90"]),
-                   verdict_row(summary["overall_headline"], summary["overall_verdict"], 5)))
-    body.append('<div class="card scroll"><table><tr><th>Matter type</th><th class=num>Tested (n)</th>'
-                '<th class=num>Inside P25 to P75 (nominal 50%%)</th><th class=num>At or under P75 (nominal 75%%)</th>'
-                '<th class=num>At or under P90 (nominal 90%%)</th></tr>%s</table>'
-                '<p class="small">%s</p>'
+    body.append('<p class="small">%s</p><p class="small">%s</p>' % (e(summary["method"]), e(summary["bands_note"])))
+    body.append(backtest_table(summary))
+    body.append('<p class="small">%s</p><p class="small">%s</p>'
                 '<p class="small">More overruns than a band implies is the direction that loses money on a fixed or capped fee, '
-                'so it is the one judged. Some shortfall is expected when bands come from a few dozen matters or fewer: '
-                'quantiles of a small sample are narrower than the spread of the next matter.</p></div>'
-                % ("".join(rows), e(summary["overrun_rule"])))
+                'so it is the one judged. The planning bands are the fix for the shortfall the plain comp quantiles show in '
+                'the right-hand columns; they are wider as a result. Measured on other generated firms: '
+                '<a href="output/calibration_study.txt">calibration study</a>, '
+                '<a href="output/drift_sensitivity.txt">drift study</a>.</p>'
+                % (e(summary["overrun_rule"]), e(summary["drift_rule"])))
 
     body.append("<h2>2. Which matter types have enough clean history</h2>")
     rows = []
@@ -146,22 +136,35 @@ def render_index(results, summary, table):
                 '<th class=num>Closed abnormally</th><th class=num>Open</th><th class=num>Hours with a usable task code</th></tr>%s</table>'
                 '<p class="small"><a href="output/modelability.html">Full table with back-test detail</a></p></div>' % "".join(rows))
 
-    body.append("<h2>3. Pricing memos for five proposed matters</h2>")
+    body.append("<h2>3. Pricing memos for seven proposed matters</h2>")
     cards = []
     for r in results:
         p = r["proposal"]
         link = "output/memo_%s.html" % p["proposal_id"]
         if r["status"] == "modeled":
-            q = r["distribution"]["normalized"]["quantiles"]
-            detail = ('<div class="big">%s</div><div class="small">median cost at today\'s rates · P25 %s to P75 %s · n=%d comps</div>'
-                      % (display_money(q["p50"]), display_money(q["p25"]), display_money(q["p75"]), r["distribution"]["n"]))
-            detail += '<div class="small">In sample. Out of sample for this type: %s</div>' % e(
+            q = r["planning"]["bands"]
+            dq = r["distribution"]["normalized"]["quantiles"]
+            detail = ('<div class="big">%s</div><div class="small">planning P50 at today\'s rates%s · planning P25 %s to P75 %s · '
+                      'P90 %s · n=%d comps</div><div class="small">Of the comps (descriptive): P50 %s, P75 %s.</div>'
+                      % (display_money(q["p50"]), "" if r["planning"]["calibrated"] else " (not adjusted)",
+                         display_money(q["p25"]), display_money(q["p75"]), display_money(q["p90"]), r["distribution"]["n"],
+                         display_money(dq["p50"]), display_money(dq["p75"])))
+            if r["drift"]["flagged"]:
+                d = r["drift"]
+                how = {"higher_of_two": "Each planning figure is the higher of the recent-only and whole-history versions.",
+                       "recent_only": "Proposal asks for the %d recent comps only." % d["n_used"],
+                       "ignored_by_proposal": "Change check switched off in this proposal."}[d["action"]]
+                detail += ('<div class="small"><strong>Change check: costs appear to have %s from %s (%sx).</strong> %s</div>'
+                           % (d["direction"], e(d["change_date"]), e(d["after_over_before"]), how))
+            detail += '<div class="small">Out of sample for this type: %s</div>' % e(
                 " ".join(r["backtest"]["statements"]) if r["backtest"]["usable"] else r["backtest"]["headline"])
             if r["warnings"]:
                 detail += '<div class="small">%d warning%s in the memo.</div>' % (len(r["warnings"]), "" if len(r["warnings"]) == 1 else "s")
         else:
             detail = ('<div class="big">Not modeled</div><div class="small">%d comps found, %d required. No figure is shown.</div>'
                       % (r["selection"]["n"], r["selection"]["min_comps"]))
+            if r["drift"]["action"] == "recent_only":
+                detail += ('<div class="small">Recent comps only were asked for (from %s).</div>' % e(r["drift"]["change_date"]))
         cards.append('<div class="tile"><div class="k">%s · %s</div><p><a href="%s">%s</a></p>%s</div>'
                      % (e(p["proposal_id"]), e(p["matter_type"]), e(link), e(p["title"]), detail))
     body.append('<div class="grid">%s</div>' % "".join(cards))
@@ -173,8 +176,8 @@ def render_index(results, summary, table):
         '<span class="small" id="ex-n"></span></div>'
         '<div class="ctrl"><label for="ex-fee">Fixed fee</label><input type="range" id="ex-fee"><span class="big" id="ex-fee-out"></span></div>'
         '<div class="tiles"><div class="tile"><div class="k">In sample: comps at or under the fee</div><div class="v" id="ex-under"></div>'
-        '<div class="s">counted on the comps the bands were built from</div></div>'
-        '<div class="tile"><div class="k">Out of sample: walk-forward at the nearest band</div><div class="v" id="ex-oos"></div>'
+        '<div class="s">counted on the comps the figures were built from</div></div>'
+        '<div class="tile"><div class="k">Out of sample: walk-forward at the nearest planning figure</div><div class="v" id="ex-oos"></div>'
         '<div class="s" id="ex-oos-note"></div></div>'
         '<div class="tile"><div class="k">Comps with no loss on cost</div><div class="v" id="ex-noloss"></div>'
         '<div class="s">against the placeholder cost rates</div></div>'
@@ -191,6 +194,8 @@ def render_index(results, summary, table):
                 "python -m feemodel backtest\n"
                 "python -m feemodel comps --proposal data/proposals/P-001.json\n"
                 "python -m feemodel price --proposal data/proposals/P-001.json\n"
+                "python -m feemodel calibration-study   # planning bands on 20 other generated firms\n"
+                "python -m feemodel drift-sensitivity   # what the change check catches, old rule beside new\n"
                 "python -m pytest -q</pre>")
     body.append('<p class="small">To try it on real data later, read SWAP_IN_REAL_DATA.md first. The order is: profile, then back-test, then price.</p>')
     html = page("Fee modeler demo", "\n".join(body))

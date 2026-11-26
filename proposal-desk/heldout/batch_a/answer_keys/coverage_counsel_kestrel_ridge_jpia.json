@@ -1,0 +1,396 @@
+{
+ "rfp": "coverage_counsel_kestrel_ridge_jpia.txt",
+ "note": "Held-out batch A. Hand-written from the RFP text before any tool run. All values are those in force after Addendum No. 2. Layout: table of contents, 'Part' headings, decimal paragraph numbers, a page header and page number at each page break, and two addenda at the end. Addendum 1 moves three dates, raises the page limit and adds a form. Addendum 2 moves the due date again and changes its time, deletes requirement 3.7, changes two scoring lines, moves the interviews and corrects an insurance amount.",
+ "agency": "Kestrel Ridge Joint Powers Insurance Authority",
+ "deadlines": [
+  {
+   "kind": "issued",
+   "date": "2026-12-14",
+   "time": null,
+   "source_line": "Mon., Dec. 14, 2026          Request for Proposals issued",
+   "source_line_no": 56
+  },
+  {
+   "kind": "questions_due",
+   "date": "2027-01-11",
+   "time": "12:00",
+   "source_line": "2027 to Mon., Jan. 11, 2027, 12:00 noon. Responses to questions will",
+   "source_line_no": 208,
+   "original_source_line": "Thu., Jan. 7, 2027           Written questions due, 12:00 noon"
+  },
+  {
+   "kind": "answers_issued",
+   "date": "2027-01-15",
+   "time": null,
+   "source_line": "be issued Fri., Jan. 15, 2027.",
+   "source_line_no": 209,
+   "original_source_line": "Tue., Jan. 12, 2027          Responses to questions issued"
+  },
+  {
+   "kind": "submission_due",
+   "date": "2027-02-10",
+   "time": "14:00",
+   "source_line": "due on February 10th, 2027 at 2:00 P.M. Note the earlier time of day.",
+   "source_line_no": 224,
+   "original_source_line": "Wed., Jan. 27, 2027          Proposals due, 4:00 P.M."
+  },
+  {
+   "kind": "interview",
+   "date": "2027-02-25",
+   "time": null,
+   "source_line": "February 25, 2027 instead of February 18, 2027.",
+   "source_line_no": 232,
+   "original_source_line": "Thu., Feb. 18, 2027          Interviews before the Claims Committee"
+  },
+  {
+   "kind": "award",
+   "date": "2027-03-11",
+   "time": null,
+   "source_line": "Thu., Mar. 11, 2027          Board of Directors award",
+   "source_line_no": 61
+  }
+ ],
+ "before_addenda": {
+  "questions_due": "2027-01-07",
+  "answers_issued": "2027-01-12",
+  "submission_due": "2027-01-27",
+  "submission_time": "16:00",
+  "interview": "2027-02-18",
+  "page_limit": 25,
+  "cyber_liability": "$1,000,000"
+ },
+ "after_addendum_1": {
+  "questions_due": "2027-01-11",
+  "answers_issued": "2027-01-15",
+  "submission_due": "2027-02-03",
+  "submission_time": "16:00",
+  "page_limit": 30
+ },
+ "addendum_changes": [
+  {
+   "addendum": 1,
+   "kind": "questions_due",
+   "from": "2027-01-07",
+   "to": "2027-01-11"
+  },
+  {
+   "addendum": 1,
+   "kind": "answers_issued",
+   "from": "2027-01-12",
+   "to": "2027-01-15"
+  },
+  {
+   "addendum": 1,
+   "kind": "submission_due",
+   "from": "2027-01-27",
+   "to": "2027-02-03"
+  },
+  {
+   "addendum": 1,
+   "kind": "page_limit",
+   "from": 25,
+   "to": 30
+  },
+  {
+   "addendum": 1,
+   "kind": "form_added",
+   "from": null,
+   "to": "Addenda Acknowledgment Form"
+  },
+  {
+   "addendum": 2,
+   "kind": "submission_due",
+   "from": "2027-02-03",
+   "to": "2027-02-10",
+   "time_from": "16:00",
+   "time_to": "14:00"
+  },
+  {
+   "addendum": 2,
+   "kind": "requirement_deleted",
+   "from": "3.7",
+   "to": null
+  },
+  {
+   "addendum": 2,
+   "kind": "criterion_removed",
+   "from": "Training program",
+   "to": null
+  },
+  {
+   "addendum": 2,
+   "kind": "weight_changed",
+   "criterion": "Coverage experience",
+   "from": 35,
+   "to": 45
+  },
+  {
+   "addendum": 2,
+   "kind": "interview",
+   "from": "2027-02-18",
+   "to": "2027-02-25"
+  },
+  {
+   "addendum": 2,
+   "kind": "insurance_changed",
+   "coverage": "Cyber liability",
+   "from": "$1,000,000",
+   "to": "$2,000,000"
+  }
+ ],
+ "requirements": [
+  {
+   "label": "3.1",
+   "qtype": "cover_letter",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Letter of Interest. A signed letter stating the firm's interest, the name of the attorney who would serve as lead coverage counsel, and the firm's agreement to the Authority's form of legal services agreement or a list of the changes it would ask for."
+  },
+  {
+   "label": "3.2",
+   "qtype": "firm_overview",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "The Firm. The firm's size, structure and offices, the number of attorneys who practice insurance coverage law, and the firm's history of work for public entity risk pools."
+  },
+  {
+   "label": "3.3",
+   "qtype": "team",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Personnel. The names and qualifications of the lead coverage counsel and each other attorney proposed, the work each would do, and a statement of each attorney's current caseload."
+  },
+  {
+   "label": "3.4",
+   "qtype": "experience",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Coverage Experience. A description of the firm's work in the last five years on coverage opinions, reservation of rights letters, coverage litigation and reinsurance disputes for public entity pools or insurers. Identify three written coverage opinions (with privileged content removed) that the Authority may ask to see."
+  },
+  {
+   "label": "3.5",
+   "qtype": "approach",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Method of Service. How the firm would deliver coverage opinions within the Authority's standard of ten business days, how it would handle requests marked urgent, and how it would report to the Claims Committee each quarter."
+  },
+  {
+   "label": "3.6",
+   "qtype": "references",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Client References. Three references from risk pools or insurers, with the name and direct contact details of a person familiar with the firm's work."
+  },
+  {
+   "label": "3.8",
+   "qtype": "conflicts",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Conflicts. A list of every member of the Authority that the firm has represented in the last five years, every matter in which the firm has acted for or against Stonebridge Claims Services, Inc. or Marlin Reach Reinsurance Company, and a statement of how any conflict would be handled. The list of members is in Appendix A."
+  },
+  {
+   "label": "3.9",
+   "qtype": "rates",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Pricing. Hourly rates by attorney and paralegal; a proposed flat fee per written coverage opinion; and any annual cap the firm is willing to offer."
+  },
+  {
+   "label": "3.10",
+   "qtype": "other",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Additional Information. Anything else the firm wishes the Authority to consider, in no more than one page."
+  }
+ ],
+ "deleted_requirements": [
+  {
+   "label": "3.7",
+   "qtype": "approach",
+   "section": "Part Three",
+   "numbered": true,
+   "text": "Training Program. A proposed annual program of training for member agency staff on claims reporting and coverage, with sample materials.",
+   "alt_qtypes": [
+    "other"
+   ],
+   "deleted_by_addendum": 2
+  }
+ ],
+ "forms": [
+  "Proposal Cover Sheet",
+  "Certification of Non-Collusion",
+  "Conflict of Interest Questionnaire",
+  "Certificate of Insurance (or broker's letter)",
+  "Addenda Acknowledgment Form"
+ ],
+ "forms_as_issued": [
+  "Proposal Cover Sheet",
+  "Certification of Non-Collusion",
+  "Conflict of Interest Questionnaire",
+  "Certificate of Insurance (or broker's letter)"
+ ],
+ "evaluation": [
+  {
+   "name": "Coverage experience",
+   "weight": 45
+  },
+  {
+   "name": "Personnel",
+   "weight": 20
+  },
+  {
+   "name": "Method of service",
+   "weight": 15
+  },
+  {
+   "name": "Pricing",
+   "weight": 15
+  },
+  {
+   "name": "Client references",
+   "weight": 5
+  }
+ ],
+ "evaluation_as_issued": [
+  {
+   "name": "Coverage experience",
+   "weight": 35
+  },
+  {
+   "name": "Personnel",
+   "weight": 20
+  },
+  {
+   "name": "Method of service",
+   "weight": 15
+  },
+  {
+   "name": "Pricing",
+   "weight": 15
+  },
+  {
+   "name": "Training program",
+   "weight": 10
+  },
+  {
+   "name": "Client references",
+   "weight": 5
+  }
+ ],
+ "min_quals": [
+  {
+   "starts": "Lead coverage counsel has been licensed to practice law for twelve",
+   "check_kind": "years_admitted",
+   "value": 12
+  },
+  {
+   "starts": "Lead coverage counsel has given coverage advice",
+   "check_kind": "not_checkable",
+   "value": null
+  },
+  {
+   "starts": "The firm has three (3) or more attorneys",
+   "check_kind": "attorney_count",
+   "value": 3
+  },
+  {
+   "starts": "Neither the firm nor any proposed attorney is defending",
+   "check_kind": "not_checkable",
+   "value": null
+  }
+ ],
+ "insurance": [
+  {
+   "contains": "Professional liability",
+   "amount": "$2,000,000",
+   "amount_value": 2000000
+  },
+  {
+   "contains": "Commercial general liability",
+   "amount": "$1,000,000",
+   "amount_value": 1000000
+  },
+  {
+   "contains": "Workers' compensation",
+   "amount": null,
+   "amount_value": null
+  },
+  {
+   "contains": "Cyber liability",
+   "amount": "$2,000,000",
+   "amount_value": 2000000
+  }
+ ],
+ "mechanics": {
+  "page_limit": 30,
+  "font_pt": 11,
+  "margin_in": 1.0,
+  "kinds": [
+   "copies",
+   "format",
+   "packaging",
+   "delivery",
+   "not_accepted",
+   "page_limit",
+   "page_exclusions",
+   "font",
+   "margins"
+  ]
+ },
+ "parties": [
+  {
+   "name": "Kestrel Ridge Joint Powers Insurance Authority",
+   "category": "agency"
+  },
+  {
+   "name": "Rosamund Achebe",
+   "category": "staff"
+  },
+  {
+   "name": "Tobias Ferreira",
+   "category": "staff"
+  },
+  {
+   "name": "Halden Yoshimura",
+   "category": "board"
+  },
+  {
+   "name": "Clementine Abara",
+   "category": "board"
+  },
+  {
+   "name": "Lucius Pemberton",
+   "category": "board"
+  },
+  {
+   "name": "Stonebridge Claims Services, Inc.",
+   "category": "other_organisation"
+  },
+  {
+   "name": "Marlin Reach Reinsurance Company",
+   "category": "other_organisation"
+  }
+ ],
+ "dates_that_are_not_deadlines": [
+  "July 1, 2027 (start of contract term, paragraph 9.4)",
+  "January 5, 2027 and January 22, 2027 (dates of the addenda)"
+ ],
+ "not_requirements": [
+  "The table of contents lines",
+  "1.1 to 1.4, 2.1, 2.2, 4.1, 5.1, 5.2, 6.1, 6.2, 7.1 to 7.4, 8.1 to 8.3, 9.1 to 9.5: numbered paragraphs that are not proposal contents",
+  "Addendum items (1) to (5)",
+  "the repeated page header 'RFP KR-2027-LEGAL-02 Page N of 6'"
+ ],
+ "extra_fields": {
+  "source_line / source_line_no": "on each deadline: the line of the RFP file (stripped, 1-based number) that states the date in force. For a date changed by addendum it is the addendum line; original_source_line is the line in the body.",
+  "section, numbered, text": "on each requirement: the section it sits in, whether the RFP gives it a number or label, and its exact text with runs of white space collapsed to one space (the label itself is left out).",
+  "alt_labels, alt_qtypes": "other labels or question types that a scorer should also accept. Question types are the test author's judgement.",
+  "deleted_requirements": "requirements removed by addendum. They must NOT appear in the parsed requirement list.",
+  "evaluation_as_issued, forms_as_issued, before_addenda": "values before any addendum, for checking that the change is shown.",
+  "addendum (on addendum_changes)": "which addendum made the change. Kinds beyond the existing keys: requirement_deleted, criterion_removed, weight_changed, insurance_changed, form_removed; time_from and time_to are given where an addendum changes the time of day.",
+  "amount_value": "insurance amount as a whole number of dollars.",
+  "dates_that_are_not_deadlines": "dates in the text that must not be read as schedule deadlines.",
+  "not_requirements": "numbered or lettered items that are not proposal requirements (scope of services, general conditions, table of contents). Reading them as requirements is an error.",
+  "kind_not_in_existing_keys": "marks a deadline kind the existing keys do not use; score it separately."
+ }
+}

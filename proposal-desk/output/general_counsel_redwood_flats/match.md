@@ -21,23 +21,23 @@ Agency type: special district. Practice: general counsel. Subjects found in the 
 
 ## Experience records chosen
 
-- E-016 | score 13 | client NOT named (no consent)  
+- E-016 | score 13 | client NOT named (no consent to name the client)  
   Printed as: A community services district in the inland valleys (general counsel, 2018 to present). Subjects: open meetings, public contracting, public records.  
   Why: same agency type (special district); same practice (general counsel); shared subjects: open meetings, public contracting, public records; ongoing; same role (general counsel).
-- E-018 | score 13 | client NOT named (no consent)  
+- E-018 | score 13 | client NOT named (no consent to name the client)  
   Printed as: A fire protection district in the south coast (general counsel, 2014 to present). Subjects: governance, real property, water.  
   Why: same agency type (special district); same practice (general counsel); shared subjects: governance, real property, water; ongoing; same role (general counsel).
-- E-022 | score 13 | client named (consent on file)  
+- E-022 | score 13 | client named (consent to name the client on file)  
   Printed as: Pellam Marsh Water District (general counsel, 2012 to present). Served as general counsel. Advised the governing body and staff on public contracting, rates and charges, real property and water.  
   Why: same agency type (special district); same practice (general counsel); shared subjects: public contracting, rates and charges, real property, water; ongoing; same role (general counsel).
-- E-025 | score 13 | client named (consent on file)  
+- E-025 | score 13 | client named (consent to name the client on file)  
   Printed as: Emberlow Irrigation District (general counsel, 2024 to present). Served as general counsel. Advised the governing body and staff on public contracting, public records and water.  
   Why: same agency type (special district); same practice (general counsel); shared subjects: public contracting, public records, water; ongoing; same role (general counsel).
-- E-026 | score 13 | client named (consent on file)  
+- E-026 | score 13 | client named (consent to name the client on file)  
   Printed as: Candlewick Sanitary District (general counsel, 2016 to present). Served as general counsel. Advised the governing body and staff on governance, personnel, public records and real property.  
   Why: same agency type (special district); same practice (general counsel); shared subjects: governance, personnel, public records, real property; ongoing; same role (general counsel).
 
 ## Relevant records that cannot be printed
 
-- E-015 | score 13 | no consent and no approved anonymized description. Ask the client, or approve a description.
-- E-028 | score 13 | no consent and no approved anonymized description. Ask the client, or approve a description.
+- E-015 | score 13 | no consent to name the client and no approved anonymized description. Ask the client, or approve a description.
+- E-028 | score 13 | no consent to name the client and no approved anonymized description. Ask the client, or approve a description.

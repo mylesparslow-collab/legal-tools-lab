@@ -370,7 +370,7 @@ def build_experience(rng):
             if not consent and rng.random() < 0.25:
                 anon = ""   # no approved description: the record cannot be printed at all
             out.append({
-                "id": "E-%03d" % n, "client_name": name, "client_consent": consent,
+                "id": "E-%03d" % n, "client_name": name, "consent_to_name_client": consent,
                 "anonymized_description": anon, "agency_type": atype, "practice": practice,
                 "subjects": subjects, "role": role, "start_year": start, "end_year": end,
                 "summary": SUMMARY[practice] % (role, join_list(subjects)),
@@ -404,7 +404,12 @@ def build_references(rng, experience):
                 names.add(contact)
                 break
         n += 1
-        consent = e["client_consent"] and rng.random() < 0.85
+        # The contact's consent is its own permission. Most contacts of nameable clients agree; a
+        # few contacts agree although the client has not agreed to be named (those stay unlisted).
+        if e["consent_to_name_client"]:
+            consent = rng.random() < 0.85
+        else:
+            consent = n % 4 == 0
         month = rng.randint(1, 22)
         confirmed = dt.date(2025 + (month - 1) // 12, (month - 1) % 12 + 1, 10)
         local = contact.lower().replace(" ", ".").replace("'", "")
@@ -412,7 +417,7 @@ def build_references(rng, experience):
             "id": "REF-%03d" % n, "experience_id": e["id"], "client_name": e["client_name"],
             "contact_name": contact, "contact_title": REF_TITLE[e["agency_type"]],
             "phone": "555-01%02d" % n, "email": "%s@%s.example" % (local, e["client_name"].lower().replace(" ", "")[:18]),
-            "client_consent": consent, "last_confirmed": confirmed.isoformat(),
+            "consent_to_list_contact": consent, "last_confirmed": confirmed.isoformat(),
             "agency_type": e["agency_type"], "practice": e["practice"],
         })
     return out

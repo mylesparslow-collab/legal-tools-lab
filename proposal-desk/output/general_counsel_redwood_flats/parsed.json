@@ -437,21 +437,6 @@
    "confidence": "ok",
    "check_reason": "",
    "id": "F4"
-  },
-  {
-   "ref": "Exhibit 2",
-   "name": "Exhibit 2 (named in section SECTION V)",
-   "text": "State any exception to the District's standard professional services agreement (Exhibit 2).",
-   "signature": false,
-   "notarized": false,
-   "mandatory": false,
-   "source": {
-    "line": 51,
-    "text": "State any exception to the District's standard professional services agreement (Exhibit 2)."
-   },
-   "confidence": "check",
-   "check_reason": "referred to in the text but not in the forms list; check whether it must be submitted",
-   "id": "F5"
   }
  ],
  "min_quals": [
@@ -497,6 +482,7 @@
  ],
  "insurance": [
   {
+   "label": "",
    "text": "The successful proposer shall carry professional liability (errors and omissions) coverage with limits of at least $1,000,000 per claim and $2,000,000 aggregate",
    "amounts": [
     "$1,000,000",
@@ -511,6 +497,7 @@
    "id": "INS1"
   },
   {
+   "label": "",
    "text": "general liability coverage of at least $1,000,000 per occurrence",
    "amounts": [
     "$1,000,000"
@@ -524,6 +511,7 @@
    "id": "INS2"
   },
   {
+   "label": "",
    "text": "automobile liability coverage of at least $500,000.",
    "amounts": [
     "$500,000"
@@ -646,26 +634,27 @@
   {
    "name": "Beatrix Okonkwo",
    "category": "board",
-   "role": "Named in the RFP",
+   "role": "Directors",
    "source": {
     "line": 7,
     "text": "Redwood Flats Water District (the \"District\") provides water service to about 18,500 connections. The District is governed by a five-member Board of Directors. The District's General Manager is Ottoline Brannigan. The Board members are Pres"
    },
-   "confidence": "ok",
-   "check_reason": ""
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
   },
   {
    "name": "Lucien Farraday",
    "category": "board",
-   "role": "Named in the RFP",
+   "role": "Directors",
    "source": {
     "line": 7,
     "text": "Redwood Flats Water District (the \"District\") provides water service to about 18,500 connections. The District is governed by a five-member Board of Directors. The District's General Manager is Ottoline Brannigan. The Board members are Pres"
    },
-   "confidence": "ok",
-   "check_reason": ""
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
   }
  ],
+ "deleted_requirements": [],
  "sections": [
   {
    "kind": "intro",
@@ -780,9 +769,9 @@
     "id": "EV5"
    }
   ],
-  "total": 100,
   "total_stated": null,
   "unit": "points",
+  "total": 100,
   "confidence": "ok",
   "check_reason": ""
  },
@@ -799,29 +788,29 @@
      "type": "deadline",
      "kind": "submission_due",
      "from": "2026-12-10",
-     "from_time": "14:00",
      "to": "2026-12-17",
-     "to_time": "14:00",
      "source": {
       "line": 114,
       "text": "The proposal submission deadline in Section II is changed from December 10, 2026, 2:00 p.m. to December 17, 2026, 2:00 p.m."
      },
      "confidence": "ok",
-     "check_reason": ""
+     "check_reason": "",
+     "from_time": "14:00",
+     "to_time": "14:00"
     },
     {
      "type": "deadline",
      "kind": "interview",
      "from": "2026-12-17",
-     "from_time": null,
      "to": "2027-01-07",
-     "to_time": null,
      "source": {
       "line": 116,
       "text": "Interviews with the Board committee are rescheduled from December 17, 2026 to January 7, 2027."
      },
      "confidence": "ok",
-     "check_reason": ""
+     "check_reason": "",
+     "from_time": null,
+     "to_time": null
     }
    ],
    "notes": [
@@ -840,10 +829,16 @@
  ],
  "checks": [
   {
-   "category": "form",
-   "id": "F5",
-   "reason": "referred to in the text but not in the forms list; check whether it must be submitted",
-   "text": "State any exception to the District's standard professional services agreement (Exhibit 2)."
+   "category": "party",
+   "id": "Beatrix Okonkwo",
+   "reason": "role taken from the name before it in a list",
+   "text": "Beatrix Okonkwo"
+  },
+  {
+   "category": "party",
+   "id": "Lucien Farraday",
+   "reason": "role taken from the name before it in a list",
+   "text": "Lucien Farraday"
   },
   {
    "category": "addendum",

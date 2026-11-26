@@ -37,7 +37,7 @@ This page gives the facts for the decision. The tool does not make the decision.
 
 - Firm facts are as of 2026-10-01 (55 days old).
 - Blocking flags on inserted passages: 0.
-- Client names printed without consent: 0.
+- Client or contact names printed without the consent that covers them: 0.
 
 ## Open disqualifiers: 20
 
@@ -64,7 +64,8 @@ Every mandatory item that is not answered or marked done. 0 of them have a due d
 - SUB8 | Partially answered | Minimum font size is 11 point. | owner Proposal coordinator | due Wed 16 Dec 2026
 - DEADLINE | Needs a person | Proposal submission deadline ............ December 10, 2026, 2:00 p.m. | owner Proposal coordinator | due Thu 17 Dec 2026
 
-## Parser items to check: 2
+## Parser items to check: 3
 
-- form F5: referred to in the text but not in the forms list; check whether it must be submitted | State any exception to the District's standard professional services agreement (Exhibit 2).
+- party Beatrix Okonkwo: role taken from the name before it in a list | Beatrix Okonkwo
+- party Lucien Farraday: role taken from the name before it in a list | Lucien Farraday
 - addendum ADD1-3: addendum item not applied automatically; read it | All other terms are unchanged. Proposers must acknowledge this addendum in the Letter of Transmittal

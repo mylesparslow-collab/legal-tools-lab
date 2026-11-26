@@ -69,8 +69,8 @@ def draft_markdown(res):
                     out += ["[GAP: no printable experience records matched. %s]" % _owner_due(sec), ""]
                 for it in p["items"]:
                     out += ["- %s" % it["text"], "  [Source: experience record %s, %s. Chosen because: %s]" % (
-                        it["record_id"], "client named with consent" if it["mode"] == "named"
-                        else "client not named: no consent on file", "; ".join(it["reasons"]))]
+                        it["record_id"], "client named: consent to name the client is on file" if it["mode"] == "named"
+                        else "client not named: no consent to name the client", "; ".join(it["reasons"]))]
                 out.append("")
             elif p["type"] == "references":
                 for it in p["items"]:
@@ -78,7 +78,7 @@ def draft_markdown(res):
                         it["record_id"], it["last_confirmed"] or "never", "; RECONFIRM before use" if it["stale"] else "")]
                 missing = p["needed"] - len(p["items"])
                 if missing > 0:
-                    out += ["", "[GAP: %d more reference(s) needed. Only contacts with consent on file are listed. %s]"
+                    out += ["", "[GAP: %d more reference(s) needed. Only contacts with both consents on file are listed. %s]"
                             % (missing, _owner_due(sec))]
                 out.append("")
         for kind, text in _section_markers(sec):
@@ -172,7 +172,7 @@ def draft_html(res):
                 for it in p["items"]:
                     b.append('<li>%s<div class="src">Source: experience record %s, %s. Chosen because: %s</div></li>' % (
                         esc(it["text"]), esc(it["record_id"]),
-                        "client named with consent" if it["mode"] == "named" else "client not named: no consent on file",
+                        "client named: consent to name the client is on file" if it["mode"] == "named" else "client not named: no consent to name the client",
                         esc("; ".join(it["reasons"]))))
                 b.append("</ul>")
             elif p["type"] == "references":
@@ -300,7 +300,7 @@ def go_no_go_markdown(res):
             "- Blocking flags on inserted passages: %d." % len(g["blocking_flags"])]
     for f in g["blocking_flags"]:
         out.append("  - Section %s, answer %s: %s" % (f["section"], f["answer_id"], f["message"]))
-    out.append("- Client names printed without consent: %d." % len(g["consent_flags"]))
+    out.append("- Client or contact names printed without the consent that covers them: %d." % len(g["consent_flags"]))
     for m in g["consent_flags"]:
         out.append("  - %s" % m)
     out += ["", "## Open disqualifiers: %d" % g["open_disqualifiers"], "",
@@ -371,13 +371,13 @@ def match_markdown(res):
     for s in res["experience"]["selected"]:
         out.append("- %s | score %d | %s  \n  Printed as: %s  \n  Why: %s." % (
             s["record"]["id"], s["score"],
-            "client named (consent on file)" if s["display"]["mode"] == "named" else "client NOT named (no consent)",
+            "client named (consent to name the client on file)" if s["display"]["mode"] == "named" else "client NOT named (no consent to name the client)",
             s["display"]["text"], "; ".join(s["reasons"])))
     out += ["", "## Relevant records that cannot be printed", ""]
     if not res["experience"]["omitted"]:
         out.append("- None.")
     for s in res["experience"]["omitted"]:
-        out.append("- %s | score %d | no consent and no approved anonymized description. Ask the client, or approve a description." % (
+        out.append("- %s | score %d | no consent to name the client and no approved anonymized description. Ask the client, or approve a description." % (
             s["record"]["id"], s["score"]))
     return "\n".join(out) + "\n"
 

@@ -1,0 +1,332 @@
+{
+ "rfp": "labor_counsel_wexcombe_library.txt",
+ "note": "Held-out batch B (sealed). Hand-written from the RFP text before any tool run. No addendum. Layout: questions and answers. Dates are inside sentences, written as 'Thursday, the 10th of December 2026' and 'January 14th, 2027'. Requirements are marked #1 to #10, followed by two unnumbered requirements.",
+ "agency": "Wexcombe Regional Library District",
+ "deadlines": [
+  {
+   "kind": "issued",
+   "date": "2026-12-10",
+   "time": null,
+   "source_line": "The request was published on Thursday, the 10th of December 2026.",
+   "source_line_no": 37
+  },
+  {
+   "kind": "questions_due",
+   "date": "2027-01-04",
+   "time": "17:00",
+   "source_line": "on Monday, the 4th of January 2027. We will send our answers to every firm",
+   "source_line_no": 40,
+   "source_sentence_starts_on_previous_line": true
+  },
+  {
+   "kind": "answers_issued",
+   "date": "2027-01-08",
+   "time": null,
+   "source_line": "that has registered, and post them, on Friday, the 8th of January 2027.",
+   "source_line_no": 41
+  },
+  {
+   "kind": "submission_due",
+   "date": "2027-01-14",
+   "time": "14:00",
+   "source_line": "Your proposal has to reach us by 2 p.m. on Thursday, January 14th, 2027. We",
+   "source_line_no": 43
+  },
+  {
+   "kind": "interview",
+   "date": "2027-01-26",
+   "time": null,
+   "source_line": "We plan to interview the top three firms on Tuesday, January 26th, 2027. The",
+   "source_line_no": 46
+  },
+  {
+   "kind": "award",
+   "date": "2027-02-17",
+   "time": null,
+   "source_line": "on Wednesday, February 17th, 2027. Bargaining with the Guild opens in March",
+   "source_line_no": 48
+  }
+ ],
+ "addendum_changes": [],
+ "requirements": [
+  {
+   "label": "#1",
+   "qtype": "cover_letter",
+   "section": "5",
+   "numbered": true,
+   "text": "Introduction letter. Tell us who you are and who will sign the contract for your firm. Keep it to one page.",
+   "alt_labels": [
+    "1"
+   ]
+  },
+  {
+   "label": "#2",
+   "qtype": "firm_overview",
+   "section": "5",
+   "numbered": true,
+   "text": "About your firm. How big is it, where are its offices, how long has it advised public employers, and how many public employers does it advise now?",
+   "alt_labels": [
+    "2"
+   ],
+   "is_question": true
+  },
+  {
+   "label": "#3",
+   "qtype": "team",
+   "section": "5",
+   "numbered": true,
+   "text": "Your people. Who will be chief negotiator? Who will back that person up? Who will handle day-to-day advice and hearings? Give each person's background and attach resumes at the end.",
+   "alt_labels": [
+    "3"
+   ],
+   "is_question": true
+  },
+  {
+   "label": "#4",
+   "qtype": "experience",
+   "section": "5",
+   "numbered": true,
+   "text": "Bargaining record. List the public sector negotiations your proposed chief negotiator has led in the last six years. For each one, name the employer and the union, and say how long bargaining took and whether it went to impasse.",
+   "alt_labels": [
+    "4"
+   ]
+  },
+  {
+   "label": "#5",
+   "qtype": "approach",
+   "section": "5",
+   "numbered": true,
+   "text": "How you would run our negotiations. Describe how you would prepare, how you would work with our bargaining team, how you would keep the Board informed, and what you would do if bargaining stalls.",
+   "alt_labels": [
+    "5"
+   ]
+  },
+  {
+   "label": "#6",
+   "qtype": "experience",
+   "section": "5",
+   "numbered": true,
+   "text": "Hearings and advice. Describe your experience in grievance arbitration and labor board proceedings, and how you handle a steady flow of small advice questions without running up fees.",
+   "alt_labels": [
+    "6"
+   ],
+   "alt_qtypes": [
+    "approach"
+   ]
+  },
+  {
+   "label": "#7",
+   "qtype": "references",
+   "section": "5",
+   "numbered": true,
+   "text": "References. Give us four public employer references. At least two must be able to speak about your chief negotiator at the bargaining table.",
+   "alt_labels": [
+    "7"
+   ]
+  },
+  {
+   "label": "#8",
+   "qtype": "conflicts",
+   "section": "5",
+   "numbered": true,
+   "text": "Conflicts. Have you or anyone at your firm ever represented the Wexcombe Library Workers Guild, Service Employees Local 4410, or any employee of the Library District? Tell us about that and about any other possible conflict.",
+   "alt_labels": [
+    "8"
+   ],
+   "is_question": true
+  },
+  {
+   "label": "#9",
+   "qtype": "rates",
+   "section": "5",
+   "numbered": true,
+   "text": "Price. Give hourly rates for every person named in #3. Offer a fixed monthly fee for day-to-day advice if you are willing to. Tell us what you would charge for travel and what expenses you would bill.",
+   "alt_labels": [
+    "9"
+   ]
+  },
+  {
+   "label": "#10",
+   "qtype": "transition",
+   "section": "5",
+   "numbered": true,
+   "text": "Taking over. Our current counsel is retiring. How would you get up to speed on our contracts, open grievances and bargaining history before March?",
+   "alt_labels": [
+    "10"
+   ],
+   "is_question": true
+  },
+  {
+   "label": "5-unnumbered-1",
+   "qtype": "team",
+   "section": "5",
+   "numbered": false,
+   "text": "A statement, signed by the proposed chief negotiator, that he or she will personally attend every bargaining session unless the Human Resources Director agrees otherwise.",
+   "alt_qtypes": [
+    "other"
+   ]
+  },
+  {
+   "label": "5-unnumbered-2",
+   "qtype": "disclosure",
+   "section": "5",
+   "numbered": false,
+   "text": "A list of every lawsuit or labor board charge filed against your firm by a client in the last five years, or a statement that there are none.",
+   "alt_qtypes": [
+    "other"
+   ]
+  }
+ ],
+ "forms": [
+  "Proposal Signature Form",
+  "Non-Collusion Statement",
+  "Disclosure of Gifts and Relationships",
+  "proof of your professional liability insurance"
+ ],
+ "evaluation": [
+  {
+   "name": "Bargaining experience and record",
+   "weight": 35
+  },
+  {
+   "name": "The chief negotiator and team",
+   "weight": 25
+  },
+  {
+   "name": "Plan for our negotiations",
+   "weight": 20
+  },
+  {
+   "name": "Price",
+   "weight": 15
+  },
+  {
+   "name": "References",
+   "weight": 5
+  }
+ ],
+ "evaluation_notes": "Interviews are scored separately as pass or fail and carry no weight.",
+ "min_quals": [
+  {
+   "starts": "Your proposed chief negotiator has practiced law for at least eight",
+   "check_kind": "years_admitted",
+   "value": 8
+  },
+  {
+   "starts": "Your proposed chief negotiator has been chief negotiator for a public",
+   "check_kind": "not_checkable",
+   "value": null
+  },
+  {
+   "starts": "Your firm has at least four (4) attorneys",
+   "check_kind": "attorney_count",
+   "value": 4
+  },
+  {
+   "starts": "Your firm does not represent any labor union",
+   "check_kind": "not_checkable",
+   "value": null
+  },
+  {
+   "starts": "Your chief negotiator can attend bargaining sessions in person",
+   "check_kind": "not_checkable",
+   "value": null
+  }
+ ],
+ "insurance": [
+  {
+   "contains": "professional liability insurance of at least",
+   "amount": "$2,000,000",
+   "amount_value": 2000000
+  },
+  {
+   "contains": "general liability insurance of at least",
+   "amount": "$1,000,000",
+   "amount_value": 1000000
+  },
+  {
+   "contains": "workers' compensation insurance",
+   "amount": null,
+   "amount_value": null
+  }
+ ],
+ "insurance_notes": "'We do not require automobile insurance for this contract' must not be read as an insurance requirement.",
+ "mechanics": {
+  "page_limit": 15,
+  "font_pt": 11,
+  "margin_in": null,
+  "kinds": [
+   "copies",
+   "format",
+   "delivery",
+   "not_accepted",
+   "page_limit",
+   "page_exclusions",
+   "font"
+  ]
+ },
+ "parties": [
+  {
+   "name": "Wexcombe Regional Library District",
+   "category": "agency"
+  },
+  {
+   "name": "Ottilie Brennagh",
+   "category": "board"
+  },
+  {
+   "name": "Marcus Adeyemi-Holt",
+   "category": "board"
+  },
+  {
+   "name": "Fenella Sorensen",
+   "category": "board"
+  },
+  {
+   "name": "Jacinto Villareal",
+   "category": "board"
+  },
+  {
+   "name": "Winifred Okonkwo-Baines",
+   "category": "board"
+  },
+  {
+   "name": "Calder Whitlock",
+   "category": "staff"
+  },
+  {
+   "name": "Ines Navarrete",
+   "category": "staff"
+  },
+  {
+   "name": "Wexcombe Library Workers Guild",
+   "category": "adverse"
+  },
+  {
+   "name": "Service Employees Local 4410",
+   "category": "adverse"
+  }
+ ],
+ "dates_that_are_not_deadlines": [
+  "June 30, 2027 (labor contracts expire)",
+  "March 2027 (bargaining opens; month only)"
+ ],
+ "not_requirements": [
+  "The numbered question headings 1 to 10",
+  "the bulleted eligibility conditions in section 4",
+  "the three forms in section 6",
+  "the five business day period in section 10"
+ ],
+ "extra_fields": {
+  "source_line / source_line_no": "on each deadline: the line of the RFP file (stripped, 1-based number) that states the date in force. For a date changed by addendum it is the addendum line; original_source_line is the line in the body.",
+  "section, numbered, text": "on each requirement: the section it sits in, whether the RFP gives it a number or label, and its exact text with runs of white space collapsed to one space (the label itself is left out).",
+  "alt_labels, alt_qtypes": "other labels or question types that a scorer should also accept. Question types are the test author's judgement.",
+  "deleted_requirements": "requirements removed by addendum. They must NOT appear in the parsed requirement list.",
+  "evaluation_as_issued, forms_as_issued, before_addenda": "values before any addendum, for checking that the change is shown.",
+  "addendum (on addendum_changes)": "which addendum made the change. Kinds beyond the existing keys: requirement_deleted, criterion_removed, weight_changed, insurance_changed, form_removed; time_from and time_to are given where an addendum changes the time of day.",
+  "amount_value": "insurance amount as a whole number of dollars.",
+  "dates_that_are_not_deadlines": "dates in the text that must not be read as schedule deadlines.",
+  "not_requirements": "numbered or lettered items that are not proposal requirements (scope of services, general conditions, table of contents). Reading them as requirements is an error.",
+  "kind_not_in_existing_keys": "marks a deadline kind the existing keys do not use; score it separately."
+ }
+}

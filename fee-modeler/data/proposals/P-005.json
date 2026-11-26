@@ -1,0 +1,22 @@
+{
+  "proposal_id": "P-005",
+  "title": "Employment defense, single plaintiff",
+  "matter_type": "employment_single_plaintiff_defense",
+  "attributes": {},
+  "selection_rules": {
+    "min_comps": 8
+  },
+  "ai_assumptions": {},
+  "scenarios": [
+    {
+      "type": "fixed",
+      "fee": "150000"
+    },
+    {
+      "type": "capped",
+      "cap": "200000"
+    }
+  ],
+  "as_of": "2026-01-01",
+  "target_probability": "0.80"
+}

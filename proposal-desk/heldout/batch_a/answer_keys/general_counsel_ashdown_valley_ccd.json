@@ -1,0 +1,389 @@
+{
+ "rfp": "general_counsel_ashdown_valley_ccd.txt",
+ "note": "Held-out batch A. Hand-written from the RFP text before any tool run. No addendum. Layout: lettered sections with roman-numeral sub-items; schedule in day-month-year form; evaluation weights in running prose. The interview date is stated only as 'week of'.",
+ "agency": "Ashdown Valley Community College District",
+ "deadlines": [
+  {
+   "kind": "issued",
+   "date": "2026-12-07",
+   "time": null,
+   "source_line": "RFP released ................................ 7 December 2026",
+   "source_line_no": 35
+  },
+  {
+   "kind": "conference",
+   "date": "2026-12-15",
+   "time": "10:30",
+   "source_line": "Optional pre-proposal video conference ...... 15 December 2026, 10:30 a.m.",
+   "source_line_no": 36
+  },
+  {
+   "kind": "questions_due",
+   "date": "2026-12-18",
+   "time": "17:00",
+   "source_line": "Last day to submit written questions ........ 18 December 2026 (5:00 p.m.)",
+   "source_line_no": 37
+  },
+  {
+   "kind": "answers_issued",
+   "date": "2027-01-06",
+   "time": null,
+   "source_line": "District's written answers posted ........... 6 January 2027",
+   "source_line_no": 38
+  },
+  {
+   "kind": "submission_due",
+   "date": "2027-01-21",
+   "time": "15:00",
+   "source_line": "PROPOSALS DUE ............................... 21 January 2027, no later than 3:00 p.m.",
+   "source_line_no": 39
+  },
+  {
+   "kind": "interview",
+   "date": "2027-02-08",
+   "time": null,
+   "source_line": "Interviews of finalists ..................... week of 8 February 2027",
+   "source_line_no": 40,
+   "approximate": true
+  },
+  {
+   "kind": "award",
+   "date": "2027-03-09",
+   "time": null,
+   "source_line": "Board of Trustees consideration ............. 9 March 2027",
+   "source_line_no": 41
+  },
+  {
+   "kind": "start_of_services",
+   "date": "2027-04-01",
+   "time": null,
+   "source_line": "Anticipated start of services ............... 1 April 2027",
+   "source_line_no": 42,
+   "kind_not_in_existing_keys": true
+  }
+ ],
+ "addendum_changes": [],
+ "requirements": [
+  {
+   "label": "E(i)",
+   "qtype": "cover_letter",
+   "section": "E",
+   "numbered": true,
+   "text": "Transmittal Letter. Provide a letter of no more than two pages, signed by a person with authority to bind the firm, that names the firm's contact person and states that the proposal is valid for 120 days.",
+   "alt_labels": [
+    "(i)",
+    "i",
+    "E.i"
+   ]
+  },
+  {
+   "label": "E(ii)",
+   "qtype": "firm_overview",
+   "section": "E",
+   "numbered": true,
+   "text": "Firm Description. Describe the firm's history, ownership, size and office locations, and the share of its practice devoted to public education clients.",
+   "alt_labels": [
+    "(ii)",
+    "ii",
+    "E.ii"
+   ]
+  },
+  {
+   "label": "E(iii)",
+   "qtype": "team",
+   "section": "E",
+   "numbered": true,
+   "text": "Proposed Attorneys. Identify the lead counsel, the backup counsel and every other attorney who would regularly work for the District. For each, state years of practice, relevant experience and the percentage of time available to the District. Include resumes as an appendix.",
+   "alt_labels": [
+    "(iii)",
+    "iii",
+    "E.iii"
+   ]
+  },
+  {
+   "label": "E(iv)",
+   "qtype": "experience",
+   "section": "E",
+   "numbered": true,
+   "text": "Education Law Experience. Describe the firm's experience over the last five years in each area listed in Section C, and list the community college districts and school districts the firm now serves as general counsel.",
+   "alt_labels": [
+    "(iv)",
+    "iv",
+    "E.iv"
+   ]
+  },
+  {
+   "label": "E(v)",
+   "qtype": "approach",
+   "section": "E",
+   "numbered": true,
+   "text": "Service Approach. Explain how the firm would handle day-to-day requests for advice, including expected response times, who answers the telephone after hours, and how work is assigned among attorneys.",
+   "alt_labels": [
+    "(v)",
+    "v",
+    "E.v"
+   ]
+  },
+  {
+   "label": "E(vi)",
+   "qtype": "approach",
+   "section": "E",
+   "numbered": true,
+   "text": "How would the firm staff two urgent matters arising in the same week, for example a student expulsion hearing and a public records lawsuit?",
+   "alt_labels": [
+    "(vi)",
+    "vi",
+    "E.vi"
+   ],
+   "alt_qtypes": [
+    "team",
+    "other"
+   ],
+   "is_question": true
+  },
+  {
+   "label": "E(vii)",
+   "qtype": "references",
+   "section": "E",
+   "numbered": true,
+   "text": "References. Give the name, title, telephone number and email address of five public education clients for whom the firm has worked in the last three years. At least two must be community college districts.",
+   "alt_labels": [
+    "(vii)",
+    "vii",
+    "E.vii"
+   ]
+  },
+  {
+   "label": "E(viii)",
+   "qtype": "conflicts",
+   "section": "E",
+   "numbered": true,
+   "text": "Conflicts of Interest. Disclose any present or past representation of the Ashdown Valley Faculty Association, the Ashdown Classified Employees Union, or any Trustee or employee of the District, and any other matter that could present a conflict. State how the firm would resolve each.",
+   "alt_labels": [
+    "(viii)",
+    "viii",
+    "E.viii"
+   ]
+  },
+  {
+   "label": "E(ix)",
+   "qtype": "rates",
+   "section": "E",
+   "numbered": true,
+   "text": "Fee Proposal. State the hourly rate for each attorney and paralegal, any proposed monthly retainer and the services it covers, rates for travel time, and all costs the firm would bill separately. State whether rates are fixed for the initial term.",
+   "alt_labels": [
+    "(ix)",
+    "ix",
+    "E.ix"
+   ]
+  },
+  {
+   "label": "E(x)",
+   "qtype": "transition",
+   "section": "E",
+   "numbered": true,
+   "text": "Transition Plan. Describe the steps the firm would take in its first ninety days, including the transfer of open files from present counsel.",
+   "alt_labels": [
+    "(x)",
+    "x",
+    "E.x"
+   ]
+  },
+  {
+   "label": "E(xi)",
+   "qtype": "disclosure",
+   "section": "E",
+   "numbered": true,
+   "text": "Claims and Discipline. Has the firm, or any attorney named in the proposal, been the subject of a malpractice claim or disciplinary action in the last ten years? If so, explain.",
+   "alt_labels": [
+    "(xi)",
+    "xi",
+    "E.xi"
+   ],
+   "alt_qtypes": [
+    "other"
+   ],
+   "is_question": true
+  },
+  {
+   "label": "E-unnumbered-1",
+   "qtype": "team",
+   "section": "E",
+   "numbered": false,
+   "text": "In addition to the numbered items, every proposal must include a one-page organization chart showing the attorneys who would serve the District.",
+   "alt_qtypes": [
+    "other"
+   ]
+  },
+  {
+   "label": "E-unnumbered-2",
+   "qtype": "disclosure",
+   "section": "E",
+   "numbered": false,
+   "text": "A proposer that takes exception to any term of the District's standard agreement for legal services (Appendix 1) must list each exception on a separate page headed \"Exceptions\". Exceptions raised after the due date will not be considered."
+  }
+ ],
+ "forms": [
+  "Proposal Certification and Signature Page",
+  "Non-Collusion Declaration",
+  "Disclosure of Relationships with District Officials",
+  "Acknowledgment of Addenda",
+  "taxpayer identification form (Form W-9)",
+  "evidence of insurance"
+ ],
+ "evaluation": [
+  {
+   "name": "demonstrated experience in community college and education law",
+   "weight": 40
+  },
+  {
+   "name": "qualifications and availability of the proposed attorneys",
+   "weight": 25
+  },
+  {
+   "name": "service approach and responsiveness",
+   "weight": 15
+  },
+  {
+   "name": "fees",
+   "weight": 15
+  },
+  {
+   "name": "references",
+   "weight": 5
+  }
+ ],
+ "min_quals": [
+  {
+   "starts": "The attorney proposed as lead counsel shall have been a member in",
+   "check_kind": "years_admitted",
+   "value": 10
+  },
+  {
+   "starts": "The firm shall employ at least five",
+   "check_kind": "attorney_count",
+   "value": 5
+  },
+  {
+   "starts": "The firm shall have served as general counsel to at least three",
+   "check_kind": "not_checkable",
+   "value": null
+  },
+  {
+   "starts": "The firm shall maintain a staffed office within Calloway County",
+   "check_kind": "office_location",
+   "value": "Calloway County"
+  }
+ ],
+ "insurance": [
+  {
+   "contains": "professional liability insurance",
+   "amount": "$3,000,000",
+   "amount_value": 3000000
+  },
+  {
+   "contains": "commercial general liability insurance",
+   "amount": "$1,000,000",
+   "amount_value": 1000000
+  },
+  {
+   "contains": "workers' compensation insurance",
+   "amount": null,
+   "amount_value": null
+  },
+  {
+   "contains": "automobile liability insurance",
+   "amount": "$1,000,000",
+   "amount_value": 1000000
+  }
+ ],
+ "mechanics": {
+  "page_limit": 20,
+  "font_pt": 12,
+  "margin_in": 1.0,
+  "kinds": [
+   "copies",
+   "format",
+   "packaging",
+   "delivery",
+   "not_accepted",
+   "page_limit",
+   "page_exclusions",
+   "font",
+   "margins"
+  ]
+ },
+ "parties": [
+  {
+   "name": "Ashdown Valley Community College District",
+   "category": "agency"
+  },
+  {
+   "name": "Nadira Whitcombe",
+   "category": "board"
+  },
+  {
+   "name": "Osric Tavener",
+   "category": "board"
+  },
+  {
+   "name": "Imelda Rasmussen",
+   "category": "board"
+  },
+  {
+   "name": "Corwin Addai",
+   "category": "board"
+  },
+  {
+   "name": "Livia Montrose",
+   "category": "board"
+  },
+  {
+   "name": "Thaddeus Okafor-Lind",
+   "category": "board"
+  },
+  {
+   "name": "Priya Venkataraman",
+   "category": "board"
+  },
+  {
+   "name": "Alaric Fenwick",
+   "category": "staff"
+  },
+  {
+   "name": "Marguerite Solberg",
+   "category": "staff"
+  },
+  {
+   "name": "Ashdown Valley Faculty Association",
+   "category": "adverse"
+  },
+  {
+   "name": "Ashdown Classified Employees Union",
+   "category": "adverse"
+  }
+ ],
+ "party_notes": "The two employee organisations are named as conflict-check parties; 'adverse' is the nearest existing category and 'other_organisation' should also be accepted.",
+ "dates_that_are_not_deadlines": [
+  "31 March 2027 (end of present counsel's contract)",
+  "24 December 2026 through 1 January 2027 (office closure)"
+ ],
+ "not_requirements": [
+  "C(i) to C(viii): scope of services",
+  "D(i) to D(iv): minimum qualifications",
+  "F(i) to F(iv): forms",
+  "J(i) to J(v): general conditions, including a 5 business day protest period and a 15 day signing period that are not schedule dates"
+ ],
+ "extra_fields": {
+  "source_line / source_line_no": "on each deadline: the line of the RFP file (stripped, 1-based number) that states the date in force. For a date changed by addendum it is the addendum line; original_source_line is the line in the body.",
+  "section, numbered, text": "on each requirement: the section it sits in, whether the RFP gives it a number or label, and its exact text with runs of white space collapsed to one space (the label itself is left out).",
+  "alt_labels, alt_qtypes": "other labels or question types that a scorer should also accept. Question types are the test author's judgement.",
+  "deleted_requirements": "requirements removed by addendum. They must NOT appear in the parsed requirement list.",
+  "evaluation_as_issued, forms_as_issued, before_addenda": "values before any addendum, for checking that the change is shown.",
+  "addendum (on addendum_changes)": "which addendum made the change. Kinds beyond the existing keys: requirement_deleted, criterion_removed, weight_changed, insurance_changed, form_removed; time_from and time_to are given where an addendum changes the time of day.",
+  "amount_value": "insurance amount as a whole number of dollars.",
+  "dates_that_are_not_deadlines": "dates in the text that must not be read as schedule deadlines.",
+  "not_requirements": "numbered or lettered items that are not proposal requirements (scope of services, general conditions, table of contents). Reading them as requirements is an error.",
+  "kind_not_in_existing_keys": "marks a deadline kind the existing keys do not use; score it separately."
+ }
+}

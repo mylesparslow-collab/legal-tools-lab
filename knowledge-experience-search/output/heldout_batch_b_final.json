@@ -1,0 +1,930 @@
+{
+ "batch": "batch_b",
+ "expansion": "on",
+ "scoring": "strict = listed as relevant; lenient = listed or marked same topic; other results are unjudged; no recall",
+ "tool_state": {
+  "ranking_config_sha256": "0b4b63b556500ec0",
+  "thesaurus_sha256": "36859970875d5276"
+ },
+ "document_queries": {
+  "all": {
+   "queries": 30,
+   "strict_precision_at_5": 0.533,
+   "lenient_precision_at_5": 0.627,
+   "share_with_a_listed_document_in_top_10": 0.7,
+   "queries_with_a_listed_document_in_top_10": 21
+  },
+  "different words": {
+   "queries": 20,
+   "strict_precision_at_5": 0.35,
+   "lenient_precision_at_5": 0.45,
+   "share_with_a_listed_document_in_top_10": 0.55,
+   "queries_with_a_listed_document_in_top_10": 11
+  },
+  "documents' own words": {
+   "queries": 10,
+   "strict_precision_at_5": 0.9,
+   "lenient_precision_at_5": 0.98,
+   "share_with_a_listed_document_in_top_10": 1.0,
+   "queries_with_a_listed_document_in_top_10": 10
+  }
+ },
+ "who_has_done_this": {
+  "queries": 6,
+  "queries_with_every_strongest_person_in_top_3": 5,
+  "expected_people_in_top_5": 15,
+  "expected_people": 18
+ },
+ "per_query": [
+  {
+   "id": "HB01",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "financial covenants compliance certificate",
+   "returned": 15,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00691",
+    "D00401",
+    "D00693",
+    "D00170",
+    "D00027"
+   ]
+  },
+  {
+   "id": "HB02",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "probate petition letters testamentary",
+   "returned": 29,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "testamentary -> will (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00371",
+    "D00761",
+    "D00468",
+    "D00317",
+    "D00471"
+   ]
+  },
+  {
+   "id": "HB03",
+   "kind": "documents' own words",
+   "category": "topic and document type",
+   "variation": "own words",
+   "query": "trademark opposition agreement",
+   "returned": 37,
+   "strict_precision_at_5": 0.6,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 2,
+   "expansions_used": [
+    "agreement -> contract (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D01192",
+    "D01053",
+    "D00543",
+    "D00540",
+    "D00496"
+   ]
+  },
+  {
+   "id": "HB04",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "data processing agreement subprocessor",
+   "returned": 17,
+   "strict_precision_at_5": 0.8,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D01010",
+    "D00809",
+    "D01064",
+    "D00555",
+    "D01205"
+   ]
+  },
+  {
+   "id": "HB05",
+   "kind": "documents' own words",
+   "category": "exact phrase",
+   "variation": "own words",
+   "query": "\"leasehold mortgage\" ground lease",
+   "returned": 12,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00336",
+    "D00151",
+    "D00980",
+    "D00383",
+    "D00152"
+   ]
+  },
+  {
+   "id": "HB06",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "environmental review negative declaration",
+   "returned": 20,
+   "strict_precision_at_5": 0.8,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "environmental review -> environmental assessment (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00889",
+    "D00154",
+    "D00437",
+    "D00156",
+    "D00155"
+   ]
+  },
+  {
+   "id": "HB07",
+   "kind": "documents' own words",
+   "category": "topic and document type",
+   "variation": "own words",
+   "query": "partnership allocations memo",
+   "returned": 96,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "partnership -> limited partnership (thesaurus)",
+    "allocations -> allocated (word form)",
+    "memo -> memorandum (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00412",
+    "D00411",
+    "D00458",
+    "D00905",
+    "D00456"
+   ]
+  },
+  {
+   "id": "HB08",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "personal jurisdiction minimum contacts",
+   "returned": 15,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00245",
+    "D00194",
+    "D01171",
+    "D01174",
+    "D00675"
+   ]
+  },
+  {
+   "id": "HB09",
+   "kind": "documents' own words",
+   "category": "topic and sub-topic",
+   "variation": "own words",
+   "query": "change in control equity acceleration",
+   "returned": 29,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "change in control -> change of control (thesaurus)",
+    "equity -> stock (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00395",
+    "D00935",
+    "D01139",
+    "D00580",
+    "D00212"
+   ]
+  },
+  {
+   "id": "HB10",
+   "kind": "documents' own words",
+   "category": "topic with a type filter",
+   "variation": "own words",
+   "query": "transition services type:\"checklist\"",
+   "returned": 5,
+   "strict_precision_at_5": 0.8,
+   "lenient_precision_at_5": 0.8,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00523",
+    "D00764",
+    "D00763",
+    "D00374",
+    "D00478"
+   ]
+  },
+  {
+   "id": "HB11",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "abbreviation",
+   "query": "DSAR",
+   "returned": 17,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "dsar -> data subject request (thesaurus)",
+    "dsar -> access request (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00859",
+    "D00857",
+    "D00277",
+    "D00860",
+    "D00906"
+   ]
+  },
+  {
+   "id": "HB12",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "abbreviation",
+   "query": "FLP gifting",
+   "returned": 28,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "flp -> family limited partnership (thesaurus)",
+    "gifting -> gift (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00183",
+    "D00608",
+    "D00189",
+    "D00560",
+    "D00559"
+   ]
+  },
+  {
+   "id": "HB13",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "British spelling (documents use license)",
+   "query": "software licence compliance audit",
+   "returned": 38,
+   "strict_precision_at_5": 0.8,
+   "lenient_precision_at_5": 0.8,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "software -> software license (thesaurus)",
+    "licence -> permit (thesaurus)",
+    "licence -> consent (thesaurus)",
+    "licence -> license (thesaurus)",
+    "licence -> software license (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00216",
+    "D00121",
+    "D01189",
+    "D00217",
+    "D01065"
+   ]
+  },
+  {
+   "id": "HB14",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "British informal",
+   "query": "sacking a trustee",
+   "returned": 116,
+   "strict_precision_at_5": 0.8,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "trustee -> trust (word form)"
+   ],
+   "not_found": [
+    "sacking"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00964",
+    "D00045",
+    "D00862",
+    "D00867",
+    "D00048"
+   ]
+  },
+  {
+   "id": "HB15",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "tax on payments to a foreign parent company",
+   "returned": 46,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [],
+   "not_found": [
+    "foreign",
+    "parent",
+    "company"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00504",
+    "D00501",
+    "D00502",
+    "D00075",
+    "D00499"
+   ]
+  },
+  {
+   "id": "HB16",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "pop-up asking visitors to accept tracking",
+   "returned": 9,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [
+    "asking -> asked (word form)",
+    "accept -> acceptance (word form)",
+    "tracking -> cookie (thesaurus)",
+    "tracking -> tracking technology (thesaurus)",
+    "tracking -> track (word form)"
+   ],
+   "not_found": [
+    "pop",
+    "visitors"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D01190",
+    "D01187",
+    "D00655",
+    "D00824",
+    "D00326"
+   ]
+  },
+  {
+   "id": "HB17",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "builder's fixed price and penalties for finishing late",
+   "returned": 0,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [
+    "builder -> contractor (thesaurus)",
+    "price -> consideration (thesaurus)",
+    "price -> pricing (word form)",
+    "penalties -> sanction (thesaurus)",
+    "penalties -> surcharge (thesaurus)"
+   ],
+   "not_found": [
+    "finishing",
+    "late"
+   ],
+   "corrected": [],
+   "top_5": []
+  },
+  {
+   "id": "HB18",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing, British term",
+   "query": "permission to build closer to the boundary than the rules allow",
+   "returned": 4,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [
+    "permission -> consent (thesaurus)",
+    "permission -> approval (thesaurus)",
+    "permission -> permissive (word form)",
+    "build -> contractor (thesaurus)",
+    "rules -> ordinance (thesaurus)",
+    "allow -> allowance (word form)"
+   ],
+   "not_found": [
+    "closer",
+    "boundary"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00827",
+    "D01037",
+    "D01034",
+    "D00728"
+   ]
+  },
+  {
+   "id": "HB19",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "synonym",
+   "query": "internal probe into a harassment complaint",
+   "returned": 2,
+   "strict_precision_at_5": 0.2,
+   "lenient_precision_at_5": 0.2,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "probe -> probate (thesaurus)"
+   ],
+   "not_found": [
+    "harassment"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D01427",
+    "D01293"
+   ]
+  },
+  {
+   "id": "HB20",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "forcing the case out of court to a private arbitrator",
+   "returned": 0,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [
+    "forcing -> force (word form)",
+    "arbitrator -> arbitral (word form)",
+    "arbitrator -> arbitration (word form)"
+   ],
+   "not_found": [
+    "case"
+   ],
+   "corrected": [],
+   "top_5": []
+  },
+  {
+   "id": "HB21",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "trust paying income for life with the rest going to charity",
+   "returned": 1,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [
+    "trust -> trustee (word form)",
+    "rest -> restatement (word form)",
+    "charity -> not-for-profit (thesaurus)"
+   ],
+   "not_found": [
+    "paying",
+    "going"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00666"
+   ]
+  },
+  {
+   "id": "HB22",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "British synonym",
+   "query": "service charge reconciliation dispute",
+   "returned": 31,
+   "strict_precision_at_5": 0.4,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "service charge -> operating expenses (thesaurus)",
+    "service charge -> common area maintenance (thesaurus)",
+    "dispute -> controversy (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00826",
+    "D00878",
+    "D00780",
+    "D00108",
+    "D01083"
+   ]
+  },
+  {
+   "id": "HB23",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "making sure the bank's lien is properly registered",
+   "returned": 33,
+   "strict_precision_at_5": 0.2,
+   "lenient_precision_at_5": 0.2,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "bank -> lender (thesaurus)",
+    "bank -> creditor (thesaurus)",
+    "bank -> banking (word form)",
+    "lien -> charge (thesaurus)",
+    "lien -> encumbrance (thesaurus)",
+    "lien -> security interest (thesaurus)",
+    "lien -> collateral (thesaurus)",
+    "properly -> property (typo)",
+    "registered -> register (word form)"
+   ],
+   "not_found": [
+    "making",
+    "sure"
+   ],
+   "corrected": [
+    {
+     "typed": "properly",
+     "read_as": "property"
+    }
+   ],
+   "top_5": [
+    "D00902",
+    "D00691",
+    "D01056",
+    "D00127",
+    "D00850"
+   ]
+  },
+  {
+   "id": "HB24",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "royalty terms for using patented technology",
+   "returned": 16,
+   "strict_precision_at_5": 0.2,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 3,
+   "expansions_used": [
+    "patented -> patent (word form)"
+   ],
+   "not_found": [
+    "using"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00494",
+    "D00997",
+    "D00023",
+    "D00796",
+    "D00542"
+   ]
+  },
+  {
+   "id": "HB25",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "checking who really owns the IP before the acquisition",
+   "returned": 16,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [
+    "owns -> ownership (thesaurus)",
+    "owns -> owner (thesaurus)",
+    "ip -> intellectual property (thesaurus)"
+   ],
+   "not_found": [
+    "checking"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00943",
+    "D00448",
+    "D00351",
+    "D00352",
+    "D01243"
+   ]
+  },
+  {
+   "id": "HB26",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "British lay phrasing",
+   "query": "price true-up after completion for stock and debtors",
+   "returned": 13,
+   "strict_precision_at_5": 0.8,
+   "lenient_precision_at_5": 0.8,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "price -> consideration (thesaurus)",
+    "price -> pricing (word form)",
+    "true up -> working capital adjustment (thesaurus)",
+    "completion -> closing (thesaurus)",
+    "completion -> complete (word form)",
+    "stock -> equity (thesaurus)"
+   ],
+   "not_found": [
+    "debtors"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00239",
+    "D00324",
+    "D00326",
+    "D01021",
+    "D00241"
+   ]
+  },
+  {
+   "id": "HB27",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "British synonym",
+   "query": "limit on what the seller pays for breach of warranty",
+   "returned": 0,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [
+    "limit -> limitation (word form)",
+    "limit -> limited (word form)",
+    "seller -> vendor (thesaurus)",
+    "breach -> default (thesaurus)",
+    "warranty -> representation (thesaurus)"
+   ],
+   "not_found": [
+    "pays"
+   ],
+   "corrected": [],
+   "top_5": []
+  },
+  {
+   "id": "HB28",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "someone to manage my affairs if I lose capacity",
+   "returned": 13,
+   "strict_precision_at_5": 0.0,
+   "lenient_precision_at_5": 0.0,
+   "listed_document_in_top_10": false,
+   "first_listed_rank": null,
+   "expansions_used": [
+    "manage -> manager (word form)"
+   ],
+   "not_found": [
+    "affairs",
+    "lose",
+    "capacity"
+   ],
+   "corrected": [],
+   "top_5": [
+    "D00231",
+    "D00234",
+    "D00958",
+    "D00960",
+    "D00465"
+   ]
+  },
+  {
+   "id": "HB29",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "lay phrasing",
+   "query": "councillors meeting in private session",
+   "returned": 10,
+   "strict_precision_at_5": 1.0,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "councillors -> city (thesaurus)",
+    "councillors -> public agency (thesaurus)",
+    "meeting -> meet (word form)",
+    "private session -> closed session (thesaurus)"
+   ],
+   "not_found": [],
+   "corrected": [],
+   "top_5": [
+    "D00438",
+    "D00440",
+    "D00342",
+    "D00536",
+    "D00340"
+   ]
+  },
+  {
+   "id": "HB30",
+   "kind": "different words",
+   "category": "different vocabulary",
+   "variation": "typo",
+   "query": "forum selecton clause enforcability",
+   "returned": 23,
+   "strict_precision_at_5": 0.6,
+   "lenient_precision_at_5": 1.0,
+   "listed_document_in_top_10": true,
+   "first_listed_rank": 1,
+   "expansions_used": [
+    "forum -> venue (thesaurus)",
+    "forum -> forum selection clause (thesaurus)",
+    "selecton -> selection (typo)",
+    "clause -> provision (thesaurus)",
+    "clause -> forum selection clause (thesaurus)",
+    "enforcability -> enforceability (typo)"
+   ],
+   "not_found": [],
+   "corrected": [
+    {
+     "typed": "selecton",
+     "read_as": "selection"
+    },
+    {
+     "typed": "enforcability",
+     "read_as": "enforceability"
+    }
+   ],
+   "top_5": [
+    "D00196",
+    "D01128",
+    "D00005",
+    "D00525",
+    "D00195"
+   ]
+  }
+ ],
+ "per_who_query": [
+  {
+   "id": "WB1",
+   "query": "syndicated loan",
+   "variation": "own words",
+   "matters_matched": 10,
+   "message": "",
+   "every_strongest_in_top_3": true,
+   "expected_in_top_5": 3,
+   "expected": 3,
+   "top_5": [
+    "U075",
+    "U078",
+    "U080",
+    "U076",
+    "U074"
+   ]
+  },
+  {
+   "id": "WB2",
+   "query": "trade secret dispute",
+   "variation": "own words",
+   "matters_matched": 5,
+   "message": "",
+   "every_strongest_in_top_3": true,
+   "expected_in_top_5": 3,
+   "expected": 3,
+   "top_5": [
+    "U063",
+    "U064",
+    "U072",
+    "U062",
+    "U066"
+   ]
+  },
+  {
+   "id": "WB3",
+   "query": "tax controversy",
+   "variation": "own words",
+   "matters_matched": 9,
+   "message": "",
+   "every_strongest_in_top_3": true,
+   "expected_in_top_5": 3,
+   "expected": 3,
+   "top_5": [
+    "U087",
+    "U086",
+    "U085",
+    "U092",
+    "U089"
+   ]
+  },
+  {
+   "id": "WB4",
+   "query": "financing a building on leased land",
+   "variation": "different vocabulary: lay phrasing",
+   "matters_matched": 7,
+   "message": "",
+   "every_strongest_in_top_3": true,
+   "expected_in_top_5": 3,
+   "expected": 3,
+   "top_5": [
+    "U026",
+    "U025",
+    "U027",
+    "U033",
+    "U035"
+   ]
+  },
+  {
+   "id": "WB5",
+   "query": "taxing a charity's side business income",
+   "variation": "different vocabulary: lay phrasing",
+   "matters_matched": 8,
+   "message": "Nothing you can open mentions: charity, side.",
+   "every_strongest_in_top_3": true,
+   "expected_in_top_5": 3,
+   "expected": 3,
+   "top_5": [
+    "U087",
+    "U085",
+    "U092",
+    "U086",
+    "U089"
+   ]
+  },
+  {
+   "id": "WB6",
+   "query": "adjusting duties for staff with disabilities",
+   "variation": "different vocabulary: lay phrasing",
+   "matters_matched": 1,
+   "message": "Nothing you can open mentions: duties, disabilities. Only 1 matching matter you can open. That is too little to rank on: treat the people below as leads to ask. They are in order of recorded involvement.",
+   "every_strongest_in_top_3": false,
+   "expected_in_top_5": 0,
+   "expected": 3,
+   "top_5": [
+    "U038",
+    "U043",
+    "U046"
+   ]
+  }
+ ]
+}

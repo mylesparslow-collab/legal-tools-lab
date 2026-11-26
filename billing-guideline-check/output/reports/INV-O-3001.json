@@ -348,7 +348,7 @@
       "severity_label": "likely reduced",
       "source_quote": "Please obtain our approval before spending more than 5 hours on legal research for a matter.",
       "source_ref": "Part A. How we expect matters to be staffed, page 1",
-      "explanation": "Research on this invoice reaches 5.7 hours with this entry. The limit without approval is 5 hours; 0.7 hours of this entry fall over it.",
+      "explanation": "Research on this invoice reaches 5.7 hours with this entry (read as research from activity code A102). The limit without approval is 5 hours; 0.7 hours of this entry fall over it.",
       "suggested_fix": "Ask the client to approve the research, or hold the excess time. Research billed on earlier invoices is not counted here.",
       "amount_at_risk": "325.50",
       "status": "open",

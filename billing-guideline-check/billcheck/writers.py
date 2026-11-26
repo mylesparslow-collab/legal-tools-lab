@@ -28,6 +28,8 @@ def write_ledes(invoices, law_firm_id="FIRM-0001"):
             for text in (ln.narrative, inv.description, ln.timekeeper_name):
                 if "|" in text or "[]" in text:
                     raise ValueError("text fields may not contain | or []: %r" % text)
+                if not text.isascii():
+                    raise ValueError("LEDES 1998B is an ASCII format; non-ASCII text: %r" % text)
             fields = [
                 _ymd(inv.invoice_date),
                 inv.invoice_id,

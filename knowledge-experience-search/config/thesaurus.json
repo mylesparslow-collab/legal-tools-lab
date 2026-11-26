@@ -1,0 +1,2400 @@
+{
+ "_about": "Equivalent terms used to widen a search: legal and plain-language synonyms, abbreviations and spelling variants. General English and general legal vocabulary only. No citations to statutes or cases. Each group is a list of terms treated as alternatives for one another. A match through this file is weighted below the user's own words (see expansion.weights.thesaurus in ranking.json) and is shown in the explanation.",
+ "_maintenance": "Owned by the knowledge lawyers, not by IT. Add a group when the audit report (python -m kx audit report) shows people searching in words the documents do not use. Prefer specific multi-word terms to single common words: a broad single word matches a lot and lowers precision. Do not add client names, matter names or project codenames: this file is not permission-filtered and anyone can read it. Entries apply to every user alike.",
+ "sections": [
+  {
+   "area": "contracts, general",
+   "groups": [
+    [
+     "agreement",
+     "contract"
+    ],
+    [
+     "clause",
+     "provision"
+    ],
+    [
+     "termination",
+     "cancellation",
+     "rescission"
+    ],
+    [
+     "breach",
+     "default",
+     "violation",
+     "non-performance"
+    ],
+    [
+     "amendment",
+     "modification",
+     "variation"
+    ],
+    [
+     "waiver",
+     "relinquishment"
+    ],
+    [
+     "indemnity",
+     "indemnification",
+     "hold harmless"
+    ],
+    [
+     "liability",
+     "liable",
+     "legal responsibility"
+    ],
+    [
+     "damages",
+     "compensation",
+     "monetary relief"
+    ],
+    [
+     "liquidated damages",
+     "agreed damages",
+     "delay damages"
+    ],
+    [
+     "representation",
+     "warranty"
+    ],
+    [
+     "guaranty",
+     "guarantee",
+     "surety",
+     "suretyship"
+    ],
+    [
+     "confidentiality agreement",
+     "non-disclosure agreement",
+     "nda",
+     "secrecy agreement"
+    ],
+    [
+     "force majeure",
+     "act of god"
+    ],
+    [
+     "notice",
+     "notification"
+    ],
+    [
+     "consent",
+     "approval",
+     "permission"
+    ],
+    [
+     "obligation",
+     "duty",
+     "undertaking"
+    ],
+    [
+     "exclusivity",
+     "exclusive dealing"
+    ],
+    [
+     "letter of intent",
+     "loi",
+     "heads of terms",
+     "term sheet",
+     "memorandum of understanding",
+     "mou"
+    ],
+    [
+     "renewal",
+     "extension"
+    ],
+    [
+     "expiry",
+     "expiration",
+     "lapse"
+    ],
+    [
+     "remedy",
+     "relief",
+     "redress"
+    ],
+    [
+     "limitation of liability",
+     "liability cap",
+     "cap on liability",
+     "limit of liability"
+    ],
+    [
+     "set-off",
+     "setoff",
+     "offset",
+     "netting"
+    ],
+    [
+     "best efforts",
+     "reasonable efforts",
+     "best endeavours",
+     "reasonable endeavours"
+    ],
+    [
+     "governing law",
+     "choice of law",
+     "applicable law"
+    ],
+    [
+     "forum selection clause",
+     "jurisdiction clause",
+     "choice of forum",
+     "choice of court",
+     "venue clause"
+    ],
+    [
+     "template",
+     "model form",
+     "standard form",
+     "pro forma",
+     "precedent form"
+    ],
+    [
+     "deadline",
+     "time limit",
+     "due date"
+    ],
+    [
+     "price",
+     "purchase price",
+     "consideration"
+    ],
+    [
+     "buyer",
+     "purchaser",
+     "acquirer"
+    ],
+    [
+     "seller",
+     "vendor"
+    ],
+    [
+     "supplier",
+     "vendor",
+     "provider",
+     "service provider"
+    ],
+    [
+     "customer",
+     "client"
+    ],
+    [
+     "company",
+     "corporation",
+     "corporate entity"
+    ],
+    [
+     "buy",
+     "purchase",
+     "acquire"
+    ],
+    [
+     "sell",
+     "dispose",
+     "divest"
+    ],
+    [
+     "assign",
+     "transfer",
+     "hand over"
+    ],
+    [
+     "stop",
+     "prevent",
+     "restrain",
+     "enjoin",
+     "prohibit"
+    ],
+    [
+     "tell",
+     "notify",
+     "inform"
+    ],
+    [
+     "pay back",
+     "repay",
+     "repayment"
+    ],
+    [
+     "dispute",
+     "disagreement",
+     "controversy"
+    ]
+   ]
+  },
+  {
+   "area": "corporate and transactions",
+   "groups": [
+    [
+     "merger",
+     "amalgamation",
+     "business combination"
+    ],
+    [
+     "acquisition",
+     "takeover",
+     "buyout"
+    ],
+    [
+     "stock purchase",
+     "share purchase",
+     "share sale",
+     "stock sale"
+    ],
+    [
+     "asset purchase",
+     "asset sale",
+     "business purchase",
+     "business sale"
+    ],
+    [
+     "shares",
+     "stock",
+     "equity"
+    ],
+    [
+     "shareholder",
+     "stockholder",
+     "equity holder"
+    ],
+    [
+     "shareholders agreement",
+     "stockholders agreement",
+     "shareholder agreement"
+    ],
+    [
+     "earn-out",
+     "earnout",
+     "deferred consideration",
+     "contingent consideration",
+     "contingent payment",
+     "deferred purchase price"
+    ],
+    [
+     "due diligence",
+     "diligence review"
+    ],
+    [
+     "material adverse effect",
+     "material adverse change",
+     "mae",
+     "mac"
+    ],
+    [
+     "escrow",
+     "holdback",
+     "retention"
+    ],
+    [
+     "purchase price adjustment",
+     "price adjustment",
+     "completion accounts",
+     "closing accounts",
+     "working capital adjustment",
+     "true-up"
+    ],
+    [
+     "closing",
+     "completion"
+    ],
+    [
+     "closing conditions",
+     "conditions precedent",
+     "conditions to closing"
+    ],
+    [
+     "disclosure schedule",
+     "disclosure letter"
+    ],
+    [
+     "basket",
+     "deductible",
+     "de minimis threshold"
+    ],
+    [
+     "cap",
+     "ceiling",
+     "maximum liability"
+    ],
+    [
+     "drag-along",
+     "drag along",
+     "compulsory sale right"
+    ],
+    [
+     "tag-along",
+     "tag along",
+     "co-sale right"
+    ],
+    [
+     "right of first refusal",
+     "rofr",
+     "pre-emption right",
+     "preemptive right",
+     "first refusal"
+    ],
+    [
+     "right of first offer",
+     "rofo",
+     "first offer"
+    ],
+    [
+     "joint venture",
+     "jv",
+     "strategic alliance"
+    ],
+    [
+     "minority investment",
+     "minority stake",
+     "minority interest"
+    ],
+    [
+     "board",
+     "board of directors"
+    ],
+    [
+     "bylaws",
+     "by-laws",
+     "articles of association"
+    ],
+    [
+     "subsidiary",
+     "affiliate",
+     "group company"
+    ],
+    [
+     "dividend",
+     "distribution"
+    ],
+    [
+     "transition services",
+     "transitional services",
+     "tsa",
+     "post-closing services"
+    ],
+    [
+     "non-compete",
+     "noncompete",
+     "non-competition",
+     "covenant not to compete",
+     "restrictive covenant",
+     "restraint of trade"
+    ],
+    [
+     "non-solicitation",
+     "non-solicit",
+     "no-poach",
+     "anti-poaching"
+    ],
+    [
+     "lock-up",
+     "lockup",
+     "transfer restriction"
+    ],
+    [
+     "good standing",
+     "certificate of good standing",
+     "certificate of existence"
+    ],
+    [
+     "signing",
+     "execution"
+    ],
+    [
+     "winding up",
+     "liquidation",
+     "dissolution"
+    ],
+    [
+     "insolvency",
+     "bankruptcy"
+    ],
+    [
+     "restructuring",
+     "reorganization",
+     "workout"
+    ],
+    [
+     "closing checklist",
+     "completion checklist",
+     "closing agenda",
+     "completion agenda"
+    ],
+    [
+     "officer certificate",
+     "officers certificate",
+     "director certificate",
+     "secretary certificate"
+    ],
+    [
+     "funds flow",
+     "flow of funds",
+     "payment waterfall"
+    ],
+    [
+     "competitor",
+     "rival",
+     "competing business"
+    ]
+   ]
+  },
+  {
+   "area": "disputes",
+   "groups": [
+    [
+     "lawsuit",
+     "suit",
+     "litigation",
+     "court proceedings",
+     "legal proceedings"
+    ],
+    [
+     "plaintiff",
+     "claimant",
+     "complainant",
+     "petitioner"
+    ],
+    [
+     "defendant",
+     "respondent"
+    ],
+    [
+     "complaint",
+     "statement of claim",
+     "particulars of claim"
+    ],
+    [
+     "brief",
+     "memorandum of law",
+     "written submissions",
+     "skeleton argument",
+     "written argument"
+    ],
+    [
+     "motion to dismiss",
+     "strike out",
+     "application to strike out",
+     "demurrer"
+    ],
+    [
+     "summary judgment",
+     "summary disposal",
+     "judgment without trial"
+    ],
+    [
+     "injunction",
+     "injunctive relief",
+     "restraining order"
+    ],
+    [
+     "preliminary injunction",
+     "interim injunction",
+     "interlocutory injunction",
+     "temporary injunction",
+     "interim relief"
+    ],
+    [
+     "temporary restraining order",
+     "tro",
+     "emergency injunction"
+    ],
+    [
+     "discovery",
+     "document production",
+     "e-discovery",
+     "disclosure of documents"
+    ],
+    [
+     "deposition",
+     "examination under oath"
+    ],
+    [
+     "subpoena",
+     "witness summons"
+    ],
+    [
+     "affidavit",
+     "declaration",
+     "sworn statement",
+     "witness statement"
+    ],
+    [
+     "expert witness",
+     "expert",
+     "expert evidence",
+     "expert testimony"
+    ],
+    [
+     "exclude",
+     "preclude",
+     "disqualify",
+     "exclusion"
+    ],
+    [
+     "venue",
+     "forum",
+     "place of trial"
+    ],
+    [
+     "change of venue",
+     "transfer of venue"
+    ],
+    [
+     "personal jurisdiction",
+     "jurisdiction over the defendant",
+     "jurisdictional challenge"
+    ],
+    [
+     "class action",
+     "group action",
+     "collective action",
+     "representative action"
+    ],
+    [
+     "settlement",
+     "compromise"
+    ],
+    [
+     "mediation",
+     "conciliation",
+     "alternative dispute resolution",
+     "adr"
+    ],
+    [
+     "arbitration",
+     "arbitral proceedings"
+    ],
+    [
+     "arbitrator",
+     "arbitral tribunal"
+    ],
+    [
+     "compel arbitration",
+     "refer to arbitration",
+     "stay pending arbitration"
+    ],
+    [
+     "appeal",
+     "appellate review"
+    ],
+    [
+     "sanction",
+     "penalty"
+    ],
+    [
+     "spoliation",
+     "destruction of evidence"
+    ],
+    [
+     "litigation hold",
+     "legal hold",
+     "preservation notice",
+     "document preservation"
+    ],
+    [
+     "privilege",
+     "privileged",
+     "attorney-client privilege",
+     "legal professional privilege"
+    ],
+    [
+     "protective order",
+     "confidentiality order"
+    ],
+    [
+     "irreparable harm",
+     "irreparable injury",
+     "irreparable damage"
+    ],
+    [
+     "attorney",
+     "lawyer",
+     "counsel",
+     "solicitor"
+    ],
+    [
+     "legal fees",
+     "attorneys fees",
+     "legal costs"
+    ],
+    [
+     "limitation period",
+     "statute of limitations",
+     "time bar"
+    ],
+    [
+     "burden of proof",
+     "onus of proof"
+    ],
+    [
+     "judgment",
+     "decree",
+     "ruling"
+    ],
+    [
+     "trial",
+     "hearing"
+    ],
+    [
+     "counterclaim",
+     "cross-claim",
+     "countersuit"
+    ],
+    [
+     "fraud",
+     "deceit",
+     "misrepresentation"
+    ],
+    [
+     "negligence",
+     "carelessness"
+    ],
+    [
+     "tort",
+     "civil wrong"
+    ],
+    [
+     "shareholder dispute",
+     "stockholder dispute",
+     "derivative action"
+    ],
+    [
+     "witness",
+     "deponent"
+    ],
+    [
+     "sue",
+     "bring a claim",
+     "file suit"
+    ],
+    [
+     "contract dispute",
+     "breach of contract claim",
+     "contractual dispute"
+    ],
+    [
+     "damages model",
+     "damages calculation",
+     "quantum",
+     "loss calculation"
+    ]
+   ]
+  },
+  {
+   "area": "property and construction",
+   "groups": [
+    [
+     "lease",
+     "tenancy",
+     "letting",
+     "rental agreement",
+     "tenancy agreement"
+    ],
+    [
+     "tenant",
+     "lessee",
+     "occupier",
+     "renter"
+    ],
+    [
+     "landlord",
+     "lessor"
+    ],
+    [
+     "sublease",
+     "sublet",
+     "subletting",
+     "underlease",
+     "underletting"
+    ],
+    [
+     "lease assignment",
+     "assignment of lease",
+     "lease transfer",
+     "transfer of lease"
+    ],
+    [
+     "rent",
+     "rental"
+    ],
+    [
+     "premises",
+     "demised premises",
+     "leased premises",
+     "leased space"
+    ],
+    [
+     "real estate",
+     "real property",
+     "realty",
+     "land"
+    ],
+    [
+     "purchase and sale agreement",
+     "sale and purchase agreement",
+     "contract of sale"
+    ],
+    [
+     "deed",
+     "conveyance"
+    ],
+    [
+     "title",
+     "ownership"
+    ],
+    [
+     "easement",
+     "right of way",
+     "servitude",
+     "wayleave"
+    ],
+    [
+     "mortgage",
+     "deed of trust",
+     "charge over land"
+    ],
+    [
+     "foreclosure",
+     "repossession"
+    ],
+    [
+     "operating expenses",
+     "service charge",
+     "common area maintenance",
+     "cam",
+     "operating costs",
+     "outgoings"
+    ],
+    [
+     "tenant improvements",
+     "fit-out",
+     "fit out",
+     "build-out",
+     "leasehold improvements",
+     "tenant works"
+    ],
+    [
+     "tenant improvement allowance",
+     "fit-out contribution",
+     "build-out allowance",
+     "construction allowance"
+    ],
+    [
+     "security deposit",
+     "rent deposit"
+    ],
+    [
+     "earnest money",
+     "deposit",
+     "good faith deposit"
+    ],
+    [
+     "ground lease",
+     "land lease",
+     "building lease"
+    ],
+    [
+     "purchase option",
+     "option to purchase",
+     "call option",
+     "option to buy"
+    ],
+    [
+     "estoppel certificate",
+     "tenant estoppel",
+     "estoppel letter"
+    ],
+    [
+     "eviction",
+     "possession proceedings",
+     "forfeiture"
+    ],
+    [
+     "break clause",
+     "early termination right",
+     "termination option"
+    ],
+    [
+     "rent review",
+     "rent reset",
+     "rent adjustment",
+     "rent escalation"
+    ],
+    [
+     "construction contract",
+     "building contract",
+     "works contract"
+    ],
+    [
+     "contractor",
+     "builder",
+     "general contractor"
+    ],
+    [
+     "change order",
+     "variation order"
+    ],
+    [
+     "retainage",
+     "retention"
+    ],
+    [
+     "substantial completion",
+     "practical completion"
+    ],
+    [
+     "punch list",
+     "snagging list",
+     "snag list",
+     "defects list"
+    ],
+    [
+     "lien",
+     "charge",
+     "encumbrance"
+    ],
+    [
+     "commercial lease",
+     "business lease",
+     "office lease",
+     "retail lease"
+    ],
+    [
+     "guaranteed maximum price",
+     "gmp",
+     "price cap",
+     "maximum price"
+    ],
+    [
+     "home",
+     "house",
+     "residence",
+     "dwelling"
+    ],
+    [
+     "neighbour",
+     "neighbor",
+     "adjoining owner"
+    ]
+   ]
+  },
+  {
+   "area": "land use and public bodies",
+   "groups": [
+    [
+     "zoning",
+     "land use",
+     "planning"
+    ],
+    [
+     "variance",
+     "zoning variance",
+     "dispensation",
+     "zoning exception"
+    ],
+    [
+     "conditional use permit",
+     "special use permit",
+     "special permit",
+     "special exception"
+    ],
+    [
+     "permit",
+     "licence",
+     "consent"
+    ],
+    [
+     "planning commission",
+     "planning board",
+     "planning committee",
+     "zoning board"
+    ],
+    [
+     "city council",
+     "town council",
+     "municipal council",
+     "governing body"
+    ],
+    [
+     "ordinance",
+     "bylaw",
+     "by-law",
+     "local law",
+     "municipal code"
+    ],
+    [
+     "municipality",
+     "city",
+     "town",
+     "local government",
+     "local authority",
+     "public agency"
+    ],
+    [
+     "staff report",
+     "officer report",
+     "agenda report",
+     "committee report"
+    ],
+    [
+     "public hearing",
+     "public meeting"
+    ],
+    [
+     "open meeting",
+     "open session",
+     "public meeting"
+    ],
+    [
+     "closed session",
+     "executive session",
+     "private session"
+    ],
+    [
+     "environmental review",
+     "environmental impact assessment",
+     "environmental assessment",
+     "environmental impact report",
+     "environmental study"
+    ],
+    [
+     "mitigation",
+     "mitigation measure"
+    ],
+    [
+     "subdivision",
+     "plat",
+     "land division",
+     "lot split"
+    ],
+    [
+     "development agreement",
+     "developer agreement",
+     "planning agreement"
+    ],
+    [
+     "impact fee",
+     "development fee",
+     "developer contribution",
+     "development charge"
+    ],
+    [
+     "competitive bidding",
+     "public bidding",
+     "tender",
+     "procurement",
+     "public procurement",
+     "competitive tender"
+    ],
+    [
+     "bid protest",
+     "tender challenge",
+     "procurement challenge",
+     "bid challenge"
+    ],
+    [
+     "request for proposals",
+     "rfp",
+     "invitation to tender",
+     "invitation to bid"
+    ],
+    [
+     "annexation",
+     "boundary change"
+    ],
+    [
+     "short-term rental",
+     "vacation rental",
+     "holiday let",
+     "short-term let",
+     "home sharing"
+    ],
+    [
+     "nuisance",
+     "public nuisance"
+    ],
+    [
+     "eminent domain",
+     "compulsory purchase",
+     "condemnation",
+     "expropriation"
+    ],
+    [
+     "public records",
+     "freedom of information",
+     "records request",
+     "access to information"
+    ],
+    [
+     "setback",
+     "building line"
+    ],
+    [
+     "entitlement",
+     "land use approval",
+     "planning permission",
+     "planning approval"
+    ]
+   ]
+  },
+  {
+   "area": "employment",
+   "groups": [
+    [
+     "employee",
+     "worker",
+     "staff member"
+    ],
+    [
+     "dismissal",
+     "termination of employment",
+     "firing",
+     "discharge"
+    ],
+    [
+     "wrongful dismissal",
+     "unfair dismissal",
+     "wrongful termination",
+     "wrongful discharge"
+    ],
+    [
+     "reduction in force",
+     "rif",
+     "layoff",
+     "lay-off",
+     "redundancy",
+     "downsizing",
+     "job cuts",
+     "workforce reduction",
+     "retrenchment"
+    ],
+    [
+     "severance",
+     "severance pay",
+     "redundancy pay",
+     "termination payment",
+     "separation pay",
+     "separation package",
+     "exit package"
+    ],
+    [
+     "severance agreement",
+     "separation agreement",
+     "termination agreement",
+     "exit agreement",
+     "compromise agreement"
+    ],
+    [
+     "release of claims",
+     "waiver of claims",
+     "general release"
+    ],
+    [
+     "garden leave",
+     "gardening leave"
+    ],
+    [
+     "notice period",
+     "period of notice"
+    ],
+    [
+     "overtime",
+     "extra hours",
+     "overtime pay"
+    ],
+    [
+     "wage and hour",
+     "unpaid wages",
+     "wage claim",
+     "pay claim"
+    ],
+    [
+     "misclassification",
+     "worker classification",
+     "employment status"
+    ],
+    [
+     "independent contractor",
+     "freelancer",
+     "self-employed",
+     "consultant"
+    ],
+    [
+     "discrimination",
+     "unequal treatment"
+    ],
+    [
+     "harassment",
+     "bullying",
+     "hostile work environment"
+    ],
+    [
+     "retaliation",
+     "victimisation",
+     "reprisal"
+    ],
+    [
+     "whistleblower",
+     "whistleblowing",
+     "protected disclosure"
+    ],
+    [
+     "workplace investigation",
+     "internal investigation",
+     "misconduct investigation",
+     "grievance investigation"
+    ],
+    [
+     "grievance",
+     "internal complaint"
+    ],
+    [
+     "reasonable accommodation",
+     "reasonable adjustment",
+     "workplace adjustment",
+     "disability accommodation"
+    ],
+    [
+     "leave of absence",
+     "time off",
+     "medical leave",
+     "sick leave"
+    ],
+    [
+     "executive",
+     "senior executive",
+     "senior officer"
+    ],
+    [
+     "employment agreement",
+     "employment contract",
+     "contract of employment",
+     "service agreement"
+    ],
+    [
+     "bonus",
+     "incentive pay",
+     "incentive compensation",
+     "variable pay"
+    ],
+    [
+     "equity award",
+     "stock option",
+     "share option",
+     "restricted stock"
+    ],
+    [
+     "clawback",
+     "recoupment"
+    ],
+    [
+     "change of control",
+     "change in control"
+    ],
+    [
+     "good reason",
+     "constructive dismissal",
+     "constructive termination",
+     "constructive discharge"
+    ],
+    [
+     "handbook",
+     "employee handbook",
+     "staff handbook"
+    ],
+    [
+     "union",
+     "trade union"
+    ],
+    [
+     "collective bargaining agreement",
+     "cba",
+     "collective agreement",
+     "union contract"
+    ],
+    [
+     "arbitration agreement",
+     "agreement to arbitrate",
+     "mandatory arbitration"
+    ],
+    [
+     "class waiver",
+     "class action waiver",
+     "collective action waiver"
+    ],
+    [
+     "trade secret",
+     "confidential information",
+     "proprietary information",
+     "know-how"
+    ],
+    [
+     "resignation",
+     "resign",
+     "quit",
+     "departure"
+    ],
+    [
+     "meal period",
+     "meal break",
+     "rest break",
+     "lunch break"
+    ],
+    [
+     "timekeeping records",
+     "timesheet",
+     "time record"
+    ],
+    [
+     "wage statement",
+     "pay slip",
+     "pay stub",
+     "payslip"
+    ],
+    [
+     "fire",
+     "dismiss",
+     "sack",
+     "let go"
+    ],
+    [
+     "restrictive covenant dispute",
+     "non-compete dispute",
+     "non-compete litigation"
+    ]
+   ]
+  },
+  {
+   "area": "intellectual property and technology",
+   "groups": [
+    [
+     "intellectual property",
+     "ip",
+     "ipr",
+     "intellectual property rights"
+    ],
+    [
+     "trademark",
+     "trade mark",
+     "brand",
+     "service mark"
+    ],
+    [
+     "copyright",
+     "author's right"
+    ],
+    [
+     "license",
+     "licensing agreement",
+     "license agreement"
+    ],
+    [
+     "royalty",
+     "licence fee"
+    ],
+    [
+     "infringement",
+     "unauthorised use"
+    ],
+    [
+     "trade secret misappropriation",
+     "theft of trade secrets",
+     "misuse of confidential information",
+     "breach of confidence"
+    ],
+    [
+     "likelihood of confusion",
+     "confusing similarity",
+     "confusingly similar"
+    ],
+    [
+     "takedown notice",
+     "takedown",
+     "take-down",
+     "removal request"
+    ],
+    [
+     "domain name",
+     "domain",
+     "web address"
+    ],
+    [
+     "bad faith registration",
+     "cybersquatting",
+     "domain squatting"
+    ],
+    [
+     "software license",
+     "end user licence agreement",
+     "eula",
+     "software agreement"
+    ],
+    [
+     "software as a service",
+     "saas",
+     "cloud services",
+     "hosted services"
+    ],
+    [
+     "source code escrow",
+     "code escrow"
+    ],
+    [
+     "open source",
+     "oss",
+     "open-source software"
+    ],
+    [
+     "service level agreement",
+     "sla",
+     "service levels"
+    ],
+    [
+     "invention assignment",
+     "assignment of inventions",
+     "ip assignment"
+    ],
+    [
+     "chain of title",
+     "ownership history"
+    ],
+    [
+     "freedom to operate",
+     "fto",
+     "clearance search"
+    ],
+    [
+     "joint development",
+     "co-development",
+     "research collaboration",
+     "joint research"
+    ],
+    [
+     "cease and desist",
+     "demand letter",
+     "letter before action",
+     "warning letter"
+    ],
+    [
+     "sublicense",
+     "sub-licence"
+    ],
+    [
+     "counterfeit",
+     "fake",
+     "knock-off"
+    ],
+    [
+     "technology transaction",
+     "technology agreement",
+     "tech deal"
+    ],
+    [
+     "patent license",
+     "patent licensing agreement"
+    ]
+   ]
+  },
+  {
+   "area": "lending and security",
+   "groups": [
+    [
+     "loan",
+     "credit facility",
+     "borrowing"
+    ],
+    [
+     "loan agreement",
+     "credit agreement",
+     "facility agreement",
+     "financing agreement"
+    ],
+    [
+     "lender",
+     "bank",
+     "creditor",
+     "financier"
+    ],
+    [
+     "borrower",
+     "debtor",
+     "obligor"
+    ],
+    [
+     "syndicated loan",
+     "syndicated facility",
+     "club loan"
+    ],
+    [
+     "financial covenant",
+     "maintenance covenant",
+     "ratio covenant"
+    ],
+    [
+     "leverage ratio",
+     "gearing ratio",
+     "debt ratio"
+    ],
+    [
+     "event of default",
+     "default"
+    ],
+    [
+     "forbearance",
+     "standstill",
+     "forbearance agreement",
+     "standstill agreement"
+    ],
+    [
+     "workout",
+     "loan workout",
+     "debt restructuring",
+     "rescheduling",
+     "turnaround"
+    ],
+    [
+     "payment default",
+     "missed payment",
+     "non-payment",
+     "arrears",
+     "late payment"
+    ],
+    [
+     "security interest",
+     "collateral",
+     "lien",
+     "charge",
+     "pledge"
+    ],
+    [
+     "security agreement",
+     "pledge agreement",
+     "collateral agreement",
+     "debenture"
+    ],
+    [
+     "perfection",
+     "registration of security"
+    ],
+    [
+     "intercreditor agreement",
+     "intercreditor",
+     "subordination agreement",
+     "priority agreement",
+     "deed of priority"
+    ],
+    [
+     "subordination",
+     "subordinated",
+     "postponement"
+    ],
+    [
+     "borrowing base",
+     "borrowing limit",
+     "collateral base"
+    ],
+    [
+     "asset-based loan",
+     "abl",
+     "asset based lending",
+     "receivables financing"
+    ],
+    [
+     "receivables",
+     "accounts receivable",
+     "book debts"
+    ],
+    [
+     "conditions precedent",
+     "closing conditions",
+     "conditions to funding",
+     "drawdown conditions"
+    ],
+    [
+     "drawdown",
+     "advance",
+     "utilisation",
+     "funding"
+    ],
+    [
+     "prepayment",
+     "early repayment"
+    ],
+    [
+     "default interest",
+     "penalty interest",
+     "late interest"
+    ],
+    [
+     "amendment and waiver",
+     "waiver and amendment",
+     "consent request"
+    ],
+    [
+     "refinancing",
+     "refinance",
+     "repricing"
+    ],
+    [
+     "payoff letter",
+     "pay-off letter",
+     "redemption statement"
+    ],
+    [
+     "opinion letter",
+     "legal opinion",
+     "closing opinion",
+     "opinion of counsel"
+    ],
+    [
+     "project finance",
+     "project financing",
+     "limited recourse financing"
+    ],
+    [
+     "acquisition finance",
+     "acquisition financing",
+     "leveraged finance"
+    ],
+    [
+     "customer identification",
+     "know your customer",
+     "kyc",
+     "customer due diligence"
+    ],
+    [
+     "revolving credit facility",
+     "revolver",
+     "revolving facility",
+     "rcf"
+    ],
+    [
+     "letter of credit",
+     "documentary credit"
+    ],
+    [
+     "enforcement",
+     "realisation"
+    ],
+    [
+     "receiver",
+     "administrator",
+     "liquidator"
+    ]
+   ]
+  },
+  {
+   "area": "tax",
+   "groups": [
+    [
+     "tax",
+     "taxation"
+    ],
+    [
+     "tax-free reorganization",
+     "tax-deferred reorganization",
+     "tax neutral reorganisation",
+     "rollover"
+    ],
+    [
+     "sales tax",
+     "vat",
+     "value added tax",
+     "gst",
+     "consumption tax",
+     "use tax"
+    ],
+    [
+     "nexus",
+     "taxable presence"
+    ],
+    [
+     "permanent establishment",
+     "taxable presence"
+    ],
+    [
+     "withholding tax",
+     "withholding",
+     "deduction at source"
+    ],
+    [
+     "transfer pricing",
+     "intercompany pricing",
+     "related party pricing"
+    ],
+    [
+     "tax audit",
+     "tax examination",
+     "tax inspection",
+     "tax enquiry"
+    ],
+    [
+     "tax authority",
+     "revenue authority",
+     "tax office",
+     "revenue service"
+    ],
+    [
+     "tax return",
+     "tax filing"
+    ],
+    [
+     "tax indemnity",
+     "tax covenant",
+     "tax deed"
+    ],
+    [
+     "partnership",
+     "limited partnership"
+    ],
+    [
+     "allocation",
+     "apportionment"
+    ],
+    [
+     "exempt organization",
+     "tax-exempt organisation",
+     "nonprofit",
+     "non-profit",
+     "not-for-profit",
+     "charity"
+    ],
+    [
+     "unrelated business income",
+     "unrelated business taxable income",
+     "ubti"
+    ],
+    [
+     "deduction",
+     "tax deduction",
+     "write-off"
+    ],
+    [
+     "penalty",
+     "fine",
+     "surcharge"
+    ],
+    [
+     "penalty abatement",
+     "penalty relief",
+     "penalty waiver",
+     "waiver of penalties"
+    ],
+    [
+     "voluntary disclosure",
+     "amnesty"
+    ],
+    [
+     "tax treaty",
+     "double tax treaty",
+     "double taxation agreement",
+     "tax convention"
+    ],
+    [
+     "gross-up",
+     "grossing up"
+    ],
+    [
+     "state and local tax",
+     "salt",
+     "subnational tax"
+    ],
+    [
+     "transfer tax",
+     "stamp duty",
+     "conveyance tax"
+    ],
+    [
+     "tax controversy",
+     "tax dispute",
+     "tax litigation",
+     "tax appeal"
+    ],
+    [
+     "protest",
+     "objection",
+     "notice of objection",
+     "administrative appeal"
+    ],
+    [
+     "profits interest",
+     "carried interest"
+    ]
+   ]
+  },
+  {
+   "area": "privacy and data",
+   "groups": [
+    [
+     "privacy",
+     "data protection",
+     "data privacy"
+    ],
+    [
+     "personal data",
+     "personal information",
+     "pii",
+     "personally identifiable information"
+    ],
+    [
+     "data breach",
+     "security incident",
+     "security breach",
+     "data leak",
+     "cyber incident",
+     "cyber attack",
+     "hack"
+    ],
+    [
+     "breach notification",
+     "breach notice",
+     "incident notification",
+     "data breach notification"
+    ],
+    [
+     "data subject request",
+     "subject access request",
+     "dsar",
+     "access request",
+     "consumer request",
+     "rights request"
+    ],
+    [
+     "deletion request",
+     "erasure request",
+     "right to erasure",
+     "right to be forgotten",
+     "right to delete"
+    ],
+    [
+     "data processing agreement",
+     "data processing addendum",
+     "processor agreement",
+     "data protection addendum"
+    ],
+    [
+     "processor",
+     "data processor",
+     "service provider"
+    ],
+    [
+     "subprocessor",
+     "sub-processor"
+    ],
+    [
+     "cross-border transfer",
+     "international transfer",
+     "data export",
+     "overseas transfer",
+     "international data transfer"
+    ],
+    [
+     "standard contractual clauses",
+     "sccs",
+     "model clauses"
+    ],
+    [
+     "transfer impact assessment",
+     "transfer risk assessment"
+    ],
+    [
+     "privacy policy",
+     "privacy notice",
+     "privacy statement"
+    ],
+    [
+     "cookie",
+     "tracker",
+     "tracking technology"
+    ],
+    [
+     "consent banner",
+     "cookie banner",
+     "cookie notice"
+    ],
+    [
+     "opt-out",
+     "opt out",
+     "unsubscribe"
+    ],
+    [
+     "records retention",
+     "record retention",
+     "document retention",
+     "data retention"
+    ],
+    [
+     "retention schedule",
+     "retention policy",
+     "records schedule"
+    ],
+    [
+     "deletion",
+     "erasure",
+     "destruction",
+     "disposal",
+     "disposition"
+    ],
+    [
+     "vendor security assessment",
+     "security review",
+     "security audit",
+     "vendor due diligence",
+     "vendor risk assessment"
+    ],
+    [
+     "penetration test",
+     "pen test",
+     "security testing"
+    ],
+    [
+     "incident response",
+     "breach response",
+     "incident handling"
+    ],
+    [
+     "regulator",
+     "supervisory authority",
+     "regulatory authority"
+    ],
+    [
+     "regulatory inquiry",
+     "regulatory investigation",
+     "regulatory enquiry"
+    ],
+    [
+     "data protection impact assessment",
+     "dpia",
+     "privacy impact assessment"
+    ],
+    [
+     "vendor contract",
+     "supplier agreement",
+     "vendor agreement",
+     "services agreement",
+     "master services agreement",
+     "msa"
+    ]
+   ]
+  },
+  {
+   "area": "trusts and estates",
+   "groups": [
+    [
+     "will",
+     "testament"
+    ],
+    [
+     "trust deed",
+     "trust instrument",
+     "trust agreement",
+     "declaration of trust"
+    ],
+    [
+     "beneficiary",
+     "heir",
+     "legatee"
+    ],
+    [
+     "settlor",
+     "grantor",
+     "trustor"
+    ],
+    [
+     "executor",
+     "personal representative",
+     "estate representative"
+    ],
+    [
+     "probate",
+     "estate administration",
+     "administration of the estate",
+     "succession proceedings"
+    ],
+    [
+     "estate plan",
+     "estate planning",
+     "succession planning",
+     "inheritance planning"
+    ],
+    [
+     "inheritance",
+     "bequest",
+     "legacy"
+    ],
+    [
+     "revocable trust",
+     "living trust",
+     "inter vivos trust"
+    ],
+    [
+     "power of attorney",
+     "poa",
+     "lasting power of attorney",
+     "enduring power of attorney",
+     "durable power of attorney"
+    ],
+    [
+     "attorney-in-fact",
+     "agent under a power of attorney"
+    ],
+    [
+     "health care directive",
+     "advance directive",
+     "living will",
+     "medical directive"
+    ],
+    [
+     "guardian",
+     "conservator"
+    ],
+    [
+     "incapacity",
+     "incompetence",
+     "loss of capacity"
+    ],
+    [
+     "breach of trust",
+     "breach of fiduciary duty",
+     "fiduciary breach"
+    ],
+    [
+     "trustee removal",
+     "removal of trustee",
+     "remove a trustee",
+     "replace the trustee"
+    ],
+    [
+     "trust decanting",
+     "decanting",
+     "resettlement"
+    ],
+    [
+     "charitable remainder trust",
+     "charitable trust",
+     "charitable gift"
+    ],
+    [
+     "gift",
+     "donation"
+    ],
+    [
+     "family limited partnership",
+     "flp",
+     "family partnership"
+    ],
+    [
+     "valuation discount",
+     "minority discount",
+     "marketability discount"
+    ],
+    [
+     "intestacy",
+     "intestate"
+    ],
+    [
+     "fiduciary dispute",
+     "trust dispute",
+     "estate dispute",
+     "contested estate"
+    ],
+    [
+     "charitable planning",
+     "philanthropic planning",
+     "planned giving"
+    ]
+   ]
+  },
+  {
+   "area": "document types",
+   "groups": [
+    [
+     "memo",
+     "memorandum",
+     "advice note"
+    ],
+    [
+     "opinion letter",
+     "legal opinion"
+    ],
+    [
+     "checklist",
+     "check-list",
+     "check list"
+    ],
+    [
+     "form",
+     "template"
+    ],
+    [
+     "motion",
+     "application to the court"
+    ]
+   ]
+  },
+  {
+   "area": "spelling",
+   "groups": [
+    [
+     "judgment",
+     "judgement"
+    ],
+    [
+     "license",
+     "licence"
+    ],
+    [
+     "defense",
+     "defence"
+    ],
+    [
+     "offense",
+     "offence"
+    ],
+    [
+     "program",
+     "programme"
+    ],
+    [
+     "check",
+     "cheque"
+    ],
+    [
+     "labor",
+     "labour"
+    ],
+    [
+     "organization",
+     "organisation"
+    ],
+    [
+     "acknowledgment",
+     "acknowledgement"
+    ],
+    [
+     "inquiry",
+     "enquiry"
+    ],
+    [
+     "counselor",
+     "counsellor"
+    ],
+    [
+     "neighbor",
+     "neighbour"
+    ]
+   ]
+  },
+  {
+   "area": "plain-language equivalents",
+   "added": "after the first run of held-out batch A",
+   "groups": [
+    [
+     "retention",
+     "retain",
+     "keep",
+     "keeping"
+    ],
+    [
+     "destruction",
+     "destroy",
+     "shredding",
+     "shred"
+    ],
+    [
+     "records",
+     "files"
+    ],
+    [
+     "regulation",
+     "rule",
+     "ordinance",
+     "bylaw"
+    ],
+    [
+     "council",
+     "local authority",
+     "municipality",
+     "city",
+     "public agency"
+    ],
+    [
+     "public contract",
+     "government contract",
+     "public works contract",
+     "council contract"
+    ],
+    [
+     "unrelated business income",
+     "unrelated business income tax",
+     "ubit",
+     "unrelated business taxable income",
+     "ubti"
+    ],
+    [
+     "parent company",
+     "parent",
+     "holding company"
+    ],
+    [
+     "parent guaranty",
+     "parent company guarantee",
+     "corporate guaranty"
+    ],
+    [
+     "staff",
+     "employees",
+     "workforce",
+     "personnel",
+     "workers"
+    ],
+    [
+     "overtime",
+     "time and a half",
+     "overtime pay"
+    ],
+    [
+     "exempt",
+     "salaried",
+     "exempt employee",
+     "salaried employee"
+    ],
+    [
+     "ownership",
+     "owner",
+     "own",
+     "owned"
+    ],
+    [
+     "joint ownership",
+     "co-ownership",
+     "jointly owned"
+    ],
+    [
+     "joint development",
+     "research partnership",
+     "collaboration",
+     "development partnership",
+     "research partner"
+    ],
+    [
+     "drag-along",
+     "forced sale",
+     "forced to sell",
+     "compelled sale"
+    ],
+    [
+     "majority shareholder",
+     "controlling shareholder",
+     "majority holder"
+    ],
+    [
+     "minority shareholder",
+     "minority holder",
+     "minority investor"
+    ],
+    [
+     "first drawdown",
+     "initial drawdown",
+     "initial advance",
+     "initial funding"
+    ],
+    [
+     "domain name dispute",
+     "cybersquatting",
+     "domain dispute",
+     "domain name complaint"
+    ],
+    [
+     "lending",
+     "financing",
+     "loans"
+    ]
+   ]
+  },
+  {
+   "area": "abbreviations",
+   "added": "after the first run of held-out batch A",
+   "groups": [
+    [
+     "share purchase agreement",
+     "stock purchase agreement",
+     "spa"
+    ],
+    [
+     "asset purchase agreement",
+     "apa"
+    ],
+    [
+     "statement of work",
+     "sow"
+    ],
+    [
+     "end user licence agreement",
+     "eula",
+     "end user license agreement"
+    ],
+    [
+     "terms of service",
+     "tos",
+     "terms of use"
+    ],
+    [
+     "initial public offering",
+     "ipo"
+    ],
+    [
+     "limited liability company",
+     "llc"
+    ],
+    [
+     "motion for summary judgment",
+     "msj",
+     "summary judgment motion"
+    ],
+    [
+     "motion to dismiss",
+     "mtd"
+    ],
+    [
+     "condition precedent",
+     "cp"
+    ],
+    [
+     "data processing agreement",
+     "dpa",
+     "data processing addendum"
+    ],
+    [
+     "data subject access request",
+     "dsar",
+     "subject access request"
+    ],
+    [
+     "standard contractual clauses",
+     "scc",
+     "model clauses"
+    ],
+    [
+     "conditional use permit",
+     "cup"
+    ],
+    [
+     "environmental impact report",
+     "eir",
+     "environmental impact statement",
+     "eis"
+    ],
+    [
+     "planned unit development",
+     "pud"
+    ],
+    [
+     "homeowners association",
+     "hoa"
+    ],
+    [
+     "tenant improvement",
+     "ti",
+     "tenant improvements"
+    ],
+    [
+     "subordination non-disturbance and attornment agreement",
+     "snda"
+    ],
+    [
+     "purchase and sale agreement",
+     "psa"
+    ],
+    [
+     "letter of credit",
+     "lc",
+     "loc"
+    ],
+    [
+     "debtor in possession",
+     "dip"
+    ],
+    [
+     "leveraged buyout",
+     "lbo"
+    ],
+    [
+     "net operating loss",
+     "nol"
+    ],
+    [
+     "goods and services tax",
+     "gst"
+    ],
+    [
+     "real estate investment trust",
+     "reit"
+    ],
+    [
+     "employee stock ownership plan",
+     "esop"
+    ],
+    [
+     "paid time off",
+     "pto"
+    ],
+    [
+     "performance improvement plan",
+     "pip"
+    ],
+    [
+     "request for quotation",
+     "rfq"
+    ],
+    [
+     "notice to proceed",
+     "ntp"
+    ],
+    [
+     "open source software",
+     "oss"
+    ],
+    [
+     "electronically stored information",
+     "esi"
+    ],
+    [
+     "request for admission",
+     "rfa"
+    ],
+    [
+     "statute of limitations",
+     "sol",
+     "limitation period"
+    ],
+    [
+     "annual general meeting",
+     "agm"
+    ],
+    [
+     "shareholders agreement",
+     "sha",
+     "stockholders agreement"
+    ],
+    [
+     "grantor retained annuity trust",
+     "grat"
+    ],
+    [
+     "charitable remainder trust",
+     "crt"
+    ],
+    [
+     "donor advised fund",
+     "daf"
+    ],
+    [
+     "anti-money laundering",
+     "aml"
+    ]
+   ]
+  }
+ ]
+}

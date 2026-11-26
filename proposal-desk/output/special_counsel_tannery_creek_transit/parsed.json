@@ -501,6 +501,7 @@
  ],
  "insurance": [
   {
+   "label": "F.1",
    "text": "Professional liability: $5,000,000 per claim.",
    "amounts": [
     "$5,000,000"
@@ -514,6 +515,7 @@
    "id": "INS1"
   },
   {
+   "label": "F.2",
    "text": "Commercial general liability: $2,000,000 per occurrence.",
    "amounts": [
     "$2,000,000"
@@ -527,6 +529,7 @@
    "id": "INS2"
   },
   {
+   "label": "F.3",
    "text": "Cyber liability: $1,000,000 per claim.",
    "amounts": [
     "$1,000,000"
@@ -540,6 +543,7 @@
    "id": "INS3"
   },
   {
+   "label": "F.4",
    "text": "Automobile liability: $1,000,000 combined single limit.",
    "amounts": [
     "$1,000,000"
@@ -677,6 +681,7 @@
    "check_reason": ""
   }
  ],
+ "deleted_requirements": [],
  "sections": [
   {
    "kind": "intro",
@@ -827,9 +832,9 @@
     "id": "EV5"
    }
   ],
-  "total": 100,
   "total_stated": 100,
   "unit": "points",
+  "total": 100,
   "confidence": "ok",
   "check_reason": ""
  },
@@ -846,15 +851,15 @@
      "type": "deadline",
      "kind": "questions_due",
      "from": "2026-12-08",
-     "from_time": "17:00",
      "to": "2026-12-11",
-     "to_time": "17:00",
      "source": {
       "line": 136,
       "text": "The deadline for requests for clarification is extended to December 11, 2026, 5:00 p.m."
      },
      "confidence": "ok",
-     "check_reason": ""
+     "check_reason": "",
+     "from_time": "17:00",
+     "to_time": "17:00"
     },
     {
      "type": "page_limit",

@@ -146,9 +146,9 @@ def test_intake_finds_the_sample_rules_in_the_sample_documents(client, guides):
 @pytest.mark.parametrize(
     "sentence",
     [
-        "Please keep your time in six-minute units.",
-        "Lawyers should not record several activities in a single narrative.",
         "Anything billed over two months late is at your own risk.",
+        "We expect lean staffing on every matter.",
+        "Do not pad your narratives to make an entry look fuller.",
     ],
 )
 def test_known_gap_reworded_sentences_are_missed(sentence):

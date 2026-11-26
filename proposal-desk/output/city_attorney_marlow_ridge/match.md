@@ -23,19 +23,19 @@ Agency type: city. Practice: general counsel. Subjects found in the RFP: land us
 
 ## Experience records chosen
 
-- E-001 | score 13 | client named (consent on file)  
+- E-001 | score 13 | client named (consent to name the client on file)  
   Printed as: City of Juniper Landing (city attorney, 2019 to 2023). Served as city attorney. Advised the governing body and staff on personnel, public contracting and public records.  
   Why: same agency type (city); same practice (general counsel); shared subjects: personnel, public contracting, public records; ended 2023 (within three years); same role (city attorney).
-- E-002 | score 13 | client named (consent on file)  
+- E-002 | score 13 | client named (consent to name the client on file)  
   Printed as: Town of Dunmoor (city attorney, 2023 to 2025). Served as city attorney. Advised the governing body and staff on code enforcement, open meetings, public contracting and public records.  
   Why: same agency type (city); same practice (general counsel); shared subjects: code enforcement, open meetings, public contracting, public records; ended 2025 (within three years); same role (city attorney).
-- E-003 | score 13 | client NOT named (no consent)  
+- E-003 | score 13 | client NOT named (no consent to name the client)  
   Printed as: A city of about 50,000 residents in the north coast (city attorney, 2017 to 2023). Subjects: code enforcement, governance, land use, public records.  
   Why: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, public records; ended 2023 (within three years); same role (city attorney).
-- E-006 | score 13 | client named (consent on file)  
+- E-006 | score 13 | client named (consent to name the client on file)  
   Printed as: City of Nettlefield (city attorney, 2023 to present). Served as city attorney. Advised the governing body and staff on code enforcement, land use, personnel and public records.  
   Why: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, personnel, public records; ongoing; same role (city attorney).
-- E-013 | score 13 | client NOT named (no consent)  
+- E-013 | score 13 | client NOT named (no consent to name the client)  
   Printed as: A city of about 55,000 residents in the inland valleys (city attorney, 2016 to present). Subjects: code enforcement, governance, land use, public contracting.  
   Why: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, public contracting; ongoing; same role (city attorney).
 

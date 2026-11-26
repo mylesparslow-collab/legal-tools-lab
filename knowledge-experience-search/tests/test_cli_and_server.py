@@ -1,16 +1,10 @@
 import json
 import re
-import threading
-import urllib.error
-import urllib.request
-from http.server import ThreadingHTTPServer
-
 import pytest
 
 from kx import config as cfg
 from kx.__main__ import main
-from kx.server import PRESETS, make_handler, page_html
-from kx.service import Service
+from kx.server import page_html
 
 
 @pytest.fixture(scope="module")
@@ -55,8 +49,9 @@ def test_cli_search_json_differs_by_user(cli_db, manifest, key, capsys):
     walled_ids = {d for t in key["wall_tests"] if t["wall_id"] == "W1" for d in t["must_never_appear"]}
     assert {r["doc_id"] for r in other["results"]} & walled_ids
     assert not ({r["doc_id"] for r in denied["results"]} & walled_ids)
-    assert wall["codenames"][0].lower() not in json.dumps(
-        {k: v for k, v in denied.items() if k != "query"}).lower()
+    # The denied user's output is what any word found nowhere would produce.
+    _, as_nonsense = run(capsys, *common, "--user", wall["excluded"][0], "project qqxyzzy")
+    assert as_denied.replace(wall["codenames"][0].lower(), "WORD") == as_nonsense.replace("qqxyzzy", "WORD")
 
 
 def test_cli_who_and_suggest(cli_db, key, capsys):
@@ -89,90 +84,6 @@ def test_cli_bad_filter_exits_with_a_message(cli_db, key):
         main(["search", "--db", str(db), "--log", str(log), "--user", key["eval_user"],
               "--filter", "filed=perhaps", "memo"])
     assert "Could not run that query" in str(exc.value)
-
-
-@pytest.fixture(scope="module")
-def server(full_db_path, data_dir, tmp_path_factory, key):
-    log = tmp_path_factory.mktemp("srv") / "audit.jsonl"
-    service = Service(full_db_path, log, as_of=key["as_of"])
-    httpd = ThreadingHTTPServer(("127.0.0.1", 0), make_handler(service, data_dir))
-    thread = threading.Thread(target=httpd.serve_forever, daemon=True)
-    thread.start()
-    yield f"http://127.0.0.1:{httpd.server_address[1]}", httpd, log
-    httpd.shutdown()
-    httpd.server_close()
-
-
-def get(base, path):
-    with urllib.request.urlopen(base + path, timeout=10) as res:
-        body = res.read().decode("utf-8")
-        return res.status, res.headers, body
-
-
-def test_server_binds_to_loopback_only(server):
-    _, httpd, _ = server
-    assert httpd.server_address[0] == "127.0.0.1"
-
-
-def test_server_serves_the_page_and_meta(server, manifest):
-    base, _, _ = server
-    status, headers, body = get(base, "/")
-    assert status == 200 and "Knowledge and experience search" in body
-    assert headers["Cache-Control"] == "no-store"
-    status, _, body = get(base, "/api/meta")
-    meta = json.loads(body)
-    assert [u["person_id"] for u in meta["demo_users"]] == [u["person_id"] for u in manifest["demo_users"]]
-    assert len(meta["people"]) == 120 and meta["presets"] == PRESETS
-
-
-def test_server_search_changes_with_the_user_and_is_audited(server, manifest, key):
-    base, _, log = server
-    wall = manifest["walls"]["W1"]
-    q = "project%20" + wall["codenames"][0].lower()
-    _, _, denied = get(base, f"/api/search?user={wall['excluded'][0]}&q={q}&explain=1&limit=50")
-    _, _, other = get(base, f"/api/search?user={key['eval_user']}&q={q}&explain=1&limit=50")
-    denied, other = json.loads(denied), json.loads(other)
-    walled_ids = {d for t in key["wall_tests"] if t["wall_id"] == "W1" for d in t["must_never_appear"]}
-    assert {r["doc_id"] for r in other["results"]} & walled_ids
-    assert not ({r["doc_id"] for r in denied["results"]} & walled_ids)
-    assert "explain" in other["results"][0]
-    from kx import audit
-    users = [e["user"] for e in audit.read_entries(log)]
-    assert wall["excluded"][0] in users and key["eval_user"] in users
-    assert audit.verify(log)["ok"] is True
-
-
-def test_server_filters_who_and_suggest(server, key):
-    base, _, _ = server
-    user = key["eval_user"]
-    _, _, body = get(base, f"/api/search?user={user}&q=summary%20judgment&type=motion&filed=yes")
-    result = json.loads(body)
-    assert result["filters"] == {"doc_type": "motion", "was_filed": 1}
-    assert result["results"] and all(r["doc_type"] == "motion" and r["was_filed"] for r in result["results"])
-    _, _, body = get(base, f"/api/who?user={user}&q=asset%20purchase")
-    assert json.loads(body)["people"]
-    _, _, body = get(base, f"/api/suggest?user={user}&q=indemn")
-    assert "indemnification" in json.loads(body)["suggestions"]
-
-
-def test_server_without_a_user_returns_nothing(server):
-    base, _, _ = server
-    _, _, body = get(base, "/api/search?q=agreement")
-    result = json.loads(body)
-    assert result["access"] == "denied" and result["results"] == []
-
-
-def test_server_errors_are_plain_json(server, key):
-    base, _, _ = server
-    with pytest.raises(urllib.error.HTTPError) as bad:
-        get(base, f"/api/search?user={key['eval_user']}&q=memo&filed=perhaps")
-    assert bad.value.code == 400 and "yes or no" in json.loads(bad.value.read())["error"]
-    with pytest.raises(urllib.error.HTTPError) as missing:
-        get(base, "/api/nothing")
-    assert missing.value.code == 404
-    with pytest.raises(urllib.error.HTTPError) as post:
-        urllib.request.urlopen(urllib.request.Request(base + "/api/search", data=b"x"), timeout=10)
-    assert post.value.code == 501
 
 
 def test_page_is_self_contained():

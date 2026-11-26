@@ -397,7 +397,7 @@
   {
    "ref": "Form A",
    "name": "Proposer Information Sheet",
-   "text": "Form A - Proposer Information Sheet",
+   "text": "Form A: Proposer Information Sheet",
    "signature": true,
    "notarized": false,
    "mandatory": true,
@@ -412,7 +412,7 @@
   {
    "ref": "Form B",
    "name": "Non-Collusion Declaration",
-   "text": "Form B - Non-Collusion Declaration",
+   "text": "Form B: Non-Collusion Declaration",
    "signature": true,
    "notarized": false,
    "mandatory": true,
@@ -427,7 +427,7 @@
   {
    "ref": "Form C",
    "name": "Acknowledgment of Addenda",
-   "text": "Form C - Acknowledgment of Addenda",
+   "text": "Form C: Acknowledgment of Addenda",
    "signature": true,
    "notarized": false,
    "mandatory": true,
@@ -442,7 +442,7 @@
   {
    "ref": "Form D",
    "name": "Insurance Acknowledgment",
-   "text": "Form D - Insurance Acknowledgment",
+   "text": "Form D: Insurance Acknowledgment",
    "signature": true,
    "notarized": false,
    "mandatory": true,
@@ -511,6 +511,7 @@
  ],
  "insurance": [
   {
+   "label": "8.1",
    "text": "Professional liability insurance of not less than $2,000,000 per claim.",
    "amounts": [
     "$2,000,000"
@@ -524,6 +525,7 @@
    "id": "INS1"
   },
   {
+   "label": "8.2",
    "text": "Commercial general liability insurance of not less than $1,000,000 per occurrence.",
    "amounts": [
     "$1,000,000"
@@ -537,6 +539,7 @@
    "id": "INS2"
   },
   {
+   "label": "8.3",
    "text": "Workers' compensation insurance as required by law.",
    "amounts": [],
    "source": {
@@ -548,6 +551,7 @@
    "id": "INS3"
   },
   {
+   "label": "",
    "text": "The proposal must include a statement that the firm can meet these insurance requirements.",
    "amounts": [],
    "source": {
@@ -699,6 +703,7 @@
    "check_reason": ""
   }
  ],
+ "deleted_requirements": [],
  "sections": [
   {
    "kind": "intro",
@@ -813,9 +818,9 @@
     "id": "EV5"
    }
   ],
-  "total": 100,
   "total_stated": null,
   "unit": "percent",
+  "total": 100,
   "confidence": "ok",
   "check_reason": ""
  },

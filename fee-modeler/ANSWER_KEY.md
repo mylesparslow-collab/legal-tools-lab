@@ -6,7 +6,7 @@ purpose. `tests/test_answer_key.py` asserts that the tool recovers each item.
 ## Shape
 
 - 640 matters: 600 closed between 2020 and 2025, 40 still open. 12 matter types.
-- 17,741 time entries and 4,256 monthly invoices.
+- 17,557 time entries and 4,255 monthly invoices.
 - 24 timekeepers at four levels. Two export shapes holding identical data.
 
 ## Planted truths and what the tool reports
@@ -14,11 +14,11 @@ purpose. `tests/test_answer_key.py` asserts that the tool recovers each item.
 | # | Planted | Where | What the tool reports |
 |---|---|---|---|
 | 1 | A matter type with too few matters: `election_law_advisory`, 5 closed | `THIN_TYPE` | Refuses: "5 comparable closed matters ... 8 required. 3 more are needed." Never back-tested. Modelability: Not modelable |
-| 2 | A matter type whose costs shifted: `internal_investigation` hours doubled (2.0x) for matters opened from 2023-01-01 | `DRIFT_TYPE`, `DRIFT_FACTOR` | The only type flagged as shifted in the back-test. Later closes 1.57x earlier closes; 18 of 31 back-tested matters cost more than their predicted P75 (the band implies about 8). Modelability: Modelable with care. Pricing memo warns. See the caveat below |
-| 3 | Hearings drive cost in `public_records_litigation`: a hearing adds about 0.9x the base hours, at a partner-heavy mix | `HEARING_TYPE` | Comps with a hearing cost 2.3x the median of those without (n=34 and n=35). Hearing accounts for 61% of the gap between comps above P75 and the rest. Assumption: quote the hearing as a separate phase |
+| 2 | A matter type whose costs shifted: `internal_investigation` hours multiplied by 1.7 for matters opened from 2023-01-01 | `DRIFT_TYPE`, `DRIFT_FACTOR`, `DRIFT_FROM` | Flagged by the change check with no date supplied: the 26 matters opened from 2022-04-12 cost 1.78x the 15 opened before (9 of 1,000 reshuffles as lopsided; limit 50). Memo P-003 shows both versions and prices from the higher at each band (here the recent-only one: planning P50 $125,000 against $110,500). P-003b switches the check off; P-003c uses recent comps only. Modelability: Modelable with care. See the caveat below |
+| 3 | Hearings drive cost in `public_records_litigation`: a hearing adds about 0.9x the base hours, at a partner-heavy mix | `HEARING_TYPE` | Comps with a hearing cost 2.2x the median of those without (n=34 and n=35). Hearing accounts for 63% of the gap between comps above P75 and the rest. Assumption: quote the hearing as a separate phase |
 | 4 | A timekeeper changed level: TK-12, associate to senior associate on 2022-07-01 | `LEVEL_CHANGE` | Every TK-12 entry before the date is valued as associate, every one after as senior associate, in both export shapes. Profile lists TK-12 as the one timekeeper with two levels |
 | 5 | Missing task codes: about 10% of entries blank everywhere; `ordinance_drafting` has none; about 1% carry an unmapped code `ZZ99` | `BLANK_CODE_SHARE`, `NO_TASK_CODE_TYPE`, `UNMAPPED_CODE` | Profile: 86% of hours coded, `ZZ99` listed. Every ordinance drafting comp is marked "date windows (low confidence)"; modelability shows 0% coded |
-| 6 | Heavy write-downs in `employment_single_plaintiff_defense`: about 12% of worked value | `HEAVY_WRITE_DOWN_TYPE` | 12.4% written down, the highest of any type (others 1.1% to 6.4%) |
+| 6 | Heavy write-downs in `employment_single_plaintiff_defense`: about 12% of worked value | `HEAVY_WRITE_DOWN_TYPE` | 12.3% of worked value written down across its closed matters, the highest of any type (others 2.0% to 6.0%) |
 | 7 | Rates rise 4% a year from 2020; the 2026 card is the normalization target | `RATE_INCREASE` | Rates in the data match the card for each year. Matters worked wholly in 2020 normalize to about 1.27x raw; 2025 matters to about 1.04x |
 | 8 | Abnormal closes cost less: settled early at 0.4x hours, transferred at 0.3x. 40 settled early, 19 transferred, 6 other | generator | Excluded from comps by default and from the back-test. Median hours of settled-early employment matters are under 0.6x the completed median (72 vs 312) |
 | 9 | 40 open matters | `N_OPEN` | Never selected as comps under any rules |
@@ -29,23 +29,42 @@ purpose. `tests/test_answer_key.py` asserts that the tool recovers each item.
 
 ## Caveat on the drifting type
 
-The shipped plant is a 2.0x step. An earlier version planted 1.7x. On the shipped seed the back-test's
-drift rule does not flag 1.7x (observed later/earlier ratio 1.38, shuffle condition not met), so the
-plant was made larger. The detector's thresholds were not changed to fit.
+History of the plant. It was first 1.7x. The first drift rule (later half of closes against the
+earlier half) did not flag 1.7x on the shipped seed, so the plant was raised to 2.0x and that was
+disclosed. The rule has since been replaced by a change-point scan (`feemodel/drift.py`), which does
+flag 1.7x on the shipped seed, so the plant is back at 1.7x. The old rule is still computed for
+comparison and still misses it here.
 
-"Recovered" therefore means: recovered at 2.0x on this seed, with little room to spare (8 of 1,000
-shuffles as lopsided against a limit of 20). Across 20 other seeds the same rule flags the drifting type
-in 0 of 20 runs with no shift, 1 of 20 at 1.3x, 6 of 20 at 1.5x, 11 of 20 at 1.7x and 14 of 20 at 2.0x.
-The full table is in the README under "What is not done" and in `output/drift_sensitivity.txt`;
-`tests/test_overruns.py` pins the 2.0x row. A shift smaller than a doubling in a type with about 40
-clean closed matters should be expected to go unflagged more often than not.
+What "recovered" means, and does not:
+
+- The step is found, with the right size (1.78x against 1.7x planted). The date is rough: estimated
+  2022-04-12 against 2023-01-01 planted, about nine months early.
+- It is not guaranteed on other draws. On 20 other seeds the new check flags a 1.7x step in 13 of 20
+  firms and a 2.0x step in 19 of 20; the old rule managed 11 and 14. Full table: README, and
+  `output/drift_sensitivity.txt`. The thresholds were chosen on seeds 101 to 120 and not moved after.
+- The check also flags `employment_single_plaintiff_defense` on the shipped seed (the 11 matters
+  opened from 2024-01-11 cost 0.63x the 55 before). Nothing was planted there. It is a false alarm and
+  is left in the outputs. Memo P-005 shows what the tool does with it: nothing is lowered. The
+  recent-only version would put the planning P90 at $138,000; the memo uses the whole-history
+  $616,100 and says a person may choose the recent version after checking why. With nothing planted,
+  the check flagged 15 of 220 type-runs on seeds 1 to 20 and 6 of 220 on seeds 101 to 120.
+- A flag can raise a planning figure and never lower one. That is why the check is safe to leave on
+  despite its false-flag rate, and why it is described as a prompt to look.
+- Even so, the type still runs over its planning bands a little more than implied in the back-test:
+  10 of 31 over the planning P75 (implied about 8) and 5 of 31 over the planning P90 (about 3),
+  against 13 and 9 for the plain comp quantiles. Matters opened between the change and its detection
+  were modeled from the cheaper period.
 
 ## Things that are not planted
 
-The back-test also says the bands understate overruns for four types where nothing was planted:
-`commercial_lease_review` (8 of 38 over P90, band implies about 4),
-`employment_single_plaintiff_defense` (10 of 41, about 4), `facility_change_of_ownership` (8 of 37,
-about 4) and `paga_response` (15 of 35 over P75, about 9). Across all types 64 of 385 cost more than
-their predicted P90, against an implied 39. That is the tendency of small-sample quantiles to
-under-cover, plus sampling noise. It is left in the outputs as an honest example of what a real run
-will look like: a pricing lead quoting at the P90 figure would see overruns more often than 1 in 10.
+The plain comp quantiles understate overruns for four types where nothing was planted:
+`employment_single_plaintiff_defense` (10 of 41 over the comp P90, band implies about 4),
+`facility_change_of_ownership` (8 of 37, about 4), `ordinance_drafting` (16 of 41 over the comp P75,
+about 10) and `paga_response` (15 of 35 over the comp P75, about 9). Across all types 60 of 385 cost
+more than their comp P90, against an implied 39. That is the tendency of small-sample quantiles to
+under-cover, plus sampling noise.
+
+The planning bands are the fix. On the same matters, 32 of 385 cost more than their planning P90 and
+88 of 385 more than their planning P75 (implied about 39 and 96), and no type is judged to understate.
+Both sets of counts stay in `output/backtest.txt` so the difference can be seen. On 20 other seeds
+the planning P90 was exceeded by 5.8% to 10.0% of back-tested matters (`output/calibration_study.txt`).

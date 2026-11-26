@@ -37,7 +37,7 @@ This page gives the facts for the decision. The tool does not make the decision.
 - Firm facts are as of 2026-10-01 (55 days old).
 - Blocking flags on inserted passages: 1.
   - Section Q2, answer A-0093: Corwin Halloway is no longer with the firm and is named in the text.
-- Client names printed without consent: 0.
+- Client or contact names printed without the consent that covers them: 0.
 
 ## Open disqualifiers: 15
 
@@ -59,7 +59,7 @@ Every mandatory item that is not answered or marked done. 0 of them have a due d
 - SUB5 | Needs a person | Email one PDF to purchasing@quillfeatherusd.example no later than the due date and time above. | owner Proposal coordinator | due Thu 10 Dec 2026
 - DEADLINE | Needs a person | Proposals due: Fri., Dec. 11, 2026 - 12:00 noon | owner Proposal coordinator | due Fri 11 Dec 2026
 
-## Parser items to check: 9
+## Parser items to check: 12
 
 - deadline D4: date is approximate in the RFP | Finalist interviews
 - requirement R-Q8: question type not recognised | Is there anything else the District should consider? This question is optional.
@@ -69,4 +69,7 @@ Every mandatory item that is not answered or marked done. 0 of them have a due d
 - submission SUB2: exclusion stated away from the page limit; read the sentence
 - insurance INS1: insurance amount stated in a list of submittals, not an insurance section | Proof of professional liability insurance, minimum $1,000,000 per claim
 - evaluation EV5: criterion listed without a weight | Interview performance (if interviews are held)
+- party Yolanda Prescott: role taken from the name before it in a list | Yolanda Prescott
+- party Bartholomew Nguyen: role taken from the name before it in a list | Bartholomew Nguyen
+- party Odessa Kirkland: role taken from the name before it in a list | Odessa Kirkland
 - evaluation : at least one criterion has no weight

@@ -8,9 +8,15 @@ MONTHS = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6, "jul": 7,
           "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
 _MON = (r"(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|"
         r"Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?")
-DATE_TEXT_RE = re.compile(_MON + r"\s+(\d{1,2})(?:\s*[-–]\s*(\d{1,2}))?,?\s+(\d{4})")
-DATE_NUM_RE = re.compile(r"(?<![\d/])(\d{1,2})/(\d{1,2})/(\d{4})(?![\d/])")
+_ORD = r"(?:st|nd|rd|th)?"
+DATE_TEXT_RE = re.compile(_MON + r"\s+(\d{1,2})" + _ORD + r"(?:\s*(?:[-–]|and|through|to)\s*(\d{1,2})" + _ORD +
+                          r")?,?\s+(\d{4})")
+# "7 December 2026", "the 10th of December 2026", "10-DEC-2026"
+DATE_DMY_RE = re.compile(r"(?<![\d/.-])(\d{1,2})" + _ORD + r"(?:\s+of\s+|\s+|-)(?i:" + _MON + r")(?:,?\s+|-)(\d{4})(?!\d)")
+DATE_NUM_RE = re.compile(r"(?<![\d/])(\d{1,2})/(\d{1,2})/(\d{4}|\d{2})(?![\d/])")
+DATE_ISO_RE = re.compile(r"(?<![\d-])(\d{4})-(\d{2})-(\d{2})(?![\d-])")
 TIME_RE = re.compile(r"(?<![\d/:,])(\d{1,2})(?::(\d{2}))?\s*(a\.?m\.?|p\.?m\.?|noon)(?![a-z])", re.I)
+TIME_24_RE = re.compile(r"(?<![\d/:,.$-])([01]?\d|2[0-3]):([0-5]\d)(?![\d:])(?:\s*(?:hours|hrs))?")
 
 
 def _mk_date(y, m, d):
@@ -21,25 +27,48 @@ def _mk_date(y, m, d):
 
 
 def find_dates(text):
-    """Return dates found in text, in order. Each: date, end (for a range), start, stop, raw, valid."""
-    out = []
+    """Return dates found in text, in order. Each: date, end (for a range), start, stop, raw, valid.
+
+    Forms read: "December 17, 2026", "Dec. 17th, 2026", "17 December 2026", "the 17th of
+    December 2026", "17-DEC-2026", "12/17/2026", "12/17/26" (month first) and "2026-12-17".
+    """
+    found = []
     for m in DATE_TEXT_RE.finditer(text):
         mon = MONTHS[m.group(1)[:3].lower()]
         d = _mk_date(m.group(4), mon, m.group(2))
         end = _mk_date(m.group(4), mon, m.group(3)) if m.group(3) else None
-        out.append({"date": d, "end": end, "start": m.start(), "stop": m.end(),
-                    "raw": m.group(0), "valid": d is not None})
+        found.append({"date": d, "end": end, "start": m.start(), "stop": m.end(),
+                      "raw": m.group(0), "valid": d is not None})
+    for m in DATE_DMY_RE.finditer(text):
+        d = _mk_date(m.group(3), MONTHS[m.group(2)[:3].lower()], m.group(1))
+        found.append({"date": d, "end": None, "start": m.start(), "stop": m.end(),
+                      "raw": m.group(0), "valid": d is not None})
     for m in DATE_NUM_RE.finditer(text):
-        d = _mk_date(m.group(3), m.group(1), m.group(2))
-        out.append({"date": d, "end": None, "start": m.start(), "stop": m.end(),
-                    "raw": m.group(0), "valid": d is not None})
-    out.sort(key=lambda x: x["start"])
+        year = m.group(3) if len(m.group(3)) == 4 else "20" + m.group(3)
+        d = _mk_date(year, m.group(1), m.group(2))
+        found.append({"date": d, "end": None, "start": m.start(), "stop": m.end(),
+                      "raw": m.group(0), "valid": d is not None})
+    for m in DATE_ISO_RE.finditer(text):
+        d = _mk_date(m.group(1), m.group(2), m.group(3))
+        found.append({"date": d, "end": None, "start": m.start(), "stop": m.end(),
+                      "raw": m.group(0), "valid": d is not None})
+    found.sort(key=lambda x: (x["start"], -(x["stop"] - x["start"])))
+    out = []
+    for f in found:  # drop a match that overlaps an earlier one
+        if out and f["start"] < out[-1]["stop"]:
+            continue
+        out.append(f)
     return out
 
 
 def find_time(text):
-    """First clock time in text as HH:MM (24h), or None."""
+    """First clock time in text as HH:MM (24h), or None. Reads "4:00 p.m.", "12 noon" and "14:00"."""
     m = TIME_RE.search(text)
+    m24 = TIME_24_RE.search(text)
+    if not m and not m24:
+        return "12:00" if re.search(r"\b(?:at|by|before|until)\s+(?:12\s+)?(?:noon|midday)\b", text, re.I) else None
+    if m24 and (not m or m24.start() < m.start()) and not (m and m.start() <= m24.start() < m.end()):
+        return "%02d:%02d" % (int(m24.group(1)), int(m24.group(2)))
     if not m:
         return None
     h, mi, ap = int(m.group(1)), int(m.group(2) or 0), m.group(3).lower().replace(".", "")

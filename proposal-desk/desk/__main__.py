@@ -43,6 +43,8 @@ def _build(args):
     res = build(_read(args.rfp), data, args.as_of, load_holidays(args.holidays), status)
     if data.errors:
         print("warning: %d library record(s) rejected on load; run check-data" % len(data.errors), file=sys.stderr)
+    for w in data.warnings:
+        print("warning: %s" % w, file=sys.stderr)
     return res
 
 
@@ -147,8 +149,12 @@ def main(argv=None):
             len(data.answers), len(data.experience), len(data.bios), len(data.rate_schedules),
             len(data.references), len(data.forms)))
         print("firm facts as of %s" % data.facts["as_of"])
-        no_consent = sum(1 for e in data.experience if not e["client_consent"])
-        print("experience records without client consent: %d" % no_consent)
+        print("experience records without consent to name the client: %d of %d" % (
+            sum(1 for e in data.experience if e["consent_to_name_client"] is not True), len(data.experience)))
+        print("reference records without consent to list the contact: %d of %d" % (
+            sum(1 for r in data.references if r["consent_to_list_contact"] is not True), len(data.references)))
+        for w in data.warnings:
+            print("WARNING %s" % w)
         for e in data.errors:
             print("REJECTED %s row %s (%s): %s" % (e["schema"], e["row"], e["id"], "; ".join(e["problems"])))
         print("rejected records: %d" % len(data.errors))

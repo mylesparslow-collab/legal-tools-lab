@@ -1,0 +1,358 @@
+{
+  "notice": "Fictional data. Not legal or billing advice.",
+  "batch": "batch_a",
+  "intake": {
+    "summary": {
+      "expected_rules": 50,
+      "proposed_correctly": 50,
+      "right_type_wrong_parameters": 0,
+      "missed": 0,
+      "wrong_proposals": 0
+    },
+    "clients": [
+      {
+        "client_id": "harrowgate",
+        "expected_rules": 20,
+        "proposed_correctly": 20,
+        "right_type_wrong_parameters": [],
+        "missed": [],
+        "wrong_proposals": [],
+        "candidates_proposed": 20
+      },
+      {
+        "client_id": "marrowfen",
+        "expected_rules": 15,
+        "proposed_correctly": 15,
+        "right_type_wrong_parameters": [],
+        "missed": [],
+        "wrong_proposals": [],
+        "candidates_proposed": 15
+      },
+      {
+        "client_id": "pindlecroft",
+        "expected_rules": 15,
+        "proposed_correctly": 15,
+        "right_type_wrong_parameters": [],
+        "missed": [],
+        "wrong_proposals": [],
+        "candidates_proposed": 15
+      }
+    ]
+  },
+  "engine_with_hand_confirmed_rules": {
+    "planted_total": 88,
+    "planted_counted": 88,
+    "planted_found": 88,
+    "planted_missed": 0,
+    "planted_wrong_status": 0,
+    "false_positive_findings": 0,
+    "must_not_flag_lines": 124,
+    "must_not_flag_lines_flagged": 0,
+    "unjudged_extra_findings_on_planted_lines": 0,
+    "excluded_from_recall": [],
+    "schema_limit_findings": [],
+    "by_difficulty": {
+      "easy": {
+        "found": 46,
+        "missed": 0
+      },
+      "hard": {
+        "found": 19,
+        "missed": 0
+      },
+      "medium": {
+        "found": 23,
+        "missed": 0
+      }
+    },
+    "by_rule_type": {
+      "ARITH-LINE": {
+        "found": 1,
+        "missed": 0
+      },
+      "ARITH-TOTAL": {
+        "found": 1,
+        "missed": 0
+      },
+      "ai_disclosure_required": {
+        "found": 3,
+        "missed": 0
+      },
+      "ai_nonpayable_task": {
+        "found": 2,
+        "missed": 0
+      },
+      "block_billing": {
+        "found": 6,
+        "missed": 0
+      },
+      "budget_cap": {
+        "found": 1,
+        "missed": 0
+      },
+      "daily_hour_cap": {
+        "found": 2,
+        "missed": 0
+      },
+      "duplicate_entries": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_markup": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_overhead": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_per_diem": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_receipt_threshold": {
+        "found": 3,
+        "missed": 0
+      },
+      "internal_conference_limit": {
+        "found": 5,
+        "missed": 0
+      },
+      "late_time": {
+        "found": 5,
+        "missed": 0
+      },
+      "minimum_increment": {
+        "found": 5,
+        "missed": 0
+      },
+      "non_billable_task": {
+        "found": 7,
+        "missed": 0
+      },
+      "phase_cap": {
+        "found": 1,
+        "missed": 0
+      },
+      "rate_above_card": {
+        "found": 4,
+        "missed": 0
+      },
+      "rate_increase_notice": {
+        "found": 1,
+        "missed": 0
+      },
+      "required_codes": {
+        "found": 4,
+        "missed": 0
+      },
+      "research_approval": {
+        "found": 2,
+        "missed": 0
+      },
+      "rounding_pattern": {
+        "found": 1,
+        "missed": 0
+      },
+      "staffing_event_limit": {
+        "found": 3,
+        "missed": 0
+      },
+      "staffing_matter_limit": {
+        "found": 2,
+        "missed": 0
+      },
+      "travel_time": {
+        "found": 3,
+        "missed": 0
+      },
+      "unapproved_timekeeper": {
+        "found": 3,
+        "missed": 0
+      },
+      "vague_description": {
+        "found": 7,
+        "missed": 0
+      }
+    },
+    "missed": [],
+    "wrong_status": [],
+    "false_positives": [],
+    "unjudged": [],
+    "not_enforced_respected": true,
+    "not_checked_notes": {
+      "INV-MSD-3102": [
+        "MSD-PHASE-01 (Phase budget cap): no phase budget is recorded for this matter"
+      ],
+      "INV-MSD-3103": [
+        "MSD-PHASE-01 (Phase budget cap): no phase budget is recorded for this matter",
+        "MSD-RECEIPT-01 (Receipt threshold): 3 expense line(s) at or over the threshold could not be checked because the file does not say whether a receipt is attached",
+        "MSD-MARKUP-01 (Expense mark-up prohibited): 3 expense line(s) could not be checked for mark-up because the file has no cost for them"
+      ],
+      "INV-PCR-9001": [
+        "PCR-AIDISC-01 (AI-assisted work must be disclosed on the invoice): the file has no AI-assisted flag for some entries, so only the narrative text was checked for them"
+      ],
+      "INV-PCR-9002": [
+        "PCR-AIDISC-01 (AI-assisted work must be disclosed on the invoice): the file has no AI-assisted flag for some entries, so only the narrative text was checked for them"
+      ]
+    }
+  },
+  "engine_with_intake_proposals_only": {
+    "planted_total": 88,
+    "planted_counted": 88,
+    "planted_found": 88,
+    "planted_missed": 0,
+    "planted_wrong_status": 0,
+    "false_positive_findings": 0,
+    "must_not_flag_lines": 124,
+    "must_not_flag_lines_flagged": 0,
+    "unjudged_extra_findings_on_planted_lines": 0,
+    "excluded_from_recall": [],
+    "schema_limit_findings": [],
+    "by_difficulty": {
+      "easy": {
+        "found": 46,
+        "missed": 0
+      },
+      "hard": {
+        "found": 19,
+        "missed": 0
+      },
+      "medium": {
+        "found": 23,
+        "missed": 0
+      }
+    },
+    "by_rule_type": {
+      "ARITH-LINE": {
+        "found": 1,
+        "missed": 0
+      },
+      "ARITH-TOTAL": {
+        "found": 1,
+        "missed": 0
+      },
+      "ai_disclosure_required": {
+        "found": 3,
+        "missed": 0
+      },
+      "ai_nonpayable_task": {
+        "found": 2,
+        "missed": 0
+      },
+      "block_billing": {
+        "found": 6,
+        "missed": 0
+      },
+      "budget_cap": {
+        "found": 1,
+        "missed": 0
+      },
+      "daily_hour_cap": {
+        "found": 2,
+        "missed": 0
+      },
+      "duplicate_entries": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_markup": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_overhead": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_per_diem": {
+        "found": 4,
+        "missed": 0
+      },
+      "expense_receipt_threshold": {
+        "found": 3,
+        "missed": 0
+      },
+      "internal_conference_limit": {
+        "found": 5,
+        "missed": 0
+      },
+      "late_time": {
+        "found": 5,
+        "missed": 0
+      },
+      "minimum_increment": {
+        "found": 5,
+        "missed": 0
+      },
+      "non_billable_task": {
+        "found": 7,
+        "missed": 0
+      },
+      "phase_cap": {
+        "found": 1,
+        "missed": 0
+      },
+      "rate_above_card": {
+        "found": 4,
+        "missed": 0
+      },
+      "rate_increase_notice": {
+        "found": 1,
+        "missed": 0
+      },
+      "required_codes": {
+        "found": 4,
+        "missed": 0
+      },
+      "research_approval": {
+        "found": 2,
+        "missed": 0
+      },
+      "rounding_pattern": {
+        "found": 1,
+        "missed": 0
+      },
+      "staffing_event_limit": {
+        "found": 3,
+        "missed": 0
+      },
+      "staffing_matter_limit": {
+        "found": 2,
+        "missed": 0
+      },
+      "travel_time": {
+        "found": 3,
+        "missed": 0
+      },
+      "unapproved_timekeeper": {
+        "found": 3,
+        "missed": 0
+      },
+      "vague_description": {
+        "found": 7,
+        "missed": 0
+      }
+    },
+    "missed": [],
+    "wrong_status": [],
+    "false_positives": [],
+    "unjudged": [],
+    "not_enforced_respected": true,
+    "not_checked_notes": {
+      "INV-MSD-3102": [
+        "MARROW-P-PHASE-CAP-01 (Phase budget cap): no phase budget is recorded for this matter"
+      ],
+      "INV-MSD-3103": [
+        "MARROW-P-PHASE-CAP-01 (Phase budget cap): no phase budget is recorded for this matter",
+        "MARROW-P-EXPENSE-RECEIPT-THRESHOLD-01 (Receipt threshold): 3 expense line(s) at or over the threshold could not be checked because the file does not say whether a receipt is attached",
+        "MARROW-P-EXPENSE-MARKUP-01 (Expense mark-up prohibited): 3 expense line(s) could not be checked for mark-up because the file has no cost for them"
+      ],
+      "INV-PCR-9001": [
+        "PINDLE-P-AI-DISCLOSURE-REQUIRED-01 (AI-assisted work must be disclosed on the invoice): the file has no AI-assisted flag for some entries, so only the narrative text was checked for them"
+      ],
+      "INV-PCR-9002": [
+        "PINDLE-P-AI-DISCLOSURE-REQUIRED-01 (AI-assisted work must be disclosed on the invoice): the file has no AI-assisted flag for some entries, so only the narrative text was checked for them"
+      ]
+    }
+  }
+}

@@ -24,7 +24,7 @@ def test_missing_consent_column_defaults_to_false():
     rows = [{"id": "E1", "client_name": "X District", "agency_type": "special_district",
              "practice": "general_counsel", "start_year": "2020"}]
     recs, errs = map_records(rows, "experience")
-    assert errs == [] and recs[0]["client_consent"] is False and recs[0]["end_year"] is None
+    assert errs == [] and recs[0]["consent_to_name_client"] is False and recs[0]["end_year"] is None
     assert recs[0]["subjects"] == [] and recs[0]["anonymized_description"] == ""
 
 
@@ -35,13 +35,13 @@ def test_csv_export_with_the_firms_own_column_names(tmp_path):
                  "M-2,Mossgate Harbor District,ask partner,,special_district,general_counsel,,2015,2021\n"
                  "M-3,,Yes,,special_district,general_counsel,,2015,\n"
                  "M-4,Fogbank Water District,Yes,,special_district,general_counsel,,twenty,\n", encoding="utf-8")
-    spec = {"fields": {"id": "Matter No", "client_name": "Client", "client_consent": "OK to name?",
+    spec = {"fields": {"id": "Matter No", "client_name": "Client", "consent_to_name_client": "OK to name?",
                        "anonymized_description": "Blurb", "agency_type": "Kind", "practice": "Group",
                        "subjects": "Topics", "start_year": "Opened", "end_year": "Closed"}}
     recs, errs = map_records(read_rows(str(p)), "experience", spec)
     assert [r["id"] for r in recs] == ["M-1", "M-2"]
-    assert recs[0]["client_consent"] is True and recs[0]["subjects"] == ["water", "governance"]
-    assert recs[1]["client_consent"] is False and recs[1]["end_year"] == 2021
+    assert recs[0]["consent_to_name_client"] is True and recs[0]["subjects"] == ["water", "governance"]
+    assert recs[1]["consent_to_name_client"] is False and recs[1]["end_year"] == 2021
     assert [e["id"] for e in errs] == ["M-3", "M-4"]
     assert "client_name: required field is missing" in errs[0]["problems"]
     assert "start_year" in errs[1]["problems"][0]
@@ -103,11 +103,61 @@ def test_firm_facts_must_have_an_as_of_date(tmp_path, root):
         load_data(str(lib))
 
 
-def test_schemas_cover_the_six_record_types_and_consent_defaults_false():
+def test_schemas_have_two_separately_named_consent_fields_defaulting_to_false():
+    from desk.schemas import CONSENT_FIELDS
     assert set(SCHEMAS) == {"past_answers", "experience", "bios", "rate_schedules", "references", "standard_forms"}
-    for name in ("experience", "references"):
-        field = next(f for f in SCHEMAS[name] if f[0] == "client_consent")
-        assert field[1] == "bool" and field[3] is False
+    assert CONSENT_FIELDS == {"experience": "consent_to_name_client", "references": "consent_to_list_contact"}
+    names = {name: [f[0] for f in SCHEMAS[name]] for name in SCHEMAS}
+    assert "consent_to_list_contact" not in names["experience"] and "consent_to_name_client" not in names["references"]
+    assert not any("client_consent" in fields for fields in names.values())
+    for name, field in CONSENT_FIELDS.items():
+        spec = next(f for f in SCHEMAS[name] if f[0] == field)
+        assert spec[1] == "bool" and spec[3] is False
+
+
+def test_reference_without_a_consent_column_loads_as_no_consent():
+    rows = [{"id": "R1", "client_name": "X District", "contact_name": "A B"}]
+    recs, errs = map_records(rows, "references")
+    assert errs == [] and recs[0]["consent_to_list_contact"] is False
+
+
+def test_old_single_consent_column_is_not_read_and_is_reported():
+    from desk.loader import consent_warnings
+    exp = [{"id": "E1", "client_name": "X District", "agency_type": "city", "practice": "general_counsel",
+            "start_year": 2020, "client_consent": True}]
+    refs = [{"id": "R1", "client_name": "X District", "contact_name": "A B", "client_consent": "yes"}]
+    assert map_records(exp, "experience")[0][0]["consent_to_name_client"] is False
+    assert map_records(refs, "references")[0][0]["consent_to_list_contact"] is False
+    w = consent_warnings(exp, "experience") + consent_warnings(refs, "references")
+    assert len(w) == 2 and all("client_consent" in x and "no longer read" in x for x in w)
+    # an explicit mapping is the only way the old column counts, and only for the permission it is mapped to
+    spec = {"fields": {"consent_to_name_client": "client_consent"}}
+    assert map_records(exp, "experience", spec)[0][0]["consent_to_name_client"] is True
+    assert consent_warnings(exp, "experience", spec) == []
+    assert consent_warnings([{"id": "B1"}], "bios") == []
+
+
+def test_demo_library_has_both_consent_columns_and_no_warnings(data):
+    assert data.warnings == []
+    assert all(isinstance(e["consent_to_name_client"], bool) for e in data.experience)
+    assert all(isinstance(r["consent_to_list_contact"], bool) for r in data.references)
+    assert any(r["consent_to_list_contact"] is False for r in data.references)
+
+
+def test_check_data_reports_a_missing_consent_column(tmp_path, root, capsys):
+    from desk.__main__ import main
+    lib = tmp_path / "lib"
+    shutil.copytree(os.path.join(root, "data", "library"), lib)
+    rows = json.load(open(lib / "references.json", encoding="utf-8"))
+    for r in rows:
+        r["client_consent"] = r.pop("consent_to_list_contact")
+    json.dump(rows, open(lib / "references.json", "w", encoding="utf-8"))
+    d = load_data(str(lib))
+    assert not any(r["consent_to_list_contact"] for r in d.references)
+    main(["check-data", "--data", str(lib)])
+    out = capsys.readouterr().out
+    assert "WARNING references: no column for consent_to_list_contact" in out
+    assert "reference records without consent to list the contact: 30 of 30" in out
 
 
 def test_generator_is_seeded(tmp_path, root, monkeypatch):

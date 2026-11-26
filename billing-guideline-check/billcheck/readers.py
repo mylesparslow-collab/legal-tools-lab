@@ -1,7 +1,10 @@
 """Invoice readers: a LEDES-1998B-style reader and a plain CSV reader.
 
-The LEDES reader is implemented from memory and has not been checked against
-the published specification. FORMAT_NOTES.md lists every assumption.
+The LEDES reader's structure (first line, header names and order, delimiter,
+terminator, date format, line types seen, arithmetic) was checked on 2026-11-26
+against the LEDES 98B format page and sample file published by the LEDES
+Oversight Committee. Field types and lengths were not. FORMAT_NOTES.md says
+exactly what was and was not checked.
 """
 
 import csv
@@ -270,6 +273,22 @@ def read_csv(text):
     if not rows:
         raise ReaderError("file has no line items")
     return _group(rows)
+
+
+def ledes_format_warnings(text):
+    """Return notes on points where a file departs from the published description.
+
+    The publisher describes LEDES 1998B as an ASCII format. Non-ASCII text is
+    still read, but reported, because a receiving system may refuse it.
+    """
+    warnings = []
+    bad = sorted({ch for ch in text.lstrip("\ufeff") if ord(ch) > 127})
+    if bad:
+        warnings.append(
+            "file contains %d distinct non-ASCII character(s), for example %r; LEDES 1998B is described as an ASCII format"
+            % (len(bad), bad[0])
+        )
+    return warnings
 
 
 def detect_format(text):

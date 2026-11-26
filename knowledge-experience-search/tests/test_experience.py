@@ -112,10 +112,11 @@ def test_more_hours_count_for_more_with_a_cap():
 def test_too_few_matters_is_reported_as_leads_not_a_ranking():
     result = experience.who(_world(), "alice", "contract dispute", as_of=AS_OF)
     assert result["confident"] is False and result["matters_matched"] == 1
-    assert "Too little to rank" in result["message"]
-    assert all(p["rank"] is None for p in result["people"])
-    names = [p["name"] for p in result["people"]]
-    assert names == sorted(names)
+    assert "too little to rank on" in result["message"] and "leads to ask" in result["message"]
+    # Still put in order of recorded involvement, which is more use than the alphabet.
+    scores = [p["score"] for p in result["people"]]
+    assert scores == sorted(scores, reverse=True)
+    assert [p["rank"] for p in result["people"]] == list(range(1, len(scores) + 1))
 
 
 def test_no_match_says_so():
@@ -133,10 +134,12 @@ def test_matter_filters_apply_and_document_filters_are_refused(workouts):
 
 
 def test_terms_from_different_fields_do_not_combine_into_a_match():
-    # "tavish" is in a court name and "dispute" in a matter type; together they
-    # describe no kind of work, so only the document-title route can match.
+    # "caldmoor" is in a court name, which is not evidence of a kind of work.
+    # It is reported as not found; it does not pair up with "merger".
     result = experience.who(_world(), "alice", "caldmoor merger", as_of=AS_OF)
-    assert result["matters_matched"] == 0
+    assert result["not_found"] == ["caldmoor"]
+    assert all("merger" in e["matter_type"] for p in result["people"] for e in p["evidence"])
+    assert experience.who(_world(), "alice", "caldmoor", as_of=AS_OF)["matters_matched"] == 0
 
 
 def test_document_titles_can_supply_the_match(workouts):

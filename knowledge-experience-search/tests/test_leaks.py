@@ -61,6 +61,8 @@ def test_no_text_from_hidden_documents_reaches_the_user(world):
         result = search.search(world, "bob", q, as_of=AS_OF, limit=100, explain=True)
         payload = dump({k: v for k, v in result.items() if k not in ("query", "filters")}).lower()
         for secret in ("zephyrine", "sennamar", "aerospace", "side letter", "lodestar", "quasar"):
+            if secret in q.lower():
+                continue  # the user typed it; echoing their own word tells them nothing
             assert secret not in payload, (q, secret)
 
 
@@ -81,15 +83,20 @@ def test_total_counts_only_visible_documents(world):
 def test_response_has_no_hidden_result_counter(world):
     result = search.search(world, "bob", "zephyrine", as_of=AS_OF)
     assert set(result) == {"user", "query", "filters", "access", "message", "relaxed",
-                           "reranked", "total", "offset", "results", "facets"}
+                           "reranked", "total", "offset", "results", "facets", "expansion"}
+    assert set(result["expansion"]) == {"on", "used", "not_found", "corrected", "related_terms"}
     assert "hidden" not in dump(result).lower() and "restricted" not in dump(result).lower()
 
 
 def test_no_results_message_is_the_same_for_walled_and_nonexistent_terms(world):
     walled = search.search(world, "bob", "zephyrine", as_of=AS_OF)
     absent = search.search(world, "bob", "xylophone", as_of=AS_OF)
-    strip = lambda r: {k: v for k, v in r.items() if k != "query"}
-    assert strip(walled) == strip(absent)
+    # The only difference is the user's own word, echoed back.
+    assert dump(walled).replace("zephyrine", "WORD") == dump(absent).replace("xylophone", "WORD")
+    for expand in (True, False):
+        walled = search.search(world, "bob", "zephyrine earn-out", as_of=AS_OF, expand=expand)
+        absent = search.search(world, "bob", "xylophone earn-out", as_of=AS_OF, expand=expand)
+        assert dump(walled).replace("zephyrine", "WORD") == dump(absent).replace("xylophone", "WORD")
 
 
 # -- channel: facets ---------------------------------------------------------
@@ -144,11 +151,13 @@ def test_explain_reports_visible_document_frequency(world):
 
 
 def test_a_term_that_exists_only_behind_the_wall_does_not_change_matching(world, world_without_wall):
-    # "all terms" matching falls back to "any term" only when nothing matches.
-    # The fallback must trigger exactly as it would if the term did not exist.
+    # A word found in no visible document is dropped and named. A word that
+    # exists only behind the wall must be treated exactly like that.
     a = search.search(world, "bob", "zephyrine earn-out", as_of=AS_OF)
     b = search.search(world_without_wall, "bob", "zephyrine earn-out", as_of=AS_OF)
-    assert a["relaxed"] is True and dump(a) == dump(b)
+    assert a["expansion"]["not_found"] == ["zephyrine"] and dump(a) == dump(b)
+    # alice can see the walled matter, so for her the word is live and required.
+    assert search.search(world, "alice", "zephyrine earn-out", as_of=AS_OF)["expansion"]["not_found"] == []
 
 
 # -- channel: near-duplicate and version collapse ----------------------------

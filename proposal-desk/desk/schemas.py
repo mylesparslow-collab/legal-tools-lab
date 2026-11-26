@@ -28,7 +28,7 @@ SCHEMAS = {
     "experience": [
         ("id", "str", True, None),
         ("client_name", "str", True, None),
-        ("client_consent", "bool", False, False),    # client has agreed to be named in proposals
+        ("consent_to_name_client", "bool", False, False),   # the client has agreed to be named in proposals
         ("anonymized_description", "str", False, ""),  # approved wording used when the client is not named
         ("agency_type", "str", True, None),
         ("practice", "str", True, None),
@@ -69,7 +69,7 @@ SCHEMAS = {
         ("contact_title", "str", False, ""),
         ("phone", "str", False, ""),
         ("email", "str", False, ""),
-        ("client_consent", "bool", False, False),    # contact has agreed to be listed as a reference
+        ("consent_to_list_contact", "bool", False, False),  # this person has agreed to be listed as a reference
         ("last_confirmed", "date", False, None),
         ("agency_type", "str", False, ""),
         ("practice", "str", False, ""),
@@ -89,3 +89,11 @@ QUESTION_TYPES = ["firm_overview", "approach", "team", "experience", "references
                   "diversity_local", "transition"]
 OUTCOMES = ["won", "lost", "pending"]
 TRUE_WORDS = {"true", "yes", "y", "1"}
+
+# Two different permissions. They are never inferred from each other.
+#   consent_to_name_client   on experience records: the client may be named in a proposal.
+#   consent_to_list_contact  on reference records: this contact may be listed as a reference.
+# A reference line prints both the contact and the client, so it needs both.
+CONSENT_FIELDS = {"experience": "consent_to_name_client", "references": "consent_to_list_contact"}
+# The earlier single field. It is no longer read, because it did not say which permission it meant.
+LEGACY_CONSENT_FIELD = "client_consent"

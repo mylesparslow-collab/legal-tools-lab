@@ -62,7 +62,8 @@ def test_tombstone_removes_document_postings_and_edges():
     assert count(conn, "SELECT COUNT(*) FROM docs WHERE doc_id='d_pub_3'") == 0
     assert count(conn, "SELECT COUNT(*) FROM postings WHERE doc_pk=?", pk) == 0
     assert count(conn, "SELECT COUNT(*) FROM dup_keys WHERE doc_pk=?", pk) == 0
-    assert search.search(conn, "carol", "forum selection clause", as_of=helpers.AS_OF)["total"] == 0
+    assert search.search(conn, "carol", '"forum selection clause"', as_of=helpers.AS_OF)["total"] == 0
+    assert search.search(conn, "carol", "forum", as_of=helpers.AS_OF)["total"] == 0
     assert "forum" not in search.suggest(conn, "carol", "for")
 
 

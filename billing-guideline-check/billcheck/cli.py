@@ -9,7 +9,7 @@ from . import intake as intake_mod
 from . import report
 from .engine import check_invoice
 from .model import DataError
-from .readers import read_invoice_file
+from .readers import detect_format, ledes_format_warnings, read_invoice_file
 from .waivers import load_waivers
 
 
@@ -62,6 +62,11 @@ def cmd_check(args):
     waivers = load_waivers(args.waivers) if args.waivers else []
     codes = G.load_code_table(args.codes) if args.codes else None
     invoices = read_invoice_file(args.invoice, args.format)
+    with open(args.invoice, "r", encoding="utf-8", newline="") as handle:
+        raw = handle.read()
+    if detect_format(raw) == "ledes" and args.format != "csv":
+        for warning in ledes_format_warnings(raw):
+            print("format note: %s" % warning, file=sys.stderr)
     for invoice in invoices:
         result = check_invoice(invoice, guideline, matters.get(invoice.matter_id), waivers, codes)
         print(report.summary_paragraph(result))

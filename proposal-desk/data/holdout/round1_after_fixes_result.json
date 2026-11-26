@@ -1,0 +1,4 @@
+{
+ "note": "Recorded at the end of round 1, after six general fixes prompted by the first run on this RFP. Kept as a record. The parser has since been rewritten (round 2), so a fresh run no longer gives this figure.",
+ "overall": {"tp": 33, "fp": 7, "fn": 11, "precision": 0.825, "recall": 0.75}
+}

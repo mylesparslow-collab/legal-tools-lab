@@ -1,9 +1,10 @@
+import copy
 import dataclasses
 
 import pytest
 
 import helpers
-from kx import search
+from kx import config as cfg, search
 from kx.schema import Document
 
 AS_OF = helpers.AS_OF
@@ -26,15 +27,48 @@ def test_topical_document_outranks_a_passing_mention(world):
     assert order.index("d_pub_1") < order.index("d_pub_2")
 
 
-def test_all_terms_are_required_by_default(world):
+def all_mode():
+    config = copy.deepcopy(cfg.load_config())
+    config["match_mode"] = "all"
+    return config
+
+
+def test_full_matches_come_first_and_partial_matches_are_marked(world):
     result = search.search(world, "erin", "earn-out closing", as_of=AS_OF)
+    assert ids(result)[0] == "d_pub_2" and result["relaxed"] is False
+    shares = [r["share_of_query_matched"] for r in result["results"]]
+    assert shares[0] == 1.0 and all(0.5 <= s < 1.0 for s in shares[1:])
+
+
+def test_a_document_matching_only_the_common_word_of_a_query_is_left_out(world):
+    # "memo" is in several documents, "venue" in one. Half the query by weight is the floor.
+    result = search.search(world, "erin", "venue memo", as_of=AS_OF, limit=50)
+    assert "d_pub_3" in ids(result) and "d_pub_1" not in ids(result)
+
+
+def test_when_nothing_matches_the_whole_query_the_response_says_so(world):
+    result = search.search(world, "erin", "severance venue", as_of=AS_OF)
+    assert result["relaxed"] is True and result["total"] >= 1
+    assert "match most of the query" in result["message"]
+
+
+def test_all_mode_requires_every_term(world):
+    result = search.search(world, "erin", "earn-out closing", config=all_mode(), as_of=AS_OF)
     assert ids(result) == ["d_pub_2"] and result["relaxed"] is False
 
 
-def test_falls_back_to_any_term_and_says_so(world):
-    result = search.search(world, "erin", "severance platypus", as_of=AS_OF)
-    assert result["relaxed"] is True and "d_fam_v2" in ids(result)
+def test_all_mode_falls_back_to_any_term_and_says_so(world):
+    # Both words occur, never in the same document.
+    result = search.search(world, "erin", "severance venue", config=all_mode(), as_of=AS_OF)
+    assert result["relaxed"] is True and {"d_fam_v2", "d_pub_3"} <= set(ids(result))
     assert "some of them" in result["message"]
+
+
+def test_a_word_that_occurs_nowhere_is_dropped_and_named(world):
+    result = search.search(world, "erin", "severance platypus", as_of=AS_OF)
+    assert "d_fam_v2" in ids(result) and result["relaxed"] is False
+    assert result["expansion"]["not_found"] == ["platypus"]
+    assert "No document you can open contains: platypus" in result["message"]
 
 
 def test_phrase_must_be_adjacent(world):

@@ -21,22 +21,22 @@ Agency type: school district. Practice: labor. Subjects found in the RFP: open m
 
 ## Experience records chosen
 
-- E-033 | score 13 | client NOT named (no consent)  
+- E-033 | score 13 | client NOT named (no consent to name the client)  
   Printed as: A community college district with about 7,000 students (chief negotiator, 2020 to present). Subjects: collective bargaining, personnel, schools.  
   Why: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ongoing; same role (chief negotiator).
-- E-034 | score 13 | client NOT named (no consent)  
+- E-034 | score 13 | client NOT named (no consent to name the client)  
   Printed as: A unified school district with about 17,000 students (chief negotiator, 2023 to present). Subjects: collective bargaining, personnel, schools.  
   Why: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ongoing; same role (chief negotiator).
-- E-038 | score 13 | client named (consent on file)  
+- E-038 | score 13 | client named (consent to name the client on file)  
   Printed as: Halewick Elementary School District (chief negotiator, 2022 to 2025). Served as chief negotiator in successor negotiations. Work included collective bargaining, personnel and schools.  
   Why: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2025 (within three years); same role (chief negotiator).
-- E-039 | score 13 | client named (consent on file)  
+- E-039 | score 13 | client named (consent to name the client on file)  
   Printed as: Cinder Falls Community College District (chief negotiator, 2024 to 2025). Served as chief negotiator in successor negotiations. Work included collective bargaining, personnel and schools.  
   Why: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2025 (within three years); same role (chief negotiator).
-- E-044 | score 13 | client named (consent on file)  
+- E-044 | score 13 | client named (consent to name the client on file)  
   Printed as: Cinder Falls Unified School District (chief negotiator, 2023 to 2026). Served as chief negotiator in successor negotiations. Work included collective bargaining, personnel and schools.  
   Why: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2026 (within three years); same role (chief negotiator).
 
 ## Relevant records that cannot be printed
 
-- E-046 | score 13 | no consent and no approved anonymized description. Ask the client, or approve a description.
+- E-046 | score 13 | no consent to name the client and no approved anonymized description. Ask the client, or approve a description.

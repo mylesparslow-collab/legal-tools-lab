@@ -1,0 +1,515 @@
+{
+ "note": "Ground truth for the intake helper, batch_b. Written by hand from the guideline documents, before any tool run. expected_rules lists the rules a person reading the document would confirm (or, where marked proposed, would leave unconfirmed). key_params are the values stated in the document. Keyword lists (vague phrases, clerical phrases, overhead phrases and codes, AI terms) are NOT ground truth and are left out of key_params: see README. sentences_that_are_not_rules are sentences an intake pass must not turn into a rule of the type named.",
+ "scoring_suggestion": "A proposed rule matches when its type matches and its source sentence overlaps the source_quote. Score type recall and precision first, then key_params equality on matched rules. Severity is the test author's judgement and should be reported separately, not counted as wrong.",
+ "clients": [
+  {
+   "client_id": "bramblewick",
+   "document": "guideline_docs/bramblewick.txt",
+   "expected_rules": [
+    {
+     "rule_id": "BFC-TK-01",
+     "type": "unapproved_timekeeper",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Named on the matter staffing list only."
+    },
+    {
+     "rule_id": "BFC-STAFF-01",
+     "type": "staffing_matter_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_timekeepers": 3
+     },
+     "source_quote": "Max 3 timekeepers per matter per bill unless Legal Ops agrees a bigger team."
+    },
+    {
+     "rule_id": "BFC-RATE-01",
+     "type": "rate_above_card",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "The matter rate card governs; nothing higher."
+    },
+    {
+     "rule_id": "BFC-RATEUP-01",
+     "type": "rate_increase_notice",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "notice_days": 90
+     },
+     "source_quote": "90 days written notice before a rise applies."
+    },
+    {
+     "rule_id": "BFC-INCR-01",
+     "type": "minimum_increment",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "increment": "0.1"
+     },
+     "source_quote": "Tenths of an hour."
+    },
+    {
+     "rule_id": "BFC-BLOCK-01",
+     "type": "block_billing",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_tasks": 1,
+      "min_hours": "0.5"
+     },
+     "source_quote": "One task per line once a line is over 0.5 h."
+    },
+    {
+     "rule_id": "BFC-VAGUE-01",
+     "type": "vague_description",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "min_words": 3
+     },
+     "source_quote": "Must name the work product or the person dealt with; \"review documents\" or \"emails\" will not do.",
+     "terms_added_from_document": [
+      "emails"
+     ]
+    },
+    {
+     "rule_id": "BFC-CODES-01",
+     "type": "required_codes",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "require_task": true,
+      "require_activity": true,
+      "require_expense": false
+     },
+     "source_quote": "Task code and activity code on every fee line."
+    },
+    {
+     "rule_id": "BFC-DAYCAP-01",
+     "type": "daily_hour_cap",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours": 8
+     },
+     "source_quote": "8.0 h per person per day; more needs a note from the partner."
+    },
+    {
+     "rule_id": "BFC-LATE-01",
+     "type": "late_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_age_days": 90
+     },
+     "source_quote": "Nothing over 90 days old at bill date."
+    },
+    {
+     "rule_id": "BFC-DUP-01",
+     "type": "duplicate_entries",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Paid once."
+    },
+    {
+     "rule_id": "BFC-NONBILL-01",
+     "type": "non_billable_task",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "categories": [
+       "clerical",
+       "invoice_prep",
+       "training"
+      ]
+     },
+     "source_quote": "No charge for copying, filing, Bates work, staff training, or preparing or explaining a bill.",
+     "terms_added_from_document": [
+      "copying",
+      "filing",
+      "bates"
+     ]
+    },
+    {
+     "rule_id": "BFC-CONF-01",
+     "type": "internal_conference_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours_per_entry": "0.4"
+     },
+     "source_quote": "0.4 h cap per line."
+    },
+    {
+     "rule_id": "BFC-OVERHEAD-01",
+     "type": "expense_overhead",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "No postage, phone, in-house word processing, staff overtime or database subscriptions.",
+     "terms_added_from_document": [
+      "phone"
+     ]
+    },
+    {
+     "rule_id": "BFC-RECEIPT-01",
+     "type": "expense_receipt_threshold",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "threshold": "50.00",
+      "inclusive": true
+     },
+     "source_quote": "Needed for any cost of $50.00 and up."
+    },
+    {
+     "rule_id": "BFC-MARKUP-01",
+     "type": "expense_markup",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Actual cost only."
+    },
+    {
+     "rule_id": "BFC-AIDISC-01",
+     "type": "ai_disclosure_required",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "disclosure_marker": "[GAI]"
+     },
+     "source_quote": "A line done with a generative AI tool must carry the tag [GAI]."
+    },
+    {
+     "rule_id": "BFC-AINOPAY-01",
+     "type": "ai_nonpayable_task",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "disclosure_marker": "[GAI]"
+     },
+     "source_quote": "No payment for AI-made summaries of transcripts or documents, or AI first-pass document review."
+    }
+   ],
+   "sentences_that_are_not_rules": [
+    {
+     "text": "Monthly, by the 15th.",
+     "why": "bill timing; no rule type covers it"
+    },
+    {
+     "text": "Send a fee estimate at matter opening; update it if it moves by 20%.",
+     "why": "an estimate, not a not-to-exceed amount; a budget_cap rule must not be proposed from it"
+    }
+   ]
+  },
+  {
+   "client_id": "coldwaterfen",
+   "document": "guideline_docs/coldwaterfen.txt",
+   "expected_rules": [
+    {
+     "rule_id": "CFH-BUDGET-01",
+     "type": "budget_cap",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "The Authority's obligation to pay Counsel on any assignment is limited to the ceiling amount fixed in the assignment order, and Counsel proceeds at its own risk as to any fees or costs that would carry total billings past that ceiling."
+    },
+    {
+     "rule_id": "CFH-PHASE-01",
+     "type": "phase_cap",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Where an assignment order apportions the ceiling amount among stages, billings attributable to a stage shall be held within the sum apportioned to it."
+    },
+    {
+     "rule_id": "CFH-RATE-01",
+     "type": "rate_above_card",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Services shall be charged at the rates enumerated in the assignment order and not otherwise."
+    },
+    {
+     "rule_id": "CFH-TK-01",
+     "type": "unapproved_timekeeper",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Charges for the services of any individual not named in the assignment order will be refused."
+    },
+    {
+     "rule_id": "CFH-INCR-01",
+     "type": "minimum_increment",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "increment": "0.1"
+     },
+     "source_quote": "Time is to be reported in tenths of an hour (six-minute units)."
+    },
+    {
+     "rule_id": "CFH-ROUND-01",
+     "type": "rounding_pattern",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "block": "1.0",
+      "min_entries": 8,
+      "threshold_percent": 75
+     },
+     "source_quote": "The Authority's auditors will inquire into the records of any timekeeper three-quarters or more of whose entries (eight entries being the minimum examined) are stated in whole hours."
+    },
+    {
+     "rule_id": "CFH-BLOCK-01",
+     "type": "block_billing",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_tasks": 1,
+      "min_hours": 0
+     },
+     "source_quote": "A time entry shall describe a single service, and the Authority declines to pay for composite entries in which two or more services share one time figure."
+    },
+    {
+     "rule_id": "CFH-CODES-01",
+     "type": "required_codes",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "require_task": true,
+      "require_activity": false,
+      "require_expense": false
+     },
+     "source_quote": "Each time entry shall carry the task code of the stage of work it belongs to."
+    },
+    {
+     "rule_id": "CFH-LATE-01",
+     "type": "late_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_age_days": 60
+     },
+     "source_quote": "Charges presented later than sixty (60) days after the service was rendered are barred."
+    },
+    {
+     "rule_id": "CFH-DUP-01",
+     "type": "duplicate_entries",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "No service shall be charged more than once, and any charge found to be repeated shall be deducted."
+    },
+    {
+     "rule_id": "CFH-RESEARCH-01",
+     "type": "research_approval",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours": 4
+     },
+     "source_quote": "Counsel shall obtain the written concurrence of the Chief Legal Officer before devoting in excess of four (4) hours to legal research on an assignment."
+    },
+    {
+     "rule_id": "CFH-EVENT-01",
+     "type": "staffing_event_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_attendees": 1,
+      "events": [
+       "deposition",
+       "hearing",
+       "mediation",
+       "arbitration"
+      ]
+     },
+     "source_quote": "The Authority will compensate the attendance of not more than one (1) attorney at any deposition, hearing, mediation or arbitration session."
+    },
+    {
+     "rule_id": "CFH-TRAVEL-01",
+     "type": "travel_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "billable_percent": 50,
+      "requires_approval": true
+     },
+     "source_quote": "Travel time, where the Chief Legal Officer has approved the travel in advance, is compensated at one-half of the timekeeper's rate; unapproved travel time is not compensated."
+    },
+    {
+     "rule_id": "CFH-PERDIEM-01",
+     "type": "expense_per_diem",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "caps": {
+       "meal": "65.00",
+       "lodging": "225.00"
+      }
+     },
+     "source_quote": "Meals taken while travelling for the Authority are reimbursed to a limit of $65.00 per person per day, and overnight accommodation to a limit of $225.00 per night."
+    },
+    {
+     "rule_id": "CFH-RECEIPT-01",
+     "type": "expense_receipt_threshold",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "threshold": "25.00",
+      "inclusive": false
+     },
+     "source_quote": "A receipt shall accompany every disbursement exceeding $25.00."
+    }
+   ],
+   "sentences_that_are_not_rules": [
+    {
+     "text": "The Authority places no fixed limit on the hours a timekeeper may work in a day.",
+     "why": "says there is NO daily limit; a daily_hour_cap rule must not be proposed from it"
+    },
+    {
+     "text": "Counsel shall submit its invoices within thirty (30) days of the close of each calendar quarter and shall retain its time records for four (4) years.",
+     "why": "invoice timing and record keeping; the 30 days is not a late-time limit and the 4 is not an hours limit"
+    },
+    {
+     "text": "Expert and consultant fees above $5,000 require a purchase order before the expense is incurred.",
+     "why": "a purchase-order rule; no rule type covers it. It must not be read as a receipt threshold"
+    }
+   ]
+  },
+  {
+   "client_id": "nettlecombe",
+   "document": "guideline_docs/nettlecombe.txt",
+   "expected_rules": [
+    {
+     "rule_id": "NHL-INCR-01",
+     "type": "minimum_increment",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "increment": "0.1"
+     },
+     "source_quote": "Keep time in six-minute blocks, so 0.1 of an hour."
+    },
+    {
+     "rule_id": "NHL-BLOCK-01",
+     "type": "block_billing",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_tasks": 1,
+      "min_hours": "0.3"
+     },
+     "source_quote": "Anything over 18 minutes (0.3) that covers more than one task comes back to you."
+    },
+    {
+     "rule_id": "NHL-VAGUE-01",
+     "type": "vague_description",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "min_words": 3
+     },
+     "source_quote": "Same for entries that don't say anything: \"attention to matter\", \"draft correspondence\" and the like."
+    },
+    {
+     "rule_id": "NHL-RATE-01",
+     "type": "rate_above_card",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Stick to the rates in the engagement letter."
+    },
+    {
+     "rule_id": "NHL-DUP-01",
+     "type": "duplicate_entries",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Double entries get paid once."
+    },
+    {
+     "rule_id": "NHL-DAYCAP-01",
+     "type": "daily_hour_cap",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours": 11
+     },
+     "source_quote": "Eleven hours is the most I'll accept from one person in a day without a call first."
+    },
+    {
+     "rule_id": "NHL-EVENT-01",
+     "type": "staffing_event_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_attendees": 2,
+      "events": [
+       "deposition",
+       "hearing",
+       "mediation"
+      ]
+     },
+     "source_quote": "No more than two of your people at any deposition, hearing or mediation."
+    },
+    {
+     "rule_id": "NHL-CONF-01",
+     "type": "internal_conference_limit",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours_per_entry": "0.3"
+     },
+     "source_quote": "Lawyers talking to each other inside your firm: 0.3 max per entry."
+    },
+    {
+     "rule_id": "NHL-RESEARCH-01",
+     "type": "research_approval",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "max_hours": 5
+     },
+     "source_quote": "Ask me before legal research on a file goes past 5 hours."
+    },
+    {
+     "rule_id": "NHL-TRAVEL-01",
+     "type": "travel_time",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "billable_percent": 50,
+      "requires_approval": false
+     },
+     "source_quote": "Travel time gets billed at half your normal rate."
+    },
+    {
+     "rule_id": "NHL-PERDIEM-01",
+     "type": "expense_per_diem",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "caps": {
+       "meal": "75.00",
+       "lodging": "250.00"
+      }
+     },
+     "source_quote": "On the road, meals are $75 a head per day and hotels $250 a night, tops."
+    },
+    {
+     "rule_id": "NHL-NONBILL-01",
+     "type": "non_billable_task",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {
+      "categories": [
+       "clerical",
+       "conflicts",
+       "training"
+      ]
+     },
+     "source_quote": "Don't bill us for clerical work, conflict checks or training your own people."
+    },
+    {
+     "rule_id": "NHL-OVERHEAD-01",
+     "type": "expense_overhead",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "No overhead on the bill either: postage, word processing, phone charges, office supplies, online research fees.",
+     "terms_added_from_document": [
+      "phone charges",
+      "online research"
+     ]
+    },
+    {
+     "rule_id": "NHL-MARKUP-01",
+     "type": "expense_markup",
+     "status_a_person_would_give": "confirmed",
+     "key_params": {},
+     "source_quote": "Outside vendor charges come through at cost."
+    },
+    {
+     "rule_id": "NHL-LATE-01",
+     "type": "late_time",
+     "status_a_person_would_give": "proposed",
+     "key_params": {
+      "max_age_days": 60
+     },
+     "source_quote": "Try to get time to us within 60 days."
+    }
+   ],
+   "sentences_that_are_not_rules": [
+    {
+     "text": "Keep your receipts, because I may ask for them, but you don't need to attach them.",
+     "why": "says receipts are NOT required with the bill; an expense_receipt_threshold rule must not be proposed from it"
+    },
+    {
+     "text": "Our fiscal year ends March 31, so please get February and March time in promptly.",
+     "why": "a request with no limit; not a rule"
+    }
+   ]
+  }
+ ]
+}

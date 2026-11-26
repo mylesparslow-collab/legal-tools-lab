@@ -39,7 +39,7 @@ This page gives the facts for the decision. The tool does not make the decision.
 
 - Firm facts are as of 2026-10-01 (55 days old).
 - Blocking flags on inserted passages: 0.
-- Client names printed without consent: 0.
+- Client or contact names printed without the consent that covers them: 0.
 
 ## Open disqualifiers: 24
 

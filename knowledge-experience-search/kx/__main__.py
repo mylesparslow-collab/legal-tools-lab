@@ -43,6 +43,15 @@ def print_search(result, show_explain=False, out=None):
     if result["message"]:
         w(result["message"] + "\n")
     w(f"{result['total']} result{'s' if result['total'] != 1 else ''} among documents this user can open\n")
+    x = result.get("expansion") or {}
+    for u in x.get("used", []):
+        w(f"  also searched {u['also_searched']!r} for {u['for']!r} "
+          f"({u['source']}, weight {u['weight']}; {u['why']})\n")
+    if x.get("related_terms"):
+        w("  few direct matches; related terms from your top results: "
+          + ", ".join(t["term"] for t in x["related_terms"]) + "\n")
+    if x and not x.get("on"):
+        w("  expansion off: your exact words only\n")
     for r in result["results"]:
         flags = [f for f, on in (("model form", r["model_form"]), ("final", r["is_final"]),
                                  ("filed", r["was_filed"])) if on]
@@ -50,7 +59,10 @@ def print_search(result, show_explain=False, out=None):
             flags.append(f"draft v{r['version_no']}")
         if r["reuse_count"]:
             flags.append(f"reused {r['reuse_count']}x")
-        w(f"\n{r['rank']:>2}. {r['title']}  [{r['doc_id']}]  score {r['score']:.3f}\n")
+        via = "" if r.get("found_by", "your words") == "your words" else f"  (found by {r['found_by']})"
+        if r.get("share_of_query_matched", 1.0) < 0.999 and r.get("found_by") != "related terms":
+            via += "  (matches part of the query)"
+        w(f"\n{r['rank']:>2}. {r['title']}  [{r['doc_id']}]  score {r['score']:.3f}{via}\n")
         w(f"    {r['doc_type']} | {r['practice']} | {r['matter_type']} | {r['jurisdiction']} | {r['date']}\n")
         author = r["author"]["name"] + (" (left the firm)" if r["author"]["departed"] else "")
         w(f"    matter {r['matter_id']} {r['matter_name']} | author {author}\n")
@@ -71,7 +83,9 @@ def print_search(result, show_explain=False, out=None):
               f"weight {e['text']['weight']}; statistics over {e['statistics_scope']})\n")
             for t in e["text"]["terms"]:
                 where = ", ".join(f"{k} x{v}" for k, v in t["matched_in"].items())
-                w(f"         term {t['term']!r}: {where}; in {t['documents_you_can_see_with_term']} "
+                src = "" if t["source"] == "your words" else (
+                    f" [{t['source']} for {t['for_your_words']!r}, weight {t['weight']}: {t['why']}]")
+                w(f"         term {t['term']!r}{src}: {where}; in {t['documents_you_can_see_with_term']} "
                   f"visible documents; bm25 {t['bm25']}\n")
             for s in e["signals"]:
                 w(f"         {s['signal']}: value {s['value']} x weight {s['weight']} = {s['contribution']}\n")
@@ -125,11 +139,14 @@ def main(argv=None):
     for name, help_text in (("search", "find documents"), ("who", "find people who have done this work")):
         p = sub.add_parser(name, help=help_text)
         _add_common(p)
-        p.add_argument("--user", required=True, help="person id the query runs as")
+        p.add_argument("--user", required=True,
+                       help="person id the query runs as (operator tool; the web UI uses a session)")
         p.add_argument("--filter", action="append", metavar="key=value")
         p.add_argument("--limit", type=int, default=10)
         p.add_argument("--as-of", default=None, help="date used for recency, YYYY-MM-DD")
         p.add_argument("--json", action="store_true")
+        p.add_argument("--no-expand", action="store_true",
+                       help="search the exact words only: no thesaurus, word forms, typo or related terms")
         if name == "search":
             p.add_argument("--explain", action="store_true")
         p.add_argument("query", nargs="*")
@@ -148,6 +165,17 @@ def main(argv=None):
     _add_common(p)
     p.add_argument("--data", default=str(cfg.DEFAULT_DATA_DIR))
     p.add_argument("--json", action="store_true")
+
+    p = sub.add_parser("timing", help="time queries with expansion on and off")
+    _add_common(p)
+    p.add_argument("--data", default=str(cfg.DEFAULT_DATA_DIR))
+
+    p = sub.add_parser("heldout", help="score a held-out batch (see heldout/README.md)")
+    _add_common(p)
+    p.add_argument("--data", default=str(cfg.DEFAULT_DATA_DIR))
+    p.add_argument("--batch", required=True, help="folder holding ANSWER_KEY.json")
+    p.add_argument("--out", required=True, help="file to write; refused if it already exists")
+    p.add_argument("--no-expand", action="store_true")
 
     p = sub.add_parser("serve", help="local web UI on 127.0.0.1")
     _add_common(p)
@@ -184,9 +212,11 @@ def main(argv=None):
         try:
             if args.command == "search":
                 result = service.search(args.user, query, _filters(args.filter),
-                                        limit=args.limit, explain=args.explain)
+                                        limit=args.limit, explain=args.explain,
+                                        expand=False if args.no_expand else None)
             else:
-                result = service.who(args.user, query, _filters(args.filter), limit=args.limit)
+                result = service.who(args.user, query, _filters(args.filter), limit=args.limit,
+                                     expand=False if args.no_expand else None)
         except QueryError as exc:
             sys.exit(f"Could not run that query: {exc}")
         if args.json:
@@ -225,6 +255,27 @@ def main(argv=None):
             print(json.dumps(report, indent=1))
         else:
             print(json.dumps({k: v for k, v in report.items() if k != "per_query"}, indent=1))
+        return 0
+
+    if args.command == "timing":
+        from kx import evaluate
+        conn = index_mod.connect(args.db, readonly=True)
+        print(json.dumps(evaluate.timing(conn, evaluate.load_key(args.data),
+                                         cfg.load_config(args.config)), indent=1))
+        return 0
+
+    if args.command == "heldout":
+        from kx import evaluate, heldout
+        if Path(args.out).exists():
+            sys.exit(f"{args.out} already exists. A recorded run is not overwritten.")
+        conn = index_mod.connect(args.db, readonly=True)
+        key = evaluate.load_key(args.data)
+        report = heldout.run(conn, args.batch, key["equivalents"], key["as_of"],
+                             cfg.load_config(args.config), expand=False if args.no_expand else None)
+        Path(args.out).write_text(json.dumps(report, indent=1, ensure_ascii=False) + "\n",
+                                  encoding="utf-8")
+        print(json.dumps({k: report[k] for k in ("batch", "expansion", "tool_state",
+                                                 "document_queries", "who_has_done_this")}, indent=1))
         return 0
 
     if args.command == "serve":

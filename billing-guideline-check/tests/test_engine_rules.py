@@ -278,7 +278,7 @@ def test_code_table_check_is_review_only_and_off_by_default():
     assert check_invoice(mk_invoice([line]), guide, code_table=table).findings == []
     guide = mk_guideline(mk_rule("required_codes", dict(params, check_against_sample_table=True)))
     (f,) = check_invoice(mk_invoice([line]), guide, code_table=table).findings
-    assert f.severity == "review" and f.amount_at_risk == 0 and "unverified" in f.explanation
+    assert f.severity == "review" and f.amount_at_risk == 0 and "may be a valid code" in f.explanation
 
 
 def test_late_time_boundary():

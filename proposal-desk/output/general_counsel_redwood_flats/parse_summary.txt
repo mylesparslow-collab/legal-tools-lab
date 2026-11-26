@@ -37,12 +37,11 @@ Requirements (10):
   I       Transition plan              Transition. Describe how the firm would take over from retiring counse
   J       Disclosures and exceptions   Exceptions to Agreement. State any exception to the District's standar
 
-Forms and certifications (5):
+Forms and certifications (4):
   Exhibit 1      Proposer Certification
   Exhibit 3      Non-Collusion Affidavit
   Exhibit 4      Conflict of Interest Disclosure Form
                  Certificate of insurance or a letter from the proposer's broker
-  Exhibit 2      Exhibit 2 (named in section SECTION V)  [check: referred to in the text but not in the forms list; check whether it must be submitted]
 
 Evaluation criteria (points, total 100):
   30   Experience with special districts and water matters
@@ -65,6 +64,7 @@ Addendum 1 (issued 2026-11-18): 2 change(s) applied, 1 item(s) to read
   submission_due: 2026-12-10 -> 2026-12-17
   interview: 2026-12-17 -> 2027-01-07
 
-Items marked check: 2
-  form F5: referred to in the text but not in the forms list; check whether it must be submitted
+Items marked check: 3
+  party Beatrix Okonkwo: role taken from the name before it in a list
+  party Lucien Farraday: role taken from the name before it in a list
   addendum ADD1-3: addendum item not applied automatically; read it

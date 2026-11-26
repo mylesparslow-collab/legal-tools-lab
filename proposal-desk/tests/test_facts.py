@@ -228,14 +228,33 @@ def test_old_library_answers_with_old_head_counts_are_flagged(data, ctx):
 
 # ---- consent check on a whole draft
 
-def test_consent_check_finds_a_non_consented_client_name(data):
-    rec = next(e for e in data.experience if not e["client_consent"])
+def test_consent_check_finds_a_client_named_without_consent_to_name(data):
+    rec = next(e for e in data.experience if not e["consent_to_name_client"])
     flags = F.check_consent("Our work for %s is a good example." % rec["client_name"].upper(), data)
-    assert flags and flags[0]["kind"] == "no_client_consent"
-    ok = next(e for e in data.experience if e["client_consent"])
+    assert [f["kind"] for f in flags] == ["client_named_without_consent"]
+    ok = next(e for e in data.experience if e["consent_to_name_client"])
     assert F.check_consent("Our work for %s is a good example." % ok["client_name"], data) == []
 
 
-def test_consent_check_finds_a_reference_contact_without_consent(data):
-    ref = next(r for r in data.references if not r["client_consent"])
-    assert F.check_consent("Please call %s." % ref["contact_name"], data)
+def test_consent_check_finds_a_contact_listed_without_consent_to_list(data):
+    ref = next(r for r in data.references if not r["consent_to_list_contact"])
+    flags = F.check_consent("Please call %s." % ref["contact_name"], data)
+    assert [f["kind"] for f in flags] == ["contact_listed_without_consent"]
+
+
+def test_the_two_consents_are_checked_separately(data):
+    import copy
+    d = copy.copy(data)
+    exp = dict(next(e for e in data.experience if e["consent_to_name_client"]))
+    ref = {"id": "REF-X", "experience_id": exp["id"], "client_name": exp["client_name"],
+           "contact_name": "Ignatius Wetherby", "consent_to_list_contact": False}
+    d.experience, d.references = [exp], [ref]
+    line = "Ignatius Wetherby, General Manager, %s." % exp["client_name"]
+    assert [f["kind"] for f in F.check_consent(line, d)] == ["contact_listed_without_consent"]
+    ref["consent_to_list_contact"] = True
+    assert F.check_consent(line, d) == []
+    exp["consent_to_name_client"] = False          # the contact agreed; the client did not
+    assert [f["kind"] for f in F.check_consent(line, d)] == ["client_named_without_consent"]
+    del exp["consent_to_name_client"], ref["consent_to_list_contact"]      # both missing: both blocked
+    assert sorted(f["kind"] for f in F.check_consent(line, d)) == ["client_named_without_consent",
+                                                                  "contact_listed_without_consent"]

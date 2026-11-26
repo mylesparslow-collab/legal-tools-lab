@@ -1,0 +1,326 @@
+{
+ "rfp": "litigation_counsel_lantern_bay_port.txt",
+ "note": "Held-out batch A. Hand-written from the RFP text before any tool run. No addendum. Layout: a notice in numbered paragraphs with the dates inside sentences in MM/DD/YYYY form, a scope-of-work exhibit in running prose, a questionnaire attachment holding most of the requirements, and a forms attachment. Two requirements are in the body (paragraph 6) and two are unnumbered bullets at the end of Attachment B. Interviews are on two days; the first is recorded.",
+ "agency": "Lantern Bay Port District",
+ "deadlines": [
+  {
+   "kind": "issued",
+   "date": "2026-12-01",
+   "time": null,
+   "source_line": "DATE:   12/01/2026",
+   "source_line_no": 10
+  },
+  {
+   "kind": "questions_due",
+   "date": "2026-12-15",
+   "time": "16:00",
+   "source_line": "Attorney's office by 12/15/2026 at 4:00 PM. Answers to all questions will be",
+   "source_line_no": 36
+  },
+  {
+   "kind": "answers_issued",
+   "date": "2026-12-22",
+   "time": null,
+   "source_line": "posted on the Port District's website on 12/22/2026. Proposals must be",
+   "source_line_no": 37
+  },
+  {
+   "kind": "submission_due",
+   "date": "2027-01-15",
+   "time": "16:30",
+   "source_line": "received no later than 4:30 PM on Friday, 01/15/2027. The Port District",
+   "source_line_no": 38
+  },
+  {
+   "kind": "interview",
+   "date": "2027-02-02",
+   "time": null,
+   "source_line": "expects to interview short-listed firms on 02/02/2027 and 02/03/2027, and to",
+   "source_line_no": 39,
+   "second_day": "2027-02-03"
+  },
+  {
+   "kind": "award",
+   "date": "2027-02-23",
+   "time": null,
+   "source_line": "02/23/2027. There will be no pre-proposal meeting.",
+   "source_line_no": 41,
+   "source_sentence_starts_on_previous_line": true
+  }
+ ],
+ "addendum_changes": [],
+ "requirements": [
+  {
+   "label": "6-unnumbered-1",
+   "qtype": "cover_letter",
+   "section": "6",
+   "numbered": false,
+   "text": "The cover letter must be signed by a partner, must identify the attorney who will lead the trial team, and must confirm that the firm accepts the insurance requirements in paragraph 9."
+  },
+  {
+   "label": "6-unnumbered-2",
+   "qtype": "other",
+   "section": "6",
+   "numbered": false,
+   "text": "Separately from the questionnaire answers, provide one writing sample: a brief or motion filed in the last three years on which the proposed lead trial attorney was the principal author, with client-identifying information removed if the firm wishes.",
+   "alt_qtypes": [
+    "experience"
+   ]
+  },
+  {
+   "label": "B-1",
+   "qtype": "firm_overview",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "Describe the firm: when it was founded, how many attorneys it has, where its offices are, and how its litigation group is organized."
+  },
+  {
+   "label": "B-2",
+   "qtype": "team",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "Who would lead the trial team, and who else would be on it? For each person give the year of admission, the role proposed, and the trials and arbitrations handled in the last ten years.",
+   "is_question": true
+  },
+  {
+   "label": "B-3",
+   "qtype": "experience",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "Describe up to six construction disputes the firm has litigated or arbitrated for public owners in the last eight years. State the amount in dispute and the result."
+  },
+  {
+   "label": "B-4",
+   "qtype": "experience",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "Describe the firm's experience in environmental litigation, including challenges to project approvals and cost recovery actions, in the last eight years."
+  },
+  {
+   "label": "B-5",
+   "qtype": "approach",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "How would the firm approach the first ninety days of the three matters described in paragraph 2 of the notice? What would the early case assessment for each contain?",
+   "is_question": true
+  },
+  {
+   "label": "B-6",
+   "qtype": "approach",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "How does the firm control litigation cost? Describe the firm's budgeting practice, its staffing of depositions and hearings, and how it reports to clients.",
+   "is_question": true,
+   "alt_qtypes": [
+    "rates"
+   ]
+  },
+  {
+   "label": "B-7",
+   "qtype": "references",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "Provide four references from public agency clients for litigation handled by the proposed lead trial attorney. Include a contact name, telephone number and email address for each."
+  },
+  {
+   "label": "B-8",
+   "qtype": "conflicts",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "Identify every matter in the last five years in which the firm represented, or was adverse to, Carrowmore Marine Constructors, Inc., the Seagrass Coalition of Lantern Bay or Brindle Wharf Cold Storage LLC, and any other relationship that could be a conflict of interest."
+  },
+  {
+   "label": "B-9",
+   "qtype": "rates",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "State the hourly rate of each person named in B-2, the rates of paralegals, and any discount offered to the Port District. Say whether the firm will hold these rates for the first two years."
+  },
+  {
+   "label": "B-10",
+   "qtype": "transition",
+   "section": "Attachment B",
+   "numbered": true,
+   "text": "If the firm is chosen, how would it take over the Carrowmore matter from the firm now handling it, and how long would that take?",
+   "is_question": true
+  },
+  {
+   "label": "B-unnumbered-1",
+   "qtype": "disclosure",
+   "section": "Attachment B",
+   "numbered": false,
+   "text": "whether any attorney named in B-2 has been sanctioned by a court in the last ten years, and the circumstances;",
+   "alt_qtypes": [
+    "other"
+   ]
+  },
+  {
+   "label": "B-unnumbered-2",
+   "qtype": "diversity_local",
+   "section": "Attachment B",
+   "numbered": false,
+   "text": "whether the firm is a certified small business or is owned by a resident of Lantern County, and what share of the work would be done from an office in Lantern County."
+  }
+ ],
+ "forms": [
+  "Proposer's Declaration",
+  "Declaration of Non-Collusion",
+  "Statement of Economic Interests and Campaign Contributions",
+  "Insurance Acknowledgment"
+ ],
+ "evaluation": [
+  {
+   "name": "Experience in comparable litigation",
+   "weight": 35
+  },
+  {
+   "name": "the proposed trial team",
+   "weight": 30
+  },
+  {
+   "name": "approach and case management",
+   "weight": 15
+  },
+  {
+   "name": "cost",
+   "weight": 15
+  },
+  {
+   "name": "the writing sample",
+   "weight": 5
+  }
+ ],
+ "min_quals": [
+  {
+   "starts": "the attorney who will lead the trial team must have been admitted",
+   "check_kind": "years_admitted",
+   "value": 15
+  },
+  {
+   "starts": "that attorney must have tried at least five civil cases",
+   "check_kind": "not_checkable",
+   "value": null
+  },
+  {
+   "starts": "the firm must have no fewer than eight",
+   "check_kind": "attorney_count",
+   "value": 8
+  },
+  {
+   "starts": "the firm must not currently represent any party named in paragraph 2",
+   "check_kind": "not_checkable",
+   "value": null
+  }
+ ],
+ "min_qual_notes": "The four qualifications are sentences in one paragraph (First, Second, Third, Fourth), not list items.",
+ "insurance": [
+  {
+   "contains": "professional liability insurance",
+   "amount": "$5,000,000",
+   "amount_value": 5000000
+  },
+  {
+   "contains": "commercial general liability insurance",
+   "amount": "$2,000,000",
+   "amount_value": 2000000
+  },
+  {
+   "contains": "automobile liability insurance",
+   "amount": "$1,000,000",
+   "amount_value": 1000000
+  },
+  {
+   "contains": "workers' compensation insurance",
+   "amount": null,
+   "amount_value": null
+  }
+ ],
+ "mechanics": {
+  "page_limit": 18,
+  "font_pt": 11,
+  "margin_in": null,
+  "kinds": [
+   "format",
+   "delivery",
+   "not_accepted",
+   "page_limit",
+   "page_exclusions",
+   "font"
+  ]
+ },
+ "parties": [
+  {
+   "name": "Lantern Bay Port District",
+   "category": "agency"
+  },
+  {
+   "name": "Hollis Trevanion",
+   "category": "staff"
+  },
+  {
+   "name": "Desmond Achterberg",
+   "category": "staff"
+  },
+  {
+   "name": "Yvette Lindqvist-Mora",
+   "category": "staff"
+  },
+  {
+   "name": "Gideon Marlowe",
+   "category": "staff"
+  },
+  {
+   "name": "Leander Voss",
+   "category": "board"
+  },
+  {
+   "name": "Amina Castellane",
+   "category": "board"
+  },
+  {
+   "name": "Rufus Thackeray",
+   "category": "board"
+  },
+  {
+   "name": "Seren Oyelowo",
+   "category": "board"
+  },
+  {
+   "name": "Beatrix Halloran",
+   "category": "board"
+  },
+  {
+   "name": "Carrowmore Marine Constructors, Inc.",
+   "category": "adverse"
+  },
+  {
+   "name": "Seagrass Coalition of Lantern Bay",
+   "category": "adverse"
+  },
+  {
+   "name": "Brindle Wharf Cold Storage LLC",
+   "category": "adverse"
+  }
+ ],
+ "dates_that_are_not_deadlines": [
+  "There is no pre-proposal meeting: no conference deadline exists"
+ ],
+ "not_requirements": [
+  "Numbered paragraphs 1 to 5 and 7 to 12 of the notice",
+  "Exhibit A scope of work (prose), including the 45 day budget and monthly report duties",
+  "C-1 to C-4: forms",
+  "the 7 calendar day protest period in paragraph 12"
+ ],
+ "extra_fields": {
+  "source_line / source_line_no": "on each deadline: the line of the RFP file (stripped, 1-based number) that states the date in force. For a date changed by addendum it is the addendum line; original_source_line is the line in the body.",
+  "section, numbered, text": "on each requirement: the section it sits in, whether the RFP gives it a number or label, and its exact text with runs of white space collapsed to one space (the label itself is left out).",
+  "alt_labels, alt_qtypes": "other labels or question types that a scorer should also accept. Question types are the test author's judgement.",
+  "deleted_requirements": "requirements removed by addendum. They must NOT appear in the parsed requirement list.",
+  "evaluation_as_issued, forms_as_issued, before_addenda": "values before any addendum, for checking that the change is shown.",
+  "addendum (on addendum_changes)": "which addendum made the change. Kinds beyond the existing keys: requirement_deleted, criterion_removed, weight_changed, insurance_changed, form_removed; time_from and time_to are given where an addendum changes the time of day.",
+  "amount_value": "insurance amount as a whole number of dollars.",
+  "dates_that_are_not_deadlines": "dates in the text that must not be read as schedule deadlines.",
+  "not_requirements": "numbered or lettered items that are not proposal requirements (scope of services, general conditions, table of contents). Reading them as requirements is an error.",
+  "kind_not_in_existing_keys": "marks a deadline kind the existing keys do not use; score it separately."
+ }
+}

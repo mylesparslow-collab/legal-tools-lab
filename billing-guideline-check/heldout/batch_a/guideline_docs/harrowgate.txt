@@ -1,0 +1,36 @@
+HARROWGATE CASUALTY EXCHANGE
+Panel Counsel Billing Requirements: Quick Reference Sheet (rev. 7)
+Fictional document written for a software test
+
+Sheet 1 of 2
+
+ITEM                   REQUIREMENT
+---------------------  ------------------------------------------------------------
+Who may bill           Only people the claims examiner has cleared in writing for the claim.
+Depositions etc.       One attorney paid per deposition, mediation, arbitration session or court hearing; a second needs the examiner's OK beforehand.
+In-firm discussions    Capped at 0.2 hr per entry, per person.
+Time units             Six-minute units (0.1 hr); no quarter hours.
+Half-hour habits       A timekeeper with 80% or more of entries (6 entries minimum) landing on the half hour or the hour gets audited.
+One entry, one task    Each entry covers a single task with its own time; lumped entries are cut.
+Descriptions           Say what was done and to what; "attention to file", "follow up" and similar get zero.
+Codes                  Task code and activity code on fee lines, expense code on cost lines; all mandatory.
+Long days              Over 9.0 hrs by one person in one day is not paid without a written reason.
+Stale time             Work more than 75 days old at invoice date is not paid.
+Repeats                Same entry twice: the second one is struck.
+
+Sheet 2 of 2
+
+ITEM                   REQUIREMENT
+---------------------  ------------------------------------------------------------
+Rates                  The approved rate sheet for the claim is the ceiling.
+Rate changes           45 days' written notice to the examiner before a new rate may be billed.
+Not billable           Secretarial and file-room work; training and onboarding; conflicts clearance; preparing or fixing bills.
+Legal research         Up to 2.5 hrs per claim without asking; beyond that, examiner pre-approval.
+Travel                 Paid at half the approved rate.
+Overhead               Not reimbursed: postage, word processing, local telephone, office supplies.
+Receipts               Required for any single charge of $35.00 or more.
+Food and lodging       Meals max $55.00 per person per day; hotel max $190.00 per night.
+Third-party costs      At cost, no uplift.
+Invoice frequency      Quarterly, or at $5,000 of unbilled time, whichever comes first.
+In-house copies        No more than $0.10 a page.
+Reports                Status report to the examiner every 90 days.

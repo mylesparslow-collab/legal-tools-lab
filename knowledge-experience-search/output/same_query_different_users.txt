@@ -33,9 +33,9 @@ Filters available in these results:
   client_industry: healthcare (8)
   year: 2022 (5), 2023 (3)
 
---- Excluded by wall W1 (Amara Quistrel, U002) ---
+--- Excluded by an ethical wall (Amara Quistrel, U002) ---
 Query: 'project halcyon' as U002
-No document has every term. Showing documents that match some of them.
+No document you can open contains: halcyon. These results match only: project. Try other words for the rest.
 24 results among documents this user can open
 
  1. Project Cinderford - Brief: arbitration clause enforcement  [D01172]  score 0.779
@@ -64,7 +64,7 @@ Filters available in these results:
   client_industry: hospitality (13), energy (8), logistics (3)
   year: 2025 (9), 2023 (7), 2021 (4), 2022 (2), 2024 (2)
 
---- Lead on the matter behind wall W1 (Quinn Pennwarden, U003) ---
+--- Leads the matter behind that wall (Quinn Pennwarden, U003) ---
 Query: 'project halcyon' as U003
 8 results among documents this user can open
 
@@ -94,7 +94,7 @@ Filters available in these results:
   client_industry: healthcare (8)
   year: 2022 (5), 2023 (3)
 
---- Excluded by wall W2 (Ugo Ostergaarde, U016) ---
+--- Excluded by a second wall (Ugo Ostergaarde, U016) ---
 Query: 'project halcyon' as U016
 8 results among documents this user can open
 
@@ -130,7 +130,9 @@ This user is not an active person in the permission data.
 
 --- New associate, no special access (Mirela Halvorsby, U102) ---
 Query: 'earn-out provisions memo' as U102
-6 results among documents this user can open
+26 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
 
  1. Memo: earn-out provisions  [D00869]  score 0.750
     memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-11-15
@@ -151,16 +153,18 @@ Query: 'earn-out provisions memo' as U102
     Subject: earn-out provisions. Prepared in the course of the asset purchase matter in Estermere County Superior Court. The team considered whether milestone payment should be dealt with separately from …
 
 Filters available in these results:
-  doc_type: memo (6)
-  practice: Corporate and M&A (6)
-  matter_type: stock purchase (4), asset purchase (1), merger (1)
-  jurisdiction: Brannock Court of Chancery (2), Tavish County (2), Estermere County Superior Court (1), Wenrick Court of Appeal (1)
-  client_industry: energy (2), healthcare (2), financial services (1), logistics (1)
-  year: 2022 (2), 2023 (1), 2024 (1), 2025 (1), 2026 (1)
+  doc_type: agreement (9), memo (8), form (6), checklist (3)
+  practice: Corporate and M&A (26)
+  matter_type: stock purchase (13), asset purchase (8), merger (2), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Brannock Court of Chancery (6), Tavish County (5), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), healthcare (5), logistics (2), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2025 (3), 2019 (2), 2026 (2)
 
---- Excluded by wall W1 (Amara Quistrel, U002) ---
+--- Excluded by an ethical wall (Amara Quistrel, U002) ---
 Query: 'earn-out provisions memo' as U002
-6 results among documents this user can open
+24 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
 
  1. Memo: earn-out provisions  [D00869]  score 0.750
     memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-11-15
@@ -182,16 +186,18 @@ Query: 'earn-out provisions memo' as U002
     The purpose of this memo is to record the position on earn-out provisions. Internal reference: Project Quillon. The document is subject to partner review before it is sent out …
 
 Filters available in these results:
-  doc_type: memo (6)
-  practice: Corporate and M&A (6)
-  matter_type: merger (3), stock purchase (2), asset purchase (1)
-  jurisdiction: Brannock Court of Chancery (2), Tavish County (2), Estermere County Superior Court (1), Wenrick Court of Appeal (1)
-  client_industry: logistics (3), energy (2), financial services (1)
-  year: 2024 (3), 2022 (1), 2025 (1), 2026 (1)
+  doc_type: agreement (9), memo (7), form (5), checklist (3)
+  practice: Corporate and M&A (24)
+  matter_type: asset purchase (8), stock purchase (8), merger (5), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Brannock Court of Chancery (6), State of Caldmoor (3), Tavish County (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), logistics (5), life sciences (1), property (1), retail (1)
+  year: 2022 (8), 2018 (4), 2025 (4), 2024 (3), 2019 (2), 2026 (2)
 
---- Lead on the matter behind wall W1 (Quinn Pennwarden, U003) ---
+--- Leads the matter behind that wall (Quinn Pennwarden, U003) ---
 Query: 'earn-out provisions memo' as U003
-8 results among documents this user can open
+29 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
 
  1. Memo: earn-out provisions  [D00869]  score 0.750
     memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-11-15
@@ -212,16 +218,18 @@ Query: 'earn-out provisions memo' as U003
     Subject: earn-out provisions. Prepared in the course of the asset purchase matter in Estermere County Superior Court. The team considered whether milestone payment should be dealt with separately from …
 
 Filters available in these results:
-  doc_type: memo (8)
-  practice: Corporate and M&A (8)
-  matter_type: stock purchase (4), merger (3), asset purchase (1)
-  jurisdiction: Tavish County (4), Brannock Court of Chancery (2), Estermere County Superior Court (1), Wenrick Court of Appeal (1)
-  client_industry: logistics (3), energy (2), healthcare (2), financial services (1)
-  year: 2024 (3), 2022 (2), 2023 (1), 2025 (1), 2026 (1)
+  doc_type: agreement (10), memo (10), form (6), checklist (3)
+  practice: Corporate and M&A (29)
+  matter_type: stock purchase (13), asset purchase (8), merger (5), minority investment (2), joint venture (1)
+  jurisdiction: Tavish County (8), Estermere County Superior Court (7), Brannock Court of Chancery (6), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), healthcare (5), logistics (5), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2025 (4), 2024 (3), 2019 (2)
 
---- Excluded by wall W2 (Ugo Ostergaarde, U016) ---
+--- Excluded by a second wall (Ugo Ostergaarde, U016) ---
 Query: 'earn-out provisions memo' as U016
-6 results among documents this user can open
+26 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'memorandum' for 'memo' (thesaurus, weight 0.6; thesaurus: document types)
 
  1. Memo: earn-out provisions  [D00869]  score 0.750
     memo | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-11-15
@@ -242,12 +250,12 @@ Query: 'earn-out provisions memo' as U016
     Subject: earn-out provisions. Prepared in the course of the asset purchase matter in Estermere County Superior Court. The team considered whether milestone payment should be dealt with separately from …
 
 Filters available in these results:
-  doc_type: memo (6)
-  practice: Corporate and M&A (6)
-  matter_type: stock purchase (4), asset purchase (1), merger (1)
-  jurisdiction: Brannock Court of Chancery (2), Tavish County (2), Estermere County Superior Court (1), Wenrick Court of Appeal (1)
-  client_industry: energy (2), healthcare (2), financial services (1), logistics (1)
-  year: 2022 (2), 2023 (1), 2024 (1), 2025 (1), 2026 (1)
+  doc_type: agreement (9), memo (8), form (6), checklist (3)
+  practice: Corporate and M&A (26)
+  matter_type: stock purchase (13), asset purchase (8), merger (2), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Brannock Court of Chancery (6), Tavish County (5), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), healthcare (5), logistics (2), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2025 (3), 2019 (2), 2026 (2)
 
 --- Has left the firm (Anselm Underhaye, U020) ---
 Query: 'earn-out provisions memo' as U020

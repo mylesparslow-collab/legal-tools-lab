@@ -9,7 +9,10 @@ asking user may not see are never fetched. In particular:
 * the BM25 statistics (document count, document frequencies, average field
   lengths) are computed over the visible set at query time, so a term that
   exists only behind a wall has no effect on any score the user sees;
-* near-duplicate and version collapse run over visible results only.
+* near-duplicate and version collapse run over visible results only;
+* vocabulary bridging (kx/expand.py) proposes alternatives from static data,
+  and an alternative is kept, counted and shown only if it occurs in the
+  visible set. "Related" terms are taken from the user's own top results.
 
 The design test (tests/test_noninterference.py) is: a user's output must be
 identical to what they would get from an index that never contained the
@@ -25,7 +28,9 @@ from collections import Counter
 from kx import acl
 from kx.config import load_config
 from kx.index import FIELD_BODY, FIELD_META, FIELD_NAMES, FIELD_TITLE
-from kx.text import STOP_WORDS, raw_tokens, stem, tokenize
+from kx import expand as expand_mod
+from kx.text import (QUERY_FILLER, STOP_WORDS, edit_distance, raw_tokens, root, stem,
+                     tokenize)
 
 FILTER_ALIASES = {
     "type": "doc_type", "doctype": "doc_type", "doc_type": "doc_type",
@@ -71,14 +76,15 @@ def parse_query(text: str) -> dict:
         if toks and toks not in phrases:
             phrases.append(toks)
     rest = _PHRASE_RE.sub(" ", rest).replace('"', " ")
-    terms = []
+    terms, sequence = [], []
     for t in raw_tokens(rest):
-        if t in STOP_WORDS:
-            continue
         s = stem(t)
+        sequence.append((s, t))
+        if t in STOP_WORDS or t in QUERY_FILLER:
+            continue
         if s not in terms:
             terms.append(s)
-    return {"terms": terms, "phrases": phrases, "filters": filters}
+    return {"terms": terms, "phrases": phrases, "filters": filters, "sequence": sequence}
 
 
 def _as_bool(key: str, value) -> int:
@@ -143,22 +149,12 @@ def _in_list(prefix: str, values, params: dict) -> str:
     return ",".join(names) or "NULL"
 
 
-def _has_phrase(positions_by_term: dict, phrase: list) -> bool:
-    """positions_by_term: term -> list of positions, for one document field."""
-    lists = []
-    for tok in phrase:
-        p = positions_by_term.get(tok)
-        if not p:
-            return False
-        lists.append(p)
-    later = [set(p) for p in lists[1:]]
-    return any(all((start + i + 1) in s for i, s in enumerate(later)) for start in lists[0])
-
-
 def _empty(user_id, query, parsed_filters, access, message=""):
     return {"user": user_id, "query": query, "filters": parsed_filters, "access": access,
-            "message": message, "relaxed": False, "total": 0, "offset": 0, "results": [],
-            "facets": {f: [] for f in FACET_FIELDS}}
+            "message": message, "relaxed": False, "reranked": False, "total": 0, "offset": 0,
+            "results": [], "facets": {f: [] for f in FACET_FIELDS},
+            "expansion": {"on": False, "used": [], "not_found": [], "corrected": [],
+                          "related_terms": []}}
 
 
 def _as_of(config, as_of):
@@ -203,111 +199,6 @@ def _snippet(body: str, wanted: set, words: int) -> dict:
     return {"text": text, "highlights": highlights}
 
 
-def _retrieve(conn, user_id: str, terms: list, phrases: list, filters: dict, config: dict,
-              require_all: bool, fields: tuple | None = None):
-    """Fetch and text-score visible candidates. Returns (candidates, stats).
-
-    candidates: doc_pk -> dict with lengths, per-term per-field tf and bm25.
-    Everything read here is restricted to the user's visible matters in SQL.
-    """
-    params = {"uid": user_id}
-    n_docs, sum_t, sum_b, sum_m = conn.execute(
-        f"WITH {acl.VISIBLE_CTE} SELECT COUNT(*), COALESCE(SUM(d.len_title),0), "
-        "COALESCE(SUM(d.len_body),0), COALESCE(SUM(d.len_meta),0) FROM docs d "
-        "WHERE d.matter_id IN (SELECT matter_id FROM vis)", params).fetchone()
-    stats = {"n_visible": n_docs, "df": {}}
-    if n_docs == 0:
-        return {}, stats
-    avg_len = {FIELD_TITLE: (sum_t / n_docs) or 1.0, FIELD_BODY: (sum_b / n_docs) or 1.0,
-               FIELD_META: (sum_m / n_docs) or 1.0}
-
-    all_terms = list(terms)
-    for ph in phrases:
-        for t in ph:
-            if t not in all_terms:
-                all_terms.append(t)
-
-    filter_params = dict(params)
-    filter_sql = _filter_sql(filters, filter_params)
-
-    if not all_terms:
-        rows = conn.execute(
-            f"WITH {acl.VISIBLE_CTE} SELECT d.doc_pk FROM docs d "
-            "JOIN matters m ON m.matter_id = d.matter_id "
-            f"WHERE d.matter_id IN (SELECT matter_id FROM vis){filter_sql}", filter_params)
-        return {r[0]: {"bm25": 0.0, "terms": {}} for r in rows}, stats
-
-    id_params: dict = {}
-    marks = _in_list("t", all_terms, id_params)
-    term_ids = dict(conn.execute(f"SELECT term, term_id FROM terms WHERE term IN ({marks})",
-                                 id_params))
-    id_to_term = {v: k for k, v in term_ids.items()}
-    if not term_ids:
-        return {}, stats
-
-    df_params = dict(params)
-    id_marks = _in_list("i", list(term_ids.values()), df_params)
-    for term_id, count in conn.execute(
-            f"WITH {acl.VISIBLE_CTE} SELECT p.term_id, COUNT(DISTINCT p.doc_pk) FROM postings p "
-            "JOIN docs d ON d.doc_pk = p.doc_pk "
-            f"WHERE p.term_id IN ({id_marks}) AND d.matter_id IN (SELECT matter_id FROM vis) "
-            "GROUP BY p.term_id", df_params):
-        stats["df"][id_to_term[term_id]] = count
-
-    post_params = dict(filter_params)
-    field_sql = ""
-    if fields:
-        field_sql = f" AND p.field IN ({','.join(str(int(f)) for f in fields)})"
-    id_marks = _in_list("i", list(term_ids.values()), post_params)
-    docs: dict = {}
-    for doc_pk, term_id, field, tf, positions, lt, lb, lm in conn.execute(
-            f"WITH {acl.VISIBLE_CTE} SELECT p.doc_pk, p.term_id, p.field, p.tf, p.positions, "
-            "d.len_title, d.len_body, d.len_meta FROM postings p "
-            "JOIN docs d ON d.doc_pk = p.doc_pk JOIN matters m ON m.matter_id = d.matter_id "
-            f"WHERE p.term_id IN ({id_marks}) AND d.matter_id IN (SELECT matter_id FROM vis)"
-            f"{field_sql}{filter_sql}", post_params):
-        entry = docs.setdefault(doc_pk, {"len": {FIELD_TITLE: lt, FIELD_BODY: lb, FIELD_META: lm},
-                                         "tf": {}, "pos": {}})
-        term = id_to_term[term_id]
-        entry["tf"].setdefault(term, {})[field] = tf
-        if phrases:
-            entry["pos"].setdefault(field, {})[term] = [int(x) for x in positions.split(",")]
-
-    bm = config["bm25"]
-    k1, b = bm["k1"], bm["b"]
-    weights = {FIELD_TITLE: bm["field_weights"]["title"], FIELD_BODY: bm["field_weights"]["body"],
-               FIELD_META: bm["field_weights"]["metadata"]}
-    idf = {t: math.log(1.0 + (n_docs - df + 0.5) / (df + 0.5)) for t, df in stats["df"].items()}
-
-    candidates = {}
-    for doc_pk, entry in docs.items():
-        if phrases and not all(
-                any(_has_phrase(entry["pos"].get(f, {}), ph) for f in (FIELD_TITLE, FIELD_BODY))
-                for ph in phrases):
-            continue
-        if terms:
-            present = [t for t in terms if t in entry["tf"]]
-            if require_all and len(present) != len(terms):
-                continue
-            if not require_all and not present and not phrases:
-                continue
-        total = 0.0
-        per_term = {}
-        for t in all_terms:
-            fields = entry["tf"].get(t)
-            if not fields:
-                continue
-            wtf = 0.0
-            for f, tf in sorted(fields.items()):
-                norm = 1.0 - b + b * (entry["len"][f] / avg_len[f])
-                wtf += weights[f] * tf / norm
-            score = idf[t] * wtf / (k1 + wtf)
-            total += score
-            per_term[t] = {"idf": idf[t], "fields": dict(fields), "score": score}
-        candidates[doc_pk] = {"bm25": total, "terms": per_term}
-    return candidates, stats
-
-
 def _load_docs(conn, user_id: str, doc_pks: list) -> dict:
     """Metadata and body for candidate documents, again restricted to the visible set."""
     out = {}
@@ -345,47 +236,498 @@ def _visible_edges(conn, user_id: str) -> list:
         "AND b.matter_id IN (SELECT matter_id FROM vis)", {"uid": user_id}).fetchall()
 
 
+class _Engine:
+    """Reads and scores postings for one user. Every read is restricted to the
+    user's visible matters, and every statistic is a visible-set statistic."""
+
+    def __init__(self, conn, user_id: str, config: dict, fields: tuple | None = None):
+        self.conn, self.uid, self.config = conn, user_id, config
+        self.field_sql = ""
+        if fields:
+            self.field_sql = f" AND p.field IN ({','.join(str(int(f)) for f in fields)})"
+        n, st, sb, sm = conn.execute(
+            f"WITH {acl.VISIBLE_CTE} SELECT COUNT(*), COALESCE(SUM(d.len_title),0), "
+            "COALESCE(SUM(d.len_body),0), COALESCE(SUM(d.len_meta),0) FROM docs d "
+            "WHERE d.matter_id IN (SELECT matter_id FROM vis)", {"uid": user_id}).fetchone()
+        self.n = n
+        self.avg = {FIELD_TITLE: (st / n) or 1.0, FIELD_BODY: (sb / n) or 1.0,
+                    FIELD_META: (sm / n) or 1.0} if n else {}
+        bm = config["bm25"]
+        self.k1, self.b = bm["k1"], bm["b"]
+        self.w = {FIELD_TITLE: bm["field_weights"]["title"], FIELD_BODY: bm["field_weights"]["body"],
+                  FIELD_META: bm["field_weights"]["metadata"]}
+        self.ids: dict = {}      # term -> term_id, or None if the index has never seen it
+        self.df: dict = {}       # term -> number of visible documents containing it
+        self.post: dict = {}     # term -> {doc_pk: {field: (tf, positions)}}
+        self.lens: dict = {}     # doc_pk -> {field: length}
+        self._phrase: dict = {}
+
+    def _resolve(self, terms):
+        missing = sorted({t for t in terms if t not in self.ids})
+        for start in range(0, len(missing), 400):
+            chunk = missing[start:start + 400]
+            params: dict = {}
+            marks = _in_list("t", chunk, params)
+            found = dict(self.conn.execute(
+                f"SELECT term, term_id FROM terms WHERE term IN ({marks})", params))
+            for t in chunk:
+                self.ids[t] = found.get(t)
+
+    def load_df(self, terms) -> None:
+        self._resolve(terms)
+        todo = sorted({t for t in terms if t not in self.df})
+        known = [t for t in todo if self.ids[t] is not None]
+        for t in todo:
+            self.df[t] = 0
+        back = {self.ids[t]: t for t in known}
+        for start in range(0, len(known), 400):
+            params = {"uid": self.uid}
+            marks = _in_list("i", [self.ids[t] for t in known[start:start + 400]], params)
+            for term_id, count in self.conn.execute(
+                    f"WITH {acl.VISIBLE_CTE} SELECT p.term_id, COUNT(DISTINCT p.doc_pk) "
+                    "FROM postings p JOIN docs d ON d.doc_pk = p.doc_pk "
+                    f"WHERE p.term_id IN ({marks}) AND d.matter_id IN (SELECT matter_id FROM vis)"
+                    f"{self.field_sql} GROUP BY p.term_id", params):
+                self.df[back[term_id]] = count
+
+    def fetch(self, terms) -> None:
+        self.load_df(terms)
+        todo = sorted({t for t in terms if t not in self.post})
+        for t in todo:
+            self.post[t] = {}
+        known = [t for t in todo if self.df[t] > 0]
+        back = {self.ids[t]: t for t in known}
+        for start in range(0, len(known), 400):
+            params = {"uid": self.uid}
+            marks = _in_list("i", [self.ids[t] for t in known[start:start + 400]], params)
+            for pk, term_id, field, tf, positions, lt, lb, lm in self.conn.execute(
+                    f"WITH {acl.VISIBLE_CTE} SELECT p.doc_pk, p.term_id, p.field, p.tf, "
+                    "p.positions, d.len_title, d.len_body, d.len_meta FROM postings p "
+                    "JOIN docs d ON d.doc_pk = p.doc_pk "
+                    f"WHERE p.term_id IN ({marks}) AND d.matter_id IN (SELECT matter_id FROM vis)"
+                    f"{self.field_sql}", params):
+                self.post[back[term_id]].setdefault(pk, {})[field] = (tf, positions)
+                if pk not in self.lens:
+                    self.lens[pk] = {FIELD_TITLE: lt, FIELD_BODY: lb, FIELD_META: lm}
+
+    def allowed(self, filters: dict):
+        """doc_pks passing the field filters, or None when there are no filters."""
+        if not filters:
+            return None
+        params = {"uid": self.uid}
+        sql = _filter_sql(filters, params)
+        return {r[0] for r in self.conn.execute(
+            f"WITH {acl.VISIBLE_CTE} SELECT d.doc_pk FROM docs d "
+            "JOIN matters m ON m.matter_id = d.matter_id "
+            f"WHERE d.matter_id IN (SELECT matter_id FROM vis){sql}", params)}
+
+    def all_visible(self, filters: dict) -> set:
+        params = {"uid": self.uid}
+        sql = _filter_sql(filters, params)
+        return {r[0] for r in self.conn.execute(
+            f"WITH {acl.VISIBLE_CTE} SELECT d.doc_pk FROM docs d "
+            "JOIN matters m ON m.matter_id = d.matter_id "
+            f"WHERE d.matter_id IN (SELECT matter_id FROM vis){sql}", params)}
+
+    def _phrase_occ(self, unit) -> dict:
+        if unit not in self._phrase:
+            parts = unit[1]
+            first, rest = parts[0], parts[1:]
+            out: dict = {}
+            docs = set(self.post.get(first[0], {}))
+            for t, _ in rest:
+                docs &= set(self.post.get(t, {}))
+            for pk in docs:
+                counts = {}
+                for field, (_, positions) in self.post[first[0]][pk].items():
+                    others = []
+                    for t, off in rest:
+                        entry = self.post[t][pk].get(field)
+                        if entry is None:
+                            others = None
+                            break
+                        others.append((off, {int(x) for x in entry[1].split(",")}))
+                    if others is None:
+                        continue
+                    n = sum(1 for x in positions.split(",")
+                            if all((int(x) + off) in s for off, s in others))
+                    if n:
+                        counts[field] = n
+                if counts:
+                    out[pk] = counts
+            self._phrase[unit] = out
+        return self._phrase[unit]
+
+    def unit_docs(self, unit) -> dict:
+        """doc_pk -> {field: tf} for a term or phrase unit, visible documents only."""
+        if unit[0] == "t":
+            return {pk: {f: v[0] for f, v in fields.items()}
+                    for pk, fields in self.post.get(unit[1], {}).items()}
+        return self._phrase_occ(unit)
+
+    def unit_tf(self, unit, pk):
+        if unit[0] == "t":
+            fields = self.post.get(unit[1], {}).get(pk)
+            return {f: v[0] for f, v in fields.items()} if fields else None
+        return self._phrase_occ(unit).get(pk)
+
+    def unit_df(self, unit) -> int:
+        return self.df.get(unit[1], 0) if unit[0] == "t" else len(self._phrase_occ(unit))
+
+    def idf(self, df: int) -> float:
+        return math.log(1.0 + (self.n - df + 0.5) / (df + 0.5))
+
+    def bm25(self, tfs: dict, pk: int, idf: float) -> float:
+        wtf = 0.0
+        lens = self.lens[pk]
+        for f, tf in sorted(tfs.items()):
+            wtf += self.w[f] * tf / (1.0 - self.b + self.b * (lens[f] / self.avg[f]))
+        return idf * wtf / (self.k1 + wtf)
+
+
+def _prepare(engine: _Engine, groups: list, config: dict, expand: bool) -> dict:
+    """Add corpus-dependent alternatives, then drop everything that does not
+    occur in the visible set. Returns notes for the response."""
+    conn = engine.conn
+    xcfg = config["expansion"]
+    weights = xcfg["weights"]
+    corrected = []
+    if expand:
+        for g in groups:
+            single = g.get("single")
+            if not single or g["quoted"] or len(single) < 4 or not single.isalpha():
+                continue
+            have = {expand_mod.unit_label(u) for a in g["alts"] for u in a["units"]}
+            forms = sorted(r[0] for r in conn.execute(
+                "SELECT term FROM terms WHERE root = :r AND term != :t",
+                {"r": root(single), "t": single}))
+            for form in forms:
+                if form not in have:
+                    g["alts"].append({"units": [("t", form)], "source": "word form",
+                                      "weight": weights["word_form"], "label": form,
+                                      "why": f"another form of {single!r}"})
+                    have.add(form)
+            for variant in sorted(expand_mod.static_variants(single)):
+                if variant not in have:
+                    g["alts"].append({"units": [("t", variant)], "source": "spelling",
+                                      "weight": weights["spelling"], "label": variant,
+                                      "why": f"another spelling of {single!r}"})
+                    have.add(variant)
+
+    def alt_terms(alt):
+        return [t for u in alt["units"] for t in expand_mod.unit_terms(u)]
+
+    engine.load_df([t for g in groups for a in g["alts"] for t in alt_terms(a)])
+
+    if expand:
+        tcfg = xcfg["typo"]
+        for g in groups:
+            single = g.get("single")
+            if (not single or g["quoted"] or g["thesaurus"] or len(single) < tcfg["min_length"]
+                    or not single.isalpha() or engine.df[single] > 0):
+                continue
+            if any(all(engine.df[t] > 0 for t in alt_terms(a)) for a in g["alts"][1:]):
+                continue  # another form or spelling of the word exists; no need to guess
+            limit = tcfg["max_edits_long"] if len(single) >= tcfg["long_from"] else tcfg["max_edits_short"]
+
+            def plausible(term, d):
+                # Changing one letter of a short word usually gives a different
+                # real word (parent, patent), so that is not treated as a typo.
+                if d == 1 and len(term) == len(single) and sorted(term) != sorted(single):
+                    return len(single) >= tcfg["substitution_min_length"]
+                return True
+
+            near = []
+            for (term,) in conn.execute(
+                    "SELECT term FROM terms WHERE substr(term, 1, 1) = :c "
+                    "AND length(term) BETWEEN :lo AND :hi",
+                    {"c": single[0], "lo": len(single) - limit, "hi": len(single) + limit}):
+                if term != single and term.isalpha():
+                    d = edit_distance(single, term, limit)
+                    if d <= limit:
+                        near.append((d, term))
+            engine.load_df([t for _, t in near])
+            # Only spellings that occur in a document this user can open are
+            # candidates; the choice among them uses visible counts only.
+            live = sorted((d, -engine.df[t], t) for d, t in near
+                          if engine.df[t] > 0 and plausible(t, d))
+            for d, _, term in live[:tcfg["max_corrections"]]:
+                g["alts"].append({"units": [("t", term)], "source": "typo",
+                                  "weight": weights["typo"], "label": term,
+                                  "why": f"{single!r} is in no document you can open; "
+                                         f"{term!r} is {d} letter change{'s' if d > 1 else ''} away"})
+                corrected.append({"typed": g["label"], "read_as": term})
+
+    # Keep only alternatives whose every word occurs in the visible set.
+    for g in groups:
+        g["alts"] = [a for a in g["alts"]
+                     if a["source"] == expand_mod.OWN or all(engine.df[t] > 0 for t in alt_terms(a))]
+    engine.fetch([t for g in groups for a in g["alts"] for t in alt_terms(a)])
+
+    used, not_found = [], []
+    for g in groups:
+        own = g["alts"][0]
+        own_dfs = [engine.unit_df(u) for u in own["units"]]
+        own_idf = None
+        if all(d > 0 for d in own_dfs):
+            own["idf"] = [engine.idf(d) for d in own_dfs]
+            own["df"] = own_dfs
+            own_idf = sum(own["idf"])
+        live = [own] if own_idf is not None else []
+        for alt in g["alts"][1:]:
+            dfs = [engine.unit_df(u) for u in alt["units"]]
+            if not all(d > 0 for d in dfs):
+                continue  # for example a phrase whose words never occur together
+            alt["df"] = dfs
+            # An alternative never carries more weight than the user's own
+            # words would: its rarity is capped at theirs.
+            alt["idf"] = [min(engine.idf(d), own_idf) if own_idf is not None else engine.idf(d)
+                          for d in dfs]
+            live.append(alt)
+            used.append({"for": g["label"], "also_searched": alt["label"], "source": alt["source"],
+                         "weight": alt["weight"], "why": alt["why"],
+                         "documents_you_can_see": min(dfs)})
+        g["live"] = live
+        g["weight"] = max((sum(a["idf"]) for a in live), default=0.0)
+        if not live:
+            not_found.append(g["label"])
+    return {"used": used, "not_found": not_found, "corrected": corrected}
+
+
+def _score_doc(engine: _Engine, pk: int, groups: list):
+    """Best-alternative score per group for one document."""
+    total, covered, rows = 0.0, 0.0, []
+    for gi, g in enumerate(groups):
+        best = None
+        for alt in g["live"]:
+            parts = []
+            for unit, idf in zip(alt["units"], alt["idf"]):
+                tfs = engine.unit_tf(unit, pk)
+                if not tfs:
+                    parts = None
+                    break
+                parts.append((unit, idf, tfs, alt["weight"] * engine.bm25(tfs, pk, idf)))
+            if parts is None:
+                continue
+            score = sum(p[3] for p in parts)
+            if best is None or score > best[0]:
+                best = (score, alt, parts)
+        if best is not None:
+            total += best[0]
+            covered += g["weight"]
+            rows.append((gi, best[1], best[2]))
+    return total, covered, rows
+
+
+def _direct_matches(engine: _Engine, groups: list, allowed, require_all: bool,
+                    min_coverage: float = 0.0, power: float = 1.0) -> dict:
+    live = [g for g in groups if g["live"]]
+    if not live:
+        return {}
+    quoted = {i for i, g in enumerate(live) if g["quoted"]}
+    total_weight = sum(g["weight"] for g in live) or 1.0
+    pool = set()
+    for g in live:
+        for alt in g["live"]:
+            pool |= set(engine.unit_docs(alt["units"][0]))
+    if allowed is not None:
+        pool &= allowed
+    out = {}
+    for pk in pool:
+        total, covered, rows = _score_doc(engine, pk, live)
+        matched = {gi for gi, _, _ in rows}
+        if not quoted <= matched:
+            continue
+        if require_all and len(matched) != len(live):
+            continue
+        if not require_all and len(live) > len(quoted) and not (matched - quoted):
+            continue
+        coverage = covered / total_weight
+        if coverage < min_coverage:
+            continue
+        out[pk] = {"bm25": total, "coverage": coverage, "text": total * coverage ** power,
+                   "rows": [(live[gi], alt, parts) for gi, alt, parts in rows], "via": "direct"}
+    return out
+
+
+def _feedback(engine: _Engine, seeds: list, exclude: set, config: dict) -> list:
+    """Terms that recur in the user's own top results. Visible documents only."""
+    fcfg = config["expansion"]["feedback"]
+    need = max(2, math.ceil(fcfg["min_seed_share"] * len(seeds)))
+    params = {"uid": engine.uid, "need": need, "ft": FIELD_TITLE, "fb": FIELD_BODY}
+    marks = _in_list("s", seeds, params)
+    counts = dict(engine.conn.execute(
+        f"WITH {acl.VISIBLE_CTE} SELECT t.term, COUNT(DISTINCT p.doc_pk) FROM postings p "
+        "JOIN terms t ON t.term_id = p.term_id JOIN docs d ON d.doc_pk = p.doc_pk "
+        f"WHERE p.doc_pk IN ({marks}) AND p.field IN (:ft, :fb) "
+        "AND d.matter_id IN (SELECT matter_id FROM vis) "
+        "GROUP BY t.term HAVING COUNT(DISTINCT p.doc_pk) >= :need", params))
+    terms = [t for t in counts if t not in exclude and t not in STOP_WORDS
+             and t not in QUERY_FILLER and len(t) >= 3 and t.isalpha()]
+    engine.load_df(terms)
+    ceiling = fcfg["max_df_share"] * engine.n
+    scored = []
+    for t in terms:
+        df = engine.df[t]
+        if df < 2 or df > ceiling:
+            continue
+        scored.append((-(counts[t] / len(seeds)) * engine.idf(df), t, df, counts[t]))
+    scored.sort()
+    return [{"term": t, "documents_you_can_see": df, "in_top_results": c}
+            for _, t, df, c in scored[:fcfg["terms"]]]
+
+
+def _related(engine: _Engine, feedback: list, direct: dict, allowed, config: dict) -> dict:
+    fcfg = config["expansion"]["feedback"]
+    terms = [f["term"] for f in feedback]
+    engine.fetch(terms)
+    need = min(fcfg["min_terms_matched"], len(terms))
+    pool = set()
+    for t in terms:
+        pool |= set(engine.post[t])
+    if allowed is not None:
+        pool &= allowed
+    out = {}
+    for pk in pool - set(direct):
+        rows, total = [], 0.0
+        for t in terms:
+            tfs = engine.unit_tf(("t", t), pk)
+            if not tfs:
+                continue
+            idf = engine.idf(engine.df[t])
+            score = fcfg["weight"] * engine.bm25(tfs, pk, idf)
+            total += score
+            rows.append(({"label": t}, {"source": "related term", "weight": fcfg["weight"],
+                                        "label": t, "df": [engine.df[t]],
+                                        "why": "recurs in your top results"},
+                         [(("t", t), idf, tfs, score)]))
+        if len(rows) >= need:
+            out[pk] = {"bm25": total, "coverage": 1.0, "text": total, "rows": rows, "via": "related"}
+    keep = sorted(out, key=lambda pk: (-out[pk]["text"], pk))  # trimmed again after blending
+    return {pk: out[pk] for pk in keep}
+
+
+def get_document(conn, user_id: str, doc_id: str, config: dict | None = None, now=None):
+    """One document by id, or None. The same answer for "does not exist" and
+    "exists but you may not open it": the lookup itself is visibility-filtered."""
+    config = config or load_config()
+    try:
+        acl.assert_usable(conn, now=now, max_age_hours=config.get("acl_max_age_hours"))
+    except acl.PermissionDataUnavailable:
+        return None
+    row = conn.execute(
+        f"WITH {acl.VISIBLE_CTE} SELECT d.doc_pk FROM docs d "
+        "WHERE d.doc_id = :doc_id AND d.matter_id IN (SELECT matter_id FROM vis)",
+        {"uid": user_id, "doc_id": doc_id}).fetchone()
+    if row is None:
+        return None
+    doc = _load_docs(conn, user_id, [row[0]]).get(row[0])
+    if doc is None:
+        return None
+    return {k: doc[k] for k in ("doc_id", "title", "body", "doc_type", "date", "matter_id",
+                                "matter_name", "practice", "matter_type", "jurisdiction",
+                                "client_industry", "office", "author_id", "author_name",
+                                "version_no", "is_final", "was_filed", "model_form",
+                                "reuse_count")}
+
+
 def search(conn, user_id: str, query: str = "", filters: dict | None = None,
            config: dict | None = None, limit: int = 10, offset: int = 0, explain: bool = False,
-           as_of=None, reranker=None, now=None) -> dict:
-    """Run one query as one user. Returns a plain dict ready for JSON."""
+           as_of=None, reranker=None, now=None, expand: bool | None = None) -> dict:
+    """Run one query as one user. Returns a plain dict ready for JSON.
+
+    ``expand`` False switches vocabulary bridging off for this query."""
     config = config or load_config()
+    xcfg = config["expansion"]
+    expand = bool(xcfg["enabled"]) if expand is None else bool(expand) and bool(xcfg["enabled"])
     parsed = parse_query(query)
     merged = dict(parsed["filters"])
     merged.update(filters or {})
     flt = normalise_filters(merged)
-    terms, phrases = parsed["terms"], parsed["phrases"]
 
     try:
         acl.assert_usable(conn, now=now, max_age_hours=config.get("acl_max_age_hours"))
     except acl.PermissionDataUnavailable as exc:
-        return _empty(user_id, query, flt, "unavailable",
-                      f"Search is unavailable: {exc}.")
+        return _empty(user_id, query, flt, "unavailable", f"Search is unavailable: {exc}.")
     if not acl.user_can_search(conn, user_id):
         return _empty(user_id, query, flt, "denied",
                       "This user is not an active person in the permission data.")
-    if not terms and not phrases and not flt:
-        out = _empty(user_id, query, flt, "ok", "Enter a search term or choose a filter.")
-        return out
+    groups = expand_mod.build_groups(parsed, config, expand)
+    if not groups and not flt:
+        return _empty(user_id, query, flt, "ok", "Enter a search term or choose a filter.")
 
-    require_all = config.get("match_mode", "all") == "all"
-    candidates, stats = _retrieve(conn, user_id, terms, phrases, flt, config, require_all)
+    engine = _Engine(conn, user_id, config)
+    notes = {"used": [], "not_found": [], "corrected": []}
+    related_terms: list = []
     relaxed = False
-    if not candidates and require_all and len(terms) > 1 and config.get("relax_to_any_when_empty"):
-        candidates, stats = _retrieve(conn, user_id, terms, phrases, flt, config, False)
-        relaxed = bool(candidates)
+    mode = config.get("match_mode", "all")
+    if engine.n == 0:
+        candidates = {}
+    elif not groups:
+        candidates = {pk: {"bm25": 0.0, "coverage": 1.0, "text": 0.0, "rows": [], "via": "direct"}
+                      for pk in engine.all_visible(flt)}
+    else:
+        notes = _prepare(engine, groups, config, expand)
+        # A run of words read as one thesaurus phrase ("parent company
+        # guarantee") may match nothing the user can open, as a phrase or
+        # through its equivalents. Then read the words separately instead.
+        max_span: dict = {}
+        for _ in range(8):
+            dead = [g for g in groups if not g["quoted"] and g.get("span", 1) > 1 and not g["live"]]
+            if not dead:
+                break
+            for g in dead:
+                max_span[g["pos"]] = g["span"] - 1
+            groups = expand_mod.build_groups(parsed, config, expand, max_span=max_span)
+            notes = _prepare(engine, groups, config, expand)
+        allowed = engine.allowed(flt)
+        mode = config.get("match_mode", "all")
+        require_all = mode == "all"
+        weighted = config.get("weighted_match", {})
+        live = [g for g in groups if g["live"]]
+        # A quoted phrase is a requirement. If it occurs nowhere the user can
+        # see, nothing matches; it is never dropped like a loose word.
+        phrase_missing = any(g["quoted"] and not g["live"] for g in groups)
+        if phrase_missing:
+            candidates = {}
+        elif mode == "weighted":
+            candidates = _direct_matches(engine, groups, allowed, False,
+                                         float(weighted.get("min_share_of_query", 0.5)),
+                                         float(weighted.get("power", 2.0)))
+            # "relaxed" here means: nothing matches the whole query.
+            relaxed = bool(candidates) and len(live) > 1 and all(
+                c["coverage"] < 0.999 for c in candidates.values())
+        else:
+            candidates = _direct_matches(engine, groups, allowed, require_all)
+        if (not candidates and require_all and not phrase_missing and len(live) > 1
+                and config.get("relax_to_any_when_empty")):
+            candidates = _direct_matches(engine, groups, allowed, False)
+            relaxed = bool(candidates)
+        fcfg = xcfg["feedback"]
+        if (expand and fcfg["enabled"] and candidates
+                and len(candidates) < fcfg["run_when_direct_results_below"]):
+            ranked = sorted(candidates, key=lambda pk: (-candidates[pk]["text"], pk))
+            seeds = [pk for pk in ranked
+                     if candidates[pk]["coverage"] >= fcfg["seed_min_coverage"]][:fcfg["seed_documents"]]
+            if len(seeds) >= fcfg["min_seeds"]:
+                exclude = {t for g in groups for a in g["alts"] for u in a["units"]
+                           for t in expand_mod.unit_terms(u)}
+                related_terms = _feedback(engine, seeds, exclude, config)
+                if related_terms:
+                    candidates.update(_related(engine, related_terms, candidates, allowed, config))
 
     docs = _load_docs(conn, user_id, list(candidates))
     blend = config["blend"]
     when = _as_of(config, as_of)
-    max_bm25 = max((c["bm25"] for pk, c in candidates.items() if pk in docs), default=0.0)
+    max_text = max((c["text"] for pk, c in candidates.items()
+                    if pk in docs and c["via"] == "direct"), default=0.0)
     reuse_cap = max(1, int(config.get("reuse_cap", 20)))
     scored = []
     for pk, cand in candidates.items():
         doc = docs.get(pk)
         if doc is None:
             continue
-        text_value = (cand["bm25"] / max_bm25) if max_bm25 > 0 else 0.0
+        text_value = min(1.0, cand["text"] / max_text) if max_text > 0 else 0.0
         signals = [
             ("model_form", 1.0 if doc["model_form"] else 0.0),
             ("is_final", 1.0 if doc["is_final"] else 0.0),
@@ -396,7 +738,18 @@ def search(conn, user_id: str, query: str = "", filters: dict | None = None,
         score = blend["text"] * text_value + sum(blend[name] * value for name, value in signals)
         scored.append({"pk": pk, "doc": doc, "cand": cand, "text_value": text_value,
                        "signals": signals, "score": score})
-    scored.sort(key=lambda r: (-round(r["score"], 9), r["doc"]["doc_id"]))
+    # Direct matches always come before documents found only through related terms.
+    scored.sort(key=lambda r: (r["cand"]["via"] != "direct", -round(r["score"], 9),
+                               r["doc"]["doc_id"]))
+    max_related = int(xcfg["feedback"]["max_related"])
+    trimmed, n_related = [], 0
+    for r in scored:
+        if r["cand"]["via"] == "related":
+            n_related += 1
+            if n_related > max_related:
+                continue
+        trimmed.append(r)
+    scored = trimmed
 
     # Version families: keep one document per family among the matches,
     # preferring the final, then the highest version number.
@@ -411,6 +764,10 @@ def search(conn, user_id: str, query: str = "", filters: dict | None = None,
             continue
         keep = max(members, key=lambda r: (r["doc"]["is_final"], r["doc"]["version_no"],
                                            r["doc"]["doc_id"]))
+        if keep["cand"]["via"] == "related" and any(m["cand"]["via"] == "direct" for m in members):
+            keep = max((m for m in members if m["cand"]["via"] == "direct"),
+                       key=lambda r: (r["doc"]["is_final"], r["doc"]["version_no"],
+                                      r["doc"]["doc_id"]))
         keep["other_versions"] = sorted(
             ({"doc_id": r["doc"]["doc_id"], "version_no": r["doc"]["version_no"],
               "is_final": r["doc"]["is_final"]} for r in members if r is not keep),
@@ -426,7 +783,7 @@ def search(conn, user_id: str, query: str = "", filters: dict | None = None,
         if a in rep_pks and b in rep_pks:
             neighbours.setdefault(a, set()).add(b)
             neighbours.setdefault(b, set()).add(a)
-    kept, kept_by_pk = [], {}
+    kept = []
     for r in reps:
         target = None
         for other in kept:
@@ -435,7 +792,6 @@ def search(conn, user_id: str, query: str = "", filters: dict | None = None,
                 break
         if target is None:
             kept.append(r)
-            kept_by_pk[r["pk"]] = r
         else:
             target.setdefault("near_duplicates", []).append(
                 {"doc_id": r["doc"]["doc_id"], "matter_id": r["doc"]["matter_id"],
@@ -467,13 +823,12 @@ def search(conn, user_id: str, query: str = "", filters: dict | None = None,
         facets[field] = [{"value": v, "count": c}
                          for v, c in sorted(counter.items(), key=lambda kv: (-kv[1], kv[0]))[:shown]]
 
-    wanted = set(terms)
-    for ph in phrases:
-        wanted.update(ph)
     results = []
     page = kept[offset:offset + limit]
     for rank, r in enumerate(page, start=offset + 1):
         doc = r["doc"]
+        wanted = {t for _, _, parts in r["cand"]["rows"] for unit, _, _, _ in parts
+                  for t in expand_mod.unit_terms(unit)}
         item = {
             "rank": rank, "doc_id": doc["doc_id"], "title": doc["title"],
             "doc_type": doc["doc_type"], "date": doc["date"],
@@ -486,59 +841,77 @@ def search(conn, user_id: str, query: str = "", filters: dict | None = None,
             "version_no": doc["version_no"], "is_final": doc["is_final"],
             "was_filed": doc["was_filed"], "model_form": doc["model_form"],
             "reuse_count": doc["reuse_count"], "score": round(r["score"], 6),
+            "share_of_query_matched": round(r["cand"]["coverage"], 3),
+            "found_by": ("related terms" if r["cand"]["via"] == "related" else
+                         ("equivalent terms" if any(alt["source"] != expand_mod.OWN
+                                                    for _, alt, _ in r["cand"]["rows"])
+                          else "your words")),
             "snippet": _snippet(doc["body"], wanted, int(config.get("snippet_words", 30))),
             "other_versions": r.get("other_versions", []),
             "near_duplicates": r.get("near_duplicates", []),
         }
         if explain:
-            item["explain"] = _explain(r, stats, blend, max_bm25, reranked)
+            item["explain"] = _explain(r, engine, blend, max_text, reranked)
         results.append(item)
 
-    message = ""
+    messages = []
+    if notes["corrected"]:
+        messages.append("; ".join(f"read {c['typed']!r} as {c['read_as']!r}"
+                                  for c in notes["corrected"]).capitalize() + ".")
+    if notes["not_found"]:
+        messages.append("No document you can open contains: " + ", ".join(notes["not_found"]) + ".")
+        found = [g["label"] for g in groups if g.get("live")]
+        if kept and len(notes["not_found"]) >= len(found):
+            messages.append("These results match only: " + ", ".join(found)
+                            + ". Try other words for the rest.")
     if relaxed:
-        message = "No document has every term. Showing documents that match some of them."
+        messages.append("No document has every term. Showing documents that match most of the query."
+                        if mode == "weighted" else
+                        "No document has every term. Showing documents that match some of them.")
     elif not kept:
-        message = "Nothing found among the documents you can open."
-    return {"user": user_id, "query": query, "filters": flt, "access": "ok", "message": message,
-            "relaxed": relaxed, "reranked": reranked, "total": len(kept), "offset": offset,
-            "results": results, "facets": facets}
+        messages.append("Nothing found among the documents you can open.")
+    return {"user": user_id, "query": query, "filters": flt, "access": "ok",
+            "message": " ".join(messages), "relaxed": relaxed, "reranked": reranked,
+            "total": len(kept), "offset": offset, "results": results, "facets": facets,
+            "expansion": {"on": expand, "used": notes["used"], "not_found": notes["not_found"],
+                          "corrected": notes["corrected"], "related_terms": related_terms}}
 
 
-def _explain(r: dict, stats: dict, blend: dict, max_bm25: float, reranked: bool) -> dict:
+def _explain(r: dict, engine: _Engine, blend: dict, max_text: float, reranked: bool) -> dict:
     terms = []
-    for term, info in r["cand"]["terms"].items():
-        terms.append({
-            "term": term,
-            "matched_in": {FIELD_NAMES[f]: tf for f, tf in sorted(info["fields"].items())},
-            "documents_you_can_see_with_term": stats["df"].get(term, 0),
-            "idf": round(info["idf"], 4),
-            "bm25": round(info["score"], 4),
-        })
+    for group, alt, parts in r["cand"]["rows"]:
+        for unit, idf, tfs, score in parts:
+            row = {
+                "term": expand_mod.unit_label(unit),
+                "matched_in": {FIELD_NAMES[f]: tf for f, tf in sorted(tfs.items())},
+                "documents_you_can_see_with_term": engine.unit_df(unit),
+                "idf": round(idf, 4),
+                "bm25": round(score, 4),
+                "source": alt["source"],
+                "weight": alt["weight"],
+            }
+            if alt["source"] != expand_mod.OWN:
+                row["for_your_words"] = group["label"]
+                row["why"] = alt["why"]
+            terms.append(row)
     signals = [{"signal": name, "value": round(value, 4), "weight": blend[name],
                 "contribution": round(blend[name] * value, 4)} for name, value in r["signals"]]
     out = {
         "text": {"bm25": round(r["cand"]["bm25"], 4),
-                 "best_bm25_in_your_results": round(max_bm25, 4),
+                 "share_of_query_matched": round(r["cand"]["coverage"], 4),
+                 "best_bm25_in_your_results": round(max_text, 4),
                  "value": round(r["text_value"], 4), "weight": blend["text"],
                  "contribution": round(blend["text"] * r["text_value"], 4), "terms": terms},
         "signals": signals,
         "total": round(r["score"], 6),
-        "statistics_scope": f"{stats['n_visible']} documents you can open",
+        "statistics_scope": f"{engine.n} documents you can open",
     }
+    if r["cand"]["via"] == "related":
+        out["note"] = ("Does not contain your words. Listed after the direct matches because it "
+                       "shares terms that recur in your top results.")
     if reranked and "rerank_score" in r:
         out["rerank_score"] = r["rerank_score"]
     return out
-
-
-def matching_matters(conn, user_id: str, terms: list, config: dict | None = None) -> dict:
-    """matter_id -> number of visible documents whose title has every term. For kx/experience.py."""
-    config = config or load_config()
-    if not terms:
-        return {}
-    candidates, _ = _retrieve(conn, user_id, terms, [], {}, config, True, fields=(FIELD_TITLE,))
-    docs = _load_docs(conn, user_id, list(candidates))
-    counts = Counter(d["matter_id"] for d in docs.values())
-    return dict(counts)
 
 
 def suggest(conn, user_id: str, prefix: str, limit: int = 8, config: dict | None = None,

@@ -385,16 +385,18 @@ class Generator:
         w1_matter = matters[self.walls["W1"]["matters"][0]]
         departed = next(p for p in self.people if p["status"] == "D")
         name = {p["id"]: p["name"] for p in self.people}
+        # These labels are shown on the sign-in picker to everyone, including the
+        # people they describe, so they must not name a confidential matter.
         users = [
             {"person_id": newcomer["id"], "label": "New associate, no special access",
              "note": "Sees every firm-wide matter. Not on any restricted team. Not behind a wall."},
-            {"person_id": self.walls["W1"]["excluded"][0], "label": "Excluded by wall W1",
-             "note": f"Walled from Project {w1_matter['codename']}. Searches run as this user "
-                     "must show no trace of that matter."},
-            {"person_id": w1_matter["lead"], "label": "Lead on the matter behind wall W1",
-             "note": f"Leads Project {w1_matter['codename']} and sees its documents."},
-            {"person_id": self.walls["W2"]["excluded"][0], "label": "Excluded by wall W2",
-             "note": "In the litigation group, which has a grant on one of the two walled "
+            {"person_id": self.walls["W1"]["excluded"][0], "label": "Excluded by an ethical wall",
+             "note": "Walled from one corporate matter. Searches run as this user must show "
+                     "no trace of it."},
+            {"person_id": w1_matter["lead"], "label": "Leads the matter behind that wall",
+             "note": "Sees the walled matter's documents."},
+            {"person_id": self.walls["W2"]["excluded"][0], "label": "Excluded by a second wall",
+             "note": "In the litigation group, which has a grant on one of the walled "
                      "matters. The wall still wins."},
             {"person_id": departed["id"], "label": "Has left the firm",
              "note": "Not active, so every query returns nothing."},

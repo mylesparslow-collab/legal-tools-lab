@@ -83,6 +83,25 @@ Returns documents added or changed since the cursor, ids deleted since the curso
 - **Permission changes do not come through the document feed.** Run `python -m kx index --permissions-only` on its own schedule. How often is a decision for the firm; the interval is the longest time a new wall can go unhonoured. Set `acl_max_age_hours` in `config/ranking.json` so that search stops answering if the snapshot gets older than that.
 - A matter that disappears from the source is removed with its documents.
 
+## Sign-in
+
+The web server reads the asker from a server-side session (`kx/session.py`), never from the request. Today the session is created by a demo user picker. For a pilot:
+
+- Put the firm's single sign-on in front of the server (a reverse proxy that authenticates, or a sign-in callback) and call `SessionStore.issue(person_id)` only with an identity the identity provider has confirmed. Remove the picker and the `/api/meta` staff list.
+- Map the identity provider's user name to `person_id` in the people data. An identity with no match must get no session.
+- Add TLS and set the cookie `Secure`. Move sessions out of process memory if more than one server process runs. Pick the session lifetime with IT (eight hours here).
+- Keep the check that a `user` parameter is ignored, and re-run `tests/test_http.py` against the deployed route, not only the code.
+- The command line takes `--user` directly. It is an operator's tool; restrict who can run it.
+
+## Vocabulary bridging on real data
+
+- `config/thesaurus.json` is general vocabulary. Give it an owner (knowledge lawyers) and a change log. Add the firm's terms of art from the zero-result report. Never add a client name, matter name or code name: the file is the same for every user and its entries are shown in explanations.
+- Review entries for words that mean different things in different practices. An equivalence that is right for one group can flood another's results.
+- Word-form and typo candidates are looked up in the index's term list and kept only if they occur in a document the asker can open. On a large vocabulary the typo scan needs its own index (for example by word length and first letter, which is how it is queried now) and must be timed.
+- "Related terms" reads the postings of the asker's top results at query time. Measure it on real document lengths before leaving it on.
+- Bridging can be switched off for everyone with `"expansion": {"enabled": false}` in `config/ranking.json`, and per query by the user.
+- The held-out numbers in the README are from synthetic documents. Before trusting any of this, have lawyers who did not build it write queries for real precedents they know exist, and score a sealed batch once, as was done here.
+
 ## Questions for IT, before any test
 
 Security model:

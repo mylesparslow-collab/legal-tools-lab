@@ -3,10 +3,14 @@
   "bm25": {
     "k1": 1.2,
     "b": 0.75,
-    "field_weights": {"title": 2.5, "body": 1.0, "metadata": 1.5}
+    "field_weights": {
+      "title": 2.5,
+      "body": 1.0,
+      "metadata": 1.5
+    }
   },
   "blend": {
-    "text": 0.60,
+    "text": 0.6,
     "model_form": 0.14,
     "is_final": 0.08,
     "was_filed": 0.06,
@@ -15,7 +19,7 @@
   },
   "reuse_cap": 20,
   "recency_half_life_years": 4,
-  "match_mode": "all",
+  "match_mode": "weighted",
   "relax_to_any_when_empty": true,
   "near_duplicate_threshold": 0.6,
   "snippet_words": 30,
@@ -24,13 +28,61 @@
   "acl_max_age_hours": null,
   "as_of": null,
   "experience": {
-    "role_weights": {"lead": 1.0, "support": 0.5, "timekeeper": 0.3},
-    "basis_weights": {"matter": 1.0, "description": 0.8, "documents": 0.6},
+    "role_weights": {
+      "lead": 1.0,
+      "support": 0.5,
+      "timekeeper": 0.3
+    },
+    "basis_weights": {
+      "matter": 1.0,
+      "description": 0.8,
+      "documents": 0.6
+    },
     "recency_half_life_years": 3,
     "hours_cap": 200,
     "hours_floor": 0.15,
     "thin_person_max_matters": 1,
     "thin_person_max_hours": 15,
-    "confident_min_matters": 3
-  }
+    "confident_min_matters": 3,
+    "relaxed_min_coverage": 0.5
+  },
+  "expansion": {
+    "_about": "Vocabulary bridging. Weights multiply the text score of a match made through an alternative; all are below 1, the weight of the user's own words. Set enabled to false to switch it off for everyone; a single query can switch it off with expand=off.",
+    "enabled": true,
+    "weights": {
+      "thesaurus": 0.6,
+      "word_form": 0.8,
+      "spelling": 0.9,
+      "typo": 0.7,
+      "thesaurus_loose": 0.5
+    },
+    "typo": {
+      "min_length": 5,
+      "max_edits_short": 1,
+      "max_edits_long": 2,
+      "long_from": 10,
+      "max_corrections": 2,
+      "substitution_min_length": 8
+    },
+    "relaxed_min_coverage": 0.0,
+    "feedback": {
+      "enabled": true,
+      "run_when_direct_results_below": 10,
+      "seed_documents": 5,
+      "min_seeds": 2,
+      "seed_min_coverage": 0.6,
+      "terms": 6,
+      "min_seed_share": 0.6,
+      "max_df_share": 0.15,
+      "min_terms_matched": 3,
+      "max_related": 10,
+      "weight": 0.3
+    }
+  },
+  "weighted_match": {
+    "_about": "Used when match_mode is 'weighted': a document must cover at least this share of the query (by term rarity); its text score is multiplied by share ** power.",
+    "min_share_of_query": 0.5,
+    "power": 2.0
+  },
+  "_match_mode": "weighted: a document must cover at least weighted_match.min_share_of_query of the query (words weighted by rarity among the documents the user can open); full matches score highest. all: every word required, falling back to any word when nothing matches (relax_to_any_when_empty)."
 }

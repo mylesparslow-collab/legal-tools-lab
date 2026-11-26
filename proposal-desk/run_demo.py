@@ -71,19 +71,22 @@ def main():
     hold = evaluate(parse_rfp(read(os.path.join(hold_dir, "bond_counsel_gullwing_harbor.txt"))),
                     json.loads(read(os.path.join(hold_dir, "bond_counsel_gullwing_harbor.key.json"))))
     first = json.loads(read(os.path.join(hold_dir, "first_run_result.json")))
+    round1 = json.loads(read(os.path.join(hold_dir, "round1_after_fixes_result.json")))
     report += "\n".join([
-        "## Held-out document: bond_counsel_gullwing_harbor.txt", "",
-        "A fifth RFP in a layout the parser was not written for. It is not one of the four sample RFPs.", "",
-        "First run, before any change to the parser: precision %.3f, recall %.3f (%d correct, %d extra, %d missed)." % (
-            first["overall"]["precision"], first["overall"]["recall"], first["overall"]["tp"],
-            first["overall"]["fp"], first["overall"]["fn"]),
-        first["cause"], "",
-        "After six general fixes prompted by that run (mixed-case 'Article' headings, 'Tab N' labels, three more",
-        "heading keywords, weight-first criteria, 'longer than N pages'): precision %.3f, recall %.3f" % (
-            hold["overall"]["precision"], hold["overall"]["recall"]),
-        "(%d correct, %d extra, %d missed). This second figure is no longer held out. The remaining" % (
-            hold["overall"]["tp"], hold["overall"]["fp"], hold["overall"]["fn"]),
-        "misses were left unfixed on purpose and are listed here:", ""])
+        "## Earlier hold-out: bond_counsel_gullwing_harbor.txt", "",
+        "A fifth RFP written by the parser's author in a layout the parser was not written for.", "",
+        "- First run, before any change to the parser (round 1): precision %.3f, recall %.3f (%d correct, %d extra, "
+        "%d missed)." % (first["overall"]["precision"], first["overall"]["recall"], first["overall"]["tp"],
+                         first["overall"]["fp"], first["overall"]["fn"]),
+        "  " + first["cause"],
+        "- After six general fixes prompted by that run (round 1): precision %.3f, recall %.3f (%d correct, "
+        "%d extra, %d missed). Recorded then; no longer held out." % (
+            round1["overall"]["precision"], round1["overall"]["recall"], round1["overall"]["tp"],
+            round1["overall"]["fp"], round1["overall"]["fn"]),
+        "- Today, after the round 2 rewrite: precision %.3f, recall %.3f (%d correct, %d extra, %d missed). "
+        "This document has been used for fixes, so this is an in-sample figure." % (
+            hold["overall"]["precision"], hold["overall"]["recall"], hold["overall"]["tp"],
+            hold["overall"]["fp"], hold["overall"]["fn"]), ""])
     from desk.evaluate import CATEGORIES
     for c in CATEGORIES:
         for x in hold[c]["extra"]:
@@ -92,11 +95,39 @@ def main():
             report += "\n- missed %s: %s" % (c, x)
     for x in hold["question_type"]["wrong"]:
         report += "\n- question type: %s" % x
-    report += "\n\nThe first-run figure is the better guide to what happens on an RFP layout nobody has tuned for.\n"
+
+    # independent held-out batches: recorded results only. Batch B is never run from here.
+    res_dir = os.path.join(DATA, "heldout_results")
+    recorded = {}
+    for tag in ("batch_a_first_run", "batch_a_after_fixes", "batch_b_final"):
+        path = os.path.join(res_dir, tag + ".json")
+        if os.path.exists(path):
+            recorded[tag] = json.loads(read(path))["combined"]
+    if recorded:
+        names = {"batch_a_first_run": "Batch A, first run (parser as it stood after round 1)",
+                 "batch_a_after_fixes": "Batch A, after general fixes made from its misses (not held out any more)",
+                 "batch_b_final": "Batch B, run once at the end, sealed until then"}
+        report += "\n\n" + "\n".join([
+            "## Independent held-out batches", "",
+            "Six RFPs with keys written by an independent author who had not read the parser (heldout/README.md).",
+            "These are recorded results; full detail is in data/heldout_results/. The batch B row is the figure",
+            "to rely on.", "",
+            "| Run | Requirements P / R | All categories P / R | Submission deadline | Page limit | Addendum checks |",
+            "|---|---|---|---|---|---|"] + [
+            "| %s | %.3f / %.3f | %.3f / %.3f | %d of %d | %d of %d | %d of %d |" % (
+                names[t], c["requirements"]["precision"], c["requirements"]["recall"],
+                c["overall"]["precision"], c["overall"]["recall"],
+                c["submission_deadline"]["correct"], c["submission_deadline"]["of"],
+                c["page_limit"]["correct"], c["page_limit"]["of"],
+                c["addendum_handling"]["passed"], c["addendum_handling"]["of"]) for t, c in recorded.items()])
+    report += "\n\nThe batch B figure is the guide to what happens on an RFP layout nobody has tuned for.\n"
     write(os.path.join(OUT, "parser_evaluation.md"), report)
     write(os.path.join(OUT, "parser_evaluation.json"),
           json.dumps({"samples": {k: v["overall"] for k, v in evals.items()}, "holdout_first_run": first["overall"],
-                      "holdout_after_fixes": hold["overall"]}, indent=1) + "\n")
+                      "holdout_round1_after_fixes": round1["overall"], "holdout_today": hold["overall"],
+                      "heldout_batches": {t: {k: c[k] for k in ("requirements", "overall", "submission_deadline",
+                                                              "page_limit", "addendum_handling", "question_type")}
+                                          for t, c in recorded.items()}}, indent=1) + "\n")
 
     # harvest into a copy of the library, so the demo library itself is not changed
     lib_copy = os.path.join(OUT, "harvest_demo", "library")

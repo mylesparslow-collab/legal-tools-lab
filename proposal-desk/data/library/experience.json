@@ -2,7 +2,7 @@
  {
   "id": "E-001",
   "client_name": "City of Juniper Landing",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 80,000 residents in the foothills",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -20,7 +20,7 @@
  {
   "id": "E-002",
   "client_name": "Town of Dunmoor",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 30,000 residents in the Central Valley",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -39,7 +39,7 @@
  {
   "id": "E-003",
   "client_name": "City of Corbel Heights",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a city of about 50,000 residents in the north coast",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -58,7 +58,7 @@
  {
   "id": "E-004",
   "client_name": "City of Thistledown",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 85,000 residents in the south coast",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -75,7 +75,7 @@
  {
   "id": "E-005",
   "client_name": "Town of Quarry Hollow",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 20,000 residents in the Central Valley",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -92,7 +92,7 @@
  {
   "id": "E-006",
   "client_name": "City of Nettlefield",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 90,000 residents in the foothills",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -111,7 +111,7 @@
  {
   "id": "E-007",
   "client_name": "City of Candlewick",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a city of about 60,000 residents in the Central Valley",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -130,7 +130,7 @@
  {
   "id": "E-008",
   "client_name": "Town of Harlan Springs",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -148,7 +148,7 @@
  {
   "id": "E-009",
   "client_name": "City of Emberlow",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 65,000 residents in the south coast",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -165,7 +165,7 @@
  {
   "id": "E-010",
   "client_name": "Town of Vesper Point",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 85,000 residents in the north coast",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -182,7 +182,7 @@
  {
   "id": "E-011",
   "client_name": "City of Osprey Mesa",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 85,000 residents in the north coast",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -200,7 +200,7 @@
  {
   "id": "E-012",
   "client_name": "City of Oxbow Terrace",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a city of about 35,000 residents in the north coast",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -217,7 +217,7 @@
  {
   "id": "E-013",
   "client_name": "City of Ironwood Loop",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a city of about 55,000 residents in the inland valleys",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -236,7 +236,7 @@
  {
   "id": "E-014",
   "client_name": "Town of Tallowfield",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a city of about 80,000 residents in the north coast",
   "agency_type": "city",
   "practice": "general_counsel",
@@ -254,7 +254,7 @@
  {
   "id": "E-015",
   "client_name": "Cinder Falls Community Services District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -273,7 +273,7 @@
  {
   "id": "E-016",
   "client_name": "Halewick Community Services District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a community services district in the inland valleys",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -291,7 +291,7 @@
  {
   "id": "E-017",
   "client_name": "Ironwood Loop Harbor District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a harbor district in the south coast",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -309,7 +309,7 @@
  {
   "id": "E-018",
   "client_name": "Emberlow Fire Protection District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a fire protection district in the south coast",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -327,7 +327,7 @@
  {
   "id": "E-019",
   "client_name": "Bramblewood Harbor District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a harbor district in the Central Valley",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -344,7 +344,7 @@
  {
   "id": "E-020",
   "client_name": "Fennimore Gap Sanitary District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a sanitary district in the north coast",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -361,7 +361,7 @@
  {
   "id": "E-021",
   "client_name": "Bramblewood Irrigation District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a irrigation district in the foothills",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -380,7 +380,7 @@
  {
   "id": "E-022",
   "client_name": "Pellam Marsh Water District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a water district in the Central Valley",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -399,7 +399,7 @@
  {
   "id": "E-023",
   "client_name": "Osprey Mesa Fire Protection District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a fire protection district in the south coast",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -416,7 +416,7 @@
  {
   "id": "E-024",
   "client_name": "Lantern Rock Fire Protection District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a fire protection district in the inland valleys",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -433,7 +433,7 @@
  {
   "id": "E-025",
   "client_name": "Emberlow Irrigation District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a irrigation district in the inland valleys",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -451,7 +451,7 @@
  {
   "id": "E-026",
   "client_name": "Candlewick Sanitary District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a sanitary district in the Central Valley",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -470,7 +470,7 @@
  {
   "id": "E-027",
   "client_name": "Larch Valley Harbor District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a harbor district in the inland valleys",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -487,7 +487,7 @@
  {
   "id": "E-028",
   "client_name": "Tallowfield Community Services District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -505,7 +505,7 @@
  {
   "id": "E-029",
   "client_name": "Bramblewood Community Services District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a community services district in the inland valleys",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -523,7 +523,7 @@
  {
   "id": "E-030",
   "client_name": "Vesper Point Community Services District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a community services district in the Central Valley",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -542,7 +542,7 @@
  {
   "id": "E-031",
   "client_name": "Brindle Creek Water District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a water district in the inland valleys",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -562,7 +562,7 @@
  {
   "id": "E-032",
   "client_name": "Larch Valley Community Services District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a community services district in the foothills",
   "agency_type": "special_district",
   "practice": "general_counsel",
@@ -579,7 +579,7 @@
  {
   "id": "E-033",
   "client_name": "Dunmoor Community College District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a community college district with about 7,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -597,7 +597,7 @@
  {
   "id": "E-034",
   "client_name": "Pellam Marsh Unified School District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a unified school district with about 17,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -615,7 +615,7 @@
  {
   "id": "E-035",
   "client_name": "Brindle Creek Elementary School District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a elementary school district with about 16,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -633,7 +633,7 @@
  {
   "id": "E-036",
   "client_name": "Larch Valley Community College District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a community college district with about 15,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -651,7 +651,7 @@
  {
   "id": "E-037",
   "client_name": "Osprey Mesa Community College District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a community college district with about 24,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -668,7 +668,7 @@
  {
   "id": "E-038",
   "client_name": "Halewick Elementary School District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a elementary school district with about 6,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -686,7 +686,7 @@
  {
   "id": "E-039",
   "client_name": "Cinder Falls Community College District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a community college district with about 3,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -704,7 +704,7 @@
  {
   "id": "E-040",
   "client_name": "Ironwood Loop Unified School District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a unified school district with about 22,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -722,7 +722,7 @@
  {
   "id": "E-041",
   "client_name": "Harlan Springs Community College District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a community college district with about 14,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -740,7 +740,7 @@
  {
   "id": "E-042",
   "client_name": "Ironwood Loop Community College District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a community college district with about 23,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -757,7 +757,7 @@
  {
   "id": "E-043",
   "client_name": "Fogbank Elementary School District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "",
   "agency_type": "school_district",
   "practice": "labor",
@@ -774,7 +774,7 @@
  {
   "id": "E-044",
   "client_name": "Cinder Falls Unified School District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a unified school district with about 20,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -792,7 +792,7 @@
  {
   "id": "E-045",
   "client_name": "Sorrel Canyon Community College District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a community college district with about 12,000 students",
   "agency_type": "school_district",
   "practice": "labor",
@@ -810,7 +810,7 @@
  {
   "id": "E-046",
   "client_name": "Vesper Point Community College District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "",
   "agency_type": "school_district",
   "practice": "labor",
@@ -828,7 +828,7 @@
  {
   "id": "E-047",
   "client_name": "Vesper Point Regional Transit Authority",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a regional transit agency in the north coast",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -846,7 +846,7 @@
  {
   "id": "E-048",
   "client_name": "Ashmantle Transit District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -864,7 +864,7 @@
  {
   "id": "E-049",
   "client_name": "Lantern Rock Transit District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a regional transit agency in the north coast",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -882,7 +882,7 @@
  {
   "id": "E-050",
   "client_name": "Lantern Rock Regional Transit Authority",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a regional transit agency in the foothills",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -900,7 +900,7 @@
  {
   "id": "E-051",
   "client_name": "Sorrel Canyon Transit District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a regional transit agency in the south coast",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -917,7 +917,7 @@
  {
   "id": "E-052",
   "client_name": "Sorrel Canyon Regional Transit Authority",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a regional transit agency in the Central Valley",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -936,7 +936,7 @@
  {
   "id": "E-053",
   "client_name": "Thistledown Transit District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a regional transit agency in the south coast",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -954,7 +954,7 @@
  {
   "id": "E-054",
   "client_name": "Wrenfield Regional Transit Authority",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a regional transit agency in the inland valleys",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -971,7 +971,7 @@
  {
   "id": "E-055",
   "client_name": "Nettlefield Transit District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -990,7 +990,7 @@
  {
   "id": "E-056",
   "client_name": "Juniper Landing Transit District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a regional transit agency in the south coast",
   "agency_type": "transit",
   "practice": "capital_projects",
@@ -1009,7 +1009,7 @@
  {
   "id": "E-057",
   "client_name": "City of Halewick",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a city of about 85,000 residents in the Central Valley",
   "agency_type": "city",
   "practice": "labor",
@@ -1026,7 +1026,7 @@
  {
   "id": "E-058",
   "client_name": "City of Wrenfield",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "",
   "agency_type": "city",
   "practice": "labor",
@@ -1043,7 +1043,7 @@
  {
   "id": "E-059",
   "client_name": "Kettle Bend Fire Protection District",
-  "client_consent": true,
+  "consent_to_name_client": true,
   "anonymized_description": "a fire protection district in the foothills",
   "agency_type": "special_district",
   "practice": "capital_projects",
@@ -1060,7 +1060,7 @@
  {
   "id": "E-060",
   "client_name": "Dunmoor Community Services District",
-  "client_consent": false,
+  "consent_to_name_client": false,
   "anonymized_description": "a community services district in the north coast",
   "agency_type": "special_district",
   "practice": "capital_projects",

@@ -123,9 +123,14 @@ def test_form_flags_signature_and_notary(parsed):
     assert all(f["signature"] for f in city)                   # "must be completed, signed and submitted"
 
 
-def test_exhibit_named_in_text_but_not_in_forms_list_is_check_not_dropped(parsed):
-    extra = [f for f in parsed["general_counsel_redwood_flats"]["forms"] if f["ref"] == "Exhibit 2"]
+def test_exhibit_to_complete_named_outside_the_forms_list_is_check_not_dropped(parsed):
+    text = MINI % "March 1, 2027" + "\nComplete and return Exhibit 4 with the proposal.\n"
+    extra = [f for f in parse_rfp(text)["forms"] if f["ref"] == "Exhibit 4"]
     assert len(extra) == 1 and extra[0]["confidence"] == "check" and extra[0]["mandatory"] is False
+    # an agreement that is only referred to is not a form to send in
+    assert not [f for f in parsed["general_counsel_redwood_flats"]["forms"] if f["ref"] == "Exhibit 2"]
+    later = MINI % "March 1, 2027" + "\nThe selected firm must sign the agreement in Exhibit 5 after award.\n"
+    assert not [f for f in parse_rfp(later)["forms"] if f["ref"] == "Exhibit 5"]
 
 
 def test_evaluation_weights_percent_points_and_missing_weight(parsed):

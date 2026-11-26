@@ -112,7 +112,10 @@ These are the tool's own settings, chosen to stop it speaking too soon. They are
 | Show any figure | 8 clean closed comps after the selection rules (`min_comps`). Clean means closed, with a close date, completed normally |
 | Read the P90 as more than one or two matters | 20 or more comps. Below 20 the memo carries a small-sample warning |
 | Have its bands judged by the back-test | 10 or more back-tested matters. A matter can only be back-tested if 8 same-type matters had closed before it opened, so this takes well over 18 clean closed matters spread over time. On the synthetic data, types with 32 to 69 clean closed matters over six years produced 19 to 53 back-tested matters |
-| Detect a shift over time | 16 or more clean closed matters, and the shift has to be large |
+| Have its planning bands adjusted from past outcomes | 12 or more back-tested matters of the type that closed before the proposal date. With fewer, the bands are the finite-sample step alone and the memo says "not adjusted" |
+| Place a P90 at all | 9 or more comps. With 8 the planning P90 is the largest comp and the memo calls it a floor |
+| Detect a change in cost over time | 16 or more clean closed matters (8 each side of the change), and the change has to be large: on the synthetic firms a 1.7x step was caught in 13 of 20 and a 12% a year drift in 10 of 20 |
+| Get a recent-only version when a change is flagged | 8 clean closed comps opened since the estimated change date (`min_comps`). With fewer, the default uses the whole history and warns; `drift_action: recent_only` refuses |
 
 Also needed: time entries covering each comp's whole life (a matter opened before the export window
 starts will look cheap), and several years of history so later matters have earlier ones to be modeled from.
@@ -173,9 +176,25 @@ Checks the profiler does not do, to do by hand:
 
 - The first profile will fail. That is its job.
 - Matter types will be the hard part. If a type mixes very different work, no rule will rescue it.
-- Bands will understate overruns for many types; they do on the synthetic data. The memo prints the
-  walk-forward overrun counts next to every band and fee. Decide in advance how many overruns at the
-  P90 figure are acceptable before a band is used in a quote, and which types fall short.
-- The drift flag misses most shifts smaller than a doubling (see the table in the README). Do not rely
-  on it to tell you a matter type has changed; look at the overrun counts and ask the practice group.
+- Price from the planning figures, not the comp quantiles. On the synthetic data the plain comp
+  quantiles understated overruns for several types and the planning figures did not, but the planning
+  figures are wider: expect a planning P90 well above the largest fee anyone has in mind.
+- The synthetic result does not carry over. Run `python -m feemodel backtest` on the real export and
+  read the planning columns for each matter type before using any band in a quote. Decide in advance
+  how many overruns at the planning P90 are acceptable, and which types fall short.
+- The planning bands were chosen and measured on generated data with one kind of cost distribution.
+  Real matter costs may have heavier tails or change in ways the generator does not produce.
+- The change check is a prompt to look, not drift detection. On the synthetic firms it caught a 1.7x
+  step in 13 of 20, a 12% a year drift in 10 of 20, and flagged between about 1 in 15 and 1 in 37
+  type-checks where nothing was planted (15 of 220 and 6 of 220 on two sets of seeds).
+- When it flags a matter type, the memo shows two versions, recent comps only and the whole history,
+  and prices from the higher at each band. A flag can raise a figure and never lower one. Ask the
+  practice group what happened around the estimated date; the date is rough.
+- If the flag says costs fell and the group confirms a real change (new staffing, a narrower kind of
+  work), set `"drift_action": "recent_only"` in the proposal to use the recent comps only. Before
+  doing so, rule out the usual false cause: of matters opened recently, only the quick ones have
+  closed yet, so the recent end of any history looks cheap.
+- If the group knows of no change, set `"drift_action": "ignore"` for that proposal.
+- When it does not flag a type, that is not evidence of stability. Look at the overrun counts and ask
+  the practice group.
 - Some of the most-requested matter types will not have enough clean history. The tool will say so.

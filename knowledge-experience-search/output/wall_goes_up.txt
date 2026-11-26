@@ -1,15 +1,17 @@
 A wall goes up
 ==============
 Query 'earn-out provisions agreement' as U102.
-Before: 8 results; top result is in matter M0181.
+Before: 26 results; top result is in matter M0181.
 Then a new wall excludes U102 from M0181. Only the permission tables are refreshed (python -m kx index --permissions-only does the same).
-After: 6 results; documents from M0181 shown: 0.
+After: 21 results; documents from M0181 shown: 0.
 Postings before and after: 149360 and 149360 (no document was re-indexed).
 
 Before
 ------
 Query: 'earn-out provisions agreement' as U102
-8 results among documents this user can open
+26 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'contract' for 'agreement' (thesaurus, weight 0.6; thesaurus: contracts, general)
 
  1. Agreement: earn-out provisions  [D00873]  score 0.724
     agreement | Corporate and M&A | stock purchase | Brannock Court of Chancery | 2025-10-09
@@ -43,17 +45,19 @@ Query: 'earn-out provisions agreement' as U102
     This agreement addresses earn-out provisions in connection with the asset purchase matter. The format follows the practice group's house style. For losses definition, see the separate document on …
 
 Filters available in these results:
-  doc_type: agreement (8)
-  practice: Corporate and M&A (8)
-  matter_type: asset purchase (4), stock purchase (3), minority investment (1)
-  jurisdiction: Estermere County Superior Court (4), Brannock Court of Chancery (2), State of Caldmoor (1), Tavish County (1)
-  client_industry: financial services (4), energy (3), healthcare (1)
-  year: 2022 (4), 2025 (2), 2019 (1), 2023 (1)
+  doc_type: agreement (9), memo (8), form (6), checklist (3)
+  practice: Corporate and M&A (26)
+  matter_type: stock purchase (13), asset purchase (8), merger (2), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Brannock Court of Chancery (6), Tavish County (5), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2)
+  client_industry: financial services (9), energy (7), healthcare (5), logistics (2), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2025 (3), 2019 (2), 2026 (2)
 
 After
 -----
 Query: 'earn-out provisions agreement' as U102
-6 results among documents this user can open
+21 results among documents this user can open
+  also searched 'clause' for 'provisions' (thesaurus, weight 0.6; thesaurus: contracts, general)
+  also searched 'contract' for 'agreement' (thesaurus, weight 0.6; thesaurus: contracts, general)
 
  1. Agreement: earn-out provisions  [D00101]  score 0.720
     agreement | Corporate and M&A | minority investment | State of Caldmoor | 2019-06-30
@@ -88,9 +92,9 @@ Query: 'earn-out provisions agreement' as U102
     The purpose of this agreement is to record the position on earn-out provisions. Internal reference: Project Halcyon. Items relating to revenue target were confirmed complete before circulation. The assumptions …
 
 Filters available in these results:
-  doc_type: agreement (6)
-  practice: Corporate and M&A (6)
-  matter_type: asset purchase (4), minority investment (1), stock purchase (1)
-  jurisdiction: Estermere County Superior Court (4), State of Caldmoor (1), Tavish County (1)
-  client_industry: financial services (4), energy (1), healthcare (1)
-  year: 2022 (4), 2019 (1), 2023 (1)
+  doc_type: agreement (7), memo (6), form (5), checklist (3)
+  practice: Corporate and M&A (21)
+  matter_type: asset purchase (8), stock purchase (8), merger (2), minority investment (2), joint venture (1)
+  jurisdiction: Estermere County Superior Court (7), Tavish County (5), State of Caldmoor (3), City of Aldhaven (2), Wenrick Court of Appeal (2), Brannock Court of Chancery (1)
+  client_industry: financial services (9), healthcare (5), energy (2), logistics (2), life sciences (1), property (1)
+  year: 2022 (10), 2018 (4), 2023 (4), 2019 (2), 2024 (1)

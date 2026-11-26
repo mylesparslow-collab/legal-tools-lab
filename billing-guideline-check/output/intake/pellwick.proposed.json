@@ -14,7 +14,7 @@
       "source_quote": "Please bill in 0.1 hour increments at the rates in your engagement letter and not above them.",
       "source_ref": "page 1, paragraph 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "PELLWI-P-RATE-ABOVE-CARD-01",
@@ -25,7 +25,7 @@
       "source_quote": "Please bill in 0.1 hour increments at the rates in your engagement letter and not above them.",
       "source_ref": "page 1, paragraph 2",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "PELLWI-P-DUPLICATE-ENTRIES-01",
@@ -36,7 +36,7 @@
       "source_quote": "We do not want to be charged twice for the same work.",
       "source_ref": "page 1, paragraph 3",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "PELLWI-P-EXPENSE-RECEIPT-THRESHOLD-01",
@@ -50,7 +50,7 @@
       "source_quote": "Send a receipt with any expense over $75.00.",
       "source_ref": "page 1, paragraph 4",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming."
     },
     {
       "rule_id": "PELLWI-P-LATE-TIME-01",
@@ -63,7 +63,7 @@
       "source_quote": "We would rather not see time that is more than 30 days old.",
       "source_ref": "page 1, paragraph 5",
       "confidence": "proposed, needs confirmation",
-      "notes": "Proposed by pattern match. Check the parameters against the sentence before confirming."
+      "notes": "Proposed by pattern match. Check the parameters against the text before confirming. The wording reads as a preference, not a requirement; a person may decide to leave it unconfirmed."
     }
   ]
 }

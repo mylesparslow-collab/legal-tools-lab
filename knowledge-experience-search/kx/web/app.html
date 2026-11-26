@@ -41,6 +41,10 @@ button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-v
   border-color: var(--line); font-weight: 600; margin-bottom: -1px; }
 .searchrow { display: flex; gap: 8px; margin-top: 14px; }
 .searchrow input { flex: 1; min-width: 0; }
+.check { display: flex; gap: 6px; align-items: center; margin: 10px 0 0; color: var(--ink); }
+.expansion { font-size: .875rem; color: var(--muted); margin: 0 0 12px; }
+.expansion ul { margin: 4px 0 0; padding-left: 18px; }
+pre.full { white-space: pre-wrap; font: inherit; font-size: .875rem; border-top: 1px solid var(--line); padding-top: 8px; }
 .hint { font-size: .8125rem; color: var(--muted); margin: 6px 0 0; }
 .presets { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { background: var(--chip); border: 1px solid transparent; border-radius: 999px;
@@ -88,9 +92,10 @@ footer { font-size: .8125rem; color: var(--muted); margin: 24px 0 8px; }
   </header>
 
   <section class="panel" aria-label="Who is searching">
-    <label for="user">Searching as (demo only: a real deployment takes the user from sign-in, not from a menu)</label>
+    <label for="user">Demo sign-in. This picker stands in for the firm's single sign-on. Choosing a person starts a session on the local server; searches then run as that person.</label>
     <select id="user"></select>
     <p class="user-note" id="userNote"></p>
+    <p class="user-note" id="session"></p>
   </section>
 
   <div class="tabs" role="tablist">
@@ -107,6 +112,7 @@ footer { font-size: .8125rem; color: var(--muted); margin: 24px 0 8px; }
         <button class="primary" type="submit">Search</button>
       </div>
     </form>
+    <label class="check" for="expand"><input type="checkbox" id="expand" checked> Also search equivalent terms, other word forms and likely misspellings</label>
     <p class="hint" id="hint"></p>
     <div class="presets" id="presets"></div>
     <div class="active-filters" id="activeFilters"></div>
@@ -121,7 +127,7 @@ footer { font-size: .8125rem; color: var(--muted); margin: 24px 0 8px; }
 
   <footer>
     Results, counts, filters and suggestions are computed only from documents the selected user may open.
-    Every query is written to an audit log.
+    Every query and every document opened is written to an audit log.
   </footer>
 </div>
 
@@ -152,14 +158,25 @@ async function api(path, params) {
   if (SNAP) {
     if (path === "meta") return SNAP.meta;
     if (path === "suggest") return { suggestions: [] };
-    const key = params.user + "|" + params.q;
+    const key = $("user").value + "|" + params.q;
     return SNAP[path][key] || { access: "ok", message: "This query is not in the static snapshot. Start the local server to run it.", total: 0, results: [], facets: {}, people: [], matters_matched: 0, filters: {} };
   }
   const url = "/api/" + path + "?" + new URLSearchParams(params).toString();
-  const res = await fetch(url);
+  const res = await fetch(url, { credentials: "same-origin" });
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || "Request failed");
   return data;
+}
+
+// Demo stand-in for single sign-on. The server maps the session cookie to a
+// person; this page never sends a user id with a query.
+async function signIn(personId) {
+  if (SNAP) return;
+  const res = await fetch("/api/signin", { method: "POST", credentials: "same-origin",
+    headers: { "Content-Type": "application/json" }, body: JSON.stringify({ person_id: personId }) });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || "Sign-in failed");
+  $("session").textContent = "Signed in as " + data.signed_in.name + ".";
 }
 
 function highlight(snippet) {
@@ -179,11 +196,15 @@ function explainBlock(e) {
   d.append(el("p", { text: "Text match " + e.text.contribution.toFixed(3) + " (BM25 " + e.text.bm25 +
     " against the best in your results, " + e.text.best_bm25_in_your_results + ", times weight " + e.text.weight +
     "). Term statistics are taken over " + e.statistics_scope + "." }));
-  const t1 = el("table", {}, el("tr", {}, el("th", { text: "Term" }), el("th", { text: "Matched in" }),
+  if (e.note) d.append(el("p", { text: e.note }));
+  const t1 = el("table", {}, el("tr", {}, el("th", { text: "Term" }), el("th", { text: "Why it was searched" }),
+    el("th", { class: "num", text: "Weight" }), el("th", { text: "Matched in" }),
     el("th", { class: "num", text: "Visible documents with term" }), el("th", { class: "num", text: "BM25" })));
   for (const t of e.text.terms) {
     const where = Object.entries(t.matched_in).map(([k, v]) => k + " ×" + v).join(", ");
-    t1.append(el("tr", {}, el("td", { text: t.term }), el("td", { text: where }),
+    const why = t.source === "your words" ? "your words" : t.source + (t.for_your_words ? " for \u201c" + t.for_your_words + "\u201d" : "") + (t.why ? ": " + t.why : "");
+    t1.append(el("tr", {}, el("td", { text: t.term }), el("td", { text: why }),
+      el("td", { class: "num", text: t.weight }), el("td", { text: where }),
       el("td", { class: "num", text: t.documents_you_can_see_with_term }), el("td", { class: "num", text: t.bm25 })));
   }
   const t2 = el("table", {}, el("tr", {}, el("th", { text: "Quality signal" }), el("th", { class: "num", text: "Value" }),
@@ -204,11 +225,28 @@ function renderSearch(data) {
   if (data.access !== "ok") { $("facets").hidden = true; return; }
   box.append(el("p", { class: "status", text: data.total + (data.total === 1 ? " result" : " results") +
     " among the documents this user can open" }));
+  const x = data.expansion;
+  if (x && (x.used.length || x.related_terms.length)) {
+    const note = el("div", { class: "expansion" });
+    if (x.used.length) {
+      note.append("Also searched, at lower weight than your own words:");
+      const ul = el("ul", {});
+      for (const u of x.used) ul.append(el("li", { text: "\u201c" + u.also_searched + "\u201d for \u201c" + u.for + "\u201d (" +
+        u.source + ", weight " + u.weight + "; " + u.why + "; in " + u.documents_you_can_see + " documents you can open)" }));
+      note.append(ul);
+    }
+    if (x.related_terms.length) note.append(el("p", { text: "Few direct matches, so documents sharing these terms from your top results are listed after them: " +
+      x.related_terms.map((t) => t.term).join(", ") + "." }));
+    note.append(el("p", { text: "Untick the box above to search your exact words only." }));
+    box.append(note);
+  }
   for (const r of data.results) {
     const art = el("article", { class: "result" });
     art.append(el("h2", { text: r.rank + ". " + r.title }));
     art.append(el("p", { class: "meta", text: [r.doc_type, r.practice, r.matter_type, r.jurisdiction, r.date].filter(Boolean).join(" · ") }));
     const badges = el("div", { class: "badges" });
+    if (r.share_of_query_matched < 0.999 && r.found_by !== "related terms") badges.append(el("span", { class: "badge", text: "matches part of the query" }));
+    if (r.found_by && r.found_by !== "your words") badges.append(el("span", { class: "badge", text: "found by " + r.found_by }));
     if (r.model_form) badges.append(el("span", { class: "badge good", text: "model form" }));
     badges.append(el("span", { class: "badge" + (r.is_final ? " good" : ""), text: r.is_final ? "final" : "draft v" + r.version_no }));
     if (r.was_filed) badges.append(el("span", { class: "badge good", text: "filed" }));
@@ -220,6 +258,16 @@ function renderSearch(data) {
     art.append(el("p", { class: "meta", text: "Matter " + r.matter_id + " " + r.matter_name + " · author " + r.author.name +
       (r.author.departed ? " (has left the firm)" : "") + " · " + r.doc_id + " · score " + r.score.toFixed(3) }));
     if (r.explain) art.append(explainBlock(r.explain));
+    if (!SNAP) {
+      const full = el("details", {}, el("summary", { text: "Full text" }));
+      full.addEventListener("toggle", async () => {
+        if (!full.open || full.dataset.loaded) return;
+        full.dataset.loaded = "1";
+        try { const doc = await api("document", { id: r.doc_id }); full.append(el("pre", { class: "full", text: doc.body })); }
+        catch (err) { full.append(el("p", { text: String(err.message || err) })); }
+      });
+      art.append(full);
+    }
     box.append(art);
   }
   renderFacets(data.facets || {});
@@ -293,7 +341,8 @@ async function run() {
   const q = $("q").value.trim();
   renderActiveFilters();
   if (!q && !Object.keys(state.filters).length) return;
-  const params = Object.assign({ user: $("user").value, q: q }, state.filters);
+  const params = Object.assign({ q: q }, state.filters);
+  if (!$("expand").checked) params.expand = "off";
   try {
     if (state.tab === "search") { params.explain = "1"; renderSearch(await api("search", params)); }
     else renderWho(await api("who", params));
@@ -312,7 +361,7 @@ function setTab(tab) {
     : "e.g. loan workout, or zoning entitlement";
   $("hint").textContent = SNAP ? "Static snapshot: choose one of the prepared queries below. Start the local server to type your own."
     : (tab === "search" ? 'Quotes for an exact phrase. Filters: type: practice: mtype: jurisdiction: industry: author: after: before: filed:yes model:yes final:yes'
-      : "Matches matter type and practice, then matter description, then document titles in the matter. Filters: practice: mtype: jurisdiction: industry: office:");
+      : "Matches matter type and practice, matter description, and document titles in the matter. Filters: practice: mtype: jurisdiction: industry: office:");
   renderPresets();
   $("results").replaceChildren(el("p", { class: "status", text: "Enter a query." }));
   $("facets").hidden = true;
@@ -340,7 +389,7 @@ $("q").addEventListener("input", () => {
   suggestTimer = setTimeout(async () => {
     const text = $("q").value;
     try {
-      const data = await api("suggest", { user: $("user").value, q: text });
+      const data = await api("suggest", { q: text });
       const base = text.replace(/[A-Za-z0-9]+$/, "");
       $("suggestions").replaceChildren(...data.suggestions.map((s) => el("option", { value: base + s })));
     } catch (err) { /* suggestions are optional */ }
@@ -349,7 +398,12 @@ $("q").addEventListener("input", () => {
 $("form").addEventListener("submit", (ev) => { ev.preventDefault(); run(); });
 $("tab-search").addEventListener("click", () => setTab("search"));
 $("tab-who").addEventListener("click", () => setTab("who"));
-$("user").addEventListener("change", () => { updateUserNote(); $("suggestions").replaceChildren(); run(); });
+$("user").addEventListener("change", async () => {
+  updateUserNote(); $("suggestions").replaceChildren();
+  try { await signIn($("user").value); run(); }
+  catch (err) { $("results").replaceChildren(el("p", { class: "message", text: String(err.message || err) })); }
+});
+$("expand").addEventListener("change", run);
 
 (async function init() {
   const meta = await api("meta", {});
@@ -367,11 +421,13 @@ $("user").addEventListener("change", () => { updateUserNote(); $("suggestions").
     for (const p of others) g2.append(el("option", { value: p.person_id, text: p.name + " — " + p.title + ", " + p.practice }));
     sel.append(g2);
   }
-  if (SNAP) { $("q").readOnly = true; $("banner").textContent += " This page is a static snapshot of prepared queries."; }
+  if (SNAP) { $("q").readOnly = true; $("expand").disabled = true; $("banner").textContent += " This page is a static snapshot of prepared queries."; }
   // Optional deep link: #q=...&user=...&tab=who
   const link = new URLSearchParams(location.hash.slice(1));
   if (link.get("user") && state.users.some((u) => u.person_id === link.get("user"))) sel.value = link.get("user");
+  if (!link.get("user") && meta.signed_in) sel.value = meta.signed_in.person_id;
   updateUserNote();
+  await signIn(sel.value);
   setTab(link.get("tab") === "who" ? "who" : "search");
   if (link.get("q")) { $("q").value = link.get("q"); run(); }
 })();

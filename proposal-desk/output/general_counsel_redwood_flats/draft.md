@@ -51,17 +51,17 @@ Example Firm LLP serves public agencies as city attorney or general counsel. The
 [Source: answer A-0067, proposal P-2024-03, submitted 2024-08-23, outcome won, approved by Margit Solberg, review by 2027-08-23]
 
 - A community services district in the inland valleys (general counsel, 2018 to present). Subjects: open meetings, public contracting, public records.
-  [Source: experience record E-016, client not named: no consent on file. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: open meetings, public contracting, public records; ongoing; same role (general counsel)]
+  [Source: experience record E-016, client not named: no consent to name the client. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: open meetings, public contracting, public records; ongoing; same role (general counsel)]
 - A fire protection district in the south coast (general counsel, 2014 to present). Subjects: governance, real property, water.
-  [Source: experience record E-018, client not named: no consent on file. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: governance, real property, water; ongoing; same role (general counsel)]
+  [Source: experience record E-018, client not named: no consent to name the client. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: governance, real property, water; ongoing; same role (general counsel)]
 - Pellam Marsh Water District (general counsel, 2012 to present). Served as general counsel. Advised the governing body and staff on public contracting, rates and charges, real property and water.
-  [Source: experience record E-022, client named with consent. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: public contracting, rates and charges, real property, water; ongoing; same role (general counsel)]
+  [Source: experience record E-022, client named: consent to name the client is on file. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: public contracting, rates and charges, real property, water; ongoing; same role (general counsel)]
 - Emberlow Irrigation District (general counsel, 2024 to present). Served as general counsel. Advised the governing body and staff on public contracting, public records and water.
-  [Source: experience record E-025, client named with consent. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: public contracting, public records, water; ongoing; same role (general counsel)]
+  [Source: experience record E-025, client named: consent to name the client is on file. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: public contracting, public records, water; ongoing; same role (general counsel)]
 - Candlewick Sanitary District (general counsel, 2016 to present). Served as general counsel. Advised the governing body and staff on governance, personnel, public records and real property.
-  [Source: experience record E-026, client named with consent. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: governance, personnel, public records, real property; ongoing; same role (general counsel)]
+  [Source: experience record E-026, client named: consent to name the client is on file. Chosen because: same agency type (special district); same practice (general counsel); shared subjects: governance, personnel, public records, real property; ongoing; same role (general counsel)]
 
-[NOTE: 2 relevant record(s) left out for lack of client consent and of an approved anonymized description: E-015, E-028.]
+[NOTE: 2 relevant record(s) left out for lack of consent to name the client and of an approved anonymized description: E-015, E-028]
 
 ## E Work Plan
 
@@ -75,7 +75,7 @@ We propose to serve Redwood Flats Water District with one lead attorney who atte
 
 > RFP F: Client References. Provide a minimum of four (4) references from public agency clients.
 
-[PARTIAL: reference(s) not confirmed in the last 365 days: REF-008; 8 matching reference record(s) have no consent and were not listed.. Owner: Responsible partner. Due: Tue 08 Dec 2026.]
+[PARTIAL: reference(s) not confirmed in the last 365 days: REF-008; 8 matching reference record(s) were not listed: 7 without the contact's consent to be listed, 6 without the client's consent to be named. Owner: Responsible partner. Due: Tue 08 Dec 2026.]
 
 The clients listed below have worked with the attorneys proposed for Redwood Flats Water District. We have confirmed that each contact is willing to be called.
 

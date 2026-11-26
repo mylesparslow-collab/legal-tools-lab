@@ -115,6 +115,23 @@ def main():
     write("search_explain_example.txt", text_of(print_search, result, show_explain=True))
     write("search_explain_example.json", json.dumps(result, indent=1, ensure_ascii=False) + "\n")
 
+    # 2b. Different wording: the same query with and without vocabulary bridging.
+    wording = "deferred price contingent on future performance agreement"
+    parts = ["Different wording\n=================\n",
+             "No document uses the words \"deferred price\". With bridging on, the thesaurus reads them\n"
+             "as \"deferred consideration\" and searches its listed equivalents at a lower weight.\n"
+             "Every alternative shown is one that occurs in a document this user can open.\n",
+             "\n--- bridging on (default) ---\n",
+             text_of(print_search, search.search(conn, newcomer, wording, config=config, limit=3,
+                                                 explain=True, as_of=as_of), show_explain=True),
+             "\n--- bridging off (python -m kx search --no-expand, or the tick box in the page) ---\n",
+             text_of(print_search, search.search(conn, newcomer, wording, config=config, limit=3,
+                                                 as_of=as_of, expand=False)),
+             "\n--- a misspelling ---\n",
+             text_of(print_search, search.search(conn, newcomer, "indemnifcation basket memo",
+                                                 config=config, limit=2, as_of=as_of))]
+    write("different_wording_example.txt", "".join(parts))
+
     # 3. Experience finder.
     parts = []
     for user, query in ((newcomer, "loan workout"), (newcomer, "zoning entitlement"),
@@ -157,6 +174,8 @@ def main():
     # 5. Retrieval quality against the answer key.
     quality = evaluate.evaluate(conn, key, config)
     write("retrieval_quality.json", json.dumps(quality, indent=1) + "\n")
+    keyword_only = evaluate.evaluate(conn, key, config, expand=False)
+    write("retrieval_quality_keyword_only.json", json.dumps(keyword_only, indent=1) + "\n")
 
     # 6. Audit log sample from a scripted session.
     conn.close()

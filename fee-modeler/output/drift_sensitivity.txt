@@ -1,11 +1,26 @@
-Drift-flag sensitivity on regenerated synthetic firms. Seeds 1 to 20, each planted step, everything else as shipped. Thresholds unchanged.
-Flag = later/earlier median ratio at least 1.3 either way, at most 0.02 of 1000 rank shuffles as lopsided, and P75 coverage more than 15 points off nominal with at least 10 tested matters.
+Drift study on regenerated synthetic firms, seeds 1 to 20. The planted type is internal_investigation; a step applies to matters opened from 2023-01-01, a gradual drift compounds from the first opening date. Everything else is as shipped.
+New change check: scan of every split by opening date (at least 8 matters each side), flagged when at most 1 in 20 of 1000 seeded reshuffles are as lopsided and the medians differ by 1.25x or more.
+Old rule: later half of closes vs earlier half differs by 1.3x, at most 0.02 of 1000 rank shuffles as lopsided, and descriptive P75 coverage more than 15 points off nominal with at least 10 tested.
+Thresholds were chosen on seeds 101 to 120 (rerun with --seeds 101-120 and --alpha to see the alternatives). Seeds 1 to 20 were not looked at until the thresholds were fixed.
 
-planted step  flagged (of seeds)   ratio and shuffle conditions met median observed ratio   unplanted types flagged
-1.0x (none)   0 of 20              1 of 20                          1.06x                   1 of 200 type-runs
-1.3x          1 of 20              2 of 20                          1.17x                   3 of 200 type-runs
-1.5x          6 of 20              8 of 20                          1.39x                   3 of 200 type-runs
-1.7x          11 of 20             11 of 20                         1.61x                   3 of 200 type-runs
-2.0x          14 of 20             15 of 20                         1.84x                   2 of 200 type-runs
+planted                new: flagged   old: flagged   new: other types flagged   old: other types flagged   new: median date error
+1.0x (none)            0 of 20        0 of 20        15 of 200 (7.5%)           1 of 200 (0.5%)            n/a
+1.3x                   5 of 20        1 of 20        16 of 200 (8.0%)           3 of 200 (1.5%)            -400 days
+1.5x                   11 of 20       6 of 20        15 of 200 (7.5%)           3 of 200 (1.5%)            +24 days
+1.7x                   13 of 20       11 of 20       16 of 200 (8.0%)           3 of 200 (1.5%)            +24 days
+2.0x                   19 of 20       14 of 20       16 of 200 (8.0%)           2 of 200 (1.0%)            +65 days
+gradual 12% a year     10 of 20       4 of 20        15 of 200 (7.5%)           2 of 200 (1.0%)            n/a
 
-Unplanted types are the other matter types with at least 10 tested matters. The same seeds are used at every step and the other types' costs barely change with the step, so the last column is close to the same 200 type-runs repeated, not 1000 independent ones.
+With nothing planted (the 1.0x row, counting internal_investigation too): new check flags 15 of 220 type-runs (6.8%); old rule 1 of 220 (0.5%).
+
+Does acting on it help? Back-tested matters of the planted type above their band, pooled over the seeds:
+planted                comp quantiles (descriptive)       planning bands (higher of two on a flag)
+                       over P75, over P90, of n           over P75, over P90, of n
+1.0x (none)            157 (27.0%), 84 (14.4%), 582       122 (21.0%), 36 (6.2%), 582
+1.3x                   209 (35.9%), 117 (20.1%), 582      148 (25.4%), 55 (9.5%), 582
+1.5x                   243 (41.8%), 146 (25.1%), 582      163 (28.0%), 62 (10.7%), 582
+1.7x                   270 (46.4%), 170 (29.2%), 582      178 (30.6%), 71 (12.2%), 582
+2.0x                   289 (49.7%), 184 (31.6%), 582      180 (30.9%), 79 (13.6%), 582
+gradual 12% a year     244 (41.9%), 145 (24.9%), 582      160 (27.5%), 69 (11.9%), 582
+
+Other types are the matter types with nothing planted that have enough matters to be checked. The same seeds are used in every row and those types barely change between rows, so their columns are close to the same type-runs repeated, not independent ones. Date error is the estimated change date minus the planted one, median over the seeds where the type was flagged.

@@ -1,0 +1,186 @@
+==============================================================================
+SALTBROOK MUNICIPAL UTILITIES COMMISSION
+SOLICITATION DATA SHEET
+==============================================================================
+
+Solicitation title ......: Special Counsel, Water Rights and Regulatory Matters
+Solicitation number .....: SMUC-RFP-2026-41
+Type ....................: Request for Proposals (best value)
+Issuing office ..........: Procurement and Contracts Division
+Buyer ...................: Anselm Corrigan, Senior Contracts Officer
+Buyer email .............: bids@saltbrookmuc.example
+Date issued .............: 2026-12-03
+Site visit / conference .: none
+Questions close .........: 2026-12-17 16:00
+Answers published .......: 2026-12-23
+PROPOSALS CLOSE .........: 19-JAN-2027 14:00
+Shortlist interviews ....: 2027-02-04
+Commission award ........: 2027-02-24
+Contract term ...........: 3 years + 2 one-year options
+Estimated annual value ..: not stated
+Page limit ..............: 20 pages (see Schedule 5)
+Number of copies ........: electronic only (see Schedule 5)
+
+------------------------------------------------------------------------------
+SCHEDULE 1.  BACKGROUND AND SERVICES
+------------------------------------------------------------------------------
+
+The Saltbrook Municipal Utilities Commission (the "Commission") supplies water
+and wastewater service to the City of Saltbrook and nearby unincorporated
+areas. Its water comes from surface water diverted from the Tamsel River
+under rights dating from 1911 and 1954, from four groundwater wells, and from
+a purchase contract with the Upper Tamsel Irrigation District.
+
+The Commission needs special counsel for three things. One: a pending
+proceeding before the state water board in which downstream users, led by
+the Lower Tamsel Growers Association, ask the board to cut back the
+Commission's 1954 right. Two: renegotiating the purchase contract with the
+Upper Tamsel Irrigation District, which expires in 2029. Three: general advice
+on water rights, groundwater sustainability planning, drought restrictions and
+dealings with state and federal water regulators.
+
+The Commission has five Commissioners: President Evadne Thornbury, Vice
+President Silas Okoro, and Commissioners Maren Castellanos, Dorian Whitfield
+and Josephine Nakamura. The General Manager is Lorcan Asante. The Commission's
+General Counsel, Petra Vandermeer, will supervise special counsel.
+
+Proposers must treat the Lower Tamsel Growers Association and the Upper Tamsel
+Irrigation District as parties adverse to the Commission.
+
+------------------------------------------------------------------------------
+SCHEDULE 2.  THRESHOLD REQUIREMENTS
+------------------------------------------------------------------------------
+
+Proposals are screened against these thresholds before scoring. A proposal
+that fails any threshold is set aside.
+
+  T1  Lead attorney: admitted to practice 12 years or longer.
+  T2  Lead attorney: has appeared as counsel of record in at least three
+      contested water rights proceedings before a state water agency or a
+      court.
+  T3  Firm: at least 2 attorneys other than the lead attorney with five or
+      more years of water law practice.
+  T4  Firm: no current client relationship with either adverse party named
+      in Schedule 1.
+
+------------------------------------------------------------------------------
+SCHEDULE 3.  RESPONSE CHECKLIST
+------------------------------------------------------------------------------
+
+The proposal must contain a response to every line below. Tick each box on
+the copy of this checklist that you return with the proposal.
+
+  [ ] R1   Cover letter signed by an owner or officer of the firm.
+  [ ] R2   Firm profile: history, number of attorneys, offices, and the size
+           of the water law practice.
+  [ ] R3   Team: the lead attorney and all supporting attorneys, each
+           person's role, and resumes.
+  [ ] R4   Water rights experience: contested proceedings, water transfers
+           and purchase contracts handled in the last ten years, with
+           outcomes.
+  [ ] R5   Regulatory experience: work before state and federal water
+           regulators, groundwater sustainability agencies and drought
+           proceedings.
+  [ ] R6   Proposed approach to the pending water board proceeding and to
+           the contract renegotiation, with a proposed work plan for the
+           first six months.
+  [ ] R7   References: three public water supplier clients.
+  [ ] R8   Conflicts of interest: all current and former clients with
+           interests in the Tamsel River watershed, and how any conflict
+           would be managed.
+  [ ] R9   Fees: hourly rates, a budget estimate for the water board
+           proceeding through hearing, and any alternative fee offer.
+  [ ] R10  Statement on local presence and use of local or small firms as
+           subconsultants, if any.
+
+------------------------------------------------------------------------------
+SCHEDULE 4.  SUPPLEMENTAL QUESTIONS
+------------------------------------------------------------------------------
+
+Answer the following in a separate section headed "Supplemental Questions".
+These answers are scored as part of R6 and R3.
+
+  What is the firm's view of the main risks to the Commission's 1954 right,
+  based only on the public record of the water board proceeding?
+
+  If the lead attorney became unavailable for a month during the hearing,
+  who would take over, and what has that person done that is comparable?
+
+  Describe one matter in which the firm negotiated a long-term water
+  purchase or transfer agreement for a public supplier. What terms did the
+  firm obtain on price adjustment and shortage sharing?
+
+------------------------------------------------------------------------------
+SCHEDULE 5.  FORMAT, DELIVERY AND FORMS
+------------------------------------------------------------------------------
+
+Format.  The responses to R2 through R8 and R10, together with the
+supplemental questions, must not exceed 20 pages. The cover letter, resumes,
+the fee response (R9) and the forms are excluded. Minimum font 11 point;
+minimum margins 0.75 inch.
+
+Delivery.  Submit through the Commission's e-procurement site,
+procure.saltbrookmuc.example, as two PDF files: (1) the technical proposal
+and (2) the fee response R9. The site time-stamps each upload and locks at
+the closing time on the data sheet. Paper, email and fax submissions are not
+accepted.
+
+Forms.  The following Commission forms must be completed and uploaded with
+the technical proposal:
+
+  [ ] Form P-1   Offer and Signature
+  [ ] Form P-2   Non-Collusion Affidavit
+  [ ] Form P-3   Campaign Contribution Disclosure
+  [ ] Form P-4   Insurance Commitment Letter
+  [ ] The ticked copy of the Schedule 3 checklist
+
+An offer without a signed Form P-1 is not an offer and will be rejected.
+
+------------------------------------------------------------------------------
+SCHEDULE 6.  EVALUATION
+------------------------------------------------------------------------------
+
+Best value will be determined on the following weighted factors.
+
+  Factor                                                     Weight
+  ---------------------------------------------------------  ------
+  F1  Water rights and regulatory experience (R4, R5)          0.30
+  F2  Lead attorney and team (R3)                              0.25
+  F3  Approach and work plan (R6)                              0.20
+  F4  Fees (R9)                                                0.15
+  F5  References (R7)                                          0.05
+  F6  Local presence (R10)                                     0.05
+                                                               ----
+                                                               1.00
+
+Interviews, if held, may change the scores for F2 and F3 only.
+
+------------------------------------------------------------------------------
+SCHEDULE 7.  INSURANCE
+------------------------------------------------------------------------------
+
+Minimum coverage, to be evidenced before contract signature:
+
+  Professional liability .............. USD 5,000,000 per claim
+  Commercial general liability ........ USD 2,000,000 per occurrence
+  Automobile liability ................ USD 1,000,000 combined single limit
+  Workers' compensation ............... as required by statute
+
+Form P-4 commits the proposer to these limits.
+
+------------------------------------------------------------------------------
+SCHEDULE 8.  CONDITIONS OF SOLICITATION
+------------------------------------------------------------------------------
+
+8.1  Communications.  From the date of issue until award, proposers may
+     communicate about this solicitation only with the Buyer. Contact with a
+     Commissioner is grounds for disqualification.
+8.2  Addenda.  Any change will be made by numbered addendum posted on the
+     e-procurement site. Proposers are responsible for checking the site.
+8.3  Validity.  Offers must remain open for 150 days after the closing date.
+8.4  Protest.  A protest must be filed with the Buyer within 5 working days
+     of the notice of intent to award.
+8.5  Public records.  Proposals are confidential until the notice of intent
+     to award and public afterwards, except for material lawfully exempt.
+8.6  No obligation.  The Commission may cancel the solicitation at any time
+     and is not liable for any proposer's costs.

@@ -484,7 +484,7 @@ def comparison_html(guides):
 # ------------------------------------------------------------- index page
 
 
-def index_html(results, guides, score=None, intake_rows=None, report_dir="output/reports"):
+def index_html(results, guides, score=None, intake_rows=None, report_dir="output/reports", heldout=None):
     body = [
         "<h1>Billing-guideline check</h1>",
         '<p class="notice">%s</p>' % NOTICE,
@@ -545,11 +545,36 @@ def index_html(results, guides, score=None, intake_rows=None, report_dir="output
             '<th class="num">Match a rule on file</th><th class="num">Extra candidates</th><th>Rules on file the patterns missed</th></tr></thead>'
             "<tbody>%s</tbody></table></div>" % rows
         )
-    if score:
-        body.append("<h2>Answer key check</h2>")
+    if score or heldout:
+        body.append("<h2>Accuracy</h2>")
+    if heldout:
         body.append(
-            "<p>The sample invoices contain %d planted violations. The check found %d of them. "
-            "Findings that are not in the answer key: %d. Lines with no planted violation: %d; of those, %d were flagged.</p>"
+            "<p>Held-out test sets were written by a separate author who did not read the checking code. "
+            "Batch A was used to improve the tool, so only its first run is an unseen result. Batch B was run once, after all changes. "
+            "The held-out sets test new invoices and new guideline documents more than new phrase vocabulary, "
+            "because their rule files reuse this tool's standard phrase lists.</p>"
+        )
+        rows = []
+        for label, h in heldout:
+            a = h["intake"]["summary"]
+            cells = ["%d of %d" % (a["proposed_correctly"], a["expected_rules"])]
+            for name in ("engine_with_hand_confirmed_rules", "engine_with_intake_proposals_only"):
+                e = h[name]
+                cells.append("%d of %d" % (e["planted_found"], e["planted_counted"]))
+                cells.append("%d of %d" % (e["must_not_flag_lines_flagged"], e["must_not_flag_lines"]))
+            rows.append("<tr><td>%s</td>%s</tr>" % (escape(label), "".join('<td class="num">%s</td>' % c for c in cells)))
+        body.append(
+            '<div class="wrap"><table><thead><tr><th>Run</th><th class="num">Intake: rules proposed correctly</th>'
+            '<th class="num">Rules confirmed by hand: planted found</th><th class="num">must-not-flag lines flagged</th>'
+            '<th class="num">Intake proposals only: planted found</th><th class="num">must-not-flag lines flagged</th></tr></thead>'
+            "<tbody>%s</tbody></table></div>" % "".join(rows)
+        )
+    if score:
+        body.append(
+            "<p>In-sample check, on data written by the same author as the checks: the sample invoices contain %d planted violations. "
+            "The check found %d of them. "
+            "Findings that are not in the answer key: %d. Lines with no planted violation: %d; of those, %d were flagged. "
+            "This number says the sample data and the code agree. It does not say how the tool does on bills it has not seen.</p>"
             % (score["planted_total"], score["planted_found"], score["false_positive_count"], score["clean_lines"], len(score["clean_lines_flagged"]))
         )
     body.append(

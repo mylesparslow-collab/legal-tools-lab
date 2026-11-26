@@ -375,6 +375,7 @@
  ],
  "insurance": [
   {
+   "label": "",
    "text": "Proof of professional liability insurance, minimum $1,000,000 per claim",
    "amounts": [
     "$1,000,000"
@@ -404,7 +405,7 @@
   {
    "name": "Quillfeather Teachers Association",
    "category": "adverse",
-   "role": "Adverse or counter-party mentioned in the RFP",
+   "role": "Employee organisation named in the RFP",
    "source": {
     "line": 11,
     "text": "Quillfeather Unified School District (the \"District\") seeks proposals from law firms and qualified individuals to act as the District's chief negotiator in successor contract negotiations with its two employee organizations, the Quillfeathe"
@@ -415,7 +416,7 @@
   {
    "name": "Quillfeather Classified Staff Union",
    "category": "adverse",
-   "role": "Adverse or counter-party mentioned in the RFP",
+   "role": "Employee organisation named in the RFP",
    "source": {
     "line": 11,
     "text": "Quillfeather Unified School District (the \"District\") seeks proposals from law firms and qualified individuals to act as the District's chief negotiator in successor contract negotiations with its two employee organizations, the Quillfeathe"
@@ -437,7 +438,7 @@
   {
    "name": "Leopold Achterberg",
    "category": "staff",
-   "role": "Assistant Superintendent",
+   "role": "Superintendent",
    "source": {
     "line": 19,
     "text": "District contacts for this RFP: Dr. Marisol Everhart, Superintendent Leopold Achterberg, Assistant Superintendent, Human Resources"
@@ -470,37 +471,38 @@
   {
    "name": "Yolanda Prescott",
    "category": "board",
-   "role": "Named in the RFP",
+   "role": "Clerk",
    "source": {
     "line": 23,
     "text": "Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
    },
-   "confidence": "ok",
-   "check_reason": ""
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
   },
   {
    "name": "Bartholomew Nguyen",
    "category": "board",
-   "role": "Named in the RFP",
+   "role": "Clerk",
    "source": {
     "line": 23,
     "text": "Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
    },
-   "confidence": "ok",
-   "check_reason": ""
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
   },
   {
    "name": "Odessa Kirkland",
    "category": "board",
-   "role": "Named in the RFP",
+   "role": "Clerk",
    "source": {
     "line": 23,
     "text": "Board of Trustees: Henrietta Solano (President), Dmitri Faulkner (Clerk), Yolanda Prescott, Bartholomew Nguyen and Odessa Kirkland."
    },
-   "confidence": "ok",
-   "check_reason": ""
+   "confidence": "check",
+   "check_reason": "role taken from the name before it in a list"
   }
  ],
+ "deleted_requirements": [],
  "sections": [
   {
    "kind": "intro",
@@ -597,9 +599,9 @@
     "id": "EV5"
    }
   ],
-  "total": 100,
   "total_stated": null,
   "unit": "points",
+  "total": 100,
   "confidence": "check",
   "check_reason": "at least one criterion has no weight"
  },
@@ -652,6 +654,24 @@
    "id": "EV5",
    "reason": "criterion listed without a weight",
    "text": "Interview performance (if interviews are held)"
+  },
+  {
+   "category": "party",
+   "id": "Yolanda Prescott",
+   "reason": "role taken from the name before it in a list",
+   "text": "Yolanda Prescott"
+  },
+  {
+   "category": "party",
+   "id": "Bartholomew Nguyen",
+   "reason": "role taken from the name before it in a list",
+   "text": "Bartholomew Nguyen"
+  },
+  {
+   "category": "party",
+   "id": "Odessa Kirkland",
+   "reason": "role taken from the name before it in a list",
+   "text": "Odessa Kirkland"
   },
   {
    "category": "evaluation",

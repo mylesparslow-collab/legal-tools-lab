@@ -47,15 +47,15 @@ Example Firm LLP serves public agencies as city attorney or general counsel. The
 [Source: answer A-0085, proposal P-2025-02, submitted 2025-04-18, outcome won, approved by Margit Solberg, review by 2028-04-18]
 
 - City of Juniper Landing (city attorney, 2019 to 2023). Served as city attorney. Advised the governing body and staff on personnel, public contracting and public records.
-  [Source: experience record E-001, client named with consent. Chosen because: same agency type (city); same practice (general counsel); shared subjects: personnel, public contracting, public records; ended 2023 (within three years); same role (city attorney)]
+  [Source: experience record E-001, client named: consent to name the client is on file. Chosen because: same agency type (city); same practice (general counsel); shared subjects: personnel, public contracting, public records; ended 2023 (within three years); same role (city attorney)]
 - Town of Dunmoor (city attorney, 2023 to 2025). Served as city attorney. Advised the governing body and staff on code enforcement, open meetings, public contracting and public records.
-  [Source: experience record E-002, client named with consent. Chosen because: same agency type (city); same practice (general counsel); shared subjects: code enforcement, open meetings, public contracting, public records; ended 2025 (within three years); same role (city attorney)]
+  [Source: experience record E-002, client named: consent to name the client is on file. Chosen because: same agency type (city); same practice (general counsel); shared subjects: code enforcement, open meetings, public contracting, public records; ended 2025 (within three years); same role (city attorney)]
 - A city of about 50,000 residents in the north coast (city attorney, 2017 to 2023). Subjects: code enforcement, governance, land use, public records.
-  [Source: experience record E-003, client not named: no consent on file. Chosen because: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, public records; ended 2023 (within three years); same role (city attorney)]
+  [Source: experience record E-003, client not named: no consent to name the client. Chosen because: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, public records; ended 2023 (within three years); same role (city attorney)]
 - City of Nettlefield (city attorney, 2023 to present). Served as city attorney. Advised the governing body and staff on code enforcement, land use, personnel and public records.
-  [Source: experience record E-006, client named with consent. Chosen because: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, personnel, public records; ongoing; same role (city attorney)]
+  [Source: experience record E-006, client named: consent to name the client is on file. Chosen because: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, personnel, public records; ongoing; same role (city attorney)]
 - A city of about 55,000 residents in the inland valleys (city attorney, 2016 to present). Subjects: code enforcement, governance, land use, public contracting.
-  [Source: experience record E-013, client not named: no consent on file. Chosen because: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, public contracting; ongoing; same role (city attorney)]
+  [Source: experience record E-013, client not named: no consent to name the client. Chosen because: same agency type (city); same practice (general counsel); shared subjects: code enforcement, land use, public contracting; ongoing; same role (city attorney)]
 
 ## 5.5 Approach
 
@@ -71,7 +71,7 @@ We propose to serve City of Marlow Ridge with one lead attorney who attends ever
 
 > RFP 5.6: References. Provide at least three (3) references from current or former public agency clients, with a contact name, telephone number and email.
 
-[PARTIAL: reference(s) not confirmed in the last 365 days: REF-001, REF-002, REF-005; 9 matching reference record(s) have no consent and were not listed.. Owner: Responsible partner. Due: Wed 09 Dec 2026.]
+[PARTIAL: reference(s) not confirmed in the last 365 days: REF-001, REF-002, REF-005; 9 matching reference record(s) were not listed: 8 without the contact's consent to be listed, 7 without the client's consent to be named. Owner: Responsible partner. Due: Wed 09 Dec 2026.]
 
 The clients listed below have worked with the attorneys proposed for City of Marlow Ridge. We have confirmed that each contact is willing to be called.
 

@@ -1,0 +1,260 @@
+{
+  "client_id": "pindlecroft",
+  "client_name": "Pindlecroft Robotics",
+  "document": "heldout/batch_a/guideline_docs/pindlecroft.txt",
+  "rules": [
+    {
+      "rule_id": "PCR-INCR-01",
+      "type": "minimum_increment",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "increment": "0.25"
+      },
+      "source_quote": "Quarter-hour increments (0.25) are fine with us, just be consistent about it.",
+      "source_ref": "item 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-BLOCK-01",
+      "type": "block_billing",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_tasks": 2,
+        "min_hours": "1.0"
+      },
+      "source_quote": "Please don't cram a whole afternoon into one line: two related tasks in an entry is OK, but if an entry of more than an hour lists three or more things I'll send it back to be split.",
+      "source_ref": "item 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-VAGUE-01",
+      "type": "vague_description",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "always_phrases": [
+          "attention to file",
+          "attention to matter",
+          "various tasks",
+          "work on case",
+          "work on matter"
+        ],
+        "bare_phrases": [
+          "draft correspondence",
+          "legal research",
+          "prepare for hearing",
+          "review documents",
+          "review file",
+          "telephone call",
+          "trial preparation",
+          "work on discovery"
+        ],
+        "min_words": 3
+      },
+      "source_quote": "Tell me what you actually did, because \"work on matter\" or \"review file\" tells me nothing and I can't approve it.",
+      "source_ref": "item 1",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-DAYCAP-01",
+      "type": "daily_hour_cap",
+      "status": "confirmed",
+      "severity": "review",
+      "params": {
+        "max_hours": 10
+      },
+      "source_quote": "If any one person bills more than 10 hours in a day I'm going to ask why, so give me a heads-up.",
+      "source_ref": "item 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-EVENT-01",
+      "type": "staffing_event_limit",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_attendees": 2,
+        "events": [
+          "hearing",
+          "deposition"
+        ]
+      },
+      "source_quote": "For hearings and depositions, two of your lawyers at most on our dime.",
+      "source_ref": "item 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-CONF-01",
+      "type": "internal_conference_limit",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours_per_entry": "0.5"
+      },
+      "source_quote": "Internal meetings among your own team: bill up to half an hour (0.5) per entry and no more.",
+      "source_ref": "item 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-RESEARCH-01",
+      "type": "research_approval",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {
+        "max_hours": 6
+      },
+      "source_quote": "Clear it with me before the team spends more than 6 hours on legal research on a matter.",
+      "source_ref": "item 2",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-RATE-01",
+      "type": "rate_above_card",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Whatever is on the rate schedule we signed in January is the rate, and nothing above it.",
+      "source_ref": "item 3",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-LATE-01",
+      "type": "late_time",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "max_age_days": 60
+      },
+      "source_quote": "Anything older than 60 days when the bill goes out, we won't pay.",
+      "source_ref": "item 4",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-DUP-01",
+      "type": "duplicate_entries",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {},
+      "source_quote": "If a line shows up twice, we pay it once.",
+      "source_ref": "item 4",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-OVERHEAD-01",
+      "type": "expense_overhead",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "codes": [
+          "E103",
+          "E104",
+          "E105",
+          "E108"
+        ],
+        "phrases": [
+          "local telephone",
+          "office supplies",
+          "overtime",
+          "phones",
+          "postage",
+          "subscription",
+          "word processing"
+        ]
+      },
+      "source_quote": "Please don't pass through overhead: online research subscriptions, phones, postage, staff overtime, word processing.",
+      "source_ref": "item 5",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-MARKUP-01",
+      "type": "expense_markup",
+      "status": "confirmed",
+      "severity": "reduce",
+      "params": {},
+      "source_quote": "Vendor costs come through at what you paid, with no markup.",
+      "source_ref": "item 5",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-AIDISC-01",
+      "type": "ai_disclosure_required",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "disclosure_marker": "(GenAI)",
+        "ai_terms": [
+          "generative ai",
+          "artificial intelligence",
+          "ai tool",
+          "ai-assisted",
+          "ai assisted",
+          "large language model",
+          "machine-generated"
+        ]
+      },
+      "source_quote": "put \"(GenAI)\" in the narrative of any time entry where one was used.",
+      "source_ref": "item 6",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-AINOPAY-01",
+      "type": "ai_nonpayable_task",
+      "status": "confirmed",
+      "severity": "reject",
+      "params": {
+        "disclosure_marker": "(GenAI)",
+        "ai_terms": [
+          "generative ai",
+          "artificial intelligence",
+          "ai tool",
+          "ai-assisted",
+          "ai assisted",
+          "large language model",
+          "machine-generated"
+        ],
+        "task_phrases": [
+          "summarize",
+          "summary of",
+          "summaries of",
+          "first-pass document review",
+          "first pass document review",
+          "digest",
+          "first-level document review",
+          "first level document review"
+        ]
+      },
+      "source_quote": "We won't pay lawyer rates for AI-written summaries or digests of depositions and documents, or for AI doing the first-level document review.",
+      "source_ref": "item 6",
+      "confirmed_by": "Independent test author (fictional billing manager)",
+      "confirmed_on": "2026-11-26"
+    },
+    {
+      "rule_id": "PCR-TRAVEL-01",
+      "type": "travel_time",
+      "status": "proposed",
+      "severity": "reduce",
+      "params": {
+        "billable_percent": 0,
+        "requires_approval": false
+      },
+      "source_quote": "Honestly we'd rather not pay for travel time at all, but I haven't settled that with our CFO yet, so treat it as a preference for now and let's talk before any big trip.",
+      "source_ref": "item 7",
+      "notes": "Not confirmed. The memo calls this a preference that is not yet settled, so it is not enforced."
+    }
+  ]
+}

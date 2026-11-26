@@ -27,6 +27,24 @@ def _write(path, text):
         handle.write(text)
 
 
+HELDOUT_RUNS = [
+    ("Batch A, first run, before any change", "batch_a_first_run.json"),
+    ("Batch A, after fixes (fitted, not unseen)", "batch_a_after_fixes.json"),
+    ("Batch B, single final run", "batch_b_final.json"),
+]
+
+
+def load_heldout_results():
+    """Read saved held-out scores, if any. They are written by score_heldout.py."""
+    found = []
+    for label, name in HELDOUT_RUNS:
+        path = os.path.join(HERE, "heldout_results", name)
+        if os.path.isfile(path):
+            with open(path, "r", encoding="utf-8") as handle:
+                found.append((label, json.load(handle)))
+    return found
+
+
 def main(out_dir=OUT, index_path=os.path.join(HERE, "index.html"), quiet=False):
     OUT = out_dir
     if os.path.isdir(OUT):
@@ -58,7 +76,7 @@ def main(out_dir=OUT, index_path=os.path.join(HERE, "index.html"), quiet=False):
     _write(os.path.join(OUT, "answer_key_score.json"), json.dumps(score, indent=2) + "\n")
 
     # 5. Static demo page.
-    _write(index_path, report.index_html(results, guides, score, intake_rows))
+    _write(index_path, report.index_html(results, guides, score, intake_rows, heldout=load_heldout_results()))
     if quiet:
         return 0
 

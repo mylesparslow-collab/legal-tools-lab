@@ -17,6 +17,11 @@ def report(full, key, config):
     return evaluate.evaluate(full, key, config)
 
 
+@pytest.fixture(scope="module")
+def keyword_only(full, key, config):
+    return evaluate.evaluate(full, key, config, expand=False)
+
+
 def test_corpus_has_the_stated_shape(data_dir, manifest):
     counts = manifest["counts"]
     assert counts["documents"] == 1500 and counts["matters"] == 250 and counts["people"] == 120
@@ -74,12 +79,22 @@ def test_best_example_queries_put_the_model_form_first_most_of_the_time(report):
     assert best["best_example_ranked_first"] >= best["best_example_queries"] - 1
 
 
-def test_keyword_search_is_weak_on_different_vocabulary_and_the_report_shows_it(report):
-    """This is a known limit, reported separately instead of averaged away."""
-    other = report["by_category"]["different vocabulary"]
-    assert other["queries"] >= 5
-    assert other["recall_at_10"] < 0.5
-    assert report["all_queries"]["recall_at_10"] < report["queries_using_the_corpus_vocabulary"]["recall_at_10"]
+def test_keyword_search_alone_is_weak_on_different_vocabulary_and_the_report_shows_it(keyword_only):
+    """The known limit of keyword search, reported separately instead of averaged away."""
+    other = keyword_only["by_category"]["different vocabulary"]
+    assert other["queries"] >= 5 and other["recall_at_10"] < 0.2
+
+
+def test_bridging_helps_different_vocabulary_without_hurting_the_rest(report, keyword_only):
+    on, off = report["by_category"], keyword_only["by_category"]
+    assert on["different vocabulary"]["recall_at_10"] > off["different vocabulary"]["recall_at_10"]
+    assert on["different vocabulary"]["precision_at_5"] > off["different vocabulary"]["precision_at_5"]
+    same_on = report["queries_using_the_corpus_vocabulary"]
+    same_off = keyword_only["queries_using_the_corpus_vocabulary"]
+    assert same_on["precision_at_5"] >= same_off["precision_at_5"] - 0.02
+    assert same_on["recall_at_10"] >= same_off["recall_at_10"] - 0.02
+    # Still far from solved, and the report must keep saying so.
+    assert on["different vocabulary"]["recall_at_10"] < report["queries_using_the_corpus_vocabulary"]["recall_at_10"]
 
 
 def test_evaluation_permission_checks_find_no_leaks(report):
@@ -87,15 +102,19 @@ def test_evaluation_permission_checks_find_no_leaks(report):
     assert report["permission_checks"]["leaks"] == []
 
 
-def test_committed_quality_output_and_readme_match_a_fresh_run(report):
-    committed = json.loads((ROOT / "output" / "retrieval_quality.json").read_text(encoding="utf-8"))
-    assert committed["all_queries"] == report["all_queries"]
-    assert committed["by_category"] == report["by_category"]
+def test_committed_quality_output_and_readme_match_a_fresh_run(report, keyword_only):
+    for name, fresh in (("retrieval_quality.json", report),
+                        ("retrieval_quality_keyword_only.json", keyword_only)):
+        committed = json.loads((ROOT / "output" / name).read_text(encoding="utf-8"))
+        assert committed["all_queries"] == fresh["all_queries"], name
+        assert committed["by_category"] == fresh["by_category"], name
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     same, everything = report["queries_using_the_corpus_vocabulary"], report["all_queries"]
     for number in (same["precision_at_5"], same["recall_at_10"],
                    everything["precision_at_5"], everything["recall_at_10"],
-                   report["by_category"]["different vocabulary"]["recall_at_10"]):
+                   report["by_category"]["different vocabulary"]["precision_at_5"],
+                   report["by_category"]["different vocabulary"]["recall_at_10"],
+                   keyword_only["by_category"]["different vocabulary"]["recall_at_10"]):
         assert re.search(rf"\b{re.escape(f'{number:.3f}'.rstrip('0'))}", readme), number
 
 

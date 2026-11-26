@@ -36,7 +36,7 @@ The team for Tannery Creek Transit Authority is led by a partner who has served 
 
 > RFP C.2.3: Relevant Experience. Describe up to five engagements as counsel on public capital projects in the last ten years.
 
-[PARTIAL: blocking fact flags on the inserted passage; 2 relevant record(s) left out for lack of client consent and of an approved anonymized description: E-055, E-048.. Owner: Proposal coordinator. Due: Thu 31 Dec 2026.]
+[PARTIAL: blocking fact flags on the inserted passage; 2 relevant record(s) left out for lack of consent to name the client and of an approved anonymized description: E-055, E-048. Owner: Proposal coordinator. Due: Thu 31 Dec 2026.]
 
 [BLOCKING: another agency is named (abbreviation): "QHTD". This proposal is for Tannery Creek Transit Authority.]
 
@@ -45,15 +45,15 @@ We have chosen engagements that match the Authority's needs in size and subject 
 [Source: answer A-0112, proposal P-2026-02, submitted 2026-06-12, outcome won, approved by Tomasz Wieczorek, review by 2029-06-12]
 
 - A regional transit agency in the north coast (special counsel, 2015 to present). Subjects: claims, construction, transit.
-  [Source: experience record E-047, client not named: no consent on file. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: claims, construction, transit; ongoing; same role (special counsel)]
+  [Source: experience record E-047, client not named: no consent to name the client. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: claims, construction, transit; ongoing; same role (special counsel)]
 - Lantern Rock Regional Transit Authority (special counsel, 2021 to 2026). Served as special counsel on a public capital project. Work included construction, public contracting and real property.
-  [Source: experience record E-050, client named with consent. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: construction, public contracting, real property; ended 2026 (within three years); same role (special counsel)]
+  [Source: experience record E-050, client named: consent to name the client is on file. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: construction, public contracting, real property; ended 2026 (within three years); same role (special counsel)]
 - A regional transit agency in the south coast (special counsel, 2012 to present). Subjects: construction, public contracting, real property, transit.
-  [Source: experience record E-056, client not named: no consent on file. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: construction, public contracting, real property, transit; ongoing; same role (special counsel)]
+  [Source: experience record E-056, client not named: no consent to name the client. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: construction, public contracting, real property, transit; ongoing; same role (special counsel)]
 - Lantern Rock Transit District (special counsel, 2015 to 2022). Served as special counsel on a public capital project. Work included claims, construction and transit.
-  [Source: experience record E-049, client named with consent. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: claims, construction, transit; ended 2022 (within six years); same role (special counsel)]
+  [Source: experience record E-049, client named: consent to name the client is on file. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: claims, construction, transit; ended 2022 (within six years); same role (special counsel)]
 - Sorrel Canyon Transit District (special counsel, 2023 to 2024). Served as special counsel on a public capital project. Work included claims and transit.
-  [Source: experience record E-051, client named with consent. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: claims, transit; ended 2024 (within three years); same role (special counsel)]
+  [Source: experience record E-051, client named: consent to name the client is on file. Chosen because: same agency type (transit); same practice (capital projects); shared subjects: claims, transit; ended 2024 (within three years); same role (special counsel)]
 
 ## C.2.4 Project Approach
 
@@ -67,7 +67,7 @@ Claims avoidance starts with the contract. We make sure that notice, documentati
 
 > RFP C.2.5: References. Provide three references for engagements described in C.2.3.
 
-[PARTIAL: reference(s) not confirmed in the last 365 days: REF-026; 3 matching reference record(s) have no consent and were not listed.. Owner: Responsible partner. Due: Wed 30 Dec 2026.]
+[PARTIAL: reference(s) not confirmed in the last 365 days: REF-026; 3 matching reference record(s) were not listed: 2 without the contact's consent to be listed, 3 without the client's consent to be named. Owner: Responsible partner. Due: Wed 30 Dec 2026.]
 
 References are listed below. Each contact has agreed to speak with the Authority about our work.
 

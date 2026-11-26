@@ -1,0 +1,2778 @@
+{
+  "what": "Drift study on regenerated synthetic firms, seeds 101 to 120. The planted type is internal_investigation; a step applies to matters opened from 2023-01-01, a gradual drift compounds from the first opening date. Everything else is as shipped.",
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "alpha": [
+    1,
+    20
+  ],
+  "shipped_alpha": [
+    1,
+    20
+  ],
+  "threshold_seeds": "Thresholds were chosen on seeds 101 to 120 (rerun with --seeds 101-120 and --alpha to see the alternatives). Seeds 1 to 20 were not looked at until the thresholds were fixed.",
+  "drift_type": "internal_investigation",
+  "shipped_step": "1.7",
+  "new_rule": "New change check: scan of every split by opening date (at least 8 matters each side), flagged when at most 1 in 20 of 1000 seeded reshuffles are as lopsided and the medians differ by 1.25x or more.",
+  "old_rule": "Old rule: later half of closes vs earlier half differs by 1.3x, at most 0.02 of 1000 rank shuffles as lopsided, and descriptive P75 coverage more than 15 points off nominal with at least 10 tested.",
+  "rows": [
+    {
+      "condition": "1.0x (none)",
+      "kind": "none",
+      "seeds": 20,
+      "new_flagged": 0,
+      "old_flagged": 0,
+      "median_days_estimate_minus_true": null,
+      "median_after_over_before": "0.84",
+      "new_other_flagged": 6,
+      "new_other_judged": 200,
+      "old_other_flagged": 0,
+      "old_other_judged": 200,
+      "drift_type_descriptive": {
+        "n": 570,
+        "over_p75": 158,
+        "over_p90": 82
+      },
+      "drift_type_planning": {
+        "n": 570,
+        "over_p75": 126,
+        "over_p90": 42
+      },
+      "runs": [
+        {
+          "seed": 101,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.82",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 11,
+            "over_p90": 1
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 8,
+            "over_p90": 0
+          }
+        },
+        {
+          "seed": 102,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.70",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 32,
+            "over_p75": 9,
+            "over_p90": 2
+          },
+          "drift_type_planning": {
+            "n": 32,
+            "over_p75": 6,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 103,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.75",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 7,
+            "over_p90": 4
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 6,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 104,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.82",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 11,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 10,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 105,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.65",
+          "new_other_flagged": [
+            "facility_change_of_ownership"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 4,
+            "over_p90": 2
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 3,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 106,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.34",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 5,
+            "over_p90": 2
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 5,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 107,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.04",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 25,
+            "over_p75": 5,
+            "over_p90": 3
+          },
+          "drift_type_planning": {
+            "n": 25,
+            "over_p75": 5,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 108,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.72",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 37,
+            "over_p75": 8,
+            "over_p90": 4
+          },
+          "drift_type_planning": {
+            "n": 37,
+            "over_p75": 6,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 109,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.32",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 5,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 5,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 110,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.18",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 10,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 111,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.36",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 13,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 9,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 112,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.84",
+          "new_other_flagged": [
+            "commercial_lease_review",
+            "paga_response"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 8,
+            "over_p90": 4
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 6,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 113,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.74",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 23,
+            "over_p75": 5,
+            "over_p90": 2
+          },
+          "drift_type_planning": {
+            "n": 23,
+            "over_p75": 4,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 114,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.82",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 7,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 115,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.25",
+          "new_other_flagged": [
+            "facility_change_of_ownership"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 10,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 7,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 116,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.17",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 9,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 7,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 117,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.59",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 5,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 118,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.41",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 9,
+            "over_p90": 4
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 119,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.72",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 33,
+            "over_p75": 7,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 33,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 120,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "0.73",
+          "new_other_flagged": [
+            "ordinance_drafting"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 7,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 6,
+            "over_p90": 4
+          }
+        }
+      ],
+      "planted_step": "1.0"
+    },
+    {
+      "condition": "1.3x",
+      "kind": "step",
+      "seeds": 20,
+      "new_flagged": 4,
+      "old_flagged": 1,
+      "median_days_estimate_minus_true": -81,
+      "median_after_over_before": "1.45",
+      "new_other_flagged": 5,
+      "new_other_judged": 200,
+      "old_other_flagged": 0,
+      "old_other_judged": 200,
+      "drift_type_descriptive": {
+        "n": 570,
+        "over_p75": 218,
+        "over_p90": 121
+      },
+      "drift_type_planning": {
+        "n": 570,
+        "over_p75": 155,
+        "over_p90": 60
+      },
+      "runs": [
+        {
+          "seed": 101,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.71",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 13,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 7,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 102,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.31",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 32,
+            "over_p75": 13,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 32,
+            "over_p75": 8,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 103,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.41",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 8,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 8,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 104,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2022-10-12",
+          "after_over_before": "1.47",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 14,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 10,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 105,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.32",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 5,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 106,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.58",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 107,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.13",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 25,
+            "over_p75": 7,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 25,
+            "over_p75": 5,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 108,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.45",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 37,
+            "over_p75": 12,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 37,
+            "over_p75": 10,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 109,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.60",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 10,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 8,
+            "over_p90": 5
+          }
+        },
+        {
+          "seed": 110,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.44",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 13,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 10,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 111,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-01-31",
+          "after_over_before": "1.73",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 14,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 9,
+            "over_p90": 5
+          }
+        },
+        {
+          "seed": 112,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.12",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 10,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 7,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 113,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.18",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 23,
+            "over_p75": 8,
+            "over_p90": 2
+          },
+          "drift_type_planning": {
+            "n": 23,
+            "over_p75": 6,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 114,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.29",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 7,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 6,
+            "over_p90": 5
+          }
+        },
+        {
+          "seed": 115,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2022-09-19",
+          "after_over_before": "1.50",
+          "new_other_flagged": [
+            "facility_change_of_ownership"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 13,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 10,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 116,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.45",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 12,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 10,
+            "over_p90": 5
+          }
+        },
+        {
+          "seed": 117,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.94",
+          "new_other_flagged": [
+            "regulatory_compliance_audit"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 11,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 6,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 118,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-09-24",
+          "after_over_before": "1.64",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 13,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 7,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 119,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.30",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 33,
+            "over_p75": 11,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 33,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 120,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.44",
+          "new_other_flagged": [
+            "ordinance_drafting"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 13,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 7,
+            "over_p90": 5
+          }
+        }
+      ],
+      "planted_step": "1.3"
+    },
+    {
+      "condition": "1.5x",
+      "kind": "step",
+      "seeds": 20,
+      "new_flagged": 8,
+      "old_flagged": 6,
+      "median_days_estimate_minus_true": -41,
+      "median_after_over_before": "1.65",
+      "new_other_flagged": 4,
+      "new_other_judged": 200,
+      "old_other_flagged": 0,
+      "old_other_judged": 200,
+      "drift_type_descriptive": {
+        "n": 570,
+        "over_p75": 245,
+        "over_p90": 136
+      },
+      "drift_type_planning": {
+        "n": 570,
+        "over_p75": 169,
+        "over_p90": 66
+      },
+      "runs": [
+        {
+          "seed": 101,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.97",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 13,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 8,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 102,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.48",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 32,
+            "over_p75": 13,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 32,
+            "over_p75": 8,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 103,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.70",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 8,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 104,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-05-12",
+          "after_over_before": "1.66",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 13,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 11,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 105,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.32",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 4
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 106,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-11-28",
+          "after_over_before": "1.76",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 11,
+            "over_p90": 3
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 107,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.35",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 25,
+            "over_p75": 7,
+            "over_p90": 4
+          },
+          "drift_type_planning": {
+            "n": 25,
+            "over_p75": 5,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 108,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-09-18",
+          "after_over_before": "1.70",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 37,
+            "over_p75": 16,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 37,
+            "over_p75": 11,
+            "over_p90": 6
+          }
+        },
+        {
+          "seed": 109,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2022-07-15",
+          "after_over_before": "1.72",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 10,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 8,
+            "over_p90": 6
+          }
+        },
+        {
+          "seed": 110,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.59",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 13,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 11,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 111,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-01-31",
+          "after_over_before": "1.97",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 16,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 9,
+            "over_p90": 6
+          }
+        },
+        {
+          "seed": 112,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.32",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 11,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 113,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.42",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 23,
+            "over_p75": 11,
+            "over_p90": 2
+          },
+          "drift_type_planning": {
+            "n": 23,
+            "over_p75": 7,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 114,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.51",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 9,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 7,
+            "over_p90": 5
+          }
+        },
+        {
+          "seed": 115,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-09-19",
+          "after_over_before": "1.65",
+          "new_other_flagged": [
+            "facility_change_of_ownership"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 16,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 10,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 116,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-03-10",
+          "after_over_before": "1.56",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 15,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 11,
+            "over_p90": 5
+          }
+        },
+        {
+          "seed": 117,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.84",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 13,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 118,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-11-21",
+          "after_over_before": "1.99",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 16,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 119,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.53",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 33,
+            "over_p75": 12,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 33,
+            "over_p75": 9,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 120,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.52",
+          "new_other_flagged": [
+            "ordinance_drafting"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 14,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 8,
+            "over_p90": 4
+          }
+        }
+      ],
+      "planted_step": "1.5"
+    },
+    {
+      "condition": "1.7x",
+      "kind": "step",
+      "seeds": 20,
+      "new_flagged": 16,
+      "old_flagged": 10,
+      "median_days_estimate_minus_true": 48,
+      "median_after_over_before": "1.88",
+      "new_other_flagged": 4,
+      "new_other_judged": 200,
+      "old_other_flagged": 0,
+      "old_other_judged": 200,
+      "drift_type_descriptive": {
+        "n": 570,
+        "over_p75": 269,
+        "over_p90": 160
+      },
+      "drift_type_planning": {
+        "n": 570,
+        "over_p75": 178,
+        "over_p90": 72
+      },
+      "runs": [
+        {
+          "seed": 101,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-10-04",
+          "after_over_before": "2.09",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 14,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 11,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 102,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.56",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 32,
+            "over_p75": 15,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 32,
+            "over_p75": 8,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 103,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.78",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 8,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 104,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-02-18",
+          "after_over_before": "1.97",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 13,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 11,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 105,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.32",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 9,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 106,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-11-28",
+          "after_over_before": "2.09",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 11,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 9,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 107,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-03-02",
+          "after_over_before": "1.69",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 25,
+            "over_p75": 8,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 25,
+            "over_p75": 5,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 108,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-09-18",
+          "after_over_before": "1.90",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 37,
+            "over_p75": 16,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 37,
+            "over_p75": 11,
+            "over_p90": 6
+          }
+        },
+        {
+          "seed": 109,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-07-15",
+          "after_over_before": "2.04",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 13,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 9,
+            "over_p90": 6
+          }
+        },
+        {
+          "seed": 110,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-06-20",
+          "after_over_before": "2.04",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 14,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 10,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 111,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-01-31",
+          "after_over_before": "2.09",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 17,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 10,
+            "over_p90": 7
+          }
+        },
+        {
+          "seed": 112,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-03-12",
+          "after_over_before": "1.57",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 14,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 113,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.41",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 23,
+            "over_p75": 11,
+            "over_p90": 3
+          },
+          "drift_type_planning": {
+            "n": 23,
+            "over_p75": 7,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 114,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-06-23",
+          "after_over_before": "1.59",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 10,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 8,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 115,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-09-19",
+          "after_over_before": "1.88",
+          "new_other_flagged": [
+            "facility_change_of_ownership"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 18,
+            "over_p90": 12
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 10,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 116,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-03-10",
+          "after_over_before": "1.63",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 16,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 9,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 117,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-07-25",
+          "after_over_before": "2.12",
+          "new_other_flagged": [
+            "regulatory_compliance_audit"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 15,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 118,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-11-21",
+          "after_over_before": "2.22",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 16,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 9,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 119,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-02-01",
+          "after_over_before": "1.49",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 33,
+            "over_p75": 15,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 33,
+            "over_p75": 11,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 120,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-01-06",
+          "after_over_before": "1.78",
+          "new_other_flagged": [
+            "ordinance_drafting"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 16,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 9,
+            "over_p90": 5
+          }
+        }
+      ],
+      "planted_step": "1.7"
+    },
+    {
+      "condition": "2.0x",
+      "kind": "step",
+      "seeds": 20,
+      "new_flagged": 19,
+      "old_flagged": 16,
+      "median_days_estimate_minus_true": 33,
+      "median_after_over_before": "2.09",
+      "new_other_flagged": 5,
+      "new_other_judged": 200,
+      "old_other_flagged": 0,
+      "old_other_judged": 200,
+      "drift_type_descriptive": {
+        "n": 570,
+        "over_p75": 297,
+        "over_p90": 183
+      },
+      "drift_type_planning": {
+        "n": 570,
+        "over_p75": 191,
+        "over_p90": 78
+      },
+      "runs": [
+        {
+          "seed": 101,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-06-01",
+          "after_over_before": "1.94",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 17,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 11,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 102,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-07-15",
+          "after_over_before": "1.90",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 32,
+            "over_p75": 17,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 32,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 103,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-01-26",
+          "after_over_before": "2.24",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 12,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 8,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 104,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-02-18",
+          "after_over_before": "2.24",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 13,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 11,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 105,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.74",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 9,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 106,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-02-06",
+          "after_over_before": "2.25",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 12,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 107,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2023-03-02",
+          "after_over_before": "1.97",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 25,
+            "over_p75": 10,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 25,
+            "over_p75": 5,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 108,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-09-18",
+          "after_over_before": "2.27",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 37,
+            "over_p75": 19,
+            "over_p90": 12
+          },
+          "drift_type_planning": {
+            "n": 37,
+            "over_p75": 11,
+            "over_p90": 7
+          }
+        },
+        {
+          "seed": 109,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-07-15",
+          "after_over_before": "2.15",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 13,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 9,
+            "over_p90": 8
+          }
+        },
+        {
+          "seed": 110,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-02-03",
+          "after_over_before": "2.09",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 15,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 10,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 111,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-01-31",
+          "after_over_before": "2.59",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 18,
+            "over_p90": 12
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 10,
+            "over_p90": 7
+          }
+        },
+        {
+          "seed": 112,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-03-12",
+          "after_over_before": "1.80",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 14,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 10,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 113,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-04-10",
+          "after_over_before": "1.77",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 23,
+            "over_p75": 13,
+            "over_p90": 3
+          },
+          "drift_type_planning": {
+            "n": 23,
+            "over_p75": 9,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 114,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-06-23",
+          "after_over_before": "1.80",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 12,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 9,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 115,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-09-19",
+          "after_over_before": "2.08",
+          "new_other_flagged": [
+            "facility_change_of_ownership"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 18,
+            "over_p90": 13
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 13,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 116,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-03-10",
+          "after_over_before": "1.88",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 20,
+            "over_p90": 12
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 12,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 117,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-07-25",
+          "after_over_before": "2.38",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 15,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 10,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 118,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-11-21",
+          "after_over_before": "2.51",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 17,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 9,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 119,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-02-01",
+          "after_over_before": "1.63",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 33,
+            "over_p75": 16,
+            "over_p90": 12
+          },
+          "drift_type_planning": {
+            "n": 33,
+            "over_p75": 11,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 120,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-01-06",
+          "after_over_before": "2.14",
+          "new_other_flagged": [
+            "ordinance_drafting"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 17,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 10,
+            "over_p90": 5
+          }
+        }
+      ],
+      "planted_step": "2.0"
+    },
+    {
+      "condition": "gradual 12% a year",
+      "kind": "gradual",
+      "seeds": 20,
+      "new_flagged": 7,
+      "old_flagged": 3,
+      "median_days_estimate_minus_true": null,
+      "median_after_over_before": "1.48",
+      "new_other_flagged": 5,
+      "new_other_judged": 200,
+      "old_other_flagged": 0,
+      "old_other_judged": 200,
+      "drift_type_descriptive": {
+        "n": 570,
+        "over_p75": 247,
+        "over_p90": 140
+      },
+      "drift_type_planning": {
+        "n": 570,
+        "over_p75": 176,
+        "over_p90": 67
+      },
+      "runs": [
+        {
+          "seed": 101,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.47",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 12,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 10,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 102,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.37",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 32,
+            "over_p75": 14,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 32,
+            "over_p75": 8,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 103,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.28",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 9,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 7,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 104,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-05-12",
+          "after_over_before": "1.56",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 15,
+            "over_p90": 9
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 12,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 105,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.46",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 9,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 7,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 106,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.86",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 11,
+            "over_p90": 4
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 107,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.65",
+          "new_other_flagged": [
+            "commercial_lease_review"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 25,
+            "over_p75": 9,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 25,
+            "over_p75": 8,
+            "over_p90": 1
+          }
+        },
+        {
+          "seed": 108,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.43",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 37,
+            "over_p75": 16,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 37,
+            "over_p75": 11,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 109,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.51",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 10,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 8,
+            "over_p90": 6
+          }
+        },
+        {
+          "seed": 110,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2022-12-22",
+          "after_over_before": "1.52",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 14,
+            "over_p90": 5
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 10,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 111,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2023-01-31",
+          "after_over_before": "1.70",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 28,
+            "over_p75": 17,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 28,
+            "over_p75": 11,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 112,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.35",
+          "new_other_flagged": [
+            "commercial_lease_review",
+            "paga_response"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 11,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 9,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 113,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.43",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 23,
+            "over_p75": 9,
+            "over_p90": 2
+          },
+          "drift_type_planning": {
+            "n": 23,
+            "over_p75": 5,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 114,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.26",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 27,
+            "over_p75": 9,
+            "over_p90": 8
+          },
+          "drift_type_planning": {
+            "n": 27,
+            "over_p75": 8,
+            "over_p90": 5
+          }
+        },
+        {
+          "seed": 115,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2022-09-19",
+          "after_over_before": "1.48",
+          "new_other_flagged": [
+            "facility_change_of_ownership"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 30,
+            "over_p75": 15,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 30,
+            "over_p75": 10,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 116,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2022-02-19",
+          "after_over_before": "1.66",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 13,
+            "over_p90": 11
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 11,
+            "over_p90": 6
+          }
+        },
+        {
+          "seed": 117,
+          "new_flagged": true,
+          "old_flagged": false,
+          "change_date": "2022-01-23",
+          "after_over_before": "2.61",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 13,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 9,
+            "over_p90": 4
+          }
+        },
+        {
+          "seed": 118,
+          "new_flagged": true,
+          "old_flagged": true,
+          "change_date": "2022-09-24",
+          "after_over_before": "1.83",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 26,
+            "over_p75": 15,
+            "over_p90": 10
+          },
+          "drift_type_planning": {
+            "n": 26,
+            "over_p75": 8,
+            "over_p90": 3
+          }
+        },
+        {
+          "seed": 119,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.44",
+          "new_other_flagged": [],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 33,
+            "over_p75": 13,
+            "over_p90": 6
+          },
+          "drift_type_planning": {
+            "n": 33,
+            "over_p75": 8,
+            "over_p90": 2
+          }
+        },
+        {
+          "seed": 120,
+          "new_flagged": false,
+          "old_flagged": false,
+          "change_date": null,
+          "after_over_before": "1.39",
+          "new_other_flagged": [
+            "ordinance_drafting"
+          ],
+          "new_other_judged": 10,
+          "old_other_flagged": [],
+          "old_other_judged": 10,
+          "drift_type_descriptive": {
+            "n": 31,
+            "over_p75": 13,
+            "over_p90": 7
+          },
+          "drift_type_planning": {
+            "n": 31,
+            "over_p75": 8,
+            "over_p90": 5
+          }
+        }
+      ],
+      "per_year": "0.12"
+    }
+  ],
+  "no_planted_shift": {
+    "new_flagged": 6,
+    "new_judged": 220,
+    "old_flagged": 0,
+    "old_judged": 220
+  }
+}

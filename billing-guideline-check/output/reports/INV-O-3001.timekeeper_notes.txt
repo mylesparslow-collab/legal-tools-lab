@@ -68,7 +68,7 @@ Amount at risk on your entries: $1,426.00. Please correct entries from your own 
 
 - Line 22, 2026-10-21, $1,209.00 [Research needs approval above a limit, likely reduced]
   Your entry: "Research transfer factors applied in recent district decisions" (2.6 h x $465.00 = $1,209.00)
-  What the check saw: Research on this invoice reaches 5.7 hours with this entry. The limit without approval is 5 hours; 0.7 hours of this entry fall over it.
+  What the check saw: Research on this invoice reaches 5.7 hours with this entry (read as research from activity code A102). The limit without approval is 5 hours; 0.7 hours of this entry fall over it.
   Suggested fix: Ask the client to approve the research, or hold the excess time. Research billed on earlier invoices is not counted here.
   Client rule (OIH-RESEARCH-01, Part A. How we expect matters to be staffed, page 1): "Please obtain our approval before spending more than 5 hours on legal research for a matter."
   Note: Waiver W-002 expired on 2026-09-30 and does not cover this work.

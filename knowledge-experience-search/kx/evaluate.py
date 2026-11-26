@@ -29,13 +29,14 @@ def _units(result, equivalents) -> list:
     return out
 
 
-def evaluate(conn, key: dict, config=None) -> dict:
+def evaluate(conn, key: dict, config=None, expand=None) -> dict:
+    """``expand`` False scores keyword search alone (no vocabulary bridging)."""
     config = config or load_config()
     eq = key["equivalents"]
     per_query = []
     for q in key["queries"]:
         result = search.search(conn, q["as_user"], q["query"], config=config, limit=10,
-                               as_of=key["as_of"])
+                               as_of=key["as_of"], expand=expand)
         units = _units(result, eq)
         relevant = set(q["relevant"])
         p5 = sum(1 for u in units[:5] if u in relevant) / 5
@@ -74,7 +75,7 @@ def evaluate(conn, key: dict, config=None) -> dict:
                 for query in t["queries"]:
                     checks += 1
                     result = search.search(conn, user, query, config=config, limit=1000,
-                                           as_of=key["as_of"])
+                                           as_of=key["as_of"], expand=expand)
                     shown = set()
                     for r in result["results"]:
                         shown.add(r["doc_id"])
@@ -90,3 +91,35 @@ def evaluate(conn, key: dict, config=None) -> dict:
         "permission_checks": {"checks_run": checks, "leaks": leaks},
         "per_query": per_query,
     }
+
+
+def timing(conn, key: dict, config=None, repeats: int = 3) -> dict:
+    """Wall-clock time per query on this machine, expansion on and off.
+    Uses the answer key's queries plus misspelt and reworded ones."""
+    import statistics
+    import time
+    config = config or load_config()
+    queries = [(q["as_user"], q["query"]) for q in key["queries"]]
+    user = key["eval_user"]
+    queries += [(user, t) for t in (
+        "indemnifcation basket memo", "deferred price contingent on future performance",
+        "parent company guarantee", "labour dispute", "lessor consent to assignment",
+        "handing premises over to a new occupier", "telling customers about a hacking incident")]
+
+    def measure(expand):
+        times = []
+        for _ in range(repeats):
+            for uid, text in queries:
+                start = time.perf_counter()
+                search.search(conn, uid, text, config=config, limit=10, explain=True,
+                              as_of=key["as_of"], expand=expand)
+                times.append((time.perf_counter() - start) * 1000)
+        times.sort()
+        return {"queries_timed": len(times), "median_ms": round(statistics.median(times), 1),
+                "p95_ms": round(times[int(0.95 * (len(times) - 1))], 1),
+                "slowest_ms": round(times[-1], 1)}
+
+    documents = conn.execute("SELECT COUNT(*) FROM docs").fetchone()[0]
+    return {"documents_indexed": documents, "expansion_on": measure(None),
+            "expansion_off": measure(False),
+            "note": "One process, one connection, explain on. Machine-dependent."}

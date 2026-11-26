@@ -13,13 +13,13 @@ other item.
 | deadlines | 23 | 0 | 0 | 1.000 | 1.000 |
 | addendum_changes | 5 | 0 | 0 | 1.000 | 1.000 |
 | requirements | 38 | 0 | 0 | 1.000 | 1.000 |
-| forms | 18 | 1 | 0 | 0.947 | 1.000 |
+| forms | 18 | 0 | 0 | 1.000 | 1.000 |
 | evaluation | 20 | 0 | 0 | 1.000 | 1.000 |
 | min_quals | 13 | 0 | 0 | 1.000 | 1.000 |
 | insurance | 12 | 0 | 0 | 1.000 | 1.000 |
 | mechanics | 37 | 0 | 0 | 1.000 | 1.000 |
 | parties | 33 | 0 | 0 | 1.000 | 1.000 |
-| overall | 199 | 1 | 0 | 0.995 | 1.000 |
+| overall | 199 | 0 | 0 | 1.000 | 1.000 |
 
 Question type correct on 38 of 38 requirements.
 
@@ -51,15 +51,15 @@ Agency name correct: yes
 | deadlines | 6 | 0 | 0 | 1.000 | 1.000 |
 | addendum_changes | 2 | 0 | 0 | 1.000 | 1.000 |
 | requirements | 10 | 0 | 0 | 1.000 | 1.000 |
-| forms | 4 | 1 | 0 | 0.800 | 1.000 |
+| forms | 4 | 0 | 0 | 1.000 | 1.000 |
 | evaluation | 5 | 0 | 0 | 1.000 | 1.000 |
 | min_quals | 3 | 0 | 0 | 1.000 | 1.000 |
 | insurance | 3 | 0 | 0 | 1.000 | 1.000 |
 | mechanics | 10 | 0 | 0 | 1.000 | 1.000 |
 | parties | 7 | 0 | 0 | 1.000 | 1.000 |
-| overall | 50 | 1 | 0 | 0.980 | 1.000 |
+| overall | 50 | 0 | 0 | 1.000 | 1.000 |
 
-- extra forms: Exhibit 2 (named in section SECTION V)
+No differences from the key.
 
 ## labor_negotiator_quillfeather_usd.txt
 
@@ -98,39 +98,26 @@ Agency name correct: yes
 | overall | 55 | 0 | 0 | 1.000 | 1.000 |
 
 No differences from the key.
-## Held-out document: bond_counsel_gullwing_harbor.txt
+## Earlier hold-out: bond_counsel_gullwing_harbor.txt
 
-A fifth RFP in a layout the parser was not written for. It is not one of the four sample RFPs.
+A fifth RFP written by the parser's author in a layout the parser was not written for.
 
-First run, before any change to the parser: precision 0.667, recall 0.136 (6 correct, 3 extra, 38 missed).
-The parser did not recognise the 'Article 1.  Title' headings (mixed case), so it found no sections. It reported 7 items for a person to check, including 'no submission deadline found' and 'no numbered proposal requirements found'.
+- First run, before any change to the parser (round 1): precision 0.667, recall 0.136 (6 correct, 3 extra, 38 missed).
+  The parser did not recognise the 'Article 1.  Title' headings (mixed case), so it found no sections. It reported 7 items for a person to check, including 'no submission deadline found' and 'no numbered proposal requirements found'.
+- After six general fixes prompted by that run (round 1): precision 0.825, recall 0.750 (33 correct, 7 extra, 11 missed). Recorded then; no longer held out.
+- Today, after the round 2 rewrite: precision 1.000, recall 1.000 (44 correct, 0 extra, 0 missed). This document has been used for fixes, so this is an in-sample figure.
 
-After six general fixes prompted by that run (mixed-case 'Article' headings, 'Tab N' labels, three more
-heading keywords, weight-first criteria, 'longer than N pages'): precision 0.825, recall 0.750
-(33 correct, 7 extra, 11 missed). This second figure is no longer held out. The remaining
-misses were left unfixed on purpose and are listed here:
 
-- extra deadlines: unknown 2027-01-12 None
-- missed deadlines: {'kind': 'interview', 'date': '2026-12-14', 'time': None}
-- missed deadlines: {'kind': 'award', 'date': '2027-01-12', 'time': None}
-- extra forms: Form 10 (named in section Article 5)
-- extra forms: Form 11 (named in section Article 5)
-- missed forms: Proposer's Affidavit
-- missed forms: Statement of Insurance
-- missed forms: Acknowledgment of any addenda
-- extra insurance: The District does not require other coverage for this engage
-- missed mechanics: ('kind', 'not_accepted')
-- missed mechanics: ('kind', 'page_exclusions')
-- missed mechanics: ('kind', 'font')
-- missed mechanics: ('font', 11)
-- extra parties: Clementine Radcliffe (staff)
-- extra parties: Jasper Thibodeaux (staff)
-- extra parties: Lowtide Advisory Partners (staff)
-- missed parties: {'name': 'Clementine Radcliffe', 'category': 'board'}
-- missed parties: {'name': 'Jasper Thibodeaux', 'category': 'board'}
-- question type: Tab 2: other, key says firm_overview
-- question type: Tab 3: other, key says team
-- question type: Tab 4: other, key says experience
-- question type: Tab 5: other, key says approach
+## Independent held-out batches
 
-The first-run figure is the better guide to what happens on an RFP layout nobody has tuned for.
+Six RFPs with keys written by an independent author who had not read the parser (heldout/README.md).
+These are recorded results; full detail is in data/heldout_results/. The batch B row is the figure
+to rely on.
+
+| Run | Requirements P / R | All categories P / R | Submission deadline | Page limit | Addendum checks |
+|---|---|---|---|---|---|
+| Batch A, first run (parser as it stood after round 1) | 1.000 / 0.000 | 0.489 / 0.132 | 0 of 3 | 0 of 3 | 2 of 11 |
+| Batch A, after general fixes made from its misses (not held out any more) | 1.000 / 1.000 | 0.994 / 1.000 | 3 of 3 | 3 of 3 | 14 of 14 |
+| Batch B, run once at the end, sealed until then | 0.769 / 0.571 | 0.798 / 0.512 | 1 of 3 | 2 of 3 | 5 of 11 |
+
+The batch B figure is the guide to what happens on an RFP layout nobody has tuned for.

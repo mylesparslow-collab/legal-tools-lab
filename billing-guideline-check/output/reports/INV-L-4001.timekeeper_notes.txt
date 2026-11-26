@@ -12,7 +12,7 @@ Amount at risk on your entries: $1,020.00. Please correct entries from your own 
 
 - Line 14, 2026-10-19, $748.00 [Internal conference limit, likely reduced]
   Your entry: "Internal conference with team regarding claim construction strategy" (1.1 h x $680.00 = $748.00)
-  What the check saw: Internal conference of 1.1 hours. The limit is 0.5 hours per entry.
+  What the check saw: Internal conference of 1.1 hours (read from "Internal conference"). The limit is 0.5 hours per entry.
   Suggested fix: Reduce the entry to the limit, or ask the client to approve the longer conference.
   Client rule (LDS-CONF-01, Schedule A: Billing, page 1): "Internal conferences among your team are capped at 0.5 hour per entry."
 

@@ -48,15 +48,17 @@ def test_thin_matter_type_is_refused(ws):
         assert key not in result            # no number without enough comps
 
 
-def test_drifting_type_is_the_only_one_flagged_in_the_backtest(bt):
+def test_drifting_type_is_flagged_with_an_estimated_date(bt):
     _records, summary, table = bt
     flagged = [r["matter_type"] for r in summary["by_type"] if r["drift_flag"]]
-    assert flagged == [synth.DRIFT_TYPE]
+    # The planted type is found. One unplanted type is also flagged on this seed: a false alarm, kept visible.
+    assert flagged == ["employment_single_plaintiff_defense", synth.DRIFT_TYPE]
     row = [r for r in summary["by_type"] if r["matter_type"] == synth.DRIFT_TYPE][0]
-    assert row["drift"]["late_over_early"] >= D("1.3")
-    c = row["coverage"]["at_or_under_p75"]
-    assert c["count"] * 100 < 60 * c["n"]                       # bands from older matters missed badly
-    assert "shifted" in row["verdict"]
+    d = row["drift"]
+    assert D("1.5") <= d["after_over_before"] <= D("2.0")            # planted 1.7x
+    assert abs((d["change_date"] - synth.DRIFT_FROM).days) <= 365    # planted 2023-01-01; the estimate is rough
+    assert (d["n_before"], d["n_after"]) == (15, 26)
+    assert "Costs appear to have risen" in row["verdict"] and "A prompt to look, not a finding" in row["verdict"]
     verdicts = {r["matter_type"]: r["verdict"] for r in table["rows"]}
     assert verdicts[synth.DRIFT_TYPE] == "Modelable with care"
     assert verdicts[synth.THIN_TYPE] == "Not modelable"
@@ -69,13 +71,27 @@ def test_thin_type_is_never_backtested(bt):
     assert row["n_tested"] == 0 and "Not back-tested" in row["verdict"]
 
 
-def test_pricing_the_drifting_type_warns_and_recent_comps_cost_more(ws):
-    base = {"matter_type": synth.DRIFT_TYPE, "as_of": "2026-01-01"}
-    all_hist = price_proposal(ws, base)
-    assert all_hist["drift"]["shifted"] is True
-    assert any("later half" in w for w in all_hist["warnings"])
-    recent = price_proposal(ws, dict(base, selection_rules={"closed_within_years": 3}))
-    assert recent["distribution"]["normalized"]["quantiles"]["p50"] > all_hist["distribution"]["normalized"]["quantiles"]["p50"]
+def test_pricing_the_drifting_type_raises_the_figures_and_shows_both_versions(ws):
+    base = {"matter_type": synth.DRIFT_TYPE, "as_of": "2026-01-01", "target_probability": "0.8"}
+    r = price_proposal(ws, base)
+    d = r["drift"]
+    assert d["flagged"] and d["action"] == "higher_of_two" and d["direction"] == "risen"
+    assert (d["n_all"], d["n_used"], d["n_after_selected"]) == (41, 41, 26) and r["selection"]["n"] == 41
+    recent, whole = d["versions"]
+    assert (recent["n"], whole["n"]) == (26, 41) and not recent["used"] and not whole["used"]
+    assert recent["descriptive"]["p50"] > whole["descriptive"]["p50"]          # recent matters cost more
+    for b in ("p25", "p50", "p75", "p90"):
+        assert r["planning"]["bands"][b] == max(recent["planning"][b], whole["planning"][b])
+    assert d["raised"] == ["p25", "p50", "p75", "p90"]
+    assert any("A flag can only raise a planning figure" in w for w in r["warnings"])
+    ignored = price_proposal(ws, dict(base, drift_action="ignore"))
+    assert ignored["drift"]["action"] == "ignored_by_proposal" and ignored["selection"]["n"] == 41
+    assert ignored["planning"]["bands"] == whole["planning"]
+    assert r["target"]["planning_fee_covering_standard_value"] >= ignored["target"]["planning_fee_covering_standard_value"]
+    only = price_proposal(ws, dict(base, drift_action="recent_only"))
+    assert only["drift"]["action"] == "recent_only" and only["selection"]["n"] == 26
+    assert only["planning"]["bands"] == recent["planning"]
+    assert any("drift_action to recent_only" in w and "can lower the figures" in w for w in only["warnings"])
 
 
 def test_hearing_multiplier_recovered_and_turned_into_a_scope_assumption(ws):

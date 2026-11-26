@@ -18,7 +18,7 @@ Amount at risk on your entries: $790.50. Please correct entries from your own re
 
 - Line 12, 2026-10-12, $248.00 [Internal conference limit, likely reduced]
   Your entry: "Office conference with associate regarding deposition outline" (0.8 h x $310.00 = $248.00)
-  What the check saw: Internal conference of 0.8 hours. The limit is 0.3 hours per entry.
+  What the check saw: Internal conference of 0.8 hours (read from "Office conference"). The limit is 0.3 hours per entry.
   Suggested fix: Reduce the entry to the limit, or ask the client to approve the longer conference.
   Client rule (QMI-CONF-01, 2.3 Intra-office conferences, page 1): "No more than 0.3 hour may be billed for any single intra-office conference."
 
@@ -46,7 +46,7 @@ Amount at risk on your entries: $2,725.50. Please correct entries from your own 
 
 - Line 9, 2026-10-08, $405.00 [Research needs approval above a limit, likely reduced]
   Your entry: "Research admissibility of prior incident reports" (1.8 h x $225.00 = $405.00)
-  What the check saw: Research on this invoice reaches 4.2 hours with this entry. The limit without approval is 3 hours; 1.2 hours of this entry fall over it.
+  What the check saw: Research on this invoice reaches 4.2 hours with this entry (read as research from activity code A102). The limit without approval is 3 hours; 1.2 hours of this entry fall over it.
   Suggested fix: Ask the client to approve the research, or hold the excess time. Research billed on earlier invoices is not counted here.
   Client rule (QMI-RESEARCH-01, 5. Work the Company does not pay for, page 3): "Legal research exceeding 3 hours on a file requires prior approval from the claims professional."
 

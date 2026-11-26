@@ -1,0 +1,16 @@
+{
+ "documents_indexed": 1500,
+ "expansion_on": {
+  "queries_timed": 132,
+  "median_ms": 12.3,
+  "p95_ms": 24.9,
+  "slowest_ms": 43.3
+ },
+ "expansion_off": {
+  "queries_timed": 132,
+  "median_ms": 8.2,
+  "p95_ms": 15.0,
+  "slowest_ms": 26.5
+ },
+ "note": "One process, one connection, explain on. Machine-dependent."
+}

@@ -330,9 +330,9 @@
         "raw_worked": "23166.00",
         "raw_billed": "22517.00",
         "invoiced": "22517.00",
-        "collected": "19791.32",
+        "collected": "22517.00",
         "write_down": "649.00",
-        "uncollected": "2725.68",
+        "uncollected": "0.00",
         "normalized_value": "29315.70",
         "normalized_value_after_assumptions": "29315.70",
         "internal_cost": "9397.00",
@@ -352,9 +352,9 @@
         "raw_worked": "37791.00",
         "raw_billed": "34761.00",
         "invoiced": "34761.00",
-        "collected": "33162.00",
+        "collected": "31260.35",
         "write_down": "3030.00",
-        "uncollected": "1599.00",
+        "uncollected": "3500.65",
         "normalized_value": "47824.70",
         "normalized_value_after_assumptions": "47824.70",
         "internal_cost": "15704.00",
@@ -374,9 +374,9 @@
         "raw_worked": "55834.00",
         "raw_billed": "52946.00",
         "invoiced": "52946.00",
-        "collected": "49936.98",
+        "collected": "52946.00",
         "write_down": "2888.00",
-        "uncollected": "3009.02",
+        "uncollected": "0.00",
         "normalized_value": "70659.00",
         "normalized_value_after_assumptions": "70659.00",
         "internal_cost": "23134.50",
@@ -418,9 +418,9 @@
         "raw_worked": "53075.60",
         "raw_billed": "49549.80",
         "invoiced": "49549.80",
-        "collected": "46557.17",
+        "collected": "37010.09",
         "write_down": "3525.80",
-        "uncollected": "2992.63",
+        "uncollected": "12539.71",
         "normalized_value": "65202.70",
         "normalized_value_after_assumptions": "65202.70",
         "internal_cost": "21543.00",
@@ -440,9 +440,9 @@
         "raw_worked": "90031.20",
         "raw_billed": "88414.70",
         "invoiced": "88414.70",
-        "collected": "88414.70",
+        "collected": "77372.69",
         "write_down": "1616.50",
-        "uncollected": "0.00",
+        "uncollected": "11042.01",
         "normalized_value": "109754.30",
         "normalized_value_after_assumptions": "109754.30",
         "internal_cost": "35447.00",
@@ -506,9 +506,9 @@
         "raw_worked": "70315.50",
         "raw_billed": "67493.80",
         "invoiced": "67493.80",
-        "collected": "67493.80",
+        "collected": "57588.71",
         "write_down": "2821.70",
-        "uncollected": "0.00",
+        "uncollected": "9905.09",
         "normalized_value": "85537.90",
         "normalized_value_after_assumptions": "85537.90",
         "internal_cost": "28215.00",
@@ -528,9 +528,9 @@
         "raw_worked": "155162.30",
         "raw_billed": "151659.80",
         "invoiced": "151659.80",
-        "collected": "151659.80",
+        "collected": "150594.87",
         "write_down": "3502.50",
-        "uncollected": "0.00",
+        "uncollected": "1064.93",
         "normalized_value": "188807.60",
         "normalized_value_after_assumptions": "188807.60",
         "internal_cost": "62212.00",
@@ -572,9 +572,9 @@
         "raw_worked": "18561.70",
         "raw_billed": "17929.00",
         "invoiced": "17929.00",
-        "collected": "17929.00",
+        "collected": "16642.20",
         "write_down": "632.70",
-        "uncollected": "0.00",
+        "uncollected": "1286.80",
         "normalized_value": "22475.60",
         "normalized_value_after_assumptions": "22475.60",
         "internal_cost": "7129.00",
@@ -616,9 +616,9 @@
         "raw_worked": "56224.60",
         "raw_billed": "54478.00",
         "invoiced": "54478.00",
-        "collected": "51544.44",
+        "collected": "49616.67",
         "write_down": "1746.60",
-        "uncollected": "2933.56",
+        "uncollected": "4861.33",
         "normalized_value": "65823.70",
         "normalized_value_after_assumptions": "65823.70",
         "internal_cost": "21751.50",
@@ -638,9 +638,9 @@
         "raw_worked": "60282.10",
         "raw_billed": "56023.50",
         "invoiced": "56023.50",
-        "collected": "55101.25",
+        "collected": "56023.50",
         "write_down": "4258.60",
-        "uncollected": "922.25",
+        "uncollected": "0.00",
         "normalized_value": "71093.30",
         "normalized_value_after_assumptions": "71093.30",
         "internal_cost": "23282.50",
@@ -682,9 +682,9 @@
         "raw_worked": "25553.80",
         "raw_billed": "24531.40",
         "invoiced": "24531.40",
-        "collected": "24531.40",
+        "collected": "22775.27",
         "write_down": "1022.40",
-        "uncollected": "0.00",
+        "uncollected": "1756.13",
         "normalized_value": "30649.70",
         "normalized_value_after_assumptions": "30649.70",
         "internal_cost": "9823.00",
@@ -701,16 +701,16 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "54.10",
-        "raw_worked": "23492.90",
-        "raw_billed": "23378.30",
-        "invoiced": "23378.30",
-        "collected": "23378.30",
-        "write_down": "114.60",
+        "raw_worked": "24396.50",
+        "raw_billed": "24396.50",
+        "invoiced": "24396.50",
+        "collected": "24396.50",
+        "write_down": "0.00",
         "uncollected": "0.00",
-        "normalized_value": "26433.20",
-        "normalized_value_after_assumptions": "26433.20",
-        "internal_cost": "8583.00",
-        "phase_confidence": "date_window",
+        "normalized_value": "27455.40",
+        "normalized_value_after_assumptions": "27455.40",
+        "internal_cost": "8859.00",
+        "phase_confidence": "task_code",
         "flags": []
       },
       {
@@ -723,15 +723,15 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "99.40",
-        "raw_worked": "40189.00",
-        "raw_billed": "38317.00",
-        "invoiced": "38317.00",
-        "collected": "38317.00",
-        "write_down": "1872.00",
+        "raw_worked": "39719.10",
+        "raw_billed": "38198.10",
+        "invoiced": "38198.10",
+        "collected": "38198.10",
+        "write_down": "1521.00",
         "uncollected": "0.00",
-        "normalized_value": "45218.80",
-        "normalized_value_after_assumptions": "45218.80",
-        "internal_cost": "14811.00",
+        "normalized_value": "44684.30",
+        "normalized_value_after_assumptions": "44684.30",
+        "internal_cost": "14556.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -745,15 +745,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "607.40",
-        "raw_worked": "256307.80",
-        "raw_billed": "246452.70",
-        "invoiced": "246452.70",
-        "collected": "246452.70",
-        "write_down": "9855.10",
+        "raw_worked": "257273.50",
+        "raw_billed": "247431.10",
+        "invoiced": "247431.10",
+        "collected": "247431.10",
+        "write_down": "9842.40",
         "uncollected": "0.00",
-        "normalized_value": "288383.20",
-        "normalized_value_after_assumptions": "288383.20",
-        "internal_cost": "95258.50",
+        "normalized_value": "289462.50",
+        "normalized_value_after_assumptions": "289462.50",
+        "internal_cost": "95698.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -767,15 +767,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "660.10",
-        "raw_worked": "294540.40",
-        "raw_billed": "284139.70",
-        "invoiced": "284139.70",
-        "collected": "280997.79",
-        "write_down": "10400.70",
-        "uncollected": "3141.91",
-        "normalized_value": "331287.40",
-        "normalized_value_after_assumptions": "331287.40",
-        "internal_cost": "109218.00",
+        "raw_worked": "287581.60",
+        "raw_billed": "278148.80",
+        "invoiced": "278148.80",
+        "collected": "278148.80",
+        "write_down": "9432.80",
+        "uncollected": "0.00",
+        "normalized_value": "323453.40",
+        "normalized_value_after_assumptions": "323453.40",
+        "internal_cost": "106001.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -789,16 +789,16 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "111.40",
-        "raw_worked": "52454.10",
-        "raw_billed": "52044.60",
-        "invoiced": "52044.60",
-        "collected": "47026.20",
-        "write_down": "409.50",
-        "uncollected": "5018.40",
-        "normalized_value": "58405.00",
-        "normalized_value_after_assumptions": "58405.00",
-        "internal_cost": "18849.50",
-        "phase_confidence": "date_window",
+        "raw_worked": "49434.20",
+        "raw_billed": "48794.20",
+        "invoiced": "48794.20",
+        "collected": "46338.04",
+        "write_down": "640.00",
+        "uncollected": "2456.16",
+        "normalized_value": "55073.00",
+        "normalized_value_after_assumptions": "55073.00",
+        "internal_cost": "18343.00",
+        "phase_confidence": "task_code",
         "flags": []
       },
       {
@@ -811,16 +811,16 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "346.80",
-        "raw_worked": "148927.30",
-        "raw_billed": "142342.40",
-        "invoiced": "142342.40",
-        "collected": "142342.40",
-        "write_down": "6584.90",
-        "uncollected": "0.00",
-        "normalized_value": "165684.80",
-        "normalized_value_after_assumptions": "165684.80",
-        "internal_cost": "53785.50",
-        "phase_confidence": "task_code",
+        "raw_worked": "146339.00",
+        "raw_billed": "138136.80",
+        "invoiced": "138136.80",
+        "collected": "133310.08",
+        "write_down": "8202.20",
+        "uncollected": "4826.72",
+        "normalized_value": "161641.20",
+        "normalized_value_after_assumptions": "161641.20",
+        "internal_cost": "52602.00",
+        "phase_confidence": "date_window",
         "flags": []
       },
       {
@@ -833,15 +833,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "117.50",
-        "raw_worked": "49855.70",
-        "raw_billed": "46422.60",
-        "invoiced": "46422.60",
-        "collected": "46422.60",
-        "write_down": "3433.10",
-        "uncollected": "0.00",
-        "normalized_value": "55496.80",
-        "normalized_value_after_assumptions": "55496.80",
-        "internal_cost": "18093.00",
+        "raw_worked": "51477.50",
+        "raw_billed": "47805.80",
+        "invoiced": "47805.80",
+        "collected": "44611.71",
+        "write_down": "3671.70",
+        "uncollected": "3194.09",
+        "normalized_value": "56882.50",
+        "normalized_value_after_assumptions": "56882.50",
+        "internal_cost": "18676.00",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -855,16 +855,16 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "146.00",
-        "raw_worked": "61564.60",
-        "raw_billed": "59559.40",
-        "invoiced": "59559.40",
-        "collected": "55456.11",
-        "write_down": "2005.20",
-        "uncollected": "4103.29",
-        "normalized_value": "68082.90",
-        "normalized_value_after_assumptions": "68082.90",
-        "internal_cost": "21845.00",
-        "phase_confidence": "date_window",
+        "raw_worked": "64344.60",
+        "raw_billed": "61793.30",
+        "invoiced": "61793.30",
+        "collected": "56564.77",
+        "write_down": "2551.30",
+        "uncollected": "5228.53",
+        "normalized_value": "71181.40",
+        "normalized_value_after_assumptions": "71181.40",
+        "internal_cost": "23134.00",
+        "phase_confidence": "task_code",
         "flags": []
       },
       {
@@ -877,15 +877,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "83.40",
-        "raw_worked": "39007.30",
-        "raw_billed": "37780.20",
-        "invoiced": "37780.20",
-        "collected": "37780.20",
-        "write_down": "1227.10",
+        "raw_worked": "34871.90",
+        "raw_billed": "31458.30",
+        "invoiced": "31458.30",
+        "collected": "31458.30",
+        "write_down": "3413.60",
         "uncollected": "0.00",
-        "normalized_value": "42831.50",
-        "normalized_value_after_assumptions": "42831.50",
-        "internal_cost": "14077.50",
+        "normalized_value": "38223.40",
+        "normalized_value_after_assumptions": "38223.40",
+        "internal_cost": "12598.00",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -899,16 +899,16 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "186.60",
-        "raw_worked": "74213.80",
-        "raw_billed": "68250.40",
-        "invoiced": "68250.40",
-        "collected": "67575.90",
-        "write_down": "5963.40",
-        "uncollected": "674.50",
-        "normalized_value": "82117.80",
-        "normalized_value_after_assumptions": "82117.80",
-        "internal_cost": "26602.00",
-        "phase_confidence": "task_code",
+        "raw_worked": "69432.90",
+        "raw_billed": "65539.40",
+        "invoiced": "65539.40",
+        "collected": "65539.40",
+        "write_down": "3893.50",
+        "uncollected": "0.00",
+        "normalized_value": "77116.70",
+        "normalized_value_after_assumptions": "77116.70",
+        "internal_cost": "24624.50",
+        "phase_confidence": "date_window",
         "flags": []
       },
       {
@@ -921,15 +921,15 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "101.10",
-        "raw_worked": "43929.60",
-        "raw_billed": "43564.80",
-        "invoiced": "43564.80",
-        "collected": "36826.60",
-        "write_down": "364.80",
-        "uncollected": "6738.20",
-        "normalized_value": "48380.50",
-        "normalized_value_after_assumptions": "48380.50",
-        "internal_cost": "15680.50",
+        "raw_worked": "33254.60",
+        "raw_billed": "32498.40",
+        "invoiced": "32498.40",
+        "collected": "32498.40",
+        "write_down": "756.20",
+        "uncollected": "0.00",
+        "normalized_value": "36659.60",
+        "normalized_value_after_assumptions": "36659.60",
+        "internal_cost": "11661.00",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -943,15 +943,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "510.20",
-        "raw_worked": "232013.20",
-        "raw_billed": "224242.20",
-        "invoiced": "224242.20",
-        "collected": "224242.20",
-        "write_down": "7771.00",
-        "uncollected": "0.00",
-        "normalized_value": "251962.90",
-        "normalized_value_after_assumptions": "251962.90",
-        "internal_cost": "82523.50",
+        "raw_worked": "228923.30",
+        "raw_billed": "221990.10",
+        "invoiced": "221990.10",
+        "collected": "185665.75",
+        "write_down": "6933.20",
+        "uncollected": "36324.35",
+        "normalized_value": "248211.90",
+        "normalized_value_after_assumptions": "248211.90",
+        "internal_cost": "81570.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -965,15 +965,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "234.40",
-        "raw_worked": "104741.60",
-        "raw_billed": "102469.20",
-        "invoiced": "102469.20",
-        "collected": "100452.07",
-        "write_down": "2272.40",
-        "uncollected": "2017.13",
-        "normalized_value": "113334.80",
-        "normalized_value_after_assumptions": "113334.80",
-        "internal_cost": "36692.00",
+        "raw_worked": "106973.70",
+        "raw_billed": "103128.80",
+        "invoiced": "103128.80",
+        "collected": "103128.80",
+        "write_down": "3844.90",
+        "uncollected": "0.00",
+        "normalized_value": "115752.40",
+        "normalized_value_after_assumptions": "115752.40",
+        "internal_cost": "37843.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -987,16 +987,16 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "90.40",
-        "raw_worked": "32196.10",
-        "raw_billed": "30451.70",
-        "invoiced": "30451.70",
-        "collected": "30451.70",
-        "write_down": "1744.40",
-        "uncollected": "0.00",
-        "normalized_value": "34823.20",
-        "normalized_value_after_assumptions": "34823.20",
-        "internal_cost": "11135.50",
-        "phase_confidence": "task_code",
+        "raw_worked": "40520.60",
+        "raw_billed": "36402.60",
+        "invoiced": "36402.60",
+        "collected": "34742.23",
+        "write_down": "4118.00",
+        "uncollected": "1660.37",
+        "normalized_value": "43838.60",
+        "normalized_value_after_assumptions": "43838.60",
+        "internal_cost": "13946.00",
+        "phase_confidence": "date_window",
         "flags": []
       },
       {
@@ -1009,15 +1009,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "155.00",
-        "raw_worked": "71207.30",
-        "raw_billed": "67251.80",
-        "invoiced": "67251.80",
-        "collected": "67251.80",
-        "write_down": "3955.50",
-        "uncollected": "0.00",
-        "normalized_value": "76768.80",
-        "normalized_value_after_assumptions": "76768.80",
-        "internal_cost": "25508.50",
+        "raw_worked": "64442.30",
+        "raw_billed": "63357.70",
+        "invoiced": "63357.70",
+        "collected": "61457.86",
+        "write_down": "1084.60",
+        "uncollected": "1899.84",
+        "normalized_value": "69491.30",
+        "normalized_value_after_assumptions": "69491.30",
+        "internal_cost": "22682.00",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1031,15 +1031,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "389.30",
-        "raw_worked": "170743.60",
-        "raw_billed": "164766.10",
-        "invoiced": "164766.10",
-        "collected": "164766.10",
-        "write_down": "5977.50",
+        "raw_worked": "178503.80",
+        "raw_billed": "171725.40",
+        "invoiced": "171725.40",
+        "collected": "171725.40",
+        "write_down": "6778.40",
         "uncollected": "0.00",
-        "normalized_value": "182290.40",
-        "normalized_value_after_assumptions": "182290.40",
-        "internal_cost": "59174.00",
+        "normalized_value": "190962.10",
+        "normalized_value_after_assumptions": "190962.10",
+        "internal_cost": "61945.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1053,15 +1053,15 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "59.30",
-        "raw_worked": "20985.10",
-        "raw_billed": "19623.60",
-        "invoiced": "19623.60",
-        "collected": "19623.60",
-        "write_down": "1361.50",
+        "raw_worked": "22194.40",
+        "raw_billed": "19728.90",
+        "invoiced": "19728.90",
+        "collected": "19728.90",
+        "write_down": "2465.50",
         "uncollected": "0.00",
-        "normalized_value": "22211.10",
-        "normalized_value_after_assumptions": "22211.10",
-        "internal_cost": "6928.00",
+        "normalized_value": "23484.50",
+        "normalized_value_after_assumptions": "23484.50",
+        "internal_cost": "7356.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1075,16 +1075,16 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "43.40",
-        "raw_worked": "14970.90",
-        "raw_billed": "13841.60",
-        "invoiced": "13841.60",
-        "collected": "13841.60",
-        "write_down": "1129.30",
+        "raw_worked": "19123.10",
+        "raw_billed": "19123.10",
+        "invoiced": "19123.10",
+        "collected": "19123.10",
+        "write_down": "0.00",
         "uncollected": "0.00",
-        "normalized_value": "15912.60",
-        "normalized_value_after_assumptions": "15912.60",
-        "internal_cost": "4984.50",
-        "phase_confidence": "task_code",
+        "normalized_value": "20291.10",
+        "normalized_value_after_assumptions": "20291.10",
+        "internal_cost": "6652.50",
+        "phase_confidence": "date_window",
         "flags": []
       },
       {
@@ -1097,15 +1097,15 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "79.50",
-        "raw_worked": "29671.20",
-        "raw_billed": "28437.00",
-        "invoiced": "28437.00",
-        "collected": "28437.00",
-        "write_down": "1234.20",
+        "raw_worked": "33361.40",
+        "raw_billed": "32837.80",
+        "invoiced": "32837.80",
+        "collected": "32837.80",
+        "write_down": "523.60",
         "uncollected": "0.00",
-        "normalized_value": "31592.30",
-        "normalized_value_after_assumptions": "31592.30",
-        "internal_cost": "10010.50",
+        "normalized_value": "35807.60",
+        "normalized_value_after_assumptions": "35807.60",
+        "internal_cost": "11763.00",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1119,15 +1119,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "195.00",
-        "raw_worked": "95751.80",
-        "raw_billed": "92137.50",
-        "invoiced": "92137.50",
-        "collected": "92137.50",
-        "write_down": "3614.30",
+        "raw_worked": "87177.00",
+        "raw_billed": "83654.60",
+        "invoiced": "83654.60",
+        "collected": "83654.60",
+        "write_down": "3522.40",
         "uncollected": "0.00",
-        "normalized_value": "99584.30",
-        "normalized_value_after_assumptions": "99584.30",
-        "internal_cost": "32850.00",
+        "normalized_value": "90680.50",
+        "normalized_value_after_assumptions": "90680.50",
+        "internal_cost": "29431.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1141,15 +1141,15 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "260.60",
-        "raw_worked": "110542.40",
-        "raw_billed": "107173.00",
-        "invoiced": "107173.00",
-        "collected": "96958.27",
-        "write_down": "3369.40",
-        "uncollected": "10214.73",
-        "normalized_value": "114980.40",
-        "normalized_value_after_assumptions": "114980.40",
-        "internal_cost": "37383.50",
+        "raw_worked": "112674.00",
+        "raw_billed": "108994.20",
+        "invoiced": "108994.20",
+        "collected": "108994.20",
+        "write_down": "3679.80",
+        "uncollected": "0.00",
+        "normalized_value": "117195.10",
+        "normalized_value_after_assumptions": "117195.10",
+        "internal_cost": "38610.00",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1163,15 +1163,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "157.90",
-        "raw_worked": "71468.20",
-        "raw_billed": "68133.50",
-        "invoiced": "68133.50",
-        "collected": "68133.50",
-        "write_down": "3334.70",
+        "raw_worked": "82991.90",
+        "raw_billed": "79203.80",
+        "invoiced": "79203.80",
+        "collected": "79203.80",
+        "write_down": "3788.10",
         "uncollected": "0.00",
-        "normalized_value": "74526.00",
-        "normalized_value_after_assumptions": "74526.00",
-        "internal_cost": "24379.00",
+        "normalized_value": "86553.80",
+        "normalized_value_after_assumptions": "86553.80",
+        "internal_cost": "29364.00",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1185,16 +1185,16 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "100.30",
-        "raw_worked": "48767.70",
-        "raw_billed": "47164.20",
-        "invoiced": "47164.20",
-        "collected": "47164.20",
-        "write_down": "1603.50",
+        "raw_worked": "46559.30",
+        "raw_billed": "46179.50",
+        "invoiced": "46179.50",
+        "collected": "46179.50",
+        "write_down": "379.80",
         "uncollected": "0.00",
-        "normalized_value": "50713.00",
-        "normalized_value_after_assumptions": "50713.00",
-        "internal_cost": "16725.00",
-        "phase_confidence": "task_code",
+        "normalized_value": "48431.50",
+        "normalized_value_after_assumptions": "48431.50",
+        "internal_cost": "15810.00",
+        "phase_confidence": "date_window",
         "flags": []
       },
       {
@@ -1207,15 +1207,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "329.90",
-        "raw_worked": "147278.20",
-        "raw_billed": "140062.30",
-        "invoiced": "140062.30",
-        "collected": "140062.30",
-        "write_down": "7215.90",
+        "raw_worked": "156287.00",
+        "raw_billed": "149716.00",
+        "invoiced": "149716.00",
+        "collected": "149716.00",
+        "write_down": "6571.00",
         "uncollected": "0.00",
-        "normalized_value": "153742.30",
-        "normalized_value_after_assumptions": "153742.30",
-        "internal_cost": "50149.50",
+        "normalized_value": "162975.30",
+        "normalized_value_after_assumptions": "162975.30",
+        "internal_cost": "53654.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1229,15 +1229,15 @@
         "num_units": 1,
         "hearing_occurred": false,
         "hours": "277.10",
-        "raw_worked": "128747.90",
-        "raw_billed": "124248.60",
-        "invoiced": "124248.60",
-        "collected": "124248.60",
-        "write_down": "4499.30",
+        "raw_worked": "108503.50",
+        "raw_billed": "105817.60",
+        "invoiced": "105817.60",
+        "collected": "105817.60",
+        "write_down": "2685.90",
         "uncollected": "0.00",
-        "normalized_value": "133927.10",
-        "normalized_value_after_assumptions": "133927.10",
-        "internal_cost": "43387.50",
+        "normalized_value": "112862.40",
+        "normalized_value_after_assumptions": "112862.40",
+        "internal_cost": "36445.50",
         "phase_confidence": "task_code",
         "flags": []
       },
@@ -1251,15 +1251,15 @@
         "num_units": 1,
         "hearing_occurred": true,
         "hours": "307.10",
-        "raw_worked": "151731.50",
-        "raw_billed": "143020.70",
-        "invoiced": "143020.70",
-        "collected": "143020.70",
-        "write_down": "8710.80",
+        "raw_worked": "140880.50",
+        "raw_billed": "132518.40",
+        "invoiced": "132518.40",
+        "collected": "132518.40",
+        "write_down": "8362.10",
         "uncollected": "0.00",
-        "normalized_value": "157798.30",
-        "normalized_value_after_assumptions": "157798.30",
-        "internal_cost": "52230.50",
+        "normalized_value": "146539.10",
+        "normalized_value_after_assumptions": "146539.10",
+        "internal_cost": "47727.00",
         "phase_confidence": "task_code",
         "flags": []
       }
@@ -1268,32 +1268,32 @@
   "backtest": {
     "status": "consistent",
     "n_tested": 53,
-    "scope": "Out of sample. Walk-forward back-test of every closed public_records_litigation matter, each modeled only from matters that closed before it opened. Matched on matter type only (not this proposal's selection rules), minimum 8 comps.",
+    "scope": "Out of sample. Walk-forward back-test of every closed public_records_litigation matter, each modeled only from matters that closed before it opened, with the change check and the band adjustment also run as of that day. Matched on matter type only (not this proposal's selection rules), minimum 8 comps.",
     "usable": true,
     "headline": "Overruns at P75 and P90 are within what chance would explain at n=53.",
-    "verdict": "Overruns at P75 and P90 are within what chance would explain at n=53. At the P75 figure, 15 of 53 back-tested matters cost more; the band implies about 13. At the P90 figure, 9 of 53 back-tested matters cost more; the band implies about 5.",
+    "verdict": "Overruns at P75 and P90 are within what chance would explain at n=53. At the planning P75, 13 of 53 back-tested matters cost more; the band implies about 13. At the planning P90, 4 of 53 back-tested matters cost more; the band implies about 5.",
     "statements": [
-      "At the P75 figure, 15 of 53 back-tested matters cost more; the band implies about 13.",
-      "At the P90 figure, 9 of 53 back-tested matters cost more; the band implies about 5."
+      "At the planning P75, 13 of 53 back-tested matters cost more; the band implies about 13.",
+      "At the planning P90, 4 of 53 back-tested matters cost more; the band implies about 5."
     ],
     "under_band": {
       "p25": {
-        "count": 10,
+        "count": 11,
         "n": 53,
         "nominal_pct": 25
       },
       "p50": {
-        "count": 21,
+        "count": 22,
         "n": 53,
         "nominal_pct": 50
       },
       "p75": {
-        "count": 38,
+        "count": 40,
         "n": 53,
         "nominal_pct": 75
       },
       "p90": {
-        "count": 44,
+        "count": 49,
         "n": 53,
         "nominal_pct": 90
       }
@@ -1301,29 +1301,58 @@
     "overruns": {
       "p75": {
         "band": "p75",
-        "count": 15,
+        "count": 13,
         "n": 53,
         "implied_pct": 25,
         "implied_count": 13,
         "judgement": "consistent",
-        "text": "At the P75 figure, 15 of 53 back-tested matters cost more; the band implies about 13."
+        "text": "At the planning P75, 13 of 53 back-tested matters cost more; the band implies about 13."
       },
       "p90": {
         "band": "p90",
-        "count": 9,
+        "count": 4,
         "n": 53,
         "implied_pct": 10,
         "implied_count": 5,
         "judgement": "consistent",
-        "text": "At the P90 figure, 9 of 53 back-tested matters cost more; the band implies about 5."
+        "text": "At the planning P90, 4 of 53 back-tested matters cost more; the band implies about 5."
       }
     },
     "inside_p25_p75": {
-      "count": 28,
+      "count": 29,
       "n": 53,
       "nominal_pct": 50
     },
+    "descriptive_statements": [
+      "At the comp P75 (descriptive), 16 of 53 back-tested matters cost more; the band implies about 13.",
+      "At the comp P90 (descriptive), 9 of 53 back-tested matters cost more; the band implies about 5."
+    ],
+    "descriptive_status": "consistent",
+    "calibration": {
+      "adjusted": 37,
+      "unadjusted": 16,
+      "flagged_when_modeled": 0,
+      "raised_by_change_check": 0
+    },
     "drift_flag": false
+  },
+  "drift": {
+    "n": 69,
+    "judged": true,
+    "flagged": false,
+    "change_date": "2022-05-17",
+    "n_before": 32,
+    "n_after": 37,
+    "median_before": "57095.85",
+    "median_after": "86553.80",
+    "after_over_before": "1.52",
+    "shuffles_as_extreme": 220,
+    "n_shuffles": 1000,
+    "min_segment": 8,
+    "action": "none",
+    "n_all": 43,
+    "n_used": 43,
+    "versions": []
   },
   "status": "modeled",
   "distribution": {
@@ -1331,31 +1360,31 @@
     "basis": "Normalized value: hours worked x the 2026 rate card, after any hours-reduction assumptions.",
     "normalized": {
       "n": 43,
-      "mean": "88935.18",
-      "min": "15912.60",
-      "max": "331287.40",
+      "mean": "88200.79",
+      "min": "20291.10",
+      "max": "323453.40",
       "quantiles": {
-        "p25": "38827.35",
+        "p25": "37441.50",
         "p50": "65823.70",
-        "p75": "114157.60",
-        "p90": "178969.28"
+        "p75": "113983.30",
+        "p90": "183641.14"
       },
       "intervals": {
         "p25": [
           "29650.80",
-          "53104.90"
+          "52353.60"
         ],
         "p50": [
-          "50713.00",
-          "76768.80"
+          "48431.50",
+          "77116.70"
         ],
         "p75": [
-          "78321.90",
-          "155770.30"
+          "78800.36",
+          "154090.15"
         ],
         "p90": [
-          "130162.52",
-          "251962.90"
+          "116906.56",
+          "248211.90"
         ]
       },
       "interval_level": "0.90",
@@ -1364,14 +1393,14 @@
     },
     "raw_worked": {
       "n": 43,
-      "mean": "79410.77",
-      "min": "14970.90",
-      "max": "294540.40",
+      "mean": "78758.26",
+      "min": "17790.40",
+      "max": "287581.60",
       "quantiles": {
-        "p25": "34993.55",
+        "p25": "34116.65",
         "p50": "55834.00",
-        "p75": "100246.70",
-        "p90": "154476.14"
+        "p75": "99494.50",
+        "p90": "156062.06"
       },
       "intervals": {},
       "interval_level": "0.90",
@@ -1380,14 +1409,14 @@
     },
     "internal_cost": {
       "n": 43,
-      "mean": "29048.08",
-      "min": "4984.50",
-      "max": "109218.00",
+      "mean": "28831.59",
+      "min": "6652.50",
+      "max": "106001.50",
       "quantiles": {
-        "p25": "12606.50",
+        "p25": "12180.50",
         "p50": "21751.50",
-        "p75": "36792.75",
-        "p90": "58096.30"
+        "p75": "36669.50",
+        "p90": "60287.30"
       },
       "intervals": {},
       "interval_level": "0.90",
@@ -1416,31 +1445,31 @@
         "n": 43,
         "value": {
           "n": 43,
-          "mean": "9839.51",
-          "min": "2082.00",
-          "max": "31789.30",
+          "mean": "9681.10",
+          "min": "1892.00",
+          "max": "32414.80",
           "quantiles": {
-            "p25": "4964.60",
-            "p50": "6701.10",
-            "p75": "13139.15",
-            "p90": "21274.24"
+            "p25": "4912.70",
+            "p50": "6642.10",
+            "p75": "13738.25",
+            "p90": "16943.66"
           },
           "intervals": {
             "p25": [
-              "3831.95",
-              "5437.80"
+              "3922.25",
+              "5780.40"
             ],
             "p50": [
-              "5437.80",
-              "11130.00"
+              "5907.50",
+              "11054.70"
             ],
             "p75": [
-              "11104.25",
-              "15770.50"
+              "10918.45",
+              "15388.90"
             ],
             "p90": [
-              "13897.60",
-              "27647.40"
+              "14760.30",
+              "27342.48"
             ]
           },
           "interval_level": "0.90",
@@ -1454,31 +1483,31 @@
         "n": 43,
         "value": {
           "n": 43,
-          "mean": "15743.43",
+          "mean": "15632.11",
           "min": "4549.70",
-          "max": "44278.00",
+          "max": "39229.50",
           "quantiles": {
-            "p25": "8529.85",
-            "p50": "13260.30",
-            "p75": "21168.30",
-            "p90": "27833.24"
+            "p25": "8382.90",
+            "p50": "13366.50",
+            "p75": "20398.85",
+            "p90": "29179.94"
           },
           "intervals": {
             "p25": [
-              "6212.20",
-              "11848.00"
+              "7187.15",
+              "11307.00"
             ],
             "p50": [
-              "11970.50",
-              "14640.60"
+              "11725.50",
+              "15224.00"
             ],
             "p75": [
-              "15266.05",
-              "24767.80"
+              "15633.15",
+              "22700.85"
             ],
             "p90": [
-              "24075.60",
-              "33046.30"
+              "21620.60",
+              "36023.60"
             ]
           },
           "interval_level": "0.90",
@@ -1492,107 +1521,107 @@
         "n": 43,
         "value": {
           "n": 43,
-          "mean": "19884.01",
-          "min": "4958.80",
-          "max": "50026.60",
+          "mean": "18885.73",
+          "min": "4937.50",
+          "max": "53876.70",
           "quantiles": {
-            "p25": "10803.55",
-            "p50": "16255.10",
-            "p75": "26228.55",
-            "p90": "36110.76"
+            "p25": "10856.80",
+            "p50": "14773.20",
+            "p75": "26298.70",
+            "p90": "34666.08"
           },
           "intervals": {
             "p25": [
-              "9004.05",
-              "13831.80"
+              "9016.90",
+              "12452.20"
             ],
             "p50": [
-              "13824.30",
-              "20739.70"
+              "12330.00",
+              "19611.50"
             ],
             "p75": [
-              "20460.85",
-              "32884.99"
+              "19604.15",
+              "33153.93"
             ],
             "p90": [
-              "31188.80",
-              "44530.50"
+              "31994.54",
+              "38153.20"
             ]
           },
           "interval_level": "0.90",
           "n_boot": 1000,
           "seed": 20263
         },
-        "median_hours": "37.80"
+        "median_hours": "35.70"
       },
       "hearing": {
         "n_occurred": 24,
         "n": 43,
         "value": {
           "n": 24,
-          "mean": "61591.90",
+          "mean": "63583.17",
           "min": "16106.30",
-          "max": "240626.50",
+          "max": "232382.60",
           "quantiles": {
-            "p25": "26392.98",
-            "p50": "40161.85",
-            "p75": "83899.05",
-            "p90": "134324.91"
+            "p25": "26939.13",
+            "p50": "43376.80",
+            "p75": "84955.70",
+            "p90": "135651.13"
           },
           "intervals": {
             "p25": [
-              "18975.25",
-              "29933.85"
+              "22312.55",
+              "37930.58"
             ],
             "p50": [
-              "27536.25",
-              "64749.75"
+              "27707.20",
+              "59930.35"
             ],
             "p75": [
-              "46342.67",
-              "116815.73"
+              "48512.46",
+              "117289.38"
             ],
             "p90": [
-              "86178.12",
-              "213980.02"
+              "85090.34",
+              "214498.97"
             ]
           },
           "interval_level": "0.90",
           "n_boot": 1000,
           "seed": 20264
         },
-        "median_hours": "72.95"
+        "median_hours": "73.50"
       },
       "closing": {
         "n_occurred": 43,
         "n": 43,
         "value": {
           "n": 43,
-          "mean": "9091.36",
+          "mean": "8513.58",
           "min": "752.50",
-          "max": "35543.10",
+          "max": "33842.20",
           "quantiles": {
-            "p25": "4482.25",
-            "p50": "6924.80",
-            "p75": "13070.60",
-            "p90": "16055.98"
+            "p25": "4617.25",
+            "p50": "6843.00",
+            "p75": "12101.65",
+            "p90": "14183.04"
           },
           "intervals": {
             "p25": [
-              "3718.17",
-              "5805.70"
+              "3716.32",
+              "5416.00"
             ],
             "p50": [
-              "5856.20",
-              "9738.40"
+              "5501.40",
+              "9360.50"
             ],
             "p75": [
-              "9750.70",
-              "14575.25"
+              "9360.50",
+              "13359.80"
             ],
             "p90": [
-              "14078.30",
-              "19025.20"
+              "12834.90",
+              "16705.80"
             ]
           },
           "interval_level": "0.90",
@@ -1605,7 +1634,7 @@
     "by_level": [
       {
         "level": "partner",
-        "median_hours": "34.40",
+        "median_hours": "37.40",
         "share_of_hours_pct": "25",
         "standard_rate": "658",
         "cost_rate": "230.00",
@@ -1613,15 +1642,15 @@
       },
       {
         "level": "senior_associate",
-        "median_hours": "36.50",
-        "share_of_hours_pct": "27",
+        "median_hours": "32.30",
+        "share_of_hours_pct": "25",
         "standard_rate": "519",
         "cost_rate": "165.00",
         "n": 43
       },
       {
         "level": "associate",
-        "median_hours": "53.10",
+        "median_hours": "54.10",
         "share_of_hours_pct": "34",
         "standard_rate": "405",
         "cost_rate": "125.00",
@@ -1629,8 +1658,8 @@
       },
       {
         "level": "paralegal",
-        "median_hours": "18.90",
-        "share_of_hours_pct": "14",
+        "median_hours": "24.20",
+        "share_of_hours_pct": "15",
         "standard_rate": "215",
         "cost_rate": "70.00",
         "n": 43
@@ -1640,17 +1669,17 @@
   "worked_billed_collected": {
     "n": 43,
     "totals": {
-      "raw_worked": "3414663.00",
-      "raw_billed": "3280089.20",
-      "invoiced": "3280089.20",
-      "collected": "3233998.90",
-      "written_off": "46090.30",
-      "normalized_value_before_assumptions": "3824212.80"
+      "raw_worked": "3386605.00",
+      "raw_billed": "3253393.30",
+      "invoiced": "3253393.30",
+      "collected": "3151846.59",
+      "written_off": "98649.91",
+      "normalized_value_before_assumptions": "3792634.00"
     },
     "medians": {
       "raw_worked": "55834.00",
       "raw_billed": "52946.00",
-      "collected": "49936.98"
+      "collected": "49616.67"
     },
     "write_off_known": true,
     "billed_hours_assumed": false
@@ -1665,40 +1694,40 @@
         "reduction_pct": "0",
         "median_hours_before": "13.10",
         "median_hours_after": "13.10",
-        "median_value_before": "6701.10",
-        "median_value_after": "6701.10"
+        "median_value_before": "6642.10",
+        "median_value_after": "6642.10"
       },
       {
         "phase": "drafting",
         "reduction_pct": "0",
         "median_hours_before": "28.20",
         "median_hours_after": "28.20",
-        "median_value_before": "13260.30",
-        "median_value_after": "13260.30"
+        "median_value_before": "13366.50",
+        "median_value_after": "13366.50"
       },
       {
         "phase": "discovery",
         "reduction_pct": "0",
-        "median_hours_before": "37.80",
-        "median_hours_after": "37.80",
-        "median_value_before": "16255.10",
-        "median_value_after": "16255.10"
+        "median_hours_before": "35.70",
+        "median_hours_after": "35.70",
+        "median_value_before": "14773.20",
+        "median_value_after": "14773.20"
       },
       {
         "phase": "hearing",
         "reduction_pct": "0",
-        "median_hours_before": "34.80",
-        "median_hours_after": "34.80",
-        "median_value_before": "17295.10",
-        "median_value_after": "17295.10"
+        "median_hours_before": "39.30",
+        "median_hours_after": "39.30",
+        "median_value_before": "22009.70",
+        "median_value_after": "22009.70"
       },
       {
         "phase": "closing",
         "reduction_pct": "0",
         "median_hours_before": "14.30",
         "median_hours_after": "14.30",
-        "median_value_before": "6924.80",
-        "median_value_after": "6924.80"
+        "median_value_before": "6843.00",
+        "median_value_after": "6843.00"
       }
     ],
     "total": {
@@ -1707,6 +1736,49 @@
       "median_value_before": "65823.70",
       "median_value_after": "65823.70"
     }
+  },
+  "planning": {
+    "bands": {
+      "p25": "47209.53",
+      "p50": "82013.36",
+      "p75": "115752.40",
+      "p90": "229617.71"
+    },
+    "base": {
+      "p25": "36659.60",
+      "p50": "65823.70",
+      "p75": "115104.20",
+      "p90": "190962.10"
+    },
+    "factor": {
+      "p25": "1.29",
+      "p50": "1.25",
+      "p75": "1.01",
+      "p90": "1.20"
+    },
+    "calibrated": true,
+    "n_scores": 53,
+    "min_history": 12,
+    "reachable": {
+      "p25": true,
+      "p50": true,
+      "p75": true,
+      "p90": true
+    },
+    "n": 43,
+    "notes": [
+      "Adjusted from 53 earlier matters of this type whose outcome against their own bands is known. Raised: P25 x1.29, P50 x1.25, P75 x1.01, P90 x1.20."
+    ],
+    "unreachable": [],
+    "label": "Planning figures",
+    "descriptive_label": "Of the comps (descriptive)",
+    "band_source": {
+      "p25": "comps",
+      "p50": "comps",
+      "p75": "comps",
+      "p90": "comps"
+    },
+    "cost_share_of_value": "0.33"
   },
   "scenarios": [
     {
@@ -1725,11 +1797,11 @@
         "n": 43
       },
       "expected_revenue": "90000",
-      "expected_cost": "29048.08",
-      "expected_margin": "60951.92",
-      "margin_pct_of_revenue": "67.70",
-      "revenue_vs_standard_value_pct": "101.20",
-      "downside_p90_margin": "31903.70",
+      "expected_cost": "28831.59",
+      "expected_margin": "61168.41",
+      "margin_pct_of_revenue": "68.00",
+      "revenue_vs_standard_value_pct": "102.00",
+      "downside_p90_margin": "29712.70",
       "notes": [
         "Revenue is the fee on every comp, whatever the work turned out to be."
       ],
@@ -1855,199 +1927,228 @@
         },
         {
           "matter_id": "M-0357",
-          "value": "26433.20",
-          "cost": "8583.00",
+          "value": "27455.40",
+          "cost": "8859.00",
           "revenue": "90000",
-          "margin": "81417.00"
+          "margin": "81141.00"
         },
         {
           "matter_id": "M-0346",
-          "value": "45218.80",
-          "cost": "14811.00",
+          "value": "44684.30",
+          "cost": "14556.50",
           "revenue": "90000",
-          "margin": "75189.00"
+          "margin": "75443.50"
         },
         {
           "matter_id": "M-0345",
-          "value": "288383.20",
-          "cost": "95258.50",
+          "value": "289462.50",
+          "cost": "95698.50",
           "revenue": "90000",
-          "margin": "-5258.50"
+          "margin": "-5698.50"
         },
         {
           "matter_id": "M-0408",
-          "value": "331287.40",
-          "cost": "109218.00",
+          "value": "323453.40",
+          "cost": "106001.50",
           "revenue": "90000",
-          "margin": "-19218.00"
+          "margin": "-16001.50"
         },
         {
           "matter_id": "M-0398",
-          "value": "58405.00",
-          "cost": "18849.50",
+          "value": "55073.00",
+          "cost": "18343.00",
           "revenue": "90000",
-          "margin": "71150.50"
+          "margin": "71657.00"
         },
         {
           "matter_id": "M-0386",
-          "value": "165684.80",
-          "cost": "53785.50",
+          "value": "161641.20",
+          "cost": "52602.00",
           "revenue": "90000",
-          "margin": "36214.50"
+          "margin": "37398.00"
         },
         {
           "matter_id": "M-0370",
-          "value": "55496.80",
-          "cost": "18093.00",
+          "value": "56882.50",
+          "cost": "18676.00",
           "revenue": "90000",
-          "margin": "71907.00"
+          "margin": "71324.00"
         },
         {
           "matter_id": "M-0405",
-          "value": "68082.90",
-          "cost": "21845.00",
+          "value": "71181.40",
+          "cost": "23134.00",
           "revenue": "90000",
-          "margin": "68155.00"
+          "margin": "66866.00"
         },
         {
           "matter_id": "M-0372",
-          "value": "42831.50",
-          "cost": "14077.50",
+          "value": "38223.40",
+          "cost": "12598.00",
           "revenue": "90000",
-          "margin": "75922.50"
+          "margin": "77402.00"
         },
         {
           "matter_id": "M-0390",
-          "value": "82117.80",
-          "cost": "26602.00",
+          "value": "77116.70",
+          "cost": "24624.50",
           "revenue": "90000",
-          "margin": "63398.00"
+          "margin": "65375.50"
         },
         {
           "matter_id": "M-0413",
-          "value": "48380.50",
-          "cost": "15680.50",
+          "value": "36659.60",
+          "cost": "11661.00",
           "revenue": "90000",
-          "margin": "74319.50"
+          "margin": "78339.00"
         },
         {
           "matter_id": "M-0430",
-          "value": "251962.90",
-          "cost": "82523.50",
+          "value": "248211.90",
+          "cost": "81570.50",
           "revenue": "90000",
-          "margin": "7476.50"
+          "margin": "8429.50"
         },
         {
           "matter_id": "M-0472",
-          "value": "113334.80",
-          "cost": "36692.00",
+          "value": "115752.40",
+          "cost": "37843.50",
           "revenue": "90000",
-          "margin": "53308.00"
+          "margin": "52156.50"
         },
         {
           "matter_id": "M-0462",
-          "value": "34823.20",
-          "cost": "11135.50",
+          "value": "43838.60",
+          "cost": "13946.00",
           "revenue": "90000",
-          "margin": "78864.50"
+          "margin": "76054.00"
         },
         {
           "matter_id": "M-0499",
-          "value": "76768.80",
-          "cost": "25508.50",
+          "value": "69491.30",
+          "cost": "22682.00",
           "revenue": "90000",
-          "margin": "64491.50"
+          "margin": "67318.00"
         },
         {
           "matter_id": "M-0421",
-          "value": "182290.40",
-          "cost": "59174.00",
+          "value": "190962.10",
+          "cost": "61945.50",
           "revenue": "90000",
-          "margin": "30826.00"
+          "margin": "28054.50"
         },
         {
           "matter_id": "M-0515",
-          "value": "22211.10",
-          "cost": "6928.00",
+          "value": "23484.50",
+          "cost": "7356.50",
           "revenue": "90000",
-          "margin": "83072.00"
+          "margin": "82643.50"
         },
         {
           "matter_id": "M-0529",
-          "value": "15912.60",
-          "cost": "4984.50",
+          "value": "20291.10",
+          "cost": "6652.50",
           "revenue": "90000",
-          "margin": "85015.50"
+          "margin": "83347.50"
         },
         {
           "matter_id": "M-0488",
-          "value": "31592.30",
-          "cost": "10010.50",
+          "value": "35807.60",
+          "cost": "11763.00",
           "revenue": "90000",
-          "margin": "79989.50"
+          "margin": "78237.00"
         },
         {
           "matter_id": "M-0559",
-          "value": "99584.30",
-          "cost": "32850.00",
+          "value": "90680.50",
+          "cost": "29431.50",
           "revenue": "90000",
-          "margin": "57150.00"
+          "margin": "60568.50"
         },
         {
           "matter_id": "M-0555",
-          "value": "114980.40",
-          "cost": "37383.50",
+          "value": "117195.10",
+          "cost": "38610.00",
           "revenue": "90000",
-          "margin": "52616.50"
+          "margin": "51390.00"
         },
         {
           "matter_id": "M-0540",
-          "value": "74526.00",
-          "cost": "24379.00",
+          "value": "86553.80",
+          "cost": "29364.00",
           "revenue": "90000",
-          "margin": "65621.00"
+          "margin": "60636.00"
         },
         {
           "matter_id": "M-0570",
-          "value": "50713.00",
-          "cost": "16725.00",
+          "value": "48431.50",
+          "cost": "15810.00",
           "revenue": "90000",
-          "margin": "73275.00"
+          "margin": "74190.00"
         },
         {
           "matter_id": "M-0545",
-          "value": "153742.30",
-          "cost": "50149.50",
+          "value": "162975.30",
+          "cost": "53654.50",
           "revenue": "90000",
-          "margin": "39850.50"
+          "margin": "36345.50"
         },
         {
           "matter_id": "M-0569",
-          "value": "133927.10",
-          "cost": "43387.50",
+          "value": "112862.40",
+          "cost": "36445.50",
           "revenue": "90000",
-          "margin": "46612.50"
+          "margin": "53554.50"
         },
         {
           "matter_id": "M-0593",
-          "value": "157798.30",
-          "cost": "52230.50",
+          "value": "146539.10",
+          "cost": "47727.00",
           "revenue": "90000",
-          "margin": "37769.50"
+          "margin": "42273.00"
         }
       ],
       "in_sample_note": "In sample: counted on the same comps the bands were built from.",
       "out_of_sample": {
         "available": true,
-        "nearest_band": "p75",
-        "band_value": "114157.60",
-        "at_or_under": {
-          "count": 38,
-          "n": 53,
-          "nominal_pct": 75
+        "position": {
+          "at_or_above": "p50",
+          "below": "p75"
         },
-        "nominal_pct": 75,
-        "text": "Fee is nearest the comp P75 ($114,200). Walk-forward: 38 of 53 back-tested matters came in at or under their predicted P75; the band implies 75%."
+        "where": "Fee is between the planning P50 ($82,000) and P75 ($115,800).",
+        "bands": {
+          "p50": {
+            "count": 22,
+            "n": 53,
+            "nominal_pct": 50
+          },
+          "p75": {
+            "count": 40,
+            "n": 53,
+            "nominal_pct": 75
+          }
+        },
+        "text": "Fee is between the planning P50 ($82,000) and P75 ($115,800). Walk-forward, back-tested matters of this type: 22 of 53 at or under their planning P50 (the band implies 50%); 40 of 53 at or under their planning P75 (the band implies 75%)."
+      },
+      "at_planning": {
+        "p50": {
+          "value": "82013.36",
+          "revenue": "90000",
+          "cost": "26809.01",
+          "margin": "63190.99"
+        },
+        "p75": {
+          "value": "115752.40",
+          "revenue": "90000",
+          "cost": "37837.83",
+          "margin": "52162.17"
+        },
+        "p90": {
+          "value": "229617.71",
+          "revenue": "90000",
+          "cost": "75058.79",
+          "margin": "14941.21"
+        }
       }
     },
     {
@@ -2058,19 +2159,19 @@
       },
       "n": 43,
       "under_fee": {
-        "count": 34,
+        "count": 35,
         "n": 43
       },
       "no_loss": {
         "count": 43,
         "n": 43
       },
-      "expected_revenue": "70937.88",
-      "expected_cost": "29048.08",
-      "expected_margin": "41889.80",
-      "margin_pct_of_revenue": "59.10",
-      "revenue_vs_standard_value_pct": "79.80",
-      "downside_p90_margin": "15578.72",
+      "expected_revenue": "70711.18",
+      "expected_cost": "28831.59",
+      "expected_margin": "41879.59",
+      "margin_pct_of_revenue": "59.20",
+      "revenue_vs_standard_value_pct": "80.20",
+      "downside_p90_margin": "16203.84",
       "notes": [
         "Billed hourly at standard rates up to the cap; work above the cap is not paid."
       ],
@@ -2196,203 +2297,232 @@
         },
         {
           "matter_id": "M-0357",
-          "value": "26433.20",
-          "cost": "8583.00",
-          "revenue": "26433.20",
-          "margin": "17850.20"
+          "value": "27455.40",
+          "cost": "8859.00",
+          "revenue": "27455.40",
+          "margin": "18596.40"
         },
         {
           "matter_id": "M-0346",
-          "value": "45218.80",
-          "cost": "14811.00",
-          "revenue": "45218.80",
-          "margin": "30407.80"
+          "value": "44684.30",
+          "cost": "14556.50",
+          "revenue": "44684.30",
+          "margin": "30127.80"
         },
         {
           "matter_id": "M-0345",
-          "value": "288383.20",
-          "cost": "95258.50",
+          "value": "289462.50",
+          "cost": "95698.50",
           "revenue": "120000",
-          "margin": "24741.50"
+          "margin": "24301.50"
         },
         {
           "matter_id": "M-0408",
-          "value": "331287.40",
-          "cost": "109218.00",
+          "value": "323453.40",
+          "cost": "106001.50",
           "revenue": "120000",
-          "margin": "10782.00"
+          "margin": "13998.50"
         },
         {
           "matter_id": "M-0398",
-          "value": "58405.00",
-          "cost": "18849.50",
-          "revenue": "58405.00",
-          "margin": "39555.50"
+          "value": "55073.00",
+          "cost": "18343.00",
+          "revenue": "55073.00",
+          "margin": "36730.00"
         },
         {
           "matter_id": "M-0386",
-          "value": "165684.80",
-          "cost": "53785.50",
+          "value": "161641.20",
+          "cost": "52602.00",
           "revenue": "120000",
-          "margin": "66214.50"
+          "margin": "67398.00"
         },
         {
           "matter_id": "M-0370",
-          "value": "55496.80",
-          "cost": "18093.00",
-          "revenue": "55496.80",
-          "margin": "37403.80"
+          "value": "56882.50",
+          "cost": "18676.00",
+          "revenue": "56882.50",
+          "margin": "38206.50"
         },
         {
           "matter_id": "M-0405",
-          "value": "68082.90",
-          "cost": "21845.00",
-          "revenue": "68082.90",
-          "margin": "46237.90"
+          "value": "71181.40",
+          "cost": "23134.00",
+          "revenue": "71181.40",
+          "margin": "48047.40"
         },
         {
           "matter_id": "M-0372",
-          "value": "42831.50",
-          "cost": "14077.50",
-          "revenue": "42831.50",
-          "margin": "28754.00"
+          "value": "38223.40",
+          "cost": "12598.00",
+          "revenue": "38223.40",
+          "margin": "25625.40"
         },
         {
           "matter_id": "M-0390",
-          "value": "82117.80",
-          "cost": "26602.00",
-          "revenue": "82117.80",
-          "margin": "55515.80"
+          "value": "77116.70",
+          "cost": "24624.50",
+          "revenue": "77116.70",
+          "margin": "52492.20"
         },
         {
           "matter_id": "M-0413",
-          "value": "48380.50",
-          "cost": "15680.50",
-          "revenue": "48380.50",
-          "margin": "32700.00"
+          "value": "36659.60",
+          "cost": "11661.00",
+          "revenue": "36659.60",
+          "margin": "24998.60"
         },
         {
           "matter_id": "M-0430",
-          "value": "251962.90",
-          "cost": "82523.50",
+          "value": "248211.90",
+          "cost": "81570.50",
           "revenue": "120000",
-          "margin": "37476.50"
+          "margin": "38429.50"
         },
         {
           "matter_id": "M-0472",
-          "value": "113334.80",
-          "cost": "36692.00",
-          "revenue": "113334.80",
-          "margin": "76642.80"
+          "value": "115752.40",
+          "cost": "37843.50",
+          "revenue": "115752.40",
+          "margin": "77908.90"
         },
         {
           "matter_id": "M-0462",
-          "value": "34823.20",
-          "cost": "11135.50",
-          "revenue": "34823.20",
-          "margin": "23687.70"
+          "value": "43838.60",
+          "cost": "13946.00",
+          "revenue": "43838.60",
+          "margin": "29892.60"
         },
         {
           "matter_id": "M-0499",
-          "value": "76768.80",
-          "cost": "25508.50",
-          "revenue": "76768.80",
-          "margin": "51260.30"
+          "value": "69491.30",
+          "cost": "22682.00",
+          "revenue": "69491.30",
+          "margin": "46809.30"
         },
         {
           "matter_id": "M-0421",
-          "value": "182290.40",
-          "cost": "59174.00",
+          "value": "190962.10",
+          "cost": "61945.50",
           "revenue": "120000",
-          "margin": "60826.00"
+          "margin": "58054.50"
         },
         {
           "matter_id": "M-0515",
-          "value": "22211.10",
-          "cost": "6928.00",
-          "revenue": "22211.10",
-          "margin": "15283.10"
+          "value": "23484.50",
+          "cost": "7356.50",
+          "revenue": "23484.50",
+          "margin": "16128.00"
         },
         {
           "matter_id": "M-0529",
-          "value": "15912.60",
-          "cost": "4984.50",
-          "revenue": "15912.60",
-          "margin": "10928.10"
+          "value": "20291.10",
+          "cost": "6652.50",
+          "revenue": "20291.10",
+          "margin": "13638.60"
         },
         {
           "matter_id": "M-0488",
-          "value": "31592.30",
-          "cost": "10010.50",
-          "revenue": "31592.30",
-          "margin": "21581.80"
+          "value": "35807.60",
+          "cost": "11763.00",
+          "revenue": "35807.60",
+          "margin": "24044.60"
         },
         {
           "matter_id": "M-0559",
-          "value": "99584.30",
-          "cost": "32850.00",
-          "revenue": "99584.30",
-          "margin": "66734.30"
+          "value": "90680.50",
+          "cost": "29431.50",
+          "revenue": "90680.50",
+          "margin": "61249.00"
         },
         {
           "matter_id": "M-0555",
-          "value": "114980.40",
-          "cost": "37383.50",
-          "revenue": "114980.40",
-          "margin": "77596.90"
+          "value": "117195.10",
+          "cost": "38610.00",
+          "revenue": "117195.10",
+          "margin": "78585.10"
         },
         {
           "matter_id": "M-0540",
-          "value": "74526.00",
-          "cost": "24379.00",
-          "revenue": "74526.00",
-          "margin": "50147.00"
+          "value": "86553.80",
+          "cost": "29364.00",
+          "revenue": "86553.80",
+          "margin": "57189.80"
         },
         {
           "matter_id": "M-0570",
-          "value": "50713.00",
-          "cost": "16725.00",
-          "revenue": "50713.00",
-          "margin": "33988.00"
+          "value": "48431.50",
+          "cost": "15810.00",
+          "revenue": "48431.50",
+          "margin": "32621.50"
         },
         {
           "matter_id": "M-0545",
-          "value": "153742.30",
-          "cost": "50149.50",
+          "value": "162975.30",
+          "cost": "53654.50",
           "revenue": "120000",
-          "margin": "69850.50"
+          "margin": "66345.50"
         },
         {
           "matter_id": "M-0569",
-          "value": "133927.10",
-          "cost": "43387.50",
-          "revenue": "120000",
-          "margin": "76612.50"
+          "value": "112862.40",
+          "cost": "36445.50",
+          "revenue": "112862.40",
+          "margin": "76416.90"
         },
         {
           "matter_id": "M-0593",
-          "value": "157798.30",
-          "cost": "52230.50",
+          "value": "146539.10",
+          "cost": "47727.00",
           "revenue": "120000",
-          "margin": "67769.50"
+          "margin": "72273.00"
         }
       ],
       "hit_cap": {
-        "count": 9,
+        "count": 8,
         "n": 43
       },
       "in_sample_note": "In sample: counted on the same comps the bands were built from.",
       "out_of_sample": {
         "available": true,
-        "nearest_band": "p75",
-        "band_value": "114157.60",
-        "at_or_under": {
-          "count": 38,
-          "n": 53,
-          "nominal_pct": 75
+        "position": {
+          "at_or_above": "p75",
+          "below": "p90"
         },
-        "nominal_pct": 75,
-        "text": "Fee is nearest the comp P75 ($114,200). Walk-forward: 38 of 53 back-tested matters came in at or under their predicted P75; the band implies 75%."
+        "where": "Fee is between the planning P75 ($115,800) and P90 ($229,600).",
+        "bands": {
+          "p75": {
+            "count": 40,
+            "n": 53,
+            "nominal_pct": 75
+          },
+          "p90": {
+            "count": 49,
+            "n": 53,
+            "nominal_pct": 90
+          }
+        },
+        "text": "Fee is between the planning P75 ($115,800) and P90 ($229,600). Walk-forward, back-tested matters of this type: 40 of 53 at or under their planning P75 (the band implies 75%); 49 of 53 at or under their planning P90 (the band implies 90%)."
+      },
+      "at_planning": {
+        "p50": {
+          "value": "82013.36",
+          "revenue": "82013.36",
+          "cost": "26809.01",
+          "margin": "55204.35"
+        },
+        "p75": {
+          "value": "115752.40",
+          "revenue": "115752.40",
+          "cost": "37837.83",
+          "margin": "77914.57"
+        },
+        "p90": {
+          "value": "229617.71",
+          "revenue": "120000",
+          "cost": "75058.79",
+          "margin": "44941.21"
+        }
       }
     },
     {
@@ -2418,11 +2548,11 @@
         "n": 43
       },
       "expected_revenue": "100488.37",
-      "expected_cost": "29048.08",
-      "expected_margin": "71440.29",
-      "margin_pct_of_revenue": "71.10",
-      "revenue_vs_standard_value_pct": "113.00",
-      "downside_p90_margin": "33472.80",
+      "expected_cost": "28831.59",
+      "expected_margin": "71656.78",
+      "margin_pct_of_revenue": "71.30",
+      "revenue_vs_standard_value_pct": "113.90",
+      "downside_p90_margin": "33717.50",
       "notes": [
         "Each phase fee is charged only on comps where that phase happened."
       ],
@@ -2548,185 +2678,185 @@
         },
         {
           "matter_id": "M-0357",
-          "value": "26433.20",
-          "cost": "8583.00",
+          "value": "27455.40",
+          "cost": "8859.00",
           "revenue": "67000",
-          "margin": "58417.00"
+          "margin": "58141.00"
         },
         {
           "matter_id": "M-0346",
-          "value": "45218.80",
-          "cost": "14811.00",
+          "value": "44684.30",
+          "cost": "14556.50",
           "revenue": "67000",
-          "margin": "52189.00"
+          "margin": "52443.50"
         },
         {
           "matter_id": "M-0345",
-          "value": "288383.20",
-          "cost": "95258.50",
+          "value": "289462.50",
+          "cost": "95698.50",
           "revenue": "127000",
-          "margin": "31741.50"
+          "margin": "31301.50"
         },
         {
           "matter_id": "M-0408",
-          "value": "331287.40",
-          "cost": "109218.00",
+          "value": "323453.40",
+          "cost": "106001.50",
           "revenue": "127000",
-          "margin": "17782.00"
+          "margin": "20998.50"
         },
         {
           "matter_id": "M-0398",
-          "value": "58405.00",
-          "cost": "18849.50",
+          "value": "55073.00",
+          "cost": "18343.00",
           "revenue": "127000",
-          "margin": "108150.50"
+          "margin": "108657.00"
         },
         {
           "matter_id": "M-0386",
-          "value": "165684.80",
-          "cost": "53785.50",
+          "value": "161641.20",
+          "cost": "52602.00",
           "revenue": "127000",
-          "margin": "73214.50"
+          "margin": "74398.00"
         },
         {
           "matter_id": "M-0370",
-          "value": "55496.80",
-          "cost": "18093.00",
+          "value": "56882.50",
+          "cost": "18676.00",
           "revenue": "127000",
-          "margin": "108907.00"
+          "margin": "108324.00"
         },
         {
           "matter_id": "M-0405",
-          "value": "68082.90",
-          "cost": "21845.00",
+          "value": "71181.40",
+          "cost": "23134.00",
           "revenue": "67000",
-          "margin": "45155.00"
+          "margin": "43866.00"
         },
         {
           "matter_id": "M-0372",
-          "value": "42831.50",
-          "cost": "14077.50",
+          "value": "38223.40",
+          "cost": "12598.00",
           "revenue": "127000",
-          "margin": "112922.50"
+          "margin": "114402.00"
         },
         {
           "matter_id": "M-0390",
-          "value": "82117.80",
-          "cost": "26602.00",
+          "value": "77116.70",
+          "cost": "24624.50",
           "revenue": "67000",
-          "margin": "40398.00"
+          "margin": "42375.50"
         },
         {
           "matter_id": "M-0413",
-          "value": "48380.50",
-          "cost": "15680.50",
+          "value": "36659.60",
+          "cost": "11661.00",
           "revenue": "67000",
-          "margin": "51319.50"
+          "margin": "55339.00"
         },
         {
           "matter_id": "M-0430",
-          "value": "251962.90",
-          "cost": "82523.50",
+          "value": "248211.90",
+          "cost": "81570.50",
           "revenue": "127000",
-          "margin": "44476.50"
+          "margin": "45429.50"
         },
         {
           "matter_id": "M-0472",
-          "value": "113334.80",
-          "cost": "36692.00",
+          "value": "115752.40",
+          "cost": "37843.50",
           "revenue": "127000",
-          "margin": "90308.00"
+          "margin": "89156.50"
         },
         {
           "matter_id": "M-0462",
-          "value": "34823.20",
-          "cost": "11135.50",
+          "value": "43838.60",
+          "cost": "13946.00",
           "revenue": "67000",
-          "margin": "55864.50"
+          "margin": "53054.00"
         },
         {
           "matter_id": "M-0499",
-          "value": "76768.80",
-          "cost": "25508.50",
+          "value": "69491.30",
+          "cost": "22682.00",
           "revenue": "127000",
-          "margin": "101491.50"
+          "margin": "104318.00"
         },
         {
           "matter_id": "M-0421",
-          "value": "182290.40",
-          "cost": "59174.00",
+          "value": "190962.10",
+          "cost": "61945.50",
           "revenue": "127000",
-          "margin": "67826.00"
+          "margin": "65054.50"
         },
         {
           "matter_id": "M-0515",
-          "value": "22211.10",
-          "cost": "6928.00",
+          "value": "23484.50",
+          "cost": "7356.50",
           "revenue": "67000",
-          "margin": "60072.00"
+          "margin": "59643.50"
         },
         {
           "matter_id": "M-0529",
-          "value": "15912.60",
-          "cost": "4984.50",
+          "value": "20291.10",
+          "cost": "6652.50",
           "revenue": "67000",
-          "margin": "62015.50"
+          "margin": "60347.50"
         },
         {
           "matter_id": "M-0488",
-          "value": "31592.30",
-          "cost": "10010.50",
+          "value": "35807.60",
+          "cost": "11763.00",
           "revenue": "67000",
-          "margin": "56989.50"
+          "margin": "55237.00"
         },
         {
           "matter_id": "M-0559",
-          "value": "99584.30",
-          "cost": "32850.00",
+          "value": "90680.50",
+          "cost": "29431.50",
           "revenue": "127000",
-          "margin": "94150.00"
+          "margin": "97568.50"
         },
         {
           "matter_id": "M-0555",
-          "value": "114980.40",
-          "cost": "37383.50",
+          "value": "117195.10",
+          "cost": "38610.00",
           "revenue": "67000",
-          "margin": "29616.50"
+          "margin": "28390.00"
         },
         {
           "matter_id": "M-0540",
-          "value": "74526.00",
-          "cost": "24379.00",
+          "value": "86553.80",
+          "cost": "29364.00",
           "revenue": "127000",
-          "margin": "102621.00"
+          "margin": "97636.00"
         },
         {
           "matter_id": "M-0570",
-          "value": "50713.00",
-          "cost": "16725.00",
+          "value": "48431.50",
+          "cost": "15810.00",
           "revenue": "67000",
-          "margin": "50275.00"
+          "margin": "51190.00"
         },
         {
           "matter_id": "M-0545",
-          "value": "153742.30",
-          "cost": "50149.50",
+          "value": "162975.30",
+          "cost": "53654.50",
           "revenue": "127000",
-          "margin": "76850.50"
+          "margin": "73345.50"
         },
         {
           "matter_id": "M-0569",
-          "value": "133927.10",
-          "cost": "43387.50",
+          "value": "112862.40",
+          "cost": "36445.50",
           "revenue": "67000",
-          "margin": "23612.50"
+          "margin": "30554.50"
         },
         {
           "matter_id": "M-0593",
-          "value": "157798.30",
-          "cost": "52230.50",
+          "value": "146539.10",
+          "cost": "47727.00",
           "revenue": "127000",
-          "margin": "74769.50"
+          "margin": "79273.00"
         }
       ],
       "by_phase": [
@@ -2743,7 +2873,7 @@
             "count": 43,
             "n": 43
           },
-          "median_value": "6701.10"
+          "median_value": "6642.10"
         },
         {
           "phase": "drafting",
@@ -2751,14 +2881,14 @@
           "n_occurred": 43,
           "n": 43,
           "under_fee": {
-            "count": 30,
+            "count": 31,
             "n": 43
           },
           "no_loss": {
             "count": 43,
             "n": 43
           },
-          "median_value": "13260.30"
+          "median_value": "13366.50"
         },
         {
           "phase": "discovery",
@@ -2773,7 +2903,7 @@
             "count": 43,
             "n": 43
           },
-          "median_value": "16255.10"
+          "median_value": "14773.20"
         },
         {
           "phase": "hearing",
@@ -2788,7 +2918,7 @@
             "count": 23,
             "n": 24
           },
-          "median_value": "40161.85"
+          "median_value": "43376.80"
         },
         {
           "phase": "closing",
@@ -2796,21 +2926,23 @@
           "n_occurred": 43,
           "n": 43,
           "under_fee": {
-            "count": 28,
+            "count": 29,
             "n": 43
           },
           "no_loss": {
             "count": 42,
             "n": 43
           },
-          "median_value": "6924.80"
+          "median_value": "6843.00"
         }
       ],
       "in_sample_note": "In sample: counted on the same comps the bands were built from.",
       "out_of_sample": {
         "available": false,
+        "position": null,
         "text": "No single fee to compare with a band."
-      }
+      },
+      "at_planning": null
     },
     {
       "type": "collar",
@@ -2831,12 +2963,12 @@
         "count": 43,
         "n": 43
       },
-      "expected_revenue": "91694.23",
-      "expected_cost": "29048.08",
-      "expected_margin": "62646.15",
-      "margin_pct_of_revenue": "68.30",
-      "revenue_vs_standard_value_pct": "103.10",
-      "downside_p90_margin": "56018.76",
+      "expected_revenue": "91374.94",
+      "expected_cost": "28831.59",
+      "expected_margin": "62543.35",
+      "margin_pct_of_revenue": "68.40",
+      "revenue_vs_standard_value_pct": "103.60",
+      "downside_p90_margin": "56232.34",
       "notes": [
         "Inside the band the fee stands. Above it the client pays the shared part of the overrun; below it the client gets back the shared part of the underrun."
       ],
@@ -2962,185 +3094,185 @@
         },
         {
           "matter_id": "M-0357",
-          "value": "26433.20",
-          "cost": "8583.00",
-          "revenue": "64966.60",
-          "margin": "56383.60"
+          "value": "27455.40",
+          "cost": "8859.00",
+          "revenue": "65477.70",
+          "margin": "56618.70"
         },
         {
           "matter_id": "M-0346",
-          "value": "45218.80",
-          "cost": "14811.00",
-          "revenue": "74359.40",
-          "margin": "59548.40"
+          "value": "44684.30",
+          "cost": "14556.50",
+          "revenue": "74092.15",
+          "margin": "59535.65"
         },
         {
           "matter_id": "M-0345",
-          "value": "288383.20",
-          "cost": "95258.50",
-          "revenue": "182441.60",
-          "margin": "87183.10"
+          "value": "289462.50",
+          "cost": "95698.50",
+          "revenue": "182981.25",
+          "margin": "87282.75"
         },
         {
           "matter_id": "M-0408",
-          "value": "331287.40",
-          "cost": "109218.00",
-          "revenue": "203893.70",
-          "margin": "94675.70"
+          "value": "323453.40",
+          "cost": "106001.50",
+          "revenue": "199976.70",
+          "margin": "93975.20"
         },
         {
           "matter_id": "M-0398",
-          "value": "58405.00",
-          "cost": "18849.50",
-          "revenue": "80952.50",
-          "margin": "62103.00"
+          "value": "55073.00",
+          "cost": "18343.00",
+          "revenue": "79286.50",
+          "margin": "60943.50"
         },
         {
           "matter_id": "M-0386",
-          "value": "165684.80",
-          "cost": "53785.50",
-          "revenue": "121092.40",
-          "margin": "67306.90"
+          "value": "161641.20",
+          "cost": "52602.00",
+          "revenue": "119070.60",
+          "margin": "66468.60"
         },
         {
           "matter_id": "M-0370",
-          "value": "55496.80",
-          "cost": "18093.00",
-          "revenue": "79498.40",
-          "margin": "61405.40"
+          "value": "56882.50",
+          "cost": "18676.00",
+          "revenue": "80191.25",
+          "margin": "61515.25"
         },
         {
           "matter_id": "M-0405",
-          "value": "68082.90",
-          "cost": "21845.00",
-          "revenue": "85791.45",
-          "margin": "63946.45"
+          "value": "71181.40",
+          "cost": "23134.00",
+          "revenue": "87340.70",
+          "margin": "64206.70"
         },
         {
           "matter_id": "M-0372",
-          "value": "42831.50",
-          "cost": "14077.50",
-          "revenue": "73165.75",
-          "margin": "59088.25"
+          "value": "38223.40",
+          "cost": "12598.00",
+          "revenue": "70861.70",
+          "margin": "58263.70"
         },
         {
           "matter_id": "M-0390",
-          "value": "82117.80",
-          "cost": "26602.00",
+          "value": "77116.70",
+          "cost": "24624.50",
           "revenue": "90000",
-          "margin": "63398.00"
+          "margin": "65375.50"
         },
         {
           "matter_id": "M-0413",
-          "value": "48380.50",
-          "cost": "15680.50",
-          "revenue": "75940.25",
-          "margin": "60259.75"
+          "value": "36659.60",
+          "cost": "11661.00",
+          "revenue": "70079.80",
+          "margin": "58418.80"
         },
         {
           "matter_id": "M-0430",
-          "value": "251962.90",
-          "cost": "82523.50",
-          "revenue": "164231.45",
-          "margin": "81707.95"
+          "value": "248211.90",
+          "cost": "81570.50",
+          "revenue": "162355.95",
+          "margin": "80785.45"
         },
         {
           "matter_id": "M-0472",
-          "value": "113334.80",
-          "cost": "36692.00",
-          "revenue": "94917.40",
-          "margin": "58225.40"
+          "value": "115752.40",
+          "cost": "37843.50",
+          "revenue": "96126.20",
+          "margin": "58282.70"
         },
         {
           "matter_id": "M-0462",
-          "value": "34823.20",
-          "cost": "11135.50",
-          "revenue": "69161.60",
-          "margin": "58026.10"
+          "value": "43838.60",
+          "cost": "13946.00",
+          "revenue": "73669.30",
+          "margin": "59723.30"
         },
         {
           "matter_id": "M-0499",
-          "value": "76768.80",
-          "cost": "25508.50",
-          "revenue": "90000",
-          "margin": "64491.50"
+          "value": "69491.30",
+          "cost": "22682.00",
+          "revenue": "86495.65",
+          "margin": "63813.65"
         },
         {
           "matter_id": "M-0421",
-          "value": "182290.40",
-          "cost": "59174.00",
-          "revenue": "129395.20",
-          "margin": "70221.20"
+          "value": "190962.10",
+          "cost": "61945.50",
+          "revenue": "133731.05",
+          "margin": "71785.55"
         },
         {
           "matter_id": "M-0515",
-          "value": "22211.10",
-          "cost": "6928.00",
-          "revenue": "62855.55",
-          "margin": "55927.55"
+          "value": "23484.50",
+          "cost": "7356.50",
+          "revenue": "63492.25",
+          "margin": "56135.75"
         },
         {
           "matter_id": "M-0529",
-          "value": "15912.60",
-          "cost": "4984.50",
-          "revenue": "59706.30",
-          "margin": "54721.80"
+          "value": "20291.10",
+          "cost": "6652.50",
+          "revenue": "61895.55",
+          "margin": "55243.05"
         },
         {
           "matter_id": "M-0488",
-          "value": "31592.30",
-          "cost": "10010.50",
-          "revenue": "67546.15",
-          "margin": "57535.65"
+          "value": "35807.60",
+          "cost": "11763.00",
+          "revenue": "69653.80",
+          "margin": "57890.80"
         },
         {
           "matter_id": "M-0559",
-          "value": "99584.30",
-          "cost": "32850.00",
+          "value": "90680.50",
+          "cost": "29431.50",
           "revenue": "90000",
-          "margin": "57150.00"
+          "margin": "60568.50"
         },
         {
           "matter_id": "M-0555",
-          "value": "114980.40",
-          "cost": "37383.50",
-          "revenue": "95740.20",
-          "margin": "58356.70"
+          "value": "117195.10",
+          "cost": "38610.00",
+          "revenue": "96847.55",
+          "margin": "58237.55"
         },
         {
           "matter_id": "M-0540",
-          "value": "74526.00",
-          "cost": "24379.00",
-          "revenue": "89013.00",
-          "margin": "64634.00"
+          "value": "86553.80",
+          "cost": "29364.00",
+          "revenue": "90000",
+          "margin": "60636.00"
         },
         {
           "matter_id": "M-0570",
-          "value": "50713.00",
-          "cost": "16725.00",
-          "revenue": "77106.50",
-          "margin": "60381.50"
+          "value": "48431.50",
+          "cost": "15810.00",
+          "revenue": "75965.75",
+          "margin": "60155.75"
         },
         {
           "matter_id": "M-0545",
-          "value": "153742.30",
-          "cost": "50149.50",
-          "revenue": "115121.15",
-          "margin": "64971.65"
+          "value": "162975.30",
+          "cost": "53654.50",
+          "revenue": "119737.65",
+          "margin": "66083.15"
         },
         {
           "matter_id": "M-0569",
-          "value": "133927.10",
-          "cost": "43387.50",
-          "revenue": "105213.55",
-          "margin": "61826.05"
+          "value": "112862.40",
+          "cost": "36445.50",
+          "revenue": "94681.20",
+          "margin": "58235.70"
         },
         {
           "matter_id": "M-0593",
-          "value": "157798.30",
-          "cost": "52230.50",
-          "revenue": "117149.15",
-          "margin": "64918.65"
+          "value": "146539.10",
+          "cost": "47727.00",
+          "revenue": "111519.55",
+          "margin": "63792.55"
         }
       ],
       "above_band": {
@@ -3158,52 +3290,79 @@
       "in_sample_note": "In sample: counted on the same comps the bands were built from.",
       "out_of_sample": {
         "available": true,
-        "nearest_band": "p75",
-        "band_value": "114157.60",
-        "at_or_under": {
-          "count": 38,
-          "n": 53,
-          "nominal_pct": 75
+        "position": {
+          "at_or_above": "p50",
+          "below": "p75"
         },
-        "nominal_pct": 75,
-        "text": "Fee is nearest the comp P75 ($114,200). Walk-forward: 38 of 53 back-tested matters came in at or under their predicted P75; the band implies 75%."
+        "where": "Fee is between the planning P50 ($82,000) and P75 ($115,800).",
+        "bands": {
+          "p50": {
+            "count": 22,
+            "n": 53,
+            "nominal_pct": 50
+          },
+          "p75": {
+            "count": 40,
+            "n": 53,
+            "nominal_pct": 75
+          }
+        },
+        "text": "Fee is between the planning P50 ($82,000) and P75 ($115,800). Walk-forward, back-tested matters of this type: 22 of 53 at or under their planning P50 (the band implies 50%); 40 of 53 at or under their planning P75 (the band implies 75%)."
+      },
+      "at_planning": {
+        "p50": {
+          "value": "82013.36",
+          "revenue": "90000",
+          "cost": "26809.01",
+          "margin": "63190.99"
+        },
+        "p75": {
+          "value": "115752.40",
+          "revenue": "96126.20",
+          "cost": "37837.83",
+          "margin": "58288.37"
+        },
+        "p90": {
+          "value": "229617.71",
+          "revenue": "153058.86",
+          "cost": "75058.79",
+          "margin": "78000.07"
+        }
       }
     }
   ],
   "target": {
     "target_probability": "0.80",
-    "fee_no_loss_on_cost": "43387.50",
+    "fee_no_loss_on_cost": "38610.00",
     "no_loss": {
       "count": 35,
       "n": 43
     },
-    "fee_covering_standard_value": "133927.10",
+    "fee_covering_standard_value": "117195.10",
     "under_fee": {
       "count": 35,
       "n": 43
     },
-    "n": 43
-  },
-  "drift": {
     "n": 43,
-    "n_early": 21,
-    "n_late": 22,
-    "median_early": "62194.70",
-    "median_late": "75647.40",
-    "late_over_early": "1.22",
-    "shuffles_as_extreme": 297,
-    "n_shuffles": 1000,
-    "shifted": false
+    "planning_fee_covering_standard_value": "147748.56",
+    "planning_base": "146539.10",
+    "planning_factor": "1.01",
+    "planning_floored_at_band": false,
+    "planning_from_recent_only": false,
+    "planning_calibrated": true,
+    "planning_n_scores": 53,
+    "planning_reachable": true,
+    "planning_fee_no_loss_on_cost": "48296.92"
   },
   "assumptions": [
     {
       "kind": "hearing",
-      "text": "Comps with a hearing (n=24) had a median cost of $81,200, 2.3x the median of comps without one ($34,800, n=19). Quote the hearing as a separate phase, or state that it is excluded.",
+      "text": "Comps with a hearing (n=24) had a median cost of $86,000, 2.3x the median of comps without one ($36,700, n=19). Quote the hearing as a separate phase, or state that it is excluded.",
       "evidence": {
         "n_with": 24,
         "n_without": 19,
-        "median_with": "81153.35",
-        "median_without": "34823.20",
+        "median_with": "86045.85",
+        "median_without": "36659.60",
         "ratio": "2.30",
         "matter_ids_with": [
           "M-0033",
@@ -3235,21 +3394,21 @@
     },
     {
       "kind": "overrun_phase",
-      "text": "The 11 comps above the P75 cost $135,100 more on average than the other 32. Hearing accounts for 59% of that gap ($80,200). Set a scope limit or a separate fee for that phase.",
+      "text": "The 11 comps above the P75 cost $133,100 more on average than the other 32. Hearing accounts for 66% of that gap ($87,300). Set a scope limit or a separate fee for that phase.",
       "evidence": {
         "n_above_p75": 11,
         "n_rest": 32,
-        "p75": "114157.60",
-        "gap_total": "135069.06",
+        "p75": "113983.30",
+        "gap_total": "133140.72",
         "gap_by_phase": {
-          "assessment": "10134.79",
-          "drafting": "13185.28",
-          "discovery": "21317.89",
-          "hearing": "80184.31",
-          "closing": "10246.80"
+          "assessment": "9556.51",
+          "drafting": "10682.47",
+          "discovery": "17928.55",
+          "hearing": "87311.42",
+          "closing": "7661.76"
         },
         "top_phase": "hearing",
-        "top_share_pct": "59",
+        "top_share_pct": "66",
         "matter_ids_above_p75": [
           "M-0063",
           "M-0118",
@@ -3257,24 +3416,24 @@
           "M-0408",
           "M-0386",
           "M-0430",
+          "M-0472",
           "M-0421",
           "M-0555",
           "M-0545",
-          "M-0569",
           "M-0593"
         ]
       }
     },
     {
       "kind": "num_parties",
-      "text": "Comps with more than 2 parties (n=17) had a median cost of $85,500, 1.6x the median of the rest ($53,400, n=26). State the number of parties the fee covers and price extra ones separately.",
+      "text": "Comps with more than 2 parties (n=17) had a median cost of $86,600, 1.7x the median of the rest ($51,400, n=26). State the number of parties the fee covers and price extra ones separately.",
       "evidence": {
         "cut": 2,
         "n_more": 17,
         "n_rest": 26,
-        "median_more": "85537.90",
-        "median_rest": "53392.75",
-        "ratio": "1.60"
+        "median_more": "86553.80",
+        "median_rest": "51448.85",
+        "ratio": "1.70"
       }
     },
     {
@@ -3299,34 +3458,36 @@
     },
     {
       "kind": "phase_confidence",
-      "text": "The phase split for 5 of 43 comps comes from the date-window fallback, not task codes. Treat per-phase figures as lower confidence; totals are not affected.",
+      "text": "The phase split for 7 of 43 comps comes from the date-window fallback, not task codes. Treat per-phase figures as lower confidence; totals are not affected.",
       "evidence": {
-        "n_low_confidence": 5,
+        "n_low_confidence": 7,
         "n": 43,
         "matter_ids": [
           "M-0020",
           "M-0145",
-          "M-0357",
-          "M-0398",
-          "M-0405"
+          "M-0386",
+          "M-0390",
+          "M-0462",
+          "M-0529",
+          "M-0570"
         ]
       }
     },
     {
       "kind": "write_downs",
-      "text": "Across the 43 comps, 3.9% of worked value was written down before billing and 1.4% of invoiced fees was not collected. A fee built from billed amounts would understate the work; the figures here use worked hours.",
+      "text": "Across the 43 comps, 3.9% of worked value was written down before billing and 3.1% of invoiced fees was not collected. A fee built from billed amounts would understate the work; the figures here use worked hours.",
       "evidence": {
         "n": 43,
-        "raw_worked": "3414663.00",
-        "raw_billed": "3280089.20",
-        "invoiced": "3280089.20",
-        "collected": "3233998.90",
+        "raw_worked": "3386605.00",
+        "raw_billed": "3253393.30",
+        "invoiced": "3253393.30",
+        "collected": "3151846.59",
         "write_down_pct": "3.90",
-        "uncollected_pct": "1.40"
+        "uncollected_pct": "3.10"
       }
     }
   ],
   "warnings": [
-    "Heavily skewed (n=43): the P90 is 2.7x the median and the mean is 1.4x the median. A few expensive matters dominate; an average would mislead."
+    "Heavily skewed (n=43): the P90 is 2.8x the median and the mean is 1.3x the median. A few expensive matters dominate; an average would mislead."
   ]
 }

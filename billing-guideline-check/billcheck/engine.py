@@ -26,6 +26,7 @@ from typing import List, Optional
 import datetime as dt
 
 from . import guidelines as G
+from . import lexicon as LX
 from .blockbilling import analyze
 from .model import ZERO, dec, fmt_money, fmt_num, money
 from .readers import validate_arithmetic
@@ -35,11 +36,8 @@ ARITH_LINE = "ARITH-LINE"
 ARITH_TOTAL = "ARITH-TOTAL"
 HUNDRED = Decimal("100")
 
-_TRAVEL = re.compile(r"\btravel(?:l?ing|led|ed)?\b", re.I)
-_RESEARCH = re.compile(r"\bresearch(?:ing|ed)?\b", re.I)
-_ATTEND = r"\b(?:attend|attending|attended|appear|appearing|appeared|defend|defending|defended|take|taking|took|participate|participating|participated)\b"
-_MEAL = re.compile(r"\b(?:meals?|breakfast|lunch|dinner)\b", re.I)
-_LODGING = re.compile(r"\b(?:hotel|lodging|motel)\b", re.I)
+_MEAL = LX.MEAL
+_LODGING = LX.LODGING
 
 
 def phrase_regex(phrases):
@@ -190,6 +188,10 @@ class _Ctx:
             return None
         return self.matter.get("timekeepers", {}).get(timekeeper_id)
 
+    def roster_names(self):
+        names = [card.get("name", "") for card in (self.matter or {}).get("timekeepers", {}).values()]
+        return names + list(self.names.values())
+
     def approved(self, what):
         return bool(self.matter and self.matter.get("approvals", {}).get(what))
 
@@ -334,7 +336,7 @@ def chk_staffing_event_limit(ctx, rule):
     groups = defaultdict(list)
     for ln in ctx.fees:
         for event in events:
-            if re.search(_ATTEND + r"[^.;]*\b" + re.escape(event) + r"s?\b", ln.narrative, re.I):
+            if LX.attendance_regex(event).search(ln.narrative):
                 groups[(ln.date, event)].append(ln)
                 break
     for (day, event), lines in sorted(groups.items()):
@@ -427,35 +429,49 @@ def chk_rate_increase_notice(ctx, rule):
 
 def chk_non_billable_task(ctx, rule):
     compiled = [(name, phrase_regex(phrases)) for name, phrases in rule.params["categories"].items()]
+    fix = "Move the entry off the bill, or ask the timekeeper whether the description is accurate."
     for ln in ctx.fees:
+        hit = None
         for name, regex in compiled:
-            match = regex.search(ln.narrative)
-            if match:
-                ctx.add(
-                    rule,
-                    ln,
-                    ln.amount,
-                    'The narrative contains "%s", which is on this client\'s list of non-billable %s work.'
-                    % (match.group(0), name.replace("_", " ")),
-                    "Move the entry off the bill, or ask the timekeeper whether the description is accurate.",
-                )
+            for match in regex.finditer(ln.narrative):
+                if LX.listed_phrase_allowed(match.group(0), ln.narrative):
+                    hit = (
+                        'The narrative contains "%s", which is on this client\'s list of non-billable %s work.'
+                        % (match.group(0), name.replace("_", " "))
+                    )
+                    break
+            if hit:
                 break
-
-
-def _is_internal_conference(ln, rule):
-    phrases = rule.params.get("phrases") or G.DEFAULT_INTERNAL_CONFERENCE_PHRASES
-    return ln.activity_code.upper() == "A105" or bool(phrase_regex(phrases).search(ln.narrative))
+        if not hit:
+            # wider wording for the standard categories the client's rule names
+            for name, _ in compiled:
+                wide = LX.CATEGORY_WIDE.get(name)
+                match = wide.search(ln.narrative) if wide is not None else None
+                if match:
+                    hit = (
+                        'The narrative says "%s", which reads as %s work. The client does not pay for that category. '
+                        "This match comes from the tool's wider wording, not the client's own phrase list."
+                        % (match.group(0), name.replace("_", " "))
+                    )
+                    break
+        if hit:
+            ctx.add(rule, ln, ln.amount, hit, fix)
 
 
 def chk_internal_conference_limit(ctx, rule):
     limit = dec(rule.params["max_hours_per_entry"])
+    listed = phrase_regex(rule.params.get("phrases") or G.DEFAULT_INTERNAL_CONFERENCE_PHRASES)
+    roster = LX.surname_pattern(ctx.roster_names())
     for ln in ctx.fees:
-        if _is_internal_conference(ln, rule) and ln.units > limit:
+        if ln.units <= limit:
+            continue
+        reason = LX.internal_conference_match(ln.narrative, ln.activity_code, listed, roster, ln.timekeeper_name)
+        if reason:
             ctx.add(
                 rule,
                 ln,
                 (ln.units - limit) * ln.rate,
-                "Internal conference of %s hours. The limit is %s hours per entry." % (fmt_num(ln.units), fmt_num(limit)),
+                "Internal conference of %s hours (read from %s). The limit is %s hours per entry." % (fmt_num(ln.units), reason, fmt_num(limit)),
                 "Reduce the entry to the limit, or ask the client to approve the longer conference.",
             )
 
@@ -465,7 +481,7 @@ def chk_research_approval(ctx, rule):
         return
     limit = dec(rule.params["max_hours"])
     running = ZERO
-    lines = [ln for ln in ctx.fees if ln.activity_code.upper() == "A102" or _RESEARCH.search(ln.narrative)]
+    lines = [ln for ln in ctx.fees if LX.research_match(ln.narrative, ln.activity_code)]
     for ln in sorted(lines, key=lambda l: (l.date, l.line_no)):
         before = running
         running += ln.units
@@ -476,8 +492,8 @@ def chk_research_approval(ctx, rule):
             rule,
             ln,
             excess * ln.rate,
-            "Research on this invoice reaches %s hours with this entry. The limit without approval is %s hours; %s hours of this entry fall over it."
-            % (fmt_num(running), fmt_num(limit), fmt_num(excess)),
+            "Research on this invoice reaches %s hours with this entry (read as research from %s). The limit without approval is %s hours; %s hours of this entry fall over it."
+            % (fmt_num(running), LX.research_match(ln.narrative, ln.activity_code), fmt_num(limit), fmt_num(excess)),
             "Ask the client to approve the research, or hold the excess time. Research billed on earlier invoices is not counted here.",
         )
 
@@ -486,7 +502,7 @@ def chk_travel_time(ctx, rule):
     percent = dec(rule.params["billable_percent"])
     needs_approval = rule.params["requires_approval"]
     for ln in ctx.fees:
-        if not _TRAVEL.search(ln.narrative):
+        if not LX.is_travel(ln.narrative):
             continue
         if needs_approval and not ctx.approved("travel"):
             ctx.add(
@@ -524,8 +540,14 @@ def chk_expense_overhead(ctx, rule):
     regex = phrase_regex(rule.params["phrases"])
     for ln in ctx.expenses:
         match = regex.search(ln.narrative)
-        if ln.expense_code.upper() in codes or match:
-            reason = 'expense code %s' % ln.expense_code if ln.expense_code.upper() in codes else '"%s"' % match.group(0)
+        wide = None if match else LX.overhead_wide_match(ln.narrative, rule.params["phrases"])
+        if ln.expense_code.upper() in codes or match or wide:
+            if ln.expense_code.upper() in codes:
+                reason = "expense code %s" % ln.expense_code
+            elif match:
+                reason = '"%s"' % match.group(0)
+            else:
+                reason = '"%s", read as %s by the tool\'s wider wording' % wide
             ctx.add(
                 rule,
                 ln,
@@ -609,6 +631,8 @@ def chk_vague_description(ctx, rule):
             reason = 'It is only "%s", with no subject or purpose.' % ln.narrative.strip()
         elif len(text.split()) < min_words:
             reason = "It has fewer than %d words." % min_words
+        elif LX.vague_wide_match(ln.narrative):
+            reason = "It names a general activity with no specific subject (matched by the tool's wider wording, not the client's own list)."
         else:
             continue
         ctx.add(
@@ -658,7 +682,7 @@ def _codes_finding(ctx, rule, ln, missing, unknown):
             rule,
             ln,
             ZERO,
-            "Not in the sample code table: %s. The table is a subset and unverified, so this may be a valid code." % ", ".join(unknown),
+            "Not in the code table: %s. The table holds the 1997 litigation code set only, so this may be a valid code from another set." % ", ".join(unknown),
             "Check the code against the client's code list.",
             severity="review",
         )
@@ -748,7 +772,7 @@ def _ai_related(ln, rule):
     marker = rule.params["disclosure_marker"]
     if marker.lower() in ln.narrative.lower():
         return True
-    return bool(phrase_regex(rule.params["ai_terms"]).search(ln.narrative))
+    return bool(phrase_regex(rule.params["ai_terms"]).search(ln.narrative)) or bool(LX.AI_WIDE.search(ln.narrative))
 
 
 def _ai_flag_note(ctx, rule):
@@ -777,13 +801,14 @@ def chk_ai_nonpayable_task(ctx, rule):
         if not _ai_related(ln, rule):
             continue
         match = regex.search(ln.narrative)
-        if match:
+        found = match.group(0) if match else LX.ai_task_wide_match(ln.narrative, rule.params["task_phrases"])
+        if found:
             ctx.add(
                 rule,
                 ln,
                 ln.amount,
                 'The entry is AI-assisted and describes a task ("%s") that this client\'s terms say it will not pay for when AI-assisted.'
-                % match.group(0),
+                % found,
                 "Move the entry off the bill, or raise it with the client before billing.",
             )
 

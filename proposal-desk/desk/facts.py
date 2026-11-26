@@ -329,30 +329,35 @@ def has_blocking(flags):
 
 
 def check_consent(text, data, current_agency=""):
-    """Client or reference names printed without consent anywhere in a draft."""
+    """Names printed without the permission that covers them, anywhere in a draft.
+
+    Client names need consent_to_name_client on an experience record.
+    Reference contacts need consent_to_list_contact on the reference record.
+    """
     flags = []
     cur = _norm_name(current_agency)
-    consented = {_norm_name(e["client_name"]) for e in data.experience if e["client_consent"]}
+    may_name = {_norm_name(e["client_name"]) for e in data.experience if e.get("consent_to_name_client") is True}
+    seen = set()
     for e in data.experience:
         name = e["client_name"]
-        if e["client_consent"] or _norm_name(name) == cur:
+        key = _norm_name(name)
+        if key in may_name or key == cur or key in seen:
             continue
         if _words_re(name, re.I).search(text):
-            flags.append(flag(BLOCKING, "no_client_consent",
-                              "%s is named but experience record %s has no client consent." % (name, e["id"]), name))
+            seen.add(key)
+            flags.append(flag(BLOCKING, "client_named_without_consent",
+                              "%s is named but experience record %s has no consent to name the client." % (name, e["id"]), name))
     for r in data.references:
-        if r["client_consent"]:
-            continue
-        if _words_re(r["contact_name"]).search(text):
-            flags.append(flag(BLOCKING, "no_client_consent",
-                              "reference contact %s is named but record %s has no consent." % (r["contact_name"], r["id"]),
-                              r["contact_name"]))
-        elif (_norm_name(r["client_name"]) not in consented and _norm_name(r["client_name"]) != cur
-              and _words_re(r["client_name"], re.I).search(text)
-              and not any(f["match"] == r["client_name"] for f in flags)):
-            flags.append(flag(BLOCKING, "no_client_consent",
-                              "%s is named but reference record %s has no consent." % (r["client_name"], r["id"]),
-                              r["client_name"]))
+        if r.get("consent_to_list_contact") is not True and _words_re(r["contact_name"]).search(text):
+            flags.append(flag(BLOCKING, "contact_listed_without_consent",
+                              "reference contact %s is named but record %s has no consent to list the contact."
+                              % (r["contact_name"], r["id"]), r["contact_name"]))
+        key = _norm_name(r["client_name"])
+        if key not in may_name and key != cur and key not in seen and _words_re(r["client_name"], re.I).search(text):
+            seen.add(key)
+            flags.append(flag(BLOCKING, "client_named_without_consent",
+                              "%s is named (reference record %s) but no experience record gives consent to name the client."
+                              % (r["client_name"], r["id"]), r["client_name"]))
     return flags
 
 

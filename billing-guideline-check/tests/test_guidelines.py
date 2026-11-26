@@ -104,8 +104,13 @@ def test_repeated_rule_id_is_reported():
     assert any("repeated" in e for e in G.validate(data))
 
 
-def test_code_table_is_labelled_unverified(data_dir):
+def test_code_table_says_how_far_it_was_checked_and_is_the_full_1997_set(data_dir):
     with open(os.path.join(data_dir, "utbms_sample_codes.json"), "r", encoding="utf-8") as handle:
         table = json.load(handle)
-    assert table["label"] == "sample subset, unverified against the published code set"
-    assert "L330" in table["task_codes"] and "A103" in table["activity_codes"]
+    assert "secondary source" in table["label"] and "not against the publisher's spreadsheets" in table["label"]
+    assert "2026-11-26" in table["note"]
+    # counts stated on the publisher's code set pages: 5 phases + 29 tasks, 11 activities, 24 expenses
+    tasks = table["task_codes"]
+    assert len([c for c in tasks if c.endswith("00")]) == 5 and len(tasks) == 34
+    assert len(table["activity_codes"]) == 11 and len(table["expense_codes"]) == 24
+    assert tasks["L330"] == "Depositions" and table["activity_codes"]["A105"] == "Communicate (in firm)"

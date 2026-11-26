@@ -14,10 +14,10 @@ Six record types and one facts file. The canonical field names are in `desk/sche
 | Record | What it is | Fields that matter most |
 |---|---|---|
 | Past proposal answers | One row per answer in a past proposal | `answer_text`, `question_type`, `proposal_agency`, `submitted`, `outcome`, `approved`, `approver`, `review_by` |
-| Experience records | One row per engagement | `client_name`, `client_consent`, `anonymized_description`, `agency_type`, `practice`, `subjects`, `role`, years |
+| Experience records | One row per engagement | `client_name`, `consent_to_name_client`, `anonymized_description`, `agency_type`, `practice`, `subjects`, `role`, years |
 | Attorney bios | One row per attorney | `name`, `title`, `status` (active or departed), `admit_year`, `office`, `practices` |
 | Rate schedules | Approved schedules with dates | `effective`, `expires`, `approved_by` (shown for reference only; never inserted) |
-| References | One row per contact | `contact_name`, `client_name`, `client_consent`, `last_confirmed` |
+| References | One row per contact | `contact_name`, `client_name`, `experience_id`, `consent_to_list_contact`, `last_confirmed` |
 | Standard forms | The firm's standard answers to common forms | `name`, `aliases`, `last_reviewed` |
 | `firm_facts.json` | The only source of firm facts | `as_of`, `attorney_count`, `partner_count`, `founded_year`, `offices`, `bar_admissions`, `public_agency_clients`, `matter_counts`, `departed_attorneys`, `approved_by` |
 
@@ -31,7 +31,7 @@ differ, the column for each canonical field:
 
 ```json
 {"experience": {"file": "matters_export.csv",
-                "fields": {"id": "Matter No", "client_name": "Client", "client_consent": "OK to name?"},
+                "fields": {"id": "Matter No", "client_name": "Client", "consent_to_name_client": "OK to name?"},
                 "list_separator": ";", "date_format": "%m/%d/%Y",
                 "defaults": {"practice": "general_counsel"}}}
 ```
@@ -66,9 +66,9 @@ will flag it every time.
 | Decision | Who | Recorded as |
 |---|---|---|
 | An answer may be reused | Practice lead | `approved` true and `approver` name |
-| A client may be named in a proposal or experience list | The client, through the responsible partner | `client_consent` true on the experience record |
+| A client may be named in a proposal or experience list | The client, through the responsible partner | `consent_to_name_client` true on the experience record |
 | A client is described without being named | Responsible partner approves the wording | `anonymized_description` |
-| A contact may be listed as a reference | The contact, through the responsible partner | `client_consent` true and `last_confirmed` date on the reference record |
+| A contact may be listed as a reference | The contact, through the responsible partner | `consent_to_list_contact` true and `last_confirmed` date on the reference record |
 | Firm facts | Whoever owns firm data (managing partner's office, marketing or finance) | `approved_by` and `as_of` in `firm_facts.json` |
 | Rates | Pricing partner | outside the tool |
 | Conflicts | Conflicts team | outside the tool |
@@ -77,8 +77,20 @@ will flag it every time.
 without its agreement can breach the firm's confidentiality obligations and damage the
 relationship, and some engagement terms forbid it. So:
 
-- `client_consent` is required on every experience and reference record. A missing or unclear
-  value is read as false. Only an explicit yes (`true`, `yes`, `y`, `1`) is true.
+- There are two permissions and two fields. `consent_to_name_client` is required on every
+  experience record: the client agreed to be named. `consent_to_list_contact` is required on
+  every reference record: the contact agreed to be listed. They are asked of different people
+  and one does not imply the other.
+- A missing or unclear value is read as false. Only an explicit yes (`true`, `yes`, `y`, `1`) is
+  true.
+- A reference line names both the contact and the client, so it prints only when the reference
+  has `consent_to_list_contact` and its `experience_id` points to an experience record for the
+  same client with `consent_to_name_client`. If the firm's reference list has no link to a
+  matter, add one; without it no reference prints.
+- If a source has one "consent" column, do not map it to both fields. Find out which permission
+  it records, map it to that field only, and collect the other. A column named `client_consent`
+  is not read unless the mapping file points one of the two fields at it; `check-data` prints a
+  warning when a consent column is absent.
 - Consent should record who gave it, when, and for what use. The demo schema has only the yes or
   no. A real pilot should add those fields and treat consent as expiring.
 - An anonymized description can still identify a client ("the only harbor district in the
@@ -101,7 +113,9 @@ Whether and how the firm may do any of this is a question for the firm's own cou
   themselves. Untagged answers with the old number start to be flagged. The go/no-go page warns
   when the facts file is more than 180 days old.
 - References not confirmed in the last 365 days are marked "reconfirm before use".
-- When a client withdraws consent, set `client_consent` to false. The name stops printing at once.
+- When a client withdraws consent, set `consent_to_name_client` to false. The name stops printing
+  at once, in experience lists and in references. When a contact withdraws, set
+  `consent_to_list_contact` to false.
   Check harvested answer text for the name as well.
 - Record the outcome (won, lost) once known. Ranking prefers winning answers. With few proposals
   this preference is weak evidence, not proof that an answer is good.
@@ -117,7 +131,7 @@ The numbers in the README come from invented data. A firm test should measure, o
 2. Missed mandatory items. One missed form matters more than the average.
 3. How many inserted passages a partner accepts unchanged, edits, or throws away.
 4. Fact-guard misses: wrong names or numbers that reached a draft unflagged. Seed some on purpose.
-5. Any client named without consent. The target is zero, and one case should stop the test.
+5. Any client named, or contact listed, without the consent that covers it. The target is zero, and one case should stop the test.
 6. Time from RFP to matrix and first draft, against the current process.
 
 Run it beside the current process, not instead of it, until those numbers are known.

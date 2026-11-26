@@ -24,10 +24,11 @@ BASE_RATES_2020 = {"partner": 520, "senior_associate": 410, "associate": 320, "p
 THIN_TYPE = "election_law_advisory"
 DRIFT_TYPE = "internal_investigation"
 DRIFT_FROM = date(2023, 1, 1)
-# Shipped step is 2.0x. An earlier 1.7x plant was not reliably flagged by the back-test's
-# three-condition drift rule, so the plant was made larger; the detector's thresholds were not
-# changed. Measured sensitivity by step size: output/drift_sensitivity.txt and the README.
-DRIFT_FACTOR = 2.0
+# Shipped step is 1.7x. History: the first drift rule (half split plus shuffle test) did not flag
+# 1.7x on this seed, so the plant was raised to 2.0x for a while. The change-point scan in
+# drift.py does flag 1.7x here, so the plant is back at 1.7x. Measured sensitivity of both
+# detectors by step size: output/drift_sensitivity.txt and the README.
+DRIFT_FACTOR = 1.7
 HEARING_TYPE = "public_records_litigation"
 NO_TASK_CODE_TYPE = "ordinance_drafting"
 HEAVY_WRITE_DOWN_TYPE = "employment_single_plaintiff_defense"
@@ -100,8 +101,13 @@ def _weighted(rng, items, weights):
     return rng.choices(items, weights=weights, k=1)[0]
 
 
-def generate(seed=SEED, drift_factor=DRIFT_FACTOR):
-    """Build the whole synthetic firm in memory. Returns dict with matters, entries, invoices."""
+def generate(seed=SEED, drift_factor=DRIFT_FACTOR, drift_per_year=None):
+    """Build the whole synthetic firm in memory. Returns dict with matters, entries, invoices.
+
+    drift_factor: step applied to the drifting type's hours for matters opened from DRIFT_FROM.
+    drift_per_year: if given (for example 0.12), the step is replaced by gradual growth in that
+    type's hours of that much per year of opening date. Used only by the drift study.
+    """
     rng = random.Random(seed)
     base_level = dict(TIMEKEEPERS)
     by_level = {lv: [tk for tk, l in TIMEKEEPERS if l == lv] for lv in LEVELS}
@@ -134,7 +140,9 @@ def generate(seed=SEED, drift_factor=DRIFT_FACTOR):
         else:
             span = (END - START).days - duration - 5
             open_date = START + timedelta(days=rng.randrange(0, span))
-        if name == DRIFT_TYPE and open_date >= DRIFT_FROM:
+        if name == DRIFT_TYPE and drift_per_year is not None:
+            hours *= (1 + drift_per_year) ** ((open_date - START).days / 365.25)
+        elif name == DRIFT_TYPE and open_date >= DRIFT_FROM:
             hours *= drift_factor
         j = lambda: rng.uniform(-0.04, 0.04)
         a, b = 0.15 + j(), 0.45 + j()

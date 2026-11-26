@@ -85,20 +85,20 @@
   },
   {
    "person_id": "U002",
-   "label": "Excluded by wall W1",
-   "note": "Walled from Project Halcyon. Searches run as this user must show no trace of that matter.",
+   "label": "Excluded by an ethical wall",
+   "note": "Walled from one corporate matter. Searches run as this user must show no trace of it.",
    "name": "Amara Quistrel"
   },
   {
    "person_id": "U003",
-   "label": "Lead on the matter behind wall W1",
-   "note": "Leads Project Halcyon and sees its documents.",
+   "label": "Leads the matter behind that wall",
+   "note": "Sees the walled matter's documents.",
    "name": "Quinn Pennwarden"
   },
   {
    "person_id": "U016",
-   "label": "Excluded by wall W2",
-   "note": "In the litigation group, which has a grant on one of the two walled matters. The wall still wins.",
+   "label": "Excluded by a second wall",
+   "note": "In the litigation group, which has a grant on one of the walled matters. The wall still wins.",
    "name": "Ugo Ostergaarde"
   },
   {

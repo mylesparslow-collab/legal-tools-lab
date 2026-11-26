@@ -45,17 +45,17 @@ We have chosen engagements that match the District's needs in size and subject m
 [Source: answer A-0094, proposal P-2025-03, submitted 2025-09-05, outcome won, approved by Priya Raghunathan, review by 2028-09-05]
 
 - A community college district with about 7,000 students (chief negotiator, 2020 to present). Subjects: collective bargaining, personnel, schools.
-  [Source: experience record E-033, client not named: no consent on file. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ongoing; same role (chief negotiator)]
+  [Source: experience record E-033, client not named: no consent to name the client. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ongoing; same role (chief negotiator)]
 - A unified school district with about 17,000 students (chief negotiator, 2023 to present). Subjects: collective bargaining, personnel, schools.
-  [Source: experience record E-034, client not named: no consent on file. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ongoing; same role (chief negotiator)]
+  [Source: experience record E-034, client not named: no consent to name the client. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ongoing; same role (chief negotiator)]
 - Halewick Elementary School District (chief negotiator, 2022 to 2025). Served as chief negotiator in successor negotiations. Work included collective bargaining, personnel and schools.
-  [Source: experience record E-038, client named with consent. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2025 (within three years); same role (chief negotiator)]
+  [Source: experience record E-038, client named: consent to name the client is on file. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2025 (within three years); same role (chief negotiator)]
 - Cinder Falls Community College District (chief negotiator, 2024 to 2025). Served as chief negotiator in successor negotiations. Work included collective bargaining, personnel and schools.
-  [Source: experience record E-039, client named with consent. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2025 (within three years); same role (chief negotiator)]
+  [Source: experience record E-039, client named: consent to name the client is on file. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2025 (within three years); same role (chief negotiator)]
 - Cinder Falls Unified School District (chief negotiator, 2023 to 2026). Served as chief negotiator in successor negotiations. Work included collective bargaining, personnel and schools.
-  [Source: experience record E-044, client named with consent. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2026 (within three years); same role (chief negotiator)]
+  [Source: experience record E-044, client named: consent to name the client is on file. Chosen because: same agency type (school district); same practice (labor); shared subjects: collective bargaining, personnel, schools; ended 2026 (within three years); same role (chief negotiator)]
 
-[NOTE: 1 relevant record(s) left out for lack of client consent and of an approved anonymized description: E-046.]
+[NOTE: 1 relevant record(s) left out for lack of consent to name the client and of an approved anonymized description: E-046]
 
 ## Q4 Approach
 
@@ -69,7 +69,7 @@ Our approach to negotiations has four parts: preparation, costing, communication
 
 > RFP Q5: List three references from school districts for which you have negotiated in the last five years.
 
-[PARTIAL: 2 reference(s) with consent on file; the RFP asks for 3; reference(s) not confirmed in the last 365 days: REF-018, REF-019; 6 matching reference record(s) have no consent and were not listed.. Owner: Responsible partner. Due: Wed 02 Dec 2026.]
+[PARTIAL: 2 reference(s) with both consents on file; the RFP asks for 3; reference(s) not confirmed in the last 365 days: REF-018, REF-019; 6 matching reference record(s) were not listed: 4 without the contact's consent to be listed, 6 without the client's consent to be named. Owner: Responsible partner. Due: Wed 02 Dec 2026.]
 
 References are listed below. Each contact has agreed to speak with the District about our work.
 
@@ -80,7 +80,7 @@ References are listed below. Each contact has agreed to speak with the District 
 - Benedikt Quarles, Assistant Superintendent, Cinder Falls Community College District. Telephone 555-0119. Email benedikt.quarles@cinderfallscommuni.example.
   [Source: reference record REF-019, last confirmed 2025-09-10; RECONFIRM before use]
 
-[GAP: 1 more reference(s) needed. Only contacts with consent on file are listed. Owner: Responsible partner. Due: Wed 02 Dec 2026.]
+[GAP: 1 more reference(s) needed. Only contacts with both consents on file are listed. Owner: Responsible partner. Due: Wed 02 Dec 2026.]
 
 ## Q6 Conflicts
 

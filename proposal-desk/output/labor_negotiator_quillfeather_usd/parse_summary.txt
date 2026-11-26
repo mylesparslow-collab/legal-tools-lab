@@ -50,7 +50,7 @@ Minimum qualifications (3):
 Insurance statements (1):
   Proof of professional liability insurance, minimum $1,000,000 per claim
 
-Items marked check: 9
+Items marked check: 12
   deadline D4: date is approximate in the RFP
   requirement R-Q8: question type not recognised
   form F1: listed as a bullet in the proposal content section, not a forms section
@@ -59,4 +59,7 @@ Items marked check: 9
   submission SUB2: exclusion stated away from the page limit; read the sentence
   insurance INS1: insurance amount stated in a list of submittals, not an insurance section
   evaluation EV5: criterion listed without a weight
+  party Yolanda Prescott: role taken from the name before it in a list
+  party Bartholomew Nguyen: role taken from the name before it in a list
+  party Odessa Kirkland: role taken from the name before it in a list
   evaluation : at least one criterion has no weight

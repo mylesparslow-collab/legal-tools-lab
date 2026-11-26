@@ -1,0 +1,20 @@
+{
+  "note": "Fictional client-approved exceptions for held-out batch A.",
+  "waivers": [
+    {
+      "waiver_id": "W-A01",
+      "client_id": "harrowgate",
+      "matter_id": "HCE-5604",
+      "rule_id": "HCE-EVENT-01",
+      "timekeeper_id": "A02",
+      "invoice_id": "",
+      "line_no": null,
+      "approved_by": "Senior claims examiner, Harrowgate Casualty Exchange (fictional)",
+      "approved_on": "2026-10-14",
+      "reference": "Email of 2026-10-14, subject: second attorney at mediation",
+      "effective_from": "2026-10-22",
+      "expires_on": "2026-10-22",
+      "note": "Second attorney approved for the 22 October mediation only."
+    }
+  ]
+}
